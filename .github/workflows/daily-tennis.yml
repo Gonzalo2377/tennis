@@ -25,9 +25,9 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_SPORT: auto          # descubre torneos ATP/WTA activos
-          ODDS_MAX: '10'
+          ODDS_MAX: '16'
           ODDS_REGIONS: eu
-          ODDS_WINDOW_HOURS: '96'   # 4 días hacia delante
+          ODDS_WINDOW_HOURS: '144'   
         run: node robot/fetch-daily.js
       - name: Commit si hay cambios
         run: |
