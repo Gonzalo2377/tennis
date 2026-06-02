@@ -185,6 +185,50 @@ function MatchPage({ t, go, id }) {
             ))}
           </div>
 
+          {/* value breakdown — fair price vs best available */}
+          {(() => {
+            const vb = window.valueBreakdown(m);
+            return (
+              <React.Fragment>
+                <div className="section__head" style={{marginTop:30}}>
+                  <span className="eyebrow"><span className="dot" />{t.vaTitle}</span>
+                </div>
+                <div className="panel panel--pad">
+                  <p style={{color:'var(--ink-2)', fontSize:'.88rem', lineHeight:1.6, margin:'0 0 16px'}}>{t.vaIntro.replace('{src}', vb.sharpFrom)}</p>
+                  {vb.rows.map((r,i)=>{
+                    const pl = r.k==='home'?home:away;
+                    const probPct = Math.round(r.prob*100);
+                    return (
+                      <div key={r.k} style={{padding:'14px 0', borderTop: i>0?'1px solid var(--line-soft)':'none'}}>
+                        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, marginBottom:10}}>
+                          <div style={{display:'flex', alignItems:'center', gap:10, minWidth:0}}>
+                            <Avatar id={r.k==='home'?m.home:m.away} size={32} badge={false} />
+                            <span style={{fontFamily:'var(--font-head)', fontWeight:700}}>{pl.name}</span>
+                          </div>
+                          {r.value
+                            ? <ValueTag edge={r.valuePct} hot={r.valuePct>=4} small />
+                            : <span className="value value--muted" style={{fontSize:'.74rem'}}>{t.vaNoValue}</span>}
+                        </div>
+                        {/* probability bar: fair (sharp) prob */}
+                        <div style={{height:8, background:'var(--bg-2)', borderRadius:99, overflow:'hidden', marginBottom:8}}>
+                          <div style={{width:probPct+'%', height:'100%', background: r.value?'var(--lime)':'var(--court)', borderRadius:99}} />
+                        </div>
+                        <div style={{display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:8, fontFamily:'var(--font-mono)', fontSize:'.74rem'}}>
+                          <div><div style={{color:'var(--muted)', fontSize:'.62rem', textTransform:'uppercase', letterSpacing:'.06em'}}>{t.vaProb}</div><b>{probPct}%</b></div>
+                          <div><div style={{color:'var(--muted)', fontSize:'.62rem', textTransform:'uppercase', letterSpacing:'.06em'}}>{t.vaOur}</div><b>{r.fair.toFixed(2)}</b></div>
+                          <div><div style={{color:'var(--muted)', fontSize:'.62rem', textTransform:'uppercase', letterSpacing:'.06em'}}>{t.vaAvg}</div><b>{r.avgOdd.toFixed(2)}</b></div>
+                          <div><div style={{color:'var(--muted)', fontSize:'.62rem', textTransform:'uppercase', letterSpacing:'.06em'}}>{t.vaBest}</div><b style={{color:'var(--court)'}}>{r.best.price.toFixed(2)}</b></div>
+                          <div><div style={{color:'var(--muted)', fontSize:'.62rem', textTransform:'uppercase', letterSpacing:'.06em'}}>{t.thBook}</div><Book id={r.best.book} showName={false} size={18} /></div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  <p style={{color:'var(--muted)', fontSize:'.74rem', lineHeight:1.5, margin:'14px 0 0', fontFamily:'var(--font-mono)'}}>{t.vaFoot}</p>
+                </div>
+              </React.Fragment>
+            );
+          })()}
+
           {/* price comparison */}
           <div className="section__head" style={{marginTop:30}}>
             <span className="eyebrow muted"><span className="dot" />{t.thBest} · {books.length} {t.footProduct?'casas':'books'}</span>

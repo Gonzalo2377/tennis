@@ -95,12 +95,15 @@ window.marketProbs = function(m){
 /* value: best price vs fair consensus → EV%. Eligible if credible (prob≥35%, odds≤3.2). */
 window.matchValue = function(m){
     const mk = window.marketProbs(m);
+    // use our model's probability when the feed provides it, else de-vig market
+    const useModel = m.model && typeof m.model.home === 'number';
+    const prob = useModel ? { home:m.model.home, away:m.model.away } : mk;
     const MIN_P=0.35, MAX_ODD=3.20;
     const all = ['home','away'].map(k=>{
         const best = window.saneBest(m.odds[k]);
-        const ev = (mk[k]*best.price - 1)*100;
-        const eligible = mk[k]>=MIN_P && best.price<=MAX_ODD;
-        return { k, p:mk[k], best, edge:ev, eligible };
+        const ev = (prob[k]*best.price - 1)*100;
+        const eligible = prob[k]>=MIN_P && best.price<=MAX_ODD;
+        return { k, p:prob[k], best, edge:ev, eligible };
     });
     const outs = [...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge));
     const top = outs[0];
@@ -130,6 +133,28 @@ window.arbSplit = function(legs,total){
     return legs.map(l=>{ const stake=total*(1/l.price)/inv; return Object.assign({},l,{stake, ret:stake*l.price}); });
 };
 window.arbReturn = function(legs,total){ const inv=legs.reduce((s,l)=>s+1/l.price,0); return total/inv; };
+
+/* per-player value breakdown for the match page. Uses Pinnacle (sharpest book)
+   as the "fair" probability when available, else the de-vig consensus. */
+window.valueBreakdown = function(m){
+  const mk = window.marketProbs(m);
+  const avgOdd = (k)=>{ const v=Object.values(m.odds[k]); return v.reduce((s,x)=>s+x,0)/v.length; };
+  let sharp, sharpFrom;
+  if (m.model && typeof m.model.home === 'number'){
+    sharp = { home:m.model.home, away:m.model.away }; sharpFrom = 'modelo';   // our Elo+surface model
+  } else {
+    const ph = m.odds.home && m.odds.home.pinnacle, pa = m.odds.away && m.odds.away.pinnacle;
+    if (ph != null && pa != null){ const ih=1/ph, ia=1/pa, s=ih+ia; sharp={home:ih/s, away:ia/s}; sharpFrom='Pinnacle'; }
+    else { sharp = mk; sharpFrom='consenso'; }
+  }
+  const rows = ['home','away'].map(k => {
+    const best = window.saneBest(m.odds[k]);
+    const prob = sharp[k], fair = 1/prob;
+    const valuePct = (best.price * prob - 1) * 100;
+    return { k, prob, mktProb: mk[k], avgOdd: avgOdd(k), fair, best, valuePct, value: valuePct >= 1.5 };
+  });
+  return { rows, sharpFrom, model: m.model || null };
+};
 
 window.getPlayer = (id)=> window.PLAYERS[id] || { id, name:(typeof id==='string'?id:'Jugador'), country:'', flag:'', seed:'', tour:'atp', elo:null, form:[] };
 window.getBook = (id)=> window.BOOKS[id] || { id, name:(typeof id==='string'?id:'Casa'), abbr:'?', color:'#888' };
@@ -199,6 +224,9 @@ window.I18N = {
     withValueCount:'con valor hoy', allAnalysed:'Todos los partidos analizados',
     noValueTitle:'Hoy no hay valor claro', noValueLead:'Preferimos no recomendar nada antes que forzar un pick. Vuelve mañana.',
     thMatch:'Partido', thTime:'Hora', thPick:'Pick de valor', thMarket:'Mercado', thBest:'Mejor cuota', thBook:'Casa', thEdge:'Valor',
+    vaTitle:'Análisis de valor', vaIntro:'Calculamos la probabilidad real con NUESTRO modelo ({src}): Elo del jugador + ventaja por superficie + forma reciente. La comparamos con la cuota media del mercado y la mejor disponible. Si pagan más de lo justo, hay valor.',
+    vaProb:'Prob. modelo', vaOur:'Nuestra cuota', vaAvg:'Media mercado', vaFair:'Cuota justa', vaBest:'Mejor cuota', vaNoValue:'Sin valor',
+    vaFoot:'Prob. modelo = nuestra estimación (Elo + superficie + forma) · Nuestra cuota = 1/prob · Media = promedio de casas · Valor = cuánto paga de más la mejor casa frente a lo justo.',
     // arb
     arbEyebrow:'BENEFICIO GARANTIZADO · GANE QUIEN GANE', arbTitle:'Apuestas sin riesgo',
     arbLead:'En tenis solo hay dos resultados. Apostando a los DOS jugadores —cada uno en la casa que mejor lo paga— recuperas lo mismo gane quien gane. Aquí escaneamos cada partido buscando esa diferencia.',
@@ -247,6 +275,9 @@ window.I18N = {
     withValueCount:'with value today', allAnalysed:'All analysed matches',
     noValueTitle:'No clear value today', noValueLead:'We\u2019d rather recommend nothing than force a pick. Check back tomorrow.',
     thMatch:'Match', thTime:'Time', thPick:'Value pick', thMarket:'Market', thBest:'Best odds', thBook:'Book', thEdge:'Value',
+    vaTitle:'Value breakdown', vaIntro:'We compute the true probability with OUR model ({src}): player Elo + surface edge + recent form. We compare it to the market average price and the best available. If they pay more than fair, there is value.',
+    vaProb:'Model prob', vaOur:'Our odds', vaAvg:'Market avg', vaFair:'Fair odds', vaBest:'Best odds', vaNoValue:'No value',
+    vaFoot:'Model prob = our estimate (Elo + surface + form) · Our odds = 1/prob · Avg = books average · Value = how much more the best book pays vs fair.',
     arbEyebrow:'GUARANTEED PROFIT · WHOEVER WINS', arbTitle:'No-risk bets',
     arbLead:'Tennis has only two outcomes. Backing BOTH players —each at the bookmaker paying it best— returns the same whoever wins. Here we scan every match for that gap.',
     arbStakeLabel:'Total stake to split', arbFound:'no-risk today',

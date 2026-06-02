@@ -97,7 +97,59 @@ function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; 
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
 function matchValue(m){ const mk=marketProbs(m); const MIN_P=0.35,MAX_ODD=3.20; const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(mk[k]*best.price-1)*100;const eligible=mk[k]>=MIN_P&&best.price<=MAX_ODD;return{k,p:mk[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible&&top.edge>=1.5}; }
 
+/* ---- OUR MODEL: Elo + surface + recent form ---- */
+let RATINGS = {};
+try { RATINGS = require('./ratings.js'); } catch(e){ console.log('· ratings.js no encontrado, modelo desactivado'); }
+function lastKey(full){ const t=(full||'').trim().split(/\s+/); const rest=t.length>1?t.slice(1).join(''):t.join(''); return rest.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,''); }
+function surfaceOf(key, event){
+  const s = ((key||'')+' '+(event||'')).toLowerCase();
+  if (/grass|halle|queen|wimbledon|stuttgart|hertogenbosch|libema|eastbourne|nottingham|bad_homburg|berlin/.test(s)) return 'grass';
+  if (/clay|roland|french|madrid|rome|monte|barcelona|hamburg|bastad|gstaad|kitzbuhel|umag|estoril/.test(s)) return 'clay';
+  return 'hard';
+}
+function eloOf(name, surface){
+  const k = lastKey(name);
+  const base = (LIVE_ELO[k] != null) ? LIVE_ELO[k] : (RATINGS[k] ? RATINGS[k].elo : null);
+  if (base == null) return null;
+  const surfDelta = RATINGS[k] ? (RATINGS[k][surface[0]] || 0) : 0;
+  return base + surfDelta;
+}
+/* learn Elo from finished matches (self-updating, K=24, surface-neutral base) */
+let LIVE_ELO = {}, ELO_DONE = {};
+function seedElo(name){ const k=lastKey(name); if(LIVE_ELO[k]!=null) return LIVE_ELO[k]; LIVE_ELO[k] = RATINGS[k] ? RATINGS[k].elo : 1700; return LIVE_ELO[k]; }
+function updateElo(scores){
+  let n=0;
+  for(const s of scores){
+    const w = winnerOf(s);
+    if(!w || !s.id || ELO_DONE[s.id]) continue;
+    const players=(s.scores||[]).map(x=>x.name);
+    const loser=players.find(p=>p!==w);
+    if(!loser) continue;
+    const ew=seedElo(w), el=seedElo(loser);
+    const exp=1/(1+Math.pow(10,(el-ew)/400)), K=24;
+    LIVE_ELO[lastKey(w)]=Math.round(ew+K*(1-exp));
+    LIVE_ELO[lastKey(loser)]=Math.round(el-K*(1-exp));
+    ELO_DONE[s.id]=1; n++;
+  }
+  return n;
+}
+/* model win prob of home using surface-adjusted Elo (+ optional form nudge) */
+function modelProbs(homeName, awayName, surface, formMap){
+  let eh = eloOf(homeName, surface), ea = eloOf(awayName, surface);
+  if (eh == null || ea == null) return null;           // unknown player → no model
+  if (formMap){
+    const fn = (nm)=>{ const f=formMap[lastKey(nm)]; if(!f||!f.length) return 0; const w=f.filter(x=>x==='W').length; return (w - (f.length-w)) * 12; };
+    eh += fn(homeName); ea += fn(awayName);
+  }
+  const ph = 1/(1 + Math.pow(10, (ea - eh)/400));
+  return { home: ph, away: 1-ph, fromModel:true, eloH:Math.round(eh), eloA:Math.round(ea), surface };
+}
+
 async function main(){
+  // load the self-updating Elo learned so far (seeded from ratings.js on first run)
+  try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; } catch(e){}
+  if (Object.keys(LIVE_ELO).length === 0) { for (const k in RATINGS) LIVE_ELO[k] = RATINGS[k].elo; console.log(`· Elo sembrado con ${Object.keys(LIVE_ELO).length} jugadores de ratings.js`); }
+
   let keys = SPORT.split(',').map(s=>s.trim()).filter(Boolean);
   if (keys.length===1 && keys[0].toLowerCase()==='auto'){
     try { keys = (await discoverTennis()).slice(0, MAX); console.log(`· AUTO: torneos de tenis activos → ${keys.join(', ') || '(ninguno)'}`); }
@@ -136,9 +188,12 @@ async function main(){
     });
     if (Object.keys(oddsH).length < 2) return;                  // need 2+ books for value/arb
 
+    const surface = surfaceOf(key, eventName(key));
+    const model = modelProbs(ev.home_team, ev.away_team, surface, null);
     MATCHES.push({
-      id: ev.id, tour:tourOf(key), event:eventName(key), round:'', surface:'', time:fmtTime(ev.commence_time),
+      id: ev.id, tour:tourOf(key), event:eventName(key), round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time),
       home:hId, away:aId, odds:{ home:oddsH, away:oddsA },
+      model: model || undefined,
       _commence: ev.commence_time, _sport:key,
     });
   });
@@ -170,10 +225,12 @@ async function main(){
   RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,sSig); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey);
 
   try {
-    const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport))].filter(Boolean))];
+    // scores for pending picks/combos AND for today's active tournaments (so Elo keeps learning)
+    const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...keys].filter(Boolean))];
     if (need.length){
       const scores=await fetchScores(need);
-      const byName={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) byName[w]=true; (s.scores||[]).forEach(()=>{}); });
+      const learned = updateElo(scores);            // self-update Elo from finished matches
+      if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });
       // settle singles: a pick wins if its player's shortName is among winners
       const still=[];
@@ -226,12 +283,16 @@ async function main(){
     try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); if (prev.MATCHES&&prev.MATCHES.length){ keepMatches=prev.MATCHES; keepPlayers=prev.PLAYERS||{}; keepBooks=prev.BOOKS||{}; keepCombos=prev.COMBOS||[]; stale=true; console.log('  ⚠ sin partidos nuevos → conservo el tablero anterior'); } } catch(e){}
   }
 
+  // keep ELO_DONE from growing forever
+  { const ids=Object.keys(ELO_DONE); if(ids.length>1500){ const drop=ids.slice(0,ids.length-1500); drop.forEach(k=>delete ELO_DONE[k]); } }
+
   const daily = {
     meta:{ updatedAt:new Date().toISOString(), source:'the-odds-api', sport:'tennis', regions:REGIONS, market:MARKET,
            matches:keepMatches.length, valuePicks:valued.length, books:Object.keys(keepBooks).length, stale,
-           credits:{ remaining:CREDITS.remaining, used:CREDITS.used } },
+           model:{ players:Object.keys(LIVE_ELO).length }, credits:{ remaining:CREDITS.remaining, used:CREDITS.used } },
     PLAYERS:keepPlayers, BOOKS:keepBooks, MATCHES:keepMatches, COMBOS:keepCombos,
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING,
+    ELO:LIVE_ELO, ELO_DONE,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
   console.log(`✓ ${OUT}\n  ${keepMatches.length} partidos · ${valued.length} con valor · ${Object.keys(keepBooks).length} casas · ${COMBOS.length} combis · ${RECORD.length} en récord · ${PENDING.length} pendientes`);
