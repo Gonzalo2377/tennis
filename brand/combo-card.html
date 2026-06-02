@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOLVALUE · Generador de Combinada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b0e17;color:#eef2fb;font-family:'Plus Jakarta Sans',system-ui,sans-serif;padding:28px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:330px 1fr;gap:28px;align-items:start}
+@media(max-width:860px){.wrap{grid-template-columns:1fr}}
+h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:1.7rem;text-transform:uppercase;margin-bottom:4px}
+.sub{color:#aab3c9;font-size:.9rem;margin-bottom:22px;line-height:1.5}
+label{display:block;font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#6b7693;margin:14px 0 5px}
+input,select{width:100%;background:#141a28;border:1px solid rgba(150,170,210,.18);color:#eef2fb;border-radius:9px;padding:10px 12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem}
+input:focus,select:focus{outline:none;border-color:#f6c443}
+.btn{width:100%;margin-top:20px;background:#f6c443;color:#0b0e17;border:none;border-radius:11px;padding:14px;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;letter-spacing:.02em;cursor:pointer}
+.btn:hover{filter:brightness(1.05)}
+.preview{display:flex;flex-direction:column;align-items:center;gap:12px}
+canvas{width:100%;max-width:540px;height:auto;border-radius:18px;border:1px solid rgba(150,170,210,.13)}
+.hint{color:#6b7693;font-size:.8rem;text-align:center;max-width:540px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{display:flex;gap:6px;margin-top:6px}
+.seg button{flex:1;background:#141a28;border:1px solid rgba(150,170,210,.18);color:#aab3c9;border-radius:8px;padding:9px;font-family:'Space Mono',monospace;font-size:.72rem;cursor:pointer}
+.seg button.on{background:#f6c443;color:#0b0e17;border-color:#f6c443;font-weight:700}
+.note{background:#10131d;border-left:3px solid #f6c443;padding:11px 13px;border-radius:8px;font-size:.82rem;line-height:1.55;color:#dfe5f1;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <h1>Combinada · teaser</h1>
+    <p class="sub">Imagen 1080×1080 para promocionar la combinada <b>sin revelar los picks</b>. Enseña el gancho (nº de selecciones, cuota total, confianza) e invita a desbloquearla.</p>
+
+    <label>Tipo de combinada</label>
+    <div class="seg" id="tier">
+      <button data-t="free" class="on">Gratis</button>
+      <button data-t="single">Del Día · 3,99€</button>
+      <button data-t="all">Todas · 14,99€</button>
+    </div>
+
+    <label>Nombre de la combinada</label>
+    <input id="name" value="Combinada GRATIS de hoy">
+
+    <div class="two">
+      <div><label>Nº de selecciones</label><input id="legs" value="3"></div>
+      <div><label>Cuota total</label><input id="odd" value="8.40"></div>
+    </div>
+    <div class="two">
+      <div><label>Confianza modelo (%)</label><input id="conf" value="71"></div>
+      <div><label>Fecha</label><input id="date" value="Sáb 31 May"></div>
+    </div>
+
+    <label>Estado <span style="color:#caa033;text-transform:none;letter-spacing:0">(para mostrar resultados ya jugados)</span></label>
+    <div class="seg" id="state">
+      <button data-s="open" class="on">Propuesta</button>
+      <button data-s="won">✅ GANADA</button>
+      <button data-s="lost">❌ FALLADA</button>
+    </div>
+
+    <label>Selecciones <span style="color:#caa033;text-transform:none;letter-spacing:0">(una por línea — vacío = ocultas 🔒)</span></label>
+    <textarea id="picks" rows="4" style="width:100%;background:#141a28;border:1px solid rgba(150,170,210,.18);color:#eef2fb;border-radius:9px;padding:10px 12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;resize:vertical">Gana Francia @1.50
+Gana España @1.70
+Gana P. Bajos @1.75</textarea>
+
+    <label>Texto del botón / gancho</label>
+    <input id="cta" value="Cópiala gratis 👇">
+
+    <button class="btn" onclick="download()">⬇ Descargar imagen</button>
+
+    <div class="note">💡 <b>Gratis</b> → revela las selecciones para atraer seguidores. <b>De pago</b> → deja el campo vacío para ocultarlas (🔒) y que paguen por verlas.</div>
+  </div>
+
+  <div class="preview">
+    <canvas id="c" width="1080" height="1080"></canvas>
+    <p class="hint">Vista previa en vivo. La imagen se descarga a tamaño completo (1080×1080).</p>
+  </div>
+</div>
+
+<script>
+const navy='#0b0e17', gold='#f6c443', golddim='#caa033', white='#eef2fb', gray='#aab3c9', green='#27d796', surf='#141a28';
+const cv=document.getElementById('c'), x=cv.getContext('2d');
+const $=id=>document.getElementById(id);
+
+function rr(c,X,Y,w,h,r){c.beginPath();c.moveTo(X+r,Y);c.arcTo(X+w,Y,X+w,Y+h,r);c.arcTo(X+w,Y+h,X,Y+h,r);c.arcTo(X,Y+h,X,Y,r);c.arcTo(X,Y,X+w,Y,r);c.closePath();}
+function ball(c,cx,cy,R,col){c.save();c.strokeStyle=col;c.fillStyle=col;c.lineWidth=Math.max(2,R*0.085);c.lineCap='round';c.lineJoin='round';c.beginPath();c.arc(cx,cy,R,0,7);c.stroke();const rp=R*0.4,v=[];for(let i=0;i<5;i++){const a=(-90+i*72)*Math.PI/180;v.push([cx+rp*Math.cos(a),cy+rp*Math.sin(a)]);}c.beginPath();v.forEach((p,i)=>i?c.lineTo(p[0],p[1]):c.moveTo(p[0],p[1]));c.closePath();c.fill();for(let i=0;i<5;i++){const a=(-90+i*72)*Math.PI/180;c.beginPath();c.moveTo(v[i][0],v[i][1]);c.lineTo(cx+R*Math.cos(a),cy+R*Math.sin(a));c.stroke();}c.restore();}
+function fit(c,t,maxW,start,fam){let s=start;do{c.font='900 '+s+'px '+fam;if(c.measureText(t).width<=maxW)break;s-=4;}while(s>26);return s;}
+
+let tier='free';
+let state='open';   // open | won | lost
+
+function parsePicks(){
+  return ($('picks').value||'').split('\n').map(l=>l.trim()).filter(Boolean).map(l=>{
+    const m=l.match(/^(.*?)(?:\s*@\s*([\d.,]+))?$/);
+    return { sel:(m[1]||'').trim(), odd:(m[2]||'').replace(',','.') };
+  });
+}
+
+function draw(){
+  const ACC = state==='won' ? green : state==='lost' ? '#ff6b5e' : gold;
+  const accSoft = state==='won' ? 'rgba(39,215,150,0.07)' : state==='lost' ? 'rgba(255,107,94,0.07)' : 'rgba(246,196,67,0.06)';
+  const accLine = state==='won' ? 'rgba(39,215,150,0.4)' : state==='lost' ? 'rgba(255,107,94,0.4)' : 'rgba(246,196,67,0.28)';
+  x.fillStyle=navy;x.fillRect(0,0,1080,1080);
+  let g=x.createRadialGradient(820,40,0,820,40,760);g.addColorStop(0,'rgba(246,196,67,0.16)');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,1080,1080);
+  x.save();x.globalAlpha=0.06;x.strokeStyle=gold;x.lineWidth=3;x.beginPath();x.arc(980,1000,180,0,7);x.stroke();x.beginPath();x.moveTo(1060,820);x.lineTo(1060,1080);x.stroke();x.restore();
+
+  // header
+  const S=70;rr(x,70,64,S,S,18);x.fillStyle=gold;x.fill();ball(x,70+S/2,64+S/2,S*0.34,navy);
+  x.textBaseline='middle';x.textAlign='left';
+  x.font='900 46px "Big Shoulders Display"';x.fillStyle=white;x.fillText('GOL',158,103);
+  const wg=x.measureText('GOL').width;x.fillStyle=gold;x.fillText('VALUE',158+wg,103);
+  const badge = state==='won' ? '✅ GANADA' : state==='lost' ? '❌ FALLADA'
+              : tier==='free' ? 'GRATIS' : tier==='single' ? 'COMBINADA · 3,99€' : 'PREMIUM · 14,99€';
+  x.textAlign='right';x.font='700 22px "Space Mono"';x.fillStyle=(state==='won')?green:(state==='lost')?'#ff6b5e':(tier==='free'?green:golddim);x.fillText(badge, 1010, 100);
+
+  // date + name
+  x.textAlign='center';x.font='700 24px "Space Mono"';x.fillStyle=gray;
+  x.fillText(($('date').value||'').toUpperCase(), 540, 206);
+  const nm=($('name').value||'').toUpperCase();
+  const ns=fit(x,nm,940,72,'"Big Shoulders Display"');
+  x.font='900 '+ns+'px "Big Shoulders Display"';x.fillStyle=white;x.fillText(nm,540,262);
+
+  const picks=parsePicks();
+  const reveal = picks.length>0;
+
+  if (reveal){
+    // ---- list of selections (free / promo) ----
+    const top=330, rowH=Math.min(108,(640-top+330)/Math.max(picks.length,1));
+    const lx=110, lw=860;
+    let y=320;
+    const rh=Math.max(72, Math.min(104, 470/Math.max(picks.length,1)));
+    picks.slice(0,5).forEach((p,i)=>{
+      rr(x,lx,y,lw,rh-12,16);x.fillStyle=accSoft;x.fill();
+      rr(x,lx,y,lw,rh-12,16);x.lineWidth=1.5;x.strokeStyle=accLine;x.stroke();
+      // num / result mark
+      x.beginPath();x.arc(lx+44,y+(rh-12)/2,20,0,7);x.fillStyle=ACC;x.fill();
+      x.fillStyle=navy;x.font='900 24px "Big Shoulders Display"';x.textAlign='center';x.textBaseline='middle';
+      x.fillText(state==='won'?'✓':state==='lost'?'✗':String(i+1),lx+44,y+(rh-12)/2+1);
+      // sel
+      x.textAlign='left';x.fillStyle=white;
+      const ss=fit(x,p.sel,540,38,'"Big Shoulders Display"');
+      x.font='800 '+ss+'px "Big Shoulders Display"';x.fillText(p.sel,lx+84,y+(rh-12)/2+1);
+      // odd
+      if(p.odd){x.textAlign='right';x.fillStyle=ACC;x.font='900 38px "Big Shoulders Display"';x.fillText(p.odd,lx+lw-26,y+(rh-12)/2+1);}
+      y+=rh;
+    });
+    x.textBaseline='alphabetic';
+    // total odds + confidence strip
+    x.textAlign='center';
+    x.font='900 90px "Big Shoulders Display"';x.fillStyle=ACC;x.textBaseline='middle';x.fillText(($('odd').value||''),370,y+72);
+    x.font='700 20px "Space Mono"';x.fillStyle=golddim;x.textBaseline='alphabetic';x.fillText('CUOTA TOTAL',370,y+118);
+    x.font='900 90px "Big Shoulders Display"';x.fillStyle=green;x.textBaseline='middle';x.fillText(($('conf').value||'')+'%',720,y+72);
+    x.font='700 20px "Space Mono"';x.fillStyle=gray;x.textBaseline='alphabetic';x.fillText(state==='won'?'¡PLENO!':state==='lost'?'NO ENTRÓ':'CONFIANZA',720,y+118);
+  } else {
+    // ---- hidden picks (paid teaser) ----
+    const bx=140,by=360,bw=800,bh=270;
+    x.save();x.shadowColor='rgba(246,196,67,0.28)';x.shadowBlur=46;rr(x,bx,by,bw,bh,28);x.fillStyle='rgba(246,196,67,0.07)';x.fill();x.restore();
+    rr(x,bx,by,bw,bh,28);x.lineWidth=2;x.strokeStyle='rgba(246,196,67,0.5)';x.stroke();
+    x.textAlign='center';
+    x.font='700 24px "Space Mono"';x.fillStyle=golddim;x.fillText('CUOTA TOTAL',540,by+58);
+    x.font='900 150px "Big Shoulders Display"';x.fillStyle=gold;x.fillText(($('odd').value||''),540,by+165);
+    x.font='400 23px "Space Mono"';x.fillStyle=gray;x.fillText('🔒 '+($('legs').value||'')+' selecciones ocultas',540,by+230);
+
+    const sy=760;
+    function stat(cx,lbl,val,col){x.font='400 22px "Space Mono"';x.fillStyle=gray;x.textAlign='center';x.fillText(lbl,cx,sy);x.font='900 64px "Big Shoulders Display"';x.fillStyle=col;x.fillText(val,cx,sy+62);}
+    stat(330,'SELECCIONES',($('legs').value||''),white);
+    stat(750,'CONFIANZA',($('conf').value||'')+'%',green);
+  }
+
+  // CTA pill
+  const cta=($('cta').value||'').toUpperCase();
+  x.font='800 34px "Big Shoulders Display"';
+  const cw=x.measureText(cta).width+80, cx0=540-cw/2, cyy=890;
+  rr(x,cx0,cyy,cw,68,34);x.fillStyle=ACC;x.fill();
+  x.fillStyle=navy;x.textAlign='center';x.textBaseline='middle';x.fillText(cta,540,cyy+36);
+  x.textBaseline='alphabetic';
+
+  // footer
+  x.font='700 30px "Space Mono"';x.fillStyle=gold;x.fillText('golvalue.online',540,1015);
+  x.font='400 19px "Space Mono"';x.fillStyle='#6b7693';x.fillText('+18 · Juego responsable · No es consejo financiero',540,1052);
+}
+
+function download(){
+  draw();
+  cv.toBlob(b=>{const a=document.createElement('a');a.download='golvalue-combinada.png';a.href=URL.createObjectURL(b);a.click();},'image/png');
+}
+
+document.querySelectorAll('#tier button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#tier button').forEach(z=>z.classList.remove('on'));
+  b.classList.add('on'); tier=b.dataset.t;
+  if(tier==='free'){ $('name').value='Combinada GRATIS de hoy'; $('cta').value='Cópiala gratis 👇'; }
+  else if(tier==='single'){ $('name').value='Combinada del Día'; $('cta').value='Desbloquéala por 3,99€'; $('picks').value=''; }
+  else { $('name').value='Combinada Premium'; $('cta').value='Todas por 14,99€/mes'; $('picks').value=''; }
+  draw();
+}));
+['name','legs','odd','conf','date','cta','picks'].forEach(id=>$(id).addEventListener('input',draw));
+document.querySelectorAll('#state button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#state button').forEach(z=>z.classList.remove('on'));
+  b.classList.add('on'); state=b.dataset.s;
+  if(state==='won'){ $('name').value='¡Combinada GANADA!'; $('cta').value='¡Pleno! ✅'; }
+  else if(state==='lost'){ $('name').value='No pudo ser'; $('cta').value='Mañana, más 👇'; }
+  else { $('cta').value = tier==='free' ? 'Cópiala gratis 👇' : tier==='single' ? 'Desbloquéala por 3,99€' : 'Todas por 14,99€/mes'; }
+  draw();
+}));
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(draw);}
+draw(); setTimeout(draw,400);
+</script>
+</body>
+</html>

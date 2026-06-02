@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ACEVALUE · Cuotas de tenis con valor</title>
-<meta name="description" content="Cuotas de tenis con valor y apuestas sin riesgo. El modelo frente al mercado, cada día.">
-<link rel="icon" type="image/png" href="brand/favicon.png?v=2">
-<link rel="apple-touch-icon" href="brand/favicon.png?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLVALUE · Cuotas con valor — fútbol</title>
+    <meta name="description" content="Cada día comparamos las cuotas de ganador de las principales casas de apuestas con la probabilidad real de nuestro modelo para detectar el valor. Grandes ligas y selecciones.">
+    <link rel="icon" type="image/png" href="brand/favicon.png">
+    <link rel="apple-touch-icon" href="brand/favicon.png">
+    <link rel="stylesheet" href="theme.css?v=10">
 </head>
 <body>
-<div id="root"></div>
+    <div id="root"></div>
 
-<template id="__bundler_thumbnail">
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" fill="#1f6f4a"/>
-    <circle cx="50" cy="50" r="20" fill="none" stroke="#d4f23a" stroke-width="4"/>
-    <path d="M34 36 q16 14 0 28 M66 36 q-16 14 0 28" fill="none" stroke="#d4f23a" stroke-width="3"/>
-  </svg>
-</template>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-
-<script src="config.js?v=10"></script>
-<script src="data.js?v=10"></script>
-<script type="text/babel" src="components.jsx?v=10"></script>
-<script type="text/babel" src="views.jsx?v=10"></script>
-<script type="text/babel" src="views2.jsx?v=10"></script>
-<script type="text/babel" src="app.jsx?v=10"></script>
+    <script src="config.js?v=10"></script>
+    <script src="data.js?v=10"></script>
+    <script src="model.js?v=10"></script>
+    <script type="text/babel" src="components.jsx?v=10"></script>
+    <script type="text/babel" src="views1.jsx?v=10"></script>
+    <script type="text/babel" src="views2.jsx?v=10"></script>
+    <script type="text/babel" src="app.jsx?v=10"></script>
 </body>
 </html>
