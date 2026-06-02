@@ -21,7 +21,10 @@ const Icon = {
 function Avatar({ id, size = 44, badge = true }) {
   const p = playerById(id);
   const initials = (p.name || '?').replace(/[^A-Za-zÀ-ÿ.\s]/g, '').split(/\s+/).filter(Boolean).map(s => s[0]).join('').slice(0,2).toUpperCase();
-  const grad = p.tour === 'wta' ? 'linear-gradient(135deg,#c2467f,#7a2d8f)' : 'linear-gradient(135deg,#1f6f4a,#16563a)';
+  // unique, deterministic colour per player → every tennista gets a distinct pro avatar
+  const seed = ((p.name || id || '?') + (p.tour||'')).split('').reduce((a,c)=>a + c.charCodeAt(0)*31, 0);
+  const hue = Math.abs(seed) % 360;
+  const grad = `linear-gradient(140deg, hsl(${hue} 54% 44%), hsl(${(hue+28)%360} 58% 30%))`;
   const photo = p.photo || (window.ACE_PHOTOS && window.ACE_PHOTOS[id]);
   const wrap = { position:'relative', width:size, height:size, flexShrink:0, display:'inline-block' };
   const circle = { width:size, height:size, borderRadius:'50%', overflow:'hidden', display:'grid', placeItems:'center', boxShadow:'0 2px 8px rgba(23,21,15,.18)', border:'2px solid var(--surface)' };
@@ -43,8 +46,8 @@ function Book({ id, showName = true, size = 22 }) {
   const b = bookById(id);
   return (
     <span className="book">
-      <span className="book__logo" style={{ background:b.color, width:size, height:size, fontSize:size*0.26 }}>{b.abbr.slice(0,3)}</span>
-      {showName && <span>{b.name}</span>}
+      <span className="book__logo" style={{ background:b.color||'#888', width:size, height:size, fontSize:size*0.26 }}>{(b.abbr||'?').slice(0,3)}</span>
+      {showName && <span>{b.name||id}</span>}
     </span>
   );
 }
