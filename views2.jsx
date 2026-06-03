@@ -205,6 +205,30 @@ function Record({ t, go }) {
             <div className="stat"><div className="stat__lbl">{t.stPicks}</div><div className="stat__val">{s.n}</div></div>
           </div>
 
+          {Array.isArray(window.PENDING) && window.PENDING.length>0 && (
+            <div style={{marginBottom:26}}>
+              <span className="eyebrow"><span className="dot" />{t.pendingTitle}</span>
+              <p style={{color:'var(--ink-2)', fontSize:'.9rem', margin:'10px 0 14px', maxWidth:660, lineHeight:1.55}}>{t.pendingLead}</p>
+              <div className="panel"><div className="vboard-scroll">
+                <table className="vboard">
+                  <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.colOdd}</th><th>{t.colBook}</th><th>{t.colResult}</th></tr></thead>
+                  <tbody>
+                    {window.PENDING.map((p,i)=>(
+                      <tr key={i} style={{cursor:'default'}}>
+                        <td><span className="vb-sub">{p.date}</span></td>
+                        <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{p.match}</span></td>
+                        <td className="l">{p.pickLabel||p.pick}</td>
+                        <td><b style={{fontFamily:'var(--font-mono)'}}>{(p.odd||0).toFixed(2)}</b></td>
+                        <td><Book id={p.book} showName={false} size={20} /></td>
+                        <td><span className="res-pill" style={{background:'rgba(174,225,0,.18)', color:'var(--lime-deep)', border:'1px solid rgba(127,168,0,.4)'}}>{t.pendingTag}</span></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div></div>
+            </div>
+          )}
+
           <div className="panel"><div className="vboard-scroll">
             <table className="vboard">
               <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.colOdd}</th><th>{t.colBook}</th><th>{t.colResult}</th></tr></thead>

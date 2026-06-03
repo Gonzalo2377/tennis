@@ -193,7 +193,10 @@ window.COMBO_RECORD = [
              {match:'Navarro – Collins', pick:'Gana Navarro', odd:1.55, win:false},
              {match:'Keys – Ostapenko', pick:'Gana Keys', odd:1.39, win:true} ] },
 ];
-window.PENDING = [];
+window.PENDING = [
+  { date:'HOY', match:'Sinner – Dimitrov', pickLabel:'Gana Sinner', odd:1.28, book:'pinnacle' },
+  { date:'HOY', match:'Sabalenka – Zheng', pickLabel:'Gana Sabalenka', odd:1.40, book:'bet365' },
+];
 /* SIN RIESGO — historial de surebets capturados (beneficio garantizado a 100€ de referencia) */
 window.ARB_RECORD = [
   { date:'02 JUN', match:'Medvedev – Fritz', marginPct:2.30, profit:2.30,
@@ -272,6 +275,7 @@ window.I18N = {
     comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.',
     arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo que detectamos queda registrada con su beneficio garantizado (calculado sobre 100€ de referencia).',
     arbRecN:'Surebets', arbRecProfit:'Beneficio acumulado', arbRecAvg:'Margen medio', arbRecMargin:'Margen',
+    pendingTitle:'Nuestras selecciones · en juego', pendingLead:'Picks ya publicados a la espera de resultado. Quedan registrados con su cuota antes de empezar el partido.', pendingTag:'EN JUEGO',
     // how
     howEyebrow:'CÓMO FUNCIONA', howTitle:'El método', 
     how1t:'1 · Recogemos las cuotas', how1d:'Cada día leemos las cuotas de varias casas para los partidos ATP y WTA.',
@@ -322,6 +326,7 @@ window.I18N = {
     comboRecTitle:'Settled accas', comboRecLead:'Every acca is logged once it ends. It only wins if ALL legs come in.',
     arbRecTitle:'No-risk history', arbRecLead:'Every no-risk bet we catch is logged with its guaranteed profit (on a 100€ reference stake).',
     arbRecN:'Surebets', arbRecProfit:'Total profit', arbRecAvg:'Avg margin', arbRecMargin:'Margin',
+    pendingTitle:'Our selections · live', pendingLead:'Picks already published, awaiting the result. Logged with their pre-match odds.', pendingTag:'LIVE',
     howEyebrow:'HOW IT WORKS', howTitle:'The method',
     how1t:'1 · We collect the odds', how1d:'Every day we read odds from several bookmakers for ATP and WTA matches.',
     how2t:'2 · We compute the true probability', how2d:'We strip the bookmaker margin and average the market to estimate each player\u2019s fair probability.',
