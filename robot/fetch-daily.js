@@ -227,6 +227,17 @@ async function main(){
   const aKey=a=>`${a.date||''}|${a.match||''}`;
   RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,sSig); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey); ARB_RECORD=dedupe(ARB_RECORD,aKey); ARB_PENDING=dedupe(ARB_PENDING,aKey);
 
+  // ---- SEED: manually-added picks waiting to be settled (robot/seed-pending.json) ----
+  // Lets us re-inject picks that were missed. Added only if not already pending/settled.
+  try {
+    const seed = JSON.parse(fs.readFileSync(__dirname + '/seed-pending.json', 'utf8'));
+    const seenP = new Set([...PENDING, ...RECORD].map(sSig));
+    (seed.PENDING || []).forEach(p => { if (!seenP.has(sSig(p))) { PENDING.push(p); seenP.add(sSig(p)); } });
+    const seenA = new Set([...ARB_PENDING, ...ARB_RECORD].map(aKey));
+    (seed.ARB_PENDING || []).forEach(a => { if (!seenA.has(aKey(a))) { ARB_PENDING.push(a); seenA.add(aKey(a)); } });
+    console.log(`· seed: +${(seed.PENDING||[]).length} picks · +${(seed.ARB_PENDING||[]).length} surebets (los nuevos)`);
+  } catch(e){ /* no seed file → ignore */ }
+
   try {
     // scores for pending picks/combos AND for today's active tournaments (so Elo keeps learning)
     const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport), ...keys].filter(Boolean))];
@@ -339,24 +350,25 @@ function legWin(scores, leg){
   return null;
 }
 function winnerNameFor(scores, p){
+  const N=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   for (const s of scores){
     const w = winnerOf(s);
     if (!w) continue;
-    const players=(s.scores||[]).map(x=>shortName(x.name));
-    if (players.some(x=>x===p.homeName) && players.some(x=>x===p.awayName)){
-      const winnerShort=shortName(w);
-      const pickName=(p.pickLabel||'').replace(/^Gana\s+/,'');
-      return winnerShort===pickName;
+    const players=(s.scores||[]).map(x=>N(shortName(x.name)));
+    if (players.some(x=>x===N(p.homeName)) && players.some(x=>x===N(p.awayName))){
+      const pickName=N((p.pickLabel||'').replace(/^Gana\s+/,''));
+      return N(shortName(w))===pickName;
     }
   }
   return null;
 }
 /* true if a match between these two players is finished in the scores feed */
 function matchFinished(scores, homeName, awayName){
+  const N=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   for (const s of scores){
     if (!winnerOf(s)) continue;
-    const players=(s.scores||[]).map(x=>shortName(x.name));
-    if (players.some(x=>x===homeName) && players.some(x=>x===awayName)) return true;
+    const players=(s.scores||[]).map(x=>N(shortName(x.name)));
+    if (players.some(x=>x===N(homeName)) && players.some(x=>x===N(awayName))) return true;
   }
   return false;
 }

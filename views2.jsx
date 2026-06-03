@@ -189,6 +189,18 @@ function Combos({ t, go }) {
 function Record({ t, go }) {
   const s = window.recordSummary();
   let cum=0;
+  // "en juego" = picks ya registrados por el robot + los picks de valor de HOY del tablero
+  // (así siempre se ven los actuales, aunque el robot aún no los haya guardado)
+  const settledSig = new Set((window.RECORD||[]).map(r=>`${r.match}|${r.pick||r.pickLabel}`));
+  const livePicks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)})).filter(x=>x.v.positive).map(x=>({
+      date:'HOY', match:`${window.playerById(x.m.home).name} – ${window.playerById(x.m.away).name}`,
+      pickLabel: window.outcomeLabel(x.v.pick.k, x.m), odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book }));
+  const seenPend = new Set();
+  const pendingList = [...(window.PENDING||[]), ...livePicks].filter(p=>{
+    const sig=`${p.match}|${p.pickLabel||p.pick}`;
+    if (settledSig.has(sig) || seenPend.has(sig)) return false;
+    seenPend.add(sig); return true;
+  });
   return (
     <main>
       <section className="section">
@@ -205,7 +217,7 @@ function Record({ t, go }) {
             <div className="stat"><div className="stat__lbl">{t.stPicks}</div><div className="stat__val">{s.n}</div></div>
           </div>
 
-          {Array.isArray(window.PENDING) && window.PENDING.length>0 && (
+          {pendingList.length>0 && (
             <div style={{marginBottom:26}}>
               <span className="eyebrow"><span className="dot" />{t.pendingTitle}</span>
               <p style={{color:'var(--ink-2)', fontSize:'.9rem', margin:'10px 0 14px', maxWidth:660, lineHeight:1.55}}>{t.pendingLead}</p>
@@ -213,7 +225,7 @@ function Record({ t, go }) {
                 <table className="vboard">
                   <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.colOdd}</th><th>{t.colBook}</th><th>{t.colResult}</th></tr></thead>
                   <tbody>
-                    {window.PENDING.map((p,i)=>(
+                    {pendingList.map((p,i)=>(
                       <tr key={i} style={{cursor:'default'}}>
                         <td><span className="vb-sub">{p.date}</span></td>
                         <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{p.match}</span></td>
