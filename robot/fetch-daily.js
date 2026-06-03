@@ -266,7 +266,7 @@ async function main(){
   // snapshot today's picks + combos as pending
   const today=fmtDay(new Date().toISOString());
   const haveId=new Set([...PENDING.map(p=>p.id), ...RECORD.map(r=>r.id).filter(Boolean)]);
-  valued.slice(0,3).forEach(x=>{
+  valued.forEach(x=>{
     if (haveId.has(x.m.id)) return;
     PENDING.push({ id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), date:fmtDay(x.m._commence),
       match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pickKey:x.v.pick.k, pickLabel:label(x.m,x.v.pick.k),

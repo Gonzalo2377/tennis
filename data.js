@@ -273,7 +273,7 @@ window.I18N = {
     colDate:'Fecha', colMatch:'Partido', colPick:'Pick', colOdd:'Cuota', colBook:'Casa', colResult:'Resultado',
     resW:'Ganada', resL:'Fallada',
     comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.',
-    arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo que detectamos queda registrada con su beneficio garantizado (calculado sobre 100€ de referencia).',
+    arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo (reparto «Igual») que detectamos queda registrada con su beneficio garantizado, calculado sobre 100€ de referencia.',
     arbRecN:'Surebets', arbRecProfit:'Beneficio acumulado', arbRecAvg:'Margen medio', arbRecMargin:'Margen',
     pendingTitle:'Nuestras selecciones · en juego', pendingLead:'Picks ya publicados a la espera de resultado. Quedan registrados con su cuota antes de empezar el partido.', pendingTag:'EN JUEGO',
     // how
