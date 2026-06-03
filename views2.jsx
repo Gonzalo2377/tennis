@@ -257,6 +257,34 @@ function Record({ t, go }) {
               </div>
             </div>
           )}
+
+          {Array.isArray(window.ARB_RECORD) && window.ARB_RECORD.length>0 && (() => { const as=window.arbSummary(); return (
+            <div style={{marginTop:30}}>
+              <span className="eyebrow"><span className="dot" />{t.arbRecTitle}</span>
+              <p style={{color:'var(--ink-2)', fontSize:'.9rem', margin:'10px 0 16px', maxWidth:660, lineHeight:1.55}}>{t.arbRecLead}</p>
+              <div className="grid grid--3" style={{marginBottom:16}}>
+                <div className="stat"><div className="stat__lbl">{t.arbRecN}</div><div className="stat__val">{as.n}</div></div>
+                <div className="stat"><div className="stat__lbl">{t.arbRecProfit}</div><div className="stat__val" style={{color:'var(--pos)'}}>+{as.profit.toFixed(2)}€</div></div>
+                <div className="stat"><div className="stat__lbl">{t.arbRecAvg}</div><div className="stat__val" style={{color:'var(--pos)'}}>+{as.avg.toFixed(2)}%</div></div>
+              </div>
+              <div className="panel"><div className="vboard-scroll">
+                <table className="vboard">
+                  <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.arbRecMargin}</th><th>{t.stProfit}</th></tr></thead>
+                  <tbody>
+                    {window.ARB_RECORD.map((a,i)=>(
+                      <tr key={i} style={{cursor:'default'}}>
+                        <td><span className="vb-sub">{a.date}</span></td>
+                        <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{a.match}</span></td>
+                        <td className="l"><div style={{display:'flex', flexDirection:'column', gap:2}}>{a.legs.map((l,j)=>(<span key={j} style={{fontSize:'.8rem'}}>{l.pick} <b style={{fontFamily:'var(--font-mono)'}}>{l.odd.toFixed(2)}</b> · <Book id={l.book} showName={false} size={16} /></span>))}</div></td>
+                        <td><span className="value value--pos" style={{fontSize:'.78rem'}}>+{a.marginPct.toFixed(2)}%</span></td>
+                        <td><b style={{fontFamily:'var(--font-mono)', color:'var(--pos)'}}>+{(a.profit||0).toFixed(2)}€</b></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div></div>
+            </div>
+          ); })()}
           <div className="disclaimer" style={{marginTop:24}}><b>{t.discTitle}</b> {t.disc}</div>
         </div>
       </section>

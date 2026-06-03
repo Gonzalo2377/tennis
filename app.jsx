@@ -71,6 +71,7 @@ function applyDaily(d){
   if(Array.isArray(d.COMBOS))  window.COMBOS  = d.COMBOS;
   if(Array.isArray(d.RECORD) && d.RECORD.length) window.RECORD = d.RECORD;
   if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = d.COMBO_RECORD;
+  if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = d.ARB_RECORD;
   if(d.meta) window.DAILY.meta = d.meta;
 }
 

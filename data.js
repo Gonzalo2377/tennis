@@ -194,6 +194,15 @@ window.COMBO_RECORD = [
              {match:'Keys – Ostapenko', pick:'Gana Keys', odd:1.39, win:true} ] },
 ];
 window.PENDING = [];
+/* SIN RIESGO — historial de surebets capturados (beneficio garantizado a 100€ de referencia) */
+window.ARB_RECORD = [
+  { date:'02 JUN', match:'Medvedev – Fritz', marginPct:2.30, profit:2.30,
+    legs:[ {pick:'Gana Medvedev', odd:2.05, book:'bet365'}, {pick:'Gana Fritz', odd:2.10, book:'betfair'} ] },
+  { date:'01 JUN', match:'Rune – Cerúndolo', marginPct:1.65, profit:1.65,
+    legs:[ {pick:'Gana Rune', odd:1.66, book:'pinnacle'}, {pick:'Gana Cerúndolo', odd:2.58, book:'1xbet'} ] },
+  { date:'31 MAY', match:'Paolini – Zheng', marginPct:3.10, profit:3.10,
+    legs:[ {pick:'Gana Paolini', odd:2.12, book:'marathonbet'}, {pick:'Gana Zheng', odd:2.02, book:'unibet'} ] },
+];
 window.recordSummary = function(){
     const r = window.RECORD || [];
     let staked=0, returned=0, w=0;
@@ -202,6 +211,18 @@ window.recordSummary = function(){
     const roi = staked ? (profit/staked)*100 : 0;
     const hit = r.length ? (w/r.length)*100 : 0;
     return { n:r.length, w, l:r.length-w, profit, roi, hit, staked };
+};
+window.comboSummary = function(){
+    const c = window.COMBO_RECORD || [];
+    const w = c.filter(x=>x.result==='W').length;
+    const hit = c.length ? (w/c.length)*100 : 0;
+    return { n:c.length, w, l:c.length-w, hit };
+};
+window.arbSummary = function(){
+    const a = window.ARB_RECORD || [];
+    const profit = a.reduce((s,x)=> s + (x.profit||0), 0);
+    const avg = a.length ? a.reduce((s,x)=> s + (x.marginPct||0), 0)/a.length : 0;
+    return { n:a.length, profit, avg };
 };
 
 /* ============================================================
@@ -249,6 +270,8 @@ window.I18N = {
     colDate:'Fecha', colMatch:'Partido', colPick:'Pick', colOdd:'Cuota', colBook:'Casa', colResult:'Resultado',
     resW:'Ganada', resL:'Fallada',
     comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.',
+    arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo que detectamos queda registrada con su beneficio garantizado (calculado sobre 100€ de referencia).',
+    arbRecN:'Surebets', arbRecProfit:'Beneficio acumulado', arbRecAvg:'Margen medio', arbRecMargin:'Margen',
     // how
     howEyebrow:'CÓMO FUNCIONA', howTitle:'El método', 
     how1t:'1 · Recogemos las cuotas', how1d:'Cada día leemos las cuotas de varias casas para los partidos ATP y WTA.',
@@ -297,6 +320,8 @@ window.I18N = {
     colDate:'Date', colMatch:'Match', colPick:'Pick', colOdd:'Odds', colBook:'Book', colResult:'Result',
     resW:'Won', resL:'Lost',
     comboRecTitle:'Settled accas', comboRecLead:'Every acca is logged once it ends. It only wins if ALL legs come in.',
+    arbRecTitle:'No-risk history', arbRecLead:'Every no-risk bet we catch is logged with its guaranteed profit (on a 100€ reference stake).',
+    arbRecN:'Surebets', arbRecProfit:'Total profit', arbRecAvg:'Avg margin', arbRecMargin:'Margin',
     howEyebrow:'HOW IT WORKS', howTitle:'The method',
     how1t:'1 · We collect the odds', how1d:'Every day we read odds from several bookmakers for ATP and WTA matches.',
     how2t:'2 · We compute the true probability', how2d:'We strip the bookmaker margin and average the market to estimate each player\u2019s fair probability.',

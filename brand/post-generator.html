@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACEVALUE · Generador de posts</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f3f1ea;color:#17150f;font-family:'Hanken Grotesk',system-ui,sans-serif;padding:24px}
+.wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:340px 1fr;gap:28px;align-items:start}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.7rem;margin-bottom:4px}
+.sub{color:#4a4639;font-size:.88rem;margin-bottom:18px;line-height:1.5}
+label{display:block;font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#837d6c;margin:13px 0 5px}
+input,select,textarea{width:100%;background:#fff;border:1px solid rgba(23,21,15,.16);color:#17150f;border-radius:9px;padding:10px 12px;font-family:'Hanken Grotesk',sans-serif;font-size:.9rem}
+textarea{resize:vertical;min-height:70px;font-family:'Space Mono',monospace;font-size:.82rem;line-height:1.5}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#1f6f4a}
+.btn{width:100%;margin-top:18px;background:#1f6f4a;color:#fff;border:none;border-radius:11px;padding:14px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.1rem;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn2{width:100%;margin-top:8px;background:#fff;color:#17150f;border:1px solid rgba(23,21,15,.18);border-radius:11px;padding:11px;font-family:'Hanken Grotesk';font-weight:600;font-size:.9rem;cursor:pointer}
+.preview{display:flex;flex-direction:column;align-items:center;gap:12px}
+canvas{width:100%;max-width:560px;height:auto;border-radius:18px;border:1px solid rgba(23,21,15,.12);box-shadow:0 10px 40px rgba(23,21,15,.1)}
+.hint{color:#837d6c;font-size:.8rem;text-align:center;max-width:560px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.seg button{flex:1;min-width:calc(50% - 3px);background:#fff;border:1px solid rgba(23,21,15,.16);color:#4a4639;border-radius:8px;padding:9px 6px;font-family:'Space Mono',monospace;font-size:.7rem;cursor:pointer}
+.seg button.on{background:#1f6f4a;color:#fff;border-color:#1f6f4a;font-weight:700}
+.fields{display:none}.fields.on{display:block}
+.tweet{background:#fff;border-left:3px solid #aee100;padding:12px 14px;border-radius:8px;font-size:.86rem;line-height:1.55;color:#2c2920;white-space:pre-wrap;margin-top:14px}
+.cap{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#837d6c;margin:16px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <h1>Generador de posts</h1>
+    <p class="sub">Elige el tipo, rellena y pulsa Descargar. Imagen 1080×1080 para Twitter/Instagram, con el texto del tweet listo para copiar.</p>
+
+    <label>Tipo de post</label>
+    <div class="seg" id="type">
+      <button data-t="value" class="on">Pick de valor</button>
+      <button data-t="combo">Combinada</button>
+      <button data-t="even">Sin Riesgo · Igual</button>
+      <button data-t="cover">Sin Riesgo · Cubrir</button>
+    </div>
+
+    <!-- PICK DE VALOR -->
+    <div class="fields on" data-f="value">
+      <label>Torneo</label><input id="v_comp" value="ATP 500 · Queen's">
+      <div class="two"><div><label>Jugador A</label><input id="v_home" value="Sinner"></div><div><label>Jugador B</label><input id="v_away" value="Dimitrov"></div></div>
+      <label>Hora / ronda</label><input id="v_time" value="Cuartos · 14:00">
+      <label>El pick</label><input id="v_pick" value="GANA SINNER">
+      <div class="two"><div><label>Cuota</label><input id="v_odd" value="1.40"></div><div><label>Casa</label><input id="v_book" value="Pinnacle"></div></div>
+      <div class="two"><div><label>Prob. modelo %</label><input id="v_model" value="76"></div><div><label>Valor %</label><input id="v_value" value="+5.2"></div></div>
+    </div>
+
+    <!-- COMBINADA -->
+    <div class="fields" data-f="combo">
+      <label>Nombre</label><input id="c_name" value="Combinada del Día">
+      <label>Fecha</label><input id="c_date" value="Sáb 31 May">
+      <label>Selecciones (una por línea: Pick @cuota)</label>
+      <textarea id="c_legs">Gana Sinner @1.28
+Gana Sabalenka @1.40
+Gana Alcaraz @1.44</textarea>
+      <div class="two"><div><label>Cuota total</label><input id="c_total" value="2.58"></div><div><label>Confianza %</label><input id="c_conf" value="74"></div></div>
+    </div>
+
+    <!-- SIN RIESGO IGUAL -->
+    <div class="fields" data-f="even">
+      <label>Torneo</label><input id="e_comp" value="ATP 500 · Halle">
+      <div class="two"><div><label>Jugador A</label><input id="e_home" value="Medvedev"></div><div><label>Jugador B</label><input id="e_away" value="Fritz"></div></div>
+      <label>Inversión total (€)</label><input id="e_stake" value="100">
+      <label>Patas (una por línea: Jugador @cuota · Casa)</label>
+      <textarea id="e_legs">Gana Medvedev @2.05 · Bet365
+Gana Fritz @2.10 · Betfair</textarea>
+    </div>
+
+    <!-- SIN RIESGO CUBRIR -->
+    <div class="fields" data-f="cover">
+      <label>Torneo</label><input id="o_comp" value="ATP 500 · Halle">
+      <div class="two"><div><label>Jugador A</label><input id="o_home" value="Medvedev"></div><div><label>Jugador B</label><input id="o_away" value="Fritz"></div></div>
+      <div class="two"><div><label>Inversión total (€)</label><input id="o_stake" value="100"></div><div><label>¿Cuál respaldas? (nº)</label><input id="o_back" value="1"></div></div>
+      <label>Patas (una por línea: Jugador @cuota · Casa)</label>
+      <textarea id="o_legs">Gana Medvedev @2.05 · Bet365
+Gana Fritz @2.10 · Betfair</textarea>
+    </div>
+
+    <button class="btn" onclick="download()">⬇ Descargar imagen</button>
+    <button class="btn2" onclick="copyTweet()">📋 Copiar texto del tweet</button>
+
+    <div class="cap">Texto del tweet</div>
+    <div class="tweet" id="tweet"></div>
+  </div>
+
+  <div class="preview">
+    <canvas id="c" width="1080" height="1080"></canvas>
+    <p class="hint">Vista previa en vivo · se descarga a 1080×1080.</p>
+  </div>
+</div>
+
+<script src="post-engine.js?sport=tennis"></script>
+</body>
+</html>

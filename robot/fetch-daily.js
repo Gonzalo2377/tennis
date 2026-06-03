@@ -96,6 +96,8 @@ function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) 
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
 function matchValue(m){ const mk=marketProbs(m); const MIN_P=0.35,MAX_ODD=3.20; const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(mk[k]*best.price-1)*100;const eligible=mk[k]>=MIN_P&&best.price<=MAX_ODD;return{k,p:mk[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible&&top.edge>=1.5}; }
+/* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
+function arbOf(m){ const legs=['home','away'].map(k=>{const best=bestPrice(m.odds[k]);return {k,book:best.book,price:best.price};}); const inv=legs.reduce((s,l)=>s+1/l.price,0); return { legs, marginPct:(1-inv)*100, hasArb:(1-inv)*100>0.01 }; }
 
 /* ---- OUR MODEL: Elo + surface + recent form ---- */
 let RATINGS = {};
@@ -215,18 +217,19 @@ async function main(){
   }
 
   // ---- track record (settle finished picks via scores) ----
-  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[];
-  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; } catch(e){}
+  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[];
+  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; } catch(e){}
 
   // dedup
   const dedupe=(arr,key)=>{const s=new Set();return arr.filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
   const sSig=r=>`${r.date||''}|${r.match||''}|${r.pick||r.pickLabel||''}`;
   const cKey=c=>`${c.date||''}|${(c.legs||[]).map(l=>`${l.match}|${l.pick}`).sort().join('+')}`;
-  RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,sSig); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey);
+  const aKey=a=>`${a.date||''}|${a.match||''}`;
+  RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,sSig); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey); ARB_RECORD=dedupe(ARB_RECORD,aKey); ARB_PENDING=dedupe(ARB_PENDING,aKey);
 
   try {
     // scores for pending picks/combos AND for today's active tournaments (so Elo keeps learning)
-    const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...keys].filter(Boolean))];
+    const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport), ...keys].filter(Boolean))];
     if (need.length){
       const scores=await fetchScores(need);
       const learned = updateElo(scores);            // self-update Elo from finished matches
@@ -250,6 +253,13 @@ async function main(){
           legs:c.legs.map((l,i)=>({ match:l.match, pick:l.pick, odd:l.odd, win:res[i] })) });
       });
       COMBO_PENDING=cstill;
+      // settle surebets: profit is locked when bet; once the match is played → realized history
+      const astill=[];
+      ARB_PENDING.forEach(a=>{
+        if (!matchFinished(scores, a.homeName, a.awayName)){ astill.push(a); return; }
+        ARB_RECORD.unshift({ date:a.date, match:a.match, marginPct:a.marginPct, profit:a.profit, legs:a.legs });
+      });
+      ARB_PENDING=astill;
     }
   } catch(e){ console.log('· scores no disponibles:', e.message); }
 
@@ -270,11 +280,24 @@ async function main(){
     if (haveCombo.has(cKey(snap))) return;
     COMBO_PENDING.push(snap); haveCombo.add(cKey(snap));
   });
+  // snapshot today's surebets (guaranteed-profit at 100€ reference) → settle later
+  const REF=100;
+  const haveArb=new Set([...ARB_PENDING, ...ARB_RECORD].map(aKey));
+  MATCHES.forEach(m=>{
+    const a=arbOf(m); if(!a.hasArb) return;
+    const inv=a.legs.reduce((s,l)=>s+1/l.price,0);
+    const profit=+((REF/inv)-REF).toFixed(2);
+    const rec={ date:today, match:`${PLAYERS[m.home].name} – ${PLAYERS[m.away].name}`, marginPct:+a.marginPct.toFixed(2), profit,
+      homeName:PLAYERS[m.home].name, awayName:PLAYERS[m.away].name, sport:m._sport,
+      legs:a.legs.map(l=>({ pick:label(m,l.k), odd:+l.price.toFixed(2), book:l.book })) };
+    if (haveArb.has(aKey(rec))) return;
+    ARB_PENDING.push(rec); haveArb.add(aKey(rec));
+  });
 
   // housekeeping
   const EXP=5*24*3600*1000;
   PENDING=PENDING.filter(p=>!p.ts || (Date.now()-p.ts)<EXP);
-  RECORD=RECORD.slice(0,60); COMBO_RECORD=COMBO_RECORD.slice(0,40);
+  RECORD=RECORD.slice(0,60); COMBO_RECORD=COMBO_RECORD.slice(0,40); ARB_RECORD=ARB_RECORD.slice(0,40);
   MATCHES.forEach(m=>{ delete m._commence; delete m._sport; });
 
   // safety net: keep yesterday's board if today is empty (dead time)
@@ -291,7 +314,7 @@ async function main(){
            matches:keepMatches.length, valuePicks:valued.length, books:Object.keys(keepBooks).length, stale,
            model:{ players:Object.keys(LIVE_ELO).length }, credits:{ remaining:CREDITS.remaining, used:CREDITS.used } },
     PLAYERS:keepPlayers, BOOKS:keepBooks, MATCHES:keepMatches, COMBOS:keepCombos,
-    RECORD, PENDING, COMBO_RECORD, COMBO_PENDING,
+    RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
     ELO:LIVE_ELO, ELO_DONE,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
@@ -327,6 +350,15 @@ function winnerNameFor(scores, p){
     }
   }
   return null;
+}
+/* true if a match between these two players is finished in the scores feed */
+function matchFinished(scores, homeName, awayName){
+  for (const s of scores){
+    if (!winnerOf(s)) continue;
+    const players=(s.scores||[]).map(x=>shortName(x.name));
+    if (players.some(x=>x===homeName) && players.some(x=>x===awayName)) return true;
+  }
+  return false;
 }
 
 main().catch(e=>{ console.error('✗', e); process.exit(1); });
