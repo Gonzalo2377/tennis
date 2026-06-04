@@ -253,13 +253,18 @@ async function main(){
   // ---- track record (settle finished picks via scores) ----
   let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[];
   try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; } catch(e){}
+  // RESET=1 → empieza el historial de cero (para limpiar datos viejos corruptos)
+  if (process.env.RESET==='1'){ RECORD=[]; PENDING=[]; COMBO_RECORD=[]; COMBO_PENDING=[]; ARB_RECORD=[]; ARB_PENDING=[]; console.log('· RESET: historial vaciado, empezando limpio'); }
 
   // dedup
   const dedupe=(arr,key)=>{const s=new Set();return arr.filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
+  const normPick=s=>(s||'').replace(/^gana\s+/i,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   const sSig=r=>`${r.date||''}|${r.match||''}|${r.pick||r.pickLabel||''}`;
+  // pending dedup ignores date + "Gana " prefix → one entry per match (kills the duplicate "EN JUEGO" rows)
+  const pendKey=p=>`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel||p.pick)}`;
   const cKey=c=>`${c.date||''}|${(c.legs||[]).map(l=>`${l.match}|${l.pick}`).sort().join('+')}`;
   const aKey=a=>`${a.date||''}|${a.match||''}`;
-  RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,sSig); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey); ARB_RECORD=dedupe(ARB_RECORD,aKey); ARB_PENDING=dedupe(ARB_PENDING,aKey);
+  RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,pendKey); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey); ARB_RECORD=dedupe(ARB_RECORD,aKey); ARB_PENDING=dedupe(ARB_PENDING,aKey);
 
   // ---- SEED: manually-added picks waiting to be settled (robot/seed-pending.json) ----
   // Lets us re-inject picks that were missed. Added only if not already pending/settled.
@@ -288,9 +293,10 @@ async function main(){
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });
-      // settle singles: manual winners first, then API scores
+      // settle singles: manual winners first, then API scores. Never settle a match still in the future.
       const still=[];
       PENDING.forEach(p=>{
+        if (p.ts && p.ts > Date.now()){ still.push(p); return; }     // not played yet → keep waiting
         let w = manualPickResult(p, manualWinners);
         if (w===null) w = winnerNameFor(scores, p);
         if (w===null){ still.push(p); return; }
@@ -320,16 +326,17 @@ async function main(){
 
   // snapshot today's picks + combos as pending
   const today=fmtDay(new Date().toISOString());
-  // already-settled signature (match+pick, ignoring date) → never re-add a pick that's in the record
-  const recSig=new Set(RECORD.map(r=>`${r.match}|${r.pick}`));
+  // already-settled signature (match+pick normalized) → never re-add a pick that's in the record
+  const recSig=new Set(RECORD.map(r=>`${(r.match||'').toLowerCase().trim()}|${normPick(r.pick)}`));
   // clean any pending that's already settled (fixes the "EN JUEGO + GANADA" duplicate)
-  PENDING=PENDING.filter(p=>!recSig.has(`${p.match}|${p.pickLabel}`));
+  PENDING=PENDING.filter(p=>!recSig.has(`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel)}`));
   const haveId=new Set([...PENDING.map(p=>p.id), ...RECORD.map(r=>r.id).filter(Boolean)]);
   valued.forEach(x=>{
     if (haveId.has(x.m.id)) return;
     const match=`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`;
     const pickLabel=label(x.m,x.v.pick.k);
-    if (recSig.has(`${match}|${pickLabel}`)) return;            // already in record → skip
+    if (recSig.has(`${match.toLowerCase().trim()}|${normPick(pickLabel)}`)) return;   // already in record → skip
+    if (PENDING.some(p=>`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel)}`===`${match.toLowerCase().trim()}|${normPick(pickLabel)}`)) return;  // already pending → skip
     if (new Date(x.m._commence).getTime() < Date.now()-30*60*1000) return;   // already started → don't track as fresh pick
     PENDING.push({ id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), date:fmtDay(x.m._commence),
       match, pickKey:x.v.pick.k, pickLabel,
@@ -440,7 +447,7 @@ async function scoresOnly(){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
       Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
     }
-    const still=[]; PENDING.forEach(p=>{ let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
+    const still=[]; PENDING.forEach(p=>{ if(p.ts&&p.ts>Date.now()){still.push(p);return;} let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
     const cstill=[]; COMBO_PENDING.forEach(c=>{ const res=c.legs.map(l=>{ let r=manualLegResult(l,manualWinners); return r===null?legWin(scores,l):r; }); if(res.some(r=>r===null)){cstill.push(c);return;} COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2),result:res.every(Boolean)?'W':'L',legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:l.odd,win:res[i]}))}); }); COMBO_PENDING=cstill;
     const astill=[]; ARB_PENDING.forEach(a=>{ const done=matchFinished(scores,a.homeName,a.awayName)||manualMatchDone(a.homeName,a.awayName,manualWinners); if(!done){astill.push(a);return;} ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
   } catch(e){ console.log('· scores-only: error', e.message); }
