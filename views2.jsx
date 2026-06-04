@@ -149,18 +149,18 @@ function Combos({ t, go }) {
             <div><span className="eyebrow"><span className="dot" />{t.comboEyebrow}</span><h2 className="section__title">{t.comboTitle}</h2></div>
           </div>
           <p style={{color:'var(--ink-2)', maxWidth:660, margin:'-6px 0 22px', lineHeight:1.6}}>{t.comboLead}</p>
-          <div className="grid grid--2">
+          <div className="grid grid--2" style={{alignItems:'stretch'}}>
             {combos.map(c=>{
               const total = c.legs.reduce((p,l)=>p*l.odd,1);
               return (
-                <div className="panel" key={c.id}>
+                <div className="panel" key={c.id} style={{display:'flex', flexDirection:'column'}}>
                   <div className="combo__head" style={{borderBottom:'1px solid var(--line)'}}>
                     <div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.2rem'}}>{c.name}</div>
                     <span className="tag tag--court">{t.comboConf} {c.conf}%</span>
                   </div>
-                  <div style={{padding:'4px 16px'}}>
+                  <div style={{padding:'4px 16px', flex:1}}>
                     {c.legs.map((l,i)=>(
-                      <div key={i} style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, padding:'12px 0', borderBottom: i<c.legs.length-1?'1px solid var(--line-soft)':'none'}}>
+                      <div key={i} style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, padding:'13px 0', borderBottom: i<c.legs.length-1?'1px solid var(--line-soft)':'none'}}>
                         <div style={{minWidth:0}}>
                           <div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.95rem'}}>{l.pick}</div>
                           <div style={{display:'flex', alignItems:'center', gap:6, marginTop:4}}><span className="vb-sub">{l.match} · </span><Book id={l.book} size={16} /></div>
@@ -169,7 +169,7 @@ function Combos({ t, go }) {
                       </div>
                     ))}
                   </div>
-                  <div className="combo__foot">
+                  <div className="combo__foot" style={{marginTop:'auto'}}>
                     <span style={{fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--muted)'}}>{c.legs.length} {t.comboLegs} · {t.comboTotal}</span>
                     <span style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.3rem', color:'var(--lime-deep)'}}>{total.toFixed(2)}</span>
                   </div>

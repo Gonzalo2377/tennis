@@ -65,14 +65,28 @@ function App() {
 /* ---- load the robot's daily feed (cached locally to save API credits) ---- */
 function applyDaily(d){
   if(!d) return;
+  // dedup helpers (same normalization as the robot: ignore initials, accents, "Gana", date)
+  const normSide=s=>(s||'').trim().replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const normMatch=m=>(m||'').split(/[–\-]/).map(normSide).filter(Boolean).sort().join('|');
+  const normPick=s=>(s||'').replace(/^gana\s+/i,'').replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const dq=(arr,key)=>{const s=new Set();return (arr||[]).filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
+  const pkey=p=>`${normMatch(p.match)}|${normPick(p.pickLabel||p.pick)}`;
+  const rkey=r=>`${normMatch(r.match)}|${normPick(r.pick||r.pickLabel)}`;
+  const ckey=c=>(c.legs||[]).map(l=>`${normMatch(l.match)}|${normPick(l.pick)}`).sort().join('+');
+  const akey=a=>normMatch(a.match);
+
   if(d.PLAYERS) window.PLAYERS = d.PLAYERS;
   if(d.BOOKS)   window.BOOKS   = d.BOOKS;
   if(Array.isArray(d.MATCHES) && d.MATCHES.length) window.MATCHES = d.MATCHES;
   if(Array.isArray(d.COMBOS))  window.COMBOS  = d.COMBOS;
-  if(Array.isArray(d.RECORD) && d.RECORD.length) window.RECORD = d.RECORD;
-  if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = d.COMBO_RECORD;
-  if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = d.ARB_RECORD;
-  if(Array.isArray(d.PENDING)) window.PENDING = d.PENDING;
+  if(Array.isArray(d.RECORD) && d.RECORD.length) window.RECORD = dq(d.RECORD, rkey);
+  if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = dq(d.COMBO_RECORD, ckey);
+  if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = dq(d.ARB_RECORD, akey);
+  if(Array.isArray(d.PENDING)) {
+    // dedup AND drop any pending already settled in the record
+    const done = new Set((d.RECORD||[]).map(rkey));
+    window.PENDING = dq(d.PENDING, pkey).filter(p=>!done.has(pkey(p)));
+  }
   if(d.meta) window.DAILY.meta = d.meta;
 }
 
