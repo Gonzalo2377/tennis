@@ -1,0 +1,70 @@
+/* ============================================================
+   ACEVALUE — ratings de jugadores (modelo Elo + superficie)
+   ------------------------------------------------------------
+   clave = APELLIDO normalizado (minúsculas, sin acentos ni espacios).
+   elo  = fuerza base (~1500 flojo · ~2200 top)
+   h/c/g = ajuste por superficie (hard / clay / grass), sumado al elo.
+   Edita/añade jugadores libremente. Los que no estén aquí usan el
+   mercado como referencia (sin sesgo del modelo).
+   ============================================================ */
+module.exports = {
+  // ---- ATP ----
+  sinner:        { elo:2180, h:45,  c:15,  g:15  },
+  alcaraz:       { elo:2150, h:25,  c:55,  g:45  },
+  djokovic:      { elo:2060, h:50,  c:30,  g:50  },
+  zverev:        { elo:2010, h:30,  c:45,  g:0   },
+  medvedev:      { elo:1985, h:55,  c:-35, g:5   },
+  rublev:        { elo:1940, h:30,  c:20,  g:-5  },
+  ruud:          { elo:1915, h:0,   c:65,  g:-25 },
+  fritz:         { elo:1925, h:40,  c:-20, g:35  },
+  hurkacz:       { elo:1900, h:30,  c:-15, g:45  },
+  deminaur:      { elo:1905, h:25,  c:10,  g:30  },
+  rune:          { elo:1885, h:20,  c:35,  g:0   },
+  tsitsipas:     { elo:1880, h:10,  c:55,  g:0   },
+  dimitrov:      { elo:1850, h:30,  c:5,   g:35  },
+  musetti:       { elo:1870, h:0,   c:55,  g:20  },
+  paul:          { elo:1850, h:30,  c:0,   g:25  },
+  shelton:       { elo:1840, h:35,  c:0,   g:25  },
+  humbert:       { elo:1820, h:25,  c:-10, g:30  },
+  cerundolo:     { elo:1810, h:0,   c:55,  g:-20 },
+  augeraliassime:{ elo:1830, h:30,  c:5,   g:25  },
+  berrettini:    { elo:1820, h:10,  c:15,  g:55  },
+  arnaldi:       { elo:1770, h:0,   c:40,  g:-10 },
+  cobolli:       { elo:1780, h:5,   c:40,  g:0   },
+  tiafoe:        { elo:1830, h:30,  c:-5,  g:25  },
+  khachanov:     { elo:1820, h:25,  c:15,  g:5   },
+  bublik:        { elo:1790, h:25,  c:-10, g:40  },
+  lehecka:       { elo:1810, h:30,  c:10,  g:15  },
+  machac:        { elo:1800, h:30,  c:10,  g:5   },
+  griekspoor:    { elo:1770, h:20,  c:-5,  g:25  },
+  norrie:        { elo:1780, h:10,  c:15,  g:35  },
+  korda:         { elo:1810, h:30,  c:5,   g:20  },
+  paire:         { elo:1650, h:0,   c:10,  g:5   },
+  // ---- WTA ----
+  swiatek:       { elo:2120, h:30,  c:90,  g:0   },
+  sabalenka:     { elo:2110, h:55,  c:25,  g:25  },
+  gauff:         { elo:2010, h:35,  c:40,  g:15  },
+  rybakina:      { elo:2000, h:40,  c:10,  g:55  },
+  paolini:       { elo:1900, h:10,  c:45,  g:25  },
+  zheng:         { elo:1900, h:40,  c:10,  g:10  },
+  pegula:        { elo:1910, h:45,  c:-10, g:25  },
+  vondrousova:   { elo:1880, h:10,  c:20,  g:55  },
+  kalinskaya:    { elo:1820, h:25,  c:10,  g:10  },
+  kostyuk:       { elo:1830, h:20,  c:35,  g:5   },
+  andreeva:      { elo:1900, h:25,  c:45,  g:10  },
+  navarro:       { elo:1850, h:30,  c:10,  g:15  },
+  collins:       { elo:1840, h:40,  c:15,  g:10  },
+  keys:          { elo:1860, h:40,  c:0,   g:40  },
+  ostapenko:     { elo:1840, h:25,  c:5,   g:40  },
+  kasatkina:     { elo:1850, h:20,  c:35,  g:10  },
+  jabeur:        { elo:1830, h:5,   c:30,  g:45  },
+  krejcikova:    { elo:1840, h:15,  c:40,  g:40  },
+  shnaider:      { elo:1810, h:25,  c:25,  g:10  },
+  chwalinska:    { elo:1650, h:0,   c:25,  g:-10 },
+  svitolina:     { elo:1850, h:20,  c:35,  g:30  },
+  haddadmaia:    { elo:1820, h:5,   c:45,  g:10  },
+  samsonova:     { elo:1820, h:30,  c:-5,  g:30  },
+  alexandrova:   { elo:1820, h:35,  c:-10, g:25  },
+  muchova:       { elo:1870, h:30,  c:30,  g:25  },
+  fernandez:     { elo:1800, h:20,  c:25,  g:5   },
+};

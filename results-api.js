@@ -1,0 +1,41 @@
+/* ============================================================
+   ACEVALUE — resultados + fotos vía api-tennis.com
+   ------------------------------------------------------------
+   Una sola fuente nos da: partidos terminados con su ganador
+   (para liquidar picks/combis/surebets) y la foto de cada
+   jugador (para los avatares).
+   Requiere la variable de entorno APITENNIS_KEY.
+   ============================================================ */
+const HOST = 'https://api.api-tennis.com/tennis/';
+
+function surnameKey(name){ return (name||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+
+async function get(method, key, params){
+  const qs = new URLSearchParams(Object.assign({ method, APIkey:key }, params)).toString();
+  const r = await fetch(HOST + '?' + qs);
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}
+
+/* returns { winners:[surnameKey,...], logos:{ surnameKey: url } } for the last `days` */
+module.exports = async function apiTennis(key, days){
+  if (!key) return { winners:[], logos:{} };
+  const fmt = d => d.toISOString().slice(0,10);
+  const start = fmt(new Date(Date.now() - (days||5)*24*3600*1000));
+  const stop  = fmt(new Date(Date.now() + 24*3600*1000));   // include today
+  let j;
+  try { j = await get('get_fixtures', key, { date_start:start, date_stop:stop }); }
+  catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], logos:{} }; }
+  const rows = (j && j.result) || [];
+  const winners = [], logos = {};
+  rows.forEach(ev => {
+    const p1 = ev.event_first_player, p2 = ev.event_second_player;
+    if (ev.event_first_player_logo)  logos[surnameKey(p1)] = ev.event_first_player_logo;
+    if (ev.event_second_player_logo) logos[surnameKey(p2)] = ev.event_second_player_logo;
+    if ((ev.event_status||'') !== 'Finished') return;
+    const w = ev.event_winner === 'First Player' ? p1 : ev.event_winner === 'Second Player' ? p2 : null;
+    if (w) winners.push(surnameKey(w));
+  });
+  console.log(`· api-tennis: ${rows.length} fixtures · ${winners.length} terminados · ${Object.keys(logos).length} fotos`);
+  return { winners, logos };
+};
