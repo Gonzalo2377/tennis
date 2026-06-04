@@ -371,6 +371,13 @@ async function main(){
   // housekeeping
   const EXP=5*24*3600*1000;
   PENDING=PENDING.filter(p=>!p.ts || (Date.now()-p.ts)<EXP);
+  // FINAL dedup pass — collapse any duplicate that slipped in via seed/snapshot regardless of order
+  PENDING=dedupe(PENDING,pendKey);
+  RECORD=dedupe(RECORD,sSig);
+  COMBO_PENDING=dedupe(COMBO_PENDING,cKey); COMBO_RECORD=dedupe(COMBO_RECORD,cKey);
+  ARB_PENDING=dedupe(ARB_PENDING,aKey); ARB_RECORD=dedupe(ARB_RECORD,aKey);
+  // and never keep a pending that's already settled in the record
+  { const done=new Set(RECORD.map(sSig)); PENDING=PENDING.filter(p=>!done.has(pendKey(p))); }
   RECORD=RECORD.slice(0,60); COMBO_RECORD=COMBO_RECORD.slice(0,40); ARB_RECORD=ARB_RECORD.slice(0,40);
   MATCHES.forEach(m=>{ delete m._commence; delete m._sport; });
 
