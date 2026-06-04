@@ -1,20 +1,20 @@
 {
   "meta": {
-    "updatedAt": "2026-06-04T17:58:03.945Z",
+    "updatedAt": "2026-06-04T18:02:55.088Z",
     "source": "the-odds-api",
     "sport": "tennis",
-    "regions": "eu,uk",
+    "regions": "eu",
     "market": "h2h",
     "matches": 3,
     "valuePicks": 2,
-    "books": 39,
+    "books": 25,
     "stale": false,
     "model": {
       "players": 57
     },
     "credits": {
-      "remaining": 273,
-      "used": 227
+      "remaining": 267,
+      "used": 233
     }
   },
   "PLAYERS": {
@@ -86,154 +86,94 @@
     }
   },
   "BOOKS": {
-    "casumo": {
-      "id": "casumo",
-      "name": "Casumo",
-      "abbr": "CAS",
-      "color": "#e23b2e"
-    },
     "unibet_se": {
       "id": "unibet_se",
       "name": "Unibet (SE)",
       "abbr": "UNI",
-      "color": "#0a7d3c"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas",
-      "abbr": "LEO",
-      "color": "#0a2d6e"
+      "color": "#e23b2e"
     },
     "leovegas_se": {
       "id": "leovegas_se",
       "name": "LeoVegas (SE)",
       "abbr": "LEO",
-      "color": "#14805e"
-    },
-    "livescorebet": {
-      "id": "livescorebet",
-      "name": "LiveScore Bet",
-      "abbr": "LIV",
-      "color": "#ffb000"
-    },
-    "virginbet": {
-      "id": "virginbet",
-      "name": "Virgin Bet",
-      "abbr": "VIR",
-      "color": "#d11a2a"
+      "color": "#0a7d3c"
     },
     "unibet_nl": {
       "id": "unibet_nl",
       "name": "Unibet (NL)",
       "abbr": "UNI",
-      "color": "#0a6cff"
+      "color": "#0a2d6e"
     },
     "pmu_fr": {
       "id": "pmu_fr",
       "name": "PMU (FR)",
       "abbr": "PMU",
-      "color": "#1c1c1c"
-    },
-    "grosvenor": {
-      "id": "grosvenor",
-      "name": "Grosvenor",
-      "abbr": "GRO",
-      "color": "#7a4ddb"
+      "color": "#14805e"
     },
     "marathonbet": {
       "id": "marathonbet",
       "name": "Marathon Bet",
       "abbr": "MAR",
-      "color": "#d9730d"
+      "color": "#ffb000"
     },
     "gtbets": {
       "id": "gtbets",
       "name": "GTbets",
       "abbr": "GTB",
-      "color": "#e23b2e"
+      "color": "#d11a2a"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "Pinnacle",
       "abbr": "PIN",
-      "color": "#0a7d3c"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "Betway",
-      "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#0a6cff"
     },
     "unibet_fr": {
       "id": "unibet_fr",
       "name": "Unibet (FR)",
       "abbr": "UNI",
-      "color": "#14805e"
-    },
-    "unibet_uk": {
-      "id": "unibet_uk",
-      "name": "Unibet (UK)",
-      "abbr": "UNI",
-      "color": "#ffb000"
+      "color": "#1c1c1c"
     },
     "betsson": {
       "id": "betsson",
       "name": "Betsson",
       "abbr": "BET",
-      "color": "#d11a2a"
+      "color": "#7a4ddb"
     },
     "winamax_de": {
       "id": "winamax_de",
       "name": "Winamax (DE)",
       "abbr": "WIN",
-      "color": "#0a6cff"
+      "color": "#d9730d"
     },
     "winamax_fr": {
       "id": "winamax_fr",
       "name": "Winamax (FR)",
       "abbr": "WIN",
-      "color": "#1c1c1c"
+      "color": "#e23b2e"
     },
     "nordicbet": {
       "id": "nordicbet",
       "name": "Nordic Bet",
       "abbr": "NOR",
-      "color": "#7a4ddb"
-    },
-    "smarkets": {
-      "id": "smarkets",
-      "name": "Smarkets",
-      "abbr": "SMA",
-      "color": "#d9730d"
+      "color": "#0a7d3c"
     },
     "betclic_fr": {
       "id": "betclic_fr",
       "name": "Betclic (FR)",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#0a2d6e"
     },
     "codere_it": {
       "id": "codere_it",
       "name": "Codere (IT)",
       "abbr": "COD",
-      "color": "#0a7d3c"
+      "color": "#14805e"
     },
     "mybookieag": {
       "id": "mybookieag",
       "name": "MyBookie.ag",
       "abbr": "MYB",
-      "color": "#0a2d6e"
-    },
-    "ladbrokes_uk": {
-      "id": "ladbrokes_uk",
-      "name": "Ladbrokes",
-      "abbr": "LAD",
-      "color": "#14805e"
-    },
-    "coral": {
-      "id": "coral",
-      "name": "Coral",
-      "abbr": "COR",
       "color": "#ffb000"
     },
     "onexbet": {
@@ -254,71 +194,47 @@
       "abbr": "MAT",
       "color": "#1c1c1c"
     },
-    "betfair_sb_uk": {
-      "id": "betfair_sb_uk",
-      "name": "Betfair Sportsbook",
-      "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "betvictor": {
-      "id": "betvictor",
-      "name": "Bet Victor",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
     "betfair_ex_eu": {
       "id": "betfair_ex_eu",
       "name": "Betfair",
       "abbr": "BET",
-      "color": "#e23b2e"
-    },
-    "betfair_ex_uk": {
-      "id": "betfair_ex_uk",
-      "name": "Betfair",
-      "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "paddypower": {
-      "id": "paddypower",
-      "name": "Paddy Power",
-      "abbr": "PAD",
-      "color": "#0a2d6e"
+      "color": "#7a4ddb"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "William Hill",
       "abbr": "WIL",
-      "color": "#14805e"
+      "color": "#d9730d"
     },
     "betanysports": {
       "id": "betanysports",
       "name": "BetAnything",
       "abbr": "BET",
-      "color": "#ffb000"
+      "color": "#e23b2e"
     },
     "tipico_de": {
       "id": "tipico_de",
       "name": "Tipico",
       "abbr": "TIP",
-      "color": "#d11a2a"
+      "color": "#0a7d3c"
     },
     "coolbet": {
       "id": "coolbet",
       "name": "Coolbet",
       "abbr": "COO",
-      "color": "#0a6cff"
+      "color": "#0a2d6e"
     },
     "everygame": {
       "id": "everygame",
       "name": "Everygame",
       "abbr": "EVE",
-      "color": "#1c1c1c"
+      "color": "#14805e"
     },
     "sport888": {
       "id": "sport888",
       "name": "888sport",
       "abbr": "888",
-      "color": "#7a4ddb"
+      "color": "#ffb000"
     }
   },
   "MATCHES": [
@@ -333,39 +249,25 @@
       "away": "alexanderzverev",
       "odds": {
         "home": {
-          "casumo": 4.3,
           "unibet_se": 4.3,
-          "leovegas": 4.3,
           "leovegas_se": 4.3,
-          "livescorebet": 4.2,
-          "virginbet": 4.2,
           "unibet_nl": 4.3,
           "pmu_fr": 4.35,
-          "grosvenor": 4.3,
           "marathonbet": 4.05,
           "gtbets": 4.03,
           "pinnacle": 4.3,
-          "betway": 3.75,
           "unibet_fr": 4.1,
-          "unibet_uk": 3.9,
           "betsson": 4,
           "winamax_de": 4.2,
           "winamax_fr": 4.2,
           "nordicbet": 4,
-          "smarkets": 4.2,
           "betclic_fr": 4.15,
           "codere_it": 3.9,
           "mybookieag": 4,
-          "ladbrokes_uk": 3.75,
-          "coral": 3.75,
           "onexbet": 4.11,
           "betonlineag": 4.13,
           "matchbook": 4.3,
-          "betfair_sb_uk": 3.75,
-          "betvictor": 4,
           "betfair_ex_eu": 4.3,
-          "betfair_ex_uk": 4.3,
-          "paddypower": 4,
           "williamhill": 3.75,
           "betanysports": 4.1,
           "tipico_de": 4.1,
@@ -373,39 +275,25 @@
           "everygame": 4.2
         },
         "away": {
-          "casumo": 1.24,
           "unibet_se": 1.24,
-          "leovegas": 1.24,
           "leovegas_se": 1.24,
-          "livescorebet": 1.22,
-          "virginbet": 1.22,
           "unibet_nl": 1.24,
           "pmu_fr": 1.24,
-          "grosvenor": 1.24,
           "marathonbet": 1.26,
           "gtbets": 1.25,
           "pinnacle": 1.26,
-          "betway": 1.25,
           "unibet_fr": 1.26,
-          "unibet_uk": 1.24,
           "betsson": 1.25,
           "winamax_de": 1.25,
           "winamax_fr": 1.24,
           "nordicbet": 1.25,
-          "smarkets": 1.28,
           "betclic_fr": 1.25,
           "codere_it": 1.24,
           "mybookieag": 1.25,
-          "ladbrokes_uk": 1.25,
-          "coral": 1.25,
           "onexbet": 1.28,
           "betonlineag": 1.25,
           "matchbook": 1.3,
-          "betfair_sb_uk": 1.25,
-          "betvictor": 1.25,
           "betfair_ex_eu": 1.3,
-          "betfair_ex_uk": 1.3,
-          "paddypower": 1.22,
           "williamhill": 1.25,
           "betanysports": 1.25,
           "tipico_de": 1.22,
@@ -431,34 +319,20 @@
           "nordicbet": 2.95,
           "gtbets": 3,
           "betfair_ex_eu": 3.1,
-          "betway": 2.75,
           "winamax_fr": 2.95,
           "winamax_de": 3,
-          "smarkets": 3.05,
-          "betfair_ex_uk": 3.1,
           "codere_it": 2.9,
           "betsson": 2.95,
-          "paddypower": 2.88,
           "unibet_fr": 3,
           "coolbet": 3.05,
           "betclic_fr": 2.95,
-          "unibet_uk": 2.95,
           "mybookieag": 2.96,
-          "betvictor": 2.75,
           "betonlineag": 3.07,
           "matchbook": 3.1,
-          "betfair_sb_uk": 2.88,
-          "ladbrokes_uk": 2.87,
-          "coral": 2.87,
           "tipico_de": 2.9,
           "sport888": 2.9,
-          "leovegas": 2.9,
-          "grosvenor": 2.9,
-          "livescorebet": 2.8,
           "leovegas_se": 2.9,
           "pmu_fr": 2.8,
-          "virginbet": 2.8,
-          "casumo": 2.9,
           "unibet_nl": 2.9,
           "unibet_se": 2.9,
           "betanysports": 3,
@@ -472,34 +346,20 @@
           "nordicbet": 1.4,
           "gtbets": 1.42,
           "betfair_ex_eu": 1.46,
-          "betway": 1.4,
           "winamax_fr": 1.42,
           "winamax_de": 1.42,
-          "smarkets": 1.43,
-          "betfair_ex_uk": 1.46,
           "codere_it": 1.39,
           "betsson": 1.4,
-          "paddypower": 1.4,
           "unibet_fr": 1.41,
           "coolbet": 1.42,
           "betclic_fr": 1.42,
-          "unibet_uk": 1.4,
           "mybookieag": 1.4,
-          "betvictor": 1.4,
           "betonlineag": 1.4,
           "matchbook": 1.46,
-          "betfair_sb_uk": 1.4,
-          "ladbrokes_uk": 1.4,
-          "coral": 1.36,
           "tipico_de": 1.4,
           "sport888": 1.4,
-          "leovegas": 1.43,
-          "grosvenor": 1.43,
-          "livescorebet": 1.41,
           "leovegas_se": 1.43,
           "pmu_fr": 1.41,
-          "virginbet": 1.41,
-          "casumo": 1.43,
           "unibet_nl": 1.43,
           "unibet_se": 1.43,
           "betanysports": 1.42,
@@ -528,69 +388,47 @@
       "odds": {
         "home": {
           "leovegas_se": 4.3,
-          "livescorebet": 4.2,
           "unibet_se": 4.3,
           "pmu_fr": 4.2,
-          "leovegas": 4.3,
-          "casumo": 4.3,
-          "virginbet": 4.2,
           "unibet_nl": 4.3,
-          "grosvenor": 4.3,
-          "betfair_ex_uk": 4.5,
-          "paddypower": 4.33,
-          "betway": 4,
-          "coolbet": 4.5,
+          "coolbet": 4.35,
           "betfair_ex_eu": 4.5,
-          "matchbook": 4.3,
+          "matchbook": 4.2,
           "gtbets": 4.2,
-          "onexbet": 4.54,
-          "marathonbet": 4.2,
-          "betvictor": 3.75,
-          "betonlineag": 3.89,
-          "betsson": 4.23,
-          "nordicbet": 4.23,
-          "betclic_fr": 3.8,
-          "unibet_fr": 3.65,
-          "winamax_fr": 3.7,
-          "codere_it": 4.2,
+          "onexbet": 4.57,
+          "marathonbet": 4.05,
+          "betonlineag": 4.34,
+          "betsson": 4.12,
+          "nordicbet": 4.12,
+          "betclic_fr": 3.75,
+          "unibet_fr": 3.6,
+          "winamax_fr": 3.65,
+          "codere_it": 4.1,
           "winamax_de": 4.2,
-          "mybookieag": 4.1,
-          "pinnacle": 4.52,
-          "coral": 3.9,
-          "ladbrokes_uk": 3.9
+          "mybookieag": 4.2,
+          "pinnacle": 4.46
         },
         "away": {
           "leovegas_se": 1.22,
-          "livescorebet": 1.22,
           "unibet_se": 1.22,
           "pmu_fr": 1.22,
-          "leovegas": 1.22,
-          "casumo": 1.22,
-          "virginbet": 1.22,
           "unibet_nl": 1.22,
-          "grosvenor": 1.22,
-          "betfair_ex_uk": 1.27,
-          "paddypower": 1.2,
-          "betway": 1.22,
-          "coolbet": 1.24,
+          "coolbet": 1.25,
           "betfair_ex_eu": 1.27,
           "matchbook": 1.24,
           "gtbets": 1.23,
           "onexbet": 1.24,
-          "marathonbet": 1.25,
-          "betvictor": 1.22,
-          "betonlineag": 1.28,
-          "betsson": 1.21,
-          "nordicbet": 1.21,
-          "betclic_fr": 1.19,
-          "unibet_fr": 1.18,
-          "winamax_fr": 1.18,
+          "marathonbet": 1.26,
+          "betonlineag": 1.24,
+          "betsson": 1.22,
+          "nordicbet": 1.22,
+          "betclic_fr": 1.2,
+          "unibet_fr": 1.19,
+          "winamax_fr": 1.19,
           "codere_it": 1.22,
-          "winamax_de": 1.22,
-          "mybookieag": 1.23,
-          "pinnacle": 1.24,
-          "coral": 1.22,
-          "ladbrokes_uk": 1.22
+          "winamax_de": 1.23,
+          "mybookieag": 1.22,
+          "pinnacle": 1.24
         }
       },
       "model": {
@@ -626,8 +464,8 @@
           "side": "away",
           "match": "M. Chwalinska – M. Andreeva",
           "pick": "Gana M. Andreeva",
-          "odd": 1.28,
-          "book": "betonlineag"
+          "odd": 1.27,
+          "book": "betfair_ex_eu"
         }
       ]
     }
