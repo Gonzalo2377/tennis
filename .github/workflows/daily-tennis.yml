@@ -8,7 +8,12 @@ on:
   schedule:
     - cron: '17 7 * * *'   # 07:17 UTC (~09:17 Madrid). Minuto "raro": las horas
                             # en punto van saturadas y GitHub retrasa más.
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      reset:
+        description: 'Vaciar historial y empezar limpio (escribe 1)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -25,6 +30,7 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # resultados + fotos (api-tennis.com)
+          RESET: ${{ github.event.inputs.reset }}       # pon 1 al lanzar a mano para vaciar historial
           ODDS_SPORT: auto          # descubre torneos ATP/WTA activos
           ODDS_MAX: '6'
           ODDS_REGIONS: eu,uk       # eu (Winamax, DAZNbet, Unibet…) + uk (Bet365, Betfair, William Hill…)
