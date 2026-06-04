@@ -298,19 +298,22 @@ async function main(){
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });
-      // settle singles: manual winners first, then API scores. Never settle a match still in the future.
+      // settleable once the match has STARTED; if there's no confirmed result yet it just stays pending.
+      const playedEnough = ts => !ts || ts <= Date.now();
+      // settle singles: only if played; manual winners first, then API scores.
       const still=[];
       PENDING.forEach(p=>{
-        if (p.ts && p.ts > Date.now()){ still.push(p); return; }     // not played yet → keep waiting
+        if (!playedEnough(p.ts)){ still.push(p); return; }          // not finished yet → keep waiting
         let w = manualPickResult(p, manualWinners);
         if (w===null) w = winnerNameFor(scores, p);
         if (w===null){ still.push(p); return; }
         RECORD.unshift({ id:p.id, date:p.date, match:p.match, pick:p.pickLabel, odd:p.odd, book:p.book, result: w?'W':'L' });
       });
       PENDING=still;
-      // settle combos
+      // settle combos — only when EVERY leg has plausibly finished
       const cstill=[];
       COMBO_PENDING.forEach(c=>{
+        if (!c.legs.every(l=>playedEnough(l.ts))){ cstill.push(c); return; }   // some leg not finished → keep
         const res=c.legs.map(l=>{ let r=manualLegResult(l, manualWinners); return r===null ? legWin(scores,l) : r; });
         if (res.some(r=>r===null)){ cstill.push(c); return; }
         const won=res.every(Boolean);
@@ -318,9 +321,10 @@ async function main(){
           legs:c.legs.map((l,i)=>({ match:l.match, pick:l.pick, odd:l.odd, win:res[i] })) });
       });
       COMBO_PENDING=cstill;
-      // settle surebets: profit is locked when bet; once the match is played → realized history
+      // settle surebets — only once the match has plausibly finished
       const astill=[];
       ARB_PENDING.forEach(a=>{
+        if (!playedEnough(a.ts)){ astill.push(a); return; }         // not finished yet → keep
         const done = matchFinished(scores, a.homeName, a.awayName) || manualMatchDone(a.homeName, a.awayName, manualWinners);
         if (!done){ astill.push(a); return; }
         ARB_RECORD.unshift({ date:a.date, match:a.match, marginPct:a.marginPct, profit:a.profit, legs:a.legs });
@@ -364,6 +368,7 @@ async function main(){
     const inv=a.legs.reduce((s,l)=>s+1/l.price,0);
     const profit=+((REF/inv)-REF).toFixed(2);
     const rec={ date:today, match:`${PLAYERS[m.home].name} – ${PLAYERS[m.away].name}`, marginPct:+a.marginPct.toFixed(2), profit,
+      ts:new Date(m._commence).getTime(),
       homeName:PLAYERS[m.home].name, awayName:PLAYERS[m.away].name, sport:m._sport,
       legs:a.legs.map(l=>({ pick:label(m,l.k), odd:+l.price.toFixed(2), book:l.book })) };
     if (haveArb.has(aKey(rec))) return;
@@ -460,9 +465,10 @@ async function scoresOnly(){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
       Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
     }
-    const still=[]; PENDING.forEach(p=>{ if(p.ts&&p.ts>Date.now()){still.push(p);return;} let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
-    const cstill=[]; COMBO_PENDING.forEach(c=>{ const res=c.legs.map(l=>{ let r=manualLegResult(l,manualWinners); return r===null?legWin(scores,l):r; }); if(res.some(r=>r===null)){cstill.push(c);return;} COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2),result:res.every(Boolean)?'W':'L',legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:l.odd,win:res[i]}))}); }); COMBO_PENDING=cstill;
-    const astill=[]; ARB_PENDING.forEach(a=>{ const done=matchFinished(scores,a.homeName,a.awayName)||manualMatchDone(a.homeName,a.awayName,manualWinners); if(!done){astill.push(a);return;} ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
+    const pe=ts=>!ts||ts<=Date.now();
+    const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
+    const cstill=[]; COMBO_PENDING.forEach(c=>{ if(!c.legs.every(l=>pe(l.ts))){cstill.push(c);return;} const res=c.legs.map(l=>{ let r=manualLegResult(l,manualWinners); return r===null?legWin(scores,l):r; }); if(res.some(r=>r===null)){cstill.push(c);return;} COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2),result:res.every(Boolean)?'W':'L',legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:l.odd,win:res[i]}))}); }); COMBO_PENDING=cstill;
+    const astill=[]; ARB_PENDING.forEach(a=>{ if(!pe(a.ts)){astill.push(a);return;} const done=matchFinished(scores,a.homeName,a.awayName)||manualMatchDone(a.homeName,a.awayName,manualWinners); if(!done){astill.push(a);return;} ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
   } catch(e){ console.log('· scores-only: error', e.message); }
   d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD.slice(0,40); d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING;
   if(d.meta) d.meta.updatedAt=new Date().toISOString();

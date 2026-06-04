@@ -174,9 +174,15 @@ window.COMBOS = [
 
 /* ---- TRACK RECORD (1u flat) ---- */
 window.RECORD = [
+    { date:'04 JUN', match:'M. Kostyuk – M. Andreeva', pick:'Gana M. Andreeva', odd:2.20, book:'betfair', result:'W' },
+    { date:'04 JUN', match:'D. Shnaider – M. Chwalinska', pick:'Gana D. Shnaider', odd:1.59, book:'bet365', result:'L' },
     { date:'03 JUN', match:'Kalinskaya – Chwalinska', pick:'Gana A. Kalinskaya', odd:2.00, book:'matchbook', result:'L' },
 ];
-window.COMBO_RECORD = [];
+window.COMBO_RECORD = [
+    { date:'04 JUN', name:'Combinada del Día', totalOdd:4.93, result:'L',
+      legs:[ {match:'M. Arnaldi – F. Cobolli', pick:'Gana M. Arnaldi', odd:3.10, win:true},
+             {match:'D. Shnaider – M. Chwalinska', pick:'Gana D. Shnaider', odd:1.59, win:false} ] },
+];
 window.PENDING = [];
 /* SIN RIESGO — historial de surebets capturados (beneficio garantizado a 100€ de referencia) */
 window.ARB_RECORD = [
