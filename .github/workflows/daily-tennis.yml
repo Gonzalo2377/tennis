@@ -32,8 +32,8 @@ jobs:
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # resultados + fotos (api-tennis.com)
           RESET: ${{ github.event.inputs.reset }}       # pon 1 al lanzar a mano para vaciar historial
           ODDS_SPORT: auto          # descubre torneos ATP/WTA activos
-          ODDS_MAX: '6'
-          ODDS_REGIONS: eu,uk       # eu (Winamax, DAZNbet, Unibet…) + uk (Bet365, Betfair, William Hill…)
+          ODDS_MAX: '12'
+          ODDS_REGIONS: eu       # eu (Winamax, DAZNbet, Unibet…) + uk (Bet365, Betfair, William Hill…)
           ODDS_WINDOW_HOURS: '96'   # 4 días hacia delante
         run: node robot/fetch-daily.js
       - name: Commit si hay cambios
