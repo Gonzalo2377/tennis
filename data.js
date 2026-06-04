@@ -174,37 +174,14 @@ window.COMBOS = [
 
 /* ---- TRACK RECORD (1u flat) ---- */
 window.RECORD = [
-    { date:'02 JUN', match:'Rune – Cerúndolo', pick:'Gana Rune', odd:1.62, book:'pinnacle', result:'W' },
-    { date:'02 JUN', match:'Pegula – Kasatkina', pick:'Gana Pegula', odd:1.48, book:'bet365', result:'W' },
-    { date:'01 JUN', match:'Tsitsipas – Humbert', pick:'Gana Humbert', odd:2.05, book:'unibet', result:'L' },
-    { date:'01 JUN', match:'Vondroušová – Kvitová', pick:'Gana Vondroušová', odd:1.74, book:'onexbet', result:'W' },
-    { date:'31 MAY', match:'De Miñaur – Shelton', pick:'Gana Shelton', odd:1.90, book:'pinnacle', result:'W' },
-    { date:'31 MAY', match:'Collins – Navarro', pick:'Gana Navarro', odd:1.55, book:'bet365', result:'L' },
-    { date:'30 MAY', match:'Musetti – Cobolli', pick:'Gana Musetti', odd:1.43, book:'unibet', result:'W' },
-    { date:'30 MAY', match:'Keys – Ostapenko', pick:'Gana Keys', odd:1.80, book:'matchbook', result:'W' },
+    { date:'03 JUN', match:'Kalinskaya – Chwalinska', pick:'Gana A. Kalinskaya', odd:2.00, book:'matchbook', result:'L' },
 ];
-window.COMBO_RECORD = [
-    { date:'01 JUN', name:'Combinada del Día', totalOdd:2.58, result:'W',
-      legs:[ {match:'Sinner – Dimitrov', pick:'Gana Sinner', odd:1.25, win:true},
-             {match:'Pegula – Kasatkina', pick:'Gana Pegula', odd:1.48, win:true},
-             {match:'Rune – Cerúndolo', pick:'Gana Rune', odd:1.39, win:true} ] },
-    { date:'31 MAY', name:'Combinada Valor', totalOdd:4.10, result:'L',
-      legs:[ {match:'Shelton – De Miñaur', pick:'Gana Shelton', odd:1.90, win:true},
-             {match:'Navarro – Collins', pick:'Gana Navarro', odd:1.55, win:false},
-             {match:'Keys – Ostapenko', pick:'Gana Keys', odd:1.39, win:true} ] },
-];
-window.PENDING = [
-  { date:'HOY', match:'Sinner – Dimitrov', pickLabel:'Gana Sinner', odd:1.28, book:'pinnacle' },
-  { date:'HOY', match:'Sabalenka – Zheng', pickLabel:'Gana Sabalenka', odd:1.40, book:'bet365' },
-];
+window.COMBO_RECORD = [];
+window.PENDING = [];
 /* SIN RIESGO — historial de surebets capturados (beneficio garantizado a 100€ de referencia) */
 window.ARB_RECORD = [
-  { date:'02 JUN', match:'Medvedev – Fritz', marginPct:2.30, profit:2.30,
-    legs:[ {pick:'Gana Medvedev', odd:2.05, book:'bet365'}, {pick:'Gana Fritz', odd:2.10, book:'betfair'} ] },
-  { date:'01 JUN', match:'Rune – Cerúndolo', marginPct:1.65, profit:1.65,
-    legs:[ {pick:'Gana Rune', odd:1.66, book:'pinnacle'}, {pick:'Gana Cerúndolo', odd:2.58, book:'1xbet'} ] },
-  { date:'31 MAY', match:'Paolini – Zheng', marginPct:3.10, profit:3.10,
-    legs:[ {pick:'Gana Paolini', odd:2.12, book:'marathonbet'}, {pick:'Gana Zheng', odd:2.02, book:'unibet'} ] },
+  { date:'03 JUN', match:'Sabalenka – Shnaider', marginPct:1.42, profit:1.44,
+    legs:[ {pick:'Gana A. Sabalenka', odd:1.15, book:'gtbets'}, {pick:'Gana D. Shnaider', odd:8.60, book:'betfair'} ] },
 ];
 window.recordSummary = function(){
     const r = window.RECORD || [];
