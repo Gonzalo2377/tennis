@@ -320,11 +320,19 @@ async function main(){
 
   // snapshot today's picks + combos as pending
   const today=fmtDay(new Date().toISOString());
+  // already-settled signature (match+pick, ignoring date) → never re-add a pick that's in the record
+  const recSig=new Set(RECORD.map(r=>`${r.match}|${r.pick}`));
+  // clean any pending that's already settled (fixes the "EN JUEGO + GANADA" duplicate)
+  PENDING=PENDING.filter(p=>!recSig.has(`${p.match}|${p.pickLabel}`));
   const haveId=new Set([...PENDING.map(p=>p.id), ...RECORD.map(r=>r.id).filter(Boolean)]);
   valued.forEach(x=>{
     if (haveId.has(x.m.id)) return;
+    const match=`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`;
+    const pickLabel=label(x.m,x.v.pick.k);
+    if (recSig.has(`${match}|${pickLabel}`)) return;            // already in record → skip
+    if (new Date(x.m._commence).getTime() < Date.now()-30*60*1000) return;   // already started → don't track as fresh pick
     PENDING.push({ id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), date:fmtDay(x.m._commence),
-      match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pickKey:x.v.pick.k, pickLabel:label(x.m,x.v.pick.k),
+      match, pickKey:x.v.pick.k, pickLabel,
       odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book, homeName:PLAYERS[x.m.home].name, awayName:PLAYERS[x.m.away].name });
     haveId.add(x.m.id);
   });
