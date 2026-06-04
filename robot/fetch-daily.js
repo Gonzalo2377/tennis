@@ -17,6 +17,8 @@ const fs = require('fs');
 const path = require('path');
 
 const API_KEY = process.env.ODDS_API_KEY;
+const APITENNIS_KEY = process.env.APITENNIS_KEY || '';
+const apiTennis = require('./results-api.js');
 const REGIONS = process.env.ODDS_REGIONS || 'eu';
 const MARKET  = 'h2h';
 const MAX     = parseInt(process.env.ODDS_MAX || '10', 10);
@@ -91,11 +93,41 @@ function winnerOf(ev){
   return sa > sb ? a.name : b.name;
 }
 
+/* ---- manual results (results.json) — The Odds API no da resultados de tenis,
+   así que el dueño escribe los apellidos ganadores y liquidamos con eso. ---- */
+function surnameKey(name){ return (name||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+function loadManualWinners(){
+  try { const r = JSON.parse(fs.readFileSync(__dirname + '/results.json','utf8')); return (r.winners||[]).map(surnameKey).filter(Boolean); }
+  catch(e){ return []; }
+}
+function manualPickResult(p, winners){
+  if (!winners.length) return null;
+  const pick = surnameKey((p.pickLabel||'').replace(/^Gana\s+/i,''));
+  const home = surnameKey(p.homeName), away = surnameKey(p.awayName);
+  const opp = pick === home ? away : home;
+  if (winners.includes(pick)) return true;
+  if (opp && winners.includes(opp)) return false;
+  return null;
+}
+function manualLegResult(leg, winners){
+  if (!winners.length) return null;
+  const pick = surnameKey((leg.pick||'').replace(/^Gana\s+/i,''));
+  const names = (leg.match||'').split('–').map(s=>surnameKey(s));
+  const opp = names.find(n=>n && n!==pick);
+  if (winners.includes(pick)) return true;
+  if (opp && winners.includes(opp)) return false;
+  return null;
+}
+function manualMatchDone(homeName, awayName, winners){
+  if (!winners.length) return false;
+  return winners.includes(surnameKey(homeName)) || winners.includes(surnameKey(awayName));
+}
+
 /* ---- engine (mirror of data.js) ---- */
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
-function matchValue(m){ const mk=marketProbs(m); const MIN_P=0.35,MAX_ODD=3.20; const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(mk[k]*best.price-1)*100;const eligible=mk[k]>=MIN_P&&best.price<=MAX_ODD;return{k,p:mk[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible&&top.edge>=1.5}; }
+function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=3.20; const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD;return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible&&top.edge>=1.5}; }
 /* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
 function arbOf(m){ const legs=['home','away'].map(k=>{const best=bestPrice(m.odds[k]);return {k,book:best.book,price:best.price};}); const inv=legs.reduce((s,l)=>s+1/l.price,0); return { legs, marginPct:(1-inv)*100, hasArb:(1-inv)*100>0.01 }; }
 
@@ -148,6 +180,8 @@ function modelProbs(homeName, awayName, surface, formMap){
 }
 
 async function main(){
+  // SCORES-ONLY mode: cheap refresh that only settles finished picks/combos/surebets.
+  if ((process.env.ODDS_MODE||'').toLowerCase()==='scores'){ await scoresOnly(); return; }
   // load the self-updating Elo learned so far (seeded from ratings.js on first run)
   try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; } catch(e){}
   if (Object.keys(LIVE_ELO).length === 0) { for (const k in RATINGS) LIVE_ELO[k] = RATINGS[k].elo; console.log(`· Elo sembrado con ${Object.keys(LIVE_ELO).length} jugadores de ratings.js`); }
@@ -243,13 +277,22 @@ async function main(){
     const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport), ...keys].filter(Boolean))];
     if (need.length){
       const scores=await fetchScores(need);
+      const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
+      const manualWinners=[...loadManualWinners(), ...apiRes.winners];   // api-tennis + manual fallback
+      if (manualWinners.length) console.log(`· liquidando con ${manualWinners.length} ganadores (api-tennis + results.json)`);
+      // apply real player photos from api-tennis to our roster
+      if (Object.keys(apiRes.logos).length){
+        const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+        Object.values(PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
+      }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });
-      // settle singles: a pick wins if its player's shortName is among winners
+      // settle singles: manual winners first, then API scores
       const still=[];
       PENDING.forEach(p=>{
-        const w = winnerNameFor(scores, p);
+        let w = manualPickResult(p, manualWinners);
+        if (w===null) w = winnerNameFor(scores, p);
         if (w===null){ still.push(p); return; }
         RECORD.unshift({ id:p.id, date:p.date, match:p.match, pick:p.pickLabel, odd:p.odd, book:p.book, result: w?'W':'L' });
       });
@@ -257,7 +300,7 @@ async function main(){
       // settle combos
       const cstill=[];
       COMBO_PENDING.forEach(c=>{
-        const res=c.legs.map(l=>legWin(scores,l));
+        const res=c.legs.map(l=>{ let r=manualLegResult(l, manualWinners); return r===null ? legWin(scores,l) : r; });
         if (res.some(r=>r===null)){ cstill.push(c); return; }
         const won=res.every(Boolean);
         COMBO_RECORD.unshift({ date:c.date, name:c.name, totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2), result:won?'W':'L',
@@ -267,7 +310,8 @@ async function main(){
       // settle surebets: profit is locked when bet; once the match is played → realized history
       const astill=[];
       ARB_PENDING.forEach(a=>{
-        if (!matchFinished(scores, a.homeName, a.awayName)){ astill.push(a); return; }
+        const done = matchFinished(scores, a.homeName, a.awayName) || manualMatchDone(a.homeName, a.awayName, manualWinners);
+        if (!done){ astill.push(a); return; }
         ARB_RECORD.unshift({ date:a.date, match:a.match, marginPct:a.marginPct, profit:a.profit, legs:a.legs });
       });
       ARB_PENDING=astill;
@@ -371,6 +415,31 @@ function matchFinished(scores, homeName, awayName){
     if (players.some(x=>x===N(homeName)) && players.some(x=>x===N(awayName))) return true;
   }
   return false;
+}
+
+/* SCORES-ONLY mode: cheap midday refresh — only settles finished picks/combos/surebets. */
+async function scoresOnly(){
+  let d;
+  try { d = JSON.parse(fs.readFileSync(OUT,'utf8')); } catch(e){ console.log('· scores-only: no hay daily.json'); return; }
+  let RECORD=d.RECORD||[], PENDING=d.PENDING||[], COMBO_RECORD=d.COMBO_RECORD||[], COMBO_PENDING=d.COMBO_PENDING||[], ARB_RECORD=d.ARB_RECORD||[], ARB_PENDING=d.ARB_PENDING||[];
+  const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport)].filter(Boolean))];
+  if(!need.length){ console.log('· scores-only: nada pendiente'); return; }
+  try {
+    const scores=await fetchScores(need);
+    const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
+    const manualWinners=[...loadManualWinners(), ...apiRes.winners];
+    if (d.PLAYERS && Object.keys(apiRes.logos).length){
+      const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+      Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
+    }
+    const still=[]; PENDING.forEach(p=>{ let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
+    const cstill=[]; COMBO_PENDING.forEach(c=>{ const res=c.legs.map(l=>{ let r=manualLegResult(l,manualWinners); return r===null?legWin(scores,l):r; }); if(res.some(r=>r===null)){cstill.push(c);return;} COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2),result:res.every(Boolean)?'W':'L',legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:l.odd,win:res[i]}))}); }); COMBO_PENDING=cstill;
+    const astill=[]; ARB_PENDING.forEach(a=>{ const done=matchFinished(scores,a.homeName,a.awayName)||manualMatchDone(a.homeName,a.awayName,manualWinners); if(!done){astill.push(a);return;} ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
+  } catch(e){ console.log('· scores-only: error', e.message); }
+  d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD.slice(0,40); d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING;
+  if(d.meta) d.meta.updatedAt=new Date().toISOString();
+  fs.writeFileSync(OUT, JSON.stringify(d,null,2));
+  console.log(`✓ scores-only: ${RECORD.length} en récord · ${PENDING.length} pendientes`);
 }
 
 main().catch(e=>{ console.error('✗', e); process.exit(1); });
