@@ -178,10 +178,11 @@ window.RECORD = [
     { date:'04 JUN', match:'D. Shnaider – M. Chwalinska', pick:'Gana D. Shnaider', odd:1.59, book:'bet365', result:'L' },
     { date:'03 JUN', match:'Kalinskaya – Chwalinska', pick:'Gana A. Kalinskaya', odd:2.00, book:'matchbook', result:'L' },
 ];
-window.COMBO_RECORD = [
-    { date:'04 JUN', name:'Combinada del Día', totalOdd:4.93, result:'L',
-      legs:[ {match:'M. Arnaldi – F. Cobolli', pick:'Gana M. Arnaldi', odd:3.10, win:true},
-             {match:'D. Shnaider – M. Chwalinska', pick:'Gana D. Shnaider', odd:1.59, win:false} ] },
+window.COMBO_RECORD = [];
+window.COMBO_PENDING = [
+    { date:'05 JUN', name:'Combinada del Día',
+      legs:[ {match:'M. Arnaldi – F. Cobolli', pick:'Gana M. Arnaldi', odd:3.15, ts:1780664400000},
+             {match:'M. Chwalinska – M. Andreeva', pick:'Gana M. Andreeva', odd:1.28, ts:1780750800000} ] },
 ];
 window.PENDING = [];
 /* SIN RIESGO — historial de surebets capturados (beneficio garantizado a 100€ de referencia) */
@@ -217,7 +218,7 @@ window.arbSummary = function(){
 window.I18N = {
   es: {
     brandSub:'TENIS · VALOR',
-    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navHow:'Cómo funciona',
+    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navHow:'Cómo funciona', statusPend:'EN JUEGO',
     searchPh:'Buscar jugador o partido…', updated:'Actualizado hoy', autoUpdate:'Se actualiza solo cada día',
     searchNone:'Sin resultados', searchNext:'Próximo', searchNoNext:'Sin próximo partido programado',
     vs:'vs',
@@ -271,7 +272,7 @@ window.I18N = {
   },
   en: {
     brandSub:'TENNIS · VALUE',
-    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navHow:'How it works',
+    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navHow:'How it works', statusPend:'LIVE',
     searchPh:'Search player or match…', updated:'Updated today', autoUpdate:'Auto-updates daily',
     searchNone:'No results', searchNext:'Next', searchNoNext:'No upcoming match scheduled',
     vs:'vs',

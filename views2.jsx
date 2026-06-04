@@ -263,6 +263,37 @@ function Record({ t, go }) {
             </table>
           </div></div>
 
+          {Array.isArray(window.COMBO_PENDING) && window.COMBO_PENDING.length>0 && (
+            <div style={{marginTop:30}}>
+              <span className="eyebrow"><span className="dot" />{t.navCombos} · {t.statusPend||'EN JUEGO'}</span>
+              <div className="grid grid--2" style={{marginTop:14, alignItems:'stretch'}}>
+                {window.COMBO_PENDING.map((c,i)=>(
+                  <div className="panel" key={i} style={{display:'flex', flexDirection:'column', opacity:.9}}>
+                    <div className="combo__head" style={{borderBottom:'1px solid var(--line)'}}>
+                      <div><div className="vb-sub">{c.date}</div><div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.05rem'}}>{c.name}</div></div>
+                      <span className="res-pill" style={{background:'rgba(174,225,0,.18)', color:'var(--lime-deep)', border:'1px solid rgba(127,168,0,.4)'}}>EN JUEGO</span>
+                    </div>
+                    <div style={{padding:'4px 16px', flex:1}}>
+                      {c.legs.map((l,j)=>(
+                        <div key={j} style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, padding:'11px 0', borderBottom: j<c.legs.length-1?'1px solid var(--line-soft)':'none'}}>
+                          <div style={{minWidth:0}}>
+                            <div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.88rem'}}>{l.pick}</div>
+                            <div className="vb-sub">{l.match}</div>
+                          </div>
+                          <span style={{fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.82rem', color:'var(--court)'}}>{l.odd.toFixed(2)}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="combo__foot" style={{marginTop:'auto'}}>
+                      <span style={{fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--muted)'}}>{t.comboTotal}</span>
+                      <span style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.1rem', color:'var(--lime-deep)'}}>{c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2)}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {Array.isArray(window.COMBO_RECORD) && window.COMBO_RECORD.length>0 && (
             <div style={{marginTop:30}}>
               <span className="eyebrow"><span className="dot" />{t.comboRecTitle}</span>

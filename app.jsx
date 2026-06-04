@@ -81,6 +81,7 @@ function applyDaily(d){
   if(Array.isArray(d.COMBOS))  window.COMBOS  = d.COMBOS;
   if(Array.isArray(d.RECORD) && d.RECORD.length) window.RECORD = dq(d.RECORD, rkey);
   if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = dq(d.COMBO_RECORD, ckey);
+  if(Array.isArray(d.COMBO_PENDING)) window.COMBO_PENDING = dq(d.COMBO_PENDING, ckey);
   if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = dq(d.ARB_RECORD, akey);
   if(Array.isArray(d.PENDING)) {
     // dedup AND drop any pending already settled in the record
