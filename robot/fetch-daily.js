@@ -202,13 +202,6 @@ async function main(){
   const BOOKS = {}, PLAYERS = {}, MATCHES = [];
   const COLORS = ['#e23b2e','#0a7d3c','#0a2d6e','#14805e','#ffb000','#d11a2a','#0a6cff','#1c1c1c','#7a4ddb','#d9730d'];
 
-  // CRIBA DE CASAS — solo casas conocidas/disponibles en España (evita pedir cuenta en 30 sitios).
-  // Editable con la variable ODDS_BOOKS (lista separada por comas). Se compara por "contiene".
-  const ALLOWED = (process.env.ODDS_BOOKS ||
-    'bet365,betfair,williamhill,winamax,unibet,betsson,marathonbet,onexbet,pinnacle,888sport,betclic,nordicbet,coolbet,dafabet,gtbets'
-  ).split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
-  const bookAllowed = (bid)=> ALLOWED.some(a => String(bid).toLowerCase().includes(a));
-
   raw.forEach(({ev,key})=>{
     const ct = new Date(ev.commence_time).getTime();
     // CORTAFUEGOS: solo cuotas PRE-PARTIDO. Si ya empezó (o empieza en <2 min) lo descartamos,
@@ -224,11 +217,10 @@ async function main(){
     ev.bookmakers.forEach((bk,i)=>{
       const mkt = (bk.markets||[]).find(m=>m.key==='h2h');
       if (!mkt) return;
-      const bid = bk.key;
-      if (!bookAllowed(bid)) return;                            // CRIBA: solo casas conocidas
       const oH = mkt.outcomes.find(o=>o.name===ev.home_team);
       const oA = mkt.outcomes.find(o=>o.name===ev.away_team);
       if (!oH || !oA) return;
+      const bid = bk.key;
       BOOKS[bid] = BOOKS[bid] || { id:bid, name:bk.title||bid, abbr:(bk.title||bid).replace(/[^a-zA-Z0-9]/g,'').slice(0,3).toUpperCase(), color: COLORS[Object.keys(BOOKS).length % COLORS.length] };
       oddsH[bid] = +oH.price; oddsA[bid] = +oA.price;
     });
