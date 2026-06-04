@@ -189,15 +189,19 @@ function Combos({ t, go }) {
 function Record({ t, go }) {
   const s = window.recordSummary();
   let cum=0;
-  // "en juego" = picks ya registrados por el robot + los picks de valor de HOY del tablero
-  // (así siempre se ven los actuales, aunque el robot aún no los haya guardado)
-  const settledSig = new Set((window.RECORD||[]).map(r=>`${r.match}|${r.pick||r.pickLabel}`));
+  // normalize so "Gana M. Arnaldi" (robot) and "M. Arnaldi" (live board) collapse to one
+  const _ns=s=>(s||'').trim().replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const _nm=m=>(m||'').split(/[–\-]/).map(_ns).filter(Boolean).sort().join('|');
+  const _np=s=>(s||'').replace(/^gana\s+/i,'').replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const psig=p=>`${_nm(p.match)}|${_np(p.pickLabel||p.pick)}`;
+  // "en juego" = picks registrados por el robot + los picks de valor de HOY del tablero
+  const settledSig = new Set((window.RECORD||[]).map(r=>psig({match:r.match, pickLabel:r.pick||r.pickLabel})));
   const livePicks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)})).filter(x=>x.v.positive).map(x=>({
       date:'HOY', match:`${window.playerById(x.m.home).name} – ${window.playerById(x.m.away).name}`,
       pickLabel: window.outcomeLabel(x.v.pick.k, x.m), odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book }));
   const seenPend = new Set();
   const pendingList = [...(window.PENDING||[]), ...livePicks].filter(p=>{
-    const sig=`${p.match}|${p.pickLabel||p.pick}`;
+    const sig=psig(p);
     if (settledSig.has(sig) || seenPend.has(sig)) return false;
     seenPend.add(sig); return true;
   });
