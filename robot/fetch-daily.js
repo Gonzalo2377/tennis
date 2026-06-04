@@ -258,12 +258,15 @@ async function main(){
 
   // dedup
   const dedupe=(arr,key)=>{const s=new Set();return arr.filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
-  const normPick=s=>(s||'').replace(/^gana\s+/i,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
-  const sSig=r=>`${r.date||''}|${r.match||''}|${r.pick||r.pickLabel||''}`;
-  // pending dedup ignores date + "Gana " prefix → one entry per match (kills the duplicate "EN JUEGO" rows)
-  const pendKey=p=>`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel||p.pick)}`;
-  const cKey=c=>`${c.date||''}|${(c.legs||[]).map(l=>`${l.match}|${l.pick}`).sort().join('+')}`;
-  const aKey=a=>`${a.date||''}|${a.match||''}`;
+  const normPick=s=>(s||'').replace(/^gana\s+/i,'').replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  // normalise a "A. Kalinskaya – M. Chwalińska" / "Kalinskaya – Chwalinska" to the same key
+  const normSide=s=>(s||'').trim().replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const normMatch=m=>(m||'').split(/[–\-]/).map(normSide).filter(Boolean).sort().join('|');
+  // record/pending dedup ignore date + initials/accents → one entry per match+pick
+  const sSig=r=>`${normMatch(r.match)}|${normPick(r.pick||r.pickLabel)}`;
+  const pendKey=p=>`${normMatch(p.match)}|${normPick(p.pickLabel||p.pick)}`;
+  const cKey=c=>`${(c.legs||[]).map(l=>`${normMatch(l.match)}|${normPick(l.pick)}`).sort().join('+')}`;
+  const aKey=a=>normMatch(a.match);
   RECORD=dedupe(RECORD,sSig); PENDING=dedupe(PENDING,pendKey); COMBO_RECORD=dedupe(COMBO_RECORD,cKey); COMBO_PENDING=dedupe(COMBO_PENDING,cKey); ARB_RECORD=dedupe(ARB_RECORD,aKey); ARB_PENDING=dedupe(ARB_PENDING,aKey);
 
   // ---- SEED: manually-added picks waiting to be settled (robot/seed-pending.json) ----
@@ -327,16 +330,17 @@ async function main(){
   // snapshot today's picks + combos as pending
   const today=fmtDay(new Date().toISOString());
   // already-settled signature (match+pick normalized) → never re-add a pick that's in the record
-  const recSig=new Set(RECORD.map(r=>`${(r.match||'').toLowerCase().trim()}|${normPick(r.pick)}`));
+  const recSig=new Set(RECORD.map(sSig));
   // clean any pending that's already settled (fixes the "EN JUEGO + GANADA" duplicate)
-  PENDING=PENDING.filter(p=>!recSig.has(`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel)}`));
+  PENDING=PENDING.filter(p=>!recSig.has(pendKey(p)));
   const haveId=new Set([...PENDING.map(p=>p.id), ...RECORD.map(r=>r.id).filter(Boolean)]);
   valued.forEach(x=>{
     if (haveId.has(x.m.id)) return;
     const match=`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`;
     const pickLabel=label(x.m,x.v.pick.k);
-    if (recSig.has(`${match.toLowerCase().trim()}|${normPick(pickLabel)}`)) return;   // already in record → skip
-    if (PENDING.some(p=>`${(p.match||'').toLowerCase().trim()}|${normPick(p.pickLabel)}`===`${match.toLowerCase().trim()}|${normPick(pickLabel)}`)) return;  // already pending → skip
+    const sig=`${normMatch(match)}|${normPick(pickLabel)}`;
+    if (recSig.has(sig)) return;   // already in record → skip
+    if (PENDING.some(p=>pendKey(p)===sig)) return;  // already pending → skip
     if (new Date(x.m._commence).getTime() < Date.now()-30*60*1000) return;   // already started → don't track as fresh pick
     PENDING.push({ id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), date:fmtDay(x.m._commence),
       match, pickKey:x.v.pick.k, pickLabel,
