@@ -1,29 +1,1744 @@
 {
   "meta": {
-    "updatedAt": "2026-06-04T20:30:00.000Z",
-    "source": "manual",
-    "note": "Historial. El robot conserva estos registros y añade los nuevos. NO uses RESET o se borra."
+    "updatedAt": "2026-06-04T23:22:35.670Z",
+    "source": "the-odds-api",
+    "sport": "tennis",
+    "regions": "eu,uk",
+    "market": "h2h",
+    "matches": 5,
+    "valuePicks": 1,
+    "books": 119,
+    "stale": false,
+    "model": {
+      "players": 57
+    },
+    "credits": {
+      "remaining": 259,
+      "used": 241
+    }
   },
+  "PLAYERS": {
+    "jakubmensik": {
+      "id": "jakubmensik",
+      "name": "J. Mensik",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/902_j-mensik.jpg"
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
+    },
+    "matteoarnaldi": {
+      "id": "matteoarnaldi",
+      "name": "M. Arnaldi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
+    },
+    "flaviocobolli": {
+      "id": "flaviocobolli",
+      "name": "F. Cobolli",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
+    },
+    "majachwalinska": {
+      "id": "majachwalinska",
+      "name": "M. Chwalinska",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1434_m-chwalinska.jpg"
+    },
+    "mirraandreeva": {
+      "id": "mirraandreeva",
+      "name": "M. Andreeva",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1958_e-andreeva.jpg"
+    },
+    "donskialexander": {
+      "id": "donskialexander",
+      "name": "D. Alexander",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "durantuncay": {
+      "id": "durantuncay",
+      "name": "D. Tuncay",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "romanofilippo": {
+      "id": "romanofilippo",
+      "name": "R. Filippo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "virtanenotto": {
+      "id": "virtanenotto",
+      "name": "V. Otto",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    }
+  },
+  "BOOKS": {
+    "casumo": {
+      "id": "casumo",
+      "name": "Casumo",
+      "abbr": "CAS",
+      "color": "#e23b2e"
+    },
+    "unibet_se": {
+      "id": "unibet_se",
+      "name": "Unibet (SE)",
+      "abbr": "UNI",
+      "color": "#0a7d3c"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas",
+      "abbr": "LEO",
+      "color": "#0a2d6e"
+    },
+    "leovegas_se": {
+      "id": "leovegas_se",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#14805e"
+    },
+    "livescorebet": {
+      "id": "livescorebet",
+      "name": "LiveScore Bet",
+      "abbr": "LIV",
+      "color": "#ffb000"
+    },
+    "virginbet": {
+      "id": "virginbet",
+      "name": "Virgin Bet",
+      "abbr": "VIR",
+      "color": "#d11a2a"
+    },
+    "unibet_nl": {
+      "id": "unibet_nl",
+      "name": "Unibet (NL)",
+      "abbr": "UNI",
+      "color": "#0a6cff"
+    },
+    "pmu_fr": {
+      "id": "pmu_fr",
+      "name": "PMU (FR)",
+      "abbr": "PMU",
+      "color": "#1c1c1c"
+    },
+    "grosvenor": {
+      "id": "grosvenor",
+      "name": "Grosvenor",
+      "abbr": "GRO",
+      "color": "#7a4ddb"
+    },
+    "marathonbet": {
+      "id": "marathonbet",
+      "name": "Marathon Bet",
+      "abbr": "MAR",
+      "color": "#d9730d"
+    },
+    "gtbets": {
+      "id": "gtbets",
+      "name": "GTbets",
+      "abbr": "GTB",
+      "color": "#e23b2e"
+    },
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
+      "color": "#0a7d3c"
+    },
+    "betway": {
+      "id": "betway",
+      "name": "Betway",
+      "abbr": "BET",
+      "color": "#0a2d6e"
+    },
+    "unibet_fr": {
+      "id": "unibet_fr",
+      "name": "Unibet (FR)",
+      "abbr": "UNI",
+      "color": "#14805e"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "winamax_de": {
+      "id": "winamax_de",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
+      "color": "#d11a2a"
+    },
+    "winamax_fr": {
+      "id": "winamax_fr",
+      "name": "Winamax (FR)",
+      "abbr": "WIN",
+      "color": "#0a6cff"
+    },
+    "nordicbet": {
+      "id": "nordicbet",
+      "name": "Nordic Bet",
+      "abbr": "NOR",
+      "color": "#1c1c1c"
+    },
+    "smarkets": {
+      "id": "smarkets",
+      "name": "Smarkets",
+      "abbr": "SMA",
+      "color": "#7a4ddb"
+    },
+    "betclic_fr": {
+      "id": "betclic_fr",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "codere_it": {
+      "id": "codere_it",
+      "name": "Codere (IT)",
+      "abbr": "COD",
+      "color": "#e23b2e"
+    },
+    "mybookieag": {
+      "id": "mybookieag",
+      "name": "MyBookie.ag",
+      "abbr": "MYB",
+      "color": "#0a7d3c"
+    },
+    "ladbrokes_uk": {
+      "id": "ladbrokes_uk",
+      "name": "Ladbrokes",
+      "abbr": "LAD",
+      "color": "#0a2d6e"
+    },
+    "coral": {
+      "id": "coral",
+      "name": "Coral",
+      "abbr": "COR",
+      "color": "#14805e"
+    },
+    "onexbet": {
+      "id": "onexbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#ffb000"
+    },
+    "betonlineag": {
+      "id": "betonlineag",
+      "name": "BetOnline.ag",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#0a6cff"
+    },
+    "betfair_sb_uk": {
+      "id": "betfair_sb_uk",
+      "name": "Betfair Sportsbook",
+      "abbr": "BET",
+      "color": "#1c1c1c"
+    },
+    "betvictor": {
+      "id": "betvictor",
+      "name": "Bet Victor",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "betfair_ex_eu": {
+      "id": "betfair_ex_eu",
+      "name": "Betfair",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betfair_ex_uk": {
+      "id": "betfair_ex_uk",
+      "name": "Betfair",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "paddypower": {
+      "id": "paddypower",
+      "name": "Paddy Power",
+      "abbr": "PAD",
+      "color": "#0a7d3c"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
+      "color": "#0a2d6e"
+    },
+    "betanysports": {
+      "id": "betanysports",
+      "name": "BetAnything",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
+    "tipico_de": {
+      "id": "tipico_de",
+      "name": "Tipico",
+      "abbr": "TIP",
+      "color": "#ffb000"
+    },
+    "coolbet": {
+      "id": "coolbet",
+      "name": "Coolbet",
+      "abbr": "COO",
+      "color": "#d11a2a"
+    },
+    "everygame": {
+      "id": "everygame",
+      "name": "Everygame",
+      "abbr": "EVE",
+      "color": "#0a6cff"
+    },
+    "sport888": {
+      "id": "sport888",
+      "name": "888sport",
+      "abbr": "888",
+      "color": "#1c1c1c"
+    },
+    "boylesports": {
+      "id": "boylesports",
+      "name": "BoyleSports",
+      "abbr": "BOY",
+      "color": "#7a4ddb"
+    },
+    "vave": {
+      "id": "vave",
+      "name": "vave",
+      "abbr": "VAV",
+      "color": "#d9730d"
+    },
+    "22bet": {
+      "id": "22bet",
+      "name": "22bet",
+      "abbr": "22B",
+      "color": "#e23b2e"
+    },
+    "inbet": {
+      "id": "inbet",
+      "name": "inbet",
+      "abbr": "INB",
+      "color": "#0a7d3c"
+    },
+    "bcgame": {
+      "id": "bcgame",
+      "name": "bcgame",
+      "abbr": "BCG",
+      "color": "#0a2d6e"
+    },
+    "betano": {
+      "id": "betano",
+      "name": "betano",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
+    "betika": {
+      "id": "betika",
+      "name": "betika",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "kalshi": {
+      "id": "kalshi",
+      "name": "kalshi",
+      "abbr": "KAL",
+      "color": "#d11a2a"
+    },
+    "oddset": {
+      "id": "oddset",
+      "name": "oddset",
+      "abbr": "ODD",
+      "color": "#0a6cff"
+    },
+    "roobet": {
+      "id": "roobet",
+      "name": "roobet",
+      "abbr": "ROO",
+      "color": "#1c1c1c"
+    },
+    "tipico": {
+      "id": "tipico",
+      "name": "tipico",
+      "abbr": "TIP",
+      "color": "#7a4ddb"
+    },
+    "bwin.dk": {
+      "id": "bwin.dk",
+      "name": "bwin.dk",
+      "abbr": "BWI",
+      "color": "#d9730d"
+    },
+    "mystake": {
+      "id": "mystake",
+      "name": "mystake",
+      "abbr": "MYS",
+      "color": "#e23b2e"
+    },
+    "yesplay": {
+      "id": "yesplay",
+      "name": "yesplay",
+      "abbr": "YES",
+      "color": "#0a7d3c"
+    },
+    "cloudbet": {
+      "id": "cloudbet",
+      "name": "cloudbet",
+      "abbr": "CLO",
+      "color": "#0a2d6e"
+    },
+    "duelbits": {
+      "id": "duelbits",
+      "name": "duelbits",
+      "abbr": "DUE",
+      "color": "#14805e"
+    },
+    "thescore": {
+      "id": "thescore",
+      "name": "thescore",
+      "abbr": "THE",
+      "color": "#ffb000"
+    },
+    "tiptorro": {
+      "id": "tiptorro",
+      "name": "tiptorro",
+      "abbr": "TIP",
+      "color": "#d11a2a"
+    },
+    "betway.de": {
+      "id": "betway.de",
+      "name": "betway.de",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "betway.es": {
+      "id": "betway.es",
+      "name": "betway.es",
+      "abbr": "BET",
+      "color": "#1c1c1c"
+    },
+    "lottoland": {
+      "id": "lottoland",
+      "name": "lottoland",
+      "abbr": "LOT",
+      "color": "#7a4ddb"
+    },
+    "winbet.bg": {
+      "id": "winbet.bg",
+      "name": "winbet.bg",
+      "abbr": "WIN",
+      "color": "#d9730d"
+    },
+    "winbet.ro": {
+      "id": "winbet.ro",
+      "name": "winbet.ro",
+      "abbr": "WIN",
+      "color": "#e23b2e"
+    },
+    "betfair-ex": {
+      "id": "betfair-ex",
+      "name": "betfair-ex",
+      "abbr": "BET",
+      "color": "#0a7d3c"
+    },
+    "draftkings": {
+      "id": "draftkings",
+      "name": "draftkings",
+      "abbr": "DRA",
+      "color": "#0a2d6e"
+    },
+    "estrelabet": {
+      "id": "estrelabet",
+      "name": "estrelabet",
+      "abbr": "EST",
+      "color": "#14805e"
+    },
+    "eurobet.it": {
+      "id": "eurobet.it",
+      "name": "eurobet.it",
+      "abbr": "EUR",
+      "color": "#ffb000"
+    },
+    "goldbet.it": {
+      "id": "goldbet.it",
+      "name": "goldbet.it",
+      "abbr": "GOL",
+      "color": "#d11a2a"
+    },
+    "polymarket": {
+      "id": "polymarket",
+      "name": "polymarket",
+      "abbr": "POL",
+      "color": "#0a6cff"
+    },
+    "sportingbet": {
+      "id": "sportingbet",
+      "name": "sportingbet",
+      "abbr": "SPO",
+      "color": "#1c1c1c"
+    },
+    "apuestatotal": {
+      "id": "apuestatotal",
+      "name": "apuestatotal",
+      "abbr": "APU",
+      "color": "#7a4ddb"
+    },
+    "admiralbet.it": {
+      "id": "admiralbet.it",
+      "name": "admiralbet.it",
+      "abbr": "ADM",
+      "color": "#d9730d"
+    },
+    "sesamesport.bg": {
+      "id": "sesamesport.bg",
+      "name": "sesamesport.bg",
+      "abbr": "SES",
+      "color": "#e23b2e"
+    },
+    "pamestoixima.gr": {
+      "id": "pamestoixima.gr",
+      "name": "pamestoixima.gr",
+      "abbr": "PAM",
+      "color": "#0a7d3c"
+    },
+    "sportsinteraction": {
+      "id": "sportsinteraction",
+      "name": "sportsinteraction",
+      "abbr": "SPO",
+      "color": "#0a2d6e"
+    },
+    "sportingbet.bet.br": {
+      "id": "sportingbet.bet.br",
+      "name": "sportingbet.bet.br",
+      "abbr": "SPO",
+      "color": "#14805e"
+    },
+    "kto": {
+      "id": "kto",
+      "name": "kto",
+      "abbr": "KTO",
+      "color": "#ffb000"
+    },
+    "paf": {
+      "id": "paf",
+      "name": "paf",
+      "abbr": "PAF",
+      "color": "#d11a2a"
+    },
+    "bwin": {
+      "id": "bwin",
+      "name": "bwin",
+      "abbr": "BWI",
+      "color": "#0a6cff"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xbet",
+      "abbr": "1XB",
+      "color": "#1c1c1c"
+    },
+    "betuk": {
+      "id": "betuk",
+      "name": "betuk",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "stake": {
+      "id": "stake",
+      "name": "stake",
+      "abbr": "STA",
+      "color": "#d9730d"
+    },
+    "atg.se": {
+      "id": "atg.se",
+      "name": "atg.se",
+      "abbr": "ATG",
+      "color": "#e23b2e"
+    },
+    "bet365": {
+      "id": "bet365",
+      "name": "bet365",
+      "abbr": "BET",
+      "color": "#0a7d3c"
+    },
+    "betmgm": {
+      "id": "betmgm",
+      "name": "betmgm",
+      "abbr": "BET",
+      "color": "#0a2d6e"
+    },
+    "paf.es": {
+      "id": "paf.es",
+      "name": "paf.es",
+      "abbr": "PAF",
+      "color": "#14805e"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "unibet",
+      "abbr": "UNI",
+      "color": "#ffb000"
+    },
+    "betparx": {
+      "id": "betparx",
+      "name": "betparx",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "betplay": {
+      "id": "betplay",
+      "name": "betplay",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "borgata": {
+      "id": "borgata",
+      "name": "borgata",
+      "abbr": "BOR",
+      "color": "#1c1c1c"
+    },
+    "bwin.be": {
+      "id": "bwin.be",
+      "name": "bwin.be",
+      "abbr": "BWI",
+      "color": "#7a4ddb"
+    },
+    "bwin.es": {
+      "id": "bwin.es",
+      "name": "bwin.es",
+      "abbr": "BWI",
+      "color": "#d9730d"
+    },
+    "ballybet": {
+      "id": "ballybet",
+      "name": "ballybet",
+      "abbr": "BAL",
+      "color": "#e23b2e"
+    },
+    "jacks.nl": {
+      "id": "jacks.nl",
+      "name": "jacks.nl",
+      "abbr": "JAC",
+      "color": "#0a7d3c"
+    },
+    "sisal.it": {
+      "id": "sisal.it",
+      "name": "sisal.it",
+      "abbr": "SIS",
+      "color": "#0a2d6e"
+    },
+    "tabtouch": {
+      "id": "tabtouch",
+      "name": "tabtouch",
+      "abbr": "TAB",
+      "color": "#14805e"
+    },
+    "bet365.de": {
+      "id": "bet365.de",
+      "name": "bet365.de",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "betrivers": {
+      "id": "betrivers",
+      "name": "betrivers",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "cashpoint": {
+      "id": "cashpoint",
+      "name": "cashpoint",
+      "abbr": "CAS",
+      "color": "#0a6cff"
+    },
+    "expekt.se": {
+      "id": "expekt.se",
+      "name": "expekt.se",
+      "abbr": "EXP",
+      "color": "#1c1c1c"
+    },
+    "ladbrokes": {
+      "id": "ladbrokes",
+      "name": "ladbrokes",
+      "abbr": "LAD",
+      "color": "#7a4ddb"
+    },
+    "unibet.be": {
+      "id": "unibet.be",
+      "name": "unibet.be",
+      "abbr": "UNI",
+      "color": "#d9730d"
+    },
+    "unibet.dk": {
+      "id": "unibet.dk",
+      "name": "unibet.dk",
+      "abbr": "UNI",
+      "color": "#e23b2e"
+    },
+    "unibet.ie": {
+      "id": "unibet.ie",
+      "name": "unibet.ie",
+      "abbr": "UNI",
+      "color": "#0a7d3c"
+    },
+    "unibet.nl": {
+      "id": "unibet.nl",
+      "name": "unibet.nl",
+      "abbr": "UNI",
+      "color": "#0a2d6e"
+    },
+    "unibet.se": {
+      "id": "unibet.se",
+      "name": "unibet.se",
+      "abbr": "UNI",
+      "color": "#14805e"
+    },
+    "betcity.nl": {
+      "id": "betcity.nl",
+      "name": "betcity.nl",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "bingoal.be": {
+      "id": "bingoal.be",
+      "name": "bingoal.be",
+      "abbr": "BIN",
+      "color": "#d11a2a"
+    },
+    "partypoker": {
+      "id": "partypoker",
+      "name": "partypoker",
+      "abbr": "PAR",
+      "color": "#0a6cff"
+    },
+    "rushbet.co": {
+      "id": "rushbet.co",
+      "name": "rushbet.co",
+      "abbr": "RUS",
+      "color": "#1c1c1c"
+    },
+    "scooore.be": {
+      "id": "scooore.be",
+      "name": "scooore.be",
+      "abbr": "SCO",
+      "color": "#7a4ddb"
+    },
+    "winamax.de": {
+      "id": "winamax.de",
+      "name": "winamax.de",
+      "abbr": "WIN",
+      "color": "#d9730d"
+    },
+    "winamax.es": {
+      "id": "winamax.es",
+      "name": "winamax.es",
+      "abbr": "WIN",
+      "color": "#e23b2e"
+    },
+    "888sport.it": {
+      "id": "888sport.it",
+      "name": "888sport.it",
+      "abbr": "888",
+      "color": "#0a7d3c"
+    },
+    "leovegas.es": {
+      "id": "leovegas.es",
+      "name": "leovegas.es",
+      "abbr": "LEO",
+      "color": "#0a2d6e"
+    },
+    "leovegas.it": {
+      "id": "leovegas.it",
+      "name": "leovegas.it",
+      "abbr": "LEO",
+      "color": "#14805e"
+    },
+    "quigioco.it": {
+      "id": "quigioco.it",
+      "name": "quigioco.it",
+      "abbr": "QUI",
+      "color": "#ffb000"
+    },
+    "svenskaspel": {
+      "id": "svenskaspel",
+      "name": "svenskaspel",
+      "abbr": "SVE",
+      "color": "#d11a2a"
+    },
+    "betmgm.co.uk": {
+      "id": "betmgm.co.uk",
+      "name": "betmgm.co.uk",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "stake.bet.br": {
+      "id": "stake.bet.br",
+      "name": "stake.bet.br",
+      "abbr": "STA",
+      "color": "#1c1c1c"
+    },
+    "unibet.com.au": {
+      "id": "unibet.com.au",
+      "name": "unibet.com.au",
+      "abbr": "UNI",
+      "color": "#7a4ddb"
+    }
+  },
+  "MATCHES": [
+    {
+      "id": "opid1205055471828316",
+      "tour": "atp",
+      "event": "ATP Challenger Centurion 2, South Africa Men Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "home": "donskialexander",
+      "away": "durantuncay",
+      "odds": {
+        "home": {
+          "vave": 1.71,
+          "22bet": 1.7,
+          "inbet": 1.73,
+          "bcgame": 1.71,
+          "betano": 1.72,
+          "betika": 1.71,
+          "betway": 1.727,
+          "kalshi": 1.786,
+          "oddset": 1.72,
+          "roobet": 1.71,
+          "tipico": 1.67,
+          "bwin.dk": 1.72,
+          "mystake": 1.69,
+          "yesplay": 1.69,
+          "cloudbet": 1.69,
+          "duelbits": 1.71,
+          "thescore": 1.714,
+          "tiptorro": 1.72,
+          "betway.de": 1.727,
+          "betway.es": 1.727,
+          "lottoland": 1.692,
+          "winbet.bg": 1.71,
+          "winbet.ro": 1.72,
+          "betfair-ex": 1.78,
+          "draftkings": 1.71,
+          "estrelabet": 1.692,
+          "eurobet.it": 1.69,
+          "goldbet.it": 1.69,
+          "polymarket": 1.818,
+          "sportingbet": 1.72,
+          "apuestatotal": 1.692,
+          "admiralbet.it": 1.7,
+          "sesamesport.bg": 1.69,
+          "pamestoixima.gr": 1.67,
+          "sportsinteraction": 1.72,
+          "sportingbet.bet.br": 1.72
+        },
+        "away": {
+          "vave": 2.02,
+          "22bet": 2.01,
+          "inbet": 2.05,
+          "bcgame": 2,
+          "betano": 2.02,
+          "betika": 2.02,
+          "betway": 2,
+          "kalshi": 2.128,
+          "oddset": 2,
+          "roobet": 2,
+          "tipico": 2,
+          "bwin.dk": 2,
+          "mystake": 2,
+          "yesplay": 2,
+          "cloudbet": 1.97,
+          "duelbits": 2.02,
+          "thescore": 2.05,
+          "tiptorro": 2,
+          "betway.de": 2,
+          "betway.es": 2,
+          "lottoland": 2.05,
+          "winbet.bg": 2.02,
+          "winbet.ro": 2.03,
+          "betfair-ex": 1.03,
+          "draftkings": 2,
+          "estrelabet": 2.05,
+          "eurobet.it": 2,
+          "goldbet.it": 2,
+          "polymarket": 2.174,
+          "sportingbet": 2,
+          "apuestatotal": 2.05,
+          "admiralbet.it": 2,
+          "sesamesport.bg": 1.99,
+          "pamestoixima.gr": 1.97,
+          "sportsinteraction": 2,
+          "sportingbet.bet.br": 2
+        }
+      }
+    },
+    {
+      "id": "opid1204647771749946",
+      "tour": "atp",
+      "event": "ATP Challenger Birmingham, Great Britain Men Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "home": "romanofilippo",
+      "away": "virtanenotto",
+      "odds": {
+        "home": {
+          "kto": 4.4,
+          "paf": 4.4,
+          "bwin": 3.7,
+          "vave": 3.85,
+          "1xbet": 3.84,
+          "22bet": 3.84,
+          "betuk": 4.4,
+          "coral": 3.7,
+          "inbet": 3.9,
+          "stake": 3.8,
+          "atg.se": 4.4,
+          "bcgame": 3.75,
+          "bet365": 3.75,
+          "betano": 3.7,
+          "betmgm": 3.7,
+          "betway": 3.5,
+          "casumo": 4.4,
+          "kalshi": 4.545,
+          "oddset": 3.7,
+          "paf.es": 4.4,
+          "roobet": 3.75,
+          "tipico": 4,
+          "unibet": 4.4,
+          "betparx": 4.4,
+          "betplay": 4.25,
+          "betsson": 3.8,
+          "borgata": 3.7,
+          "bwin.be": 3.7,
+          "bwin.dk": 3.7,
+          "bwin.es": 3.7,
+          "mystake": 3.74,
+          "yesplay": 3.75,
+          "ballybet": 4.4,
+          "cloudbet": 3.65,
+          "duelbits": 3.85,
+          "jacks.nl": 4.4,
+          "leovegas": 4.2,
+          "sisal.it": 3.75,
+          "tabtouch": 4.4,
+          "thescore": 4,
+          "tiptorro": 3.75,
+          "bet365.de": 3.75,
+          "betrivers": 4.4,
+          "betway.de": 3.5,
+          "betway.es": 3.5,
+          "cashpoint": 3.73,
+          "expekt.se": 4.4,
+          "grosvenor": 4.4,
+          "ladbrokes": 3.7,
+          "lottoland": 3.6,
+          "unibet.be": 4.4,
+          "unibet.dk": 4.4,
+          "unibet.ie": 4.4,
+          "unibet.nl": 4.4,
+          "unibet.se": 4.4,
+          "virginbet": 4.4,
+          "winbet.bg": 3.8,
+          "winbet.ro": 3.9,
+          "betcity.nl": 4.4,
+          "betfair-ex": 4.3,
+          "bingoal.be": 4.4,
+          "draftkings": 4.54,
+          "estrelabet": 3.6,
+          "eurobet.it": 3.75,
+          "goldbet.it": 3.75,
+          "partypoker": 3.7,
+          "polymarket": 4.348,
+          "rushbet.co": 4.2,
+          "scooore.be": 4.4,
+          "winamax.de": 3.75,
+          "winamax.es": 3.25,
+          "888sport.it": 4.2,
+          "leovegas.es": 4.4,
+          "leovegas.it": 4.4,
+          "quigioco.it": 3.5,
+          "sportingbet": 3.7,
+          "svenskaspel": 4.4,
+          "apuestatotal": 3.6,
+          "betmgm.co.uk": 4.4,
+          "stake.bet.br": 4.4,
+          "admiralbet.it": 3.75,
+          "unibet.com.au": 4.4,
+          "sesamesport.bg": 3.75,
+          "pamestoixima.gr": 4,
+          "sportsinteraction": 3.7,
+          "sportingbet.bet.br": 3.7
+        },
+        "away": {
+          "kto": 1.2,
+          "paf": 1.2,
+          "bwin": 1.24,
+          "vave": 1.22,
+          "1xbet": 1.22,
+          "22bet": 1.22,
+          "betuk": 1.2,
+          "coral": 1.25,
+          "inbet": 1.22,
+          "stake": 1.22,
+          "atg.se": 1.2,
+          "bcgame": 1.23,
+          "bet365": 1.25,
+          "betano": 1.24,
+          "betmgm": 1.24,
+          "betway": 1.25,
+          "casumo": 1.2,
+          "kalshi": 1.25,
+          "oddset": 1.24,
+          "paf.es": 1.2,
+          "roobet": 1.23,
+          "tipico": 1.17,
+          "unibet": 1.2,
+          "betparx": 1.2,
+          "betplay": 1.2,
+          "betsson": 1.22,
+          "borgata": 1.24,
+          "bwin.be": 1.24,
+          "bwin.dk": 1.24,
+          "bwin.es": 1.24,
+          "mystake": 1.22,
+          "yesplay": 1.22,
+          "ballybet": 1.2,
+          "cloudbet": 1.21,
+          "duelbits": 1.22,
+          "jacks.nl": 1.2,
+          "leovegas": 1.2,
+          "sisal.it": 1.2,
+          "tabtouch": 1.2,
+          "thescore": 1.222,
+          "tiptorro": 1.23,
+          "bet365.de": 1.22,
+          "betrivers": 1.2,
+          "betway.de": 1.25,
+          "betway.es": 1.25,
+          "cashpoint": 1.23,
+          "expekt.se": 1.2,
+          "grosvenor": 1.2,
+          "ladbrokes": 1.25,
+          "lottoland": 1.231,
+          "unibet.be": 1.2,
+          "unibet.dk": 1.2,
+          "unibet.ie": 1.2,
+          "unibet.nl": 1.2,
+          "unibet.se": 1.2,
+          "virginbet": 1.2,
+          "winbet.bg": 1.21,
+          "winbet.ro": 1.22,
+          "betcity.nl": 1.2,
+          "betfair-ex": 1.26,
+          "bingoal.be": 1.2,
+          "draftkings": 1.18,
+          "estrelabet": 1.25,
+          "eurobet.it": 1.22,
+          "goldbet.it": 1.22,
+          "partypoker": 1.24,
+          "polymarket": 1.282,
+          "rushbet.co": 1.2,
+          "scooore.be": 1.2,
+          "winamax.de": 1.22,
+          "winamax.es": 1.3,
+          "888sport.it": 1.2,
+          "leovegas.es": 1.2,
+          "leovegas.it": 1.2,
+          "quigioco.it": 1.22,
+          "sportingbet": 1.24,
+          "svenskaspel": 1.2,
+          "apuestatotal": 1.25,
+          "betmgm.co.uk": 1.2,
+          "stake.bet.br": 1.2,
+          "admiralbet.it": 1.22,
+          "unibet.com.au": 1.2,
+          "sesamesport.bg": 1.21,
+          "pamestoixima.gr": 1.23,
+          "sportsinteraction": 1.24,
+          "sportingbet.bet.br": 1.24
+        }
+      }
+    },
+    {
+      "id": "a4c247a3021a7854b7dc23b9d67524c6",
+      "tour": "atp",
+      "event": "Atp French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "14:30",
+      "home": "jakubmensik",
+      "away": "alexanderzverev",
+      "odds": {
+        "home": {
+          "casumo": 4.1,
+          "unibet_se": 4.1,
+          "leovegas": 4.1,
+          "leovegas_se": 4.1,
+          "livescorebet": 4,
+          "virginbet": 4,
+          "unibet_nl": 4.1,
+          "pmu_fr": 4.2,
+          "grosvenor": 4.1,
+          "marathonbet": 4.05,
+          "gtbets": 4.03,
+          "pinnacle": 4.19,
+          "betway": 3.75,
+          "unibet_fr": 4.1,
+          "betsson": 4,
+          "winamax_de": 4.1,
+          "winamax_fr": 4,
+          "nordicbet": 4,
+          "smarkets": 4.3,
+          "betclic_fr": 4.15,
+          "codere_it": 4,
+          "mybookieag": 4,
+          "ladbrokes_uk": 3.75,
+          "coral": 3.75,
+          "onexbet": 4.11,
+          "betonlineag": 4.2,
+          "matchbook": 4.4,
+          "betfair_sb_uk": 3.75,
+          "betvictor": 4,
+          "betfair_ex_eu": 4.3,
+          "betfair_ex_uk": 4.3,
+          "paddypower": 4,
+          "williamhill": 4,
+          "betanysports": 4.1,
+          "tipico_de": 4.1,
+          "coolbet": 4.1,
+          "everygame": 3.8
+        },
+        "away": {
+          "casumo": 1.25,
+          "unibet_se": 1.25,
+          "leovegas": 1.25,
+          "leovegas_se": 1.25,
+          "livescorebet": 1.23,
+          "virginbet": 1.23,
+          "unibet_nl": 1.25,
+          "pmu_fr": 1.25,
+          "grosvenor": 1.25,
+          "marathonbet": 1.26,
+          "gtbets": 1.25,
+          "pinnacle": 1.27,
+          "betway": 1.25,
+          "unibet_fr": 1.26,
+          "betsson": 1.25,
+          "winamax_de": 1.26,
+          "winamax_fr": 1.25,
+          "nordicbet": 1.25,
+          "smarkets": 1.28,
+          "betclic_fr": 1.25,
+          "codere_it": 1.25,
+          "mybookieag": 1.25,
+          "ladbrokes_uk": 1.25,
+          "coral": 1.25,
+          "onexbet": 1.28,
+          "betonlineag": 1.25,
+          "matchbook": 1.29,
+          "betfair_sb_uk": 1.25,
+          "betvictor": 1.25,
+          "betfair_ex_eu": 1.29,
+          "betfair_ex_uk": 1.29,
+          "paddypower": 1.22,
+          "williamhill": 1.25,
+          "betanysports": 1.25,
+          "tipico_de": 1.22,
+          "coolbet": 1.27,
+          "everygame": 1.25
+        }
+      }
+    },
+    {
+      "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+      "tour": "atp",
+      "event": "Atp French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "19:00",
+      "home": "matteoarnaldi",
+      "away": "flaviocobolli",
+      "odds": {
+        "home": {
+          "pinnacle": 3.14,
+          "onexbet": 3.12,
+          "marathonbet": 3.08,
+          "nordicbet": 3,
+          "gtbets": 3,
+          "betfair_ex_eu": 3.3,
+          "betway": 3,
+          "winamax_fr": 3,
+          "winamax_de": 3.05,
+          "smarkets": 3.25,
+          "betfair_ex_uk": 3.3,
+          "codere_it": 3,
+          "betsson": 3,
+          "paddypower": 3.1,
+          "unibet_fr": 3.05,
+          "coolbet": 3.15,
+          "betclic_fr": 3.05,
+          "mybookieag": 3.02,
+          "betvictor": 2.88,
+          "betonlineag": 3.2,
+          "matchbook": 3.3,
+          "betfair_sb_uk": 3,
+          "ladbrokes_uk": 2.87,
+          "coral": 2.87,
+          "tipico_de": 3.1,
+          "sport888": 3.1,
+          "leovegas": 3.05,
+          "grosvenor": 3.05,
+          "livescorebet": 2.95,
+          "leovegas_se": 3.05,
+          "pmu_fr": 3.05,
+          "virginbet": 2.95,
+          "casumo": 3.05,
+          "unibet_nl": 3.05,
+          "unibet_se": 3.05,
+          "betanysports": 3.1,
+          "williamhill": 3.1,
+          "everygame": 3.1
+        },
+        "away": {
+          "pinnacle": 1.42,
+          "onexbet": 1.42,
+          "marathonbet": 1.4,
+          "nordicbet": 1.39,
+          "gtbets": 1.42,
+          "betfair_ex_eu": 1.43,
+          "betway": 1.36,
+          "winamax_fr": 1.4,
+          "winamax_de": 1.41,
+          "smarkets": 1.4,
+          "betfair_ex_uk": 1.43,
+          "codere_it": 1.39,
+          "betsson": 1.39,
+          "paddypower": 1.36,
+          "unibet_fr": 1.4,
+          "coolbet": 1.4,
+          "betclic_fr": 1.4,
+          "mybookieag": 1.39,
+          "betvictor": 1.36,
+          "betonlineag": 1.38,
+          "matchbook": 1.43,
+          "betfair_sb_uk": 1.36,
+          "ladbrokes_uk": 1.4,
+          "coral": 1.36,
+          "tipico_de": 1.35,
+          "sport888": 1.36,
+          "leovegas": 1.4,
+          "grosvenor": 1.4,
+          "livescorebet": 1.38,
+          "leovegas_se": 1.4,
+          "pmu_fr": 1.41,
+          "virginbet": 1.38,
+          "casumo": 1.4,
+          "unibet_nl": 1.4,
+          "unibet_se": 1.4,
+          "betanysports": 1.38,
+          "williamhill": 1.36,
+          "everygame": 1.36
+        }
+      },
+      "model": {
+        "home": 0.48561281583400134,
+        "away": 0.5143871841659986,
+        "fromModel": true,
+        "eloH": 1810,
+        "eloA": 1820,
+        "surface": "clay"
+      }
+    },
+    {
+      "id": "69fde123c71acd8bcf4d957dba6f97b3",
+      "tour": "wta",
+      "event": "Wta French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "15:00",
+      "home": "majachwalinska",
+      "away": "mirraandreeva",
+      "odds": {
+        "home": {
+          "leovegas_se": 4.2,
+          "livescorebet": 4,
+          "unibet_se": 4.2,
+          "pmu_fr": 4,
+          "leovegas": 4.2,
+          "casumo": 4.2,
+          "virginbet": 4,
+          "unibet_nl": 4.2,
+          "grosvenor": 4.2,
+          "betfair_ex_uk": 4.4,
+          "paddypower": 3.75,
+          "betway": 3.75,
+          "coolbet": 4.1,
+          "betfair_ex_eu": 4.4,
+          "matchbook": 4.4,
+          "gtbets": 4.2,
+          "onexbet": 3.92,
+          "marathonbet": 3.86,
+          "betvictor": 3.6,
+          "betonlineag": 4.3,
+          "betsson": 3.92,
+          "nordicbet": 3.92,
+          "betclic_fr": 4.1,
+          "unibet_fr": 4,
+          "winamax_fr": 4.1,
+          "codere_it": 3.95,
+          "winamax_de": 4.1,
+          "mybookieag": 3.95,
+          "pinnacle": 4.29,
+          "coral": 3.8,
+          "ladbrokes_uk": 3.8,
+          "betfair_sb_uk": 3.75,
+          "sport888": 4.2,
+          "williamhill": 4.2,
+          "boylesports": 4
+        },
+        "away": {
+          "leovegas_se": 1.24,
+          "livescorebet": 1.22,
+          "unibet_se": 1.24,
+          "pmu_fr": 1.22,
+          "leovegas": 1.24,
+          "casumo": 1.24,
+          "virginbet": 1.22,
+          "unibet_nl": 1.24,
+          "grosvenor": 1.24,
+          "betfair_ex_uk": 1.28,
+          "paddypower": 1.25,
+          "betway": 1.25,
+          "coolbet": 1.27,
+          "betfair_ex_eu": 1.28,
+          "matchbook": 1.28,
+          "gtbets": 1.23,
+          "onexbet": 1.3,
+          "marathonbet": 1.28,
+          "betvictor": 1.25,
+          "betonlineag": 1.25,
+          "betsson": 1.24,
+          "nordicbet": 1.24,
+          "betclic_fr": 1.25,
+          "unibet_fr": 1.25,
+          "winamax_fr": 1.25,
+          "codere_it": 1.24,
+          "winamax_de": 1.26,
+          "mybookieag": 1.24,
+          "pinnacle": 1.26,
+          "coral": 1.25,
+          "ladbrokes_uk": 1.25,
+          "betfair_sb_uk": 1.29,
+          "sport888": 1.25,
+          "williamhill": 1.25,
+          "boylesports": 1.22
+        }
+      },
+      "model": {
+        "home": 0.17447401263881834,
+        "away": 0.8255259873611817,
+        "fromModel": true,
+        "eloH": 1675,
+        "eloA": 1945,
+        "surface": "clay"
+      }
+    }
+  ],
+  "COMBOS": [
+    {
+      "id": "c1",
+      "name": "Combinada del Día",
+      "conf": 48,
+      "legs": [
+        {
+          "id": "69fde123c71acd8bcf4d957dba6f97b3",
+          "sport": "tennis_wta_french_open",
+          "ts": 1780750800000,
+          "side": "away",
+          "match": "M. Chwalinska – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 1.3,
+          "book": "onexbet"
+        },
+        {
+          "id": "opid1204647771749946",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1780651800000,
+          "side": "away",
+          "match": "R. Filippo – V. Otto",
+          "pick": "Gana V. Otto",
+          "odd": 1.3,
+          "book": "winamax.es"
+        },
+        {
+          "id": "a4c247a3021a7854b7dc23b9d67524c6",
+          "sport": "tennis_atp_french_open",
+          "ts": 1780662600000,
+          "side": "away",
+          "match": "J. Mensik – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.29,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Combinada Valor",
+      "conf": 30,
+      "legs": [
+        {
+          "id": "opid1204647771749946",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1780651800000,
+          "side": "away",
+          "match": "R. Filippo – V. Otto",
+          "pick": "Gana V. Otto",
+          "odd": 1.3,
+          "book": "winamax.es"
+        },
+        {
+          "id": "a4c247a3021a7854b7dc23b9d67524c6",
+          "sport": "tennis_atp_french_open",
+          "ts": 1780662600000,
+          "side": "away",
+          "match": "J. Mensik – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.29,
+          "book": "matchbook"
+        },
+        {
+          "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+          "sport": "tennis_atp_french_open",
+          "ts": 1780678800000,
+          "side": "away",
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana F. Cobolli",
+          "odd": 1.43,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    }
+  ],
   "RECORD": [
-    { "date": "04 JUN", "match": "M. Kostyuk – M. Andreeva", "pick": "Gana M. Andreeva", "odd": 2.20, "book": "betfair", "result": "W" },
-    { "date": "04 JUN", "match": "D. Shnaider – M. Chwalinska", "pick": "Gana D. Shnaider", "odd": 1.59, "book": "bet365", "result": "L" },
-    { "date": "03 JUN", "match": "Kalinskaya – Chwalinska", "pick": "Gana A. Kalinskaya", "odd": 2.00, "book": "matchbook", "result": "L" }
+    {
+      "date": "04 JUN",
+      "match": "M. Kostyuk – M. Andreeva",
+      "pick": "Gana M. Andreeva",
+      "odd": 2.2,
+      "book": "betfair",
+      "result": "W"
+    },
+    {
+      "date": "04 JUN",
+      "match": "D. Shnaider – M. Chwalinska",
+      "pick": "Gana D. Shnaider",
+      "odd": 1.59,
+      "book": "bet365",
+      "result": "L"
+    },
+    {
+      "date": "03 JUN",
+      "match": "Kalinskaya – Chwalinska",
+      "pick": "Gana A. Kalinskaya",
+      "odd": 2,
+      "book": "matchbook",
+      "result": "L"
+    }
+  ],
+  "PENDING": [
+    {
+      "id": "69fde123c71acd8bcf4d957dba6f97b3",
+      "sport": "tennis_wta_french_open",
+      "ts": 1780750800000,
+      "date": "06 JUN",
+      "match": "M. Chwalinska – M. Andreeva",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Andreeva",
+      "odd": 1.3,
+      "book": "onexbet",
+      "homeName": "M. Chwalinska",
+      "awayName": "M. Andreeva"
+    }
   ],
   "COMBO_RECORD": [],
   "COMBO_PENDING": [
-    { "date": "05 JUN", "name": "Combinada del Día",
+    {
+      "date": "05 JUN",
+      "name": "Combinada del Día",
       "legs": [
-        { "match": "M. Arnaldi – F. Cobolli", "pick": "Gana M. Arnaldi", "odd": 3.15, "ts": 1780664400000 },
-        { "match": "M. Chwalinska – M. Andreeva", "pick": "Gana M. Andreeva", "odd": 1.28, "ts": 1780750800000 }
-      ] }
+        {
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana M. Arnaldi",
+          "odd": 3.15,
+          "ts": 1780664400000
+        },
+        {
+          "match": "M. Chwalinska – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 1.28,
+          "ts": 1780750800000
+        }
+      ]
+    },
+    {
+      "dayId": "04 JUN·c1",
+      "date": "04 JUN",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "69fde123c71acd8bcf4d957dba6f97b3",
+          "sport": "tennis_wta_french_open",
+          "side": "away",
+          "match": "M. Chwalinska – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 1.3,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "opid1204647771749946",
+          "sport": "tennis_oddspapi_atp",
+          "side": "away",
+          "match": "R. Filippo – V. Otto",
+          "pick": "Gana V. Otto",
+          "odd": 1.3,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "a4c247a3021a7854b7dc23b9d67524c6",
+          "sport": "tennis_atp_french_open",
+          "side": "away",
+          "match": "J. Mensik – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.29,
+          "homeName": "",
+          "awayName": ""
+        }
+      ]
+    },
+    {
+      "dayId": "04 JUN·c2",
+      "date": "04 JUN",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "opid1204647771749946",
+          "sport": "tennis_oddspapi_atp",
+          "side": "away",
+          "match": "R. Filippo – V. Otto",
+          "pick": "Gana V. Otto",
+          "odd": 1.3,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "a4c247a3021a7854b7dc23b9d67524c6",
+          "sport": "tennis_atp_french_open",
+          "side": "away",
+          "match": "J. Mensik – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.29,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+          "sport": "tennis_atp_french_open",
+          "side": "away",
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana F. Cobolli",
+          "odd": 1.43,
+          "homeName": "",
+          "awayName": ""
+        }
+      ]
+    }
   ],
   "ARB_RECORD": [
-    { "date": "03 JUN", "match": "Sabalenka – Shnaider", "marginPct": 1.42, "profit": 1.44,
+    {
+      "date": "03 JUN",
+      "match": "Sabalenka – Shnaider",
+      "marginPct": 1.42,
+      "profit": 1.44,
       "legs": [
-        { "pick": "Gana A. Sabalenka", "odd": 1.15, "book": "gtbets" },
-        { "pick": "Gana D. Shnaider", "odd": 8.60, "book": "betfair" }
-      ] }
+        {
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.15,
+          "book": "gtbets"
+        },
+        {
+          "pick": "Gana D. Shnaider",
+          "odd": 8.6,
+          "book": "betfair"
+        }
+      ]
+    }
   ],
-  "PENDING": [],
-  "ARB_PENDING": []
+  "ARB_PENDING": [
+    {
+      "date": "04 JUN",
+      "match": "R. Filippo – V. Otto",
+      "marginPct": 1.07,
+      "profit": 1.09,
+      "ts": 1780651800000,
+      "homeName": "R. Filippo",
+      "awayName": "V. Otto",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        {
+          "pick": "Gana R. Filippo",
+          "odd": 4.54,
+          "book": "kalshi"
+        },
+        {
+          "pick": "Gana V. Otto",
+          "odd": 1.3,
+          "book": "winamax.es"
+        }
+      ]
+    },
+    {
+      "date": "04 JUN",
+      "match": "M. Chwalinska – M. Andreeva",
+      "marginPct": 0.35,
+      "profit": 0.35,
+      "ts": 1780750800000,
+      "homeName": "M. Chwalinska",
+      "awayName": "M. Andreeva",
+      "sport": "tennis_wta_french_open",
+      "legs": [
+        {
+          "pick": "Gana M. Chwalinska",
+          "odd": 4.4,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "pick": "Gana M. Andreeva",
+          "odd": 1.3,
+          "book": "onexbet"
+        }
+      ]
+    }
+  ],
+  "ELO": {
+    "sinner": 2180,
+    "alcaraz": 2150,
+    "djokovic": 2060,
+    "zverev": 2010,
+    "medvedev": 1985,
+    "rublev": 1940,
+    "ruud": 1915,
+    "fritz": 1925,
+    "hurkacz": 1900,
+    "deminaur": 1905,
+    "rune": 1885,
+    "tsitsipas": 1880,
+    "dimitrov": 1850,
+    "musetti": 1870,
+    "paul": 1850,
+    "shelton": 1840,
+    "humbert": 1820,
+    "cerundolo": 1810,
+    "augeraliassime": 1830,
+    "berrettini": 1820,
+    "arnaldi": 1770,
+    "cobolli": 1780,
+    "tiafoe": 1830,
+    "khachanov": 1820,
+    "bublik": 1790,
+    "lehecka": 1810,
+    "machac": 1800,
+    "griekspoor": 1770,
+    "norrie": 1780,
+    "korda": 1810,
+    "paire": 1650,
+    "swiatek": 2120,
+    "sabalenka": 2110,
+    "gauff": 2010,
+    "rybakina": 2000,
+    "paolini": 1900,
+    "zheng": 1900,
+    "pegula": 1910,
+    "vondrousova": 1880,
+    "kalinskaya": 1820,
+    "kostyuk": 1830,
+    "andreeva": 1900,
+    "navarro": 1850,
+    "collins": 1840,
+    "keys": 1860,
+    "ostapenko": 1840,
+    "kasatkina": 1850,
+    "jabeur": 1830,
+    "krejcikova": 1840,
+    "shnaider": 1810,
+    "chwalinska": 1650,
+    "svitolina": 1850,
+    "haddadmaia": 1820,
+    "samsonova": 1820,
+    "alexandrova": 1820,
+    "muchova": 1870,
+    "fernandez": 1800
+  },
+  "ELO_DONE": {}
 }
