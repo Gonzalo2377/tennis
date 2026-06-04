@@ -204,7 +204,9 @@ async function main(){
 
   raw.forEach(({ev,key})=>{
     const ct = new Date(ev.commence_time).getTime();
-    if (ct < now - 30*60*1000 || ct > horizon) return;          // skip started/too-far
+    // CORTAFUEGOS: solo cuotas PRE-PARTIDO. Si ya empezó (o empieza en <2 min) lo descartamos,
+    // porque las cuotas en directo son volátiles/erróneas (favorito a 1.01, etc.).
+    if (ct < now + 2*60*1000 || ct > horizon) return;
     if (!ev.home_team || !ev.away_team || !ev.bookmakers || !ev.bookmakers.length) return;
 
     const hId = slug(ev.home_team), aId = slug(ev.away_team);
