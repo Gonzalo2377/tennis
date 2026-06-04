@@ -19,6 +19,7 @@ const path = require('path');
 const API_KEY = process.env.ODDS_API_KEY;
 const APITENNIS_KEY = process.env.APITENNIS_KEY || '';
 const apiTennis = require('./results-api.js');
+const espnResults = require('./espn-results.js');
 const REGIONS = process.env.ODDS_REGIONS || 'eu';
 const MARKET  = 'h2h';
 const MAX     = parseInt(process.env.ODDS_MAX || '10', 10);
@@ -197,6 +198,19 @@ async function main(){
   const raw = [];
   for (const key of keys){ const r = await fetchOdds(key); raw.push(...r); }
 
+  // OddsPapi: rellena Challenger + ATP250/WTA125K (+ ITF si sobra) que The Odds API no cubre.
+  if (process.env.ODDSPAPI_KEY) {
+    try {
+      const fetchOddspapi = require('./oddspapi.js');
+      const extra = await fetchOddspapi(process.env.ODDSPAPI_KEY, {
+        windowHours: WINDOW_HOURS,
+        maxOdds: parseInt(process.env.ODDSPAPI_MAX || '6', 10),
+        existingEvents: raw,
+      });
+      raw.push(...extra);
+    } catch(e){ console.log('· OddsPapi no disponible:', e.message); }
+  }
+
   const now = Date.now();
   const horizon = now + WINDOW_HOURS*3600*1000;
   const BOOKS = {}, PLAYERS = {}, MATCHES = [];
@@ -209,9 +223,11 @@ async function main(){
     if (ct < now + 2*60*1000 || ct > horizon) return;
     if (!ev.home_team || !ev.away_team || !ev.bookmakers || !ev.bookmakers.length) return;
 
+    const evName = ev._event || eventName(key);
+    const evTour = ev._tour || tourOf(key);
     const hId = slug(ev.home_team), aId = slug(ev.away_team);
-    PLAYERS[hId] = PLAYERS[hId] || { id:hId, name:shortName(ev.home_team), country:'', flag:'', seed:'', tour:tourOf(key), elo:null, form:[] };
-    PLAYERS[aId] = PLAYERS[aId] || { id:aId, name:shortName(ev.away_team), country:'', flag:'', seed:'', tour:tourOf(key), elo:null, form:[] };
+    PLAYERS[hId] = PLAYERS[hId] || { id:hId, name:shortName(ev.home_team), country:'', flag:'', seed:'', tour:evTour, elo:null, form:[] };
+    PLAYERS[aId] = PLAYERS[aId] || { id:aId, name:shortName(ev.away_team), country:'', flag:'', seed:'', tour:evTour, elo:null, form:[] };
 
     const oddsH = {}, oddsA = {};
     ev.bookmakers.forEach((bk,i)=>{
@@ -226,10 +242,10 @@ async function main(){
     });
     if (Object.keys(oddsH).length < 2) return;                  // need 2+ books for value/arb
 
-    const surface = surfaceOf(key, eventName(key));
+    const surface = surfaceOf(key, evName);
     const model = modelProbs(ev.home_team, ev.away_team, surface, null);
     MATCHES.push({
-      id: ev.id, tour:tourOf(key), event:eventName(key), round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time),
+      id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time),
       home:hId, away:aId, odds:{ home:oddsH, away:oddsA },
       model: model || undefined,
       _commence: ev.commence_time, _sport:key,
@@ -288,7 +304,10 @@ async function main(){
     if (need.length){
       const scores=await fetchScores(need);
       const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
-      const manualWinners=[...loadManualWinners(), ...apiRes.winners];   // api-tennis + manual fallback
+      let espn = { winners:[], finished:[] };
+      try { espn = await espnResults(5); console.log(`· ESPN: ${espn.winners.length} ganadores · ${espn.finished.length} partidos terminados`); }
+      catch(e){ console.log('· ESPN no disponible:', e.message); }
+      const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];   // ESPN (gratis) + api-tennis + manual
       if (manualWinners.length) console.log(`· liquidando con ${manualWinners.length} ganadores (api-tennis + results.json)`);
       // apply real player photos from api-tennis to our roster
       if (Object.keys(apiRes.logos).length){
@@ -460,7 +479,9 @@ async function scoresOnly(){
   try {
     const scores=await fetchScores(need);
     const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
-    const manualWinners=[...loadManualWinners(), ...apiRes.winners];
+    let espn = { winners:[], finished:[] };
+    try { espn = await espnResults(5); } catch(e){}
+    const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];
     if (d.PLAYERS && Object.keys(apiRes.logos).length){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
       Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
