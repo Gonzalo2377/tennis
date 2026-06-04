@@ -1,3 +1,1036 @@
 {
-  "meta": { "updatedAt": "", "source": "the-odds-api", "note": "El robot reescribe este archivo cada día. Esto es un marcador inicial." }
+  "meta": {
+    "updatedAt": "2026-06-04T09:15:55.879Z",
+    "source": "the-odds-api",
+    "sport": "tennis",
+    "regions": "eu,uk",
+    "market": "h2h",
+    "matches": 4,
+    "valuePicks": 3,
+    "books": 40,
+    "stale": false,
+    "model": {
+      "players": 57
+    },
+    "credits": {
+      "remaining": 393,
+      "used": 107
+    }
+  },
+  "PLAYERS": {
+    "matteoarnaldi": {
+      "id": "matteoarnaldi",
+      "name": "M. Arnaldi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
+    },
+    "flaviocobolli": {
+      "id": "flaviocobolli",
+      "name": "F. Cobolli",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
+    },
+    "jakubmensik": {
+      "id": "jakubmensik",
+      "name": "J. Mensik",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/902_j-mensik.jpg"
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
+    },
+    "martakostyuk": {
+      "id": "martakostyuk",
+      "name": "M. Kostyuk",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1828_m-kostyuk.jpg"
+    },
+    "mirraandreeva": {
+      "id": "mirraandreeva",
+      "name": "M. Andreeva",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1958_e-andreeva.jpg"
+    },
+    "dianashnaider": {
+      "id": "dianashnaider",
+      "name": "D. Shnaider",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/7403_d-shnaider.jpg"
+    },
+    "majachwalinska": {
+      "id": "majachwalinska",
+      "name": "M. Chwalinska",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1434_m-chwalinska.jpg"
+    }
+  },
+  "BOOKS": {
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
+      "color": "#e23b2e"
+    },
+    "onexbet": {
+      "id": "onexbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#0a7d3c"
+    },
+    "marathonbet": {
+      "id": "marathonbet",
+      "name": "Marathon Bet",
+      "abbr": "MAR",
+      "color": "#0a2d6e"
+    },
+    "nordicbet": {
+      "id": "nordicbet",
+      "name": "Nordic Bet",
+      "abbr": "NOR",
+      "color": "#14805e"
+    },
+    "gtbets": {
+      "id": "gtbets",
+      "name": "GTbets",
+      "abbr": "GTB",
+      "color": "#ffb000"
+    },
+    "betfair_ex_eu": {
+      "id": "betfair_ex_eu",
+      "name": "Betfair",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "betway": {
+      "id": "betway",
+      "name": "Betway",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "winamax_fr": {
+      "id": "winamax_fr",
+      "name": "Winamax (FR)",
+      "abbr": "WIN",
+      "color": "#1c1c1c"
+    },
+    "winamax_de": {
+      "id": "winamax_de",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
+      "color": "#7a4ddb"
+    },
+    "smarkets": {
+      "id": "smarkets",
+      "name": "Smarkets",
+      "abbr": "SMA",
+      "color": "#d9730d"
+    },
+    "betfair_ex_uk": {
+      "id": "betfair_ex_uk",
+      "name": "Betfair",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "codere_it": {
+      "id": "codere_it",
+      "name": "Codere (IT)",
+      "abbr": "COD",
+      "color": "#0a7d3c"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#0a2d6e"
+    },
+    "paddypower": {
+      "id": "paddypower",
+      "name": "Paddy Power",
+      "abbr": "PAD",
+      "color": "#14805e"
+    },
+    "unibet_fr": {
+      "id": "unibet_fr",
+      "name": "Unibet (FR)",
+      "abbr": "UNI",
+      "color": "#ffb000"
+    },
+    "coolbet": {
+      "id": "coolbet",
+      "name": "Coolbet",
+      "abbr": "COO",
+      "color": "#d11a2a"
+    },
+    "betclic_fr": {
+      "id": "betclic_fr",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "unibet_uk": {
+      "id": "unibet_uk",
+      "name": "Unibet (UK)",
+      "abbr": "UNI",
+      "color": "#1c1c1c"
+    },
+    "mybookieag": {
+      "id": "mybookieag",
+      "name": "MyBookie.ag",
+      "abbr": "MYB",
+      "color": "#7a4ddb"
+    },
+    "betvictor": {
+      "id": "betvictor",
+      "name": "Bet Victor",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betonlineag": {
+      "id": "betonlineag",
+      "name": "BetOnline.ag",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#0a7d3c"
+    },
+    "betfair_sb_uk": {
+      "id": "betfair_sb_uk",
+      "name": "Betfair Sportsbook",
+      "abbr": "BET",
+      "color": "#0a2d6e"
+    },
+    "ladbrokes_uk": {
+      "id": "ladbrokes_uk",
+      "name": "Ladbrokes",
+      "abbr": "LAD",
+      "color": "#14805e"
+    },
+    "coral": {
+      "id": "coral",
+      "name": "Coral",
+      "abbr": "COR",
+      "color": "#ffb000"
+    },
+    "tipico_de": {
+      "id": "tipico_de",
+      "name": "Tipico",
+      "abbr": "TIP",
+      "color": "#d11a2a"
+    },
+    "sport888": {
+      "id": "sport888",
+      "name": "888sport",
+      "abbr": "888",
+      "color": "#0a6cff"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas",
+      "abbr": "LEO",
+      "color": "#1c1c1c"
+    },
+    "grosvenor": {
+      "id": "grosvenor",
+      "name": "Grosvenor",
+      "abbr": "GRO",
+      "color": "#7a4ddb"
+    },
+    "livescorebet": {
+      "id": "livescorebet",
+      "name": "LiveScore Bet",
+      "abbr": "LIV",
+      "color": "#d9730d"
+    },
+    "leovegas_se": {
+      "id": "leovegas_se",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#e23b2e"
+    },
+    "pmu_fr": {
+      "id": "pmu_fr",
+      "name": "PMU (FR)",
+      "abbr": "PMU",
+      "color": "#0a7d3c"
+    },
+    "virginbet": {
+      "id": "virginbet",
+      "name": "Virgin Bet",
+      "abbr": "VIR",
+      "color": "#0a2d6e"
+    },
+    "casumo": {
+      "id": "casumo",
+      "name": "Casumo",
+      "abbr": "CAS",
+      "color": "#14805e"
+    },
+    "unibet_nl": {
+      "id": "unibet_nl",
+      "name": "Unibet (NL)",
+      "abbr": "UNI",
+      "color": "#ffb000"
+    },
+    "unibet_se": {
+      "id": "unibet_se",
+      "name": "Unibet (SE)",
+      "abbr": "UNI",
+      "color": "#d11a2a"
+    },
+    "betanysports": {
+      "id": "betanysports",
+      "name": "BetAnything",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
+      "color": "#1c1c1c"
+    },
+    "everygame": {
+      "id": "everygame",
+      "name": "Everygame",
+      "abbr": "EVE",
+      "color": "#7a4ddb"
+    },
+    "boylesports": {
+      "id": "boylesports",
+      "name": "BoyleSports",
+      "abbr": "BOY",
+      "color": "#d9730d"
+    }
+  },
+  "MATCHES": [
+    {
+      "id": "88386b9afa0bb2d85d19320d0d453ae3",
+      "tour": "wta",
+      "event": "Wta French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "15:00",
+      "home": "martakostyuk",
+      "away": "mirraandreeva",
+      "odds": {
+        "home": {
+          "betfair_sb_uk": 1.73,
+          "betway": 1.67,
+          "boylesports": 1.67,
+          "grosvenor": 1.73,
+          "pmu_fr": 1.74,
+          "unibet_nl": 1.73,
+          "coolbet": 1.74,
+          "unibet_se": 1.73,
+          "gtbets": 1.68,
+          "winamax_de": 1.68,
+          "leovegas": 1.73,
+          "nordicbet": 1.68,
+          "livescorebet": 1.7,
+          "betfair_ex_uk": 1.81,
+          "betsson": 1.72,
+          "smarkets": 1.78,
+          "unibet_fr": 1.68,
+          "betfair_ex_eu": 1.81,
+          "winamax_fr": 1.68,
+          "paddypower": 1.73,
+          "casumo": 1.73,
+          "virginbet": 1.7,
+          "onexbet": 1.75,
+          "leovegas_se": 1.73,
+          "codere_it": 1.71,
+          "betvictor": 1.67,
+          "mybookieag": 1.69,
+          "betclic_fr": 1.74,
+          "matchbook": 1.81,
+          "everygame": 1.75,
+          "coral": 1.67,
+          "ladbrokes_uk": 1.67,
+          "marathonbet": 1.73,
+          "williamhill": 1.67,
+          "pinnacle": 1.78,
+          "tipico_de": 1.67,
+          "betonlineag": 1.67,
+          "betanysports": 1.67
+        },
+        "away": {
+          "betfair_sb_uk": 2.1,
+          "betway": 2.1,
+          "boylesports": 2.2,
+          "grosvenor": 2.16,
+          "pmu_fr": 2.12,
+          "unibet_nl": 2.16,
+          "coolbet": 2.2,
+          "unibet_se": 2.16,
+          "gtbets": 2.16,
+          "winamax_de": 2.25,
+          "leovegas": 2.16,
+          "nordicbet": 2.14,
+          "livescorebet": 2.1,
+          "betfair_ex_uk": 2.2,
+          "betsson": 2.07,
+          "smarkets": 2.18,
+          "unibet_fr": 2.25,
+          "betfair_ex_eu": 2.2,
+          "winamax_fr": 2.2,
+          "paddypower": 2.1,
+          "casumo": 2.16,
+          "virginbet": 2.1,
+          "onexbet": 2.2,
+          "leovegas_se": 2.16,
+          "codere_it": 2.2,
+          "betvictor": 2.1,
+          "mybookieag": 2.17,
+          "betclic_fr": 2.15,
+          "matchbook": 2.2,
+          "everygame": 2.05,
+          "coral": 2.1,
+          "ladbrokes_uk": 2.1,
+          "marathonbet": 2.17,
+          "williamhill": 2.1,
+          "pinnacle": 2.17,
+          "tipico_de": 2.15,
+          "betonlineag": 2.28,
+          "betanysports": 2.3
+        }
+      },
+      "model": {
+        "home": 0.3868631798468569,
+        "away": 0.6131368201531431,
+        "fromModel": true,
+        "eloH": 1865,
+        "eloA": 1945,
+        "surface": "clay"
+      }
+    },
+    {
+      "id": "8a9ababcb76eba02d840a77d12743b44",
+      "tour": "wta",
+      "event": "Wta French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "17:00",
+      "home": "dianashnaider",
+      "away": "majachwalinska",
+      "odds": {
+        "home": {
+          "grosvenor": 1.54,
+          "smarkets": 1.61,
+          "betsson": 1.55,
+          "betfair_ex_uk": 1.6,
+          "betclic_fr": 1.56,
+          "betvictor": 1.5,
+          "unibet_nl": 1.54,
+          "unibet_fr": 1.54,
+          "leovegas": 1.54,
+          "betfair_ex_eu": 1.6,
+          "virginbet": 1.52,
+          "pmu_fr": 1.55,
+          "casumo": 1.54,
+          "nordicbet": 1.52,
+          "gtbets": 1.54,
+          "livescorebet": 1.52,
+          "onexbet": 1.57,
+          "unibet_se": 1.54,
+          "leovegas_se": 1.54,
+          "codere_it": 1.55,
+          "paddypower": 1.5,
+          "coolbet": 1.55,
+          "betway": 1.5,
+          "winamax_fr": 1.54,
+          "mybookieag": 1.54,
+          "boylesports": 1.53,
+          "winamax_de": 1.56,
+          "matchbook": 1.6,
+          "betfair_sb_uk": 1.53,
+          "ladbrokes_uk": 1.53,
+          "coral": 1.53,
+          "marathonbet": 1.55,
+          "williamhill": 1.53,
+          "sport888": 1.53,
+          "pinnacle": 1.59,
+          "betonlineag": 1.54,
+          "betanysports": 1.54,
+          "everygame": 1.55
+        },
+        "away": {
+          "grosvenor": 2.55,
+          "smarkets": 2.58,
+          "betsson": 2.39,
+          "betfair_ex_uk": 2.64,
+          "betclic_fr": 2.5,
+          "betvictor": 2.4,
+          "unibet_nl": 2.55,
+          "unibet_fr": 2.6,
+          "leovegas": 2.55,
+          "betfair_ex_eu": 2.64,
+          "virginbet": 2.48,
+          "pmu_fr": 2.5,
+          "casumo": 2.55,
+          "nordicbet": 2.46,
+          "gtbets": 2.49,
+          "livescorebet": 2.48,
+          "onexbet": 2.57,
+          "unibet_se": 2.55,
+          "leovegas_se": 2.55,
+          "codere_it": 2.55,
+          "paddypower": 2.5,
+          "coolbet": 2.6,
+          "betway": 2.5,
+          "winamax_fr": 2.5,
+          "mybookieag": 2.49,
+          "boylesports": 2.5,
+          "winamax_de": 2.55,
+          "matchbook": 2.64,
+          "betfair_sb_uk": 2.5,
+          "ladbrokes_uk": 2.37,
+          "coral": 2.37,
+          "marathonbet": 2.53,
+          "williamhill": 2.5,
+          "sport888": 2.5,
+          "pinnacle": 2.5,
+          "betonlineag": 2.56,
+          "betanysports": 2.55,
+          "everygame": 2.4
+        }
+      },
+      "model": {
+        "home": 0.7152527510491987,
+        "away": 0.2847472489508013,
+        "fromModel": true,
+        "eloH": 1835,
+        "eloA": 1675,
+        "surface": "clay"
+      }
+    },
+    {
+      "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+      "tour": "atp",
+      "event": "Atp French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "09:00",
+      "home": "matteoarnaldi",
+      "away": "flaviocobolli",
+      "odds": {
+        "home": {
+          "pinnacle": 2.98,
+          "onexbet": 3.06,
+          "marathonbet": 3.02,
+          "nordicbet": 2.95,
+          "gtbets": 3,
+          "betfair_ex_eu": 3.1,
+          "betway": 2.75,
+          "winamax_fr": 2.9,
+          "winamax_de": 2.95,
+          "smarkets": 3.05,
+          "betfair_ex_uk": 3.1,
+          "codere_it": 2.9,
+          "betsson": 2.95,
+          "paddypower": 3,
+          "unibet_fr": 3,
+          "coolbet": 3.05,
+          "betclic_fr": 2.95,
+          "unibet_uk": 2.9,
+          "mybookieag": 2.92,
+          "betvictor": 2.75,
+          "betonlineag": 3,
+          "matchbook": 3.1,
+          "betfair_sb_uk": 2.88,
+          "ladbrokes_uk": 2.87,
+          "coral": 2.87,
+          "tipico_de": 2.9,
+          "sport888": 2.9,
+          "leovegas": 2.95,
+          "grosvenor": 2.95,
+          "livescorebet": 2.88,
+          "leovegas_se": 2.95,
+          "pmu_fr": 2.88,
+          "virginbet": 2.88,
+          "casumo": 2.95,
+          "unibet_nl": 2.95,
+          "unibet_se": 2.95,
+          "betanysports": 3,
+          "williamhill": 2.9,
+          "everygame": 2.9
+        },
+        "away": {
+          "pinnacle": 1.44,
+          "onexbet": 1.43,
+          "marathonbet": 1.41,
+          "nordicbet": 1.4,
+          "gtbets": 1.42,
+          "betfair_ex_eu": 1.46,
+          "betway": 1.4,
+          "winamax_fr": 1.42,
+          "winamax_de": 1.43,
+          "smarkets": 1.44,
+          "betfair_ex_uk": 1.46,
+          "codere_it": 1.39,
+          "betsson": 1.4,
+          "paddypower": 1.36,
+          "unibet_fr": 1.41,
+          "coolbet": 1.42,
+          "betclic_fr": 1.42,
+          "unibet_uk": 1.4,
+          "mybookieag": 1.39,
+          "betvictor": 1.4,
+          "betonlineag": 1.42,
+          "matchbook": 1.46,
+          "betfair_sb_uk": 1.4,
+          "ladbrokes_uk": 1.4,
+          "coral": 1.36,
+          "tipico_de": 1.4,
+          "sport888": 1.4,
+          "leovegas": 1.42,
+          "grosvenor": 1.42,
+          "livescorebet": 1.4,
+          "leovegas_se": 1.42,
+          "pmu_fr": 1.4,
+          "virginbet": 1.4,
+          "casumo": 1.42,
+          "unibet_nl": 1.42,
+          "unibet_se": 1.42,
+          "betanysports": 1.42,
+          "williamhill": 1.4,
+          "everygame": 1.4
+        }
+      },
+      "model": {
+        "home": 0.48561281583400134,
+        "away": 0.5143871841659986,
+        "fromModel": true,
+        "eloH": 1810,
+        "eloA": 1820,
+        "surface": "clay"
+      }
+    },
+    {
+      "id": "a4c247a3021a7854b7dc23b9d67524c6",
+      "tour": "atp",
+      "event": "Atp French Open",
+      "round": "",
+      "surface": "Tierra",
+      "time": "14:30",
+      "home": "jakubmensik",
+      "away": "alexanderzverev",
+      "odds": {
+        "home": {
+          "casumo": 4.2,
+          "unibet_se": 4.2,
+          "leovegas": 4.2,
+          "leovegas_se": 4.2,
+          "livescorebet": 4.1,
+          "virginbet": 4.1,
+          "unibet_nl": 4.2,
+          "pmu_fr": 4.25,
+          "grosvenor": 4.2,
+          "marathonbet": 4.05,
+          "gtbets": 4.03,
+          "pinnacle": 4.3,
+          "betway": 3.75,
+          "unibet_fr": 4.1,
+          "unibet_uk": 3.9,
+          "betsson": 4,
+          "winamax_de": 4.2,
+          "winamax_fr": 4.2,
+          "nordicbet": 4,
+          "smarkets": 4.3,
+          "betclic_fr": 4.1,
+          "codere_it": 3.9,
+          "mybookieag": 3.9,
+          "ladbrokes_uk": 3.75,
+          "coral": 3.75,
+          "onexbet": 4.11,
+          "betonlineag": 4.2,
+          "matchbook": 4.3,
+          "betfair_sb_uk": 3.75,
+          "betvictor": 3.6,
+          "betfair_ex_eu": 4.4,
+          "betfair_ex_uk": 4.4,
+          "paddypower": 4.2,
+          "williamhill": 3.75,
+          "betanysports": 4.1,
+          "tipico_de": 4.1,
+          "coolbet": 4.1,
+          "everygame": 4.2
+        },
+        "away": {
+          "casumo": 1.24,
+          "unibet_se": 1.24,
+          "leovegas": 1.24,
+          "leovegas_se": 1.24,
+          "livescorebet": 1.22,
+          "virginbet": 1.22,
+          "unibet_nl": 1.24,
+          "pmu_fr": 1.25,
+          "grosvenor": 1.24,
+          "marathonbet": 1.26,
+          "gtbets": 1.25,
+          "pinnacle": 1.26,
+          "betway": 1.25,
+          "unibet_fr": 1.26,
+          "unibet_uk": 1.24,
+          "betsson": 1.25,
+          "winamax_de": 1.25,
+          "winamax_fr": 1.24,
+          "nordicbet": 1.25,
+          "smarkets": 1.26,
+          "betclic_fr": 1.26,
+          "codere_it": 1.24,
+          "mybookieag": 1.24,
+          "ladbrokes_uk": 1.25,
+          "coral": 1.25,
+          "onexbet": 1.28,
+          "betonlineag": 1.25,
+          "matchbook": 1.29,
+          "betfair_sb_uk": 1.25,
+          "betvictor": 1.25,
+          "betfair_ex_eu": 1.29,
+          "betfair_ex_uk": 1.29,
+          "paddypower": 1.22,
+          "williamhill": 1.25,
+          "betanysports": 1.25,
+          "tipico_de": 1.22,
+          "coolbet": 1.27,
+          "everygame": 1.22
+        }
+      }
+    }
+  ],
+  "COMBOS": [
+    {
+      "id": "c1",
+      "name": "Combinada del Día",
+      "conf": 21,
+      "legs": [
+        {
+          "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+          "sport": "tennis_atp_french_open",
+          "ts": 1780642800000,
+          "side": "home",
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana M. Arnaldi",
+          "odd": 3.1,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "88386b9afa0bb2d85d19320d0d453ae3",
+          "sport": "tennis_wta_french_open",
+          "ts": 1780578000000,
+          "side": "away",
+          "match": "M. Kostyuk – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 2.3,
+          "book": "betanysports"
+        },
+        {
+          "id": "8a9ababcb76eba02d840a77d12743b44",
+          "sport": "tennis_wta_french_open",
+          "ts": 1780585200000,
+          "side": "home",
+          "match": "D. Shnaider – M. Chwalinska",
+          "pick": "Gana D. Shnaider",
+          "odd": 1.61,
+          "book": "smarkets"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Combinada Valor",
+      "conf": 44,
+      "legs": [
+        {
+          "id": "88386b9afa0bb2d85d19320d0d453ae3",
+          "sport": "tennis_wta_french_open",
+          "ts": 1780578000000,
+          "side": "away",
+          "match": "M. Kostyuk – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 2.3,
+          "book": "betanysports"
+        },
+        {
+          "id": "8a9ababcb76eba02d840a77d12743b44",
+          "sport": "tennis_wta_french_open",
+          "ts": 1780585200000,
+          "side": "home",
+          "match": "D. Shnaider – M. Chwalinska",
+          "pick": "Gana D. Shnaider",
+          "odd": 1.61,
+          "book": "smarkets"
+        }
+      ]
+    }
+  ],
+  "RECORD": [
+    {
+      "id": "seed-kalinskaya-0603",
+      "date": "03 JUN",
+      "match": "A. Kalinskaya – M. Chwalińska",
+      "pick": "Gana A. Kalinskaya",
+      "odd": 2,
+      "book": "matchbook",
+      "result": "W"
+    }
+  ],
+  "PENDING": [
+    {
+      "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+      "sport": "tennis_atp_french_open",
+      "ts": 1780642800000,
+      "date": "05 JUN",
+      "match": "M. Arnaldi – F. Cobolli",
+      "pickKey": "home",
+      "pickLabel": "Gana M. Arnaldi",
+      "odd": 3.1,
+      "book": "betfair_ex_eu",
+      "homeName": "M. Arnaldi",
+      "awayName": "F. Cobolli"
+    },
+    {
+      "id": "88386b9afa0bb2d85d19320d0d453ae3",
+      "sport": "tennis_wta_french_open",
+      "ts": 1780578000000,
+      "date": "04 JUN",
+      "match": "M. Kostyuk – M. Andreeva",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Andreeva",
+      "odd": 2.3,
+      "book": "betanysports",
+      "homeName": "M. Kostyuk",
+      "awayName": "M. Andreeva"
+    },
+    {
+      "id": "8a9ababcb76eba02d840a77d12743b44",
+      "sport": "tennis_wta_french_open",
+      "ts": 1780585200000,
+      "date": "04 JUN",
+      "match": "D. Shnaider – M. Chwalinska",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Shnaider",
+      "odd": 1.61,
+      "book": "smarkets",
+      "homeName": "D. Shnaider",
+      "awayName": "M. Chwalinska"
+    }
+  ],
+  "COMBO_RECORD": [],
+  "COMBO_PENDING": [
+    {
+      "dayId": "04 JUN·c1",
+      "date": "04 JUN",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "e8fd9e22f4de0704558bc7a7f08171ce",
+          "sport": "tennis_atp_french_open",
+          "side": "home",
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana M. Arnaldi",
+          "odd": 3.1,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "88386b9afa0bb2d85d19320d0d453ae3",
+          "sport": "tennis_wta_french_open",
+          "side": "away",
+          "match": "M. Kostyuk – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 2.3,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "8a9ababcb76eba02d840a77d12743b44",
+          "sport": "tennis_wta_french_open",
+          "side": "home",
+          "match": "D. Shnaider – M. Chwalinska",
+          "pick": "Gana D. Shnaider",
+          "odd": 1.61,
+          "homeName": "",
+          "awayName": ""
+        }
+      ]
+    },
+    {
+      "dayId": "04 JUN·c2",
+      "date": "04 JUN",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "88386b9afa0bb2d85d19320d0d453ae3",
+          "sport": "tennis_wta_french_open",
+          "side": "away",
+          "match": "M. Kostyuk – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 2.3,
+          "homeName": "",
+          "awayName": ""
+        },
+        {
+          "id": "8a9ababcb76eba02d840a77d12743b44",
+          "sport": "tennis_wta_french_open",
+          "side": "home",
+          "match": "D. Shnaider – M. Chwalinska",
+          "pick": "Gana D. Shnaider",
+          "odd": 1.61,
+          "homeName": "",
+          "awayName": ""
+        }
+      ]
+    }
+  ],
+  "ARB_RECORD": [
+    {
+      "date": "03 JUN",
+      "match": "A. Sabalenka – D. Shnaider",
+      "marginPct": 1.42,
+      "profit": 1.44,
+      "legs": [
+        {
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.15,
+          "book": "gtbets"
+        },
+        {
+          "pick": "Gana D. Shnaider",
+          "odd": 8.6,
+          "book": "betfair"
+        }
+      ]
+    }
+  ],
+  "ARB_PENDING": [
+    {
+      "date": "04 JUN",
+      "match": "M. Kostyuk – M. Andreeva",
+      "marginPct": 1.27,
+      "profit": 1.29,
+      "homeName": "M. Kostyuk",
+      "awayName": "M. Andreeva",
+      "sport": "tennis_wta_french_open",
+      "legs": [
+        {
+          "pick": "Gana M. Kostyuk",
+          "odd": 1.81,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "pick": "Gana M. Andreeva",
+          "odd": 2.3,
+          "book": "betanysports"
+        }
+      ]
+    }
+  ],
+  "ELO": {
+    "sinner": 2180,
+    "alcaraz": 2150,
+    "djokovic": 2060,
+    "zverev": 2010,
+    "medvedev": 1985,
+    "rublev": 1940,
+    "ruud": 1915,
+    "fritz": 1925,
+    "hurkacz": 1900,
+    "deminaur": 1905,
+    "rune": 1885,
+    "tsitsipas": 1880,
+    "dimitrov": 1850,
+    "musetti": 1870,
+    "paul": 1850,
+    "shelton": 1840,
+    "humbert": 1820,
+    "cerundolo": 1810,
+    "augeraliassime": 1830,
+    "berrettini": 1820,
+    "arnaldi": 1770,
+    "cobolli": 1780,
+    "tiafoe": 1830,
+    "khachanov": 1820,
+    "bublik": 1790,
+    "lehecka": 1810,
+    "machac": 1800,
+    "griekspoor": 1770,
+    "norrie": 1780,
+    "korda": 1810,
+    "paire": 1650,
+    "swiatek": 2120,
+    "sabalenka": 2110,
+    "gauff": 2010,
+    "rybakina": 2000,
+    "paolini": 1900,
+    "zheng": 1900,
+    "pegula": 1910,
+    "vondrousova": 1880,
+    "kalinskaya": 1820,
+    "kostyuk": 1830,
+    "andreeva": 1900,
+    "navarro": 1850,
+    "collins": 1840,
+    "keys": 1860,
+    "ostapenko": 1840,
+    "kasatkina": 1850,
+    "jabeur": 1830,
+    "krejcikova": 1840,
+    "shnaider": 1810,
+    "chwalinska": 1650,
+    "svitolina": 1850,
+    "haddadmaia": 1820,
+    "samsonova": 1820,
+    "alexandrova": 1820,
+    "muchova": 1870,
+    "fernandez": 1800
+  },
+  "ELO_DONE": {}
 }
