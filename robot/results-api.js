@@ -8,7 +8,7 @@
    ============================================================ */
 const HOST = 'https://api.api-tennis.com/tennis/';
 
-function surnameKey(name){ return (name||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+function surnameKey(name){ return (name||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase(); }
 
 async function get(method, key, params){
   const qs = new URLSearchParams(Object.assign({ method, APIkey:key }, params)).toString();

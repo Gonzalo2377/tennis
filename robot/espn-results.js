@@ -12,7 +12,7 @@ const TOURS = ['atp', 'wta'];
 
 function surname(name){
   // "Mirra Andreeva" -> "andreeva" ; handles accents
-  return (name||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  return (name||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase();
 }
 function ymd(d){ return d.toISOString().slice(0,10).replace(/-/g,''); }
 

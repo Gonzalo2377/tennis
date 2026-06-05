@@ -34,7 +34,7 @@ async function resolveSofa(sofaId){
 /* ---- name search fallback (para pendientes sin sofascoreId) ----
    Busca un jugador en SofaScore y resuelve el partido contra su rival.
    surnameKey normaliza apellidos para comparar. */
-function sk(n){ return (n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+function sk(n){ return (n||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase(); }
 
 async function searchEventByNames(homeName, awayName){
   const q = encodeURIComponent((homeName||'').trim());

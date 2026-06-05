@@ -100,7 +100,7 @@ function winnerOf(ev){
 
 /* ---- manual results (results.json) — The Odds API no da resultados de tenis,
    así que el dueño escribe los apellidos ganadores y liquidamos con eso. ---- */
-function surnameKey(name){ return (name||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+function surnameKey(name){ return (name||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase(); }
 function loadManualWinners(){
   try { const r = JSON.parse(fs.readFileSync(__dirname + '/results.json','utf8')); return (r.winners||[]).map(surnameKey).filter(Boolean); }
   catch(e){ return []; }
