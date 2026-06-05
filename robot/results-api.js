@@ -27,7 +27,7 @@ module.exports = async function apiTennis(key, days){
   try { j = await get('get_fixtures', key, { date_start:start, date_stop:stop }); }
   catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], finished:[], logos:{} }; }
   const rows = (j && j.result) || [];
-  const winners = [], finished = [], voided = [], logos = {};
+  const winners = [], finished = [], voided = [], unfinished = [], logos = {};
   rows.forEach(ev => {
     const p1 = ev.event_first_player, p2 = ev.event_second_player;
     if (ev.event_first_player_logo)  logos[surnameKey(p1)] = ev.event_first_player_logo;
@@ -37,10 +37,13 @@ module.exports = async function apiTennis(key, days){
     // RETIRADA / WALKOVER → apuesta anulada (cuota 1.00)
     const isVoid = /retir|walkover|w\/o|abandon|cancel|awarded|def\b/.test(st) || /\bret\.?\b|w\/o|walkover/i.test(fr);
     if (isVoid && p1 && p2){ voided.push({ home:p1, away:p2 }); return; }
+    // INTERRUMPIDO / SUSPENDIDO / APLAZADO → no ha terminado, debe seguir pendiente
+    const isUnfinished = /suspend|interrupt|postpon|delayed|abandoned/.test(st);
+    if (isUnfinished && p1 && p2){ unfinished.push({ home:p1, away:p2 }); return; }
     if (st !== 'finished') return;
     const w = ev.event_winner === 'First Player' ? p1 : ev.event_winner === 'Second Player' ? p2 : null;
     if (w){ winners.push(surnameKey(w)); finished.push({ home:p1, away:p2, winner:w }); }
   });
-  console.log(`· api-tennis: ${rows.length} fixtures · ${winners.length} terminados · ${voided.length} retiradas · ${Object.keys(logos).length} fotos`);
-  return { winners, finished, voided, logos };
+  console.log(`· api-tennis: ${rows.length} fixtures · ${winners.length} terminados · ${voided.length} retiradas · ${unfinished.length} interrumpidos · ${Object.keys(logos).length} fotos`);
+  return { winners, finished, voided, unfinished, logos };
 };
