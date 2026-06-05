@@ -325,10 +325,10 @@ function Record({ t, go }) {
                         {c.legs.map((l,j)=>(
                           <div key={j} style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, padding:'10px 0', borderBottom: j<c.legs.length-1?'1px solid var(--line-soft)':'none'}}>
                             <div style={{minWidth:0}}>
-                              <div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.88rem', color: l.win?'var(--ink)':'var(--muted)', textDecoration: l.win?'none':'line-through'}}>{l.pick}</div>
-                              <div className="vb-sub">{l.match}</div>
+                              <div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.88rem', color: l.voided?'var(--muted)':l.win?'var(--ink)':'var(--muted)', textDecoration: (l.voided||l.win)?'none':'line-through'}}>{l.pick}</div>
+                              <div className="vb-sub">{l.match}{l.voided?' · retirada':''}</div>
                             </div>
-                            <span style={{fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.82rem', color: l.win?'var(--pos)':'var(--neg)'}}>{l.win?'✓':'✗'} {l.odd.toFixed(2)}</span>
+                            <span style={{fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.82rem', color: l.voided?'var(--muted)':l.win?'var(--pos)':'var(--neg)'}}>{l.voided?'∅':l.win?'✓':'✗'} {(l.odd||1).toFixed(2)}</span>
                           </div>
                         ))}
                       </div>
