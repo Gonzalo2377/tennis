@@ -477,10 +477,11 @@ async function scoresOnly(){
   const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport)].filter(Boolean))];
   if(!need.length){ console.log('· scores-only: nada pendiente'); return; }
   try {
-    const scores=await fetchScores(need);
+    // 100% FREE refresh: settle from ESPN (gratis) + manual only. NO Odds API call → 0 créditos.
+    const scores=[];
     const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
     let espn = { winners:[], finished:[] };
-    try { espn = await espnResults(5); } catch(e){}
+    try { espn = await espnResults(5); console.log(`· scores-only ESPN: ${espn.winners.length} ganadores`); } catch(e){ console.log('· ESPN error:', e.message); }
     const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];
     if (d.PLAYERS && Object.keys(apiRes.logos).length){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
