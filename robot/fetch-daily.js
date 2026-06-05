@@ -160,6 +160,33 @@ function pickVoided(p, voids){
          voids.includes(surnameKey(p.awayName||(p.match||'').split(/[–-]/)[1])) ||
          voids.includes(surnameKey((p.pickLabel||'').replace(/^Gana\s+/i,'')));
 }
+/* re-evalúa registros ya guardados cuando una retirada (voids) afecta a una pierna:
+   pone esa pierna a cuota 1.00, recalcula la cuota total y el resultado. Arregla combis
+   antiguas marcadas mal. Devuelve nº de registros corregidos. */
+function revoidRecords(COMBO_RECORD, RECORD, voids){
+  if (!voids.length) return 0;
+  let n=0;
+  COMBO_RECORD.forEach(c=>{
+    let changed=false;
+    c.legs.forEach(l=>{
+      const names=(l.match||'').split('–').map(s=>surnameKey(s));
+      const hit = names.some(x=>voids.includes(x)) || voids.includes(surnameKey((l.pick||'').replace(/^Gana\s+/i,'')));
+      if (hit && !l.voided){ l.voided=true; l.odd=1.00; l.win=null; changed=true; }
+    });
+    if (changed){
+      const nonVoid=c.legs.filter(l=>!l.voided);
+      c.totalOdd=+c.legs.reduce((p,l)=>p*(l.voided?1:(l.odd||1)),1).toFixed(2);
+      c.result = nonVoid.length===0 ? 'V' : (nonVoid.every(l=>l.win===true)?'W':'L');
+      n++;
+    }
+  });
+  RECORD.forEach(r=>{
+    if (r.result==='V') return;
+    const names=(r.match||'').split('–').map(s=>surnameKey(s));
+    if (names.some(x=>voids.includes(x)) || voids.includes(surnameKey((r.pick||'').replace(/^Gana\s+/i,'')))){ r.result='V'; r.odd=1.00; n++; }
+  });
+  return n;
+}
 
 /* ---- engine (mirror of data.js) ---- */
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
@@ -392,6 +419,7 @@ async function main(){
       const playedEnough = ts => !ts || ts <= Date.now();
       // settle singles: only if played; manual winners first, then API scores.
       const voids=[...loadManualVoids(), ...(espn.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)]), ...((apiRes.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)]))];
+      { const fixed=revoidRecords(COMBO_RECORD, RECORD, voids); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
       // PRE-RESUELVE por nombre los pendientes SIN sofascoreId (challengers viejos)
       const byName={};
       for (const p of PENDING){ if(!p.sofa && p.homeName && p.awayName){ const k=surnameKey(p.homeName)+'|'+surnameKey(p.awayName); if(!(k in byName)) byName[k]=await sofaByName(p.homeName,p.awayName); } }
@@ -621,6 +649,7 @@ async function scoresOnly(){
     for (const a of ARB_PENDING){ if(!a.sofa&&a.homeName&&a.awayName) await sofaByName(a.homeName,a.awayName); }
     const nameRes=(h,a)=> byName[surnameKey(h)+'|'+surnameKey(a)] || null;
     const voids=[...loadManualVoids(), ...(espn.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)]), ...((apiRes.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)]))];
+    { const fixed=revoidRecords(COMBO_RECORD, RECORD, voids); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
     const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} if(pickVoided(p,voids)){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:1.00,book:p.book,result:'V'});return;} const sf=(p.sofa&&sofa[p.sofa])||nameRes(p.homeName,p.awayName); let w=null; if(sf&&sf.done){ if(sf.voided){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:1.00,book:p.book,result:'V'});return;} w=(sf.winnerHome===(p.pickKey==='home')); } else if(sf&&!sf.done){still.push(p);return;} if(w===null) w=espnPairResult(p.homeName,p.awayName,(p.pickLabel||'').replace(/^Gana\s+/i,''),espn.finished); if(w===null) w=manualPickResult(p,manualWinners); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
     const cstill=[]; COMBO_PENDING.forEach(c=>{ if(!c.legs.every(l=>pe(l.ts))){cstill.push(c);return;} const states=c.legs.map(l=>{ if(pickVoided({match:l.match,pickLabel:l.pick},voids)) return 'V'; const s=(l.sofa&&sofa[l.sofa])||nameRes(l.homeName,l.awayName); if(s&&s.done&&s.voided) return 'V'; if(s&&s.done&&!s.voided) return (s.winnerHome===(l.side==='home')); const nm=(l.match||'').split('–'); let r=espnPairResult(nm[0],nm[1],(l.pick||'').replace(/^Gana\s+/i,''),espn.finished); if(r===null) r=manualLegResult(l,manualWinners); if(r===null) r=legWin(scores,l); return r; }); if(states.some(r=>r===null)){cstill.push(c);return;} const nonVoid=states.filter(r=>r!=='V'); const won=nonVoid.length>0&&nonVoid.every(r=>r===true); const allVoid=nonVoid.length===0; const totalOdd=+c.legs.reduce((p,l,i)=>p*(states[i]==='V'?1:l.odd),1).toFixed(2); COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd,result:allVoid?'V':(won?'W':'L'),legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:states[i]==='V'?1.00:l.odd,win:states[i]==='V'?null:states[i],voided:states[i]==='V'}))}); }); COMBO_PENDING=cstill;
     const astill=[]; ARB_PENDING.forEach(a=>{ if(!pe(a.ts)){astill.push(a);return;} const sfa=(a.sofa&&sofa[a.sofa])||nameRes(a.homeName,a.awayName); const sfaVoid=(sfa&&sfa.done&&sfa.voided)||(a.homeName&&a.awayName&&(voids.includes(surnameKey(a.homeName))||voids.includes(surnameKey(a.awayName)))); const done=(sfa&&sfa.done)||espnPairDone(a.homeName,a.awayName,espn.finished)||matchFinished(scores,a.homeName,a.awayName)||sfaVoid; if(!done){astill.push(a);return;} if(sfaVoid) return; ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
