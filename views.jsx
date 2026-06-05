@@ -73,6 +73,7 @@ function ValueCard({ m, t, go }) {
 
 /* ============================================================ VALUE BOARD */
 function ValueBoard({ t, go }) {
+  const [, force] = useState(0);
   const all = window.MATCHES.map(m=>({m,v:window.matchValue(m)}));
   const withValue = all.filter(x=>x.v.positive).sort((a,b)=>b.v.edge-a.v.edge);
   const rest = all.filter(x=>!x.v.positive).sort((a,b)=>b.v.pick.p-a.v.pick.p);
@@ -87,7 +88,10 @@ function ValueBoard({ t, go }) {
               </div>
               <h2 className="section__title">{t.boardTitle}</h2>
             </div>
-            <span className="tag tag--lime">{withValue.length} {t.withValueCount}</span>
+            <div style={{display:'flex', gap:10, alignItems:'center'}}>
+              <BookFilter onChange={()=>force(n=>n+1)} />
+              <span className="tag tag--lime">{withValue.length} {t.withValueCount}</span>
+            </div>
           </div>
           <p style={{color:'var(--ink-2)', maxWidth:660, margin:'-6px 0 22px', lineHeight:1.6}}>{t.boardLead}</p>
 

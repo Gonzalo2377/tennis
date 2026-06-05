@@ -74,21 +74,33 @@ window.MATCHES = [
 /* ============================================================
    ENGINE
    ============================================================ */
+/* Filtro de casas elegido por el usuario. null = todas. Se aplica al vuelo,
+   sin tocar los datos ni gastar créditos. Si el filtro deja <1 casa en un
+   partido, se ignora (usamos todas) para no romper la vista. */
+window.BOOK_FILTER = null;
+window.applyBookFilter = function(map){
+    if (!window.BOOK_FILTER || !window.BOOK_FILTER.size) return map;
+    const out = {};
+    for (const b in map) if (window.BOOK_FILTER.has(b)) out[b] = map[b];
+    return Object.keys(out).length ? out : map;   // fallback: si no queda ninguna, todas
+};
 window.bestPrice = function(map){
+    map = window.applyBookFilter(map);
     let best=null;
     for(const b in map) if(!best || map[b]>best.price) best={book:b, price:map[b]};
     return best;
 };
 window.saneBest = function(map){
+    map = window.applyBookFilter(map);
     const v=Object.values(map).sort((a,b)=>a-b), n=v.length;
     const med = n ? (n%2 ? v[(n-1)/2] : (v[n/2-1]+v[n/2])/2) : 0;
     let best=null;
     for(const b in map){ const p=map[b]; if(med && p>med*1.6) continue; if(!best||p>best.price) best={book:b,price:p}; }
-    return best || window.bestPrice(map);
+    return best || { book:Object.keys(map)[0], price:Object.values(map)[0] };
 };
 /* de-vig 2-way market consensus (avg of 1/odds per side, normalised) */
 window.marketProbs = function(m){
-    const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;};
+    const avg=o=>{const f=window.applyBookFilter(o);const v=Object.values(f);return v.reduce((s,x)=>s+1/x,0)/v.length;};
     const a=avg(m.odds.home), b=avg(m.odds.away), s=a+b;
     return { home:a/s, away:b/s };
 };
@@ -99,9 +111,9 @@ window.matchValue = function(m){
     const useModel = m.model && typeof m.model.home === 'number';
     const prob = useModel ? { home:m.model.home, away:m.model.away } : mk;
     const MIN_P=0.35, MAX_ODD=4.50;
-    // cuanto más alta la cuota, más valor (edge) exigimos para fiarnos:
-    //  cuota 1.5 → ≥2% · 2.0 → ≥4% · 3.0 → ≥8% · 3.25 → ≥9% · 4.5 → ≥14%
-    const minEdge = (odd)=> Math.max(2, 2 + (odd-1.5)*4);
+    // umbral de valor EXPONENCIAL con la cuota: a cuota baja casi no exige, a cuota alta se dispara.
+    //  1.5→2% · 2.0→5% · 2.5→10% · 3.0→19% · 3.25→24% · 4.0→46% · 4.5→63%
+    const minEdge = (odd)=> Math.max(2, 2*Math.pow(odd/1.5, 3.2));
     const all = ['home','away'].map(k=>{
         const best = window.saneBest(m.odds[k]);
         const ev = (prob[k]*best.price - 1)*100;
@@ -120,7 +132,7 @@ window.findArbs = function(matches){
     list.forEach(m=>{
         if(!m.odds || !m.odds.home || !m.odds.away) return;
         const legs = ['home','away'].map(k=>{
-            const all=m.odds[k]; const best=window.bestPrice(all);
+            const all=window.applyBookFilter(m.odds[k]); const best=window.bestPrice(m.odds[k]);
             const v=Object.values(all).sort((a,b)=>a-b), n=v.length;
             const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0;
             return { k, book:best.book, price:best.price, suspicious: med && best.price>med*1.7 };
@@ -195,12 +207,16 @@ window.ARB_RECORD = [
 ];
 window.recordSummary = function(){
     const r = window.RECORD || [];
-    let staked=0, returned=0, w=0;
-    r.forEach(x=>{ staked+=1; if(x.result==='W'){ returned+=x.odd; w++; } });
+    let staked=0, returned=0, w=0, l=0, voids=0;
+    r.forEach(x=>{
+        if(x.result==='V'){ voids++; return; }          // anulada: stake devuelto, neutra
+        staked+=1;
+        if(x.result==='W'){ returned+=x.odd; w++; } else { l++; }
+    });
     const profit = returned - staked;
     const roi = staked ? (profit/staked)*100 : 0;
-    const hit = r.length ? (w/r.length)*100 : 0;
-    return { n:r.length, w, l:r.length-w, profit, roi, hit, staked };
+    const hit = (w+l) ? (w/(w+l))*100 : 0;
+    return { n:r.length, w, l, voids, profit, roi, hit, staked };
 };
 window.comboSummary = function(){
     const c = window.COMBO_RECORD || [];
@@ -258,7 +274,7 @@ window.I18N = {
     recEyebrow:'TRANSPARENCIA TOTAL', recTitle:'Nuestro récord', recLead:'Cada pick que publicamos queda registrado, gane o pierda. A 1 unidad por apuesta.',
     stHit:'Acierto', stRoi:'ROI', stProfit:'Beneficio', stPicks:'Picks', units:'u',
     colDate:'Fecha', colMatch:'Partido', colPick:'Pick', colOdd:'Cuota', colBook:'Casa', colResult:'Resultado',
-    resW:'Ganada', resL:'Fallada',
+    resW:'Ganada', resL:'Fallada', resV:'Anulada',
     comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.',
     arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo (reparto «Igual») que detectamos queda registrada con su beneficio garantizado, calculado sobre 100€ de referencia.',
     arbRecN:'Surebets', arbRecProfit:'Beneficio acumulado', arbRecAvg:'Margen medio', arbRecMargin:'Margen',
@@ -309,7 +325,7 @@ window.I18N = {
     recEyebrow:'FULL TRANSPARENCY', recTitle:'Our record', recLead:'Every pick we publish is logged, win or lose. At 1 unit per bet.',
     stHit:'Hit rate', stRoi:'ROI', stProfit:'Profit', stPicks:'Picks', units:'u',
     colDate:'Date', colMatch:'Match', colPick:'Pick', colOdd:'Odds', colBook:'Book', colResult:'Result',
-    resW:'Won', resL:'Lost',
+    resW:'Won', resL:'Lost', resV:'Void',
     comboRecTitle:'Settled accas', comboRecLead:'Every acca is logged once it ends. It only wins if ALL legs come in.',
     arbRecTitle:'No-risk history', arbRecLead:'Every no-risk bet we catch is logged with its guaranteed profit (on a 100€ reference stake).',
     arbRecN:'Surebets', arbRecProfit:'Total profit', arbRecAvg:'Avg margin', arbRecMargin:'Margin',

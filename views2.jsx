@@ -2,6 +2,7 @@
 
 /* ============================================================ SIN RIESGO */
 function Arbitrage({ t, go }) {
+  const [, force] = useState(0);
   const [stake, setStake] = useState(()=>{ try { return +localStorage.getItem('ace_arb_stake')||100; } catch(e){ return 100; } });
   useEffect(()=>{ try { localStorage.setItem('ace_arb_stake', stake); } catch(e){} }, [stake]);
   const [mode, setMode] = useState(()=>{ try { return localStorage.getItem('ace_arb_mode')||'even'; } catch(e){ return 'even'; } });
@@ -98,7 +99,10 @@ function Arbitrage({ t, go }) {
         <div className="wrap">
           <div className="section__head">
             <div><span className="eyebrow"><span className="dot" />{t.arbEyebrow}</span><h2 className="section__title">{t.arbTitle}</h2></div>
-            {arbs.length>0 && <span className="tag tag--lime">{arbs.length} {t.arbFound}</span>}
+            <div style={{display:'flex', gap:10, alignItems:'center'}}>
+              <BookFilter onChange={()=>force(n=>n+1)} />
+              {arbs.length>0 && <span className="tag tag--lime">{arbs.length} {t.arbFound}</span>}
+            </div>
           </div>
           <p style={{color:'var(--ink-2)', maxWidth:680, margin:'-6px 0 20px', lineHeight:1.6}}>{t.arbLead}</p>
 
@@ -266,7 +270,7 @@ function Record({ t, go }) {
                     <td className="l">{r.pick}</td>
                     <td><b style={{fontFamily:'var(--font-mono)'}}>{r.odd.toFixed(2)}</b></td>
                     <td><Book id={r.book} showName={false} size={20} /></td>
-                    <td><span className={'res-pill '+(r.result==='W'?'w':'l')}>{r.result==='W'?t.resW:t.resL}</span></td>
+                    <td><span className={'res-pill '+(r.result==='W'?'w':r.result==='V'?'v':'l')}>{r.result==='W'?t.resW:r.result==='V'?t.resV:t.resL}</span></td>
                   </tr>
                 ))}
               </tbody>
@@ -310,12 +314,12 @@ function Record({ t, go }) {
               <p style={{color:'var(--ink-2)', fontSize:'.9rem', margin:'10px 0 16px', maxWidth:660, lineHeight:1.55}}>{t.comboRecLead}</p>
               <div className="grid grid--2">
                 {window.COMBO_RECORD.map((c,i)=>{
-                  const won=c.result==='W';
+                  const won=c.result==='W'; const vd=c.result==='V';
                   return (
-                    <div className="panel" key={i} style={{borderColor: won?'rgba(31,138,76,.4)':'rgba(210,64,42,.4)', borderWidth:1, borderStyle:'solid'}}>
+                    <div className="panel" key={i} style={{borderColor: vd?'rgba(131,125,108,.4)':won?'rgba(31,138,76,.4)':'rgba(210,64,42,.4)', borderWidth:1, borderStyle:'solid'}}>
                       <div className="combo__head" style={{borderBottom:'1px solid var(--line)'}}>
                         <div><div className="vb-sub">{c.date}</div><div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.05rem'}}>{c.name}</div></div>
-                        <span className={'res-pill '+(won?'w':'l')}>{won?t.resW:t.resL}</span>
+                        <span className={'res-pill '+(won?'w':vd?'v':'l')}>{won?t.resW:vd?t.resV:t.resL}</span>
                       </div>
                       <div style={{padding:'4px 16px'}}>
                         {c.legs.map((l,j)=>(

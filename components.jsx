@@ -146,6 +146,63 @@ function LiveChip({ t }) {
   return <span className="live-chip"><span className="pulse" />{t.autoUpdate}</span>;
 }
 
+/* ---------- bookmaker filter (dropdown with on/off switches) ---------- */
+function BookFilter({ onChange }) {
+  const [open, setOpen] = useState(false);
+  // all books present across the loaded matches
+  const allBooks = (() => {
+    const s = new Set();
+    (window.MATCHES||[]).forEach(m=>{ ['home','away'].forEach(k=>{ if(m.odds&&m.odds[k]) Object.keys(m.odds[k]).forEach(b=>s.add(b)); }); });
+    return [...s].sort((a,b)=> (bookById(a).name||a).localeCompare(bookById(b).name||b));
+  })();
+  const [sel, setSel] = useState(()=>{
+    try { const saved = JSON.parse(localStorage.getItem('ace_books')||'null'); return saved && saved.length ? new Set(saved) : null; }
+    catch(e){ return null; }
+  });
+  const apply = (next) => {
+    setSel(next);
+    window.BOOK_FILTER = next;
+    try { localStorage.setItem('ace_books', next ? JSON.stringify([...next]) : '[]'); } catch(e){}
+    onChange && onChange();
+  };
+  useEffect(()=>{ window.BOOK_FILTER = sel; }, []);
+  const isOn = (b) => !sel || sel.has(b);
+  const toggle = (b) => {
+    const base = sel ? new Set(sel) : new Set(allBooks);
+    if (base.has(b)) base.delete(b); else base.add(b);
+    apply(base.size===0 || base.size===allBooks.length ? (base.size===allBooks.length?null:base) : base);
+  };
+  const activeN = sel ? [...sel].filter(b=>allBooks.includes(b)).length : allBooks.length;
+  if (!allBooks.length) return null;
+  return (
+    <div className="bookf">
+      <button className="bookf__btn" onClick={()=>setOpen(!open)}>
+        🏛️ Casas <span className="bookf__cnt">{activeN}/{allBooks.length} ▾</span>
+      </button>
+      {open && (
+        <React.Fragment>
+          <div className="bookf__scrim" onClick={()=>setOpen(false)} />
+          <div className="bookf__panel">
+            <div className="bookf__head">
+              <span>Elige tus casas</span>
+              <button onClick={()=>apply(null)} className="bookf__all">Todas</button>
+            </div>
+            <div className="bookf__list">
+              {allBooks.map(b=>(
+                <div className="bookf__row" key={b} onClick={()=>toggle(b)}>
+                  <Book id={b} size={20} />
+                  <span className={'sw'+(isOn(b)?' on':'')} />
+                </div>
+              ))}
+            </div>
+            <div className="bookf__note">Filtra picks de valor y surebets. Menos casas = menos surebets.</div>
+          </div>
+        </React.Fragment>
+      )}
+    </div>
+  );
+}
+
 /* ---------- ticker ---------- */
 function Ticker() {
   const items = (window.MATCHES||[]).slice(0,7).map(m=>{
@@ -249,4 +306,4 @@ function Footer({ t, go }) {
   );
 }
 
-Object.assign(window, { Icon, Avatar, nextMatchFor, Book, ValueTag, SearchBox, PlayerChip, Form, LiveChip, Ticker, Nav, MobileNav, Footer });
+Object.assign(window, { Icon, Avatar, nextMatchFor, Book, ValueTag, SearchBox, PlayerChip, Form, LiveChip, BookFilter, Ticker, Nav, MobileNav, Footer });

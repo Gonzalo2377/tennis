@@ -126,12 +126,23 @@ function manualMatchDone(homeName, awayName, winners){
   if (!winners.length) return false;
   return winners.includes(surnameKey(homeName)) || winners.includes(surnameKey(awayName));
 }
+/* voids: walkover/abandono → apuesta anulada. results.json {"voided":["Arnaldi","Apellido"]} + ESPN. */
+function loadManualVoids(){
+  try { const r = JSON.parse(fs.readFileSync(__dirname + '/results.json','utf8')); return (r.voided||[]).map(surnameKey).filter(Boolean); }
+  catch(e){ return []; }
+}
+function pickVoided(p, voids){
+  if (!voids.length) return false;
+  return voids.includes(surnameKey(p.homeName||(p.match||'').split(/[–-]/)[0])) ||
+         voids.includes(surnameKey(p.awayName||(p.match||'').split(/[–-]/)[1])) ||
+         voids.includes(surnameKey((p.pickLabel||'').replace(/^Gana\s+/i,'')));
+}
 
 /* ---- engine (mirror of data.js) ---- */
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
-function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50; const minEdge=(odd)=>Math.max(2,2+(odd-1.5)*4); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price);return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
+function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50; const minEdge=(odd)=>Math.max(2,2*Math.pow(odd/1.5,3.2)); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price);return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
 /* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
 function arbOf(m){ const legs=['home','away'].map(k=>{const best=bestPrice(m.odds[k]);return {k,book:best.book,price:best.price};}); const inv=legs.reduce((s,l)=>s+1/l.price,0); return { legs, marginPct:(1-inv)*100, hasArb:(1-inv)*100>0.01 }; }
 
@@ -344,9 +355,11 @@ async function main(){
       // settleable once the match has STARTED; if there's no confirmed result yet it just stays pending.
       const playedEnough = ts => !ts || ts <= Date.now();
       // settle singles: only if played; manual winners first, then API scores.
+      const voids=[...loadManualVoids(), ...(espn.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)])];
       const still=[];
       PENDING.forEach(p=>{
         if (!playedEnough(p.ts)){ still.push(p); return; }          // not finished yet → keep waiting
+        if (pickVoided(p, voids)){ RECORD.unshift({ id:p.id, date:p.date, match:p.match, pick:p.pickLabel, odd:p.odd, book:p.book, result:'V' }); return; }
         let w = manualPickResult(p, manualWinners);
         if (w===null) w = winnerNameFor(scores, p);
         if (w===null){ still.push(p); return; }
@@ -357,10 +370,12 @@ async function main(){
       const cstill=[];
       COMBO_PENDING.forEach(c=>{
         if (!c.legs.every(l=>playedEnough(l.ts))){ cstill.push(c); return; }   // some leg not finished → keep
+        // si alguna pierna está anulada → combinada anulada (se quita esa selección de la cuota)
+        const anyVoid=c.legs.some(l=>pickVoided({match:l.match, pickLabel:l.pick}, voids));
         const res=c.legs.map(l=>{ let r=manualLegResult(l, manualWinners); return r===null ? legWin(scores,l) : r; });
-        if (res.some(r=>r===null)){ cstill.push(c); return; }
-        const won=res.every(Boolean);
-        COMBO_RECORD.unshift({ date:c.date, name:c.name, totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2), result:won?'W':'L',
+        if (!anyVoid && res.some(r=>r===null)){ cstill.push(c); return; }
+        const won=res.every(r=>r===true);
+        COMBO_RECORD.unshift({ date:c.date, name:c.name, totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2), result: anyVoid?'V':(won?'W':'L'),
           legs:c.legs.map((l,i)=>({ match:l.match, pick:l.pick, odd:l.odd, win:res[i] })) });
       });
       COMBO_PENDING=cstill;
@@ -501,8 +516,24 @@ async function scoresOnly(){
   let d;
   try { d = JSON.parse(fs.readFileSync(OUT,'utf8')); } catch(e){ console.log('· scores-only: no hay daily.json'); return; }
   let RECORD=d.RECORD||[], PENDING=d.PENDING||[], COMBO_RECORD=d.COMBO_RECORD||[], COMBO_PENDING=d.COMBO_PENDING||[], ARB_RECORD=d.ARB_RECORD||[], ARB_PENDING=d.ARB_PENDING||[];
+  // inject manual seed (surebets → directas al historial; picks → pendientes). NO toca MATCHES ni gasta créditos.
+  try {
+    const seed = JSON.parse(fs.readFileSync(__dirname + '/seed-pending.json', 'utf8'));
+    const sSig2=r=>`${(r.match||'').toLowerCase()}|${(r.pick||r.pickLabel||'').replace(/^gana\s+/i,'').toLowerCase()}`;
+    const aKey2=a=>(a.match||'').toLowerCase();
+    const seenP=new Set([...PENDING,...RECORD].map(sSig2));
+    (seed.PENDING||[]).forEach(p=>{ if(!seenP.has(sSig2(p))){ PENDING.push(p); seenP.add(sSig2(p)); } });
+    const seenA=new Set([...ARB_PENDING,...ARB_RECORD].map(aKey2));
+    (seed.ARB_PENDING||[]).forEach(a=>{ if(!seenA.has(aKey2(a))){ ARB_RECORD.unshift(a); seenA.add(aKey2(a)); } });
+  } catch(e){}
   const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport)].filter(Boolean))];
-  if(!need.length){ console.log('· scores-only: nada pendiente'); return; }
+  if(!need.length){
+    // nada que liquidar, pero quizá inyectamos seed → guardamos igual (MATCHES intactos)
+    d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD; d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING;
+    if(d.meta) d.meta.updatedAt=new Date().toISOString();
+    fs.writeFileSync(OUT, JSON.stringify(d,null,2));
+    console.log('· scores-only: nada pendiente (seed inyectado si había)'); return;
+  }
   try {
     // 100% FREE refresh: settle from ESPN (gratis) + manual only. NO Odds API call → 0 créditos.
     const scores=[];
@@ -515,7 +546,8 @@ async function scoresOnly(){
       Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
     }
     const pe=ts=>!ts||ts<=Date.now();
-    const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
+    const voids=[...loadManualVoids(), ...(espn.voided||[]).flatMap(v=>[surnameKey(v.home),surnameKey(v.away)])];
+    const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} if(pickVoided(p,voids)){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:'V'});return;} let w=manualPickResult(p,manualWinners); if(w===null) w=winnerNameFor(scores,p); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
     const cstill=[]; COMBO_PENDING.forEach(c=>{ if(!c.legs.every(l=>pe(l.ts))){cstill.push(c);return;} const res=c.legs.map(l=>{ let r=manualLegResult(l,manualWinners); return r===null?legWin(scores,l):r; }); if(res.some(r=>r===null)){cstill.push(c);return;} COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd:+c.legs.reduce((p,l)=>p*l.odd,1).toFixed(2),result:res.every(Boolean)?'W':'L',legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:l.odd,win:res[i]}))}); }); COMBO_PENDING=cstill;
     const astill=[]; ARB_PENDING.forEach(a=>{ if(!pe(a.ts)){astill.push(a);return;} const done=matchFinished(scores,a.homeName,a.awayName)||manualMatchDone(a.homeName,a.awayName,manualWinners); if(!done){astill.push(a);return;} ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
   } catch(e){ console.log('· scores-only: error', e.message); }

@@ -30,6 +30,7 @@ async function fetchDay(tour, dateStr){
 module.exports = async function espnResults(days = 4){
   const winners = new Set();
   const finished = [];
+  const voided = [];          // walkovers / no-shows → apuesta anulada
   const now = new Date();
   for (let i = 0; i <= days; i++){
     const d = new Date(now.getTime() - i*24*3600*1000);
@@ -50,6 +51,12 @@ module.exports = async function espnResults(days = 4){
         const a = cs[0], b = cs[1];
         const an = nameOf(a), bn = nameOf(b);
         if (!an || !bn) continue;
+        const detail = ((comp.status && comp.status.type && (comp.status.type.detail||comp.status.type.description||comp.status.type.name)) || '').toLowerCase();
+        // el texto del resultado ("X bt Y 6-3 2-1 RET" / "... walkover") es la señal más fiable
+        const noteText = ((comp.notes && comp.notes[0] && comp.notes[0].text) || (ev.notes && ev.notes[0] && ev.notes[0].text) || '').toLowerCase();
+        const blob = detail + ' ' + noteText;
+        const isWalkover = /walkover|w\/o|\bw-o\b|no[\s-]?show|cancel|\bret\b|retir|abandon|\bdef\b|defaulted|withdrew|withdrawn/.test(blob);
+        if (isWalkover){ voided.push({ home:an, away:bn }); continue; }   // anulada, no cuenta W/L
         let wn = null;
         if (a.winner) wn = an; else if (b.winner) wn = bn;
         if (!wn){
@@ -61,5 +68,5 @@ module.exports = async function espnResults(days = 4){
       }
     }
   }
-  return { winners: [...winners], finished };
+  return { winners: [...winners], finished, voided };
 };
