@@ -112,6 +112,7 @@ module.exports = async function fetchOddspapi(key, opts){
         id: 'op' + f.fixtureId, home_team: reorder(f.participant1Name), away_team: reorder(f.participant2Name),
         commence_time: f.startTime, bookmakers,
         _event: f.tournamentName || f.categoryName || 'Tenis', _tour: tour,
+        _sofa: (f.externalProviders && f.externalProviders.sofascoreId) || null,
       }, key: 'tennis_oddspapi_' + tour });
     } catch(e){ /* skip this fixture */ }
   }
