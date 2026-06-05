@@ -358,10 +358,11 @@ async function main(){
     const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport), ...keys].filter(Boolean))];
     if (need.length){
       const scores=await fetchScores(need);
-      const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
+      const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], finished:[], logos:{} };
       let espn = { winners:[], finished:[] };
       try { espn = await espnResults(5); console.log(`· ESPN: ${espn.winners.length} ganadores · ${espn.finished.length} partidos terminados`); }
       catch(e){ console.log('· ESPN no disponible:', e.message); }
+      espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
       const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];   // ESPN (gratis) + api-tennis + manual
       if (manualWinners.length) console.log(`· liquidando con ${manualWinners.length} ganadores (api-tennis + results.json)`);
       // SofaScore por ID exacto (challenger/ITF/todo, sin errores de nombres)
@@ -583,9 +584,10 @@ async function scoresOnly(){
   try {
     // 100% FREE refresh: settle from ESPN (gratis) + manual only. NO Odds API call → 0 créditos.
     const scores=[];
-    const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], logos:{} };
+    const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], finished:[], logos:{} };
     let espn = { winners:[], finished:[] };
     try { espn = await espnResults(5); console.log(`· scores-only ESPN: ${espn.winners.length} ganadores`); } catch(e){ console.log('· ESPN error:', e.message); }
+    espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
     const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];
     if (d.PLAYERS && Object.keys(apiRes.logos).length){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();

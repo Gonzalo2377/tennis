@@ -17,25 +17,25 @@ async function get(method, key, params){
   return r.json();
 }
 
-/* returns { winners:[surnameKey,...], logos:{ surnameKey: url } } for the last `days` */
+/* returns { winners:[surnameKey,...], finished:[{home,away,winner}], logos:{...} } for the last `days` */
 module.exports = async function apiTennis(key, days){
-  if (!key) return { winners:[], logos:{} };
+  if (!key) return { winners:[], finished:[], logos:{} };
   const fmt = d => d.toISOString().slice(0,10);
   const start = fmt(new Date(Date.now() - (days||5)*24*3600*1000));
   const stop  = fmt(new Date(Date.now() + 24*3600*1000));   // include today
   let j;
   try { j = await get('get_fixtures', key, { date_start:start, date_stop:stop }); }
-  catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], logos:{} }; }
+  catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], finished:[], logos:{} }; }
   const rows = (j && j.result) || [];
-  const winners = [], logos = {};
+  const winners = [], finished = [], logos = {};
   rows.forEach(ev => {
     const p1 = ev.event_first_player, p2 = ev.event_second_player;
     if (ev.event_first_player_logo)  logos[surnameKey(p1)] = ev.event_first_player_logo;
     if (ev.event_second_player_logo) logos[surnameKey(p2)] = ev.event_second_player_logo;
     if ((ev.event_status||'') !== 'Finished') return;
     const w = ev.event_winner === 'First Player' ? p1 : ev.event_winner === 'Second Player' ? p2 : null;
-    if (w) winners.push(surnameKey(w));
+    if (w){ winners.push(surnameKey(w)); finished.push({ home:p1, away:p2, winner:w }); }
   });
   console.log(`· api-tennis: ${rows.length} fixtures · ${winners.length} terminados · ${Object.keys(logos).length} fotos`);
-  return { winners, logos };
+  return { winners, finished, logos };
 };
