@@ -27,6 +27,9 @@ const EXCLUDE = ['simulated-reality','simulated-reality-women','utr-men','utr-wo
 function surname(n){ return (n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
 function isDoubles(n){ return /\s\/\s|\//.test(n||''); }
 function ymd(t){ return new Date(t).toISOString().slice(0,10); }
+// OddsPapi devuelve "Apellido Nombre" → reordenamos a "Nombre Apellido" (estándar) para
+// que el resto del pipeline (shortName, surname, ESPN) funcione bien. Solo nombres de 2 palabras.
+function reorder(n){ const p=(n||'').trim().split(/\s+/); return p.length===2 ? p[1]+' '+p[0] : (n||''); }
 
 // Casas de apuestas EU/UK conocidas (donde la gente sí tiene cuenta). Editable con ODDSPAPI_BOOKS.
 // Se compara por "contiene", así cubre variantes (bwin.dk, 888sport, etc.).
@@ -64,7 +67,7 @@ module.exports = async function fetchOddspapi(key, opts){
     if (isDoubles(f.participant1Name) || isDoubles(f.participant2Name)) return false;
     const ct = new Date(f.startTime).getTime();
     if (ct < now + 2*60*1000 || ct > horizon) return false;                // pre-partido, dentro de ventana
-    const sig = [surname(f.participant1Name), surname(f.participant2Name)].sort().join('|');
+    const sig = [surname(reorder(f.participant1Name)), surname(reorder(f.participant2Name))].sort().join('|');
     if (have.has(sig)) return false;                                        // ya lo tenemos de The Odds API
     return true;
   });
@@ -98,15 +101,15 @@ module.exports = async function fetchOddspapi(key, opts){
         const price1 = +p1.price, price2 = +p2.price;
         if (!(price1 > 1) || !(price2 > 1)) continue;
         bookmakers.push({ key: slug, title: slug, markets: [{ key:'h2h', outcomes:[
-          { name: f.participant1Name, price: price1 },
-          { name: f.participant2Name, price: price2 },
+          { name: reorder(f.participant1Name), price: price1 },
+          { name: reorder(f.participant2Name), price: price2 },
         ]}]});
       }
       if (bookmakers.length < 2) continue;                                  // necesitamos 2+ casas
       const cs = (f.categorySlug || '').toLowerCase();
       const tour = /women|wta/.test(cs) ? 'wta' : 'atp';
       events.push({ ev: {
-        id: 'op' + f.fixtureId, home_team: f.participant1Name, away_team: f.participant2Name,
+        id: 'op' + f.fixtureId, home_team: reorder(f.participant1Name), away_team: reorder(f.participant2Name),
         commence_time: f.startTime, bookmakers,
         _event: f.tournamentName || f.categoryName || 'Tenis', _tour: tour,
       }, key: 'tennis_oddspapi_' + tour });

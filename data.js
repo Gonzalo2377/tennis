@@ -98,17 +98,20 @@ window.matchValue = function(m){
     // use our model's probability when the feed provides it, else de-vig market
     const useModel = m.model && typeof m.model.home === 'number';
     const prob = useModel ? { home:m.model.home, away:m.model.away } : mk;
-    const MIN_P=0.35, MAX_ODD=3.20;
+    const MIN_P=0.35, MAX_ODD=4.50;
+    // cuanto más alta la cuota, más valor (edge) exigimos para fiarnos:
+    //  cuota 1.5 → ≥2% · 2.0 → ≥4% · 3.0 → ≥8% · 3.25 → ≥9% · 4.5 → ≥14%
+    const minEdge = (odd)=> Math.max(2, 2 + (odd-1.5)*4);
     const all = ['home','away'].map(k=>{
         const best = window.saneBest(m.odds[k]);
         const ev = (prob[k]*best.price - 1)*100;
-        const eligible = prob[k]>=MIN_P && best.price<=MAX_ODD;
+        const eligible = prob[k]>=MIN_P && best.price<=MAX_ODD && ev>=minEdge(best.price);
         return { k, p:prob[k], best, edge:ev, eligible };
     });
     const outs = [...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge));
     const top = outs[0];
     const valid = top.eligible;
-    return { outcomes:outs, pick:top, edge:top.edge, positive:valid&&top.edge>=1.5, hot:valid&&top.edge>=4 };
+    return { outcomes:outs, pick:top, edge:top.edge, positive:valid, hot:valid&&top.edge>=minEdge(top.best.price)*2 };
 };
 /* SUREBET (2-way): back both sides at their best book. margin>0 → guaranteed. */
 window.findArbs = function(matches){

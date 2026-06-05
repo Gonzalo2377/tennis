@@ -8,8 +8,18 @@ function Arbitrage({ t, go }) {
   useEffect(()=>{ try { localStorage.setItem('ace_arb_mode', mode); } catch(e){} }, [mode]);
 
   const all = window.findArbs();
-  const arbs = all.filter(a=>a.hasArb);
+  const liveArbs = all.filter(a=>a.hasArb);
   const near = all.filter(a=>!a.hasArb).slice(0,6);
+  // also show tracked surebets from ARB_PENDING (seed / capturados) que no estén ya en vivo
+  const _nm = (s)=>(s||'').split(/[–\-]/).map(x=>x.trim().replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()).filter(Boolean).sort().join('|');
+  const liveSigs = new Set(liveArbs.map(a=>_nm(`${playerById(a.m.home).name} – ${playerById(a.m.away).name}`)));
+  const pendArbs = (window.ARB_PENDING||[]).filter(p=>!liveSigs.has(_nm(p.match))).map(p=>({
+    m: { home:p.homeName, away:p.awayName, event:p.event||'Surebet', time:p.time||'', day:p.date, live:false, _pending:true },
+    legs: [ {k:'home', price:(p.legs[0]||{}).odd||1, book:(p.legs[0]||{}).book},
+            {k:'away', price:(p.legs[1]||{}).odd||1, book:(p.legs[1]||{}).book} ],
+    marginPct: p.marginPct, hasArb:true,
+  }));
+  const arbs = [...liveArbs, ...pendArbs];
   const total = Math.max(1, +stake||0);
 
   const ArbCard = ({ a, isArb }) => {
@@ -36,7 +46,7 @@ function Arbitrage({ t, go }) {
       <div className="panel" style={{borderColor: isArb?'var(--lime-deep)':'var(--line)', borderWidth: isArb?2:1, borderStyle:'solid'}}>
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:12, padding:'14px 16px', borderBottom:'1px solid var(--line)', cursor:'pointer'}} onClick={()=>go({view:'match', id:a.m.id})}>
           <div style={{minWidth:0}}>
-            <div className="vb-sub">{a.m.event} · {a.m.day ? a.m.day+' · '+a.m.time : a.m.time}</div>
+            <div className="vb-sub">{a.m.event} · {a.m.live ? '🔴 EN JUEGO' : (a.m.day ? a.m.day+' · '+a.m.time : a.m.time)}</div>
             <div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.05rem'}}>{home.name.split(' ').pop()} <span style={{color:'var(--muted)'}}>v</span> {away.name.split(' ').pop()}</div>
           </div>
           <span className="tag" style={{background: isArb?'rgba(174,225,0,.2)':'var(--bg-2)', color: isArb?'var(--lime-deep)':'var(--muted)', border:'1px solid '+(isArb?'rgba(127,168,0,.4)':'var(--line)')}}>{a.marginPct>=0?'+':''}{a.marginPct.toFixed(2)}%</span>

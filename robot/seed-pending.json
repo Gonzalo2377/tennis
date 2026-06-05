@@ -1,19 +1,22 @@
 {
-  "_nota": "Picks añadidos a mano para que el robot busque su resultado y los liquide. Se inyectan solo si no están ya pendientes ni resueltos. Vacía las listas (deja []) cuando ya estén resueltos.",
-  "PENDING": [
+  "_nota": "Picks/surebets añadidos a mano para que el robot los inyecte y los liquide. Se añaden solo si no están ya pendientes ni resueltos. Vacía las listas (deja []) cuando ya estén resueltos.",
+  "PENDING": [],
+  "ARB_PENDING": [
     {
-      "id": "seed-andreeva-0604",
-      "sport": "tennis_wta_french_open",
-      "ts": 1780578000000,
-      "date": "04 JUN",
-      "match": "M. Kostyuk – M. Andreeva",
-      "pickKey": "away",
-      "pickLabel": "Gana M. Andreeva",
-      "odd": 2.20,
-      "book": "betfair",
-      "homeName": "M. Kostyuk",
-      "awayName": "M. Andreeva"
+      "date": "05 JUN",
+      "match": "Filippo – Otto",
+      "event": "ATP Challenger Birmingham",
+      "time": "11:30",
+      "marginPct": 2.74,
+      "profit": 2.74,
+      "ts": 1780651800000,
+      "homeName": "Filippo",
+      "awayName": "Otto",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        { "pick": "Gana Filippo", "odd": 4.90, "book": "betfair" },
+        { "pick": "Gana Otto", "odd": 1.30, "book": "winamax" }
+      ]
     }
-  ],
-  "ARB_PENDING": []
+  ]
 }

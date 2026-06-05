@@ -131,7 +131,7 @@ function manualMatchDone(homeName, awayName, winners){
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
-function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=3.20; const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD;return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible&&top.edge>=1.5}; }
+function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50; const minEdge=(odd)=>Math.max(2,2+(odd-1.5)*4); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price);return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
 /* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
 function arbOf(m){ const legs=['home','away'].map(k=>{const best=bestPrice(m.odds[k]);return {k,book:best.book,price:best.price};}); const inv=legs.reduce((s,l)=>s+1/l.price,0); return { legs, marginPct:(1-inv)*100, hasArb:(1-inv)*100>0.01 }; }
 
@@ -251,9 +251,29 @@ async function main(){
       id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time), day:fmtDay(ev.commence_time),
       home:hId, away:aId, odds:{ home:oddsH, away:oddsA },
       model: model || undefined,
+      ts: new Date(ev.commence_time).getTime(),
       _commence: ev.commence_time, _sport:key,
     });
   });
+
+  // MERGE with previous board: keep matches from the last run that haven't STARTED yet
+  // and aren't in today's fetch. This stops the board (and its surebets/value picks) from
+  // vanishing just because OddsPapi rotated to a different set of 6 matches.
+  try {
+    const prevD = JSON.parse(fs.readFileSync(OUT,'utf8'));
+    const haveIds = new Set(MATCHES.map(m=>m.id));
+    const LIVE_WINDOW = 8*3600*1000;                 // keep a started match on the board up to 8h
+    const cutoff = Date.now() - LIVE_WINDOW;          // older than that → assume done, drop
+    (prevD.MATCHES||[]).forEach(pm=>{
+      if (haveIds.has(pm.id)) return;                 // refreshed this run → use the new one
+      const ts = pm.ts || (pm._commence ? new Date(pm._commence).getTime() : 0);
+      if (!ts || ts < cutoff) return;                 // too old → let it go
+      [pm.home, pm.away].forEach(pid=>{ if(prevD.PLAYERS && prevD.PLAYERS[pid] && !PLAYERS[pid]) PLAYERS[pid]=prevD.PLAYERS[pid]; });
+      Object.assign(BOOKS, Object.fromEntries(Object.entries(prevD.BOOKS||{}).filter(([k])=>!BOOKS[k])));
+      MATCHES.push(Object.assign({}, pm, { ts, live: ts<=Date.now(), _commence: pm._commence || new Date(ts).toISOString(), _sport: pm._sport || 'tennis_prev' }));
+      haveIds.add(pm.id);
+    });
+  } catch(e){}
 
   MATCHES.sort((a,b)=> new Date(a._commence)-new Date(b._commence));
 
@@ -397,9 +417,12 @@ async function main(){
     ARB_PENDING.push(rec); haveArb.add(aKey(rec));
   });
 
-  // housekeeping
-  const EXP=5*24*3600*1000;
+  // housekeeping — solo red de seguridad para items MUY viejos (3 semanas) que ESPN nunca
+  // pudo cerrar. Lo normal es que ESPN los liquide; el robot de cuotas NO borra nada activo.
+  const EXP=21*24*3600*1000;
   PENDING=PENDING.filter(p=>!p.ts || (Date.now()-p.ts)<EXP);
+  ARB_PENDING=ARB_PENDING.filter(a=>!a.ts || (Date.now()-a.ts)<EXP);
+  COMBO_PENDING=COMBO_PENDING.filter(c=>!c.legs || c.legs.some(l=>!l.ts || (Date.now()-l.ts)<EXP));
   // FINAL dedup pass — collapse any duplicate that slipped in via seed/snapshot regardless of order
   PENDING=dedupe(PENDING,pendKey);
   RECORD=dedupe(RECORD,sSig);
@@ -408,7 +431,7 @@ async function main(){
   // and never keep a pending that's already settled in the record
   { const done=new Set(RECORD.map(sSig)); PENDING=PENDING.filter(p=>!done.has(pendKey(p))); }
   RECORD=RECORD.slice(0,60); COMBO_RECORD=COMBO_RECORD.slice(0,40); ARB_RECORD=ARB_RECORD.slice(0,40);
-  MATCHES.forEach(m=>{ delete m._commence; delete m._sport; });
+  MATCHES.forEach(m=>{ delete m._commence; delete m._sport; });   // keep `ts` for next-run merge
 
   // safety net: keep yesterday's board if today is empty (dead time)
   let keepMatches=MATCHES, keepPlayers=PLAYERS, keepBooks=BOOKS, keepCombos=COMBOS, stale=false;
