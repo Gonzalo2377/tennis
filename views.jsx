@@ -49,7 +49,7 @@ function ValueCard({ m, t, go }) {
             <div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'1rem', marginTop:2, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{home.name.split(' ').pop()} <span style={{color:'var(--muted)'}}>{t.vs}</span> {away.name.split(' ').pop()}</div>
           </div>
         </div>
-        <span className="tag tag--court">{m.time}</span>
+        <span className="tag tag--court">{m.day ? m.day+' · '+m.time : m.time}</span>
       </div>
       <div style={{padding:'14px 18px'}}>
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:10}}>
@@ -114,7 +114,7 @@ function ValueBoard({ t, go }) {
                   return (
                     <tr key={m.id} onClick={()=>go({view:'match', id:m.id})}>
                       <td className="l"><span className="vb-match">{h.name.split(' ').pop()} <span style={{color:'var(--muted)'}}>v</span> {a.name.split(' ').pop()}</span><div className="vb-sub" style={{marginTop:2}}>{m.event}</div></td>
-                      <td><span className="vb-sub">{m.time}</span></td>
+                      <td><span className="vb-sub">{m.day ? m.day+' · '+m.time : m.time}</span></td>
                       <td className="l">{v.positive ? <b style={{fontFamily:'var(--font-head)'}}>{window.outcomeLabel(v.pick.k,m)}</b> : <span style={{color:'var(--faint)'}}>—</span>}</td>
                       <td style={{color:'var(--muted)', fontFamily:'var(--font-mono)', fontSize:'.82rem'}}>{Math.round(v.pick.p*100)}%</td>
                       <td><b style={{fontFamily:'var(--font-mono)', color: v.positive?'var(--court)':'var(--muted)'}}>{v.pick.best.price.toFixed(2)}</b></td>
@@ -157,6 +157,7 @@ function MatchPage({ t, go, id }) {
               <div className="mh__proj">{Math.round(mk.home*100)} · {Math.round(mk.away*100)}</div>
               <div className="mh__lbl">{m.surface} · {m.round}</div>
               <div className="mh__lbl" style={{marginTop:6}}>{m.event}</div>
+              <div className="mh__lbl" style={{marginTop:4, color:'var(--lime-deep)'}}>{m.day ? m.day+' · '+m.time : m.time}</div>
             </div>
             <div className="mh__side away">
               <Avatar id={m.away} size={76} badge />

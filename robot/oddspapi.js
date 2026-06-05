@@ -28,6 +28,13 @@ function surname(n){ return (n||'').trim().split(/\s+/).pop().normalize('NFD').r
 function isDoubles(n){ return /\s\/\s|\//.test(n||''); }
 function ymd(t){ return new Date(t).toISOString().slice(0,10); }
 
+// Casas de apuestas EU/UK conocidas (donde la gente sí tiene cuenta). Editable con ODDSPAPI_BOOKS.
+// Se compara por "contiene", así cubre variantes (bwin.dk, 888sport, etc.).
+const ALLOWED_BOOKS = (process.env.ODDSPAPI_BOOKS ||
+  'bet365,betfair,williamhill,unibet,betsson,marathonbet,1xbet,onexbet,pinnacle,888sport,sport888,betclic,nordicbet,coolbet,winamax,betano,betway,betvictor,tipico,bwin,leovegas,betfred,paddypower,ladbrokes,codere,parionssport,pmu,oddset,22bet,marathon'
+).split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+const bookAllowed = (slug) => ALLOWED_BOOKS.some(a => String(slug).toLowerCase().includes(a));
+
 module.exports = async function fetchOddspapi(key, opts){
   const { windowHours = 96, maxOdds = 6, existingEvents = [] } = opts || {};
   if (!key) return [];
@@ -81,6 +88,7 @@ module.exports = async function fetchOddspapi(key, opts){
       for (const slug in bmk){
         const b = bmk[slug];
         if (!b || b.bookmakerIsActive === false || b.suspended === true) continue;
+        if (!bookAllowed(slug)) continue;                                   // solo casas EU/UK conocidas
         const m = b.markets && b.markets['121'];                            // 121 = Match Winner
         if (!m || m.marketActive === false || !m.outcomes) continue;
         const o1 = m.outcomes['121'], o2 = m.outcomes['122'];               // 121 = jugador 1, 122 = jugador 2

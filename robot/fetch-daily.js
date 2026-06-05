@@ -245,7 +245,7 @@ async function main(){
     const surface = surfaceOf(key, evName);
     const model = modelProbs(ev.home_team, ev.away_team, surface, null);
     MATCHES.push({
-      id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time),
+      id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time), day:fmtDay(ev.commence_time),
       home:hId, away:aId, odds:{ home:oddsH, away:oddsA },
       model: model || undefined,
       _commence: ev.commence_time, _sport:key,
