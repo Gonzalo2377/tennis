@@ -1,0 +1,41 @@
+name: Tennis results (free, ESPN)
+
+# Refresca SOLO los resultados (gana/pierde) cada pocas horas usando ESPN,
+# que es gratis y sin créditos. NO pide cuotas → no gasta The Odds API ni OddsPapi.
+# El robot completo (cuotas + resultados) sigue corriendo 1 vez al día por separado.
+
+on:
+  schedule:
+    - cron: '13 9,12,15,18,21 * * *'   # ~11/14/17/20/23 Madrid. Liquida partidos que van acabando.
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  results:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Liquidar resultados (ESPN, gratis)
+        env:
+          ODDS_MODE: scores            # SOLO resultados → 0 créditos
+          APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # opcional (fotos / refuerzo)
+        run: node robot/fetch-daily.js
+      - name: Commit si hay cambios
+        run: |
+          git config user.name  "acevalue-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add daily.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "chore: settle tennis results (ESPN)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "push rechazado, reintento $i…"; sleep 3
+            done
+          fi
