@@ -27,7 +27,10 @@ const WINDOW_HOURS = parseInt(process.env.ODDS_WINDOW_HOURS || '96', 10);
 const SPORT   = process.env.ODDS_SPORT || 'auto';
 const OUT     = path.join(__dirname, '..', 'daily.json');
 
-if (!API_KEY) { console.error('✗ Falta ODDS_API_KEY'); process.exit(1); }
+// La clave de The Odds API solo hace falta para pedir CUOTAS. En modo resultados
+// (ODDS_MODE=scores) liquidamos con ESPN (gratis), así que no se exige.
+const SCORES_MODE = (process.env.ODDS_MODE||'').toLowerCase()==='scores';
+if (!API_KEY && !SCORES_MODE) { console.error('✗ Falta ODDS_API_KEY'); process.exit(1); }
 
 const CREDITS = { remaining:null, used:null };
 
