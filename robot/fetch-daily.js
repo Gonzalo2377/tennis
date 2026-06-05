@@ -572,8 +572,8 @@ async function scoresOnly(){
     const seenA=new Set([...ARB_PENDING,...ARB_RECORD].map(aKey2));
     (seed.ARB_PENDING||[]).forEach(a=>{ if(!seenA.has(aKey2(a))){ ARB_RECORD.unshift(a); seenA.add(aKey2(a)); } });
   } catch(e){}
-  const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport)].filter(Boolean))];
-  if(!need.length){
+  const anythingPending = PENDING.length || COMBO_PENDING.length || ARB_PENDING.length;
+  if(!anythingPending){
     // nada que liquidar, pero quizá inyectamos seed → guardamos igual (MATCHES intactos)
     d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD; d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING;
     if(d.meta) d.meta.updatedAt=new Date().toISOString();
