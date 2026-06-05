@@ -316,8 +316,9 @@ async function main(){
     const seed = JSON.parse(fs.readFileSync(__dirname + '/seed-pending.json', 'utf8'));
     const seenP = new Set([...PENDING, ...RECORD].map(sSig));
     (seed.PENDING || []).forEach(p => { if (!seenP.has(sSig(p))) { PENDING.push(p); seenP.add(sSig(p)); } });
+    // surebets que añadimos a mano → directos al HISTORIAL (beneficio garantizado, no se espera resultado)
     const seenA = new Set([...ARB_PENDING, ...ARB_RECORD].map(aKey));
-    (seed.ARB_PENDING || []).forEach(a => { if (!seenA.has(aKey(a))) { ARB_PENDING.push(a); seenA.add(aKey(a)); } });
+    (seed.ARB_PENDING || []).forEach(a => { if (!seenA.has(aKey(a))) { ARB_RECORD.unshift(a); seenA.add(aKey(a)); } });
     console.log(`· seed: +${(seed.PENDING||[]).length} picks · +${(seed.ARB_PENDING||[]).length} surebets (los nuevos)`);
   } catch(e){ /* no seed file → ignore */ }
 
@@ -402,7 +403,7 @@ async function main(){
     if (haveCombo.has(cKey(snap))) return;
     COMBO_PENDING.push(snap); haveCombo.add(cKey(snap));
   });
-  // snapshot today's surebets (guaranteed-profit at 100€ reference) → settle later
+  // snapshot today's surebets (guaranteed-profit at 100€ reference) → DIRECTOS al historial
   const REF=100;
   const haveArb=new Set([...ARB_PENDING, ...ARB_RECORD].map(aKey));
   MATCHES.forEach(m=>{
@@ -414,7 +415,7 @@ async function main(){
       homeName:PLAYERS[m.home].name, awayName:PLAYERS[m.away].name, sport:m._sport,
       legs:a.legs.map(l=>({ pick:label(m,l.k), odd:+l.price.toFixed(2), book:l.book })) };
     if (haveArb.has(aKey(rec))) return;
-    ARB_PENDING.push(rec); haveArb.add(aKey(rec));
+    ARB_RECORD.unshift(rec); haveArb.add(aKey(rec));
   });
 
   // housekeeping — solo red de seguridad para items MUY viejos (3 semanas) que ESPN nunca
