@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-05T23:09:05.742Z",
+    "updatedAt": "2026-06-05T23:14:27.727Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -1179,6 +1179,24 @@
   ],
   "RECORD": [
     {
+      "id": "opid1203937771828642",
+      "date": "05 JUN",
+      "match": "A. Ilagan, – Y. Shimizu,",
+      "pick": "Gana Y. Shimizu,",
+      "odd": 2.35,
+      "book": "winamax.de",
+      "result": "W"
+    },
+    {
+      "id": "opid1205181071750486",
+      "date": "05 JUN",
+      "match": "M. Trungelliti, – D. Dedura-Palomero,",
+      "pick": "Gana D. Dedura-Palomero,",
+      "odd": 3.05,
+      "book": "winamax.es",
+      "result": "W"
+    },
+    {
       "id": "e8fd9e22f4de0704558bc7a7f08171ce",
       "date": "05 JUN",
       "match": "M. Arnaldi – F. Cobolli",
@@ -1214,32 +1232,6 @@
   ],
   "PENDING": [
     {
-      "id": "opid1205181071750486",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1780672200000,
-      "date": "05 JUN",
-      "match": "M. Trungelliti, – D. Dedura-Palomero,",
-      "pickKey": "away",
-      "pickLabel": "Gana D. Dedura-Palomero,",
-      "odd": 3.05,
-      "book": "winamax.es",
-      "homeName": "M. Trungelliti,",
-      "awayName": "D. Dedura-Palomero,"
-    },
-    {
-      "id": "opid1203937771828642",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1780672200000,
-      "date": "05 JUN",
-      "match": "A. Ilagan, – Y. Shimizu,",
-      "pickKey": "away",
-      "pickLabel": "Gana Y. Shimizu,",
-      "odd": 2.35,
-      "book": "winamax.de",
-      "homeName": "A. Ilagan,",
-      "awayName": "Y. Shimizu,"
-    },
-    {
       "id": "69fde123c71acd8bcf4d957dba6f97b3",
       "sport": "tennis_wta_french_open",
       "ts": 1780750800000,
@@ -1253,7 +1245,60 @@
       "awayName": "M. Andreeva"
     }
   ],
-  "COMBO_RECORD": [],
+  "COMBO_RECORD": [
+    {
+      "date": "05 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 9.25,
+      "result": "W",
+      "legs": [
+        {
+          "match": "M. Trungelliti, – D. Dedura-Palomero,",
+          "pick": "Gana D. Dedura-Palomero,",
+          "odd": 3.05,
+          "win": true
+        },
+        {
+          "match": "A. Ilagan, – Y. Shimizu,",
+          "pick": "Gana Y. Shimizu,",
+          "odd": 2.35,
+          "win": true
+        },
+        {
+          "match": "M. Chwalinska – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 1.29,
+          "win": true
+        }
+      ]
+    },
+    {
+      "date": "05 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 22.94,
+      "result": "W",
+      "legs": [
+        {
+          "match": "M. Arnaldi – F. Cobolli",
+          "pick": "Gana M. Arnaldi",
+          "odd": 3.2,
+          "win": true
+        },
+        {
+          "match": "M. Trungelliti, – D. Dedura-Palomero,",
+          "pick": "Gana D. Dedura-Palomero,",
+          "odd": 3.05,
+          "win": true
+        },
+        {
+          "match": "A. Ilagan, – Y. Shimizu,",
+          "pick": "Gana Y. Shimizu,",
+          "odd": 2.35,
+          "win": true
+        }
+      ]
+    }
+  ],
   "COMBO_PENDING": [
     {
       "date": "05 JUN",
@@ -1270,80 +1315,6 @@
           "pick": "Gana M. Andreeva",
           "odd": 1.28,
           "ts": 1780750800000
-        }
-      ]
-    },
-    {
-      "dayId": "05 JUN·c1",
-      "date": "05 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "e8fd9e22f4de0704558bc7a7f08171ce",
-          "sport": "tennis_atp_french_open",
-          "side": "home",
-          "match": "M. Arnaldi – F. Cobolli",
-          "pick": "Gana M. Arnaldi",
-          "odd": 3.2,
-          "homeName": "",
-          "awayName": ""
-        },
-        {
-          "id": "opid1205181071750486",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "match": "M. Trungelliti, – D. Dedura-Palomero,",
-          "pick": "Gana D. Dedura-Palomero,",
-          "odd": 3.05,
-          "homeName": "",
-          "awayName": ""
-        },
-        {
-          "id": "opid1203937771828642",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "match": "A. Ilagan, – Y. Shimizu,",
-          "pick": "Gana Y. Shimizu,",
-          "odd": 2.35,
-          "homeName": "",
-          "awayName": ""
-        }
-      ]
-    },
-    {
-      "dayId": "05 JUN·c2",
-      "date": "05 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1205181071750486",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "match": "M. Trungelliti, – D. Dedura-Palomero,",
-          "pick": "Gana D. Dedura-Palomero,",
-          "odd": 3.05,
-          "homeName": "",
-          "awayName": ""
-        },
-        {
-          "id": "opid1203937771828642",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "match": "A. Ilagan, – Y. Shimizu,",
-          "pick": "Gana Y. Shimizu,",
-          "odd": 2.35,
-          "homeName": "",
-          "awayName": ""
-        },
-        {
-          "id": "69fde123c71acd8bcf4d957dba6f97b3",
-          "sport": "tennis_wta_french_open",
-          "side": "away",
-          "match": "M. Chwalinska – M. Andreeva",
-          "pick": "Gana M. Andreeva",
-          "odd": 1.29,
-          "homeName": "",
-          "awayName": ""
         }
       ]
     }
