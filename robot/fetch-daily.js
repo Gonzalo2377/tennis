@@ -233,6 +233,21 @@ function reopenRecords(RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, unfinishedP
 }
 
 /* ---- engine (mirror of data.js) ---- */
+/* unifica casas duplicadas por MARCA: betfair_ex_uk / betfair-ex / betfair → "betfair",
+   onexbet / 1xbet → "1xbet", winamax_fr / winamax.es → "winamax", unibet_* → "unibet"… */
+function canonBook(id, title){
+  let s=(title||id||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  s=s.replace(/\(.*?\)/g,'').replace(/\b(uk|eu|fr|de|es|it|se|nl|dk|ie|au|com)\b/g,'').replace(/[^a-z0-9]/g,'');
+  const alias={ onexbet:'1xbet', betfairexchange:'betfair', betfairex:'betfair', betfairsportsbook:'betfair', sport888:'888sport', '888':'888sport' };
+  return alias[s] || s || id;
+}
+function dedupeBooks(MATCHES, BOOKS){
+  const canonOf={}, newBooks={};
+  for(const id in BOOKS){ const c=canonBook(id, BOOKS[id]&&BOOKS[id].name); canonOf[id]=c; if(!newBooks[c]) newBooks[c]=Object.assign({}, BOOKS[id], { id:c }); }
+  MATCHES.forEach(m=>{ ['home','away'].forEach(k=>{ const src=m.odds[k]||{}, out={}; for(const b in src){ const c=canonOf[b]||canonBook(b); if(out[c]==null || src[b]>out[c]) out[c]=src[b]; } m.odds[k]=out; }); });
+  for(const k in BOOKS) delete BOOKS[k];
+  Object.assign(BOOKS, newBooks);
+}
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
@@ -587,6 +602,7 @@ async function main(){
   { const done=new Set(RECORD.map(sSig)); PENDING=PENDING.filter(p=>!done.has(pendKey(p))); }
   RECORD=RECORD.slice(0,60); COMBO_RECORD=COMBO_RECORD.slice(0,40); ARB_RECORD=ARB_RECORD.slice(0,40);
   MATCHES.forEach(m=>{ delete m._commence; delete m._sport; });   // keep `ts` for next-run merge
+  dedupeBooks(MATCHES, BOOKS);   // unifica casas duplicadas (Betfair, 1xBet, Unibet…) por marca
 
   // safety net: keep yesterday's board if today is empty (dead time)
   let keepMatches=MATCHES, keepPlayers=PLAYERS, keepBooks=BOOKS, keepCombos=COMBOS, stale=false;
