@@ -31,6 +31,7 @@
     "sport888": { "id": "sport888", "name": "888sport", "abbr": "888", "color": "#14805e" },
     "smarkets": { "id": "smarkets", "name": "Smarkets", "abbr": "SMA", "color": "#d11a2a" },
     "matchbook": { "id": "matchbook", "name": "Matchbook", "abbr": "MAT", "color": "#1c1c1c" },
+    "betway": { "id": "betway", "name": "Betway", "abbr": "BET", "color": "#0a2d6e" },
     "winamax.es": { "id": "winamax.es", "name": "Winamax", "abbr": "WIN", "color": "#7a4ddb" },
     "winamax.de": { "id": "winamax.de", "name": "Winamax", "abbr": "WIN", "color": "#d9730d" },
     "betvictor": { "id": "betvictor", "name": "Bet Victor", "abbr": "BV", "color": "#e23b2e" },
@@ -38,9 +39,46 @@
     "betfair-ex": { "id": "betfair-ex", "name": "Betfair", "abbr": "BF", "color": "#0a2d6e" },
     "betfair": { "id": "betfair", "name": "Betfair", "abbr": "BF", "color": "#ffb000" },
     "winamax": { "id": "winamax", "name": "Winamax", "abbr": "WIN", "color": "#0a6cff" },
-    "gtbets": { "id": "gtbets", "name": "GTbets", "abbr": "GTB", "color": "#14805e" }
+    "1xbet": { "id": "1xbet", "name": "1xbet", "abbr": "1XB", "color": "#e23b2e" },
+    "22bet": { "id": "22bet", "name": "22bet", "abbr": "22B", "color": "#0a7d3c" },
+    "gtbets": { "id": "gtbets", "name": "GTbets", "abbr": "GTB", "color": "#14805e" },
+    "betfair-ex-au": { "id": "betfair-ex-au", "name": "Betfair", "abbr": "BF", "color": "#1c1c1c" }
   },
   "MATCHES": [
+    {
+      "id": "opid1204432371947362",
+      "tour": "wta",
+      "event": "WTA London (GBR)",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "06 JUN",
+      "home": "maddisoninglis",
+      "away": "alyciaparks",
+      "odds": {
+        "home": { "1xbet": 2.321, "22bet": 2.321, "bet365": 2.37, "betway": 2.4, "ladbrokes": 2.37, "winamax.es": 2.4 },
+        "away": { "1xbet": 1.54, "22bet": 1.54, "bet365": 1.53, "betway": 1.55, "ladbrokes": 1.53, "winamax.es": 1.56 }
+      },
+      "ts": 1780736400000,
+      "sofa": 16283440
+    },
+    {
+      "id": "opid1200287171944988",
+      "tour": "atp",
+      "event": "ATP S-Hertogenbosch (NED)",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUN",
+      "home": "thijmenloof",
+      "away": "ficovichjuanpabl",
+      "odds": {
+        "home": { "22bet": 7.5, "betway": 10, "betfair-ex": 10.5, "winamax.es": 8.5 },
+        "away": { "22bet": 1.048, "betway": 1.05, "betfair-ex": 1.06, "winamax.es": 1.06 }
+      },
+      "ts": 1780736400000,
+      "sofa": 16283352
+    },
     {
       "id": "69fde123c71acd8bcf4d957dba6f97b3",
       "tour": "wta",
@@ -52,8 +90,8 @@
       "home": "majachwalinska",
       "away": "mirraandreeva",
       "odds": {
-        "home": { "pinnacle": 4.3, "betfair_ex_uk": 4.5, "williamhill": 4.2, "onexbet": 4.11, "matchbook": 4.5 },
-        "away": { "pinnacle": 1.26, "betfair_ex_uk": 1.28, "williamhill": 1.25, "onexbet": 1.28, "matchbook": 1.28 }
+        "home": { "pinnacle": 4.3, "betfair_ex_uk": 4.5, "williamhill": 4.2, "onexbet": 4.11, "matchbook": 4.5, "betway": 3.75, "betvictor": 3.6 },
+        "away": { "pinnacle": 1.26, "betfair_ex_uk": 1.28, "williamhill": 1.25, "onexbet": 1.28, "matchbook": 1.28, "betway": 1.25, "betvictor": 1.25 }
       },
       "model": { "home": 0.1745, "away": 0.8255, "fromModel": true, "eloH": 1675, "eloA": 1945, "surface": "clay" },
       "ts": 1780750800000,
@@ -70,8 +108,8 @@
       "home": "flaviocobolli",
       "away": "alexanderzverev",
       "odds": {
-        "home": { "pinnacle": 4.34, "betfair_ex_uk": 4.5, "williamhill": 3.6, "onexbet": 4.25, "matchbook": 4.5, "sport888": 3.6 },
-        "away": { "pinnacle": 1.25, "betfair_ex_uk": 1.27, "williamhill": 1.29, "onexbet": 1.26, "matchbook": 1.27, "sport888": 1.29 }
+        "home": { "pinnacle": 4.34, "betfair_ex_uk": 4.5, "williamhill": 3.6, "onexbet": 4.25, "matchbook": 4.5, "sport888": 3.6, "smarkets": 4.5 },
+        "away": { "pinnacle": 1.25, "betfair_ex_uk": 1.27, "williamhill": 1.29, "onexbet": 1.26, "matchbook": 1.27, "sport888": 1.29, "smarkets": 1.26 }
       },
       "model": { "home": 0.2054, "away": 0.7946, "fromModel": true, "eloH": 1820, "eloA": 2055, "surface": "clay" },
       "ts": 1780837200000,
@@ -137,7 +175,12 @@
     }
   ],
   "ARB_RECORD": [
-    { "date": "05 JUN", "match": "M. Trungelliti – D. Dedura-Palomero", "marginPct": 3.52, "profit": 3.65, "homeName": "M. Trungelliti", "awayName": "D. Dedura-Palomero", "legs": [ { "pick": "Gana M. Trungelliti", "odd": 1.57, "book": "betfair-ex" }, { "pick": "Gana D. Dedura-Palomero", "odd": 3.05, "book": "winamax.es" } ] },
+    { "date": "06 JUN", "match": "F. Cobolli – A. Zverev", "marginPct": 0.26, "profit": 0.26, "ts": 1780837200000, "homeName": "F. Cobolli", "awayName": "A. Zverev", "sport": "tennis_atp_french_open", "legs": [ { "pick": "Gana F. Cobolli", "odd": 4.5, "book": "smarkets" }, { "pick": "Gana A. Zverev", "odd": 1.29, "book": "sport888" } ] },
+    { "date": "05 JUN", "match": "M. Chwalinska – M. Andreeva", "marginPct": 0.26, "profit": 0.26, "ts": 1780750800000, "homeName": "M. Chwalinska", "awayName": "M. Andreeva", "sport": "tennis_wta_french_open", "legs": [ { "pick": "Gana M. Chwalinska", "odd": 4.5, "book": "betfair_ex_uk" }, { "pick": "Gana M. Andreeva", "odd": 1.29, "book": "onexbet" } ] },
+    { "date": "05 JUN", "match": "M. Arnaldi – F. Cobolli", "marginPct": 0.26, "profit": 0.26, "ts": 1780678800000, "homeName": "M. Arnaldi", "awayName": "F. Cobolli", "sport": "tennis_atp_french_open", "legs": [ { "pick": "Gana M. Arnaldi", "odd": 3.2, "book": "betvictor" }, { "pick": "Gana F. Cobolli", "odd": 1.46, "book": "betfair_ex_eu" } ] },
+    { "date": "05 JUN", "match": "A. Ilagan – Y. Shimizu", "marginPct": 0.53, "profit": 0.53, "ts": 1780672200000, "homeName": "A. Ilagan", "awayName": "Y. Shimizu", "sport": "tennis_oddspapi_atp", "legs": [ { "pick": "Gana A. Ilagan", "odd": 1.76, "book": "pinnacle" }, { "pick": "Gana Y. Shimizu", "odd": 2.35, "book": "winamax.de" } ] },
+    { "date": "05 JUN", "match": "M. Trungelliti – D. Dedura-Palomero", "marginPct": 3.52, "profit": 3.65, "ts": 1780672200000, "homeName": "M. Trungelliti", "awayName": "D. Dedura-Palomero", "sport": "tennis_oddspapi_atp", "legs": [ { "pick": "Gana M. Trungelliti", "odd": 1.57, "book": "betfair-ex" }, { "pick": "Gana D. Dedura-Palomero", "odd": 3.05, "book": "winamax.es" } ] },
+    { "date": "05 JUN", "match": "Filippo – Otto", "event": "ATP Challenger Birmingham", "marginPct": 2.74, "profit": 2.74, "legs": [ { "pick": "Gana Filippo", "odd": 4.9, "book": "betfair" }, { "pick": "Gana Otto", "odd": 1.3, "book": "winamax" } ] },
     { "date": "03 JUN", "match": "Sabalenka – Shnaider", "marginPct": 1.42, "profit": 1.44, "legs": [ { "pick": "Gana A. Sabalenka", "odd": 1.15, "book": "gtbets" }, { "pick": "Gana D. Shnaider", "odd": 8.6, "book": "betfair" } ] }
   ],
   "ARB_PENDING": [],
