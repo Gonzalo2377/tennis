@@ -17,9 +17,16 @@
 const HOST = 'https://api.oddspapi.io/v4';
 const SPORT_ID = 12;   // Tennis
 
-// Prioridad 1: lo que SÍ pedimos siempre (Challenger + tour + WTA 125K).
-const TIER1 = ['challenger', 'wta-125k', 'atp', 'wta'];
-// Prioridad 2: ITF, sólo si sobran peticiones.
+// PRIORIDAD por importancia (menor número = más importante). OddsPapi rellena lo grande
+// que The Odds API NO cubre o que está topado, y baja a challenger/ITF si queda presupuesto.
+const PRIORITY = {
+  'grand-slam':0, 'atp':1, 'wta':1, 'masters':1, 'atp-1000':1, 'wta-1000':1,
+  'atp-500':2, 'wta-500':2, 'atp-250':3, 'wta-250':3,
+  'challenger':4, 'wta-125k':4, 'atp-challenger':4,
+  'itf-men':6, 'itf-women':6,
+};
+const rankOf = (cs)=> PRIORITY[cs] != null ? PRIORITY[cs] : 9;
+const TIER1 = Object.keys(PRIORITY).filter(k=>PRIORITY[k]<=4);   // todo menos ITF = se pide siempre
 const TIER2 = ['itf-men', 'itf-women'];
 // Nunca: simulados (fake), exhibición y categorías sin valor real.
 const EXCLUDE = ['simulated-reality','simulated-reality-women','utr-men','utr-women','juniors','wheelchairs','wheelchairs-juniors','legends'];
@@ -72,11 +79,12 @@ module.exports = async function fetchOddspapi(key, opts){
     return true;
   });
 
-  // ordena: TIER1 antes que ITF, y dentro por hora de inicio
+  // ordena por IMPORTANCIA (Grand Slam/Masters/500/250 antes que challenger, ITF al final),
+  // y dentro de cada nivel por hora de inicio. Así gastamos créditos en lo más importante.
   elig.sort((a,b) => {
-    const ai = TIER1.includes((a.categorySlug||'').toLowerCase()) ? 0 : 1;
-    const bi = TIER1.includes((b.categorySlug||'').toLowerCase()) ? 0 : 1;
-    return ai - bi || (new Date(a.startTime) - new Date(b.startTime));
+    const ra = rankOf((a.categorySlug||'').toLowerCase());
+    const rb = rankOf((b.categorySlug||'').toLowerCase());
+    return ra - rb || (new Date(a.startTime) - new Date(b.startTime));
   });
 
   const pick = elig.slice(0, maxOdds);
