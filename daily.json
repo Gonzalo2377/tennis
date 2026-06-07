@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-07T12:00:27.767Z",
+    "updatedAt": "2026-06-07T14:57:44.798Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -1006,6 +1006,35 @@
     {
       "date": "07 JUN",
       "name": "Combinada Valor",
+      "totalOdd": 32.14,
+      "result": "L",
+      "legs": [
+        {
+          "match": "S. Baez, – A. Molcan,",
+          "pick": "Gana A. Molcan,",
+          "odd": 2.42,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "K. Volynets, – L. Zhu,",
+          "pick": "Gana L. Zhu,",
+          "odd": 3.45,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "M. Kestelboim, – I. Radulov,",
+          "pick": "Gana M. Kestelboim,",
+          "odd": 3.85,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "07 JUN",
+      "name": "Combinada Valor",
       "totalOdd": 21.56,
       "result": "L",
       "legs": [
@@ -1266,46 +1295,6 @@
           "odd": 3.45,
           "homeName": "K. Volynets,",
           "awayName": "L. Zhu,"
-        }
-      ]
-    },
-    {
-      "dayId": "07 JUN·c2",
-      "date": "07 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1200351171750528",
-          "sport": "tennis_prev",
-          "side": "away",
-          "sofa": 16241132,
-          "match": "S. Baez, – A. Molcan,",
-          "pick": "Gana A. Molcan,",
-          "odd": 2.42,
-          "homeName": "S. Baez,",
-          "awayName": "A. Molcan,"
-        },
-        {
-          "id": "opid1200762571957818",
-          "sport": "tennis_oddspapi_wta",
-          "side": "away",
-          "sofa": 16286183,
-          "match": "K. Volynets, – L. Zhu,",
-          "pick": "Gana L. Zhu,",
-          "odd": 3.45,
-          "homeName": "K. Volynets,",
-          "awayName": "L. Zhu,"
-        },
-        {
-          "id": "opid1201364571960184",
-          "sport": "tennis_prev",
-          "side": "home",
-          "sofa": 16286977,
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "homeName": "M. Kestelboim,",
-          "awayName": "I. Radulov,"
         }
       ]
     }
