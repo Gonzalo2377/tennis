@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-07T15:00:28.167Z",
+    "updatedAt": "2026-06-07T16:30:01.760Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -910,6 +910,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1204432371947364",
+      "date": "07 JUN",
+      "match": "E. Jacquemot, – H. Guo,",
+      "pick": "Gana E. Jacquemot,",
+      "odd": 1.68,
+      "book": "winamax.es",
+      "result": "L"
+    },
+    {
       "id": "69fde123c71acd8bcf4d957dba6f97b3",
       "date": "06 JUN",
       "match": "M. Chwalinska – M. Andreeva",
@@ -985,24 +994,96 @@
       "book": "sport888",
       "homeName": "F. Cobolli",
       "awayName": "A. Zverev"
-    },
-    {
-      "id": "opid1204432371947364",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1780832100000,
-      "date": "07 JUN",
-      "sofa": 16283445,
-      "pickHome": true,
-      "match": "E. Jacquemot, – H. Guo,",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Jacquemot,",
-      "odd": 1.68,
-      "book": "winamax.es",
-      "homeName": "E. Jacquemot,",
-      "awayName": "H. Guo,"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "07 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 14.03,
+      "result": "L",
+      "legs": [
+        {
+          "match": "E. Jacquemot, – H. Guo,",
+          "pick": "Gana E. Jacquemot,",
+          "odd": 1.68,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "S. Baez, – A. Molcan,",
+          "pick": "Gana A. Molcan,",
+          "odd": 2.42,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "K. Volynets, – L. Zhu,",
+          "pick": "Gana L. Zhu,",
+          "odd": 3.45,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "07 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 102.41,
+      "result": "L",
+      "legs": [
+        {
+          "match": "M. Kestelboim, – I. Radulov,",
+          "pick": "Gana M. Kestelboim,",
+          "odd": 3.85,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "M. Kozyreva, – C. Ngounoue,",
+          "pick": "Gana M. Kozyreva,",
+          "odd": 4.75,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "G. Blancaneaux, – L. Staeheli,",
+          "pick": "Gana L. Staeheli,",
+          "odd": 5.6,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "07 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 44.26,
+      "result": "L",
+      "legs": [
+        {
+          "match": "S. Baez, – A. Molcan,",
+          "pick": "Gana A. Molcan,",
+          "odd": 2.42,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "M. Kestelboim, – I. Radulov,",
+          "pick": "Gana M. Kestelboim,",
+          "odd": 3.85,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "M. Kozyreva, – C. Ngounoue,",
+          "pick": "Gana M. Kozyreva,",
+          "odd": 4.75,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "07 JUN",
       "name": "Combinada Valor",
@@ -1175,126 +1256,6 @@
           "odd": 5.6,
           "homeName": "G. Blancaneaux,",
           "awayName": "L. Staeheli,"
-        }
-      ]
-    },
-    {
-      "dayId": "07 JUN·c1",
-      "date": "07 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1200351171750528",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": 16241132,
-          "match": "S. Baez, – A. Molcan,",
-          "pick": "Gana A. Molcan,",
-          "odd": 2.42,
-          "homeName": "S. Baez,",
-          "awayName": "A. Molcan,"
-        },
-        {
-          "id": "opid1201364571960184",
-          "sport": "tennis_prev",
-          "side": "home",
-          "sofa": 16286977,
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "homeName": "M. Kestelboim,",
-          "awayName": "I. Radulov,"
-        },
-        {
-          "id": "opid1204627571961098",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": 16287254,
-          "match": "M. Kozyreva, – C. Ngounoue,",
-          "pick": "Gana M. Kozyreva,",
-          "odd": 4.75,
-          "homeName": "M. Kozyreva,",
-          "awayName": "C. Ngounoue,"
-        }
-      ]
-    },
-    {
-      "dayId": "07 JUN·c2",
-      "date": "07 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1201364571960184",
-          "sport": "tennis_prev",
-          "side": "home",
-          "sofa": 16286977,
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "homeName": "M. Kestelboim,",
-          "awayName": "I. Radulov,"
-        },
-        {
-          "id": "opid1204627571961098",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": 16287254,
-          "match": "M. Kozyreva, – C. Ngounoue,",
-          "pick": "Gana M. Kozyreva,",
-          "odd": 4.75,
-          "homeName": "M. Kozyreva,",
-          "awayName": "C. Ngounoue,"
-        },
-        {
-          "id": "opid1201364571960186",
-          "sport": "tennis_prev",
-          "side": "away",
-          "sofa": 16286978,
-          "match": "G. Blancaneaux, – L. Staeheli,",
-          "pick": "Gana L. Staeheli,",
-          "odd": 5.6,
-          "homeName": "G. Blancaneaux,",
-          "awayName": "L. Staeheli,"
-        }
-      ]
-    },
-    {
-      "dayId": "07 JUN·c1",
-      "date": "07 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1204432371947364",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": 16283445,
-          "match": "E. Jacquemot, – H. Guo,",
-          "pick": "Gana E. Jacquemot,",
-          "odd": 1.68,
-          "homeName": "E. Jacquemot,",
-          "awayName": "H. Guo,"
-        },
-        {
-          "id": "opid1200351171750528",
-          "sport": "tennis_prev",
-          "side": "away",
-          "sofa": 16241132,
-          "match": "S. Baez, – A. Molcan,",
-          "pick": "Gana A. Molcan,",
-          "odd": 2.42,
-          "homeName": "S. Baez,",
-          "awayName": "A. Molcan,"
-        },
-        {
-          "id": "opid1200762571957818",
-          "sport": "tennis_oddspapi_wta",
-          "side": "away",
-          "sofa": 16286183,
-          "match": "K. Volynets, – L. Zhu,",
-          "pick": "Gana L. Zhu,",
-          "odd": 3.45,
-          "homeName": "K. Volynets,",
-          "awayName": "L. Zhu,"
         }
       ]
     }
@@ -1574,5 +1535,7 @@
     "shnaider": 1810,
     "chwalinska": 1650
   },
-  "ELO_DONE": {}
+  "ELO_DONE": {},
+  "MODEL_RECORD": [],
+  "MODEL_PENDING": []
 }
