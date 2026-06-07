@@ -187,6 +187,30 @@ function revoidRecords(COMBO_RECORD, RECORD, voidPairs, voidNames){
   RECORD.forEach(r=>{ if (r.result!=='V' && pairVoid(r.match)){ r.result='V'; r.odd=1.00; n++; } });
   return n;
 }
+/* MODEL ACCURACY: liquida predicciones del modelo con los pares de resultados (gratis).
+   Mueve de MODEL_PENDING a MODEL_RECORD con ok=true/false. NO cuenta para el ROI. */
+function settleModel(MODEL_PENDING, MODEL_RECORD, finished, sofa){
+  const fp=(finished||[]).map(f=>({a:surnameKey(f.home),b:surnameKey(f.away),w:surnameKey(f.winner)}));
+  const still=[]; let n=0;
+  MODEL_PENDING.forEach(p=>{
+    const nm=(p.match||'').split('–').map(s=>surnameKey(s));
+    let winnerHome=null;
+    const sf=p.sofa&&sofa&&sofa[p.sofa];
+    if(sf&&sf.done&&!sf.voided) winnerHome=sf.winnerHome;
+    else if(sf&&sf.done&&sf.voided){ return; }     // retirada → se descarta de precisión
+    if(winnerHome===null){
+      const f=fp.find(v=>(v.a===nm[0]&&v.b===nm[1])||(v.a===nm[1]&&v.b===nm[0]));
+      if(f) winnerHome=(f.w===nm[0]) === (surnameKey(p.homeName)===nm[0]) ? (f.w===surnameKey(p.homeName)) : (f.w===surnameKey(p.homeName));
+      if(f) winnerHome=(f.w===surnameKey(p.homeName));
+    }
+    if(winnerHome===null){ still.push(p); return; }
+    const ok=(winnerHome===p.predHome);
+    MODEL_RECORD.unshift({ date:p.date, match:p.match, predName:p.predName, prob:p.prob, ok });
+    n++;
+  });
+  MODEL_PENDING.length=0; still.forEach(x=>MODEL_PENDING.push(x));
+  return n;
+}
 /* RE-VERIFICA cada registro contra los resultados reales (pares api-tennis) y lo corrige:
    GANADA/FALLADA según el ganador real, ANULADA si la pareja se retiró. Des-anula los mal anulados. */
 function reverifyRecords(RECORD, COMBO_RECORD, finished, voidPairs){
@@ -413,10 +437,10 @@ async function main(){
   }
 
   // ---- track record (settle finished picks via scores) ----
-  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[];
-  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; } catch(e){}
+  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[], MODEL_RECORD=[], MODEL_PENDING=[];
+  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; MODEL_RECORD=prev.MODEL_RECORD||[]; MODEL_PENDING=prev.MODEL_PENDING||[]; } catch(e){}
   // RESET=1 → empieza el historial de cero (para limpiar datos viejos corruptos)
-  if (process.env.RESET==='1'){ RECORD=[]; PENDING=[]; COMBO_RECORD=[]; COMBO_PENDING=[]; ARB_RECORD=[]; ARB_PENDING=[]; console.log('· RESET: historial vaciado, empezando limpio'); }
+  if (process.env.RESET==='1'){ RECORD=[]; PENDING=[]; COMBO_RECORD=[]; COMBO_PENDING=[]; ARB_RECORD=[]; ARB_PENDING=[]; MODEL_RECORD=[]; MODEL_PENDING=[]; console.log('· RESET: historial vaciado, empezando limpio'); }
 
   // dedup
   const dedupe=(arr,key)=>{const s=new Set();return arr.filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
@@ -482,6 +506,7 @@ async function main(){
       { const fixed=revoidRecords(COMBO_RECORD, RECORD, voidPairs, voidNames); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
       { const rv=reverifyRecords(RECORD, COMBO_RECORD, espn.finished, voidPairs); if(rv) console.log(`· ${rv} registros re-verificados (resultado real)`); }
       { const reop=reopenRecords(RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, apiRes.unfinished); if(reop) console.log(`· ${reop} registros reabiertos (partido interrumpido)`); }
+      { const sm=settleModel(MODEL_PENDING, MODEL_RECORD, espn.finished, sofa); if(sm) console.log(`· ${sm} predicciones del modelo verificadas`); }
       // PRE-RESUELVE por nombre los pendientes SIN sofascoreId (challengers viejos)
       const byName={};
       for (const p of PENDING){ if(!p.sofa && p.homeName && p.awayName){ const k=surnameKey(p.homeName)+'|'+surnameKey(p.awayName); if(!(k in byName)) byName[k]=await sofaByName(p.homeName,p.awayName); } }
@@ -547,6 +572,24 @@ async function main(){
 
   // snapshot today's picks + combos as pending
   const today=fmtDay(new Date().toISOString());
+
+  // ---- MODEL ACCURACY: snapshot la predicción del modelo para CADA partido del tablero ----
+  // (favorito según el modelo). NO es pick de apuesta, NO cuenta para el ROI. Solo precisión.
+  { const mSig=p=>`${(p.match||'').toLowerCase()}`;
+    const mSeen=new Set([...MODEL_PENDING.map(mSig), ...MODEL_RECORD.map(mSig)]);
+    MATCHES.forEach(m=>{
+      const mk=marketProbs(m); const mdl=(m.model&&typeof m.model.home==='number')?m.model:mk;
+      const predHome = mdl.home>=mdl.away;
+      const match=`${PLAYERS[m.home].name} – ${PLAYERS[m.away].name}`;
+      if(mSeen.has(match.toLowerCase())) return;
+      MODEL_PENDING.push({ date:fmtDay(m._commence||new Date().toISOString()), ts:new Date(m._commence||Date.now()).getTime(),
+        match, predHome, prob:Math.round((predHome?mdl.home:mdl.away)*100),
+        predName:(predHome?PLAYERS[m.home]:PLAYERS[m.away]).name, sofa:m.sofa||null,
+        homeName:PLAYERS[m.home].name, awayName:PLAYERS[m.away].name });
+      mSeen.add(match.toLowerCase());
+    });
+  }
+
   // already-settled signature (match+pick normalized) → never re-add a pick that's in the record
   const recSig=new Set(RECORD.map(sSig));
   // clean any pending that's already settled (fixes the "EN JUEGO + GANADA" duplicate)
@@ -619,6 +662,7 @@ async function main(){
            model:{ players:Object.keys(LIVE_ELO).length }, credits:{ remaining:CREDITS.remaining, used:CREDITS.used } },
     PLAYERS:keepPlayers, BOOKS:keepBooks, MATCHES:keepMatches, COMBOS:keepCombos,
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
+    MODEL_RECORD: MODEL_RECORD.slice(0,400), MODEL_PENDING,
     ELO:LIVE_ELO, ELO_DONE,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
@@ -670,7 +714,7 @@ function matchFinished(scores, homeName, awayName){
 async function scoresOnly(){
   let d;
   try { d = JSON.parse(fs.readFileSync(OUT,'utf8')); } catch(e){ console.log('· scores-only: no hay daily.json'); return; }
-  let RECORD=d.RECORD||[], PENDING=d.PENDING||[], COMBO_RECORD=d.COMBO_RECORD||[], COMBO_PENDING=d.COMBO_PENDING||[], ARB_RECORD=d.ARB_RECORD||[], ARB_PENDING=d.ARB_PENDING||[];
+  let RECORD=d.RECORD||[], PENDING=d.PENDING||[], COMBO_RECORD=d.COMBO_RECORD||[], COMBO_PENDING=d.COMBO_PENDING||[], ARB_RECORD=d.ARB_RECORD||[], ARB_PENDING=d.ARB_PENDING||[], MODEL_RECORD=d.MODEL_RECORD||[], MODEL_PENDING=d.MODEL_PENDING||[];
   // inject manual seed (surebets → directas al historial; picks → pendientes). NO toca MATCHES ni gasta créditos.
   try {
     const seed = JSON.parse(fs.readFileSync(__dirname + '/seed-pending.json', 'utf8'));
@@ -716,11 +760,12 @@ async function scoresOnly(){
     { const fixed=revoidRecords(COMBO_RECORD, RECORD, voidPairs, voidNames); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
     { const rv=reverifyRecords(RECORD, COMBO_RECORD, espn.finished, voidPairs); if(rv) console.log(`· ${rv} registros re-verificados (resultado real)`); }
     { const reop=reopenRecords(RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, apiRes.unfinished); if(reop) console.log(`· ${reop} registros reabiertos (partido interrumpido)`); }
+    { const sm=settleModel(MODEL_PENDING, MODEL_RECORD, espn.finished, sofa); if(sm) console.log(`· ${sm} predicciones del modelo verificadas`); }
     const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} if(pickVoided(p,voidPairs,voidNames)){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,oddOrig:p.odd,odd:1.00,book:p.book,result:'V'});return;} const sf=(p.sofa&&sofa[p.sofa])||nameRes(p.homeName,p.awayName); let w=null; if(sf&&sf.done){ if(sf.voided){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,oddOrig:p.odd,odd:1.00,book:p.book,result:'V'});return;} w=(sf.winnerHome===(p.pickKey==='home')); } else if(sf&&!sf.done){still.push(p);return;} if(w===null) w=espnPairResult(p.homeName,p.awayName,(p.pickLabel||'').replace(/^Gana\s+/i,''),espn.finished); if(w===null) w=manualPickResult(p,manualWinners); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
     const cstill=[]; COMBO_PENDING.forEach(c=>{ if(!c.legs.every(l=>pe(l.ts))){cstill.push(c);return;} const states=c.legs.map(l=>{ if(pickVoided({match:l.match,pickLabel:l.pick,homeName:(l.match||'').split('–')[0],awayName:(l.match||'').split('–')[1]},voidPairs,voidNames)) return 'V'; const s=(l.sofa&&sofa[l.sofa])||nameRes(l.homeName,l.awayName); if(s&&s.done&&s.voided) return 'V'; if(s&&s.done&&!s.voided) return (s.winnerHome===(l.side==='home')); const nm=(l.match||'').split('–'); let r=espnPairResult(nm[0],nm[1],(l.pick||'').replace(/^Gana\s+/i,''),espn.finished); if(r===null) r=manualLegResult(l,manualWinners); if(r===null) r=legWin(scores,l); return r; }); if(states.some(r=>r===null)){cstill.push(c);return;} const nonVoid=states.filter(r=>r!=='V'); const won=nonVoid.length>0&&nonVoid.every(r=>r===true); const allVoid=nonVoid.length===0; const totalOdd=+c.legs.reduce((p,l,i)=>p*(states[i]==='V'?1:l.odd),1).toFixed(2); COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd,result:allVoid?'V':(won?'W':'L'),legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:states[i]==='V'?1.00:l.odd,win:states[i]==='V'?null:states[i],voided:states[i]==='V'}))}); }); COMBO_PENDING=cstill;
     const astill=[]; ARB_PENDING.forEach(a=>{ if(!pe(a.ts)){astill.push(a);return;} const sfa=(a.sofa&&sofa[a.sofa])||nameRes(a.homeName,a.awayName); const sfaVoid=(sfa&&sfa.done&&sfa.voided)||pickVoided({homeName:a.homeName,awayName:a.awayName,match:a.match},voidPairs,voidNames); const done=(sfa&&sfa.done)||espnPairDone(a.homeName,a.awayName,espn.finished)||matchFinished(scores,a.homeName,a.awayName)||sfaVoid; if(!done){astill.push(a);return;} if(sfaVoid) return; ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
   } catch(e){ console.log('· scores-only: error', e.message); }
-  d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD.slice(0,40); d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING;
+  d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD.slice(0,40); d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING; d.MODEL_RECORD=MODEL_RECORD.slice(0,400); d.MODEL_PENDING=MODEL_PENDING;
   if(d.meta) d.meta.updatedAt=new Date().toISOString();
   fs.writeFileSync(OUT, JSON.stringify(d,null,2));
   console.log(`✓ scores-only: ${RECORD.length} en récord · ${PENDING.length} pendientes`);

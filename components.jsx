@@ -225,6 +225,7 @@ function Nav({ t, lang, setLang, route, go }) {
     ['arb', t.navArb, Icon.scale],
     ['combos', t.navCombos, Icon.layers],
     ['record', t.navRecord, Icon.chart],
+    ['model', t.navModel, Icon.target],
     ['how', t.navHow, Icon.book],
   ];
   const isActive = (k) => route.view === k || (k==='value'&&route.view==='match');

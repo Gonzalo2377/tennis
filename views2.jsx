@@ -411,4 +411,54 @@ function How({ t, go }) {
   );
 }
 
-Object.assign(window, { Arbitrage, Combos, Record, How });
+Object.assign(window, { Arbitrage, Combos, Record, How, ModelAccuracy });
+
+/* ============================================================ ACIERTOS DEL MODELO */
+function ModelAccuracy({ t, go }) {
+  const s = window.modelSummary ? window.modelSummary() : { n:0, ok:0, ko:0, acc:0 };
+  const rec = window.MODEL_RECORD || [];
+  return (
+    <main>
+      <section className="section">
+        <div className="wrap">
+          <div className="section__head">
+            <div><span className="eyebrow"><span className="dot" />{t.modelEyebrow}</span><h2 className="section__title">{t.modelTitle}</h2></div>
+          </div>
+          <p style={{color:'var(--ink-2)', maxWidth:680, margin:'-6px 0 22px', lineHeight:1.6}}>{t.modelLead}</p>
+
+          <div className="grid grid--3" style={{gridTemplateColumns:'repeat(4,1fr)', marginBottom:26}}>
+            <div className="stat"><div className="stat__lbl">{t.modelAcc}</div><div className="stat__val" style={{color:'var(--court)'}}>{s.acc.toFixed(0)}%</div></div>
+            <div className="stat"><div className="stat__lbl">{t.modelHits}</div><div className="stat__val" style={{color:'var(--pos)'}}>{s.ok}</div></div>
+            <div className="stat"><div className="stat__lbl">{t.modelMiss}</div><div className="stat__val" style={{color:'var(--neg)'}}>{s.ko}</div></div>
+            <div className="stat"><div className="stat__lbl">{t.modelN}</div><div className="stat__val">{s.n}</div></div>
+          </div>
+
+          {rec.length>0 ? (
+            <div className="panel"><div className="vboard-scroll">
+              <table className="vboard">
+                <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.modelColPred}</th><th>{t.modelColProb}</th><th>{t.modelColRes}</th></tr></thead>
+                <tbody>
+                  {rec.map((m,i)=>(
+                    <tr key={i} style={{cursor:'default'}}>
+                      <td><span className="vb-sub">{m.date}</span></td>
+                      <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{m.match}</span></td>
+                      <td className="l">{m.predName}</td>
+                      <td style={{fontFamily:'var(--font-mono)', color:'var(--muted)'}}>{m.prob}%</td>
+                      <td><span className={'res-pill '+(m.ok?'w':'l')}>{m.ok?t.modelOk:t.modelKo}</span></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div></div>
+          ) : (
+            <div className="panel panel--pad" style={{textAlign:'center', padding:'40px 22px'}}>
+              <div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.1rem'}}>—</div>
+            </div>
+          )}
+          <div className="disclaimer" style={{marginTop:22}}><b>{t.discTitle}</b> {t.disc}</div>
+        </div>
+      </section>
+      <Footer t={t} go={go} />
+    </main>
+  );
+}

@@ -48,6 +48,7 @@ function App() {
     case 'arb':    view = <Arbitrage t={t} go={go} />; break;
     case 'combos': view = <Combos t={t} go={go} />; break;
     case 'record': view = <Record t={t} go={go} />; break;
+    case 'model':  view = <ModelAccuracy t={t} go={go} />; break;
     case 'how':    view = <How t={t} go={go} />; break;
     default:       view = <Home t={t} go={go} />;
   }
@@ -83,6 +84,8 @@ function applyDaily(d){
   if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = dq(d.COMBO_RECORD, ckey);
   if(Array.isArray(d.COMBO_PENDING)) window.COMBO_PENDING = dq(d.COMBO_PENDING, ckey);
   if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = dq(d.ARB_RECORD, akey);
+  if(Array.isArray(d.MODEL_RECORD)) window.MODEL_RECORD = d.MODEL_RECORD;
+  if(Array.isArray(d.MODEL_PENDING)) window.MODEL_PENDING = d.MODEL_PENDING;
   if(Array.isArray(d.PENDING)) {
     // dedup AND drop any pending already settled in the record
     const done = new Set((d.RECORD||[]).map(rkey));

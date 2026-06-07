@@ -205,6 +205,19 @@ window.ARB_RECORD = [
   { date:'03 JUN', match:'Sabalenka – Shnaider', marginPct:1.42, profit:1.44,
     legs:[ {pick:'Gana A. Sabalenka', odd:1.15, book:'gtbets'}, {pick:'Gana D. Shnaider', odd:8.60, book:'betfair'} ] },
 ];
+window.MODEL_RECORD = window.MODEL_RECORD || [
+  { date:'06 JUN', match:'M. Andreeva – M. Chwalinska', predName:'M. Andreeva', prob:83, ok:true },
+  { date:'06 JUN', match:'A. Parks – M. Inglis', predName:'A. Parks', prob:62, ok:true },
+  { date:'05 JUN', match:'D. Dedura-Palomero – M. Trungelliti', predName:'M. Trungelliti', prob:55, ok:false },
+  { date:'05 JUN', match:'A. Ilagan – Y. Shimizu', predName:'A. Ilagan', prob:57, ok:true },
+];
+window.MODEL_PENDING = window.MODEL_PENDING || [];
+window.modelSummary = function(){
+  const r = window.MODEL_RECORD || [];
+  const ok = r.filter(x=>x.ok).length;
+  const acc = r.length ? (ok/r.length)*100 : 0;
+  return { n:r.length, ok, ko:r.length-ok, acc };
+};
 window.recordSummary = function(){
     const r = window.RECORD || [];
     let staked=0, returned=0, w=0, l=0, voids=0;
@@ -237,7 +250,11 @@ window.arbSummary = function(){
 window.I18N = {
   es: {
     brandSub:'TENIS · VALOR',
-    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navHow:'Cómo funciona', statusPend:'EN JUEGO',
+    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navModel:'Aciertos', navHow:'Cómo funciona', statusPend:'EN JUEGO',
+    modelEyebrow:'PRECISIÓN DEL MODELO · NO ES PICK', modelTitle:'Aciertos del modelo',
+    modelLead:'Para cada partido del tablero, nuestro modelo predice un ganador. Aquí ves si acertó o no. Es solo un termómetro de precisión: NO son apuestas y NO cuentan para el ROI ni el récord.',
+    modelAcc:'Acierto del modelo', modelHits:'Aciertos', modelMiss:'Fallos', modelN:'Partidos',
+    modelColPred:'Predicción', modelColProb:'Prob.', modelColRes:'Resultado', modelOk:'Acertó', modelKo:'Falló',
     searchPh:'Buscar jugador o partido…', updated:'Actualizado hoy', autoUpdate:'Se actualiza solo cada día',
     searchNone:'Sin resultados', searchNext:'Próximo', searchNoNext:'Sin próximo partido programado',
     vs:'vs',
@@ -291,7 +308,11 @@ window.I18N = {
   },
   en: {
     brandSub:'TENNIS · VALUE',
-    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navHow:'How it works', statusPend:'LIVE',
+    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navModel:'Accuracy', navHow:'How it works', statusPend:'LIVE',
+    modelEyebrow:'MODEL ACCURACY · NOT A PICK', modelTitle:'Model accuracy',
+    modelLead:'For every match on the board, our model predicts a winner. Here you see if it was right. It\u2019s just an accuracy gauge: these are NOT bets and do NOT count toward ROI or the record.',
+    modelAcc:'Model hit rate', modelHits:'Correct', modelMiss:'Wrong', modelN:'Matches',
+    modelColPred:'Prediction', modelColProb:'Prob.', modelColRes:'Result', modelOk:'Correct', modelKo:'Wrong',
     searchPh:'Search player or match…', updated:'Updated today', autoUpdate:'Auto-updates daily',
     searchNone:'No results', searchNext:'Next', searchNoNext:'No upcoming match scheduled',
     vs:'vs',
