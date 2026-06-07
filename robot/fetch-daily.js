@@ -19,6 +19,7 @@ const path = require('path');
 const API_KEY = process.env.ODDS_API_KEY;
 const APITENNIS_KEY = process.env.APITENNIS_KEY || '';
 const apiTennis = require('./results-api.js');
+const fetchRankElo = require('./rankings-api.js');
 const espnResults = require('./espn-results.js');
 const sofaResults = require('./sofascore-results.js');
 const REGIONS = process.env.ODDS_REGIONS || 'eu';
@@ -38,9 +39,10 @@ const CREDITS = { remaining:null, used:null };
 /* ---- helpers ---- */
 const slug = (s) => (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'').slice(0,16) || 'p'+Math.random().toString(36).slice(2,7);
 function shortName(full){
-  // "Carlos Alcaraz" -> "C. Alcaraz" ; keep single tokens as-is
-  const parts = (full||'').trim().split(/\s+/);
-  if (parts.length < 2) return full;
+  // "Carlos Alcaraz" -> "C. Alcaraz" ; keep single tokens as-is. Limpia comas/puntos sobrantes.
+  const clean = (full||'').replace(/[.,;:]+$/,'').replace(/,/g,'').trim();
+  const parts = clean.split(/\s+/);
+  if (parts.length < 2) return clean;
   const last = parts.slice(1).join(' ');
   return parts[0][0] + '. ' + last;
 }
@@ -297,7 +299,7 @@ function eloOf(name, surface){
   return base + surfDelta;
 }
 /* learn Elo from finished matches (self-updating, K=24, surface-neutral base) */
-let LIVE_ELO = {}, ELO_DONE = {};
+let LIVE_ELO = {}, ELO_DONE = {}, RANK_ELO = {}, RANK_TS = 0;
 function seedElo(name){ const k=lastKey(name); if(LIVE_ELO[k]!=null) return LIVE_ELO[k]; LIVE_ELO[k] = RATINGS[k] ? RATINGS[k].elo : 1700; return LIVE_ELO[k]; }
 function updateElo(scores){
   let n=0;
@@ -331,8 +333,14 @@ async function main(){
   // SCORES-ONLY mode: cheap refresh that only settles finished picks/combos/surebets.
   if ((process.env.ODDS_MODE||'').toLowerCase()==='scores'){ await scoresOnly(); return; }
   // load the self-updating Elo learned so far (seeded from ratings.js on first run)
-  try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; } catch(e){}
+  try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; RANK_ELO = prevE.RANK_ELO || {}; RANK_TS = prevE.RANK_TS || 0; } catch(e){}
   if (Object.keys(LIVE_ELO).length === 0) { for (const k in RATINGS) LIVE_ELO[k] = RATINGS[k].elo; console.log(`· Elo sembrado con ${Object.keys(LIVE_ELO).length} jugadores de ratings.js`); }
+  // RANKING ATP/WTA → Elo base (1 vez por semana). Da nivel real a TODOS los rankeados (incl. challenger).
+  if (APITENNIS_KEY && (Date.now() - (RANK_TS||0) > 7*24*3600*1000)){
+    try { const re = await fetchRankElo(APITENNIS_KEY); if (Object.keys(re).length){ RANK_ELO = re; RANK_TS = Date.now(); } } catch(e){ console.log('· rankings no disponibles:', e.message); }
+  }
+  // siembra el Elo base de ranking en jugadores que aún no hemos aprendido (no pisa lo aprendido)
+  for (const k in RANK_ELO){ if (LIVE_ELO[k] == null) LIVE_ELO[k] = RANK_ELO[k]; }
 
   let keys = SPORT.split(',').map(s=>s.trim()).filter(Boolean);
   if (keys.length===1 && keys[0].toLowerCase()==='auto'){
@@ -390,6 +398,20 @@ async function main(){
     if (Object.keys(oddsH).length < 2) return;                  // need 2+ books for value/arb
 
     const surface = surfaceOf(key, evName);
+    // Si no conocemos a un jugador (challenger/ITF), le SEMBRAMOS un Elo derivado de la cuota
+    // de mercado de ESTE partido. Así TODOS tienen rating y, con los resultados reales, el
+    // modelo lo va refinando solo (updateElo) — y con el tiempo encuentra valor en los bajos.
+    { const mk0=marketProbs({odds:{home:ev.bookmakers&&oddsH,away:oddsA}});
+      const seedFromMarket=(name, pImplied, oppName)=>{
+        const k=lastKey(name);
+        if (LIVE_ELO[k]!=null || (RATINGS[k]&&RATINGS[k].elo!=null) || RANK_ELO[k]!=null) return;
+        const ok=lastKey(oppName), oppE=(LIVE_ELO[ok]!=null?LIVE_ELO[ok]:(RATINGS[ok]?RATINGS[ok].elo:1700));
+        const p=Math.min(0.92, Math.max(0.08, pImplied));
+        LIVE_ELO[k]=Math.round(oppE + 400*Math.log10(p/(1-p)));   // Elo que reproduce esa prob vs el rival
+      };
+      seedFromMarket(ev.home_team, mk0.home, ev.away_team);
+      seedFromMarket(ev.away_team, mk0.away, ev.home_team);
+    }
     const model = modelProbs(ev.home_team, ev.away_team, surface, null);
     MATCHES.push({
       id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time), day:fmtDay(ev.commence_time),
@@ -429,11 +451,21 @@ async function main(){
                         match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pick:label(x.m,x.v.pick.k),
                         odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book });
   const COMBOS = [];
-  const pool = valued.length>=2 ? valued : MATCHES.map(m=>({m,v:matchValue(m)})).sort((a,b)=>b.v.pick.p-a.v.pick.p);
-  if (pool.length>=2){
-    const conf = (arr)=> Math.round(arr.reduce((p,x)=>p*x.v.pick.p,1)*100);
-    COMBOS.push({ id:'c1', name:'Combinada del Día', conf:conf(pool.slice(0,3)), legs:pool.slice(0,3).map(legOf) });
-    if (pool.length>=3) COMBOS.push({ id:'c2', name:'Combinada Valor', conf:conf(pool.slice(1,4).length?pool.slice(1,4):pool.slice(0,3)), legs:(pool.slice(1,4).length>=2?pool.slice(1,4):pool.slice(0,3)).map(legOf) });
+  // Para COMBINADAS: solo favoritos creíbles (cuota baja, prob alta). Se multiplican varios
+  // pequeños → cuota total razonable. Nada de picks a 3-4 (esos fallan demasiado en combi).
+  const comboLeg = (x)=> x.v.pick && x.v.pick.best && x.v.pick.best.price <= 1.85 && x.v.pick.p >= 0.55;
+  const surePool = MATCHES.map(m=>({m,v:matchValue(m)})).filter(comboLeg).sort((a,b)=>b.v.pick.p-a.v.pick.p);
+  // pool de valor PERO acotado: con valor y cuota no disparada (≤2.10), para la "Valor"
+  const valPool = valued.filter(x=>x.v.pick.best.price<=2.10).sort((a,b)=>b.v.edge-a.v.edge);
+  const conf = (arr)=> Math.round(arr.reduce((p,x)=>p*x.v.pick.p,1)*100);
+  if (surePool.length>=2){
+    COMBOS.push({ id:'c1', name:'Combinada del Día', conf:conf(surePool.slice(0,3)), legs:surePool.slice(0,3).map(legOf) });
+  }
+  if (valPool.length>=2){
+    const legs=valPool.slice(0,3);
+    const sig=legs.map(l=>l.m.id).sort().join('|');
+    const sig1=surePool.slice(0,3).map(l=>l.m.id).sort().join('|');
+    if (sig!==sig1) COMBOS.push({ id:'c2', name:'Combinada Valor', conf:conf(legs), legs:legs.map(legOf) });
   }
 
   // ---- track record (settle finished picks via scores) ----
@@ -663,7 +695,7 @@ async function main(){
     PLAYERS:keepPlayers, BOOKS:keepBooks, MATCHES:keepMatches, COMBOS:keepCombos,
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
     MODEL_RECORD: MODEL_RECORD.slice(0,400), MODEL_PENDING,
-    ELO:LIVE_ELO, ELO_DONE,
+    ELO:LIVE_ELO, ELO_DONE, RANK_ELO, RANK_TS,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
   console.log(`✓ ${OUT}\n  ${keepMatches.length} partidos · ${valued.length} con valor · ${Object.keys(keepBooks).length} casas · ${COMBOS.length} combis · ${RECORD.length} en récord · ${PENDING.length} pendientes`);
