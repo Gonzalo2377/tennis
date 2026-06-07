@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-07T16:40:56.258Z",
+    "updatedAt": "2026-06-07T18:00:31.307Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -910,6 +910,15 @@
   ],
   "RECORD": [
     {
+      "id": "4b95e6de32c69dc11ab8bbdaf7929253",
+      "date": "07 JUN",
+      "match": "F. Cobolli – A. Zverev",
+      "pick": "Gana A. Zverev",
+      "odd": 1.29,
+      "book": "sport888",
+      "result": "W"
+    },
+    {
       "id": "opid1204432371947364",
       "date": "07 JUN",
       "match": "E. Jacquemot, – H. Guo,",
@@ -979,24 +988,59 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "4b95e6de32c69dc11ab8bbdaf7929253",
-      "sport": "tennis_atp_french_open",
-      "ts": 1780837200000,
-      "date": "07 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Cobolli – A. Zverev",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Zverev",
-      "odd": 1.29,
-      "book": "sport888",
-      "homeName": "F. Cobolli",
-      "awayName": "A. Zverev"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "07 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 27.6,
+      "result": "L",
+      "legs": [
+        {
+          "match": "F. Cobolli – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.28,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "M. Kestelboim, – I. Radulov,",
+          "pick": "Gana M. Kestelboim,",
+          "odd": 3.85,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "G. Blancaneaux, – L. Staeheli,",
+          "pick": "Gana L. Staeheli,",
+          "odd": 5.6,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "06 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 1.65,
+      "result": "W",
+      "legs": [
+        {
+          "match": "M. Chwalinska – M. Andreeva",
+          "pick": "Gana M. Andreeva",
+          "odd": 1.28,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "F. Cobolli – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 1.29,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "07 JUN",
       "name": "Combinada del Día",
@@ -1189,77 +1233,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "06 JUN·c1",
-      "date": "06 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "69fde123c71acd8bcf4d957dba6f97b3",
-          "sport": "tennis_wta_french_open",
-          "side": "away",
-          "sofa": null,
-          "match": "M. Chwalinska – M. Andreeva",
-          "pick": "Gana M. Andreeva",
-          "odd": 1.28,
-          "homeName": "M. Chwalinska",
-          "awayName": "M. Andreeva"
-        },
-        {
-          "id": "4b95e6de32c69dc11ab8bbdaf7929253",
-          "sport": "tennis_atp_french_open",
-          "side": "away",
-          "sofa": null,
-          "match": "F. Cobolli – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 1.29,
-          "homeName": "F. Cobolli",
-          "awayName": "A. Zverev"
-        }
-      ]
-    },
-    {
-      "dayId": "07 JUN·c1",
-      "date": "07 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "4b95e6de32c69dc11ab8bbdaf7929253",
-          "sport": "tennis_atp_french_open",
-          "side": "away",
-          "sofa": null,
-          "match": "F. Cobolli – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 1.28,
-          "homeName": "F. Cobolli",
-          "awayName": "A. Zverev"
-        },
-        {
-          "id": "opid1201364571960184",
-          "sport": "tennis_oddspapi_atp",
-          "side": "home",
-          "sofa": 16286977,
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "homeName": "M. Kestelboim,",
-          "awayName": "I. Radulov,"
-        },
-        {
-          "id": "opid1201364571960186",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": 16286978,
-          "match": "G. Blancaneaux, – L. Staeheli,",
-          "pick": "Gana L. Staeheli,",
-          "odd": 5.6,
-          "homeName": "G. Blancaneaux,",
-          "awayName": "L. Staeheli,"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "07 JUN",
