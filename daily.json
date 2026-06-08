@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-08T13:14:59.166Z",
+    "updatedAt": "2026-06-08T15:00:40.783Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -784,6 +784,16 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200277571958070",
+      "date": "08 JUN",
+      "match": "T. Paul – G. Mpetshi Perricard",
+      "pick": "Gana T. Paul",
+      "oddOrig": 1.48,
+      "odd": 1,
+      "book": "winamax.de",
+      "result": "V"
+    },
+    {
       "id": "opid1200762571974710",
       "date": "08 JUN",
       "match": "D. Kasatkina – R. Montgomery",
@@ -919,24 +929,31 @@
       "book": "betfair-ex",
       "homeName": "M. Cilic",
       "awayName": "D. Shapovalov"
-    },
-    {
-      "id": "opid1200277571958070",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1780923600000,
-      "date": "08 JUN",
-      "sofa": 16286410,
-      "pickHome": true,
-      "match": "T. Paul – G. Mpetshi Perricard",
-      "pickKey": "home",
-      "pickLabel": "Gana T. Paul",
-      "odd": 1.48,
-      "book": "winamax.de",
-      "homeName": "T. Paul",
-      "awayName": "G. Mpetshi Perricard"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "08 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 1.48,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Kasatkina – R. Montgomery",
+          "pick": "Gana D. Kasatkina",
+          "odd": 1.48,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "T. Paul – G. Mpetshi Perricard",
+          "pick": "Gana T. Paul",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        }
+      ]
+    },
     {
       "date": "07 JUN",
       "name": "Combinada del Día",
@@ -1064,37 +1081,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "08 JUN·c1",
-      "date": "08 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1200762571974710",
-          "sport": "tennis_prev",
-          "side": "home",
-          "sofa": null,
-          "match": "D. Kasatkina – R. Montgomery",
-          "pick": "Gana D. Kasatkina",
-          "odd": 1.48,
-          "homeName": "D. Kasatkina",
-          "awayName": "R. Montgomery"
-        },
-        {
-          "id": "opid1200277571958070",
-          "sport": "tennis_oddspapi_atp",
-          "side": "home",
-          "sofa": 16286410,
-          "match": "T. Paul – G. Mpetshi Perricard",
-          "pick": "Gana T. Paul",
-          "odd": 1.48,
-          "homeName": "T. Paul",
-          "awayName": "G. Mpetshi Perricard"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "08 JUN",
