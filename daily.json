@@ -1,12 +1,12 @@
 {
   "meta": {
-    "updatedAt": "2026-06-08T07:00:38.739Z",
+    "updatedAt": "2026-06-08T08:09:47.644Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
     "market": "h2h",
-    "matches": 3,
-    "valuePicks": 2,
+    "matches": 4,
+    "valuePicks": 3,
     "books": 19,
     "stale": false,
     "model": {
@@ -26,7 +26,8 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/358_n-borges.jpg"
     },
     "terenceatmane": {
       "id": "terenceatmane",
@@ -36,7 +37,8 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
     },
     "magdalinette": {
       "id": "magdalinette",
@@ -46,7 +48,8 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1154_m-linette.jpg"
     },
     "kimberlybirrell": {
       "id": "kimberlybirrell",
@@ -56,7 +59,8 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/92_k-birrell.jpg"
     },
     "davidovichfokina": {
       "id": "davidovichfokina",
@@ -76,7 +80,30 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
+    },
+    "dariakasatkina": {
+      "id": "dariakasatkina",
+      "name": "D. Kasatkina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1990_d-kasatkina.jpg"
+    },
+    "robinmontgomery": {
+      "id": "robinmontgomery",
+      "name": "R. Montgomery",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2123_r-montgomery.jpg"
     }
   },
   "BOOKS": {
@@ -156,43 +183,43 @@
       "id": "leovegas",
       "name": "leovegas",
       "abbr": "LEO",
-      "color": "#14805e"
+      "color": "#ffb000"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "ladbrokes": {
       "id": "ladbrokes",
       "name": "ladbrokes",
       "abbr": "LAD",
-      "color": "#1c1c1c"
+      "color": "#7a4ddb"
     },
     "unibetbe": {
       "id": "unibetbe",
       "name": "unibet.be",
       "abbr": "UNI",
-      "color": "#7a4ddb"
+      "color": "#d9730d"
     },
     "betfair": {
       "id": "betfair",
       "name": "betfair-ex",
       "abbr": "BET",
-      "color": "#14805e"
+      "color": "#ffb000"
     },
     "winamax": {
       "id": "winamax",
       "name": "winamax.de",
       "abbr": "WIN",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#7a4ddb"
+      "color": "#d9730d"
     }
   },
   "MATCHES": [
@@ -208,44 +235,44 @@
       "away": "terenceatmane",
       "odds": {
         "home": {
-          "pmu": 1.61,
-          "bwin": 1.62,
-          "1xbet": 1.621,
-          "22bet": 1.61,
+          "pmu": 1.63,
+          "bwin": 1.67,
+          "1xbet": 1.641,
+          "22bet": 1.64,
           "bet365": 1.57,
-          "betano": 1.53,
-          "betway": 1.6,
+          "betano": 1.65,
+          "betway": 1.65,
           "oddset": 1.53,
-          "tipico": 1.52,
-          "unibet": 1.62,
-          "betsson": 1.59,
-          "bwinbe": 1.62,
-          "leovegas": 1.62,
-          "pinnacle": 1.645,
-          "ladbrokes": 1.6,
-          "unibetbe": 1.62,
-          "betfair": 1.67,
+          "tipico": 1.55,
+          "unibet": 1.64,
+          "betsson": 1.61,
+          "bwinbe": 1.67,
+          "leovegas": 1.64,
+          "pinnacle": 1.751,
+          "ladbrokes": 1.65,
+          "unibetbe": 1.64,
+          "betfair": 1.78,
           "winamax": 1.64,
           "williamhill": 1.556
         },
         "away": {
-          "pmu": 2.28,
+          "pmu": 2.23,
           "bwin": 2.35,
-          "1xbet": 2.325,
-          "22bet": 2.31,
+          "1xbet": 2.285,
+          "22bet": 2.255,
           "bet365": 2.37,
-          "betano": 2.5,
-          "betway": 2.3,
+          "betano": 2.25,
+          "betway": 2.2,
           "oddset": 2.45,
-          "tipico": 2.35,
-          "unibet": 2.3,
-          "betsson": 2.33,
-          "bwinbe": 2.25,
-          "leovegas": 2.3,
-          "pinnacle": 2.37,
-          "ladbrokes": 2.2,
-          "unibetbe": 2.3,
-          "betfair": 2.46,
+          "tipico": 2.3,
+          "unibet": 2.25,
+          "betsson": 2.28,
+          "bwinbe": 2.15,
+          "leovegas": 2.25,
+          "pinnacle": 2.18,
+          "ladbrokes": 2.15,
+          "unibetbe": 2.25,
+          "betfair": 2.26,
           "winamax": 2.65,
           "williamhill": 2.35
         }
@@ -285,10 +312,10 @@
           "betsson": 1.7,
           "bwinbe": 1.57,
           "leovegas": 1.74,
-          "pinnacle": 1.769,
+          "pinnacle": 1.751,
           "ladbrokes": 1.73,
           "unibetbe": 1.74,
-          "betfair": 1.77,
+          "betfair": 1.78,
           "winamax": 1.58,
           "williamhill": 1.714
         },
@@ -305,10 +332,10 @@
           "betsson": 2.12,
           "bwinbe": 2.35,
           "leovegas": 2.08,
-          "pinnacle": 2.15,
+          "pinnacle": 2.18,
           "ladbrokes": 2,
           "unibetbe": 2.08,
-          "betfair": 2.28,
+          "betfair": 2.24,
           "winamax": 2.35,
           "williamhill": 2.1
         }
@@ -342,14 +369,14 @@
           "22bet": 1.4,
           "bet365": 1.4,
           "betano": 1.4,
-          "betway": 1.444,
+          "betway": 1.4,
           "oddset": 1.28,
           "tipico": 1.35,
           "unibet": 1.42,
           "betsson": 1.39,
           "bwinbe": 1.28,
           "leovegas": 1.42,
-          "pinnacle": 1.442,
+          "pinnacle": 1.427,
           "ladbrokes": 1.4,
           "unibetbe": 1.42,
           "betfair": 1.44,
@@ -363,14 +390,14 @@
           "22bet": 2.944,
           "bet365": 3,
           "betano": 2.95,
-          "betway": 2.75,
+          "betway": 2.9,
           "oddset": 3.6,
           "tipico": 2.95,
           "unibet": 3,
           "betsson": 2.95,
           "bwinbe": 3.6,
           "leovegas": 2.85,
-          "pinnacle": 2.98,
+          "pinnacle": 3.04,
           "ladbrokes": 2.87,
           "unibetbe": 2.85,
           "betfair": 3.25,
@@ -388,6 +415,71 @@
       },
       "ts": 1780909200000,
       "sofa": 16286409
+    },
+    {
+      "id": "opid1200762571974710",
+      "tour": "wta",
+      "event": "WTA S-Hertogenbosch, Netherlands Women Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "12:10",
+      "day": "08 JUN",
+      "home": "dariakasatkina",
+      "away": "robinmontgomery",
+      "odds": {
+        "home": {
+          "pmu": 1.44,
+          "1xbet": 1.441,
+          "22bet": 1.43,
+          "bet365": 1.4,
+          "betano": 1.45,
+          "betway": 1.444,
+          "oddset": 1.44,
+          "tipico": 1.4,
+          "unibet": 1.45,
+          "betsson": 1.44,
+          "bwinbe": 1.44,
+          "bwin": 1.44,
+          "leovegas": 1.44,
+          "pinnacle": 1.473,
+          "ladbrokes": 1.44,
+          "unibetbe": 1.44,
+          "betfair": 1.48,
+          "winamax": 1.36,
+          "williamhill": 1.357
+        },
+        "away": {
+          "pmu": 2.75,
+          "1xbet": 2.832,
+          "22bet": 2.816,
+          "bet365": 3,
+          "betano": 2.75,
+          "betway": 2.75,
+          "oddset": 2.75,
+          "tipico": 2.7,
+          "unibet": 2.8,
+          "betsson": 2.75,
+          "bwinbe": 2.75,
+          "bwin": 2.75,
+          "leovegas": 2.8,
+          "pinnacle": 2.86,
+          "ladbrokes": 2.7,
+          "unibetbe": 2.8,
+          "betfair": 3,
+          "winamax": 3.15,
+          "williamhill": 3
+        }
+      },
+      "model": {
+        "home": 0.7544540419421866,
+        "away": 0.24554595805781343,
+        "fromModel": true,
+        "eloH": 1813,
+        "eloA": 1618,
+        "surface": "grass"
+      },
+      "ts": 1780913400000,
+      "sofa": null
     }
   ],
   "COMBOS": [],
@@ -501,6 +593,21 @@
       "book": "bwin.be",
       "homeName": "M. Linette",
       "awayName": "K. Birrell"
+    },
+    {
+      "id": "opid1200762571974710",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1780913400000,
+      "date": "08 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "D. Kasatkina – R. Montgomery",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Kasatkina",
+      "odd": 1.48,
+      "book": "betfair-ex",
+      "homeName": "D. Kasatkina",
+      "awayName": "R. Montgomery"
     }
   ],
   "COMBO_RECORD": [
@@ -749,6 +856,28 @@
   ],
   "COMBO_PENDING": [],
   "ARB_RECORD": [
+    {
+      "date": "08 JUN",
+      "match": "D. Kasatkina – R. Montgomery",
+      "marginPct": 0.69,
+      "profit": 0.69,
+      "ts": 1780913400000,
+      "homeName": "D. Kasatkina",
+      "awayName": "R. Montgomery",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana D. Kasatkina",
+          "odd": 1.48,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana R. Montgomery",
+          "odd": 3.15,
+          "book": "winamax.es"
+        }
+      ]
+    },
     {
       "date": "08 JUN",
       "match": "D. Fokina Alejandro – M. Bellucci",
@@ -1086,6 +1215,17 @@
       "sofa": 16286409,
       "homeName": "D. Fokina Alejandro",
       "awayName": "M. Bellucci"
+    },
+    {
+      "date": "08 JUN",
+      "ts": 1780913400000,
+      "match": "D. Kasatkina – R. Montgomery",
+      "predHome": true,
+      "prob": 75,
+      "predName": "D. Kasatkina",
+      "sofa": null,
+      "homeName": "D. Kasatkina",
+      "awayName": "R. Montgomery"
     }
   ],
   "ELO": {
