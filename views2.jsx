@@ -47,7 +47,7 @@ function Arbitrage({ t, go }) {
       <div className="panel" style={{borderColor: isArb?'var(--lime-deep)':'var(--line)', borderWidth: isArb?2:1, borderStyle:'solid'}}>
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:12, padding:'14px 16px', borderBottom:'1px solid var(--line)', cursor:'pointer'}} onClick={()=>go({view:'match', id:a.m.id})}>
           <div style={{minWidth:0}}>
-            <div className="vb-sub">{a.m.event} · {a.m.live ? '🔴 EN JUEGO' : (a.m.day ? a.m.day+' · '+a.m.time : a.m.time)}</div>
+            <div className="vb-sub">{a.m.event} · {a.m.day ? a.m.day+' · '+a.m.time : a.m.time}</div>
             <div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.05rem'}}>{home.name.split(' ').pop()} <span style={{color:'var(--muted)'}}>v</span> {away.name.split(' ').pop()}</div>
           </div>
           <span className="tag" style={{background: isArb?'rgba(174,225,0,.2)':'var(--bg-2)', color: isArb?'var(--lime-deep)':'var(--muted)', border:'1px solid '+(isArb?'rgba(127,168,0,.4)':'var(--line)')}}>{a.marginPct>=0?'+':''}{a.marginPct.toFixed(2)}%</span>

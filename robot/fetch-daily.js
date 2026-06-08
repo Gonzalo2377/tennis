@@ -784,6 +784,14 @@ async function scoresOnly(){
       const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
       Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
     }
+    // fotos desde la BD persistente de SofaScore (gratis, no re-pide si la caché está vigente)
+    if (d.PLAYERS){
+      try {
+        const sr = await sofaRankings();
+        const canon = require('./name-canon.js').canonSurname;
+        Object.values(d.PLAYERS).forEach(p=>{ const k=canon(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+      } catch(e){}
+    }
     const pe=ts=>!ts||ts<=Date.now();
     const sofaIds=[...PENDING.map(p=>p.sofa), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sofa)), ...ARB_PENDING.map(a=>a.sofa)].filter(Boolean);
     let sofa={}; try { sofa=await sofaResults(sofaIds); console.log(`· scores-only SofaScore: ${Object.keys(sofa).length} resultados`); } catch(e){}
