@@ -22,6 +22,7 @@ const apiTennis = require('./results-api.js');
 const fetchRankElo = require('./rankings-api.js');
 const espnResults = require('./espn-results.js');
 const sofaResults = require('./sofascore-results.js');
+const sofaRankings = require('./sofascore-rankings.js');
 const REGIONS = process.env.ODDS_REGIONS || 'eu';
 const MARKET  = 'h2h';
 const MAX     = parseInt(process.env.ODDS_MAX || '10', 10);
@@ -527,6 +528,12 @@ async function main(){
         const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
         Object.values(PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
       }
+      // fotos + Elo base de SofaScore (gratis, permanente, cubre todo el circuito)
+      try {
+        const sr = await sofaRankings();
+        const sk2=(n)=>(n||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase();
+        Object.values(PLAYERS).forEach(p=>{ const k=sk2(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+      } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });

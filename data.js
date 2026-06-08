@@ -171,8 +171,32 @@ window.valueBreakdown = function(m){
   return { rows, sharpFrom, model: m.model || null };
 };
 
+/* Casas conocidas → su marca. Las desconocidas (claves raras de OddsPapi/SofaScore)
+   se limpian a un nombre legible y un color propio determinista, nunca "?" gris. */
+window.BOOK_BRAND = {
+  bet365:'Bet365', betfair:'Betfair', 'betfair_ex_uk':'Betfair', 'betfair_ex_eu':'Betfair', 'betfair-ex':'Betfair', 'betfair-ex-au':'Betfair',
+  williamhill:'William Hill', pinnacle:'Pinnacle', onexbet:'1xBet', '1xbet':'1xBet', '22bet':'22Bet',
+  sport888:'888sport', '888sport':'888sport', smarkets:'Smarkets', matchbook:'Matchbook', betway:'Betway',
+  ladbrokes:'Ladbrokes', 'winamax.es':'Winamax', 'winamax.de':'Winamax', winamax:'Winamax', betvictor:'Bet Victor',
+  unibet:'Unibet', betsson:'Betsson', marathonbet:'Marathon', nordicbet:'NordicBet', coolbet:'Coolbet',
+  betano:'Betano', tipico:'Tipico', codere:'Codere', gtbets:'GTbets', bwin:'bwin', leovegas:'LeoVegas',
+};
+function _bookColor(id){
+  const palette=['#e23b2e','#0a7d3c','#0a2d6e','#14805e','#ffb000','#d11a2a','#0a6cff','#7a4ddb','#d9730d','#1c8a6b','#b0357d','#2a6fdb'];
+  let h=0; const s=String(id||'x'); for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0;
+  return palette[h%palette.length];
+}
+function _bookName(id){
+  const k=String(id||'').toLowerCase();
+  if (window.BOOK_BRAND[k]) return window.BOOK_BRAND[k];
+  // busca marca conocida contenida en la clave (ej. "betfair_ex_uk" → Betfair)
+  for (const b in window.BOOK_BRAND) if (k.includes(b.replace(/[._-].*$/,''))) return window.BOOK_BRAND[b];
+  // si no, limpia la clave: "some_book.es" → "Some Book"
+  return k.replace(/[._-]/g,' ').replace(/\b(uk|eu|es|de|fr|it|se|nl|au|com)\b/g,'').trim()
+          .replace(/\s+/g,' ').replace(/\b\w/g,c=>c.toUpperCase()) || 'Casa';
+}
 window.getPlayer = (id)=> window.PLAYERS[id] || { id, name:(typeof id==='string'?id:'Jugador'), country:'', flag:'', seed:'', tour:'atp', elo:null, form:[] };
-window.getBook = (id)=> window.BOOKS[id] || { id, name:(typeof id==='string'?id:'Casa'), abbr:'?', color:'#888' };
+window.getBook = (id)=> { if(window.BOOKS[id]) return window.BOOKS[id]; const name=_bookName(id); return { id, name, abbr:name.replace(/[^A-Za-z0-9]/g,'').slice(0,3).toUpperCase()||'?', color:_bookColor(id) }; };
 window.outcomeLabel = (k,m)=> window.getPlayer(k==='home'?m.home:m.away).name;
 
 /* ---- COMBINADAS ---- */
