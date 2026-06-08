@@ -209,12 +209,17 @@ button{font-family:inherit;cursor:pointer}
 
 @media(max-width:880px){
   .nav__links,.search{display:none}
-  .nav__toggle{display:flex}
+  .nav__inner{flex-wrap:nowrap;gap:10px;padding:10px 14px}
+  .brand{min-width:0}
+  .brand__sub{display:none}
+  .lang-btn{display:none}
+  .nav__toggle{display:flex;flex-shrink:0;margin-left:auto}
   .grid--3{grid-template-columns:1fr}
   .grid--2{grid-template-columns:1fr}
   .mh{grid-template-columns:1fr;text-align:center}
   .mh__side.away{align-items:center;text-align:center}
   .footer__grid{grid-template-columns:1fr 1fr}
+  .lang-btn{display:none}
   .drawer{display:block;position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:var(--surface);box-shadow:var(--shadow-lg);transform:translateX(100%);transition:.25s;z-index:60;padding:22px}
   .drawer.open{transform:translateX(0)}
   .drawer__link{display:flex;align-items:center;gap:10px;padding:13px 12px;border-radius:11px;font-weight:600;color:var(--ink)}
