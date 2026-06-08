@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-08T18:07:36.903Z",
+    "updatedAt": "2026-06-08T18:32:47.053Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -525,6 +525,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1204432371961846",
+      "date": "08 JUN",
+      "match": "Q. Zheng – J. Cristian",
+      "pick": "Gana J. Cristian",
+      "odd": 3.55,
+      "book": "betfair-ex",
+      "result": "W"
+    },
+    {
       "id": "opid1200277571958070",
       "date": "08 JUN",
       "match": "T. Paul – G. Mpetshi Perricard",
@@ -613,23 +622,7 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "opid1204432371961846",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1780920900000,
-      "date": "08 JUN",
-      "sofa": 16288334,
-      "pickHome": false,
-      "match": "Q. Zheng – J. Cristian",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Cristian",
-      "odd": 3.55,
-      "book": "betfair-ex",
-      "homeName": "Q. Zheng",
-      "awayName": "J. Cristian"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
     {
       "date": "08 JUN",
@@ -1154,6 +1147,13 @@
   "MODEL_RECORD": [
     {
       "date": "08 JUN",
+      "match": "Q. Zheng – J. Cristian",
+      "predName": "Q. Zheng",
+      "prob": 62,
+      "ok": false
+    },
+    {
+      "date": "08 JUN",
       "match": "M. Cilic – D. Shapovalov",
       "predName": "D. Shapovalov",
       "prob": 52,
@@ -1192,17 +1192,6 @@
       "sofa": 16286409,
       "homeName": "D. Fokina Alejandro",
       "awayName": "M. Bellucci"
-    },
-    {
-      "date": "08 JUN",
-      "ts": 1780920900000,
-      "match": "Q. Zheng – J. Cristian",
-      "predHome": true,
-      "prob": 62,
-      "predName": "Q. Zheng",
-      "sofa": 16288334,
-      "homeName": "Q. Zheng",
-      "awayName": "J. Cristian"
     },
     {
       "date": "08 JUN",
