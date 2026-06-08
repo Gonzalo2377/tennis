@@ -1,16 +1,16 @@
 {
   "meta": {
-    "updatedAt": "2026-06-08T12:00:45.334Z",
+    "updatedAt": "2026-06-08T12:07:46.354Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
     "market": "h2h",
-    "matches": 4,
-    "valuePicks": 3,
-    "books": 19,
+    "matches": 7,
+    "valuePicks": 6,
+    "books": 20,
     "stale": false,
     "model": {
-      "players": 3290
+      "players": 3291
     },
     "credits": {
       "remaining": 0,
@@ -18,6 +18,72 @@
     }
   },
   "PLAYERS": {
+    "qinwenzheng": {
+      "id": "qinwenzheng",
+      "name": "Q. Zheng",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1813_q-zheng.jpg"
+    },
+    "jaquelinecristia": {
+      "id": "jaquelinecristia",
+      "name": "J. Cristian",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/33659_j-cristian.jpg"
+    },
+    "marincilic": {
+      "id": "marincilic",
+      "name": "M. Cilic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2167_m-cilic.jpg"
+    },
+    "denisshapovalov": {
+      "id": "denisshapovalov",
+      "name": "D. Shapovalov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/431_d-shapovalov.jpg"
+    },
+    "tommypaul": {
+      "id": "tommypaul",
+      "name": "T. Paul",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1894_t-paul.jpg"
+    },
+    "giovannimpetship": {
+      "id": "giovannimpetship",
+      "name": "G. Mpetshi Perricard",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/9222_g-mpetshi-perricard.jpg"
+    },
     "nunoborges": {
       "id": "nunoborges",
       "name": "N. Borges",
@@ -183,43 +249,49 @@
       "id": "leovegas",
       "name": "leovegas",
       "abbr": "LEO",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#d11a2a"
+      "color": "#0a6cff"
     },
     "ladbrokes": {
       "id": "ladbrokes",
       "name": "ladbrokes",
       "abbr": "LAD",
-      "color": "#7a4ddb"
+      "color": "#e23b2e"
     },
     "unibetbe": {
       "id": "unibetbe",
       "name": "unibet.be",
       "abbr": "UNI",
-      "color": "#d9730d"
+      "color": "#0a7d3c"
     },
     "betfair": {
       "id": "betfair",
       "name": "betfair-ex",
       "abbr": "BET",
-      "color": "#ffb000"
+      "color": "#0a6cff"
     },
     "winamax": {
       "id": "winamax",
-      "name": "winamax.de",
+      "name": "winamax.es",
       "abbr": "WIN",
-      "color": "#d11a2a"
+      "color": "#1c1c1c"
+    },
+    "888sport": {
+      "id": "888sport",
+      "name": "888sport.it",
+      "abbr": "888",
+      "color": "#d9730d"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#d9730d"
+      "color": "#ffb000"
     }
   },
   "MATCHES": [
@@ -286,7 +358,8 @@
         "surface": "grass"
       },
       "ts": 1780909200000,
-      "sofa": 16286314
+      "sofa": 16286314,
+      "live": true
     },
     {
       "id": "opid1200762571957932",
@@ -349,7 +422,8 @@
         "surface": "grass"
       },
       "ts": 1780909200000,
-      "sofa": 16286695
+      "sofa": 16286695,
+      "live": true
     },
     {
       "id": "opid1200277571958068",
@@ -415,7 +489,7 @@
       },
       "ts": 1780909200000,
       "sofa": 16286409,
-      "live": false
+      "live": true
     },
     {
       "id": "opid1200762571974710",
@@ -481,10 +555,233 @@
       },
       "ts": 1780913400000,
       "sofa": null,
-      "live": false
+      "live": true
+    },
+    {
+      "id": "opid1204432371961846",
+      "tour": "wta",
+      "event": "WTA London, Great Britain Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:15",
+      "day": "08 JUN",
+      "home": "qinwenzheng",
+      "away": "jaquelinecristia",
+      "odds": {
+        "home": {
+          "pmu": 1.33,
+          "bwin": 1.33,
+          "1xbet": 1.35,
+          "22bet": 1.344,
+          "bet365": 1.33,
+          "betano": 1.34,
+          "betway": 1.35,
+          "oddset": 1.36,
+          "tipico": 1.27,
+          "unibet": 1.35,
+          "betsson": 1.33,
+          "bwinbe": 1.36,
+          "leovegas": 1.35,
+          "pinnacle": 1.371,
+          "ladbrokes": 1.3,
+          "unibetbe": 1.35,
+          "betfair": 1.39,
+          "winamax": 1.34,
+          "888sport": 1.35
+        },
+        "away": {
+          "pmu": 3.05,
+          "bwin": 3.25,
+          "1xbet": 3.26,
+          "22bet": 3.24,
+          "bet365": 3.4,
+          "betano": 3.25,
+          "betway": 3.2,
+          "oddset": 3.1,
+          "tipico": 3.4,
+          "unibet": 3.2,
+          "betsson": 3.25,
+          "bwinbe": 3.1,
+          "leovegas": 3.2,
+          "pinnacle": 3.33,
+          "ladbrokes": 3.2,
+          "unibetbe": 3.2,
+          "betfair": 3.55,
+          "winamax": 3.2,
+          "888sport": 3.1
+        }
+      },
+      "model": {
+        "home": 0.6212967231224545,
+        "away": 0.37870327687754546,
+        "fromModel": true,
+        "eloH": 1940,
+        "eloA": 1854,
+        "surface": "hard"
+      },
+      "ts": 1780920900000,
+      "sofa": 16288334
+    },
+    {
+      "id": "opid1200287171958010",
+      "tour": "atp",
+      "event": "ATP S-Hertogenbosch, Netherlands Men Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:30",
+      "day": "08 JUN",
+      "home": "marincilic",
+      "away": "denisshapovalov",
+      "odds": {
+        "home": {
+          "pmu": 1.62,
+          "bwin": 1.6,
+          "1xbet": 1.611,
+          "22bet": 1.6,
+          "bet365": 1.61,
+          "betano": 1.62,
+          "betway": 1.55,
+          "tipico": 1.55,
+          "unibet": 1.62,
+          "betsson": 1.6,
+          "bwinbe": 1.78,
+          "leovegas": 1.62,
+          "pinnacle": 1.666,
+          "ladbrokes": 1.57,
+          "unibetbe": 1.62,
+          "betfair": 1.67,
+          "winamax": 1.78,
+          "williamhill": 1.588
+        },
+        "away": {
+          "pmu": 2.28,
+          "bwin": 2.3,
+          "1xbet": 2.346,
+          "22bet": 2.33,
+          "bet365": 2.3,
+          "betano": 2.3,
+          "betway": 2.4,
+          "tipico": 2.3,
+          "unibet": 2.28,
+          "betsson": 2.29,
+          "bwinbe": 2,
+          "leovegas": 2.28,
+          "pinnacle": 2.33,
+          "ladbrokes": 2.25,
+          "unibetbe": 2.28,
+          "betfair": 2.46,
+          "winamax": 2,
+          "williamhill": 2.3
+        }
+      },
+      "model": {
+        "home": 0.4769904127024377,
+        "away": 0.5230095872975623,
+        "fromModel": true,
+        "eloH": 1818,
+        "eloA": 1834,
+        "surface": "grass"
+      },
+      "ts": 1780921800000,
+      "sofa": 16286313
+    },
+    {
+      "id": "opid1200277571958070",
+      "tour": "atp",
+      "event": "ATP Stuttgart, Germany Men Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "15:00",
+      "day": "08 JUN",
+      "home": "tommypaul",
+      "away": "giovannimpetship",
+      "odds": {
+        "home": {
+          "pmu": 1.41,
+          "bwin": 1.4,
+          "1xbet": 1.431,
+          "22bet": 1.42,
+          "bet365": 1.44,
+          "betano": 1.42,
+          "betway": 1.444,
+          "oddset": 1.44,
+          "tipico": 1.35,
+          "unibet": 1.42,
+          "betsson": 1.4,
+          "bwinbe": 1.44,
+          "leovegas": 1.42,
+          "pinnacle": 1.429,
+          "ladbrokes": 1.4,
+          "unibetbe": 1.42,
+          "betfair": 1.46,
+          "winamax": 1.48,
+          "williamhill": 1.417
+        },
+        "away": {
+          "pmu": 2.85,
+          "bwin": 2.9,
+          "1xbet": 2.872,
+          "22bet": 2.856,
+          "bet365": 2.75,
+          "betano": 2.9,
+          "betway": 3,
+          "oddset": 2.75,
+          "tipico": 2.95,
+          "unibet": 3,
+          "betsson": 2.9,
+          "bwinbe": 2.75,
+          "leovegas": 2.88,
+          "pinnacle": 3.03,
+          "ladbrokes": 2.8,
+          "unibetbe": 2.88,
+          "betfair": 3.1,
+          "winamax": 2.65,
+          "williamhill": 2.75
+        }
+      },
+      "model": {
+        "home": 0.698558626418023,
+        "away": 0.301441373581977,
+        "fromModel": true,
+        "eloH": 1875,
+        "eloA": 1729,
+        "surface": "grass"
+      },
+      "ts": 1780923600000,
+      "sofa": 16286410
     }
   ],
-  "COMBOS": [],
+  "COMBOS": [
+    {
+      "id": "c1",
+      "name": "Combinada del Día",
+      "conf": 53,
+      "legs": [
+        {
+          "id": "opid1200762571974710",
+          "sport": "tennis_prev",
+          "ts": 1780913400000,
+          "side": "home",
+          "sofa": null,
+          "match": "D. Kasatkina – R. Montgomery",
+          "pick": "Gana D. Kasatkina",
+          "odd": 1.48,
+          "book": "betfair"
+        },
+        {
+          "id": "opid1200277571958070",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1780923600000,
+          "side": "home",
+          "sofa": 16286410,
+          "match": "T. Paul – G. Mpetshi Perricard",
+          "pick": "Gana T. Paul",
+          "odd": 1.48,
+          "book": "winamax.de"
+        }
+      ]
+    }
+  ],
   "RECORD": [
     {
       "id": "opid1200762571974710",
@@ -592,7 +889,53 @@
       "result": "L"
     }
   ],
-  "PENDING": [],
+  "PENDING": [
+    {
+      "id": "opid1204432371961846",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1780920900000,
+      "date": "08 JUN",
+      "sofa": 16288334,
+      "pickHome": false,
+      "match": "Q. Zheng – J. Cristian",
+      "pickKey": "away",
+      "pickLabel": "Gana J. Cristian",
+      "odd": 3.55,
+      "book": "betfair-ex",
+      "homeName": "Q. Zheng",
+      "awayName": "J. Cristian"
+    },
+    {
+      "id": "opid1200287171958010",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1780921800000,
+      "date": "08 JUN",
+      "sofa": 16286313,
+      "pickHome": false,
+      "match": "M. Cilic – D. Shapovalov",
+      "pickKey": "away",
+      "pickLabel": "Gana D. Shapovalov",
+      "odd": 2.46,
+      "book": "betfair-ex",
+      "homeName": "M. Cilic",
+      "awayName": "D. Shapovalov"
+    },
+    {
+      "id": "opid1200277571958070",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1780923600000,
+      "date": "08 JUN",
+      "sofa": 16286410,
+      "pickHome": true,
+      "match": "T. Paul – G. Mpetshi Perricard",
+      "pickKey": "home",
+      "pickLabel": "Gana T. Paul",
+      "odd": 1.48,
+      "book": "winamax.de",
+      "homeName": "T. Paul",
+      "awayName": "G. Mpetshi Perricard"
+    }
+  ],
   "COMBO_RECORD": [
     {
       "date": "07 JUN",
@@ -721,8 +1064,82 @@
       ]
     }
   ],
-  "COMBO_PENDING": [],
+  "COMBO_PENDING": [
+    {
+      "dayId": "08 JUN·c1",
+      "date": "08 JUN",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "opid1200762571974710",
+          "sport": "tennis_prev",
+          "side": "home",
+          "sofa": null,
+          "match": "D. Kasatkina – R. Montgomery",
+          "pick": "Gana D. Kasatkina",
+          "odd": 1.48,
+          "homeName": "D. Kasatkina",
+          "awayName": "R. Montgomery"
+        },
+        {
+          "id": "opid1200277571958070",
+          "sport": "tennis_oddspapi_atp",
+          "side": "home",
+          "sofa": 16286410,
+          "match": "T. Paul – G. Mpetshi Perricard",
+          "pick": "Gana T. Paul",
+          "odd": 1.48,
+          "homeName": "T. Paul",
+          "awayName": "G. Mpetshi Perricard"
+        }
+      ]
+    }
+  ],
   "ARB_RECORD": [
+    {
+      "date": "08 JUN",
+      "match": "T. Paul – G. Mpetshi Perricard",
+      "marginPct": 0.17,
+      "profit": 0.17,
+      "ts": 1780923600000,
+      "homeName": "T. Paul",
+      "awayName": "G. Mpetshi Perricard",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        {
+          "pick": "Gana T. Paul",
+          "odd": 1.48,
+          "book": "winamax.de"
+        },
+        {
+          "pick": "Gana G. Mpetshi Perricard",
+          "odd": 3.1,
+          "book": "betfair-ex"
+        }
+      ]
+    },
+    {
+      "date": "08 JUN",
+      "match": "M. Cilic – D. Shapovalov",
+      "marginPct": 3.17,
+      "profit": 3.27,
+      "ts": 1780921800000,
+      "homeName": "M. Cilic",
+      "awayName": "D. Shapovalov",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        {
+          "pick": "Gana M. Cilic",
+          "odd": 1.78,
+          "book": "bwin.be"
+        },
+        {
+          "pick": "Gana D. Shapovalov",
+          "odd": 2.46,
+          "book": "betfair-ex"
+        }
+      ]
+    },
     {
       "date": "08 JUN",
       "match": "D. Kasatkina – R. Montgomery",
@@ -1086,6 +1503,39 @@
       "sofa": null,
       "homeName": "D. Kasatkina",
       "awayName": "R. Montgomery"
+    },
+    {
+      "date": "08 JUN",
+      "ts": 1780920900000,
+      "match": "Q. Zheng – J. Cristian",
+      "predHome": true,
+      "prob": 62,
+      "predName": "Q. Zheng",
+      "sofa": 16288334,
+      "homeName": "Q. Zheng",
+      "awayName": "J. Cristian"
+    },
+    {
+      "date": "08 JUN",
+      "ts": 1780921800000,
+      "match": "M. Cilic – D. Shapovalov",
+      "predHome": false,
+      "prob": 52,
+      "predName": "D. Shapovalov",
+      "sofa": 16286313,
+      "homeName": "M. Cilic",
+      "awayName": "D. Shapovalov"
+    },
+    {
+      "date": "08 JUN",
+      "ts": 1780923600000,
+      "match": "T. Paul – G. Mpetshi Perricard",
+      "predHome": true,
+      "prob": 70,
+      "predName": "T. Paul",
+      "sofa": 16286410,
+      "homeName": "T. Paul",
+      "awayName": "G. Mpetshi Perricard"
     }
   ],
   "ELO": {
@@ -4378,7 +4828,8 @@
     "gaillard": 1470,
     "contrino": 1470,
     "pop": 1470,
-    "fokinaalejandro": 1902
+    "fokinaalejandro": 1902,
+    "mpetshiperricard": 1729
   },
   "ELO_DONE": {},
   "RANK_ELO": {
