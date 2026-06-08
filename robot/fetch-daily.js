@@ -452,15 +452,23 @@ async function main(){
                         match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pick:label(x.m,x.v.pick.k),
                         odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book });
   const COMBOS = [];
-  // Para COMBINADAS: solo favoritos creíbles (cuota baja, prob alta). Se multiplican varios
-  // pequeños → cuota total razonable. Nada de picks a 3-4 (esos fallan demasiado en combi).
-  const comboLeg = (x)=> x.v.pick && x.v.pick.best && x.v.pick.best.price <= 1.85 && x.v.pick.p >= 0.55;
-  const surePool = MATCHES.map(m=>({m,v:matchValue(m)})).filter(comboLeg).sort((a,b)=>b.v.pick.p-a.v.pick.p);
-  // pool de valor PERO acotado: con valor y cuota no disparada (≤2.10), para la "Valor"
-  const valPool = valued.filter(x=>x.v.pick.best.price<=2.10).sort((a,b)=>b.v.edge-a.v.edge);
+  // Para COMBINADAS: favoritos creíbles, pero no tan estrictos como antes (salían pocas).
+  const comboLeg = (x)=> x.v.pick && x.v.pick.best && x.v.pick.best.price <= 2.20 && x.v.pick.p >= 0.50;
+  let surePool = MATCHES.map(m=>({m,v:matchValue(m)})).filter(comboLeg).sort((a,b)=>b.v.pick.p-a.v.pick.p);
+  // fallback: si quedan pocos favoritos, completa con los más probables del día (sin tope)
+  if (surePool.length < 3){
+    const extra = MATCHES.map(m=>({m,v:matchValue(m)})).filter(x=>x.v.pick&&x.v.pick.best&&x.v.pick.best.price<=3.0)
+      .sort((a,b)=>b.v.pick.p-a.v.pick.p);
+    const seen=new Set(surePool.map(x=>x.m.id));
+    extra.forEach(x=>{ if(!seen.has(x.m.id)){ surePool.push(x); seen.add(x.m.id); } });
+  }
+  // pool de valor PERO acotado: con valor y cuota no disparada (≤2.40), para la "Valor"
+  const valPool = valued.filter(x=>x.v.pick.best.price<=2.40).sort((a,b)=>b.v.edge-a.v.edge);
   const conf = (arr)=> Math.round(arr.reduce((p,x)=>p*x.v.pick.p,1)*100);
+  // c1 — Combinada del Día: 3 favoritos (o 2 si solo hay 2 partidos)
   if (surePool.length>=2){
-    COMBOS.push({ id:'c1', name:'Combinada del Día', conf:conf(surePool.slice(0,3)), legs:surePool.slice(0,3).map(legOf) });
+    const n = surePool.length>=3 ? 3 : 2;
+    COMBOS.push({ id:'c1', name:'Combinada del Día', conf:conf(surePool.slice(0,n)), legs:surePool.slice(0,n).map(legOf) });
   }
   if (valPool.length>=2){
     const legs=valPool.slice(0,3);
