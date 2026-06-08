@@ -531,8 +531,8 @@ async function main(){
       // fotos + Elo base de SofaScore (gratis, permanente, cubre todo el circuito)
       try {
         const sr = await sofaRankings();
-        const sk2=(n)=>(n||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase();
-        Object.values(PLAYERS).forEach(p=>{ const k=sk2(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+        const canon = require('./name-canon.js').canonSurname;
+        Object.values(PLAYERS).forEach(p=>{ const k=canon(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
       } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);

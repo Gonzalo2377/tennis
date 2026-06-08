@@ -8,6 +8,7 @@
    No necesita clave. Permanente (no caduca como api-tennis).
    ============================================================ */
 const HOST = 'https://api.sofascore.com/api/v1';
+const { canonSurname } = require('./name-canon.js');
 const UA = {
   'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36',
   'Accept':'application/json',
@@ -26,7 +27,7 @@ module.exports = async function sofaRankings(){
     const rows = await fetchRanking(t);
     rows.forEach(row => {
       const tm = row.team; if (!tm || !tm.id) return;
-      const k = sk(tm.name); if (!k) return;
+      const k = canonSurname(tm.name); if (!k) return;
       photos[k] = `${HOST}/player/${tm.id}/image`;
       const rank = row.ranking || row.position || 999;
       elo[k] = Math.round(2200 - 470 * Math.log10(Math.max(1, rank)));   // #1≈2200 #50≈1400 #500≈930

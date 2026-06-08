@@ -34,9 +34,9 @@ const EXCLUDE = ['simulated-reality','simulated-reality-women','utr-men','utr-wo
 function surname(n){ return (n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
 function isDoubles(n){ return /\s\/\s|\//.test(n||''); }
 function ymd(t){ return new Date(t).toISOString().slice(0,10); }
-// OddsPapi devuelve "Apellido Nombre" → reordenamos a "Nombre Apellido" (estándar) para
-// que el resto del pipeline (shortName, surname, ESPN) funcione bien. Solo nombres de 2 palabras.
-function reorder(n){ n=(n||'').replace(/[.,;:]+/g,' ').replace(/\s+/g,' ').trim(); const p=n.split(/\s+/); return p.length===2 ? p[1]+' '+p[0] : n; }
+// OddsPapi devuelve "Apellido(s) Nombre" → movemos la ÚLTIMA palabra (el nombre) al frente,
+// para 2 y 3 palabras: "Mensik Jakub"→"Jakub Mensik", "Davidovich Fokina Alejandro"→"Alejandro Davidovich Fokina".
+function reorder(n){ n=(n||'').replace(/[.,;:]+/g,' ').replace(/\s+/g,' ').trim(); const p=n.split(/\s+/); return (p.length===2||p.length===3) ? p[p.length-1]+' '+p.slice(0,-1).join(' ') : n; }
 
 // Casas de apuestas EU/UK conocidas (donde la gente sí tiene cuenta). Editable con ODDSPAPI_BOOKS.
 // Se compara por "contiene", así cubre variantes (bwin.dk, 888sport, etc.).
