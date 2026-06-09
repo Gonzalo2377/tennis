@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-09T12:14:18.532Z",
+    "updatedAt": "2026-06-09T13:29:21.067Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -60,7 +60,7 @@
       "tour": "wta",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/10924_e-jones.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/680_m-jones.jpg"
     },
     "shuaizhang": {
       "id": "shuaizhang",
@@ -1927,6 +1927,24 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200287171958004",
+      "date": "09 JUN",
+      "match": "G. Diallo – A. Mannarino",
+      "pick": "Gana G. Diallo",
+      "odd": 2.3,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
+      "id": "11a68809ef46913716cc3f09421c5328",
+      "date": "09 JUN",
+      "match": "M. Sakkari – T. Maria",
+      "pick": "Gana T. Maria",
+      "odd": 2.25,
+      "book": "leovegas_se",
+      "result": "W"
+    },
+    {
       "id": "opid1200287171958006",
       "date": "09 JUN",
       "match": "Z. Zhang – J. Brooksby",
@@ -2075,36 +2093,6 @@
       "book": "betfair_ex_uk",
       "homeName": "S. Zhang",
       "awayName": "A. Eala"
-    },
-    {
-      "id": "11a68809ef46913716cc3f09421c5328",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781010000000,
-      "date": "09 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Sakkari – T. Maria",
-      "pickKey": "away",
-      "pickLabel": "Gana T. Maria",
-      "odd": 2.25,
-      "book": "leovegas_se",
-      "homeName": "M. Sakkari",
-      "awayName": "T. Maria"
-    },
-    {
-      "id": "opid1200287171958004",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1780995600000,
-      "date": "09 JUN",
-      "sofa": 16286310,
-      "pickHome": true,
-      "match": "G. Diallo – A. Mannarino",
-      "pickKey": "home",
-      "pickLabel": "Gana G. Diallo",
-      "odd": 2.3,
-      "book": "betfair-ex",
-      "homeName": "G. Diallo",
-      "awayName": "A. Mannarino"
     },
     {
       "id": "opid1200762571957938",
@@ -3002,6 +2990,34 @@
   "MODEL_RECORD": [
     {
       "date": "09 JUN",
+      "match": "B. Krejcikova – R. Zarazua",
+      "predName": "B. Krejcikova",
+      "prob": 64,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
+      "match": "E. Raducanu – A. Blinkova",
+      "predName": "E. Raducanu",
+      "prob": 64,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
+      "match": "I. Jović – A. Ruzic",
+      "predName": "I. Jović",
+      "prob": 68,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
+      "match": "G. Diallo – A. Mannarino",
+      "predName": "A. Mannarino",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
       "match": "K. Volynets – Z. Sonmez",
       "predName": "Z. Sonmez",
       "prob": 57,
@@ -3086,28 +3102,6 @@
     },
     {
       "date": "09 JUN",
-      "ts": 1780995600000,
-      "match": "G. Diallo – A. Mannarino",
-      "predHome": false,
-      "prob": 51,
-      "predName": "A. Mannarino",
-      "sofa": 16286310,
-      "homeName": "G. Diallo",
-      "awayName": "A. Mannarino"
-    },
-    {
-      "date": "09 JUN",
-      "ts": 1780999200000,
-      "match": "I. Jović – A. Ruzic",
-      "predHome": true,
-      "prob": 68,
-      "predName": "I. Jović",
-      "sofa": null,
-      "homeName": "I. Jović",
-      "awayName": "A. Ruzic"
-    },
-    {
-      "date": "09 JUN",
       "ts": 1780999200000,
       "match": "S. Cirstea – M. Inglis",
       "predHome": true,
@@ -3116,17 +3110,6 @@
       "sofa": null,
       "homeName": "S. Cirstea",
       "awayName": "M. Inglis"
-    },
-    {
-      "date": "09 JUN",
-      "ts": 1781002800000,
-      "match": "E. Raducanu – A. Blinkova",
-      "predHome": true,
-      "prob": 64,
-      "predName": "E. Raducanu",
-      "sofa": null,
-      "homeName": "E. Raducanu",
-      "awayName": "A. Blinkova"
     },
     {
       "date": "09 JUN",
@@ -3215,17 +3198,6 @@
       "sofa": 16286311,
       "homeName": "Z. Zhang",
       "awayName": "J. Brooksby"
-    },
-    {
-      "date": "09 JUN",
-      "ts": 1781002500000,
-      "match": "B. Krejcikova – R. Zarazua",
-      "predHome": true,
-      "prob": 64,
-      "predName": "B. Krejcikova",
-      "sofa": 16286699,
-      "homeName": "B. Krejcikova",
-      "awayName": "R. Zarazua"
     },
     {
       "date": "09 JUN",
