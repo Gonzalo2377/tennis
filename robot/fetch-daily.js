@@ -540,7 +540,17 @@ async function main(){
       try {
         const sr = await sofaRankings();
         const canon = require('./name-canon.js').canonSurname;
-        Object.values(PLAYERS).forEach(p=>{ const k=canon(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+        // refresca player-photos.json 1 vez/semana desde el ranking ATP/WTA (auto, ~1800 jugadores)
+        let manual={}; const pf=__dirname+'/player-photos.json';
+        try { const j=JSON.parse(fs.readFileSync(pf,'utf8')); manual=j.photos||{};
+          const age=Date.now()-(j.builtAt||0);
+          if (APITENNIS_KEY && age > 7*24*3600*1000){
+            try { const built=await require('./build-photos.js')(APITENNIS_KEY);
+              if (Object.keys(built).length>200){ manual=Object.assign(built, manual); fs.writeFileSync(pf, JSON.stringify({ _nota:j._nota||'auto', builtAt:Date.now(), photos:manual }, null, 2)); }
+            } catch(e){ console.log('· build-photos error:', e.message); }
+          }
+        } catch(e){}
+        Object.values(PLAYERS).forEach(p=>{ const k=canon(p.name); if(manual[k]) p.photo=manual[k]; else if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
       } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
@@ -797,7 +807,8 @@ async function scoresOnly(){
       try {
         const sr = await sofaRankings();
         const canon = require('./name-canon.js').canonSurname;
-        Object.values(d.PLAYERS).forEach(p=>{ const k=canon(p.name); if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+        let manual={}; try { manual=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; } catch(e){}
+        Object.values(d.PLAYERS).forEach(p=>{ const k=canon(p.name); if(manual[k]) p.photo=manual[k]; else if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
       } catch(e){}
     }
     const pe=ts=>!ts||ts<=Date.now();
