@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-09T15:00:46.099Z",
+    "updatedAt": "2026-06-09T16:11:39.423Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -1928,6 +1928,24 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200762571957938",
+      "date": "09 JUN",
+      "match": "T. Korpatsch – E. Ruse",
+      "pick": "Gana E. Ruse",
+      "odd": 1.47,
+      "book": "winamax.es",
+      "result": "W"
+    },
+    {
+      "id": "7caf549cae65d3adbd653eb046e61d1e",
+      "date": "09 JUN",
+      "match": "S. Zhang – A. Eala",
+      "pick": "Gana S. Zhang",
+      "odd": 2.66,
+      "book": "betfair_ex_uk",
+      "result": "L"
+    },
+    {
       "id": "opid1200287171958004",
       "date": "09 JUN",
       "match": "G. Diallo – A. Mannarino",
@@ -1979,7 +1997,7 @@
       "pick": "Gana F. Jones",
       "odd": 3.2,
       "book": "betfair_ex_uk",
-      "result": "W"
+      "result": "L"
     },
     {
       "id": "opid1204432371961846",
@@ -2080,36 +2098,6 @@
     }
   ],
   "PENDING": [
-    {
-      "id": "7caf549cae65d3adbd653eb046e61d1e",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781004600000,
-      "date": "09 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "S. Zhang – A. Eala",
-      "pickKey": "home",
-      "pickLabel": "Gana S. Zhang",
-      "odd": 2.66,
-      "book": "betfair_ex_uk",
-      "homeName": "S. Zhang",
-      "awayName": "A. Eala"
-    },
-    {
-      "id": "opid1200762571957938",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1781002500000,
-      "date": "09 JUN",
-      "sofa": 16286698,
-      "pickHome": false,
-      "match": "T. Korpatsch – E. Ruse",
-      "pickKey": "away",
-      "pickLabel": "Gana E. Ruse",
-      "odd": 1.47,
-      "book": "winamax.es",
-      "homeName": "T. Korpatsch",
-      "awayName": "E. Ruse"
-    },
     {
       "id": "opid1200762571974706",
       "sport": "tennis_oddspapi_wta",
@@ -2991,6 +2979,27 @@
   "MODEL_RECORD": [
     {
       "date": "09 JUN",
+      "match": "T. Korpatsch – E. Ruse",
+      "predName": "E. Ruse",
+      "prob": 74,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
+      "match": "S. Zhang – A. Eala",
+      "predName": "A. Eala",
+      "prob": 57,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
+      "match": "L. Siegemund – F. Jones",
+      "predName": "L. Siegemund",
+      "prob": 61,
+      "ok": true
+    },
+    {
+      "date": "09 JUN",
       "match": "S. Cirstea – M. Inglis",
       "predName": "S. Cirstea",
       "prob": 76,
@@ -3106,28 +3115,6 @@
     },
     {
       "date": "09 JUN",
-      "ts": 1780992000000,
-      "match": "L. Siegemund – F. Jones",
-      "predHome": true,
-      "prob": 61,
-      "predName": "L. Siegemund",
-      "sofa": null,
-      "homeName": "L. Siegemund",
-      "awayName": "F. Jones"
-    },
-    {
-      "date": "09 JUN",
-      "ts": 1781004600000,
-      "match": "S. Zhang – A. Eala",
-      "predHome": false,
-      "prob": 57,
-      "predName": "A. Eala",
-      "sofa": null,
-      "homeName": "S. Zhang",
-      "awayName": "A. Eala"
-    },
-    {
-      "date": "09 JUN",
       "ts": 1781008200000,
       "match": "M. Bouzkova – P. Kudermetova",
       "predHome": true,
@@ -3169,17 +3156,6 @@
       "sofa": 16286412,
       "homeName": "R. Bautista Agut",
       "awayName": "M. Giron"
-    },
-    {
-      "date": "09 JUN",
-      "ts": 1781002500000,
-      "match": "T. Korpatsch – E. Ruse",
-      "predHome": false,
-      "prob": 74,
-      "predName": "E. Ruse",
-      "sofa": 16286698,
-      "homeName": "T. Korpatsch",
-      "awayName": "E. Ruse"
     },
     {
       "date": "09 JUN",
