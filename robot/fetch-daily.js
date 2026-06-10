@@ -555,11 +555,6 @@ async function main(){
         let r=null; try { r=await sofaResults.searchEventByNames(homeName, awayName); } catch(e){}
         nameCache[key]=r; return r;
       }
-      // apply real player photos from api-tennis to our roster
-      if (Object.keys(apiRes.logos).length){
-        const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-        Object.values(PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
-      }
       // fotos + Elo base de SofaScore (gratis, permanente, cubre todo el circuito)
       try {
         const sr = await sofaRankings();
@@ -574,7 +569,13 @@ async function main(){
             } catch(e){ console.log('· build-photos error:', e.message); }
           }
         } catch(e){}
-        Object.values(PLAYERS).forEach(p=>{ const k=canon(p.name); if(manual[k]) p.photo=manual[k]; else if(!p.photo && sr.photos[k]) p.photo=sr.photos[k]; });
+        // RESOLVE robusto: prueba apellido canónico Y última palabra simple en TODAS las fuentes
+        const simple=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
+        const pick=(p)=>{ const a=canon(p.name), b=simple(p.name);
+          return manual[a]||manual[b]||apiRes.logos[a]||apiRes.logos[b]||sr.photos[a]||sr.photos[b]||null; };
+        let noPhoto=0;
+        Object.values(PLAYERS).forEach(p=>{ const u=pick(p); if(u) p.photo=u; else if(!p.photo) noPhoto++; });
+        if (noPhoto) console.log(`· ${noPhoto} jugadores SIN foto (caen a monograma)`);
       } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
@@ -823,8 +824,10 @@ async function scoresOnly(){
     espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
     const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];
     if (d.PLAYERS && Object.keys(apiRes.logos).length){
-      const sk=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-      Object.values(d.PLAYERS).forEach(p=>{ const u=apiRes.logos[sk(p.name)]; if(u) p.photo=u; });
+      const canon=require('./name-canon.js').canonSurname;
+      const simple=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
+      let manual={}; try { manual=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; } catch(e){}
+      Object.values(d.PLAYERS).forEach(p=>{ const a=canon(p.name), b=simple(p.name); const u=manual[a]||manual[b]||apiRes.logos[a]||apiRes.logos[b]; if(u) p.photo=u; });
     }
     // fotos desde la BD persistente de SofaScore (gratis, no re-pide si la caché está vigente)
     if (d.PLAYERS){
