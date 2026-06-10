@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-10T15:56:24.377Z",
+    "updatedAt": "2026-06-10T17:55:45.516Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -1754,6 +1754,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200287171900496",
+      "date": "10 JUN",
+      "match": "M. Damm Jr – A. de Minaur",
+      "pick": "Gana M. Damm Jr",
+      "odd": 4.5,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
       "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
       "date": "10 JUN",
       "match": "V. Mboko – K. Pliskova",
@@ -1778,7 +1787,7 @@
       "pick": "Gana A. Bublik",
       "odd": 1.43,
       "book": "pinnacle",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "db46d0d2787b0d49f0fd36fb94ec11ed",
@@ -2052,21 +2061,6 @@
       "book": "betway",
       "homeName": "P. Udvardy",
       "awayName": "D. Snigur"
-    },
-    {
-      "id": "opid1200287171900496",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1781091600000,
-      "date": "10 JUN",
-      "sofa": 16272608,
-      "pickHome": true,
-      "match": "M. Damm Jr – A. de Minaur",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Damm Jr",
-      "odd": 4.5,
-      "book": "betfair-ex",
-      "homeName": "M. Damm Jr",
-      "awayName": "A. de Minaur"
     }
   ],
   "COMBO_RECORD": [
@@ -2145,7 +2139,7 @@
           "match": "J. Struff – A. Bublik",
           "pick": "Gana A. Bublik",
           "odd": 1.43,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -3138,6 +3132,13 @@
   "MODEL_RECORD": [
     {
       "date": "10 JUN",
+      "match": "J. Struff – A. Bublik",
+      "predName": "A. Bublik",
+      "prob": 81,
+      "ok": true
+    },
+    {
+      "date": "10 JUN",
       "match": "J. Bouzas Maneiro – A. Tomljanovic",
       "predName": "J. Bouzas Maneiro",
       "prob": 52,
@@ -3433,17 +3434,6 @@
       "sofa": null,
       "homeName": "J. Cristian",
       "awayName": "K. Boulter"
-    },
-    {
-      "date": "10 JUN",
-      "ts": 1781089800000,
-      "match": "J. Struff – A. Bublik",
-      "predHome": false,
-      "prob": 81,
-      "predName": "A. Bublik",
-      "sofa": 16272629,
-      "homeName": "J. Struff",
-      "awayName": "A. Bublik"
     },
     {
       "date": "10 JUN",
