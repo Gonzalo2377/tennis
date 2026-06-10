@@ -5,9 +5,8 @@ name: Daily tennis robot
 # Asume que el contenido de "tennis/" está en la RAÍZ del repositorio.
 
 on:
-  schedule:
-    - cron: '17 7 * * *'   # 07:17 UTC (~09:17 Madrid). Minuto "raro": las horas
-                            # en punto van saturadas y GitHub retrasa más.
+  # Sin 'schedule' a propósito: lo dispara SOLO el Worker de Cloudflare (a las 7 UTC),
+  # así no hay doble ejecución ni horas raras. Se puede lanzar a mano con "Run workflow".
   workflow_dispatch:
     inputs:
       reset:
@@ -31,7 +30,7 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # resultados + fotos (api-tennis.com)
           ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}     # cuotas Challenger/ITF (oddspapi.io)
-          ODDSPAPI_MAX: '4'                             # nº de partidos extra al día (free = 250/mes ≈ 8/día)
+          ODDSPAPI_MAX: '6'                             # nº de partidos extra al día (free = 250/mes ≈ 8/día)
           RESET: ${{ github.event.inputs.reset }}       # pon 1 al lanzar a mano para vaciar historial
           ODDS_SPORT: auto          # descubre torneos ATP/WTA activos
           ODDS_MAX: '25'
