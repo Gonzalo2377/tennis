@@ -7,6 +7,10 @@ function Arbitrage({ t, go }) {
   useEffect(()=>{ try { localStorage.setItem('ace_arb_stake', stake); } catch(e){} }, [stake]);
   const [mode, setMode] = useState(()=>{ try { return localStorage.getItem('ace_arb_mode')||'even'; } catch(e){ return 'even'; } });
   useEffect(()=>{ try { localStorage.setItem('ace_arb_mode', mode); } catch(e){} }, [mode]);
+  // redondeo de apuestas → evita cifras con decimales que delatan la cuenta ante la casa
+  const [round, setRound] = useState(()=>{ try { return localStorage.getItem('ace_arb_round')||'1'; } catch(e){ return '1'; } });
+  useEffect(()=>{ try { localStorage.setItem('ace_arb_round', round); } catch(e){} }, [round]);
+  const roundStake = (v)=>{ const step=+round; return step>0 ? Math.max(step, Math.round(v/step)*step) : v; };
 
   const all = window.findArbs();
   const liveArbs = all.filter(a=>a.hasArb);
@@ -37,11 +41,16 @@ function Arbitrage({ t, go }) {
       split = a.legs.map(l => { const stake = l.k===profitKey ? stakeProfit : stakeSafe; return { ...l, stake, ret: stake*l.price }; });
     } else {
       split = window.arbSplit(a.legs, total);
-      evenRet = window.arbReturn(a.legs, total);
-      evenProfit = evenRet - total;
+    }
+    // redondea cada apuesta a cifra "humana" y recalcula retornos reales con esas cifras
+    split = split.map(l => { const st = roundStake(l.stake); return { ...l, stake: st, ret: st * l.price }; });
+    const realTotal = split.reduce((s,l)=>s+l.stake, 0);
+    if (mode!=='cover') {
+      evenRet = Math.min(...split.map(l=>l.ret));    // peor caso garantizado tras redondear
+      evenProfit = evenRet - realTotal;
     }
     const profitLeg = split.find(l=>l.k===profitKey) || split[0];
-    const coverNet = profitLeg.ret - total;     // profit if the chosen player wins
+    const coverNet = profitLeg.ret - realTotal;     // profit if the chosen player wins
     const profitName = (profitKey==='home'?home:away).name.split(' ').pop();
     return (
       <div className="panel" style={{borderColor: isArb?'var(--lime-deep)':'var(--line)', borderWidth: isArb?2:1, borderStyle:'solid'}}>
@@ -54,7 +63,7 @@ function Arbitrage({ t, go }) {
         </div>
         <div style={{padding:'4px 16px'}}>
           {split.map((l,i)=>{
-            const net = l.ret - total; const nc = net>0.005?'var(--pos)':net<-0.005?'var(--neg)':'var(--muted)';
+            const net = l.ret - realTotal; const nc = net>0.005?'var(--pos)':net<-0.005?'var(--neg)':'var(--muted)';
             const isProfit = mode==='cover' && l.k===profitKey;
             return (
               <div key={i} style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:10, padding:'12px 0', borderBottom: i<split.length-1?'1px solid var(--line-soft)':'none'}}>
@@ -70,7 +79,7 @@ function Arbitrage({ t, go }) {
                 </div>
                 <div style={{textAlign:'right', whiteSpace:'nowrap'}}>
                   <div style={{fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.95rem'}}>{l.price.toFixed(2)}</div>
-                  <div style={{fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--lime-deep)', marginTop:2}}>{t.arbStake} {l.stake.toFixed(2)}€</div>
+                  <div style={{fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--lime-deep)', marginTop:2}}>{t.arbStake} {(+round>0 ? l.stake.toFixed(0) : l.stake.toFixed(2))}€</div>
                   {mode==='cover' && <div style={{fontFamily:'var(--font-mono)', fontSize:'.7rem', color:nc, marginTop:2}}>{t.arbIfWins} {net>=0?'+':''}{net.toFixed(2)}€</div>}
                 </div>
               </div>
@@ -123,6 +132,14 @@ function Arbitrage({ t, go }) {
               <div style={{display:'flex', gap:0, border:'1px solid var(--line)', borderRadius:9, overflow:'hidden'}}>
                 {[['even',t.arbModeEven],['cover',t.arbModeCover]].map(([k,lbl])=>(
                   <button key={k} onClick={()=>setMode(k)} style={{background: mode===k?'var(--court)':'var(--surface)', color: mode===k?'#fff':'var(--ink-2)', border:'none', padding:'8px 14px', fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.74rem', cursor:'pointer'}}>{lbl}</button>
+                ))}
+              </div>
+            </div>
+            <div style={{display:'flex', flexDirection:'column', gap:5}}>
+              <label style={{fontFamily:'var(--font-mono)', fontSize:'.6rem', letterSpacing:'.1em', textTransform:'uppercase', color:'var(--muted)'}}>{t.arbRoundLabel}</label>
+              <div style={{display:'flex', gap:0, border:'1px solid var(--line)', borderRadius:9, overflow:'hidden'}}>
+                {[['0','€0,01'],['1','1€'],['5','5€']].map(([k,lbl])=>(
+                  <button key={k} onClick={()=>setRound(k)} style={{background: round===k?'var(--court)':'var(--surface)', color: round===k?'#fff':'var(--ink-2)', border:'none', padding:'8px 12px', fontFamily:'var(--font-mono)', fontWeight:700, fontSize:'.74rem', cursor:'pointer'}}>{lbl}</button>
                 ))}
               </div>
             </div>
@@ -208,6 +225,9 @@ function Record({ t, go }) {
   const _nm=m=>(m||'').split(/[–\-]/).map(_ns).filter(Boolean).sort().join('|');
   const _np=s=>(s||'').replace(/^gana\s+/i,'').replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   const psig=p=>`${_nm(p.match)}|${_np(p.pickLabel||p.pick)}`;
+  // lista negra: partidos a ocultar del récord/pendientes (window.EXCLUDE = ["Ilagan – Shimizu", ...])
+  const exSet = new Set((window.EXCLUDE||[]).map(_nm));
+  const isExcluded = p => exSet.has(_nm(p.match));
   // "en juego" = picks registrados por el robot + los picks de valor de HOY del tablero
   const settledSig = new Set((window.RECORD||[]).map(r=>psig({match:r.match, pickLabel:r.pick||r.pickLabel})));
   const livePicks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)})).filter(x=>x.v.positive).map(x=>({
@@ -215,6 +235,7 @@ function Record({ t, go }) {
       pickLabel: window.outcomeLabel(x.v.pick.k, x.m), odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book }));
   const seenPend = new Set();
   const pendingList = [...(window.PENDING||[]), ...livePicks].filter(p=>{
+    if (isExcluded(p)) return false;                          // en lista negra → fuera
     const sig=psig(p);
     if (settledSig.has(sig) || seenPend.has(sig)) return false;
     seenPend.add(sig); return true;
