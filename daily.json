@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-10T12:00:30.201Z",
+    "updatedAt": "2026-06-10T14:33:44.057Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu,uk",
@@ -324,7 +324,7 @@
       "tour": "wta",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/64791_c-ramos-sierra.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/140_s-sierra.jpg"
     },
     "ivajovic": {
       "id": "ivajovic",
@@ -1754,6 +1754,24 @@
   ],
   "RECORD": [
     {
+      "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
+      "date": "10 JUN",
+      "match": "V. Mboko – K. Pliskova",
+      "pick": "Gana V. Mboko",
+      "odd": 1.54,
+      "book": "unibet_uk",
+      "result": "L"
+    },
+    {
+      "id": "opid1200762571974706",
+      "date": "09 JUN",
+      "match": "N. Bartunkova – H. Vandewinkel",
+      "pick": "Gana N. Bartunkova",
+      "odd": 1.9,
+      "book": "oddset",
+      "result": "L"
+    },
+    {
       "id": "opid1200277571900544",
       "date": "10 JUN",
       "match": "J. Struff – A. Bublik",
@@ -1769,7 +1787,7 @@
       "pick": "Gana A. Anisimova",
       "odd": 1.35,
       "book": "matchbook",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "opid1200277571900546",
@@ -1961,21 +1979,6 @@
   ],
   "PENDING": [
     {
-      "id": "opid1200762571974706",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1781002500000,
-      "date": "09 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Bartunkova – H. Vandewinkel",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Bartunkova",
-      "odd": 1.9,
-      "book": "oddset",
-      "homeName": "N. Bartunkova",
-      "awayName": "H. Vandewinkel"
-    },
-    {
       "id": "932752be22bb7bb28f256be7006b3c6a",
       "sport": "tennis_wta_queens_club_champ",
       "ts": 1781168400000,
@@ -1989,21 +1992,6 @@
       "book": "betanysports",
       "homeName": "J. Cristian",
       "awayName": "K. Boulter"
-    },
-    {
-      "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781098200000,
-      "date": "10 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "V. Mboko – K. Pliskova",
-      "pickKey": "home",
-      "pickLabel": "Gana V. Mboko",
-      "odd": 1.54,
-      "book": "unibet_uk",
-      "homeName": "V. Mboko",
-      "awayName": "K. Pliskova"
     },
     {
       "id": "5c62ae15e22903bc908c5359a0daf128",
@@ -2083,6 +2071,64 @@
   ],
   "COMBO_RECORD": [
     {
+      "date": "09 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 6.42,
+      "result": "L",
+      "legs": [
+        {
+          "match": "G. Diallo – A. Mannarino",
+          "pick": "Gana G. Diallo",
+          "odd": 2.3,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "T. Korpatsch – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.47,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "N. Bartunkova – H. Vandewinkel",
+          "pick": "Gana N. Bartunkova",
+          "odd": 1.9,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "09 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 4.41,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Korpatsch – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.47,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "E. Raducanu – A. Blinkova",
+          "pick": "Gana E. Raducanu",
+          "odd": 1.58,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "N. Bartunkova – H. Vandewinkel",
+          "pick": "Gana N. Bartunkova",
+          "odd": 1.9,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
       "date": "10 JUN",
       "name": "Combinada del Día",
       "totalOdd": 2.81,
@@ -2135,7 +2181,7 @@
           "match": "L. Siegemund – A. Anisimova",
           "pick": "Gana A. Anisimova",
           "odd": 1.35,
-          "win": false,
+          "win": true,
           "voided": false
         }
       ]
@@ -2327,86 +2373,6 @@
           "odd": 2.64,
           "homeName": "D. Yastremska",
           "awayName": "S. Bejlek"
-        }
-      ]
-    },
-    {
-      "dayId": "09 JUN·c1",
-      "date": "09 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1200762571957938",
-          "sport": "tennis_oddspapi_wta",
-          "side": "away",
-          "sofa": 16286698,
-          "match": "T. Korpatsch – E. Ruse",
-          "pick": "Gana E. Ruse",
-          "odd": 1.47,
-          "homeName": "T. Korpatsch",
-          "awayName": "E. Ruse"
-        },
-        {
-          "id": "eb0c12e4481faa4e7ee0b7be775cb618",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "E. Raducanu – A. Blinkova",
-          "pick": "Gana E. Raducanu",
-          "odd": 1.58,
-          "homeName": "E. Raducanu",
-          "awayName": "A. Blinkova"
-        },
-        {
-          "id": "opid1200762571974706",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "N. Bartunkova – H. Vandewinkel",
-          "pick": "Gana N. Bartunkova",
-          "odd": 1.9,
-          "homeName": "N. Bartunkova",
-          "awayName": "H. Vandewinkel"
-        }
-      ]
-    },
-    {
-      "dayId": "09 JUN·c2",
-      "date": "09 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1200287171958004",
-          "sport": "tennis_prev",
-          "side": "home",
-          "sofa": 16286310,
-          "match": "G. Diallo – A. Mannarino",
-          "pick": "Gana G. Diallo",
-          "odd": 2.3,
-          "homeName": "G. Diallo",
-          "awayName": "A. Mannarino"
-        },
-        {
-          "id": "opid1200762571957938",
-          "sport": "tennis_oddspapi_wta",
-          "side": "away",
-          "sofa": 16286698,
-          "match": "T. Korpatsch – E. Ruse",
-          "pick": "Gana E. Ruse",
-          "odd": 1.47,
-          "homeName": "T. Korpatsch",
-          "awayName": "E. Ruse"
-        },
-        {
-          "id": "opid1200762571974706",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "N. Bartunkova – H. Vandewinkel",
-          "pick": "Gana N. Bartunkova",
-          "odd": 1.9,
-          "homeName": "N. Bartunkova",
-          "awayName": "H. Vandewinkel"
         }
       ]
     },
@@ -3172,6 +3138,34 @@
   "MODEL_RECORD": [
     {
       "date": "10 JUN",
+      "match": "J. Bouzas Maneiro – A. Tomljanovic",
+      "predName": "J. Bouzas Maneiro",
+      "prob": 52,
+      "ok": false
+    },
+    {
+      "date": "10 JUN",
+      "match": "L. Siegemund – A. Anisimova",
+      "predName": "A. Anisimova",
+      "prob": 77,
+      "ok": true
+    },
+    {
+      "date": "10 JUN",
+      "match": "L. Boisson – S. Sierra",
+      "predName": "L. Boisson",
+      "prob": 56,
+      "ok": false
+    },
+    {
+      "date": "09 JUN",
+      "match": "N. Bartunkova – H. Vandewinkel",
+      "predName": "N. Bartunkova",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "10 JUN",
       "match": "I. Jović – A. Eala",
       "predName": "I. Jović",
       "prob": 61,
@@ -3365,17 +3359,6 @@
     },
     {
       "date": "09 JUN",
-      "ts": 1781002500000,
-      "match": "N. Bartunkova – H. Vandewinkel",
-      "predHome": true,
-      "prob": 55,
-      "predName": "N. Bartunkova",
-      "sofa": null,
-      "homeName": "N. Bartunkova",
-      "awayName": "H. Vandewinkel"
-    },
-    {
-      "date": "09 JUN",
       "ts": 1781011800000,
       "match": "M. Stojsavljevic – M. Kostyuk",
       "predHome": false,
@@ -3384,28 +3367,6 @@
       "sofa": null,
       "homeName": "M. Stojsavljevic",
       "awayName": "M. Kostyuk"
-    },
-    {
-      "date": "10 JUN",
-      "ts": 1781082000000,
-      "match": "L. Boisson – S. Sierra",
-      "predHome": true,
-      "prob": 56,
-      "predName": "L. Boisson",
-      "sofa": 16286702,
-      "homeName": "L. Boisson",
-      "awayName": "S. Sierra"
-    },
-    {
-      "date": "10 JUN",
-      "ts": 1781091000000,
-      "match": "L. Siegemund – A. Anisimova",
-      "predHome": false,
-      "prob": 77,
-      "predName": "A. Anisimova",
-      "sofa": null,
-      "homeName": "L. Siegemund",
-      "awayName": "A. Anisimova"
     },
     {
       "date": "10 JUN",
@@ -3483,17 +3444,6 @@
       "sofa": 16272629,
       "homeName": "J. Struff",
       "awayName": "A. Bublik"
-    },
-    {
-      "date": "10 JUN",
-      "ts": 1781091000000,
-      "match": "J. Bouzas Maneiro – A. Tomljanovic",
-      "predHome": true,
-      "prob": 52,
-      "predName": "J. Bouzas Maneiro",
-      "sofa": 16286701,
-      "homeName": "J. Bouzas Maneiro",
-      "awayName": "A. Tomljanovic"
     },
     {
       "date": "10 JUN",
