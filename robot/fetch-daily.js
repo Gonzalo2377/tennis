@@ -452,6 +452,30 @@ async function main(){
                         match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pick:label(x.m,x.v.pick.k),
                         odd:+x.v.pick.best.price.toFixed(2), book:x.v.pick.best.book });
   const COMBOS = [];
+  // Construye una combinada en UNA SOLA CASA: elige la casa que, teniendo cuota para
+  // TODAS las selecciones, da la cuota combinada (producto) más alta. Más fácil de apostar.
+  const buildCombo = (id, name, picks)=>{
+    // casas que tienen cuota para todas las piernas en el lado elegido
+    const common = picks.reduce((acc,x)=>{
+      const o = x.m.odds[x.v.pick.k] || {};
+      const books = Object.keys(o).filter(b=> o[b] > 1);
+      return acc===null ? books : acc.filter(b=> books.includes(b));
+    }, null) || [];
+    let book=null, prod=0;
+    common.forEach(b=>{
+      const p = picks.reduce((pr,x)=> pr * x.m.odds[x.v.pick.k][b], 1);
+      if (p > prod){ prod = p; book = b; }   // la casa con mayor cuota combinada
+    });
+    const legs = picks.map(x=>{
+      const o = x.m.odds[x.v.pick.k] || {};
+      const useBook = book && o[book] > 1 ? book : x.v.pick.best.book;   // si no hay casa común, cae a la mejor por pierna
+      const useOdd  = book && o[book] > 1 ? o[book] : x.v.pick.best.price;
+      return { id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), side:x.v.pick.k, sofa:x.m.sofa||null,
+               match:`${PLAYERS[x.m.home].name} – ${PLAYERS[x.m.away].name}`, pick:label(x.m,x.v.pick.k),
+               odd:+useOdd.toFixed(2), book:useBook };
+    });
+    return { id, name, conf:conf(picks), book: book||null, legs };
+  };
   // Para COMBINADAS: favoritos creíbles, pero no tan estrictos como antes (salían pocas).
   const comboLeg = (x)=> x.v.pick && x.v.pick.best && x.v.pick.best.price <= 2.20 && x.v.pick.p >= 0.50;
   let surePool = MATCHES.map(m=>({m,v:matchValue(m)})).filter(comboLeg).sort((a,b)=>b.v.pick.p-a.v.pick.p);
@@ -468,13 +492,13 @@ async function main(){
   // c1 — Combinada del Día: 3 favoritos (o 2 si solo hay 2 partidos)
   if (surePool.length>=2){
     const n = surePool.length>=3 ? 3 : 2;
-    COMBOS.push({ id:'c1', name:'Combinada del Día', conf:conf(surePool.slice(0,n)), legs:surePool.slice(0,n).map(legOf) });
+    COMBOS.push(buildCombo('c1', 'Combinada del Día', surePool.slice(0,n)));
   }
   if (valPool.length>=2){
     const legs=valPool.slice(0,3);
     const sig=legs.map(l=>l.m.id).sort().join('|');
     const sig1=surePool.slice(0,3).map(l=>l.m.id).sort().join('|');
-    if (sig!==sig1) COMBOS.push({ id:'c2', name:'Combinada Valor', conf:conf(legs), legs:legs.map(legOf) });
+    if (sig!==sig1) COMBOS.push(buildCombo('c2', 'Combinada Valor', legs));
   }
 
   // ---- track record (settle finished picks via scores) ----
