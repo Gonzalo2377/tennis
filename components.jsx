@@ -73,7 +73,7 @@ function SearchBox({ t, go }) {
     else { setNoMatch(p.id); }
   };
   return (
-    <div ref={ref} style={{ position:'relative', minWidth:200 }}>
+    <div ref={ref} className="searchbox" style={{ position:'relative', minWidth:200 }}>
       <div className="search" style={{ minWidth:0 }}>
         {Icon.search({})}
         <input value={q} placeholder={t.searchPh}
