@@ -278,7 +278,7 @@ function dedupeBooks(MATCHES, BOOKS){
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
 function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
-function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50; const minEdge=(odd)=>Math.max(2,2*Math.pow(odd/1.5,3.2)); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price);return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
+function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50,MAX_GAP=0.18; const minEdge=(odd)=>Math.max(2,2*Math.pow(odd/1.5,3.2)); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const gap=Math.abs(prob[k]-mk[k]);const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price)&&gap<=MAX_GAP;return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
 /* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
 function arbOf(m){ const legs=['home','away'].map(k=>{const best=bestPrice(m.odds[k]);return {k,book:best.book,price:best.price};}); const inv=legs.reduce((s,l)=>s+1/l.price,0); return { legs, marginPct:(1-inv)*100, hasArb:(1-inv)*100>0.01 }; }
 
@@ -569,13 +569,13 @@ async function main(){
             } catch(e){ console.log('· build-photos error:', e.message); }
           }
         } catch(e){}
-        // RESOLVE robusto: prueba apellido canónico Y última palabra simple en TODAS las fuentes
+        // FOTOS: SOLO desde la biblioteca (player-photos.json). No se busca en la API por partido.
+        // La biblioteca se (re)construye sola 1 vez/semana desde el ranking completo ATP+WTA.
         const simple=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
-        const pick=(p)=>{ const a=canon(p.name), b=simple(p.name);
-          return manual[a]||manual[b]||apiRes.logos[a]||apiRes.logos[b]||sr.photos[a]||sr.photos[b]||null; };
-        let noPhoto=0;
-        Object.values(PLAYERS).forEach(p=>{ const u=pick(p); if(u) p.photo=u; else if(!p.photo) noPhoto++; });
-        if (noPhoto) console.log(`· ${noPhoto} jugadores SIN foto (caen a monograma)`);
+        const pick=(p)=>{ const a=canon(p.name), b=simple(p.name); return manual[a]||manual[b]||null; };
+        let noPhoto=[];
+        Object.values(PLAYERS).forEach(p=>{ const u=pick(p); if(u) p.photo=u; else if(!p.photo) noPhoto.push(p.name+' ['+canon(p.name)+']'); });
+        if (noPhoto.length) console.log(`· ${noPhoto.length} jugadores SIN foto en biblioteca: ${noPhoto.join(', ')}`);
       } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
