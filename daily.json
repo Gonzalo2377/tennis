@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-11T12:00:46.722Z",
+    "updatedAt": "2026-06-11T15:00:40.441Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1341,6 +1341,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200277571900532",
+      "date": "11 JUN",
+      "match": "R. Hijikata – F. Tiafoe",
+      "pick": "Gana F. Tiafoe",
+      "odd": 1.45,
+      "book": "winamax.es",
+      "result": "W"
+    },
+    {
       "id": "opid1200762571900850",
       "date": "11 JUN",
       "match": "R. Montgomery – G. Minnen",
@@ -1356,7 +1365,7 @@
       "pick": "Gana J. Lehecka",
       "odd": 1.35,
       "book": "betfair-ex",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "opid1200762571900852",
@@ -1684,24 +1693,38 @@
       "book": "casumo",
       "homeName": "I. Jović",
       "awayName": "A. Anisimova"
-    },
-    {
-      "id": "opid1200277571900532",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1781168400000,
-      "date": "11 JUN",
-      "sofa": 16272644,
-      "pickHome": false,
-      "match": "R. Hijikata – F. Tiafoe",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Tiafoe",
-      "odd": 1.45,
-      "book": "winamax.es",
-      "homeName": "R. Hijikata",
-      "awayName": "F. Tiafoe"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "11 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.25,
+      "result": "L",
+      "legs": [
+        {
+          "match": "E. Rybakina – T. Maria",
+          "pick": "Gana E. Rybakina",
+          "odd": 1.22,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "J. Lehecka – J. Duckworth",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.29,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "R. Hijikata – F. Tiafoe",
+          "pick": "Gana F. Tiafoe",
+          "odd": 1.43,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "09 JUN",
       "name": "Combinada Valor",
@@ -2165,46 +2188,6 @@
           "odd": 1.7,
           "homeName": "I. Jović",
           "awayName": "A. Anisimova"
-        }
-      ]
-    },
-    {
-      "dayId": "11 JUN·c1",
-      "date": "11 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "f9382249aa498b2f040cca0a22f38f41",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "E. Rybakina – T. Maria",
-          "pick": "Gana E. Rybakina",
-          "odd": 1.22,
-          "homeName": "E. Rybakina",
-          "awayName": "T. Maria"
-        },
-        {
-          "id": "opid1200277571900534",
-          "sport": "tennis_oddspapi_atp",
-          "side": "home",
-          "sofa": 16272631,
-          "match": "J. Lehecka – J. Duckworth",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.29,
-          "homeName": "J. Lehecka",
-          "awayName": "J. Duckworth"
-        },
-        {
-          "id": "opid1200277571900532",
-          "sport": "tennis_prev",
-          "side": "away",
-          "sofa": 16272644,
-          "match": "R. Hijikata – F. Tiafoe",
-          "pick": "Gana F. Tiafoe",
-          "odd": 1.43,
-          "homeName": "R. Hijikata",
-          "awayName": "F. Tiafoe"
         }
       ]
     },
@@ -3040,6 +3023,20 @@
   "MODEL_RECORD": [
     {
       "date": "11 JUN",
+      "match": "J. Lehecka – J. Duckworth",
+      "predName": "J. Lehecka",
+      "prob": 77,
+      "ok": true
+    },
+    {
+      "date": "11 JUN",
+      "match": "R. Hijikata – F. Tiafoe",
+      "predName": "F. Tiafoe",
+      "prob": 73,
+      "ok": true
+    },
+    {
+      "date": "11 JUN",
       "match": "E. Ruse – E. Mertens",
       "predName": "E. Ruse",
       "prob": 54,
@@ -3395,17 +3392,6 @@
     },
     {
       "date": "11 JUN",
-      "ts": 1781168400000,
-      "match": "R. Hijikata – F. Tiafoe",
-      "predHome": false,
-      "prob": 73,
-      "predName": "F. Tiafoe",
-      "sofa": 16272644,
-      "homeName": "R. Hijikata",
-      "awayName": "F. Tiafoe"
-    },
-    {
-      "date": "11 JUN",
       "ts": 1781173800000,
       "match": "H. Dart – K. Rakhimova",
       "predHome": false,
@@ -3425,17 +3411,6 @@
       "sofa": null,
       "homeName": "I. Jović",
       "awayName": "A. Anisimova"
-    },
-    {
-      "date": "11 JUN",
-      "ts": 1781170200000,
-      "match": "J. Lehecka – J. Duckworth",
-      "predHome": true,
-      "prob": 77,
-      "predName": "J. Lehecka",
-      "sofa": 16272631,
-      "homeName": "J. Lehecka",
-      "awayName": "J. Duckworth"
     }
   ],
   "ELO": {
