@@ -78,7 +78,7 @@ function applyDaily(d){
 
   if(d.PLAYERS) window.PLAYERS = d.PLAYERS;
   if(d.BOOKS)   window.BOOKS   = d.BOOKS;
-  if(Array.isArray(d.MATCHES) && d.MATCHES.length) window.MATCHES = d.MATCHES;
+  if(Array.isArray(d.MATCHES) && d.MATCHES.length) window.MATCHES = d.MATCHES.filter(m=>!m.noModel);   // oculta partidos de jugadores desconocidos
   if(Array.isArray(d.COMBOS))  window.COMBOS  = d.COMBOS;
   if(Array.isArray(d.RECORD) && d.RECORD.length) window.RECORD = dq(d.RECORD, rkey);
   if(Array.isArray(d.COMBO_RECORD)) window.COMBO_RECORD = dq(d.COMBO_RECORD, ckey);
@@ -86,6 +86,7 @@ function applyDaily(d){
   if(Array.isArray(d.ARB_RECORD)) window.ARB_RECORD = dq(d.ARB_RECORD, akey);
   if(Array.isArray(d.MODEL_RECORD)) window.MODEL_RECORD = d.MODEL_RECORD;
   if(Array.isArray(d.MODEL_PENDING)) window.MODEL_PENDING = d.MODEL_PENDING;
+  if(Array.isArray(d.EXCLUDE)) window.EXCLUDE = d.EXCLUDE;
   if(Array.isArray(d.PENDING)) {
     // dedup AND drop any pending already settled in the record
     const done = new Set((d.RECORD||[]).map(rkey));

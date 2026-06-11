@@ -301,6 +301,7 @@ function eloOf(name, surface){
 }
 /* learn Elo from finished matches (self-updating, K=24, surface-neutral base) */
 let LIVE_ELO = {}, ELO_DONE = {}, RANK_ELO = {}, RANK_TS = 0;
+const SEEDED = new Set();   // jugadores cuyo Elo se INVENTÓ del mercado (no los conocemos de verdad)
 function seedElo(name){ const k=lastKey(name); if(LIVE_ELO[k]!=null) return LIVE_ELO[k]; LIVE_ELO[k] = RATINGS[k] ? RATINGS[k].elo : 1700; return LIVE_ELO[k]; }
 function updateElo(scores){
   let n=0;
@@ -320,6 +321,8 @@ function updateElo(scores){
 }
 /* model win prob of home using surface-adjusted Elo (+ optional form nudge) */
 function modelProbs(homeName, awayName, surface, formMap){
+  // si NO conocemos de verdad a algún jugador (Elo inventado del mercado) → sin modelo
+  if (SEEDED.has(lastKey(homeName)) || SEEDED.has(lastKey(awayName))) return null;
   let eh = eloOf(homeName, surface), ea = eloOf(awayName, surface);
   if (eh == null || ea == null) return null;           // unknown player → no model
   if (formMap){
@@ -409,6 +412,7 @@ async function main(){
         const ok=lastKey(oppName), oppE=(LIVE_ELO[ok]!=null?LIVE_ELO[ok]:(RATINGS[ok]?RATINGS[ok].elo:1700));
         const p=Math.min(0.92, Math.max(0.08, pImplied));
         LIVE_ELO[k]=Math.round(oppE + 400*Math.log10(p/(1-p)));   // Elo que reproduce esa prob vs el rival
+        SEEDED.add(k);                                            // marcado como "no lo conocemos de verdad"
       };
       seedFromMarket(ev.home_team, mk0.home, ev.away_team);
       seedFromMarket(ev.away_team, mk0.away, ev.home_team);
@@ -418,6 +422,7 @@ async function main(){
       id: ev.id, tour:evTour, event:evName, round:'', surface: surface==='grass'?'Hierba':surface==='clay'?'Tierra':'Dura', time:fmtTime(ev.commence_time), day:fmtDay(ev.commence_time),
       home:hId, away:aId, odds:{ home:oddsH, away:oddsA },
       model: model || undefined,
+      noModel: model ? undefined : true,   // jugador desconocido → ocultar en la web
       ts: new Date(ev.commence_time).getTime(),
       sofa: ev._sofa || null,
       _commence: ev.commence_time, _sport:key,
