@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-12T07:03:19.459Z",
+    "updatedAt": "2026-06-12T12:00:44.252Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -666,6 +666,24 @@
   ],
   "RECORD": [
     {
+      "id": "0aab5b82197ba9719b652c1c1a86111d",
+      "date": "10 JUN",
+      "match": "M. Bouzkova – D. Vekic",
+      "pick": "Gana M. Bouzkova",
+      "odd": 1.67,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
+      "id": "932752be22bb7bb28f256be7006b3c6a",
+      "date": "11 JUN",
+      "match": "J. Cristian – K. Boulter",
+      "pick": "Gana J. Cristian",
+      "odd": 2.35,
+      "book": "betanysports",
+      "result": "L"
+    },
+    {
       "id": "ruse-mertens-11jun",
       "date": "11 JUN",
       "match": "E. Ruse – E. Mertens",
@@ -918,21 +936,6 @@
   ],
   "PENDING": [
     {
-      "id": "932752be22bb7bb28f256be7006b3c6a",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781168400000,
-      "date": "11 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Cristian – K. Boulter",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Cristian",
-      "odd": 2.35,
-      "book": "betanysports",
-      "homeName": "J. Cristian",
-      "awayName": "K. Boulter"
-    },
-    {
       "id": "5c62ae15e22903bc908c5359a0daf128",
       "sport": "tennis_wta_queens_club_champ",
       "ts": 1781168400000,
@@ -946,21 +949,6 @@
       "book": "unibet_se",
       "homeName": "S. Cirstea",
       "awayName": "E. Raducanu"
-    },
-    {
-      "id": "0aab5b82197ba9719b652c1c1a86111d",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781109000000,
-      "date": "10 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "M. Bouzkova – D. Vekic",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Bouzkova",
-      "odd": 1.67,
-      "book": "betfair_ex_eu",
-      "homeName": "M. Bouzkova",
-      "awayName": "D. Vekic"
     },
     {
       "id": "9a5427ed4e4158398e69f72d961ede9e",
@@ -2280,6 +2268,27 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "12 JUN",
+      "match": "C. McNally – S. Sierra",
+      "predName": "C. McNally",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "11 JUN",
+      "match": "J. Cristian – K. Boulter",
+      "predName": "J. Cristian",
+      "prob": 61,
+      "ok": false
+    },
+    {
+      "date": "10 JUN",
+      "match": "M. Bouzkova – D. Vekic",
+      "predName": "M. Bouzkova",
+      "prob": 63,
+      "ok": false
+    },
+    {
       "date": "11 JUN",
       "match": "J. Lehecka – J. Duckworth",
       "predName": "J. Lehecka",
@@ -2558,17 +2567,6 @@
       "awayName": "K. Pliskova"
     },
     {
-      "date": "10 JUN",
-      "ts": 1781109000000,
-      "match": "M. Bouzkova – D. Vekic",
-      "predHome": true,
-      "prob": 63,
-      "predName": "M. Bouzkova",
-      "sofa": null,
-      "homeName": "M. Bouzkova",
-      "awayName": "D. Vekic"
-    },
-    {
       "date": "11 JUN",
       "ts": 1781168400000,
       "match": "H. Dart – B. Bencic",
@@ -2604,17 +2602,6 @@
     {
       "date": "11 JUN",
       "ts": 1781168400000,
-      "match": "J. Cristian – K. Boulter",
-      "predHome": true,
-      "prob": 61,
-      "predName": "J. Cristian",
-      "sofa": null,
-      "homeName": "J. Cristian",
-      "awayName": "K. Boulter"
-    },
-    {
-      "date": "11 JUN",
-      "ts": 1781168400000,
       "match": "A. Potapova – Z. Sonmez",
       "predHome": true,
       "prob": 61,
@@ -2644,17 +2631,6 @@
       "sofa": null,
       "homeName": "I. Jović",
       "awayName": "A. Anisimova"
-    },
-    {
-      "date": "12 JUN",
-      "ts": 1781254800000,
-      "match": "C. McNally – S. Sierra",
-      "predHome": true,
-      "prob": 51,
-      "predName": "C. McNally",
-      "sofa": 16272777,
-      "homeName": "C. McNally",
-      "awayName": "S. Sierra"
     }
   ],
   "ELO": {
