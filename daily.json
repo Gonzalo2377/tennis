@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-12T12:00:44.252Z",
+    "updatedAt": "2026-06-12T15:00:42.973Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -666,6 +666,24 @@
   ],
   "RECORD": [
     {
+      "id": "9a5427ed4e4158398e69f72d961ede9e",
+      "date": "11 JUN",
+      "match": "H. Dart – K. Rakhimova",
+      "pick": "Gana K. Rakhimova",
+      "odd": 1.98,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "5c62ae15e22903bc908c5359a0daf128",
+      "date": "11 JUN",
+      "match": "S. Cirstea – E. Raducanu",
+      "pick": "Gana S. Cirstea",
+      "odd": 1.82,
+      "book": "unibet_se",
+      "result": "L"
+    },
+    {
       "id": "0aab5b82197ba9719b652c1c1a86111d",
       "date": "10 JUN",
       "match": "M. Bouzkova – D. Vekic",
@@ -936,36 +954,6 @@
   ],
   "PENDING": [
     {
-      "id": "5c62ae15e22903bc908c5359a0daf128",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781168400000,
-      "date": "11 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "S. Cirstea – E. Raducanu",
-      "pickKey": "home",
-      "pickLabel": "Gana S. Cirstea",
-      "odd": 1.82,
-      "book": "unibet_se",
-      "homeName": "S. Cirstea",
-      "awayName": "E. Raducanu"
-    },
-    {
-      "id": "9a5427ed4e4158398e69f72d961ede9e",
-      "sport": "tennis_wta_queens_club_champ",
-      "ts": 1781173800000,
-      "date": "11 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "H. Dart – K. Rakhimova",
-      "pickKey": "away",
-      "pickLabel": "Gana K. Rakhimova",
-      "odd": 1.98,
-      "book": "betfair_ex_eu",
-      "homeName": "H. Dart",
-      "awayName": "K. Rakhimova"
-    },
-    {
       "id": "b3b470e33415f4ce8b897202cf26deac",
       "sport": "tennis_wta_queens_club_champ",
       "ts": 1781254800000,
@@ -983,16 +971,74 @@
   ],
   "COMBO_RECORD": [
     {
+      "date": "10 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 2.65,
+      "result": "L",
+      "legs": [
+        {
+          "match": "V. Mboko – K. Pliskova",
+          "pick": "Gana V. Mboko",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        },
+        {
+          "match": "J. Struff – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.43,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "S. Cirstea – E. Raducanu",
+          "pick": "Gana S. Cirstea",
+          "odd": 1.85,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "10 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 4.28,
+      "result": "L",
+      "legs": [
+        {
+          "match": "J. Cristian – K. Boulter",
+          "pick": "Gana J. Cristian",
+          "odd": 2.35,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "V. Mboko – K. Pliskova",
+          "pick": "Gana V. Mboko",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        },
+        {
+          "match": "S. Cirstea – E. Raducanu",
+          "pick": "Gana S. Cirstea",
+          "odd": 1.82,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
       "date": "11 JUN",
       "name": "Combinada del Día",
       "totalOdd": 2.25,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "E. Rybakina – T. Maria",
           "pick": "Gana E. Rybakina",
           "odd": 1.22,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -1073,13 +1119,13 @@
       "date": "10 JUN",
       "name": "Combinada del Día",
       "totalOdd": 1.8,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "E. Rybakina – T. Maria",
           "pick": "Gana E. Rybakina",
           "odd": 1.26,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -1102,13 +1148,13 @@
       "date": "10 JUN",
       "name": "Combinada del Día",
       "totalOdd": 1.7,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "E. Rybakina – T. Maria",
           "pick": "Gana E. Rybakina",
           "odd": 1.26,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -1277,86 +1323,6 @@
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "10 JUN·c2",
-      "date": "10 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "932752be22bb7bb28f256be7006b3c6a",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "J. Cristian – K. Boulter",
-          "pick": "Gana J. Cristian",
-          "odd": 2.35,
-          "homeName": "J. Cristian",
-          "awayName": "K. Boulter"
-        },
-        {
-          "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "V. Mboko – K. Pliskova",
-          "pick": "Gana V. Mboko",
-          "odd": 1.54,
-          "homeName": "V. Mboko",
-          "awayName": "K. Pliskova"
-        },
-        {
-          "id": "5c62ae15e22903bc908c5359a0daf128",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "S. Cirstea – E. Raducanu",
-          "pick": "Gana S. Cirstea",
-          "odd": 1.82,
-          "homeName": "S. Cirstea",
-          "awayName": "E. Raducanu"
-        }
-      ]
-    },
-    {
-      "dayId": "10 JUN·c2",
-      "date": "10 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "V. Mboko – K. Pliskova",
-          "pick": "Gana V. Mboko",
-          "odd": 1.56,
-          "homeName": "V. Mboko",
-          "awayName": "K. Pliskova"
-        },
-        {
-          "id": "opid1200277571900544",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": 16272629,
-          "match": "J. Struff – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.43,
-          "homeName": "J. Struff",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "5c62ae15e22903bc908c5359a0daf128",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "S. Cirstea – E. Raducanu",
-          "pick": "Gana S. Cirstea",
-          "odd": 1.85,
-          "homeName": "S. Cirstea",
-          "awayName": "E. Raducanu"
-        }
-      ]
-    },
     {
       "dayId": "11 JUN·c1",
       "date": "11 JUN",
@@ -2268,6 +2234,27 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "11 JUN",
+      "match": "H. Dart – K. Rakhimova",
+      "predName": "K. Rakhimova",
+      "prob": 59,
+      "ok": true
+    },
+    {
+      "date": "11 JUN",
+      "match": "S. Cirstea – E. Raducanu",
+      "predName": "S. Cirstea",
+      "prob": 61,
+      "ok": false
+    },
+    {
+      "date": "11 JUN",
+      "match": "E. Rybakina – T. Maria",
+      "predName": "E. Rybakina",
+      "prob": 81,
+      "ok": true
+    },
+    {
       "date": "12 JUN",
       "match": "C. McNally – S. Sierra",
       "predName": "C. McNally",
@@ -2580,28 +2567,6 @@
     {
       "date": "11 JUN",
       "ts": 1781168400000,
-      "match": "E. Rybakina – T. Maria",
-      "predHome": true,
-      "prob": 81,
-      "predName": "E. Rybakina",
-      "sofa": null,
-      "homeName": "E. Rybakina",
-      "awayName": "T. Maria"
-    },
-    {
-      "date": "11 JUN",
-      "ts": 1781168400000,
-      "match": "S. Cirstea – E. Raducanu",
-      "predHome": true,
-      "prob": 61,
-      "predName": "S. Cirstea",
-      "sofa": null,
-      "homeName": "S. Cirstea",
-      "awayName": "E. Raducanu"
-    },
-    {
-      "date": "11 JUN",
-      "ts": 1781168400000,
       "match": "A. Potapova – Z. Sonmez",
       "predHome": true,
       "prob": 61,
@@ -2609,17 +2574,6 @@
       "sofa": 16272766,
       "homeName": "A. Potapova",
       "awayName": "Z. Sonmez"
-    },
-    {
-      "date": "11 JUN",
-      "ts": 1781173800000,
-      "match": "H. Dart – K. Rakhimova",
-      "predHome": false,
-      "prob": 59,
-      "predName": "K. Rakhimova",
-      "sofa": null,
-      "homeName": "H. Dart",
-      "awayName": "K. Rakhimova"
     },
     {
       "date": "12 JUN",
