@@ -8,7 +8,7 @@ function Arbitrage({ t, go }) {
   const [mode, setMode] = useState(()=>{ try { return localStorage.getItem('ace_arb_mode')||'even'; } catch(e){ return 'even'; } });
   useEffect(()=>{ try { localStorage.setItem('ace_arb_mode', mode); } catch(e){} }, [mode]);
   // redondeo de apuestas → evita cifras con decimales que delatan la cuenta ante la casa
-  const [round, setRound] = useState(()=>{ try { return localStorage.getItem('ace_arb_round')||'1'; } catch(e){ return '1'; } });
+  const [round, setRound] = useState(()=>{ try { return localStorage.getItem('ace_arb_round')||'0.01'; } catch(e){ return '0.01'; } });
   useEffect(()=>{ try { localStorage.setItem('ace_arb_round', round); } catch(e){} }, [round]);
   const roundStake = (v)=>{ const step=+round; return step>0 ? Math.max(step, Math.round(v/step)*step) : v; };
 
@@ -333,6 +333,13 @@ function Record({ t, go }) {
             <div style={{marginTop:30}}>
               <span className="eyebrow"><span className="dot" />{t.comboRecTitle}</span>
               <p style={{color:'var(--ink-2)', fontSize:'.9rem', margin:'10px 0 16px', maxWidth:660, lineHeight:1.55}}>{t.comboRecLead}</p>
+              {(()=>{ const cs=window.comboSummary(); return (
+                <div className="grid grid--3" style={{marginBottom:16}}>
+                  <div className="stat"><div className="stat__lbl">{t.comboRecRoi||'ROI combis'}</div><div className="stat__val" style={{color: cs.profit>=0?'var(--pos)':'var(--neg)'}}>{cs.profit>=0?'+':''}{cs.roi}%</div></div>
+                  <div className="stat"><div className="stat__lbl">{t.comboRecProfit||'Beneficio'}</div><div className="stat__val" style={{color: cs.profit>=0?'var(--pos)':'var(--neg)'}}>{cs.profit>=0?'+':''}{cs.profit}u</div></div>
+                  <div className="stat"><div className="stat__lbl">{t.comboRecN||'Combis'}</div><div className="stat__val">{cs.w}-{cs.l} <span style={{fontSize:'.5em', color:'var(--muted)'}}>{Math.round(cs.hit)}%</span></div></div>
+                </div>
+              ); })()}
               <div className="grid grid--2">
                 {window.COMBO_RECORD.map((c,i)=>{
                   const won=c.result==='W'; const vd=c.result==='V';

@@ -114,10 +114,15 @@ window.matchValue = function(m){
     // umbral de valor EXPONENCIAL con la cuota: a cuota baja casi no exige, a cuota alta se dispara.
     //  1.5→2% · 2.0→5% · 2.5→10% · 3.0→19% · 3.25→24% · 4.0→46% · 4.5→63%
     const minEdge = (odd)=> Math.max(2, 2*Math.pow(odd/1.5, 3.2));
+    // GUARDA "demasiado bueno para ser verdad": si nuestro modelo discrepa del mercado
+    // más de 18 puntos de probabilidad, es casi seguro un dato malo (Elo/forma mal
+    // emparejado, p.ej. jugador sin foto) → NO marcamos valor.
+    const MAX_GAP = 0.18;
     const all = ['home','away'].map(k=>{
         const best = window.saneBest(m.odds[k]);
         const ev = (prob[k]*best.price - 1)*100;
-        const eligible = prob[k]>=MIN_P && best.price<=MAX_ODD && ev>=minEdge(best.price);
+        const gap = Math.abs(prob[k] - mk[k]);
+        const eligible = prob[k]>=MIN_P && best.price<=MAX_ODD && ev>=minEdge(best.price) && gap<=MAX_GAP;
         return { k, p:prob[k], best, edge:ev, eligible };
     });
     const outs = [...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge));
@@ -257,9 +262,11 @@ window.recordSummary = function(){
 };
 window.comboSummary = function(){
     const c = window.COMBO_RECORD || [];
-    const w = c.filter(x=>x.result==='W').length;
-    const hit = c.length ? (w/c.length)*100 : 0;
-    return { n:c.length, w, l:c.length-w, hit };
+    let staked=0, ret=0, w=0, l=0;
+    c.forEach(x=>{ if(x.result==='V') return; staked+=1; if(x.result==='W'){ ret += (+x.totalOdd||0); w++; } else l++; });
+    const profit = ret - staked;
+    const hit = (w+l) ? (w/(w+l))*100 : 0;
+    return { n:c.length, w, l, hit, profit:+profit.toFixed(2), roi: staked? +((profit/staked)*100).toFixed(1):0 };
 };
 window.arbSummary = function(){
     const a = window.ARB_RECORD || [];
@@ -316,7 +323,7 @@ window.I18N = {
     stHit:'Acierto', stRoi:'ROI', stProfit:'Beneficio', stPicks:'Picks', units:'u',
     colDate:'Fecha', colMatch:'Partido', colPick:'Pick', colOdd:'Cuota', colBook:'Casa', colResult:'Resultado',
     resW:'Ganada', resL:'Fallada', resV:'Anulada',
-    comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.',
+    comboRecTitle:'Combinadas resueltas', comboRecLead:'Cada combinada queda registrada al terminar. Solo gana si aciertan TODAS las selecciones.', comboRecRoi:'ROI combis', comboRecProfit:'Beneficio', comboRecN:'Combis (G-F)',
     arbRecTitle:'Historial sin riesgo', arbRecLead:'Cada apuesta sin riesgo (reparto «Igual») que detectamos queda registrada con su beneficio garantizado, calculado sobre 100€ de referencia.',
     arbRecN:'Surebets', arbRecProfit:'Beneficio acumulado', arbRecAvg:'Margen medio', arbRecMargin:'Margen',
     pendingTitle:'Nuestras selecciones · en juego', pendingLead:'Picks ya publicados a la espera de resultado. Quedan registrados con su cuota antes de empezar el partido.', pendingTag:'EN JUEGO',
@@ -371,7 +378,7 @@ window.I18N = {
     stHit:'Hit rate', stRoi:'ROI', stProfit:'Profit', stPicks:'Picks', units:'u',
     colDate:'Date', colMatch:'Match', colPick:'Pick', colOdd:'Odds', colBook:'Book', colResult:'Result',
     resW:'Won', resL:'Lost', resV:'Void',
-    comboRecTitle:'Settled accas', comboRecLead:'Every acca is logged once it ends. It only wins if ALL legs come in.',
+    comboRecTitle:'Settled accas', comboRecLead:'Every acca is logged once it ends. It only wins if ALL legs come in.', comboRecRoi:'Acca ROI', comboRecProfit:'Profit', comboRecN:'Accas (W-L)',
     arbRecTitle:'No-risk history', arbRecLead:'Every no-risk bet we catch is logged with its guaranteed profit (on a 100€ reference stake).',
     arbRecN:'Surebets', arbRecProfit:'Total profit', arbRecAvg:'Avg margin', arbRecMargin:'Margin',
     pendingTitle:'Our selections · live', pendingLead:'Picks already published, awaiting the result. Logged with their pre-match odds.', pendingTag:'LIVE',
