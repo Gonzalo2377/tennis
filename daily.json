@@ -1,78 +1,23 @@
 {
   "meta": {
-    "updatedAt": "2026-06-12T23:00:41.925Z",
+    "updatedAt": "2026-06-13T07:00:30.273Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 6,
-    "valuePicks": 3,
+    "matches": 3,
+    "valuePicks": 1,
     "books": 23,
     "stale": false,
     "model": {
       "players": 3295
     },
     "credits": {
-      "remaining": 122,
-      "used": 378
+      "remaining": 119,
+      "used": 381
     }
   },
   "PLAYERS": {
-    "elenarybakina": {
-      "id": "elenarybakina",
-      "name": "E. Rybakina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2172_e-rybakina.jpg"
-    },
-    "tatjanamaria": {
-      "id": "tatjanamaria",
-      "name": "T. Maria",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2414_t-maria.jpg"
-    },
-    "jaquelinecristia": {
-      "id": "jaquelinecristia",
-      "name": "J. Cristian",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/33659_j-cristian.jpg"
-    },
-    "katieboulter": {
-      "id": "katieboulter",
-      "name": "K. Boulter",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2993_k-boulter.jpg"
-    },
-    "soranacirstea": {
-      "id": "soranacirstea",
-      "name": "S. Cirstea",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1150_s-cirstea.jpg"
-    },
     "emmaraducanu": {
       "id": "emmaraducanu",
       "name": "E. Raducanu",
@@ -81,19 +26,7 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2996_e-raducanu.jpg"
-    },
-    "harrietdart": {
-      "id": "harrietdart",
-      "name": "H. Dart",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2998_h-dart.jpg"
+      "form": []
     },
     "kamillarakhimova": {
       "id": "kamillarakhimova",
@@ -103,144 +36,139 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1140_k-rakhimova.jpg"
+      "form": []
     },
-    "ivajovic": {
-      "id": "ivajovic",
-      "name": "I. Jović",
+    "katieboulter": {
+      "id": "katieboulter",
+      "name": "K. Boulter",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/58226_i-jovic.jpg"
+      "form": []
     },
-    "amandaanisimova": {
-      "id": "amandaanisimova",
-      "name": "A. Anisimova",
+    "donnavekic": {
+      "id": "donnavekic",
+      "name": "D. Vekic",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2074_a-anisimova.jpg"
+      "form": []
     },
-    "catymcnally": {
-      "id": "catymcnally",
-      "name": "C. McNally",
+    "barborakrejcikov": {
+      "id": "barborakrejcikov",
+      "name": "B. Krejcikova",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1127_c-mcnally.jpg"
+      "form": []
     },
-    "solanasierra": {
-      "id": "solanasierra",
-      "name": "S. Sierra",
+    "magdalinette": {
+      "id": "magdalinette",
+      "name": "M. Linette",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/140_s-sierra.jpg"
+      "form": []
     }
   },
   "BOOKS": {
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#e23b2e"
+    },
     "betfair": {
       "id": "betfair",
       "name": "Betfair",
       "abbr": "BET",
-      "color": "#e23b2e"
-    },
-    "coolbet": {
-      "id": "coolbet",
-      "name": "Coolbet",
-      "abbr": "COO",
       "color": "#0a7d3c"
-    },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
-      "color": "#0a2d6e"
-    },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (SE)",
-      "abbr": "UNI",
-      "color": "#14805e"
     },
     "pmu": {
       "id": "pmu",
       "name": "PMU (FR)",
       "abbr": "PMU",
-      "color": "#d11a2a"
+      "color": "#0a2d6e"
     },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#0a6cff"
+    "tipico": {
+      "id": "tipico",
+      "name": "Tipico",
+      "abbr": "TIP",
+      "color": "#14805e"
     },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas (SE)",
-      "abbr": "LEO",
-      "color": "#1c1c1c"
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (SE)",
+      "abbr": "UNI",
+      "color": "#ffb000"
     },
     "888sport": {
       "id": "888sport",
       "name": "888sport",
       "abbr": "888",
+      "color": "#0a6cff"
+    },
+    "coolbet": {
+      "id": "coolbet",
+      "name": "Coolbet",
+      "abbr": "COO",
+      "color": "#1c1c1c"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
       "color": "#7a4ddb"
     },
     "nordicbet": {
       "id": "nordicbet",
       "name": "Nordic Bet",
       "abbr": "NOR",
-      "color": "#e23b2e"
-    },
-    "tipico": {
-      "id": "tipico",
-      "name": "Tipico",
-      "abbr": "TIP",
-      "color": "#0a7d3c"
-    },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
-      "color": "#0a2d6e"
+      "color": "#d9730d"
     },
     "1xbet": {
       "id": "1xbet",
       "name": "1xBet",
       "abbr": "1XB",
-      "color": "#14805e"
+      "color": "#0a7d3c"
     },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (FR)",
-      "abbr": "WIN",
-      "color": "#ffb000"
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#0a2d6e"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "Pinnacle",
       "abbr": "PIN",
-      "color": "#0a6cff"
+      "color": "#14805e"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#ffb000"
     },
     "betonlineag": {
       "id": "betonlineag",
       "name": "BetOnline.ag",
       "abbr": "BET",
-      "color": "#1c1c1c"
+      "color": "#d11a2a"
+    },
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
+      "color": "#0a6cff"
     },
     "betanything": {
       "id": "betanything",
@@ -258,12 +186,6 @@
       "id": "bwin",
       "name": "bwin",
       "abbr": "BWI",
-      "color": "#e23b2e"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
       "color": "#0a7d3c"
     },
     "oddset": {
@@ -278,392 +200,197 @@
       "abbr": "BWI",
       "color": "#ffb000"
     },
+    "ladbrokes": {
+      "id": "ladbrokes",
+      "name": "ladbrokes",
+      "abbr": "LAD",
+      "color": "#d9730d"
+    },
     "unibetbe": {
       "id": "unibetbe",
       "name": "unibet.be",
       "abbr": "UNI",
-      "color": "#0a7d3c"
+      "color": "#e23b2e"
     },
     "unibetco": {
       "id": "unibetco",
       "name": "unibet.co.uk",
       "abbr": "UNI",
-      "color": "#1c1c1c"
+      "color": "#0a6cff"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1200762571900862",
+      "id": "opid1200762571900842",
       "tour": "wta",
       "event": "WTA S-Hertogenbosch, Netherlands Women Singles",
       "round": "",
       "surface": "Hierba",
       "time": "11:00",
-      "day": "12 JUN",
-      "home": "catymcnally",
-      "away": "solanasierra",
+      "day": "13 JUN",
+      "home": "barborakrejcikov",
+      "away": "magdalinette",
       "odds": {
         "home": {
-          "bwin": 1.1,
-          "betway": 1.1,
-          "oddset": 1.1,
-          "unibet": 1.13,
-          "bwinbe": 1.1,
-          "leovegas": 1.1,
-          "unibetbe": 1.13,
-          "unibetco": 1.13
+          "pmu": 1.35,
+          "bwin": 1.34,
+          "oddset": 1.36,
+          "unibet": 1.35,
+          "betsson": 1.33,
+          "bwinbe": 1.34,
+          "leovegas": 1.35,
+          "pinnacle": 1.346,
+          "ladbrokes": 1.33,
+          "unibetbe": 1.35,
+          "williamhill": 1.333,
+          "unibetco": 1.35
         },
         "away": {
-          "bwin": 6.25,
-          "betway": 7,
-          "oddset": 6.25,
-          "unibet": 5.8,
-          "bwinbe": 6.25,
-          "leovegas": 5.75,
-          "unibetbe": 5.8,
-          "unibetco": 5.8
+          "pmu": 3.15,
+          "bwin": 3.2,
+          "oddset": 3.1,
+          "unibet": 3.2,
+          "betsson": 3.25,
+          "bwinbe": 3.2,
+          "leovegas": 3.2,
+          "pinnacle": 3.56,
+          "ladbrokes": 3.1,
+          "unibetbe": 3.2,
+          "williamhill": 3.1,
+          "unibetco": 3.2
         }
       },
       "model": {
-        "home": 0.5100724469274385,
-        "away": 0.48992755307256153,
+        "home": 0.6374083767444845,
+        "away": 0.3625916232555155,
         "fromModel": true,
-        "eloH": 1786,
-        "eloA": 1779,
+        "eloH": 1869,
+        "eloA": 1771,
         "surface": "grass"
       },
-      "ts": 1781254800000,
-      "sofa": 16272777
-    },
-    {
-      "id": "f9382249aa498b2f040cca0a22f38f41",
-      "tour": "wta",
-      "event": "Wta Queens Club Champ",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "12 JUN",
-      "home": "elenarybakina",
-      "away": "tatjanamaria",
-      "odds": {
-        "home": {
-          "betfair": 1.2,
-          "coolbet": 1.18,
-          "matchbook": 1.2,
-          "unibet": 1.2,
-          "pmu": 1.17,
-          "betsson": 1.18,
-          "leovegas": 1.2,
-          "888sport": 1.2,
-          "nordicbet": 1.18,
-          "tipico": 1.14,
-          "williamhill": 1.2,
-          "1xbet": 1.19,
-          "winamax": 1.19,
-          "pinnacle": 1.21,
-          "betonlineag": 1.18,
-          "betanything": 1.18
-        },
-        "away": {
-          "betfair": 5.6,
-          "coolbet": 4.9,
-          "matchbook": 5.6,
-          "unibet": 4.9,
-          "pmu": 4.4,
-          "betsson": 4.8,
-          "leovegas": 4.6,
-          "888sport": 4.5,
-          "nordicbet": 4.8,
-          "tipico": 4.9,
-          "williamhill": 4.5,
-          "1xbet": 4.78,
-          "winamax": 5.1,
-          "pinnacle": 5.02,
-          "betonlineag": 5.15,
-          "betanything": 4.8
-        }
-      },
-      "model": {
-        "home": 0.8109791581199478,
-        "away": 0.1890208418800522,
-        "fromModel": true,
-        "eloH": 2055,
-        "eloA": 1802,
-        "surface": "grass"
-      },
-      "ts": 1781258400000,
+      "ts": 1781341200000,
       "sofa": null
     },
     {
-      "id": "932752be22bb7bb28f256be7006b3c6a",
-      "tour": "wta",
-      "event": "Wta Queens Club Champ",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "12 JUN",
-      "home": "jaquelinecristia",
-      "away": "katieboulter",
-      "odds": {
-        "home": {
-          "betfair": 3.1,
-          "coolbet": 2.8,
-          "winamax": 2.9,
-          "matchbook": 3.1,
-          "unibet": 2.75,
-          "pmu": 2.63,
-          "betsson": 2.7,
-          "leovegas": 2.7,
-          "888sport": 2.75,
-          "1xbet": 2.76,
-          "nordicbet": 2.7,
-          "williamhill": 2.75,
-          "betanything": 2.75,
-          "pinnacle": 2.89,
-          "betonlineag": 2.83
-        },
-        "away": {
-          "betfair": 1.46,
-          "coolbet": 1.44,
-          "winamax": 1.44,
-          "matchbook": 1.46,
-          "unibet": 1.47,
-          "pmu": 1.43,
-          "betsson": 1.44,
-          "leovegas": 1.47,
-          "888sport": 1.44,
-          "1xbet": 1.46,
-          "nordicbet": 1.44,
-          "williamhill": 1.44,
-          "betanything": 1.47,
-          "pinnacle": 1.47,
-          "betonlineag": 1.47
-        }
-      },
-      "model": {
-        "home": 0.6131368201531431,
-        "away": 0.3868631798468569,
-        "fromModel": true,
-        "eloH": 1854,
-        "eloA": 1774,
-        "surface": "grass"
-      },
-      "ts": 1781258400000,
-      "sofa": null
-    },
-    {
-      "id": "5c62ae15e22903bc908c5359a0daf128",
+      "id": "320bf61f21db072550f8067bb73b76db",
       "tour": "wta",
       "event": "Wta Queens Club Champ",
       "round": "",
       "surface": "Hierba",
       "time": "13:30",
-      "day": "12 JUN",
-      "home": "soranacirstea",
-      "away": "emmaraducanu",
-      "odds": {
-        "home": {
-          "betfair": 2.04,
-          "winamax": 1.92,
-          "matchbook": 2.04,
-          "unibet": 1.83,
-          "pmu": 1.8,
-          "leovegas": 1.83,
-          "888sport": 1.85,
-          "1xbet": 1.89,
-          "tipico": 1.8,
-          "williamhill": 1.85,
-          "betanything": 2,
-          "pinnacle": 1.96,
-          "betonlineag": 1.91
-        },
-        "away": {
-          "betfair": 1.94,
-          "winamax": 1.94,
-          "matchbook": 1.94,
-          "unibet": 1.95,
-          "pmu": 1.91,
-          "leovegas": 1.95,
-          "888sport": 1.95,
-          "1xbet": 1.93,
-          "tipico": 1.9,
-          "williamhill": 1.95,
-          "betanything": 1.83,
-          "pinnacle": 1.93,
-          "betonlineag": 1.91
-        }
-      },
-      "model": {
-        "home": 0.6090326034042396,
-        "away": 0.3909673965957604,
-        "fromModel": true,
-        "eloH": 1911,
-        "eloA": 1834,
-        "surface": "grass"
-      },
-      "ts": 1781263800000,
-      "sofa": null
-    },
-    {
-      "id": "9a5427ed4e4158398e69f72d961ede9e",
-      "tour": "wta",
-      "event": "Wta Queens Club Champ",
-      "round": "",
-      "surface": "Hierba",
-      "time": "13:30",
-      "day": "12 JUN",
-      "home": "harrietdart",
+      "day": "13 JUN",
+      "home": "emmaraducanu",
       "away": "kamillarakhimova",
       "odds": {
         "home": {
-          "pinnacle": 1.79,
-          "betfair": 1.82,
-          "1xbet": 1.76,
-          "williamhill": 1.73,
-          "tipico": 1.7,
-          "888sport": 1.73,
-          "betanything": 1.77,
-          "winamax": 1.76,
-          "unibet": 1.76,
-          "leovegas": 1.76,
-          "pmu": 1.71,
-          "betonlineag": 1.77,
-          "coolbet": 1.75,
-          "matchbook": 1.82
+          "leovegas": 1.2,
+          "betfair": 1.24,
+          "pmu": 1.17,
+          "tipico": 1.16,
+          "unibet": 1.2,
+          "888sport": 1.2,
+          "coolbet": 1.2,
+          "williamhill": 1.2,
+          "nordicbet": 1.2,
+          "1xbet": 1.22,
+          "betsson": 1.2,
+          "pinnacle": 1.21,
+          "matchbook": 1.24,
+          "betonlineag": 1.2,
+          "winamax": 1.2,
+          "betanything": 1.2
         },
         "away": {
-          "pinnacle": 2.13,
-          "betfair": 2.2,
-          "1xbet": 2.08,
-          "williamhill": 2.1,
-          "tipico": 2.05,
-          "888sport": 2.1,
-          "betanything": 2.1,
-          "winamax": 2.15,
-          "unibet": 2.07,
-          "leovegas": 2.07,
-          "pmu": 2.02,
-          "betonlineag": 2.1,
-          "coolbet": 2.1,
-          "matchbook": 2.2
+          "leovegas": 4.6,
+          "betfair": 5,
+          "pmu": 4.35,
+          "tipico": 4.5,
+          "unibet": 5.3,
+          "888sport": 4.5,
+          "coolbet": 4.6,
+          "williamhill": 4.5,
+          "nordicbet": 4.4,
+          "1xbet": 4.42,
+          "betsson": 4.4,
+          "pinnacle": 4.91,
+          "matchbook": 5,
+          "betonlineag": 4.83,
+          "winamax": 4.9,
+          "betanything": 4.6
         }
       },
       "model": {
-        "home": 0.4061446147638222,
-        "away": 0.5938553852361779,
+        "home": 0.615864104253756,
+        "away": 0.38413589574624396,
         "fromModel": true,
-        "eloH": 1686,
+        "eloH": 1834,
         "eloA": 1752,
         "surface": "grass"
       },
-      "ts": 1781263800000,
+      "ts": 1781350200000,
       "sofa": null
     },
     {
-      "id": "b3b470e33415f4ce8b897202cf26deac",
+      "id": "7605537eb34414647542bdb0a526bc05",
       "tour": "wta",
       "event": "Wta Queens Club Champ",
       "round": "",
       "surface": "Hierba",
-      "time": "15:00",
-      "day": "12 JUN",
-      "home": "ivajovic",
-      "away": "amandaanisimova",
+      "time": "15:30",
+      "day": "13 JUN",
+      "home": "katieboulter",
+      "away": "donnavekic",
       "odds": {
         "home": {
-          "unibet": 2.15,
-          "betsson": 2.06,
-          "tipico": 2.15,
-          "leovegas": 2.12,
-          "winamax": 2.25,
-          "betfair": 2.34,
-          "pmu": 2.05,
-          "williamhill": 2.1,
-          "nordicbet": 2.13,
-          "matchbook": 2.34,
-          "888sport": 2.2,
-          "1xbet": 2.14,
-          "everygame": 2.15,
-          "coolbet": 2.17,
-          "pinnacle": 2.28,
-          "betonlineag": 2.16,
-          "betanything": 2.2
+          "pinnacle": 1.81,
+          "nordicbet": 1.79,
+          "betsson": 1.79,
+          "winamax": 1.8,
+          "betfair": 1.86,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "everygame": 1.75,
+          "coolbet": 1.8,
+          "unibet": 1.85,
+          "1xbet": 1.82,
+          "matchbook": 1.86,
+          "betonlineag": 1.87,
+          "pmu": 1.81,
+          "leovegas": 1.85,
+          "betanything": 1.83
         },
         "away": {
-          "unibet": 1.73,
-          "betsson": 1.74,
-          "tipico": 1.62,
-          "leovegas": 1.73,
-          "winamax": 1.68,
-          "betfair": 1.73,
-          "pmu": 1.68,
-          "williamhill": 1.73,
-          "nordicbet": 1.7,
-          "matchbook": 1.73,
-          "888sport": 1.67,
-          "1xbet": 1.72,
-          "everygame": 1.62,
-          "coolbet": 1.7,
-          "pinnacle": 1.69,
-          "betonlineag": 1.74,
-          "betanything": 1.71
+          "pinnacle": 2.1,
+          "nordicbet": 2,
+          "betsson": 2,
+          "winamax": 2.05,
+          "betfair": 2.14,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "everygame": 1.95,
+          "coolbet": 2.02,
+          "unibet": 2.05,
+          "1xbet": 2,
+          "matchbook": 2.14,
+          "betonlineag": 1.98,
+          "pmu": 1.89,
+          "leovegas": 1.94,
+          "betanything": 2
         }
       },
       "model": {
-        "home": 0.3546475495606176,
-        "away": 0.6453524504393824,
+        "home": 0.5014391117091528,
+        "away": 0.4985608882908472,
         "fromModel": true,
-        "eloH": 1917,
-        "eloA": 2021,
+        "eloH": 1774,
+        "eloA": 1773,
         "surface": "grass"
       },
-      "ts": 1781269200000,
+      "ts": 1781357400000,
       "sofa": null
     }
   ],
-  "COMBOS": [
-    {
-      "id": "c1",
-      "name": "Combinada del Día",
-      "conf": 23,
-      "book": "betfair_ex_eu",
-      "legs": [
-        {
-          "id": "b3b470e33415f4ce8b897202cf26deac",
-          "sport": "tennis_wta_queens_club_champ",
-          "ts": 1781269200000,
-          "side": "away",
-          "sofa": null,
-          "match": "I. Jović – A. Anisimova",
-          "pick": "Gana A. Anisimova",
-          "odd": 1.73,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "id": "5c62ae15e22903bc908c5359a0daf128",
-          "sport": "tennis_wta_queens_club_champ",
-          "ts": 1781263800000,
-          "side": "home",
-          "sofa": null,
-          "match": "S. Cirstea – E. Raducanu",
-          "pick": "Gana S. Cirstea",
-          "odd": 2.04,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "id": "9a5427ed4e4158398e69f72d961ede9e",
-          "sport": "tennis_wta_queens_club_champ",
-          "ts": 1781263800000,
-          "side": "away",
-          "sofa": null,
-          "match": "H. Dart – K. Rakhimova",
-          "pick": "Gana K. Rakhimova",
-          "odd": 2.2,
-          "book": "betfair_ex_eu"
-        }
-      ]
-    }
-  ],
+  "COMBOS": [],
   "RECORD": [
     {
       "id": "b3b470e33415f4ce8b897202cf26deac",
@@ -961,7 +688,23 @@
       "result": "L"
     }
   ],
-  "PENDING": [],
+  "PENDING": [
+    {
+      "id": "7605537eb34414647542bdb0a526bc05",
+      "sport": "tennis_wta_queens_club_champ",
+      "ts": 1781357400000,
+      "date": "13 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "K. Boulter – D. Vekic",
+      "pickKey": "away",
+      "pickLabel": "Gana D. Vekic",
+      "odd": 2.14,
+      "book": "betfair_ex_eu",
+      "homeName": "K. Boulter",
+      "awayName": "D. Vekic"
+    }
+  ],
   "COMBO_RECORD": [
     {
       "date": "11 JUN",
@@ -1404,6 +1147,28 @@
   ],
   "COMBO_PENDING": [],
   "ARB_RECORD": [
+    {
+      "date": "13 JUN",
+      "match": "E. Raducanu – K. Rakhimova",
+      "marginPct": 0.49,
+      "profit": 0.49,
+      "ts": 1781350200000,
+      "homeName": "E. Raducanu",
+      "awayName": "K. Rakhimova",
+      "sport": "tennis_wta_queens_club_champ",
+      "legs": [
+        {
+          "pick": "Gana E. Raducanu",
+          "odd": 1.24,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "pick": "Gana K. Rakhimova",
+          "odd": 5.3,
+          "book": "unibet_fr"
+        }
+      ]
+    },
     {
       "date": "11 JUN",
       "match": "H. Dart – K. Rakhimova",
@@ -2540,6 +2305,39 @@
       "sofa": 16272766,
       "homeName": "A. Potapova",
       "awayName": "Z. Sonmez"
+    },
+    {
+      "date": "13 JUN",
+      "ts": 1781341200000,
+      "match": "B. Krejcikova – M. Linette",
+      "predHome": true,
+      "prob": 64,
+      "predName": "B. Krejcikova",
+      "sofa": null,
+      "homeName": "B. Krejcikova",
+      "awayName": "M. Linette"
+    },
+    {
+      "date": "13 JUN",
+      "ts": 1781350200000,
+      "match": "E. Raducanu – K. Rakhimova",
+      "predHome": true,
+      "prob": 62,
+      "predName": "E. Raducanu",
+      "sofa": null,
+      "homeName": "E. Raducanu",
+      "awayName": "K. Rakhimova"
+    },
+    {
+      "date": "13 JUN",
+      "ts": 1781357400000,
+      "match": "K. Boulter – D. Vekic",
+      "predHome": true,
+      "prob": 50,
+      "predName": "K. Boulter",
+      "sofa": null,
+      "homeName": "K. Boulter",
+      "awayName": "D. Vekic"
     }
   ],
   "ELO": {
