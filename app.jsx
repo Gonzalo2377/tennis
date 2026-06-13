@@ -49,6 +49,7 @@ function App() {
     case 'combos': view = <Combos t={t} go={go} />; break;
     case 'record': view = <Record t={t} go={go} />; break;
     case 'model':  view = <ModelAccuracy t={t} go={go} />; break;
+    case 'reto':   view = <Ladder t={t} go={go} />; break;
     case 'how':    view = <How t={t} go={go} />; break;
     default:       view = <Home t={t} go={go} />;
   }
@@ -87,6 +88,8 @@ function applyDaily(d){
   if(Array.isArray(d.MODEL_RECORD)) window.MODEL_RECORD = d.MODEL_RECORD;
   if(Array.isArray(d.MODEL_PENDING)) window.MODEL_PENDING = d.MODEL_PENDING;
   if(Array.isArray(d.EXCLUDE)) window.EXCLUDE = d.EXCLUDE;
+  if(d.LADDER) window.LADDER = d.LADDER;                       // reto escalera del día
+  if(Array.isArray(d.LADDER_HISTORY)) window.LADDER_HISTORY = d.LADDER_HISTORY;
   if(Array.isArray(d.PENDING)) {
     // dedup AND drop any pending already settled in the record
     const done = new Set((d.RECORD||[]).map(rkey));
@@ -118,6 +121,20 @@ async function boot(){
       }
     }
   } catch(e){ console.log('[ACEVALUE] feed unavailable, using sample data'); }
+  // ¿plan del usuario? (cookie firmada en el backend de Cloudflare)
+  window.ACE_PLAN = 'free';
+  try {
+    const r = await fetch('/api/me', { cache:'no-store' });
+    if (r.ok) { const j = await r.json(); window.ACE_PLAN = j.plan || 'free'; }
+  } catch(e){}
+  // modo dueño para verlo tú sin pagar: ?reto=CLAVE  (clave en ACE_CONFIG.ladderKey)
+  try {
+    const p = new URLSearchParams(location.search);
+    const owner = (p.get('reto')||'').trim().toLowerCase();
+    const key = ((window.ACE_CONFIG&&window.ACE_CONFIG.ladderKey)||'').trim().toLowerCase();
+    if (owner && (owner==='salir' ? localStorage.removeItem('ace_ladder') : (key&&owner===key&&localStorage.setItem('ace_ladder','1')))){}
+    if (localStorage.getItem('ace_ladder')==='1') window.ACE_PLAN = 'ladder';
+  } catch(e){}
   ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 }
 boot();

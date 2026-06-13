@@ -15,6 +15,10 @@ window.ACE_CONFIG = {
     /* Idioma por defecto: 'es' o 'en'. */
     defaultLang: 'es',
 
+    /* MODO DUEÑO del Reto Escalera: entra con  ?reto=TU_CLAVE  para verlo
+       desbloqueado sin pagar (solo en tu navegador). Sal con ?reto=salir. */
+    ladderKey: 'acereto2026',
+
     /* Sin premium por ahora. Cuando quieras activarlo, pon true y añade los
        enlaces de pago (igual que en la web de fútbol). */
     premiumEnabled: false,

@@ -224,6 +224,7 @@ function Nav({ t, lang, setLang, route, go }) {
     ['value', t.navValue, Icon.target],
     ['arb', t.navArb, Icon.scale],
     ['combos', t.navCombos, Icon.layers],
+    ['reto', t.navReto, Icon.bolt],
     ['record', t.navRecord, Icon.chart],
     ['model', t.navModel, Icon.target],
     ['how', t.navHow, Icon.book],
@@ -268,6 +269,7 @@ function MobileNav({ t, route, go }) {
     ['value', t.navValue, Icon.target],
     ['arb', t.navArb, Icon.scale],
     ['combos', t.navCombos, Icon.layers],
+    ['reto', t.navReto, Icon.bolt],
     ['record', t.navRecord, Icon.chart],
   ];
   const isActive = (k) => route.view === k || (k==='value'&&route.view==='match');

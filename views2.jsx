@@ -216,6 +216,28 @@ function Combos({ t, go }) {
   );
 }
 
+/* ============================================================ EQUITY CURVE */
+function EquityCurve() {
+  const pts = window.equitySeries ? window.equitySeries() : [{x:0,y:0}];
+  const w=600, h=120, pad=6;
+  const xs=pts.map(p=>p.x), ys=pts.map(p=>p.y);
+  const minY=Math.min(0,...ys), maxY=Math.max(...ys,1);
+  const maxX=Math.max(...xs)||1, spanY=(maxY-minY)||1;
+  const sx=(x)=>pad+(x/maxX)*(w-pad*2);
+  const sy=(y)=>h-pad-((y-minY)/spanY)*(h-pad*2);
+  const line=pts.map((p,i)=>`${i?'L':'M'}${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`).join(' ');
+  const area=`${line} L${sx(xs[xs.length-1]).toFixed(1)},${(h-pad).toFixed(1)} L${sx(0).toFixed(1)},${(h-pad).toFixed(1)} Z`;
+  const zeroY=sy(0);
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" style={{width:'100%', height:120, display:'block'}}>
+      <defs><linearGradient id="eqT" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="rgba(31,111,74,.28)"/><stop offset="100%" stopColor="rgba(31,111,74,0)"/></linearGradient></defs>
+      <line x1={pad} y1={zeroY} x2={w-pad} y2={zeroY} stroke="rgba(23,21,15,.14)" strokeWidth="1" strokeDasharray="4 4"/>
+      <path d={area} fill="url(#eqT)"/>
+      <path d={line} fill="none" stroke="var(--court)" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
+    </svg>
+  );
+}
+
 /* ============================================================ RÉCORD */
 function Record({ t, go }) {
   const s = window.recordSummary();
@@ -254,6 +276,11 @@ function Record({ t, go }) {
             <div className="stat"><div className="stat__lbl">{t.stRoi}</div><div className="stat__val" style={{color: s.roi>=0?'var(--pos)':'var(--neg)'}}>{s.roi>=0?'+':''}{s.roi.toFixed(1)}%</div></div>
             <div className="stat"><div className="stat__lbl">{t.stProfit}</div><div className="stat__val" style={{color: s.profit>=0?'var(--pos)':'var(--neg)'}}>{s.profit>=0?'+':''}{s.profit.toFixed(2)}{t.units}</div></div>
             <div className="stat"><div className="stat__lbl">{t.stPicks}</div><div className="stat__val">{s.n}</div></div>
+          </div>
+
+          <div className="panel panel--pad" style={{marginBottom:26}}>
+            <span className="eyebrow muted"><span className="dot" />{t.stProfit} ({t.units})</span>
+            <div style={{marginTop:14}}><EquityCurve /></div>
           </div>
 
           {pendingList.length>0 && (
@@ -439,7 +466,127 @@ function How({ t, go }) {
   );
 }
 
-Object.assign(window, { Arbitrage, Combos, Record, How, ModelAccuracy });
+Object.assign(window, { Arbitrage, Combos, Record, How, ModelAccuracy, Ladder, EquityCurve });
+
+/* ============================================================ RETO ESCALERA */
+function Ladder({ t, go }) {
+  const L = window.LADDER || { rungs:[], start:10, target:250, steps:10, current:0, status:'live', bank:10 };
+  const hist = window.LADDER_HISTORY || [];
+  const unlocked = (window.ACE_PLAN === 'ladder' || window.ACE_PLAN === 'all');
+  const [busy, setBusy] = useState(false);
+  const pct = Math.round((L.current / (L.steps||10)) * 100);
+
+  const subscribe = async () => {
+    setBusy(true);
+    try {
+      const r = await fetch('/api/checkout', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ tier:'ladder' }) });
+      const j = await r.json();
+      if (j.url) location.href = j.url; else { alert(j.error==='backend_not_configured'?'Pagos aún no configurados.':(j.error||'Error')); setBusy(false); }
+    } catch(e){ alert('Error de conexión'); setBusy(false); }
+  };
+
+  return (
+    <main>
+      <section className="section">
+        <div className="wrap">
+          <div className="section__head">
+            <div>
+              <span className="eyebrow"><span className="dot" />{t.ladEyebrow}</span>
+              <h2 className="section__title">{t.ladTitle}</h2>
+            </div>
+            <span className="tag tag--lime">{L.start}€ → {L.target}€</span>
+          </div>
+          <p style={{color:'var(--ink-2)', maxWidth:680, margin:'-6px 0 18px', lineHeight:1.6}}>{t.ladLead}</p>
+
+          {/* progreso */}
+          <div className="panel panel--pad" style={{marginBottom:20}}>
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom:10}}>
+              <span style={{fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--muted)', textTransform:'uppercase', letterSpacing:'.1em'}}>{t.ladStep} {L.current}/{L.steps}</span>
+              <span style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.4rem', color:'var(--court)'}}>{(L.bank||L.start).toFixed(2)}€</span>
+            </div>
+            <div style={{height:10, borderRadius:99, background:'var(--bg-2)', overflow:'hidden'}}>
+              <div style={{height:'100%', width:pct+'%', background:'linear-gradient(90deg,var(--court),var(--lime))', borderRadius:99, transition:'width .4s'}} />
+            </div>
+          </div>
+
+          {/* escalera de peldaños */}
+          <div className="panel" style={{overflow:'hidden'}}>
+            {L.rungs.map((r,i)=>{
+              const done = r.result==='W';
+              const lost = r.result==='L';
+              const today = r.result==='today';
+              const future = !r.result;
+              const locked = today && !unlocked;
+              return (
+                <div key={i} style={{display:'flex', alignItems:'center', gap:12, padding:'13px 16px', borderBottom: i<L.rungs.length-1?'1px solid var(--line-soft)':'none',
+                  background: today?'rgba(174,225,0,.07)':'transparent', opacity: future?0.5:1}}>
+                  <span style={{width:30, height:30, borderRadius:'50%', flexShrink:0, display:'grid', placeItems:'center', fontFamily:'var(--font-head)', fontWeight:800, fontSize:'.85rem',
+                    background: done?'var(--pos)':lost?'var(--neg)':today?'var(--court)':'var(--bg-2)', color: (done||lost||today)?'#fff':'var(--muted)'}}>
+                    {done?'✓':lost?'✗':r.n}
+                  </span>
+                  <div style={{flex:1, minWidth:0}}>
+                    {today && locked ? (
+                      <div style={{fontFamily:'var(--font-head)', fontWeight:700, color:'var(--court)'}}>🔒 {t.ladTodayLocked}</div>
+                    ) : today ? (
+                      <div><div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.95rem'}}>{r.pick||t.ladSoon}</div>
+                        {r.match && <div className="vb-sub">{r.match}{r.book?' · '+(window.bookById?window.bookById(r.book).name:r.book):''}</div>}</div>
+                    ) : (done||lost) ? (
+                      <div><div style={{fontFamily:'var(--font-head)', fontWeight:700, fontSize:'.92rem', textDecoration: lost?'line-through':'none', color: lost?'var(--muted)':'var(--ink)'}}>{r.pick}</div>
+                        <div className="vb-sub">{r.match}</div></div>
+                    ) : (
+                      <div style={{fontFamily:'var(--font-mono)', fontSize:'.8rem', color:'var(--muted)'}}>{t.ladStep} {r.n}</div>
+                    )}
+                  </div>
+                  <div style={{textAlign:'right', whiteSpace:'nowrap'}}>
+                    {r.odd && (today&&locked ? <span style={{filter:'blur(5px)', fontFamily:'var(--font-mono)', fontWeight:700}}>1.30</span>
+                      : <span style={{fontFamily:'var(--font-mono)', fontWeight:700, color:'var(--court)'}}>{r.odd.toFixed(2)}</span>)}
+                    {r.bank!=null && <div className="vb-sub">{r.bank.toFixed(2)}€</div>}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* paywall */}
+          {!unlocked && (
+            <div className="panel panel--pad" style={{marginTop:20, textAlign:'center', border:'2px solid var(--lime-deep)'}}>
+              <div style={{fontFamily:'var(--font-head)', fontWeight:800, fontSize:'1.3rem', marginBottom:6}}>{t.ladCtaTitle}</div>
+              <p style={{color:'var(--ink-2)', maxWidth:460, margin:'0 auto 14px', lineHeight:1.55}}>{t.ladCtaLead}</p>
+              <button className="btn btn--lime" onClick={subscribe} disabled={busy} style={{fontSize:'1.05rem', padding:'13px 26px'}}>
+                {busy?'…':t.ladCtaBtn}
+              </button>
+              <div style={{fontFamily:'var(--font-mono)', fontSize:'.68rem', color:'var(--muted)', marginTop:10}}>{t.ladCtaFine}</div>
+            </div>
+          )}
+          {unlocked && (
+            <div style={{marginTop:14, fontFamily:'var(--font-mono)', fontSize:'.72rem', color:'var(--pos)', textAlign:'center'}}>✅ {t.ladActive}</div>
+          )}
+
+          {/* historial de escaleras */}
+          {hist.length>0 && (
+            <div style={{marginTop:30}}>
+              <span className="eyebrow muted"><span className="dot" />{t.ladHistTitle}</span>
+              <div className="grid grid--2" style={{marginTop:14}}>
+                {hist.map((h,i)=>(
+                  <div className="panel panel--pad" key={i} style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                    <div>
+                      <div style={{fontFamily:'var(--font-head)', fontWeight:700}}>{h.start}€ → {h.target}€</div>
+                      <div className="vb-sub">{h.date}</div>
+                    </div>
+                    <span className={'res-pill '+(h.result==='completed'?'w':'l')}>{h.result==='completed'?t.ladDone:`${t.ladBroke} ${h.brokeAt} · ${h.reached}€`}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="disclaimer" style={{marginTop:24}}><b>{t.discTitle}</b> {t.disc}</div>
+        </div>
+      </section>
+      <Footer t={t} go={go} />
+    </main>
+  );
+}
 
 /* ============================================================ ACIERTOS DEL MODELO */
 function ModelAccuracy({ t, go }) {

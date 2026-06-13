@@ -241,11 +241,42 @@ window.MODEL_RECORD = window.MODEL_RECORD || [
   { date:'05 JUN', match:'A. Ilagan – Y. Shimizu', predName:'A. Ilagan', prob:57, ok:true },
 ];
 window.MODEL_PENDING = window.MODEL_PENDING || [];
+/* ============================================================
+   RETO ESCALERA — banca 10€ → meta 250€ en ~10 peldaños.
+   Cada día, el pick más claro (cuota baja). Si la escalera cae,
+   empieza otra (incluida en la suscripción). El robot la genera.
+   ============================================================ */
+window.LADDER = window.LADDER || {
+  id: 'L1', start: 10, target: 250, steps: 10, current: 3, status: 'live',
+  bank: 27.44,                       // banca tras los peldaños superados
+  rungs: [
+    { n:1, match:'Sinner – Bublik', pick:'Gana J. Sinner', odd:1.30, book:'bet365', bank:13.00, result:'W' },
+    { n:2, match:'Sabalenka – Mertens', pick:'Gana A. Sabalenka', odd:1.36, book:'betfair', bank:17.68, result:'W' },
+    { n:3, match:'Alcaraz – Norrie', pick:'Gana C. Alcaraz', odd:1.33, book:'winamax', bank:23.51, result:'W' },
+    { n:4, match:null, pick:null, odd:null, book:null, bank:null, result:'today' },
+    { n:5 }, { n:6 }, { n:7 }, { n:8 }, { n:9 }, { n:10 },
+  ],
+};
+window.LADDER_HISTORY = window.LADDER_HISTORY || [
+  { id:'L0', start:10, target:250, brokeAt:6, reached:53.7, result:'broken', date:'28 MAY' },
+];
+window.MODEL_PENDING = window.MODEL_PENDING;
 window.modelSummary = function(){
   const r = window.MODEL_RECORD || [];
   const ok = r.filter(x=>x.ok).length;
   const acc = r.length ? (ok/r.length)*100 : 0;
   return { n:r.length, ok, ko:r.length-ok, acc };
+};
+/* cumulative profit points for the equity curve (1u flat per pick) */
+window.equitySeries = function(){
+    let cum=0; const pts=[{x:0,y:0}];
+    (window.RECORD||[]).filter(x=>x&&!x.legs&&x.result).forEach((x,i)=>{
+        const odd=(+x.odd)||0;
+        if(x.result==='W') cum += (odd-1);
+        else if(x.result==='L') cum -= 1;
+        pts.push({x:i+1, y:+cum.toFixed(2)});
+    });
+    return pts;
 };
 window.recordSummary = function(){
     const r = window.RECORD || [];
@@ -281,7 +312,15 @@ window.arbSummary = function(){
 window.I18N = {
   es: {
     brandSub:'TENIS · VALOR',
-    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navModel:'Aciertos', navHow:'Cómo funciona', statusPend:'EN JUEGO',
+    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navModel:'Aciertos', navReto:'Reto', navHow:'Cómo funciona', statusPend:'EN JUEGO',
+    ladEyebrow:'RETO ESCALERA · PREMIUM', ladTitle:'El Reto 10 → 250',
+    ladLead:'Cada día, el pick más claro (cuota baja) para multiplicar la banca peldaño a peldaño. De 10€ a 250€ en 10 días. Si la escalera cae, empezamos otra sin coste — sigues suscrito hasta que se complete una.',
+    ladStep:'Peldaño', ladTodayLocked:'Pick de hoy bloqueado', ladSoon:'Pick disponible pronto',
+    ladCtaTitle:'Desbloquea el Reto · 2,49€/mes',
+    ladCtaLead:'Recibe el pick de cada peldaño. Si la escalera se rompe, la siguiente va incluida. Cancela cuando quieras.',
+    ladCtaBtn:'Suscribirme · 2,49€/mes', ladCtaFine:'Pago seguro con Stripe · +18 · Juego responsable',
+    ladActive:'Suscripción activa — tienes el pick de cada peldaño',
+    ladHistTitle:'Escaleras anteriores', ladDone:'COMPLETADA', ladBroke:'Rota en peldaño',
     modelEyebrow:'PRECISIÓN DEL MODELO · NO ES PICK', modelTitle:'Aciertos del modelo',
     modelLead:'Para cada partido del tablero, nuestro modelo predice un ganador. Aquí ves si acertó o no. Es solo un termómetro de precisión: NO son apuestas y NO cuentan para el ROI ni el récord.',
     modelAcc:'Acierto del modelo', modelHits:'Aciertos', modelMiss:'Fallos', modelN:'Partidos',
@@ -339,7 +378,15 @@ window.I18N = {
   },
   en: {
     brandSub:'TENNIS · VALUE',
-    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navModel:'Accuracy', navHow:'How it works', statusPend:'LIVE',
+    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navModel:'Accuracy', navReto:'Challenge', navHow:'How it works', statusPend:'LIVE',
+    ladEyebrow:'LADDER CHALLENGE · PREMIUM', ladTitle:'The 10 → 250 Challenge',
+    ladLead:'Each day, the clearest pick (low odds) to compound the bank rung by rung. From 10€ to 250€ in 10 days. If the ladder breaks, we start another at no cost — you stay subscribed until one completes.',
+    ladStep:'Rung', ladTodayLocked:'Today\u2019s pick locked', ladSoon:'Pick available soon',
+    ladCtaTitle:'Unlock the Challenge · 2.49€/mo',
+    ladCtaLead:'Get the pick for every rung. If the ladder breaks, the next one is included. Cancel anytime.',
+    ladCtaBtn:'Subscribe · 2.49€/mo', ladCtaFine:'Secure payment with Stripe · 18+ · Gamble responsibly',
+    ladActive:'Subscription active — you get every rung\u2019s pick',
+    ladHistTitle:'Previous ladders', ladDone:'COMPLETED', ladBroke:'Broke at rung',
     modelEyebrow:'MODEL ACCURACY · NOT A PICK', modelTitle:'Model accuracy',
     modelLead:'For every match on the board, our model predicts a winner. Here you see if it was right. It\u2019s just an accuracy gauge: these are NOT bets and do NOT count toward ROI or the record.',
     modelAcc:'Model hit rate', modelHits:'Correct', modelMiss:'Wrong', modelN:'Matches',

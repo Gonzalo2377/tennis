@@ -507,10 +507,10 @@ async function main(){
   }
 
   // ---- track record (settle finished picks via scores) ----
-  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[], MODEL_RECORD=[], MODEL_PENDING=[];
-  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; MODEL_RECORD=prev.MODEL_RECORD||[]; MODEL_PENDING=prev.MODEL_PENDING||[]; } catch(e){}
+  let RECORD=[], PENDING=[], COMBO_RECORD=[], COMBO_PENDING=[], ARB_RECORD=[], ARB_PENDING=[], MODEL_RECORD=[], MODEL_PENDING=[], LADDER=null, LADDER_HISTORY=[];
+  try { const prev=JSON.parse(fs.readFileSync(OUT,'utf8')); RECORD=prev.RECORD||[]; PENDING=prev.PENDING||[]; COMBO_RECORD=prev.COMBO_RECORD||[]; COMBO_PENDING=prev.COMBO_PENDING||[]; ARB_RECORD=prev.ARB_RECORD||[]; ARB_PENDING=prev.ARB_PENDING||[]; MODEL_RECORD=prev.MODEL_RECORD||[]; MODEL_PENDING=prev.MODEL_PENDING||[]; LADDER=prev.LADDER||null; LADDER_HISTORY=prev.LADDER_HISTORY||[]; } catch(e){}
   // RESET=1 → empieza el historial de cero (para limpiar datos viejos corruptos)
-  if (process.env.RESET==='1'){ RECORD=[]; PENDING=[]; COMBO_RECORD=[]; COMBO_PENDING=[]; ARB_RECORD=[]; ARB_PENDING=[]; MODEL_RECORD=[]; MODEL_PENDING=[]; console.log('· RESET: historial vaciado, empezando limpio'); }
+  if (process.env.RESET==='1'){ RECORD=[]; PENDING=[]; COMBO_RECORD=[]; COMBO_PENDING=[]; ARB_RECORD=[]; ARB_PENDING=[]; MODEL_RECORD=[]; MODEL_PENDING=[]; LADDER=null; LADDER_HISTORY=[]; console.log('· RESET: historial vaciado, empezando limpio'); }
 
   // dedup
   const dedupe=(arr,key)=>{const s=new Set();return arr.filter(o=>{const k=key(o);if(s.has(k))return false;s.add(k);return true;});};
@@ -677,6 +677,60 @@ async function main(){
     });
   }
 
+  // ---- RETO ESCALERA: liquida el peldaño de hoy y genera el siguiente ----
+  // Banca 10€ → meta 250€ en ~10 peldaños, cada uno con el pick MÁS CLARO del día.
+  try {
+    const LAD_START=10, LAD_TARGET=250, LAD_STEPS=10;
+    const finishedPairs=(espn.finished||[]).map(f=>({a:surnameKey(f.home),b:surnameKey(f.away),w:surnameKey(f.winner)}));
+    const resolvePick=(match, pickName)=>{
+      const nm=(match||'').split('–').map(s=>surnameKey(s)); if(nm.length<2) return null;
+      const f=finishedPairs.find(v=>(v.a===nm[0]&&v.b===nm[1])||(v.a===nm[1]&&v.b===nm[0]));
+      if(!f) return null; return f.w===surnameKey((pickName||'').replace(/^Gana\s+/i,''));
+    };
+    if(!LADDER) LADDER={ id:'L'+Date.now().toString(36), start:LAD_START, target:LAD_TARGET, steps:LAD_STEPS, current:0, status:'live', bank:LAD_START, rungs:[] };
+
+    // 1) liquidar el peldaño marcado "today" si su partido ya terminó
+    const todayRung=LADDER.rungs.find(r=>r.result==='today');
+    if(todayRung){
+      const res=resolvePick(todayRung.match, todayRung.pick);
+      if(res===true){ todayRung.result='W'; LADDER.current++; LADDER.bank=todayRung.bank; }
+      else if(res===false){
+        todayRung.result='L';
+        LADDER_HISTORY.unshift({ id:LADDER.id, start:LADDER.start, target:LADDER.target, brokeAt:todayRung.n, reached:+((LADDER.bank)||LADDER.start).toFixed(2), result:'broken', date:todayRung.date||today });
+        LADDER=null;   // se rompió → nueva escalera
+      }
+    }
+    // 2) ¿completada?
+    if(LADDER && LADDER.current>=LADDER.steps){
+      LADDER_HISTORY.unshift({ id:LADDER.id, start:LADDER.start, target:LADDER.target, reached:+LADDER.bank.toFixed(2), result:'completed', date:today });
+      LADDER=null;
+    }
+    if(!LADDER) LADDER={ id:'L'+Date.now().toString(36), start:LAD_START, target:LAD_TARGET, steps:LAD_STEPS, current:0, status:'live', bank:LAD_START, rungs:[] };
+
+    // 3) generar el peldaño de HOY si no hay uno pendiente: el pick MÁS CLARO (cuota más baja, prob alta)
+    const hasToday=LADDER.rungs.some(r=>r.result==='today');
+    if(!hasToday && LADDER.current<LADDER.steps){
+      // candidatos: favoritos creíbles del modelo, cuota 1.20–1.55, que empiecen pronto
+      const cand=MATCHES.map(m=>{ const v=matchValue(m); const mk=marketProbs(m); const mdl=(m.model&&typeof m.model.home==='number')?m.model:mk;
+          const k=mdl.home>=mdl.away?'home':'away'; const best=saneBest(m.odds[k]); return {m,k,prob:mdl[k],odd:best.price,book:best.book}; })
+        .filter(c=> c.odd>=1.18 && c.odd<=1.55 && c.prob>=0.66 && new Date(c.m._commence).getTime()>Date.now()+30*60*1000)
+        .sort((a,b)=> a.odd-b.odd);   // el más claro = cuota más baja
+      const pick=cand[0];
+      if(pick){
+        const stepN=LADDER.current+1;
+        const newBank=+((LADDER.bank||LADDER.start)*pick.odd).toFixed(2);
+        LADDER.rungs=LADDER.rungs.filter(r=>r.result==='W'||r.result==='L');   // limpia placeholders
+        LADDER.rungs.push({ n:stepN, match:`${PLAYERS[pick.m.home].name} – ${PLAYERS[pick.m.away].name}`,
+          pick:`Gana ${PLAYERS[pick.k==='home'?pick.m.home:pick.m.away].name}`, odd:+pick.odd.toFixed(2), book:pick.book,
+          bank:newBank, result:'today', date:today, sofa:pick.m.sofa||null });
+        // rellena peldaños futuros vacíos para el visual
+        for(let i=stepN+1;i<=LADDER.steps;i++) LADDER.rungs.push({ n:i });
+      }
+    }
+    LADDER_HISTORY=LADDER_HISTORY.slice(0,12);
+    console.log(`· Reto escalera: peldaño ${LADDER.current}/${LADDER.steps} · banca ${(LADDER.bank||LADDER.start).toFixed(2)}€`);
+  } catch(e){ console.log('· reto escalera error:', e.message); }
+
   // already-settled signature (match+pick normalized) → never re-add a pick that's in the record
   const recSig=new Set(RECORD.map(sSig));
   // clean any pending that's already settled (fixes the "EN JUEGO + GANADA" duplicate)
@@ -750,6 +804,7 @@ async function main(){
     PLAYERS:keepPlayers, BOOKS:keepBooks, MATCHES:keepMatches, COMBOS:keepCombos,
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
     MODEL_RECORD: MODEL_RECORD.slice(0,400), MODEL_PENDING,
+    LADDER, LADDER_HISTORY,
     ELO:LIVE_ELO, ELO_DONE, RANK_ELO, RANK_TS,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
