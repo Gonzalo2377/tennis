@@ -725,7 +725,7 @@ async function main(){
           bank:newBank, result:'today', date:today, sofa:pick.m.sofa||null });
         // rellena peldaños futuros vacíos para el visual
         for(let i=stepN+1;i<=LADDER.steps;i++) LADDER.rungs.push({ n:i });
-      }
+      } else { console.log('· Reto escalera: sin pick claro hoy, esperamos a mañana'); }
     }
     LADDER_HISTORY=LADDER_HISTORY.slice(0,12);
     console.log(`· Reto escalera: peldaño ${LADDER.current}/${LADDER.steps} · banca ${(LADDER.bank||LADDER.start).toFixed(2)}€`);
