@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T07:04:14.149Z",
+    "updatedAt": "2026-06-14T07:19:36.596Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -13,8 +13,8 @@
       "players": 3295
     },
     "credits": {
-      "remaining": 113,
-      "used": 387
+      "remaining": 110,
+      "used": 390
     }
   },
   "PLAYERS": {
@@ -26,8 +26,7 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/455_d-vekic.jpg"
+      "form": []
     },
     "emmaraducanu": {
       "id": "emmaraducanu",
@@ -37,8 +36,7 @@
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2996_e-raducanu.jpg"
+      "form": []
     },
     "lorenzosonego": {
       "id": "lorenzosonego",
@@ -48,8 +46,7 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
+      "form": []
     },
     "nikolozbasilashv": {
       "id": "nikolozbasilashv",
@@ -59,8 +56,7 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/424_n-basilashvili.jpg"
+      "form": []
     },
     "lulusun": {
       "id": "lulusun",
@@ -245,30 +241,30 @@
       "odds": {
         "home": {
           "bwin": 1.6,
-          "1xbet": 1.55,
-          "22bet": 1.55,
+          "1xbet": 1.53,
+          "22bet": 1.53,
           "bet365": 1.57,
           "betway": 1.55,
-          "betsson": 1.55,
+          "betsson": 1.53,
           "bwinbe": 1.6,
           "888sport": 1.571,
-          "pinnacle": 1.632,
+          "pinnacle": 1.588,
           "ladbrokes": 1.6,
-          "betfair": 1.64,
+          "betfair": 1.61,
           "williamhill": 1.588
         },
         "away": {
           "bwin": 2.25,
-          "1xbet": 2.302,
-          "22bet": 2.302,
+          "1xbet": 2.341,
+          "22bet": 2.341,
           "bet365": 2.25,
-          "betway": 2.375,
-          "betsson": 2.31,
+          "betway": 2.4,
+          "betsson": 2.35,
           "bwinbe": 2.25,
           "888sport": 2.375,
-          "pinnacle": 2.35,
+          "pinnacle": 2.45,
           "ladbrokes": 2.25,
-          "betfair": 2.56,
+          "betfair": 2.6,
           "williamhill": 2.3
         }
       },
@@ -330,7 +326,8 @@
         "surface": "grass"
       },
       "ts": 1781427600000,
-      "sofa": null
+      "sofa": null,
+      "live": false
     },
     {
       "id": "5ae466fb9d899470c2d74c5deccc6526",
@@ -345,10 +342,10 @@
       "odds": {
         "home": {
           "pinnacle": 2.22,
-          "888sport": 2.2,
+          "888sport": 2.3,
           "matchbook": 2.32,
-          "betfair": 2.3,
-          "1xbet": 2.22,
+          "betfair": 2.32,
+          "1xbet": 2.23,
           "williamhill": 2.2,
           "coolbet": 2.2,
           "unibet": 2.2,
@@ -364,10 +361,10 @@
         },
         "away": {
           "pinnacle": 1.73,
-          "888sport": 1.67,
+          "888sport": 1.61,
           "matchbook": 1.74,
-          "betfair": 1.74,
-          "1xbet": 1.68,
+          "betfair": 1.75,
+          "1xbet": 1.67,
           "williamhill": 1.67,
           "coolbet": 1.68,
           "unibet": 1.67,
@@ -420,12 +417,12 @@
           "sofa": null,
           "match": "L. Sonego – N. Basilashvili",
           "pick": "Gana N. Basilashvili",
-          "odd": 2.35,
+          "odd": 2.45,
           "book": "pinnacle"
         },
         {
           "id": "opid1200279372066384",
-          "sport": "tennis_oddspapi_wta",
+          "sport": "tennis_prev",
           "ts": 1781427600000,
           "side": "home",
           "sofa": null,
@@ -2457,7 +2454,16 @@
       "awayName": "E. Raducanu"
     }
   ],
-  "LADDER": null,
+  "LADDER": {
+    "id": "Lmqdgetn5",
+    "start": 10,
+    "target": 250,
+    "steps": 10,
+    "current": 0,
+    "status": "live",
+    "bank": 10,
+    "rungs": []
+  },
   "LADDER_HISTORY": [],
   "ELO": {
     "sinner": 2180,
