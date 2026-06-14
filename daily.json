@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T12:01:12.565Z",
+    "updatedAt": "2026-06-14T15:01:14.926Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -440,6 +440,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200285972083316",
+      "date": "14 JUN",
+      "match": "L. Sonego – N. Basilashvili",
+      "pick": "Gana N. Basilashvili",
+      "odd": 2.56,
+      "book": "betfair-ex",
+      "result": "W"
+    },
+    {
       "id": "7605537eb34414647542bdb0a526bc05",
       "date": "13 JUN",
       "match": "K. Boulter – D. Vekic",
@@ -744,24 +753,37 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "opid1200285972083316",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1781427600000,
-      "date": "14 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "L. Sonego – N. Basilashvili",
-      "pickKey": "away",
-      "pickLabel": "Gana N. Basilashvili",
-      "odd": 2.56,
-      "book": "betfair-ex",
-      "homeName": "L. Sonego",
-      "awayName": "N. Basilashvili"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "14 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 10.16,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Vekic – E. Raducanu",
+          "pick": "Gana E. Raducanu",
+          "odd": 1.73,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "L. Sonego – N. Basilashvili",
+          "pick": "Gana N. Basilashvili",
+          "odd": 2.35,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "L. Sun – A. Kalinina",
+          "pick": "Gana L. Sun",
+          "odd": 2.5,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "11 JUN",
       "name": "Combinada del Día",
@@ -1201,48 +1223,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "14 JUN·c1",
-      "date": "14 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "5ae466fb9d899470c2d74c5deccc6526",
-          "sport": "tennis_wta_queens_club_champ",
-          "side": "away",
-          "sofa": null,
-          "match": "D. Vekic – E. Raducanu",
-          "pick": "Gana E. Raducanu",
-          "odd": 1.73,
-          "homeName": "D. Vekic",
-          "awayName": "E. Raducanu"
-        },
-        {
-          "id": "opid1200285972083316",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": null,
-          "match": "L. Sonego – N. Basilashvili",
-          "pick": "Gana N. Basilashvili",
-          "odd": 2.35,
-          "homeName": "L. Sonego",
-          "awayName": "N. Basilashvili"
-        },
-        {
-          "id": "opid1200279372066384",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "L. Sun – A. Kalinina",
-          "pick": "Gana L. Sun",
-          "odd": 2.5,
-          "homeName": "L. Sun",
-          "awayName": "A. Kalinina"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "13 JUN",
@@ -2055,6 +2036,20 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "14 JUN",
+      "match": "D. Vekic – E. Raducanu",
+      "predName": "E. Raducanu",
+      "prob": 59,
+      "ok": false
+    },
+    {
+      "date": "14 JUN",
+      "match": "L. Sonego – N. Basilashvili",
+      "predName": "L. Sonego",
+      "prob": 57,
+      "ok": false
+    },
+    {
       "date": "13 JUN",
       "match": "K. Boulter – D. Vekic",
       "predName": "K. Boulter",
@@ -2427,17 +2422,6 @@
     {
       "date": "14 JUN",
       "ts": 1781427600000,
-      "match": "L. Sonego – N. Basilashvili",
-      "predHome": true,
-      "prob": 57,
-      "predName": "L. Sonego",
-      "sofa": null,
-      "homeName": "L. Sonego",
-      "awayName": "N. Basilashvili"
-    },
-    {
-      "date": "14 JUN",
-      "ts": 1781427600000,
       "match": "L. Sun – A. Kalinina",
       "predHome": false,
       "prob": 59,
@@ -2445,17 +2429,6 @@
       "sofa": null,
       "homeName": "L. Sun",
       "awayName": "A. Kalinina"
-    },
-    {
-      "date": "14 JUN",
-      "ts": 1781440200000,
-      "match": "D. Vekic – E. Raducanu",
-      "predHome": false,
-      "prob": 59,
-      "predName": "E. Raducanu",
-      "sofa": null,
-      "homeName": "D. Vekic",
-      "awayName": "E. Raducanu"
     }
   ],
   "LADDER": {
