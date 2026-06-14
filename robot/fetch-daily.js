@@ -21,6 +21,7 @@ const APITENNIS_KEY = process.env.APITENNIS_KEY || '';
 const apiTennis = require('./results-api.js');
 const fetchRankElo = require('./rankings-api.js');
 const espnResults = require('./espn-results.js');
+let LAST_FINISHED = [];   // pares terminados (api-tennis+ESPN) accesibles fuera del bloque de liquidación (reto escalera)
 const sofaResults = require('./sofascore-results.js');
 const sofaRankings = require('./sofascore-rankings.js');
 const REGIONS = process.env.ODDS_REGIONS || 'eu';
@@ -396,6 +397,7 @@ async function main(){
       const oA = mkt.outcomes.find(o=>o.name===ev.away_team);
       if (!oH || !oA) return;
       const bid = bk.key;
+      if (/marathon/i.test(bid) || /marathon/i.test(bk.title||'')) return;   // casa con cuotas raras → fuera
       BOOKS[bid] = BOOKS[bid] || { id:bid, name:bk.title||bid, abbr:(bk.title||bid).replace(/[^a-zA-Z0-9]/g,'').slice(0,3).toUpperCase(), color: COLORS[Object.keys(BOOKS).length % COLORS.length] };
       oddsH[bid] = +oH.price; oddsA[bid] = +oA.price;
     });
@@ -547,6 +549,7 @@ async function main(){
       try { espn = await espnResults(5); console.log(`· ESPN: ${espn.winners.length} ganadores · ${espn.finished.length} partidos terminados`); }
       catch(e){ console.log('· ESPN no disponible:', e.message); }
       espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
+      LAST_FINISHED = espn.finished;
       const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];   // ESPN (gratis) + api-tennis + manual
       if (manualWinners.length) console.log(`· liquidando con ${manualWinners.length} ganadores (api-tennis + results.json)`);
       // SofaScore por ID exacto (challenger/ITF/todo, sin errores de nombres)
@@ -681,7 +684,7 @@ async function main(){
   // Banca 10€ → meta 250€ en ~10 peldaños, cada uno con el pick MÁS CLARO del día.
   try {
     const LAD_START=10, LAD_TARGET=250, LAD_STEPS=10;
-    const finishedPairs=(espn.finished||[]).map(f=>({a:surnameKey(f.home),b:surnameKey(f.away),w:surnameKey(f.winner)}));
+    const finishedPairs=(LAST_FINISHED||[]).map(f=>({a:surnameKey(f.home),b:surnameKey(f.away),w:surnameKey(f.winner)}));
     const resolvePick=(match, pickName)=>{
       const nm=(match||'').split('–').map(s=>surnameKey(s)); if(nm.length<2) return null;
       const f=finishedPairs.find(v=>(v.a===nm[0]&&v.b===nm[1])||(v.a===nm[1]&&v.b===nm[0]));
