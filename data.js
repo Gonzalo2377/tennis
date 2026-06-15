@@ -144,7 +144,11 @@ window.findArbs = function(matches){
         });
         const inv = legs.reduce((s,l)=>s+1/l.price,0);
         const marginPct = (1-inv)*100;
-        out.push({ m, legs, inv, marginPct, hasArb: marginPct>0.01, suspicious: legs.some(l=>l.suspicious) });
+        const susp = legs.some(l=>l.suspicious);
+        // un surebet real rara vez supera ~6%. Si el margen es irreal (>8%) o hay una cuota
+        // atípica (outlier vs el resto de casas), casi seguro es una cuota obsoleta/errónea → no es válido.
+        const credible = marginPct>0.01 && marginPct<=8 && !susp;
+        out.push({ m, legs, inv, marginPct, hasArb: credible, suspicious: susp });
     });
     return out.sort((a,b)=>b.marginPct-a.marginPct);
 };
