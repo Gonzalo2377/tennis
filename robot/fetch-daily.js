@@ -452,7 +452,19 @@ async function main(){
 
   MATCHES.sort((a,b)=> new Date(a._commence)-new Date(b._commence));
 
-  // value picks + combos
+  // ---- FOTOS (siempre, independiente de la liquidación) ----
+  // Se aplican SOLO desde la biblioteca player-photos.json. Así, corra lo que corra
+  // (odds o results), todos los jugadores con foto en la biblioteca la tienen.
+  try {
+    const canonF = require('./name-canon.js').canonSurname;
+    const simpleF = (n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
+    let lib={}; try { lib=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; } catch(e){}
+    const noPhoto=[];
+    Object.values(PLAYERS).forEach(p=>{ const u=lib[canonF(p.name)]||lib[simpleF(p.name)]; if(u) p.photo=u; else if(!p.photo) noPhoto.push(p.name); });
+    if (noPhoto.length) console.log(`· ${noPhoto.length} jugadores SIN foto en biblioteca: ${noPhoto.join(', ')}`);
+  } catch(e){ console.log('· fotos biblioteca error:', e.message); }
+
+
   const valued = MATCHES.map(m=>({m,v:matchValue(m)})).filter(x=>x.v.positive).sort((a,b)=>b.v.edge-a.v.edge);
   const label = (m,k)=> 'Gana ' + PLAYERS[k==='home'?m.home:m.away].name;
   const legOf = (x)=>({ id:x.m.id, sport:x.m._sport, ts:new Date(x.m._commence).getTime(), side:x.v.pick.k, sofa:x.m.sofa||null,
