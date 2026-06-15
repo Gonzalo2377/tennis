@@ -277,7 +277,7 @@ function dedupeBooks(MATCHES, BOOKS){
   Object.assign(BOOKS, newBooks);
 }
 function bestPrice(map){ let b=null; for(const k in map) if(!b||map[k]>b.price) b={book:k,price:map[k]}; return b; }
-function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&p>med*1.6)continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
+function saneBest(map){ const v=Object.values(map).sort((x,y)=>x-y),n=v.length; const med=n?(n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2):0; let b=null; for(const k in map){const p=map[k]; if(med&&(p>med*1.6||p<med*0.55))continue; if(!b||p>b.price)b={book:k,price:p};} return b||bestPrice(map); }
 function marketProbs(m){ const avg=o=>{const v=Object.values(o);return v.reduce((s,x)=>s+1/x,0)/v.length;}; const a=avg(m.odds.home),b=avg(m.odds.away),s=a+b; return {home:a/s,away:b/s}; }
 function matchValue(m){ const mk=marketProbs(m); const useModel=m.model&&typeof m.model.home==='number'; const prob=useModel?{home:m.model.home,away:m.model.away}:mk; const MIN_P=0.35,MAX_ODD=4.50,MAX_GAP=0.18; const minEdge=(odd)=>Math.max(2,2*Math.pow(odd/1.5,3.2)); const all=['home','away'].map(k=>{const best=saneBest(m.odds[k]);const ev=(prob[k]*best.price-1)*100;const gap=Math.abs(prob[k]-mk[k]);const eligible=prob[k]>=MIN_P&&best.price<=MAX_ODD&&ev>=minEdge(best.price)&&gap<=MAX_GAP;return{k,p:prob[k],best,edge:ev,eligible};}); const outs=[...all].sort((a,b)=>(b.eligible-a.eligible)||(b.edge-a.edge)); const top=outs[0]; return {pick:top,edge:top.edge,positive:top.eligible}; }
 /* surebet: back both sides at their best book; marginPct>0 → guaranteed profit */
@@ -724,7 +724,9 @@ async function main(){
 
     // 3) generar el peldaño de HOY si no hay uno pendiente: el pick MÁS CLARO (cuota más baja, prob alta)
     const hasToday=LADDER.rungs.some(r=>r.result==='today');
-    if(!hasToday && LADDER.current<LADDER.steps){
+    // sólo un peldaño por día: si ya se jugó/generó uno con la fecha de HOY, esperamos a mañana
+    const settledToday=LADDER.rungs.some(r=>(r.result==='W'||r.result==='L') && r.date===today);
+    if(!hasToday && !settledToday && LADDER.current<LADDER.steps){
       // candidatos: favoritos creíbles del modelo, cuota 1.20–1.55, que empiecen pronto
       const cand=MATCHES.map(m=>{ const v=matchValue(m); const mk=marketProbs(m); const mdl=(m.model&&typeof m.model.home==='number')?m.model:mk;
           const k=mdl.home>=mdl.away?'home':'away'; const best=saneBest(m.odds[k]); return {m,k,prob:mdl[k],odd:best.price,book:best.book}; })

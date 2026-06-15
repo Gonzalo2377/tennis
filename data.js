@@ -95,7 +95,7 @@ window.saneBest = function(map){
     const v=Object.values(map).sort((a,b)=>a-b), n=v.length;
     const med = n ? (n%2 ? v[(n-1)/2] : (v[n/2-1]+v[n/2])/2) : 0;
     let best=null;
-    for(const b in map){ const p=map[b]; if(med && p>med*1.6) continue; if(!best||p>best.price) best={book:b,price:p}; }
+    for(const b in map){ const p=map[b]; if(med && (p>med*1.6 || p<med*0.55)) continue; if(!best||p>best.price) best={book:b,price:p}; }
     return best || { book:Object.keys(map)[0], price:Object.values(map)[0] };
 };
 /* de-vig 2-way market consensus (avg of 1/odds per side, normalised) */
