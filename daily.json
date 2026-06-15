@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-15T12:00:23.579Z",
+    "updatedAt": "2026-06-15T14:00:35.929Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -4021,13 +4021,50 @@
   ],
   "RECORD": [
     {
+      "id": "4575c7d38f66dbe713d74ac9a486e02a",
+      "date": "15 JUN",
+      "match": "F. Cobolli – F. Tiafoe",
+      "pick": "Gana F. Tiafoe",
+      "odd": 1.81,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
+      "date": "15 JUN",
+      "match": "E. Alexandrova – A. Potapova",
+      "pick": "Gana E. Alexandrova",
+      "oddOrig": 2.04,
+      "odd": 1,
+      "book": "unibet_se",
+      "result": "V"
+    },
+    {
+      "id": "fe68d83f6dfa8e38325aac2ef394ae42",
+      "date": "15 JUN",
+      "match": "M. Timofeeva – R. Zarazua",
+      "pick": "Gana R. Zarazua",
+      "odd": 2.48,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "8f1ab36c9853bddf2ae26b9fc2a1a381",
+      "date": "15 JUN",
+      "match": "N. Borges – F. Auger-Aliassime",
+      "pick": "Gana N. Borges",
+      "odd": 3.45,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "f9320f5853be6ec89a3bb79d57bd4cbb",
       "date": "15 JUN",
       "match": "B. van de Zandschulp – H. Wendelken",
       "pick": "Gana B. van de Zandschulp",
       "odd": 1.54,
       "book": "betfair_ex_eu",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "e955e6ef5b6de115b8a75152aa437afc",
@@ -4045,7 +4082,7 @@
       "pick": "Gana D. Altmaier",
       "odd": 2.44,
       "book": "betfair_ex_eu",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "17acc0b84ff78c1c3635105362c8db14",
@@ -4372,21 +4409,6 @@
   ],
   "PENDING": [
     {
-      "id": "8f1ab36c9853bddf2ae26b9fc2a1a381",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781526600000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Borges – F. Auger-Aliassime",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Borges",
-      "odd": 3.45,
-      "book": "betfair_ex_eu",
-      "homeName": "N. Borges",
-      "awayName": "F. Auger-Aliassime"
-    },
-    {
       "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
       "sport": "tennis_wta_german_open",
       "ts": 1781548200000,
@@ -4400,36 +4422,6 @@
       "book": "betfair_ex_eu",
       "homeName": "E. Mertens",
       "awayName": "L. Samsonova"
-    },
-    {
-      "id": "fe68d83f6dfa8e38325aac2ef394ae42",
-      "sport": "tennis_wta_german_open",
-      "ts": 1781515800000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Timofeeva – R. Zarazua",
-      "pickKey": "away",
-      "pickLabel": "Gana R. Zarazua",
-      "odd": 2.48,
-      "book": "betfair_ex_eu",
-      "homeName": "M. Timofeeva",
-      "awayName": "R. Zarazua"
-    },
-    {
-      "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
-      "sport": "tennis_wta_german_open",
-      "ts": 1781532000000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "E. Alexandrova – A. Potapova",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Alexandrova",
-      "odd": 2.04,
-      "book": "unibet_se",
-      "homeName": "E. Alexandrova",
-      "awayName": "A. Potapova"
     },
     {
       "id": "edd2a079158a578b9cc7bcc89c5d6b88",
@@ -4460,21 +4452,6 @@
       "book": "betanysports",
       "homeName": "J. Fonseca",
       "awayName": "Y. Hanfmann"
-    },
-    {
-      "id": "4575c7d38f66dbe713d74ac9a486e02a",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781532000000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Cobolli – F. Tiafoe",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Tiafoe",
-      "odd": 1.81,
-      "book": "betfair_ex_eu",
-      "homeName": "F. Cobolli",
-      "awayName": "F. Tiafoe"
     },
     {
       "id": "5741241ab19b593e887d24dd31ae35a0",
@@ -6124,6 +6101,34 @@
   "MODEL_RECORD": [
     {
       "date": "15 JUN",
+      "match": "T. Atmane – M. Landaluce",
+      "predName": "T. Atmane",
+      "prob": 54,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
+      "match": "N. Basilashvili – D. Altmaier",
+      "predName": "D. Altmaier",
+      "prob": 59,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
+      "match": "B. van de Zandschulp – H. Wendelken",
+      "predName": "B. van de Zandschulp",
+      "prob": 66,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
+      "match": "M. Timofeeva – R. Zarazua",
+      "predName": "R. Zarazua",
+      "prob": 57,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
       "match": "M. Bouzkova – T. Valentova",
       "predName": "M. Bouzkova",
       "prob": 56,
@@ -6558,50 +6563,6 @@
       "sofa": null,
       "homeName": "J. Brockmann Tessa",
       "awayName": "A. Parks"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781515800000,
-      "match": "M. Timofeeva – R. Zarazua",
-      "predHome": false,
-      "prob": 57,
-      "predName": "R. Zarazua",
-      "sofa": null,
-      "homeName": "M. Timofeeva",
-      "awayName": "R. Zarazua"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781519700000,
-      "match": "B. van de Zandschulp – H. Wendelken",
-      "predHome": true,
-      "prob": 66,
-      "predName": "B. van de Zandschulp",
-      "sofa": null,
-      "homeName": "B. van de Zandschulp",
-      "awayName": "H. Wendelken"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781520000000,
-      "match": "N. Basilashvili – D. Altmaier",
-      "predHome": false,
-      "prob": 59,
-      "predName": "D. Altmaier",
-      "sofa": null,
-      "homeName": "N. Basilashvili",
-      "awayName": "D. Altmaier"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781520000000,
-      "match": "T. Atmane – M. Landaluce",
-      "predHome": true,
-      "prob": 54,
-      "predName": "T. Atmane",
-      "sofa": null,
-      "homeName": "T. Atmane",
-      "awayName": "M. Landaluce"
     },
     {
       "date": "15 JUN",
