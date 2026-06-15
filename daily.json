@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-15T10:32:30.891Z",
+    "updatedAt": "2026-06-15T12:00:23.579Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -4021,6 +4021,33 @@
   ],
   "RECORD": [
     {
+      "id": "f9320f5853be6ec89a3bb79d57bd4cbb",
+      "date": "15 JUN",
+      "match": "B. van de Zandschulp – H. Wendelken",
+      "pick": "Gana B. van de Zandschulp",
+      "odd": 1.54,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
+      "id": "e955e6ef5b6de115b8a75152aa437afc",
+      "date": "15 JUN",
+      "match": "M. Schoenhaus – L. Tien",
+      "pick": "Gana L. Tien",
+      "odd": 1.23,
+      "book": "leovegas_se",
+      "result": "W"
+    },
+    {
+      "id": "ab55f89190f9b59dd5d495873a63c4b0",
+      "date": "15 JUN",
+      "match": "N. Basilashvili – D. Altmaier",
+      "pick": "Gana D. Altmaier",
+      "odd": 2.44,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "17acc0b84ff78c1c3635105362c8db14",
       "date": "15 JUN",
       "match": "L. Zhu – S. Kraus",
@@ -4360,21 +4387,6 @@
       "awayName": "F. Auger-Aliassime"
     },
     {
-      "id": "ab55f89190f9b59dd5d495873a63c4b0",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781520000000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "N. Basilashvili – D. Altmaier",
-      "pickKey": "away",
-      "pickLabel": "Gana D. Altmaier",
-      "odd": 2.44,
-      "book": "betfair_ex_eu",
-      "homeName": "N. Basilashvili",
-      "awayName": "D. Altmaier"
-    },
-    {
       "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
       "sport": "tennis_wta_german_open",
       "ts": 1781548200000,
@@ -4615,21 +4627,6 @@
       "awayName": "H. Hurkacz"
     },
     {
-      "id": "e955e6ef5b6de115b8a75152aa437afc",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781515800000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Schoenhaus – L. Tien",
-      "pickKey": "away",
-      "pickLabel": "Gana L. Tien",
-      "odd": 1.23,
-      "book": "leovegas_se",
-      "homeName": "M. Schoenhaus",
-      "awayName": "L. Tien"
-    },
-    {
       "id": "5980c528627dc8644129c408833d7823",
       "sport": "tennis_wta_german_open",
       "ts": 1781526600000,
@@ -4688,21 +4685,6 @@
       "book": "betclic_fr",
       "homeName": "A. Kovacevic",
       "awayName": "F. Cerundolo"
-    },
-    {
-      "id": "f9320f5853be6ec89a3bb79d57bd4cbb",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781519700000,
-      "date": "15 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "B. van de Zandschulp – H. Wendelken",
-      "pickKey": "home",
-      "pickLabel": "Gana B. van de Zandschulp",
-      "odd": 1.54,
-      "book": "betfair_ex_eu",
-      "homeName": "B. van de Zandschulp",
-      "awayName": "H. Wendelken"
     }
   ],
   "COMBO_RECORD": [
@@ -6141,6 +6123,41 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "15 JUN",
+      "match": "M. Bouzkova – T. Valentova",
+      "predName": "M. Bouzkova",
+      "prob": 56,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
+      "match": "T. Maria – J. Tjen",
+      "predName": "J. Tjen",
+      "prob": 54,
+      "ok": false
+    },
+    {
+      "date": "15 JUN",
+      "match": "M. Frech – S. Zhang",
+      "predName": "M. Frech",
+      "prob": 54,
+      "ok": false
+    },
+    {
+      "date": "15 JUN",
+      "match": "L. Zhu – S. Kraus",
+      "predName": "S. Kraus",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "15 JUN",
+      "match": "M. Schoenhaus – L. Tien",
+      "predName": "L. Tien",
+      "prob": 85,
+      "ok": true
+    },
+    {
       "date": "14 JUN",
       "match": "L. Sun – A. Kalinina",
       "predName": "A. Kalinina",
@@ -6545,28 +6562,6 @@
     {
       "date": "15 JUN",
       "ts": 1781515800000,
-      "match": "M. Schoenhaus – L. Tien",
-      "predHome": false,
-      "prob": 85,
-      "predName": "L. Tien",
-      "sofa": null,
-      "homeName": "M. Schoenhaus",
-      "awayName": "L. Tien"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781515800000,
-      "match": "L. Zhu – S. Kraus",
-      "predHome": false,
-      "prob": 55,
-      "predName": "S. Kraus",
-      "sofa": null,
-      "homeName": "L. Zhu",
-      "awayName": "S. Kraus"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781515800000,
       "match": "M. Timofeeva – R. Zarazua",
       "predHome": false,
       "prob": 57,
@@ -6574,28 +6569,6 @@
       "sofa": null,
       "homeName": "M. Timofeeva",
       "awayName": "R. Zarazua"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781517600000,
-      "match": "M. Frech – S. Zhang",
-      "predHome": true,
-      "prob": 54,
-      "predName": "M. Frech",
-      "sofa": null,
-      "homeName": "M. Frech",
-      "awayName": "S. Zhang"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781517600000,
-      "match": "T. Maria – J. Tjen",
-      "predHome": false,
-      "prob": 54,
-      "predName": "J. Tjen",
-      "sofa": null,
-      "homeName": "T. Maria",
-      "awayName": "J. Tjen"
     },
     {
       "date": "15 JUN",
@@ -6992,17 +6965,6 @@
       "sofa": null,
       "homeName": "Z. Bergs",
       "awayName": "T. Fritz"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781517600000,
-      "match": "M. Bouzkova – T. Valentova",
-      "predHome": true,
-      "prob": 56,
-      "predName": "M. Bouzkova",
-      "sofa": null,
-      "homeName": "M. Bouzkova",
-      "awayName": "T. Valentova"
     },
     {
       "date": "16 JUN",
