@@ -1,55 +1,42 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T23:01:09.955Z",
+    "updatedAt": "2026-06-15T07:00:23.759Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 3,
-    "valuePicks": 1,
+    "matches": 42,
+    "valuePicks": 21,
     "books": 24,
     "stale": false,
     "model": {
-      "players": 3295
+      "players": 3301
     },
     "credits": {
-      "remaining": 110,
-      "used": 390
+      "remaining": 101,
+      "used": 399
     }
   },
   "PLAYERS": {
-    "donnavekic": {
-      "id": "donnavekic",
-      "name": "D. Vekic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/455_d-vekic.jpg"
-    },
-    "emmaraducanu": {
-      "id": "emmaraducanu",
-      "name": "E. Raducanu",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2996_e-raducanu.jpg"
-    },
-    "lorenzosonego": {
-      "id": "lorenzosonego",
-      "name": "L. Sonego",
+    "maxschoenhaus": {
+      "id": "maxschoenhaus",
+      "name": "M. Schoenhaus",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
+      "form": []
+    },
+    "learnertien": {
+      "id": "learnertien",
+      "name": "L. Tien",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
     },
     "nikolozbasilashv": {
       "id": "nikolozbasilashv",
@@ -59,30 +46,817 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/424_n-basilashvili.jpg"
+      "form": []
     },
-    "lulusun": {
-      "id": "lulusun",
-      "name": "L. Sun",
+    "danielaltmaier": {
+      "id": "danielaltmaier",
+      "name": "D. Altmaier",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "terenceatmane": {
+      "id": "terenceatmane",
+      "name": "T. Atmane",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "martinlandaluce": {
+      "id": "martinlandaluce",
+      "name": "M. Landaluce",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "nunoborges": {
+      "id": "nunoborges",
+      "name": "N. Borges",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "felixaugeraliass": {
+      "id": "felixaugeraliass",
+      "name": "F. Auger-Aliassime",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "flaviocobolli": {
+      "id": "flaviocobolli",
+      "name": "F. Cobolli",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "francestiafoe": {
+      "id": "francestiafoe",
+      "name": "F. Tiafoe",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "mattiabellucci": {
+      "id": "mattiabellucci",
+      "name": "M. Bellucci",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alexanderbublik": {
+      "id": "alexanderbublik",
+      "name": "A. Bublik",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "vitkopriva": {
+      "id": "vitkopriva",
+      "name": "V. Kopriva",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alexeipopyrin": {
+      "id": "alexeipopyrin",
+      "name": "A. Popyrin",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "raphaelcollignon": {
+      "id": "raphaelcollignon",
+      "name": "R. Collignon",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "andreyrublev": {
+      "id": "andreyrublev",
+      "name": "A. Rublev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "huberthurkacz": {
+      "id": "huberthurkacz",
+      "name": "H. Hurkacz",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "benshelton": {
+      "id": "benshelton",
+      "name": "B. Shelton",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "nickkyrgios": {
+      "id": "nickkyrgios",
+      "name": "N. Kyrgios",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "tomasmartinetche": {
+      "id": "tomasmartinetche",
+      "name": "T. Martin Etcheverry",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "daniilmedvedev": {
+      "id": "daniilmedvedev",
+      "name": "D. Medvedev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "karenkhachanov": {
+      "id": "karenkhachanov",
+      "name": "K. Khachanov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "ethanquinn": {
+      "id": "ethanquinn",
+      "name": "E. Quinn",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "fabianmarozsan": {
+      "id": "fabianmarozsan",
+      "name": "F. Marozsan",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "miomirkecmanovic": {
+      "id": "miomirkecmanovic",
+      "name": "M. Kecmanovic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "joaofonseca": {
+      "id": "joaofonseca",
+      "name": "J. Fonseca",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "yannickhanfmann": {
+      "id": "yannickhanfmann",
+      "name": "Y. Hanfmann",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "tallongriekspoor": {
+      "id": "tallongriekspoor",
+      "name": "T. Griekspoor",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "shoshimabukuro": {
+      "id": "shoshimabukuro",
+      "name": "S. Shimabukuro",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "zizoubergs": {
+      "id": "zizoubergs",
+      "name": "Z. Bergs",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "taylorfritz": {
+      "id": "taylorfritz",
+      "name": "T. Fritz",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "boticvandezandsc": {
+      "id": "boticvandezandsc",
+      "name": "B. van de Zandschulp",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "harrywendelken": {
+      "id": "harrywendelken",
+      "name": "H. Wendelken",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alexanderblockx": {
+      "id": "alexanderblockx",
+      "name": "A. Blockx",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "franciscocerundo": {
+      "id": "franciscocerundo",
+      "name": "F. Cerundolo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "tommypaul": {
+      "id": "tommypaul",
+      "name": "T. Paul",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "zacharysvajda": {
+      "id": "zacharysvajda",
+      "name": "Z. Svajda",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "giovannimpetship": {
+      "id": "giovannimpetship",
+      "name": "G. Mpetshi Perricard",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "corentinmoutet": {
+      "id": "corentinmoutet",
+      "name": "C. Moutet",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "jackpinningtonjo": {
+      "id": "jackpinningtonjo",
+      "name": "J. Pinnington Jones",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "denisshapovalov": {
+      "id": "denisshapovalov",
+      "name": "D. Shapovalov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "jakubmensik": {
+      "id": "jakubmensik",
+      "name": "J. Mensik",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "adrianmannarino": {
+      "id": "adrianmannarino",
+      "name": "A. Mannarino",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "cameronnorrie": {
+      "id": "cameronnorrie",
+      "name": "C. Norrie",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alejandrodavidov": {
+      "id": "alejandrodavidov",
+      "name": "A. Davidovich Fokina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "alexdeminaur": {
+      "id": "alexdeminaur",
+      "name": "A. de Minaur",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "gabrieldiallo": {
+      "id": "gabrieldiallo",
+      "name": "G. Diallo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "arthurfery": {
+      "id": "arthurfery",
+      "name": "A. Fery",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "tobysamuel": {
+      "id": "tobysamuel",
+      "name": "T. Samuel",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "arthurrinderknec": {
+      "id": "arthurrinderknec",
+      "name": "A. Rinderknech",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "hamadmedjedovic": {
+      "id": "hamadmedjedovic",
+      "name": "H. Medjedovic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "brandonnakashima": {
+      "id": "brandonnakashima",
+      "name": "B. Nakashima",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "martonfucsovics": {
+      "id": "martonfucsovics",
+      "name": "M. Fucsovics",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "ignaciobuse": {
+      "id": "ignaciobuse",
+      "name": "I. Buse",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "rafaeljodar": {
+      "id": "rafaeljodar",
+      "name": "R. Jodar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "kamilmajchrzak": {
+      "id": "kamilmajchrzak",
+      "name": "K. Majchrzak",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "jirilehecka": {
+      "id": "jirilehecka",
+      "name": "J. Lehecka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "ugohumbert": {
+      "id": "ugohumbert",
+      "name": "U. Humbert",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "marincilic": {
+      "id": "marincilic",
+      "name": "M. Cilic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "linzhu": {
+      "id": "linzhu",
+      "name": "L. Zhu",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1815_l-sun.jpg"
+      "form": []
     },
-    "anhelinakalinina": {
-      "id": "anhelinakalinina",
-      "name": "A. Kalinina",
+    "sinjakraus": {
+      "id": "sinjakraus",
+      "name": "S. Kraus",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2393_a-kalinina.jpg"
+      "form": []
+    },
+    "mariatimofeeva": {
+      "id": "mariatimofeeva",
+      "name": "M. Timofeeva",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "renatazarazua": {
+      "id": "renatazarazua",
+      "name": "R. Zarazua",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "magdalenafrech": {
+      "id": "magdalenafrech",
+      "name": "M. Frech",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "shuaizhang": {
+      "id": "shuaizhang",
+      "name": "S. Zhang",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "rebekamasarova": {
+      "id": "rebekamasarova",
+      "name": "R. Masarova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "miapohankova": {
+      "id": "miapohankova",
+      "name": "M. Pohánková",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "ekaterinaalexand": {
+      "id": "ekaterinaalexand",
+      "name": "E. Alexandrova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "anastasiapotapov": {
+      "id": "anastasiapotapov",
+      "name": "A. Potapova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "nikolabartunkova": {
+      "id": "nikolabartunkova",
+      "name": "N. Bartunkova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "dianashnaider": {
+      "id": "dianashnaider",
+      "name": "D. Shnaider",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "elisemertens": {
+      "id": "elisemertens",
+      "name": "E. Mertens",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "liudmilasamsonov": {
+      "id": "liudmilasamsonov",
+      "name": "L. Samsonova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "donnavekic": {
+      "id": "donnavekic",
+      "name": "D. Vekic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "alexandraeala": {
+      "id": "alexandraeala",
+      "name": "A. Eala",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "elinasvitolina": {
+      "id": "elinasvitolina",
+      "name": "E. Svitolina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "annakalinskaya": {
+      "id": "annakalinskaya",
+      "name": "A. Kalinskaya",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "madisonkeys": {
+      "id": "madisonkeys",
+      "name": "M. Keys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "xinyuwang": {
+      "id": "xinyuwang",
+      "name": "X. Wang",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "johannabrockmann": {
+      "id": "johannabrockmann",
+      "name": "J. Brockmann Tessa",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "alyciaparks": {
+      "id": "alyciaparks",
+      "name": "A. Parks",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "tatjanamaria": {
+      "id": "tatjanamaria",
+      "name": "T. Maria",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "janicetjen": {
+      "id": "janicetjen",
+      "name": "J. Tjen",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
     }
   },
   "BOOKS": {
@@ -92,71 +866,17 @@
       "abbr": "PIN",
       "color": "#e23b2e"
     },
-    "888sport": {
-      "id": "888sport",
-      "name": "888sport",
-      "abbr": "888",
-      "color": "#0a7d3c"
-    },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
-      "color": "#0a2d6e"
-    },
     "betfair": {
       "id": "betfair",
       "name": "Betfair",
       "abbr": "BET",
-      "color": "#14805e"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#ffb000"
-    },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
-      "color": "#d11a2a"
-    },
-    "coolbet": {
-      "id": "coolbet",
-      "name": "Coolbet",
-      "abbr": "COO",
-      "color": "#0a6cff"
-    },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (FR)",
-      "abbr": "UNI",
-      "color": "#1c1c1c"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "nordicbet": {
-      "id": "nordicbet",
-      "name": "Nordic Bet",
-      "abbr": "NOR",
-      "color": "#d9730d"
-    },
-    "tipico": {
-      "id": "tipico",
-      "name": "Tipico",
-      "abbr": "TIP",
-      "color": "#e23b2e"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (FR)",
-      "abbr": "WIN",
       "color": "#0a7d3c"
+    },
+    "betanything": {
+      "id": "betanything",
+      "name": "BetAnything",
+      "abbr": "BET",
+      "color": "#0a2d6e"
     },
     "betonlineag": {
       "id": "betonlineag",
@@ -164,28 +884,82 @@
       "abbr": "BET",
       "color": "#14805e"
     },
-    "betanything": {
-      "id": "betanything",
-      "name": "BetAnything",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
     "leovegas": {
       "id": "leovegas",
       "name": "LeoVegas (SE)",
       "abbr": "LEO",
+      "color": "#ffb000"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (SE)",
+      "abbr": "UNI",
       "color": "#d11a2a"
     },
     "pmu": {
       "id": "pmu",
       "name": "PMU (FR)",
       "abbr": "PMU",
+      "color": "#0a6cff"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
       "color": "#7a4ddb"
+    },
+    "888sport": {
+      "id": "888sport",
+      "name": "888sport",
+      "abbr": "888",
+      "color": "#d9730d"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#e23b2e"
+    },
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
+      "color": "#0a7d3c"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#14805e"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#ffb000"
     },
     "everygame": {
       "id": "everygame",
       "name": "Everygame",
       "abbr": "EVE",
+      "color": "#d11a2a"
+    },
+    "betclic": {
+      "id": "betclic",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "tipico": {
+      "id": "tipico",
+      "name": "Tipico",
+      "abbr": "TIP",
+      "color": "#7a4ddb"
+    },
+    "coolbet": {
+      "id": "coolbet",
+      "name": "Coolbet",
+      "abbr": "COO",
       "color": "#d9730d"
     },
     "bwin": {
@@ -194,34 +968,10 @@
       "abbr": "BWI",
       "color": "#e23b2e"
     },
-    "22bet": {
-      "id": "22bet",
-      "name": "22bet",
-      "abbr": "22B",
-      "color": "#0a2d6e"
-    },
-    "bet365": {
-      "id": "bet365",
-      "name": "bet365",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
     "bwinbe": {
       "id": "bwinbe",
       "name": "bwin.be",
       "abbr": "BWI",
-      "color": "#d11a2a"
-    },
-    "ladbrokes": {
-      "id": "ladbrokes",
-      "name": "ladbrokes",
-      "abbr": "LAD",
       "color": "#0a2d6e"
     },
     "unibetbe": {
@@ -229,169 +979,2313 @@
       "name": "unibet.be",
       "abbr": "UNI",
       "color": "#0a6cff"
+    },
+    "22bet": {
+      "id": "22bet",
+      "name": "22bet",
+      "abbr": "22B",
+      "color": "#1c1c1c"
+    },
+    "bet365": {
+      "id": "bet365",
+      "name": "bet365",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "betway": {
+      "id": "betway",
+      "name": "betway",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "ladbrokes": {
+      "id": "ladbrokes",
+      "name": "ladbrokes",
+      "abbr": "LAD",
+      "color": "#0a6cff"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1200285972083316",
-      "tour": "atp",
-      "event": "ATP Halle, Germany Men Singles",
-      "round": "",
-      "surface": "Hierba",
-      "time": "11:00",
-      "day": "14 JUN",
-      "home": "lorenzosonego",
-      "away": "nikolozbasilashv",
-      "odds": {
-        "home": {
-          "bwin": 1.6,
-          "1xbet": 1.53,
-          "22bet": 1.53,
-          "bet365": 1.57,
-          "betway": 1.55,
-          "betsson": 1.53,
-          "bwinbe": 1.6,
-          "888sport": 1.571,
-          "pinnacle": 1.588,
-          "ladbrokes": 1.6,
-          "betfair": 1.61,
-          "williamhill": 1.588
-        },
-        "away": {
-          "bwin": 2.25,
-          "1xbet": 2.341,
-          "22bet": 2.341,
-          "bet365": 2.25,
-          "betway": 2.4,
-          "betsson": 2.35,
-          "bwinbe": 2.25,
-          "888sport": 2.375,
-          "pinnacle": 2.45,
-          "ladbrokes": 2.25,
-          "betfair": 2.6,
-          "williamhill": 2.3
-        }
-      },
-      "model": {
-        "home": 0.5658152030692333,
-        "away": 0.4341847969307667,
-        "fromModel": true,
-        "eloH": 1776,
-        "eloA": 1730,
-        "surface": "grass"
-      },
-      "ts": 1781427600000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200279372066384",
+      "id": "opid1200279372066400",
       "tour": "wta",
       "event": "Berlin, Germany Women Singles",
       "round": "",
       "surface": "Hierba",
-      "time": "11:00",
-      "day": "14 JUN",
-      "home": "lulusun",
-      "away": "anhelinakalinina",
+      "time": "10:55",
+      "day": "15 JUN",
+      "home": "johannabrockmann",
+      "away": "alyciaparks",
       "odds": {
         "home": {
-          "bwin": 2.4,
-          "betway": 2.5,
-          "unibet": 2.5,
-          "betsson": 2.4,
-          "bwinbe": 2.4,
-          "888sport": 2.5,
-          "leovegas": 2.5,
-          "pinnacle": 2.5,
-          "ladbrokes": 2.4,
-          "unibetbe": 2.5,
-          "williamhill": 2.6
+          "bwin": 1.2,
+          "unibet": 1.2,
+          "betsson": 1.18,
+          "bwinbe": 2.1,
+          "leovegas": 1.18,
+          "unibetbe": 1.2,
+          "888sport": 1.18
         },
         "away": {
-          "bwin": 1.5,
-          "betway": 1.55,
-          "unibet": 1.5,
-          "betsson": 1.51,
-          "bwinbe": 1.5,
-          "888sport": 1.533,
-          "leovegas": 1.5,
-          "pinnacle": 1.564,
-          "ladbrokes": 1.5,
-          "unibetbe": 1.5,
-          "williamhill": 1.476
+          "bwin": 4,
+          "unibet": 4.2,
+          "betsson": 4.1,
+          "bwinbe": 1.65,
+          "leovegas": 4.1,
+          "unibetbe": 4.2,
+          "888sport": 4.1
+        }
+      },
+      "noModel": true,
+      "ts": 1781513700000,
+      "sofa": null
+    },
+    {
+      "id": "e955e6ef5b6de115b8a75152aa437afc",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "15 JUN",
+      "home": "maxschoenhaus",
+      "away": "learnertien",
+      "odds": {
+        "home": {
+          "pinnacle": 4.97,
+          "betfair": 5.6,
+          "betanything": 4.6,
+          "betonlineag": 4.61,
+          "leovegas": 4.2,
+          "unibet": 4.2,
+          "pmu": 4.1,
+          "williamhill": 4.5,
+          "888sport": 4.5,
+          "matchbook": 5.7,
+          "winamax": 4.9,
+          "1xbet": 4.42,
+          "betsson": 4.6,
+          "everygame": 4.3,
+          "betclic": 4.9
+        },
+        "away": {
+          "pinnacle": 1.21,
+          "betfair": 1.21,
+          "betanything": 1.2,
+          "betonlineag": 1.22,
+          "leovegas": 1.23,
+          "unibet": 1.23,
+          "pmu": 1.23,
+          "williamhill": 1.2,
+          "888sport": 1.2,
+          "matchbook": 1.2,
+          "winamax": 1.2,
+          "1xbet": 1.22,
+          "betsson": 1.19,
+          "everygame": 1.18,
+          "betclic": 1.2
         }
       },
       "model": {
-        "home": 0.4145013213281905,
-        "away": 0.5854986786718095,
+        "home": 0.14660537788811823,
+        "away": 0.8533946221118818,
         "fromModel": true,
-        "eloH": 1731,
-        "eloA": 1791,
+        "eloH": 1605,
+        "eloA": 1911,
         "surface": "grass"
       },
-      "ts": 1781427600000,
-      "sofa": null,
-      "live": false
+      "ts": 1781515800000,
+      "sofa": null
     },
     {
-      "id": "5ae466fb9d899470c2d74c5deccc6526",
+      "id": "17acc0b84ff78c1c3635105362c8db14",
       "tour": "wta",
-      "event": "Wta Queens Club Champ",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:30",
+      "day": "15 JUN",
+      "home": "linzhu",
+      "away": "sinjakraus",
+      "odds": {
+        "home": {
+          "pinnacle": 1.89,
+          "betfair": 1.94,
+          "betonlineag": 1.85,
+          "888sport": 1.8,
+          "williamhill": 1.8,
+          "betsson": 1.78,
+          "everygame": 1.8
+        },
+        "away": {
+          "pinnacle": 1.96,
+          "betfair": 2.02,
+          "betonlineag": 1.97,
+          "888sport": 2,
+          "williamhill": 2,
+          "betsson": 1.93,
+          "everygame": 1.9
+        }
+      },
+      "model": {
+        "home": 0.45265148195413535,
+        "away": 0.5473485180458646,
+        "fromModel": true,
+        "eloH": 1709,
+        "eloA": 1742,
+        "surface": "hard"
+      },
+      "ts": 1781515800000,
+      "sofa": null
+    },
+    {
+      "id": "fe68d83f6dfa8e38325aac2ef394ae42",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:30",
+      "day": "15 JUN",
+      "home": "mariatimofeeva",
+      "away": "renatazarazua",
+      "odds": {
+        "home": {
+          "pinnacle": 1.62,
+          "betfair": 1.66,
+          "betonlineag": 1.66,
+          "888sport": 1.57,
+          "williamhill": 1.57,
+          "everygame": 1.57
+        },
+        "away": {
+          "pinnacle": 2.37,
+          "betfair": 2.48,
+          "betonlineag": 2.32,
+          "888sport": 2.25,
+          "williamhill": 2.25,
+          "everygame": 2.25
+        }
+      },
+      "model": {
+        "home": 0.4327711556570478,
+        "away": 0.5672288443429522,
+        "fromModel": true,
+        "eloH": 1723,
+        "eloA": 1770,
+        "surface": "hard"
+      },
+      "ts": 1781515800000,
+      "sofa": null
+    },
+    {
+      "id": "b43475aa87b272827ad821fac3cbbd5d",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "12:00",
+      "day": "15 JUN",
+      "home": "magdalenafrech",
+      "away": "shuaizhang",
+      "odds": {
+        "home": {
+          "pinnacle": 1.85,
+          "betfair": 1.92,
+          "betonlineag": 1.86,
+          "888sport": 1.8,
+          "williamhill": 1.8,
+          "betsson": 1.79
+        },
+        "away": {
+          "pinnacle": 2.01,
+          "betfair": 2.06,
+          "betonlineag": 1.96,
+          "888sport": 1.91,
+          "williamhill": 1.91,
+          "betsson": 1.92
+        }
+      },
+      "model": {
+        "home": 0.5416377027147634,
+        "away": 0.4583622972852366,
+        "fromModel": true,
+        "eloH": 1818,
+        "eloA": 1789,
+        "surface": "hard"
+      },
+      "ts": 1781517600000,
+      "sofa": null
+    },
+    {
+      "id": "opid1201233372098232",
+      "tour": "wta",
+      "event": "WTA Nottingham, Great Britain Women Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "12:00",
+      "day": "15 JUN",
+      "home": "tatjanamaria",
+      "away": "janicetjen",
+      "odds": {
+        "home": {
+          "pmu": 1.48,
+          "bwin": 1.48,
+          "1xbet": 1.51,
+          "22bet": 1.51,
+          "bet365": 1.44,
+          "betway": 1.45,
+          "tipico": 1.42,
+          "unibet": 1.49,
+          "betsson": 1.47,
+          "bwinbe": 1.48,
+          "888sport": 1.5,
+          "leovegas": 1.48,
+          "pinnacle": 1.502,
+          "ladbrokes": 1.48,
+          "unibetbe": 1.48,
+          "betfair": 1.52,
+          "williamhill": 1.455
+        },
+        "away": {
+          "pmu": 2.63,
+          "bwin": 2.6,
+          "1xbet": 2.569,
+          "22bet": 2.565,
+          "bet365": 2.75,
+          "betway": 2.6,
+          "tipico": 2.65,
+          "unibet": 2.65,
+          "betsson": 2.65,
+          "bwinbe": 2.6,
+          "888sport": 2.6,
+          "leovegas": 2.63,
+          "pinnacle": 2.75,
+          "ladbrokes": 2.5,
+          "unibetbe": 2.63,
+          "betfair": 2.82,
+          "williamhill": 2.65
+        }
+      },
+      "model": {
+        "home": 0.4569335079777882,
+        "away": 0.5430664920222118,
+        "fromModel": true,
+        "eloH": 1802,
+        "eloA": 1832,
+        "surface": "grass"
+      },
+      "ts": 1781517600000,
+      "sofa": null
+    },
+    {
+      "id": "f9320f5853be6ec89a3bb79d57bd4cbb",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "12:35",
+      "day": "15 JUN",
+      "home": "boticvandezandsc",
+      "away": "harrywendelken",
+      "odds": {
+        "home": {
+          "pinnacle": 1.46,
+          "betonlineag": 1.43,
+          "betfair": 1.48,
+          "pmu": 1.42,
+          "unibet": 1.42,
+          "leovegas": 1.42,
+          "williamhill": 1.44,
+          "888sport": 1.44,
+          "matchbook": 1.49,
+          "winamax": 1.46,
+          "1xbet": 1.43,
+          "betsson": 1.43,
+          "betclic": 1.45
+        },
+        "away": {
+          "pinnacle": 2.87,
+          "betonlineag": 2.88,
+          "betfair": 2.96,
+          "pmu": 2.85,
+          "unibet": 2.85,
+          "leovegas": 2.85,
+          "williamhill": 2.75,
+          "888sport": 2.75,
+          "matchbook": 2.96,
+          "winamax": 2.85,
+          "1xbet": 2.83,
+          "betsson": 2.75,
+          "betclic": 2.85
+        }
+      },
+      "noModel": true,
+      "ts": 1781519700000,
+      "sofa": null
+    },
+    {
+      "id": "ab55f89190f9b59dd5d495873a63c4b0",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "12:40",
+      "day": "15 JUN",
+      "home": "nikolozbasilashv",
+      "away": "danielaltmaier",
+      "odds": {
+        "home": {
+          "pinnacle": 1.66,
+          "betfair": 1.67,
+          "betonlineag": 1.66,
+          "leovegas": 1.64,
+          "unibet": 1.67,
+          "pmu": 1.64,
+          "williamhill": 1.67,
+          "888sport": 1.67,
+          "winamax": 1.68,
+          "1xbet": 1.68,
+          "tipico": 1.65,
+          "matchbook": 1.68,
+          "betanything": 1.67,
+          "betsson": 1.65,
+          "coolbet": 1.68,
+          "everygame": 1.6,
+          "betclic": 1.65
+        },
+        "away": {
+          "pinnacle": 2.31,
+          "betfair": 2.44,
+          "betonlineag": 2.31,
+          "leovegas": 2.25,
+          "unibet": 2.25,
+          "pmu": 2.25,
+          "williamhill": 2.2,
+          "888sport": 2.2,
+          "winamax": 2.25,
+          "1xbet": 2.22,
+          "tipico": 2.1,
+          "matchbook": 2.44,
+          "betanything": 2.3,
+          "betsson": 2.2,
+          "coolbet": 2.2,
+          "everygame": 2.2,
+          "betclic": 2.3
+        }
+      },
+      "model": {
+        "home": 0.4061446147638222,
+        "away": 0.5938553852361779,
+        "fromModel": true,
+        "eloH": 1730,
+        "eloA": 1796,
+        "surface": "grass"
+      },
+      "ts": 1781520000000,
+      "sofa": null
+    },
+    {
+      "id": "6f7d84698b4cf50fe61c45081b07da42",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "12:40",
+      "day": "15 JUN",
+      "home": "terenceatmane",
+      "away": "martinlandaluce",
+      "odds": {
+        "home": {
+          "pinnacle": 2.86,
+          "betfair": 3.05,
+          "betonlineag": 2.75,
+          "leovegas": 2.8,
+          "unibet": 2.85,
+          "pmu": 2.8,
+          "williamhill": 2.75,
+          "888sport": 2.75,
+          "winamax": 2.85,
+          "1xbet": 2.76,
+          "tipico": 2.7,
+          "matchbook": 3.05,
+          "betanything": 2.77,
+          "betsson": 2.75,
+          "coolbet": 2.7,
+          "everygame": 2.75,
+          "betclic": 2.85
+        },
+        "away": {
+          "pinnacle": 1.46,
+          "betfair": 1.47,
+          "betonlineag": 1.47,
+          "leovegas": 1.43,
+          "unibet": 1.45,
+          "pmu": 1.43,
+          "williamhill": 1.44,
+          "888sport": 1.44,
+          "winamax": 1.47,
+          "1xbet": 1.46,
+          "tipico": 1.4,
+          "matchbook": 1.47,
+          "betanything": 1.46,
+          "betsson": 1.44,
+          "coolbet": 1.47,
+          "everygame": 1.4,
+          "betclic": 1.45
+        }
+      },
+      "model": {
+        "home": 0.5402082283237456,
+        "away": 0.4597917716762544,
+        "fromModel": true,
+        "eloH": 1805,
+        "eloA": 1777,
+        "surface": "grass"
+      },
+      "ts": 1781520000000,
+      "sofa": null
+    },
+    {
+      "id": "832926e223f5125ba290c3f6eac4cfc6",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:00",
+      "day": "15 JUN",
+      "home": "alexanderblockx",
+      "away": "franciscocerundo",
+      "odds": {
+        "home": {
+          "pmu": 1.76,
+          "unibet": 1.76,
+          "leovegas": 1.76
+        },
+        "away": {
+          "pmu": 2.06,
+          "unibet": 2.06,
+          "leovegas": 2.06
+        }
+      },
+      "model": {
+        "home": 0.5700528235839882,
+        "away": 0.42994717641601177,
+        "fromModel": true,
+        "eloH": 1839,
+        "eloA": 1790,
+        "surface": "grass"
+      },
+      "ts": 1781521200000,
+      "sofa": null
+    },
+    {
+      "id": "8f1ab36c9853bddf2ae26b9fc2a1a381",
+      "tour": "atp",
+      "event": "Atp Halle Open",
       "round": "",
       "surface": "Hierba",
       "time": "14:30",
-      "day": "14 JUN",
-      "home": "donnavekic",
-      "away": "emmaraducanu",
+      "day": "15 JUN",
+      "home": "nunoborges",
+      "away": "felixaugeraliass",
       "odds": {
         "home": {
-          "pinnacle": 2.22,
-          "888sport": 2.3,
-          "matchbook": 2.32,
-          "betfair": 2.32,
-          "1xbet": 2.23,
-          "williamhill": 2.2,
-          "coolbet": 2.2,
-          "unibet": 2.2,
-          "betsson": 2.17,
-          "nordicbet": 2.17,
-          "tipico": 2.15,
-          "winamax": 2.2,
-          "betonlineag": 2.15,
-          "betanything": 2.2,
-          "leovegas": 2.2,
-          "pmu": 2.15,
-          "everygame": 2.1
+          "pinnacle": 3.23,
+          "betfair": 3.45,
+          "betanything": 3.25,
+          "betonlineag": 3.22,
+          "leovegas": 3.25,
+          "unibet": 3.3,
+          "pmu": 3.2,
+          "williamhill": 3.3,
+          "888sport": 3.3,
+          "matchbook": 3.45,
+          "winamax": 3.35,
+          "1xbet": 3.26,
+          "tipico": 3.2,
+          "betsson": 3.2,
+          "coolbet": 3.25,
+          "everygame": 3,
+          "betclic": 3.2
         },
         "away": {
-          "pinnacle": 1.73,
-          "888sport": 1.61,
-          "matchbook": 1.74,
-          "betfair": 1.75,
-          "1xbet": 1.67,
-          "williamhill": 1.67,
-          "coolbet": 1.68,
-          "unibet": 1.67,
-          "betsson": 1.67,
-          "nordicbet": 1.67,
-          "tipico": 1.62,
-          "winamax": 1.7,
-          "betonlineag": 1.74,
-          "betanything": 1.71,
-          "leovegas": 1.67,
-          "pmu": 1.63,
-          "everygame": 1.65
+          "pinnacle": 1.39,
+          "betfair": 1.39,
+          "betanything": 1.36,
+          "betonlineag": 1.36,
+          "leovegas": 1.35,
+          "unibet": 1.35,
+          "pmu": 1.35,
+          "williamhill": 1.33,
+          "888sport": 1.33,
+          "matchbook": 1.39,
+          "winamax": 1.35,
+          "1xbet": 1.35,
+          "tipico": 1.3,
+          "betsson": 1.33,
+          "coolbet": 1.35,
+          "everygame": 1.33,
+          "betclic": 1.37
         }
       },
       "model": {
-        "home": 0.4131049766208999,
-        "away": 0.5868950233791002,
+        "home": 0.43135860811633236,
+        "away": 0.5686413918836677,
         "fromModel": true,
-        "eloH": 1773,
-        "eloA": 1834,
+        "eloH": 1807,
+        "eloA": 1855,
         "surface": "grass"
       },
-      "ts": 1781440200000,
+      "ts": 1781526600000,
+      "sofa": null
+    },
+    {
+      "id": "cfbc2a870038fa9c816076c292ae4d91",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:30",
+      "day": "15 JUN",
+      "home": "tommypaul",
+      "away": "zacharysvajda",
+      "odds": {
+        "home": {
+          "pinnacle": 1.36,
+          "betfair": 1.36,
+          "betonlineag": 1.35,
+          "williamhill": 1.33,
+          "888sport": 1.33,
+          "matchbook": 1.36,
+          "leovegas": 1.33,
+          "pmu": 1.33,
+          "winamax": 1.35,
+          "unibet": 1.33,
+          "1xbet": 1.34,
+          "tipico": 1.27,
+          "betsson": 1.33,
+          "coolbet": 1.34,
+          "betclic": 1.35
+        },
+        "away": {
+          "pinnacle": 3.37,
+          "betfair": 3.65,
+          "betonlineag": 3.27,
+          "williamhill": 3.3,
+          "888sport": 3.3,
+          "matchbook": 3.7,
+          "leovegas": 3.3,
+          "pmu": 3.3,
+          "winamax": 3.4,
+          "unibet": 3.35,
+          "1xbet": 3.28,
+          "tipico": 3.4,
+          "betsson": 3.25,
+          "coolbet": 3.3,
+          "betclic": 3.35
+        }
+      },
+      "model": {
+        "home": 0.6648579785547648,
+        "away": 0.3351420214452352,
+        "fromModel": true,
+        "eloH": 1875,
+        "eloA": 1756,
+        "surface": "grass"
+      },
+      "ts": 1781526600000,
+      "sofa": null
+    },
+    {
+      "id": "5980c528627dc8644129c408833d7823",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:30",
+      "day": "15 JUN",
+      "home": "rebekamasarova",
+      "away": "miapohankova",
+      "odds": {
+        "home": {
+          "pinnacle": 1.66,
+          "betfair": 1.71,
+          "betonlineag": 1.68,
+          "888sport": 1.61,
+          "williamhill": 1.62,
+          "betsson": 1.62,
+          "everygame": 1.6
+        },
+        "away": {
+          "pinnacle": 2.3,
+          "betfair": 2.36,
+          "betonlineag": 2.28,
+          "888sport": 2.2,
+          "williamhill": 2.2,
+          "betsson": 2.16,
+          "everygame": 2.2
+        }
+      },
+      "model": {
+        "home": 0.6049129020079568,
+        "away": 0.3950870979920432,
+        "fromModel": true,
+        "eloH": 1712,
+        "eloA": 1638,
+        "surface": "hard"
+      },
+      "ts": 1781526600000,
+      "sofa": null
+    },
+    {
+      "id": "4575c7d38f66dbe713d74ac9a486e02a",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:00",
+      "day": "15 JUN",
+      "home": "flaviocobolli",
+      "away": "francestiafoe",
+      "odds": {
+        "home": {
+          "pinnacle": 2.12,
+          "betfair": 2.2,
+          "betanything": 2.1,
+          "betonlineag": 2.14,
+          "leovegas": 2.17,
+          "unibet": 2.17,
+          "pmu": 2.17,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "matchbook": 2.2,
+          "winamax": 2.15,
+          "1xbet": 2.12,
+          "tipico": 2.05,
+          "betsson": 2.1,
+          "coolbet": 2.12,
+          "everygame": 2,
+          "betclic": 2.1
+        },
+        "away": {
+          "pinnacle": 1.79,
+          "betfair": 1.81,
+          "betanything": 1.77,
+          "betonlineag": 1.75,
+          "leovegas": 1.68,
+          "unibet": 1.74,
+          "pmu": 1.68,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "matchbook": 1.81,
+          "winamax": 1.74,
+          "1xbet": 1.74,
+          "tipico": 1.7,
+          "betsson": 1.71,
+          "coolbet": 1.73,
+          "everygame": 1.7,
+          "betclic": 1.76
+        }
+      },
+      "model": {
+        "home": 0.3136997423166875,
+        "away": 0.6863002576833125,
+        "fromModel": true,
+        "eloH": 1780,
+        "eloA": 1916,
+        "surface": "grass"
+      },
+      "ts": 1781532000000,
+      "sofa": null
+    },
+    {
+      "id": "cad8f2a6a232c2004389f9df19cc7d79",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:00",
+      "day": "15 JUN",
+      "home": "giovannimpetship",
+      "away": "corentinmoutet",
+      "odds": {
+        "home": {
+          "pmu": 1.67,
+          "betfair": 1.62,
+          "betanything": 1.62,
+          "unibet": 1.67,
+          "leovegas": 1.67,
+          "williamhill": 1.62,
+          "888sport": 1.61,
+          "matchbook": 1.62,
+          "winamax": 1.64,
+          "1xbet": 1.65,
+          "tipico": 1.57,
+          "betsson": 1.61,
+          "coolbet": 1.61,
+          "betclic": 1.63
+        },
+        "away": {
+          "pmu": 2.2,
+          "betfair": 2.5,
+          "betanything": 2.4,
+          "unibet": 2.35,
+          "leovegas": 2.2,
+          "williamhill": 2.3,
+          "888sport": 2.3,
+          "matchbook": 2.5,
+          "winamax": 2.35,
+          "1xbet": 2.25,
+          "tipico": 2.25,
+          "betsson": 2.28,
+          "coolbet": 2.33,
+          "betclic": 2.34
+        }
+      },
+      "model": {
+        "home": 0.3351420214452352,
+        "away": 0.6648579785547648,
+        "fromModel": true,
+        "eloH": 1729,
+        "eloA": 1848,
+        "surface": "grass"
+      },
+      "ts": 1781532000000,
+      "sofa": null
+    },
+    {
+      "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "15 JUN",
+      "home": "ekaterinaalexand",
+      "away": "anastasiapotapov",
+      "odds": {
+        "home": {
+          "pinnacle": 1.94,
+          "betfair": 2,
+          "pmu": 1.97,
+          "betanything": 1.95,
+          "betonlineag": 1.93,
+          "unibet": 2.04,
+          "leovegas": 2.04,
+          "888sport": 2,
+          "matchbook": 2,
+          "winamax": 2,
+          "williamhill": 2,
+          "1xbet": 1.98,
+          "tipico": 2,
+          "betsson": 1.97,
+          "coolbet": 1.92,
+          "everygame": 1.85,
+          "betclic": 2.01
+        },
+        "away": {
+          "pinnacle": 1.94,
+          "betfair": 1.94,
+          "pmu": 1.73,
+          "betanything": 1.87,
+          "betonlineag": 1.88,
+          "unibet": 1.8,
+          "leovegas": 1.78,
+          "888sport": 1.8,
+          "matchbook": 1.94,
+          "winamax": 1.84,
+          "williamhill": 1.8,
+          "1xbet": 1.82,
+          "tipico": 1.72,
+          "betsson": 1.81,
+          "coolbet": 1.89,
+          "everygame": 1.85,
+          "betclic": 1.84
+        }
+      },
+      "model": {
+        "home": 0.654519994382466,
+        "away": 0.345480005617534,
+        "fromModel": true,
+        "eloH": 1971,
+        "eloA": 1860,
+        "surface": "hard"
+      },
+      "ts": 1781532000000,
+      "sofa": null
+    },
+    {
+      "id": "869c02594901d9da7d3dd2696ef4b11d",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:30",
+      "day": "15 JUN",
+      "home": "jackpinningtonjo",
+      "away": "denisshapovalov",
+      "odds": {
+        "home": {
+          "pinnacle": 2.32,
+          "betfair": 2.42,
+          "pmu": 2.3,
+          "betonlineag": 2.33,
+          "betanything": 2.35,
+          "unibet": 2.32,
+          "leovegas": 2.32,
+          "williamhill": 2.3,
+          "888sport": 2.3,
+          "matchbook": 2.42,
+          "winamax": 2.35,
+          "1xbet": 2.27,
+          "tipico": 2.25,
+          "betsson": 2.29,
+          "betclic": 2.38
+        },
+        "away": {
+          "pinnacle": 1.67,
+          "betfair": 1.68,
+          "pmu": 1.6,
+          "betonlineag": 1.65,
+          "betanything": 1.65,
+          "unibet": 1.61,
+          "leovegas": 1.61,
+          "williamhill": 1.62,
+          "888sport": 1.61,
+          "matchbook": 1.69,
+          "winamax": 1.64,
+          "1xbet": 1.64,
+          "tipico": 1.57,
+          "betsson": 1.61,
+          "betclic": 1.61
+        }
+      },
+      "noModel": true,
+      "ts": 1781533800000,
+      "sofa": null
+    },
+    {
+      "id": "5741241ab19b593e887d24dd31ae35a0",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:30",
+      "day": "15 JUN",
+      "home": "nikolabartunkova",
+      "away": "dianashnaider",
+      "odds": {
+        "home": {
+          "pinnacle": 2.89,
+          "betfair": 2.9,
+          "pmu": 2.63,
+          "betonlineag": 2.72,
+          "unibet": 2.75,
+          "leovegas": 2.7,
+          "888sport": 2.75,
+          "winamax": 2.75,
+          "williamhill": 2.75,
+          "1xbet": 2.76,
+          "tipico": 2.65,
+          "betanything": 2.7,
+          "betsson": 2.7,
+          "coolbet": 2.7,
+          "everygame": 2.75,
+          "betclic": 2.7
+        },
+        "away": {
+          "pinnacle": 1.45,
+          "betfair": 1.49,
+          "pmu": 1.43,
+          "betonlineag": 1.49,
+          "unibet": 1.45,
+          "leovegas": 1.45,
+          "888sport": 1.44,
+          "winamax": 1.48,
+          "williamhill": 1.44,
+          "1xbet": 1.45,
+          "tipico": 1.42,
+          "betanything": 1.49,
+          "betsson": 1.46,
+          "coolbet": 1.47,
+          "everygame": 1.4,
+          "betclic": 1.46
+        }
+      },
+      "model": {
+        "home": 0.41729811503576986,
+        "away": 0.5827018849642301,
+        "fromModel": true,
+        "eloH": 1777,
+        "eloA": 1835,
+        "surface": "hard"
+      },
+      "ts": 1781533800000,
+      "sofa": null
+    },
+    {
+      "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:30",
+      "day": "15 JUN",
+      "home": "elisemertens",
+      "away": "liudmilasamsonov",
+      "odds": {
+        "home": {
+          "pinnacle": 1.52,
+          "betfair": 1.54,
+          "pmu": 1.47,
+          "betanything": 1.5,
+          "betonlineag": 1.53,
+          "unibet": 1.5,
+          "leovegas": 1.5,
+          "888sport": 1.5,
+          "matchbook": 1.54,
+          "winamax": 1.5,
+          "williamhill": 1.5,
+          "1xbet": 1.49,
+          "tipico": 1.4,
+          "betsson": 1.5,
+          "coolbet": 1.5,
+          "everygame": 1.45,
+          "betclic": 1.5
+        },
+        "away": {
+          "pinnacle": 2.71,
+          "betfair": 2.78,
+          "pmu": 2.5,
+          "betanything": 2.7,
+          "betonlineag": 2.62,
+          "unibet": 2.6,
+          "leovegas": 2.6,
+          "888sport": 2.6,
+          "matchbook": 2.78,
+          "winamax": 2.7,
+          "williamhill": 2.6,
+          "1xbet": 2.63,
+          "tipico": 2.7,
+          "betsson": 2.55,
+          "coolbet": 2.6,
+          "everygame": 2.55,
+          "betclic": 2.65
+        }
+      },
+      "model": {
+        "home": 0.49280491829094863,
+        "away": 0.5071950817090514,
+        "fromModel": true,
+        "eloH": 1896,
+        "eloA": 1901,
+        "surface": "hard"
+      },
+      "ts": 1781548200000,
+      "sofa": null
+    },
+    {
+      "id": "ed196242a9eaa04e86d638c20cc40043",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "jakubmensik",
+      "away": "adrianmannarino",
+      "odds": {
+        "home": {
+          "pinnacle": 1.51,
+          "betfair": 1.54,
+          "betonlineag": 1.48,
+          "williamhill": 1.5,
+          "888sport": 1.5,
+          "matchbook": 1.54,
+          "winamax": 1.47,
+          "unibet": 1.47,
+          "1xbet": 1.46,
+          "tipico": 1.42,
+          "betanything": 1.47,
+          "betsson": 1.47,
+          "coolbet": 1.48,
+          "betclic": 1.47
+        },
+        "away": {
+          "pinnacle": 2.73,
+          "betfair": 2.72,
+          "betonlineag": 2.73,
+          "williamhill": 2.6,
+          "888sport": 2.6,
+          "matchbook": 2.74,
+          "winamax": 2.65,
+          "unibet": 2.65,
+          "1xbet": 2.73,
+          "tipico": 2.65,
+          "betanything": 2.75,
+          "betsson": 2.65,
+          "coolbet": 2.67,
+          "betclic": 2.65
+        }
+      },
+      "model": {
+        "home": 0.5728722513945045,
+        "away": 0.4271277486054955,
+        "fromModel": true,
+        "eloH": 1871,
+        "eloA": 1820,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "2791bdfb47ed6ab784ea5bbc8f2a6473",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "cameronnorrie",
+      "away": "alejandrodavidov",
+      "odds": {
+        "home": {
+          "pinnacle": 2.17,
+          "betfair": 2.2,
+          "pmu": 2.1,
+          "betonlineag": 2.2,
+          "unibet": 2.1,
+          "leovegas": 2.1,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "matchbook": 2.2,
+          "winamax": 2.1,
+          "1xbet": 2.19,
+          "tipico": 2.1,
+          "betanything": 2.1,
+          "betsson": 2.11,
+          "coolbet": 2.15,
+          "betclic": 2.11
+        },
+        "away": {
+          "pinnacle": 1.76,
+          "betfair": 1.75,
+          "pmu": 1.73,
+          "betonlineag": 1.71,
+          "unibet": 1.73,
+          "leovegas": 1.73,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "matchbook": 1.77,
+          "winamax": 1.7,
+          "1xbet": 1.68,
+          "tipico": 1.65,
+          "betanything": 1.77,
+          "betsson": 1.71,
+          "coolbet": 1.71,
+          "betclic": 1.71
+        }
+      },
+      "noModel": true,
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "7709bd02f936610af024cc3773242d01",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "alexdeminaur",
+      "away": "gabrieldiallo",
+      "odds": {
+        "home": {
+          "pinnacle": 1.21,
+          "betfair": 1.24,
+          "pmu": 1.17,
+          "betonlineag": 1.2,
+          "unibet": 1.18,
+          "leovegas": 1.18,
+          "williamhill": 1.2,
+          "888sport": 1.2,
+          "matchbook": 1.24,
+          "winamax": 1.18,
+          "1xbet": 1.2,
+          "tipico": 1.14,
+          "betanything": 1.19,
+          "betsson": 1.18,
+          "coolbet": 1.19,
+          "betclic": 1.18
+        },
+        "away": {
+          "pinnacle": 5.02,
+          "betfair": 5.1,
+          "pmu": 4.8,
+          "betonlineag": 4.73,
+          "unibet": 4.9,
+          "leovegas": 4.9,
+          "williamhill": 4.5,
+          "888sport": 4.5,
+          "matchbook": 5.1,
+          "winamax": 4.7,
+          "1xbet": 4.64,
+          "tipico": 4.9,
+          "betanything": 4.65,
+          "betsson": 4.7,
+          "coolbet": 4.8,
+          "betclic": 4.7
+        }
+      },
+      "model": {
+        "home": 0.6712405808158318,
+        "away": 0.3287594191841682,
+        "fromModel": true,
+        "eloH": 1935,
+        "eloA": 1811,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "c3057051daa976bb89578f1c11157206",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "arthurfery",
+      "away": "tobysamuel",
+      "odds": {
+        "home": {
+          "pinnacle": 1.68,
+          "betfair": 1.73,
+          "pmu": 1.66,
+          "betonlineag": 1.71,
+          "unibet": 1.68,
+          "leovegas": 1.66,
+          "williamhill": 1.67,
+          "888sport": 1.67,
+          "matchbook": 1.73,
+          "winamax": 1.68,
+          "1xbet": 1.68,
+          "tipico": 1.62,
+          "betanything": 1.67,
+          "betsson": 1.68,
+          "coolbet": 1.66,
+          "betclic": 1.67
+        },
+        "away": {
+          "pinnacle": 2.3,
+          "betfair": 2.32,
+          "pmu": 2.2,
+          "betonlineag": 2.2,
+          "unibet": 2.23,
+          "leovegas": 2.23,
+          "williamhill": 2.2,
+          "888sport": 2.2,
+          "matchbook": 2.32,
+          "winamax": 2.15,
+          "1xbet": 2.19,
+          "tipico": 2.15,
+          "betanything": 2.3,
+          "betsson": 2.16,
+          "coolbet": 2.23,
+          "betclic": 2.18
+        }
+      },
+      "model": {
+        "home": 0.5043172397550598,
+        "away": 0.4956827602449402,
+        "fromModel": true,
+        "eloH": 1697,
+        "eloA": 1694,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "99e4cf84297a7ea0fbcce4238bef2787",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "arthurrinderknec",
+      "away": "hamadmedjedovic",
+      "odds": {
+        "home": {
+          "pinnacle": 1.83,
+          "betfair": 1.89,
+          "pmu": 1.78,
+          "betonlineag": 1.81,
+          "unibet": 1.8,
+          "leovegas": 1.78,
+          "williamhill": 1.8,
+          "888sport": 1.8,
+          "matchbook": 1.89,
+          "winamax": 1.82,
+          "1xbet": 1.8,
+          "tipico": 1.75,
+          "betanything": 1.83,
+          "betsson": 1.81,
+          "coolbet": 1.82,
+          "betclic": 1.81
+        },
+        "away": {
+          "pinnacle": 2.07,
+          "betfair": 2.08,
+          "pmu": 2.04,
+          "betonlineag": 2.04,
+          "unibet": 2.04,
+          "leovegas": 2.04,
+          "williamhill": 2,
+          "888sport": 2,
+          "matchbook": 2.08,
+          "winamax": 1.98,
+          "1xbet": 2.01,
+          "tipico": 1.95,
+          "betanything": 2,
+          "betsson": 1.97,
+          "coolbet": 2,
+          "betclic": 1.97
+        }
+      },
+      "model": {
+        "home": 0.6185841220890307,
+        "away": 0.3814158779109693,
+        "fromModel": true,
+        "eloH": 1878,
+        "eloA": 1794,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "42f5dc36fedb15c42917ec89679b81f9",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "brandonnakashima",
+      "away": "martonfucsovics",
+      "odds": {
+        "home": {
+          "pinnacle": 1.6,
+          "betfair": 1.61,
+          "pmu": 1.55,
+          "betonlineag": 1.57,
+          "unibet": 1.55,
+          "leovegas": 1.55,
+          "williamhill": 1.53,
+          "888sport": 1.53,
+          "matchbook": 1.61,
+          "winamax": 1.54,
+          "1xbet": 1.55,
+          "tipico": 1.52,
+          "betanything": 1.56,
+          "betsson": 1.55,
+          "coolbet": 1.56,
+          "betclic": 1.55
+        },
+        "away": {
+          "pinnacle": 2.48,
+          "betfair": 2.56,
+          "pmu": 2.45,
+          "betonlineag": 2.51,
+          "unibet": 2.45,
+          "leovegas": 2.45,
+          "williamhill": 2.5,
+          "888sport": 2.5,
+          "matchbook": 2.58,
+          "winamax": 2.45,
+          "1xbet": 2.46,
+          "tipico": 2.35,
+          "betanything": 2.55,
+          "betsson": 2.42,
+          "coolbet": 2.45,
+          "betclic": 2.42
+        }
+      },
+      "model": {
+        "home": 0.5882899718631628,
+        "away": 0.4117100281368372,
+        "fromModel": true,
+        "eloH": 1845,
+        "eloA": 1783,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "99a7f26afc354f130a2a4c97d50e8fca",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "ignaciobuse",
+      "away": "rafaeljodar",
+      "odds": {
+        "home": {
+          "pinnacle": 3.34,
+          "betfair": 3.35,
+          "pmu": 3.3,
+          "betonlineag": 3.22,
+          "unibet": 3.3,
+          "leovegas": 3.3,
+          "williamhill": 3.1,
+          "888sport": 3.1,
+          "matchbook": 3.35,
+          "winamax": 3.1,
+          "1xbet": 3.1,
+          "tipico": 3.2,
+          "betanything": 3.25,
+          "betsson": 3.1,
+          "coolbet": 3.18,
+          "betclic": 3.1
+        },
+        "away": {
+          "pinnacle": 1.37,
+          "betfair": 1.4,
+          "pmu": 1.33,
+          "betonlineag": 1.36,
+          "unibet": 1.36,
+          "leovegas": 1.33,
+          "williamhill": 1.36,
+          "888sport": 1.36,
+          "matchbook": 1.39,
+          "winamax": 1.36,
+          "1xbet": 1.37,
+          "tipico": 1.3,
+          "betanything": 1.36,
+          "betsson": 1.36,
+          "coolbet": 1.36,
+          "betclic": 1.36
+        }
+      },
+      "model": {
+        "home": 0.48992755307256153,
+        "away": 0.5100724469274385,
+        "fromModel": true,
+        "eloH": 1857,
+        "eloA": 1864,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "5fd9d5a716dc1c26827e66b6607e5433",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "kamilmajchrzak",
+      "away": "jirilehecka",
+      "odds": {
+        "home": {
+          "pinnacle": 2.66,
+          "betfair": 2.68,
+          "pmu": 2.65,
+          "betonlineag": 2.67,
+          "unibet": 2.7,
+          "leovegas": 2.65,
+          "williamhill": 2.6,
+          "888sport": 2.6,
+          "matchbook": 2.66,
+          "winamax": 2.65,
+          "1xbet": 2.57,
+          "tipico": 2.65,
+          "betanything": 2.7,
+          "betsson": 2.65,
+          "coolbet": 2.6,
+          "betclic": 2.65
+        },
+        "away": {
+          "pinnacle": 1.53,
+          "betfair": 1.58,
+          "pmu": 1.48,
+          "betonlineag": 1.52,
+          "unibet": 1.48,
+          "leovegas": 1.48,
+          "williamhill": 1.5,
+          "888sport": 1.5,
+          "matchbook": 1.57,
+          "winamax": 1.47,
+          "1xbet": 1.51,
+          "tipico": 1.42,
+          "betanything": 1.5,
+          "betsson": 1.47,
+          "coolbet": 1.5,
+          "betclic": 1.47
+        }
+      },
+      "model": {
+        "home": 0.238157890082064,
+        "away": 0.761842109917936,
+        "fromModel": true,
+        "eloH": 1765,
+        "eloA": 1967,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "fd059e026e9019ff0c0353f612b7d3f1",
+      "tour": "atp",
+      "event": "Atp Queens Club Champ",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "ugohumbert",
+      "away": "marincilic",
+      "odds": {
+        "home": {
+          "pinnacle": 1.79,
+          "betfair": 1.82,
+          "pmu": 1.73,
+          "betonlineag": 1.75,
+          "unibet": 1.73,
+          "leovegas": 1.73,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "matchbook": 1.82,
+          "winamax": 1.74,
+          "1xbet": 1.73,
+          "tipico": 1.72,
+          "betanything": 1.71,
+          "betsson": 1.73,
+          "coolbet": 1.75,
+          "betclic": 1.73
+        },
+        "away": {
+          "pinnacle": 2.13,
+          "betfair": 2.16,
+          "pmu": 2.1,
+          "betonlineag": 2.14,
+          "unibet": 2.1,
+          "leovegas": 2.1,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "matchbook": 2.16,
+          "winamax": 2.05,
+          "1xbet": 2.1,
+          "tipico": 2,
+          "betanything": 2.2,
+          "betsson": 2.08,
+          "coolbet": 2.1,
+          "betclic": 2.08
+        }
+      },
+      "model": {
+        "home": 0.5459219227804837,
+        "away": 0.4540780772195163,
+        "fromModel": true,
+        "eloH": 1850,
+        "eloA": 1818,
+        "surface": "grass"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "edd2a079158a578b9cc7bcc89c5d6b88",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "donnavekic",
+      "away": "alexandraeala",
+      "odds": {
+        "home": {
+          "pinnacle": 1.79,
+          "betfair": 1.84,
+          "pmu": 1.77,
+          "betonlineag": 1.74,
+          "unibet": 1.82,
+          "leovegas": 1.82,
+          "888sport": 1.8,
+          "matchbook": 1.84,
+          "winamax": 1.86,
+          "williamhill": 1.8,
+          "1xbet": 1.76,
+          "tipico": 1.7,
+          "betanything": 1.8,
+          "betsson": 1.76,
+          "coolbet": 1.76,
+          "everygame": 1.65,
+          "betclic": 1.76
+        },
+        "away": {
+          "pinnacle": 2.13,
+          "betfair": 2.14,
+          "pmu": 1.93,
+          "betonlineag": 2.15,
+          "unibet": 2.05,
+          "leovegas": 1.97,
+          "888sport": 2,
+          "matchbook": 2.14,
+          "winamax": 1.92,
+          "williamhill": 2,
+          "1xbet": 2.06,
+          "tipico": 2.05,
+          "betanything": 2.05,
+          "betsson": 2.03,
+          "coolbet": 2.08,
+          "everygame": 2.1,
+          "betclic": 2.03
+        }
+      },
+      "model": {
+        "home": 0.4061446147638222,
+        "away": 0.5938553852361779,
+        "fromModel": true,
+        "eloH": 1773,
+        "eloA": 1839,
+        "surface": "hard"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "612c73cc96cb269cd55b6bbbaf277b8a",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "elinasvitolina",
+      "away": "annakalinskaya",
+      "odds": {
+        "home": {
+          "pinnacle": 1.48,
+          "betfair": 1.49,
+          "pmu": 1.43,
+          "betonlineag": 1.49,
+          "unibet": 1.45,
+          "leovegas": 1.45,
+          "888sport": 1.44,
+          "matchbook": 1.49,
+          "winamax": 1.45,
+          "williamhill": 1.44,
+          "1xbet": 1.46,
+          "tipico": 1.4,
+          "betanything": 1.47,
+          "betsson": 1.44,
+          "coolbet": 1.45,
+          "everygame": 1.4,
+          "betclic": 1.45
+        },
+        "away": {
+          "pinnacle": 2.83,
+          "betfair": 2.9,
+          "pmu": 2.63,
+          "betonlineag": 2.72,
+          "unibet": 2.7,
+          "leovegas": 2.7,
+          "888sport": 2.75,
+          "matchbook": 2.92,
+          "winamax": 2.75,
+          "williamhill": 2.75,
+          "1xbet": 2.73,
+          "tipico": 2.7,
+          "betanything": 2.75,
+          "betsson": 2.75,
+          "coolbet": 2.78,
+          "everygame": 2.75,
+          "betclic": 2.7
+        }
+      },
+      "model": {
+        "home": 0.7392202541406678,
+        "away": 0.26077974585933217,
+        "fromModel": true,
+        "eloH": 2026,
+        "eloA": 1845,
+        "surface": "hard"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "b11e2472e886d830686162bbbf0eb6f4",
+      "tour": "wta",
+      "event": "Wta German Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "16 JUN",
+      "home": "madisonkeys",
+      "away": "xinyuwang",
+      "odds": {
+        "home": {
+          "pinnacle": 1.34,
+          "betfair": 1.37,
+          "pmu": 1.28,
+          "betonlineag": 1.32,
+          "unibet": 1.32,
+          "leovegas": 1.32,
+          "888sport": 1.3,
+          "matchbook": 1.37,
+          "winamax": 1.32,
+          "williamhill": 1.3,
+          "1xbet": 1.33,
+          "betanything": 1.33,
+          "coolbet": 1.32,
+          "everygame": 1.28,
+          "betclic": 1.31
+        },
+        "away": {
+          "pinnacle": 3.51,
+          "betfair": 3.5,
+          "pmu": 3.3,
+          "betonlineag": 3.49,
+          "unibet": 3.45,
+          "leovegas": 3.4,
+          "888sport": 3.5,
+          "matchbook": 3.55,
+          "winamax": 3.4,
+          "williamhill": 3.5,
+          "1xbet": 3.35,
+          "betanything": 3.4,
+          "coolbet": 3.42,
+          "everygame": 3.3,
+          "betclic": 3.35
+        }
+      },
+      "model": {
+        "home": 0.6374083767444845,
+        "away": 0.3625916232555155,
+        "fromModel": true,
+        "eloH": 1946,
+        "eloA": 1848,
+        "surface": "hard"
+      },
+      "ts": 1781596800000,
+      "sofa": null
+    },
+    {
+      "id": "54ef7746e9eaecaad0f9b1c9516930b0",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "mattiabellucci",
+      "away": "alexanderbublik",
+      "odds": {
+        "home": {
+          "winamax": 3.2,
+          "williamhill": 3.3,
+          "betfair": 2.82,
+          "unibet": 3.45,
+          "888sport": 3.3,
+          "1xbet": 3.26,
+          "tipico": 3.2,
+          "matchbook": 2.74,
+          "pmu": 3.3,
+          "leovegas": 3.35,
+          "betsson": 3.15,
+          "coolbet": 3.18,
+          "everygame": 3.2,
+          "betclic": 3.15
+        },
+        "away": {
+          "winamax": 1.35,
+          "williamhill": 1.33,
+          "betfair": 1.44,
+          "unibet": 1.33,
+          "888sport": 1.33,
+          "1xbet": 1.35,
+          "tipico": 1.3,
+          "matchbook": 1.36,
+          "pmu": 1.33,
+          "leovegas": 1.33,
+          "betsson": 1.35,
+          "coolbet": 1.36,
+          "everygame": 1.3,
+          "betclic": 1.35
+        }
+      },
+      "model": {
+        "home": 0.20168525584502242,
+        "away": 0.7983147441549776,
+        "fromModel": true,
+        "eloH": 1771,
+        "eloA": 2010,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "cd44cb1f744a577bf8979cc881f1ee68",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "alexanderzverev",
+      "away": "vitkopriva",
+      "odds": {
+        "home": {
+          "betfair": 1.1,
+          "leovegas": 1.05,
+          "unibet": 1.05,
+          "pmu": 1.05,
+          "williamhill": 1.05,
+          "888sport": 1.05,
+          "matchbook": 1.1,
+          "winamax": 1.05,
+          "1xbet": 1.06,
+          "tipico": 1.01,
+          "betanything": 1.06,
+          "betsson": 1.05,
+          "coolbet": 1.05,
+          "everygame": 1.04,
+          "betclic": 1.05
+        },
+        "away": {
+          "betfair": 10,
+          "leovegas": 10,
+          "unibet": 10,
+          "pmu": 10,
+          "williamhill": 10,
+          "888sport": 10,
+          "matchbook": 10,
+          "winamax": 9.5,
+          "1xbet": 9.95,
+          "tipico": 11,
+          "betanything": 8.95,
+          "betsson": 9.2,
+          "coolbet": 10.2,
+          "everygame": 8.5,
+          "betclic": 9.2
+        }
+      },
+      "model": {
+        "home": 0.7879267680774021,
+        "away": 0.21207323192259786,
+        "fromModel": true,
+        "eloH": 2010,
+        "eloA": 1782,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "ef5bc8aec5d3cb07a6dbd54f3805ebb3",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "alexeipopyrin",
+      "away": "raphaelcollignon",
+      "odds": {
+        "home": {
+          "winamax": 2.15,
+          "williamhill": 2.1,
+          "betfair": 1.18,
+          "matchbook": 2.02,
+          "unibet": 2.1,
+          "888sport": 2.1,
+          "1xbet": 2.12,
+          "tipico": 2.05,
+          "betsson": 2.1,
+          "coolbet": 2.12,
+          "everygame": 2.1,
+          "betclic": 2.1
+        },
+        "away": {
+          "winamax": 1.68,
+          "williamhill": 1.73,
+          "betfair": 1.58,
+          "matchbook": 1.58,
+          "unibet": 1.7,
+          "888sport": 1.73,
+          "1xbet": 1.74,
+          "tipico": 1.7,
+          "betsson": 1.71,
+          "coolbet": 1.73,
+          "everygame": 1.65,
+          "betclic": 1.71
+        }
+      },
+      "model": {
+        "home": 0.5014391117091528,
+        "away": 0.4985608882908472,
+        "fromModel": true,
+        "eloH": 1789,
+        "eloA": 1788,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "2ac15461a20677148f9cdfe5c558f3bb",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "andreyrublev",
+      "away": "huberthurkacz",
+      "odds": {
+        "home": {
+          "betfair": 1.1,
+          "leovegas": 1.76,
+          "unibet": 1.77,
+          "pmu": 1.76,
+          "williamhill": 1.8,
+          "888sport": 1.8,
+          "matchbook": 1.74,
+          "winamax": 1.78,
+          "1xbet": 1.79,
+          "tipico": 1.72,
+          "betanything": 1.8,
+          "betsson": 1.75,
+          "coolbet": 1.8,
+          "everygame": 1.75,
+          "betclic": 1.77
+        },
+        "away": {
+          "betfair": 1.02,
+          "leovegas": 2.06,
+          "unibet": 2.06,
+          "pmu": 2.06,
+          "williamhill": 2,
+          "888sport": 2,
+          "matchbook": 1.82,
+          "winamax": 2,
+          "1xbet": 2.04,
+          "tipico": 2,
+          "betanything": 2.05,
+          "betsson": 2.04,
+          "coolbet": 2.02,
+          "everygame": 1.95,
+          "betclic": 2.02
+        }
+      },
+      "model": {
+        "home": 0.48561281583400134,
+        "away": 0.5143871841659986,
+        "fromModel": true,
+        "eloH": 1935,
+        "eloA": 1945,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "2308fac798f8c4126bbb2c67362bd022",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "benshelton",
+      "away": "nickkyrgios",
+      "odds": {
+        "home": {
+          "betfair": 1.5,
+          "leovegas": 1.5,
+          "unibet": 1.5,
+          "pmu": 1.5,
+          "williamhill": 1.5,
+          "888sport": 1.5,
+          "matchbook": 1.37,
+          "winamax": 1.47,
+          "1xbet": 1.47,
+          "tipico": 1.42,
+          "betanything": 1.44,
+          "betsson": 1.46,
+          "coolbet": 1.5,
+          "everygame": 1.44,
+          "betclic": 1.46
+        },
+        "away": {
+          "betfair": 2.38,
+          "leovegas": 2.6,
+          "unibet": 2.6,
+          "pmu": 2.55,
+          "williamhill": 2.6,
+          "888sport": 2.6,
+          "matchbook": 2.28,
+          "winamax": 2.65,
+          "1xbet": 2.72,
+          "tipico": 2.65,
+          "betanything": 2.85,
+          "betsson": 2.65,
+          "coolbet": 2.6,
+          "everygame": 2.6,
+          "betclic": 2.65
+        }
+      },
+      "noModel": true,
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "5d83845dbdfdc8353d896bc9dfa42d52",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "tomasmartinetche",
+      "away": "daniilmedvedev",
+      "odds": {
+        "home": {
+          "betfair": 1.33,
+          "leovegas": 4.1,
+          "unibet": 4.1,
+          "pmu": 4.1,
+          "williamhill": 4.2,
+          "888sport": 4.2,
+          "matchbook": 3.15,
+          "winamax": 4.1,
+          "1xbet": 4.07,
+          "tipico": 4,
+          "betanything": 4.1,
+          "betsson": 4,
+          "coolbet": 4.1,
+          "everygame": 4,
+          "betclic": 4
+        },
+        "away": {
+          "betfair": 1.1,
+          "leovegas": 1.23,
+          "unibet": 1.23,
+          "pmu": 1.23,
+          "williamhill": 1.22,
+          "888sport": 1.22,
+          "matchbook": 1.12,
+          "winamax": 1.23,
+          "1xbet": 1.25,
+          "tipico": 1.2,
+          "betanything": 1.25,
+          "betsson": 1.23,
+          "coolbet": 1.24,
+          "everygame": 1.2,
+          "betclic": 1.23
+        }
+      },
+      "noModel": true,
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "9301bb462af3a251a1f3685baea1ee8a",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "karenkhachanov",
+      "away": "ethanquinn",
+      "odds": {
+        "home": {
+          "betfair": 1.3,
+          "leovegas": 1.35,
+          "unibet": 1.35,
+          "pmu": 1.35,
+          "williamhill": 1.36,
+          "888sport": 1.36,
+          "matchbook": 1.25,
+          "winamax": 1.36,
+          "1xbet": 1.37,
+          "tipico": 1.3,
+          "betanything": 1.38,
+          "betsson": 1.35,
+          "coolbet": 1.36,
+          "everygame": 1.28,
+          "betclic": 1.35
+        },
+        "away": {
+          "betfair": 3.25,
+          "leovegas": 3.2,
+          "unibet": 3.2,
+          "pmu": 3.2,
+          "williamhill": 3.1,
+          "888sport": 3.1,
+          "matchbook": 3.25,
+          "winamax": 3.15,
+          "1xbet": 3.15,
+          "tipico": 3.2,
+          "betanything": 3.1,
+          "betsson": 3.1,
+          "coolbet": 3.18,
+          "everygame": 3.3,
+          "betclic": 3.1
+        }
+      },
+      "model": {
+        "home": 0.672509643334985,
+        "away": 0.327490356665015,
+        "fromModel": true,
+        "eloH": 1934,
+        "eloA": 1809,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "20540fa3fc2cda1a3a0cee08a1ab289b",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "fabianmarozsan",
+      "away": "miomirkecmanovic",
+      "odds": {
+        "home": {
+          "betfair": 2.04,
+          "leovegas": 2,
+          "unibet": 2,
+          "pmu": 2,
+          "williamhill": 2,
+          "888sport": 2,
+          "matchbook": 2.08,
+          "winamax": 2,
+          "1xbet": 2.02,
+          "tipico": 2,
+          "betanything": 2,
+          "betsson": 2,
+          "coolbet": 2.02,
+          "everygame": 1.95,
+          "betclic": 2
+        },
+        "away": {
+          "betfair": 1.59,
+          "leovegas": 1.8,
+          "unibet": 1.8,
+          "pmu": 1.8,
+          "williamhill": 1.8,
+          "888sport": 1.8,
+          "matchbook": 1.59,
+          "winamax": 1.8,
+          "1xbet": 1.81,
+          "tipico": 1.72,
+          "betanything": 1.83,
+          "betsson": 1.78,
+          "coolbet": 1.8,
+          "everygame": 1.75,
+          "betclic": 1.78
+        }
+      },
+      "model": {
+        "home": 0.4841750147352649,
+        "away": 0.5158249852647351,
+        "fromModel": true,
+        "eloH": 1802,
+        "eloA": 1813,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "04d045e8e3f9c090f9be4512b5f60bb0",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "joaofonseca",
+      "away": "yannickhanfmann",
+      "odds": {
+        "home": {
+          "betfair": 1.47,
+          "leovegas": 1.41,
+          "unibet": 1.43,
+          "pmu": 1.41,
+          "williamhill": 1.44,
+          "888sport": 1.44,
+          "matchbook": 1.4,
+          "winamax": 1.43,
+          "1xbet": 1.44,
+          "tipico": 1.4,
+          "betanything": 1.42,
+          "betsson": 1.43,
+          "coolbet": 1.45,
+          "everygame": 1.36,
+          "betclic": 1.43
+        },
+        "away": {
+          "betfair": 2.72,
+          "leovegas": 2.9,
+          "unibet": 2.9,
+          "pmu": 2.9,
+          "williamhill": 2.75,
+          "888sport": 2.75,
+          "matchbook": 2.54,
+          "winamax": 2.8,
+          "1xbet": 2.83,
+          "tipico": 2.7,
+          "betanything": 3,
+          "betsson": 2.8,
+          "coolbet": 2.78,
+          "everygame": 2.9,
+          "betclic": 2.8
+        }
+      },
+      "model": {
+        "home": 0.581301478368915,
+        "away": 0.418698521631085,
+        "fromModel": true,
+        "eloH": 1860,
+        "eloA": 1803,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "c18bbe3194ed5887a698a9e94fd3b0be",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "tallongriekspoor",
+      "away": "shoshimabukuro",
+      "odds": {
+        "home": {
+          "betfair": 1.74,
+          "leovegas": 1.73,
+          "unibet": 1.73,
+          "pmu": 1.73,
+          "williamhill": 1.62,
+          "888sport": 1.61,
+          "matchbook": 1.74,
+          "winamax": 1.64,
+          "1xbet": 1.63,
+          "tipico": 1.62,
+          "betanything": 1.65,
+          "betsson": 1.62,
+          "coolbet": 1.65,
+          "everygame": 1.57,
+          "betclic": 1.62
+        },
+        "away": {
+          "betfair": 2.22,
+          "leovegas": 2.1,
+          "unibet": 2.25,
+          "pmu": 2.1,
+          "williamhill": 2.3,
+          "888sport": 2.3,
+          "matchbook": 2.22,
+          "winamax": 2.25,
+          "1xbet": 2.31,
+          "tipico": 2.15,
+          "betanything": 2.35,
+          "betsson": 2.25,
+          "coolbet": 2.25,
+          "everygame": 2.25,
+          "betclic": 2.25
+        }
+      },
+      "model": {
+        "home": 0.6900062072803139,
+        "away": 0.3099937927196861,
+        "fromModel": true,
+        "eloH": 1876,
+        "eloA": 1737,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
+      "sofa": null
+    },
+    {
+      "id": "b2bc242990a090285ceebe967a74a09f",
+      "tour": "atp",
+      "event": "Atp Halle Open",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:30",
+      "day": "16 JUN",
+      "home": "zizoubergs",
+      "away": "taylorfritz",
+      "odds": {
+        "home": {
+          "betfair": 1.56,
+          "leovegas": 3.6,
+          "unibet": 3.6,
+          "pmu": 3.6,
+          "williamhill": 3.5,
+          "888sport": 3.5,
+          "matchbook": 3.7,
+          "winamax": 3.65,
+          "1xbet": 3.6,
+          "tipico": 3.6,
+          "betanything": 3.5,
+          "betsson": 3.6,
+          "coolbet": 3.55,
+          "everygame": 3.5,
+          "betclic": 3.6
+        },
+        "away": {
+          "betfair": 1.28,
+          "leovegas": 1.29,
+          "unibet": 1.29,
+          "pmu": 1.29,
+          "williamhill": 1.3,
+          "888sport": 1.3,
+          "matchbook": 1.24,
+          "winamax": 1.28,
+          "1xbet": 1.3,
+          "tipico": 1.25,
+          "betanything": 1.31,
+          "betsson": 1.28,
+          "coolbet": 1.3,
+          "everygame": 1.25,
+          "betclic": 1.28
+        }
+      },
+      "model": {
+        "home": 0.3236983305072631,
+        "away": 0.6763016694927368,
+        "fromModel": true,
+        "eloH": 1832,
+        "eloA": 1960,
+        "surface": "grass"
+      },
+      "ts": 1781602200000,
       "sofa": null
     }
   ],
@@ -399,41 +3293,82 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 11,
-      "book": "pinnacle",
+      "conf": 52,
+      "book": "betfair_ex_eu",
       "legs": [
         {
-          "id": "5ae466fb9d899470c2d74c5deccc6526",
-          "sport": "tennis_wta_queens_club_champ",
-          "ts": 1781440200000,
+          "id": "e955e6ef5b6de115b8a75152aa437afc",
+          "sport": "tennis_atp_halle_open",
+          "ts": 1781515800000,
           "side": "away",
           "sofa": null,
-          "match": "D. Vekic – E. Raducanu",
-          "pick": "Gana E. Raducanu",
-          "odd": 1.73,
-          "book": "pinnacle"
+          "match": "M. Schoenhaus – L. Tien",
+          "pick": "Gana L. Tien",
+          "odd": 1.21,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "opid1200285972083316",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1781427600000,
+          "id": "54ef7746e9eaecaad0f9b1c9516930b0",
+          "sport": "tennis_atp_halle_open",
+          "ts": 1781602200000,
           "side": "away",
           "sofa": null,
-          "match": "L. Sonego – N. Basilashvili",
-          "pick": "Gana N. Basilashvili",
-          "odd": 2.45,
-          "book": "pinnacle"
+          "match": "M. Bellucci – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.44,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "opid1200279372066384",
-          "sport": "tennis_prev",
-          "ts": 1781427600000,
+          "id": "5fd9d5a716dc1c26827e66b6607e5433",
+          "sport": "tennis_atp_queens_club_champ",
+          "ts": 1781596800000,
+          "side": "away",
+          "sofa": null,
+          "match": "K. Majchrzak – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.58,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Combinada Valor",
+      "conf": 27,
+      "book": "betfair_ex_eu",
+      "legs": [
+        {
+          "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
+          "sport": "tennis_wta_german_open",
+          "ts": 1781532000000,
           "side": "home",
           "sofa": null,
-          "match": "L. Sun – A. Kalinina",
-          "pick": "Gana L. Sun",
-          "odd": 2.5,
-          "book": "pinnacle"
+          "match": "E. Alexandrova – A. Potapova",
+          "pick": "Gana E. Alexandrova",
+          "odd": 2,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "edd2a079158a578b9cc7bcc89c5d6b88",
+          "sport": "tennis_wta_german_open",
+          "ts": 1781596800000,
+          "side": "away",
+          "sofa": null,
+          "match": "D. Vekic – A. Eala",
+          "pick": "Gana A. Eala",
+          "odd": 2.14,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "4575c7d38f66dbe713d74ac9a486e02a",
+          "sport": "tennis_atp_halle_open",
+          "ts": 1781532000000,
+          "side": "away",
+          "sofa": null,
+          "match": "F. Cobolli – F. Tiafoe",
+          "pick": "Gana F. Tiafoe",
+          "odd": 1.81,
+          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -753,7 +3688,323 @@
       "result": "L"
     }
   ],
-  "PENDING": [],
+  "PENDING": [
+    {
+      "id": "8f1ab36c9853bddf2ae26b9fc2a1a381",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781526600000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "N. Borges – F. Auger-Aliassime",
+      "pickKey": "home",
+      "pickLabel": "Gana N. Borges",
+      "odd": 3.45,
+      "book": "betfair_ex_eu",
+      "homeName": "N. Borges",
+      "awayName": "F. Auger-Aliassime"
+    },
+    {
+      "id": "ab55f89190f9b59dd5d495873a63c4b0",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781520000000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "N. Basilashvili – D. Altmaier",
+      "pickKey": "away",
+      "pickLabel": "Gana D. Altmaier",
+      "odd": 2.44,
+      "book": "betfair_ex_eu",
+      "homeName": "N. Basilashvili",
+      "awayName": "D. Altmaier"
+    },
+    {
+      "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781548200000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "E. Mertens – L. Samsonova",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Samsonova",
+      "odd": 2.78,
+      "book": "betfair_ex_eu",
+      "homeName": "E. Mertens",
+      "awayName": "L. Samsonova"
+    },
+    {
+      "id": "fe68d83f6dfa8e38325aac2ef394ae42",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781515800000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Timofeeva – R. Zarazua",
+      "pickKey": "away",
+      "pickLabel": "Gana R. Zarazua",
+      "odd": 2.48,
+      "book": "betfair_ex_eu",
+      "homeName": "M. Timofeeva",
+      "awayName": "R. Zarazua"
+    },
+    {
+      "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781532000000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "E. Alexandrova – A. Potapova",
+      "pickKey": "home",
+      "pickLabel": "Gana E. Alexandrova",
+      "odd": 2.04,
+      "book": "unibet_se",
+      "homeName": "E. Alexandrova",
+      "awayName": "A. Potapova"
+    },
+    {
+      "id": "edd2a079158a578b9cc7bcc89c5d6b88",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "D. Vekic – A. Eala",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Eala",
+      "odd": 2.15,
+      "book": "betonlineag",
+      "homeName": "D. Vekic",
+      "awayName": "A. Eala"
+    },
+    {
+      "id": "04d045e8e3f9c090f9be4512b5f60bb0",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781602200000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "J. Fonseca – Y. Hanfmann",
+      "pickKey": "away",
+      "pickLabel": "Gana Y. Hanfmann",
+      "odd": 3,
+      "book": "betanysports",
+      "homeName": "J. Fonseca",
+      "awayName": "Y. Hanfmann"
+    },
+    {
+      "id": "4575c7d38f66dbe713d74ac9a486e02a",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781532000000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "F. Cobolli – F. Tiafoe",
+      "pickKey": "away",
+      "pickLabel": "Gana F. Tiafoe",
+      "odd": 1.81,
+      "book": "betfair_ex_eu",
+      "homeName": "F. Cobolli",
+      "awayName": "F. Tiafoe"
+    },
+    {
+      "id": "5741241ab19b593e887d24dd31ae35a0",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781533800000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "N. Bartunkova – D. Shnaider",
+      "pickKey": "home",
+      "pickLabel": "Gana N. Bartunkova",
+      "odd": 2.9,
+      "book": "betfair_ex_eu",
+      "homeName": "N. Bartunkova",
+      "awayName": "D. Shnaider"
+    },
+    {
+      "id": "5fd9d5a716dc1c26827e66b6607e5433",
+      "sport": "tennis_atp_queens_club_champ",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "K. Majchrzak – J. Lehecka",
+      "pickKey": "away",
+      "pickLabel": "Gana J. Lehecka",
+      "odd": 1.58,
+      "book": "betfair_ex_eu",
+      "homeName": "K. Majchrzak",
+      "awayName": "J. Lehecka"
+    },
+    {
+      "id": "c18bbe3194ed5887a698a9e94fd3b0be",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781602200000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "T. Griekspoor – S. Shimabukuro",
+      "pickKey": "home",
+      "pickLabel": "Gana T. Griekspoor",
+      "odd": 1.74,
+      "book": "betfair_ex_eu",
+      "homeName": "T. Griekspoor",
+      "awayName": "S. Shimabukuro"
+    },
+    {
+      "id": "ed196242a9eaa04e86d638c20cc40043",
+      "sport": "tennis_atp_queens_club_champ",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "J. Mensik – A. Mannarino",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Mannarino",
+      "odd": 2.75,
+      "book": "betanysports",
+      "homeName": "J. Mensik",
+      "awayName": "A. Mannarino"
+    },
+    {
+      "id": "99e4cf84297a7ea0fbcce4238bef2787",
+      "sport": "tennis_atp_queens_club_champ",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Rinderknech – H. Medjedovic",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Rinderknech",
+      "odd": 1.89,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Rinderknech",
+      "awayName": "H. Medjedovic"
+    },
+    {
+      "id": "c3057051daa976bb89578f1c11157206",
+      "sport": "tennis_atp_queens_club_champ",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Fery – T. Samuel",
+      "pickKey": "away",
+      "pickLabel": "Gana T. Samuel",
+      "odd": 2.32,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Fery",
+      "awayName": "T. Samuel"
+    },
+    {
+      "id": "54ef7746e9eaecaad0f9b1c9516930b0",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781602200000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Bellucci – A. Bublik",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Bublik",
+      "odd": 1.44,
+      "book": "betfair_ex_eu",
+      "homeName": "M. Bellucci",
+      "awayName": "A. Bublik"
+    },
+    {
+      "id": "17acc0b84ff78c1c3635105362c8db14",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781515800000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "L. Zhu – S. Kraus",
+      "pickKey": "away",
+      "pickLabel": "Gana S. Kraus",
+      "odd": 2.02,
+      "book": "betfair_ex_eu",
+      "homeName": "L. Zhu",
+      "awayName": "S. Kraus"
+    },
+    {
+      "id": "612c73cc96cb269cd55b6bbbaf277b8a",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781596800000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "E. Svitolina – A. Kalinskaya",
+      "pickKey": "home",
+      "pickLabel": "Gana E. Svitolina",
+      "odd": 1.49,
+      "book": "betfair_ex_eu",
+      "homeName": "E. Svitolina",
+      "awayName": "A. Kalinskaya"
+    },
+    {
+      "id": "ef5bc8aec5d3cb07a6dbd54f3805ebb3",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781602200000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Popyrin – R. Collignon",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Popyrin",
+      "odd": 2.15,
+      "book": "winamax_de",
+      "homeName": "A. Popyrin",
+      "awayName": "R. Collignon"
+    },
+    {
+      "id": "2ac15461a20677148f9cdfe5c558f3bb",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781602200000,
+      "date": "16 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Rublev – H. Hurkacz",
+      "pickKey": "away",
+      "pickLabel": "Gana H. Hurkacz",
+      "odd": 2.06,
+      "book": "leovegas_se",
+      "homeName": "A. Rublev",
+      "awayName": "H. Hurkacz"
+    },
+    {
+      "id": "e955e6ef5b6de115b8a75152aa437afc",
+      "sport": "tennis_atp_halle_open",
+      "ts": 1781515800000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Schoenhaus – L. Tien",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Tien",
+      "odd": 1.23,
+      "book": "leovegas_se",
+      "homeName": "M. Schoenhaus",
+      "awayName": "L. Tien"
+    },
+    {
+      "id": "5980c528627dc8644129c408833d7823",
+      "sport": "tennis_wta_german_open",
+      "ts": 1781526600000,
+      "date": "15 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "R. Masarova – M. Pohánková",
+      "pickKey": "home",
+      "pickLabel": "Gana R. Masarova",
+      "odd": 1.71,
+      "book": "betfair_ex_eu",
+      "homeName": "R. Masarova",
+      "awayName": "M. Pohánková"
+    }
+  ],
   "COMBO_RECORD": [
     {
       "date": "14 JUN",
@@ -1223,8 +4474,177 @@
       ]
     }
   ],
-  "COMBO_PENDING": [],
+  "COMBO_PENDING": [
+    {
+      "dayId": "15 JUN·c1",
+      "date": "15 JUN",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "e955e6ef5b6de115b8a75152aa437afc",
+          "sport": "tennis_atp_halle_open",
+          "side": "away",
+          "sofa": null,
+          "match": "M. Schoenhaus – L. Tien",
+          "pick": "Gana L. Tien",
+          "odd": 1.21,
+          "homeName": "M. Schoenhaus",
+          "awayName": "L. Tien"
+        },
+        {
+          "id": "54ef7746e9eaecaad0f9b1c9516930b0",
+          "sport": "tennis_atp_halle_open",
+          "side": "away",
+          "sofa": null,
+          "match": "M. Bellucci – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.44,
+          "homeName": "M. Bellucci",
+          "awayName": "A. Bublik"
+        },
+        {
+          "id": "5fd9d5a716dc1c26827e66b6607e5433",
+          "sport": "tennis_atp_queens_club_champ",
+          "side": "away",
+          "sofa": null,
+          "match": "K. Majchrzak – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.58,
+          "homeName": "K. Majchrzak",
+          "awayName": "J. Lehecka"
+        }
+      ]
+    },
+    {
+      "dayId": "15 JUN·c2",
+      "date": "15 JUN",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "c39a32f1d3fb25944fac23ed8d9af1a2",
+          "sport": "tennis_wta_german_open",
+          "side": "home",
+          "sofa": null,
+          "match": "E. Alexandrova – A. Potapova",
+          "pick": "Gana E. Alexandrova",
+          "odd": 2,
+          "homeName": "E. Alexandrova",
+          "awayName": "A. Potapova"
+        },
+        {
+          "id": "edd2a079158a578b9cc7bcc89c5d6b88",
+          "sport": "tennis_wta_german_open",
+          "side": "away",
+          "sofa": null,
+          "match": "D. Vekic – A. Eala",
+          "pick": "Gana A. Eala",
+          "odd": 2.14,
+          "homeName": "D. Vekic",
+          "awayName": "A. Eala"
+        },
+        {
+          "id": "4575c7d38f66dbe713d74ac9a486e02a",
+          "sport": "tennis_atp_halle_open",
+          "side": "away",
+          "sofa": null,
+          "match": "F. Cobolli – F. Tiafoe",
+          "pick": "Gana F. Tiafoe",
+          "odd": 1.81,
+          "homeName": "F. Cobolli",
+          "awayName": "F. Tiafoe"
+        }
+      ]
+    }
+  ],
   "ARB_RECORD": [
+    {
+      "date": "15 JUN",
+      "match": "M. Bellucci – A. Bublik",
+      "marginPct": 1.57,
+      "profit": 1.6,
+      "ts": 1781602200000,
+      "homeName": "M. Bellucci",
+      "awayName": "A. Bublik",
+      "sport": "tennis_atp_halle_open",
+      "legs": [
+        {
+          "pick": "Gana M. Bellucci",
+          "odd": 3.45,
+          "book": "unibet_fr"
+        },
+        {
+          "pick": "Gana A. Bublik",
+          "odd": 1.44,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "date": "15 JUN",
+      "match": "G. Mpetshi Perricard – C. Moutet",
+      "marginPct": 0.12,
+      "profit": 0.12,
+      "ts": 1781532000000,
+      "homeName": "G. Mpetshi Perricard",
+      "awayName": "C. Moutet",
+      "sport": "tennis_atp_queens_club_champ",
+      "legs": [
+        {
+          "pick": "Gana G. Mpetshi Perricard",
+          "odd": 1.67,
+          "book": "pmu_fr"
+        },
+        {
+          "pick": "Gana C. Moutet",
+          "odd": 2.5,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "date": "15 JUN",
+      "match": "M. Schoenhaus – L. Tien",
+      "marginPct": 1.16,
+      "profit": 1.17,
+      "ts": 1781515800000,
+      "homeName": "M. Schoenhaus",
+      "awayName": "L. Tien",
+      "sport": "tennis_atp_halle_open",
+      "legs": [
+        {
+          "pick": "Gana M. Schoenhaus",
+          "odd": 5.7,
+          "book": "matchbook"
+        },
+        {
+          "pick": "Gana L. Tien",
+          "odd": 1.23,
+          "book": "leovegas_se"
+        }
+      ]
+    },
+    {
+      "date": "15 JUN",
+      "match": "J. Brockmann Tessa – A. Parks",
+      "marginPct": 28.57,
+      "profit": 40,
+      "ts": 1781513700000,
+      "homeName": "J. Brockmann Tessa",
+      "awayName": "A. Parks",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana J. Brockmann Tessa",
+          "odd": 2.1,
+          "book": "bwin.be"
+        },
+        {
+          "pick": "Gana A. Parks",
+          "odd": 4.2,
+          "book": "unibet"
+        }
+      ]
+    },
     {
       "date": "13 JUN",
       "match": "E. Raducanu – K. Rakhimova",
@@ -2013,24 +5433,6 @@
           "book": "winamax"
         }
       ]
-    },
-    {
-      "date": "03 JUN",
-      "match": "Sabalenka – Shnaider",
-      "marginPct": 1.42,
-      "profit": 1.44,
-      "legs": [
-        {
-          "pick": "Gana A. Sabalenka",
-          "odd": 1.15,
-          "book": "gtbets"
-        },
-        {
-          "pick": "Gana D. Shnaider",
-          "odd": 8.6,
-          "book": "betfair"
-        }
-      ]
     }
   ],
   "ARB_PENDING": [],
@@ -2429,6 +5831,468 @@
       "sofa": null,
       "homeName": "L. Sun",
       "awayName": "A. Kalinina"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781513700000,
+      "match": "J. Brockmann Tessa – A. Parks",
+      "predHome": true,
+      "prob": 75,
+      "predName": "J. Brockmann Tessa",
+      "sofa": null,
+      "homeName": "J. Brockmann Tessa",
+      "awayName": "A. Parks"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781515800000,
+      "match": "M. Schoenhaus – L. Tien",
+      "predHome": false,
+      "prob": 85,
+      "predName": "L. Tien",
+      "sofa": null,
+      "homeName": "M. Schoenhaus",
+      "awayName": "L. Tien"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781515800000,
+      "match": "L. Zhu – S. Kraus",
+      "predHome": false,
+      "prob": 55,
+      "predName": "S. Kraus",
+      "sofa": null,
+      "homeName": "L. Zhu",
+      "awayName": "S. Kraus"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781515800000,
+      "match": "M. Timofeeva – R. Zarazua",
+      "predHome": false,
+      "prob": 57,
+      "predName": "R. Zarazua",
+      "sofa": null,
+      "homeName": "M. Timofeeva",
+      "awayName": "R. Zarazua"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781517600000,
+      "match": "M. Frech – S. Zhang",
+      "predHome": true,
+      "prob": 54,
+      "predName": "M. Frech",
+      "sofa": null,
+      "homeName": "M. Frech",
+      "awayName": "S. Zhang"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781517600000,
+      "match": "T. Maria – J. Tjen",
+      "predHome": false,
+      "prob": 54,
+      "predName": "J. Tjen",
+      "sofa": null,
+      "homeName": "T. Maria",
+      "awayName": "J. Tjen"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781519700000,
+      "match": "B. van de Zandschulp – H. Wendelken",
+      "predHome": true,
+      "prob": 66,
+      "predName": "B. van de Zandschulp",
+      "sofa": null,
+      "homeName": "B. van de Zandschulp",
+      "awayName": "H. Wendelken"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781520000000,
+      "match": "N. Basilashvili – D. Altmaier",
+      "predHome": false,
+      "prob": 59,
+      "predName": "D. Altmaier",
+      "sofa": null,
+      "homeName": "N. Basilashvili",
+      "awayName": "D. Altmaier"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781520000000,
+      "match": "T. Atmane – M. Landaluce",
+      "predHome": true,
+      "prob": 54,
+      "predName": "T. Atmane",
+      "sofa": null,
+      "homeName": "T. Atmane",
+      "awayName": "M. Landaluce"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781521200000,
+      "match": "A. Blockx – F. Cerundolo",
+      "predHome": true,
+      "prob": 57,
+      "predName": "A. Blockx",
+      "sofa": null,
+      "homeName": "A. Blockx",
+      "awayName": "F. Cerundolo"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781526600000,
+      "match": "N. Borges – F. Auger-Aliassime",
+      "predHome": false,
+      "prob": 57,
+      "predName": "F. Auger-Aliassime",
+      "sofa": null,
+      "homeName": "N. Borges",
+      "awayName": "F. Auger-Aliassime"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781526600000,
+      "match": "T. Paul – Z. Svajda",
+      "predHome": true,
+      "prob": 66,
+      "predName": "T. Paul",
+      "sofa": null,
+      "homeName": "T. Paul",
+      "awayName": "Z. Svajda"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781526600000,
+      "match": "R. Masarova – M. Pohánková",
+      "predHome": true,
+      "prob": 60,
+      "predName": "R. Masarova",
+      "sofa": null,
+      "homeName": "R. Masarova",
+      "awayName": "M. Pohánková"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781532000000,
+      "match": "F. Cobolli – F. Tiafoe",
+      "predHome": false,
+      "prob": 69,
+      "predName": "F. Tiafoe",
+      "sofa": null,
+      "homeName": "F. Cobolli",
+      "awayName": "F. Tiafoe"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781532000000,
+      "match": "G. Mpetshi Perricard – C. Moutet",
+      "predHome": false,
+      "prob": 66,
+      "predName": "C. Moutet",
+      "sofa": null,
+      "homeName": "G. Mpetshi Perricard",
+      "awayName": "C. Moutet"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781532000000,
+      "match": "E. Alexandrova – A. Potapova",
+      "predHome": true,
+      "prob": 65,
+      "predName": "E. Alexandrova",
+      "sofa": null,
+      "homeName": "E. Alexandrova",
+      "awayName": "A. Potapova"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781533800000,
+      "match": "J. Pinnington Jones – D. Shapovalov",
+      "predHome": false,
+      "prob": 59,
+      "predName": "D. Shapovalov",
+      "sofa": null,
+      "homeName": "J. Pinnington Jones",
+      "awayName": "D. Shapovalov"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781533800000,
+      "match": "N. Bartunkova – D. Shnaider",
+      "predHome": false,
+      "prob": 58,
+      "predName": "D. Shnaider",
+      "sofa": null,
+      "homeName": "N. Bartunkova",
+      "awayName": "D. Shnaider"
+    },
+    {
+      "date": "15 JUN",
+      "ts": 1781548200000,
+      "match": "E. Mertens – L. Samsonova",
+      "predHome": false,
+      "prob": 51,
+      "predName": "L. Samsonova",
+      "sofa": null,
+      "homeName": "E. Mertens",
+      "awayName": "L. Samsonova"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "J. Mensik – A. Mannarino",
+      "predHome": true,
+      "prob": 57,
+      "predName": "J. Mensik",
+      "sofa": null,
+      "homeName": "J. Mensik",
+      "awayName": "A. Mannarino"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "C. Norrie – A. Davidovich Fokina",
+      "predHome": false,
+      "prob": 55,
+      "predName": "A. Davidovich Fokina",
+      "sofa": null,
+      "homeName": "C. Norrie",
+      "awayName": "A. Davidovich Fokina"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "A. de Minaur – G. Diallo",
+      "predHome": true,
+      "prob": 67,
+      "predName": "A. de Minaur",
+      "sofa": null,
+      "homeName": "A. de Minaur",
+      "awayName": "G. Diallo"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "A. Fery – T. Samuel",
+      "predHome": true,
+      "prob": 50,
+      "predName": "A. Fery",
+      "sofa": null,
+      "homeName": "A. Fery",
+      "awayName": "T. Samuel"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "A. Rinderknech – H. Medjedovic",
+      "predHome": true,
+      "prob": 62,
+      "predName": "A. Rinderknech",
+      "sofa": null,
+      "homeName": "A. Rinderknech",
+      "awayName": "H. Medjedovic"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "B. Nakashima – M. Fucsovics",
+      "predHome": true,
+      "prob": 59,
+      "predName": "B. Nakashima",
+      "sofa": null,
+      "homeName": "B. Nakashima",
+      "awayName": "M. Fucsovics"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "I. Buse – R. Jodar",
+      "predHome": false,
+      "prob": 51,
+      "predName": "R. Jodar",
+      "sofa": null,
+      "homeName": "I. Buse",
+      "awayName": "R. Jodar"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "K. Majchrzak – J. Lehecka",
+      "predHome": false,
+      "prob": 76,
+      "predName": "J. Lehecka",
+      "sofa": null,
+      "homeName": "K. Majchrzak",
+      "awayName": "J. Lehecka"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "U. Humbert – M. Cilic",
+      "predHome": true,
+      "prob": 55,
+      "predName": "U. Humbert",
+      "sofa": null,
+      "homeName": "U. Humbert",
+      "awayName": "M. Cilic"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "D. Vekic – A. Eala",
+      "predHome": false,
+      "prob": 59,
+      "predName": "A. Eala",
+      "sofa": null,
+      "homeName": "D. Vekic",
+      "awayName": "A. Eala"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "E. Svitolina – A. Kalinskaya",
+      "predHome": true,
+      "prob": 74,
+      "predName": "E. Svitolina",
+      "sofa": null,
+      "homeName": "E. Svitolina",
+      "awayName": "A. Kalinskaya"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781596800000,
+      "match": "M. Keys – X. Wang",
+      "predHome": true,
+      "prob": 64,
+      "predName": "M. Keys",
+      "sofa": null,
+      "homeName": "M. Keys",
+      "awayName": "X. Wang"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "M. Bellucci – A. Bublik",
+      "predHome": false,
+      "prob": 80,
+      "predName": "A. Bublik",
+      "sofa": null,
+      "homeName": "M. Bellucci",
+      "awayName": "A. Bublik"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "A. Zverev – V. Kopriva",
+      "predHome": true,
+      "prob": 79,
+      "predName": "A. Zverev",
+      "sofa": null,
+      "homeName": "A. Zverev",
+      "awayName": "V. Kopriva"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "A. Popyrin – R. Collignon",
+      "predHome": true,
+      "prob": 50,
+      "predName": "A. Popyrin",
+      "sofa": null,
+      "homeName": "A. Popyrin",
+      "awayName": "R. Collignon"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "A. Rublev – H. Hurkacz",
+      "predHome": false,
+      "prob": 51,
+      "predName": "H. Hurkacz",
+      "sofa": null,
+      "homeName": "A. Rublev",
+      "awayName": "H. Hurkacz"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "B. Shelton – N. Kyrgios",
+      "predHome": true,
+      "prob": 64,
+      "predName": "B. Shelton",
+      "sofa": null,
+      "homeName": "B. Shelton",
+      "awayName": "N. Kyrgios"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "T. Martin Etcheverry – D. Medvedev",
+      "predHome": false,
+      "prob": 75,
+      "predName": "D. Medvedev",
+      "sofa": null,
+      "homeName": "T. Martin Etcheverry",
+      "awayName": "D. Medvedev"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "K. Khachanov – E. Quinn",
+      "predHome": true,
+      "prob": 67,
+      "predName": "K. Khachanov",
+      "sofa": null,
+      "homeName": "K. Khachanov",
+      "awayName": "E. Quinn"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "F. Marozsan – M. Kecmanovic",
+      "predHome": false,
+      "prob": 52,
+      "predName": "M. Kecmanovic",
+      "sofa": null,
+      "homeName": "F. Marozsan",
+      "awayName": "M. Kecmanovic"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "J. Fonseca – Y. Hanfmann",
+      "predHome": true,
+      "prob": 58,
+      "predName": "J. Fonseca",
+      "sofa": null,
+      "homeName": "J. Fonseca",
+      "awayName": "Y. Hanfmann"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "T. Griekspoor – S. Shimabukuro",
+      "predHome": true,
+      "prob": 69,
+      "predName": "T. Griekspoor",
+      "sofa": null,
+      "homeName": "T. Griekspoor",
+      "awayName": "S. Shimabukuro"
+    },
+    {
+      "date": "16 JUN",
+      "ts": 1781602200000,
+      "match": "Z. Bergs – T. Fritz",
+      "predHome": false,
+      "prob": 68,
+      "predName": "T. Fritz",
+      "sofa": null,
+      "homeName": "Z. Bergs",
+      "awayName": "T. Fritz"
     }
   ],
   "LADDER": {
@@ -2439,7 +6303,46 @@
     "current": 0,
     "status": "live",
     "bank": 10,
-    "rungs": []
+    "rungs": [
+      {
+        "n": 1,
+        "match": "J. Brockmann Tessa – A. Parks",
+        "pick": "Gana J. Brockmann Tessa",
+        "odd": 1.2,
+        "book": "bwin",
+        "bank": 12,
+        "result": "today",
+        "date": "15 JUN",
+        "sofa": null
+      },
+      {
+        "n": 2
+      },
+      {
+        "n": 3
+      },
+      {
+        "n": 4
+      },
+      {
+        "n": 5
+      },
+      {
+        "n": 6
+      },
+      {
+        "n": 7
+      },
+      {
+        "n": 8
+      },
+      {
+        "n": 9
+      },
+      {
+        "n": 10
+      }
+    ]
   },
   "LADDER_HISTORY": [],
   "ELO": {
@@ -5737,7 +9640,13 @@
     "dammjr": 1847,
     "bautistaagut": 1711,
     "ruse": 1926,
-    "bouzasmaneiro": 1754
+    "bouzasmaneiro": 1754,
+    "kyrgios": 1742,
+    "martinetcheverry": 1797,
+    "vandezandschulp": 1776,
+    "pinningtonjones": 1772,
+    "davidovichfokina": 1920,
+    "brockmanntessa": 1959
   },
   "ELO_DONE": {},
   "RANK_ELO": {
