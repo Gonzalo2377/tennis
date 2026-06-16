@@ -934,6 +934,26 @@ async function scoresOnly(){
     const still=[]; PENDING.forEach(p=>{ if(!pe(p.ts)){still.push(p);return;} if(pickVoided(p,voidPairs,voidNames)){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,oddOrig:p.odd,odd:1.00,book:p.book,result:'V'});return;} const sf=(p.sofa&&sofa[p.sofa])||nameRes(p.homeName,p.awayName); let w=null; if(sf&&sf.done){ if(sf.voided){RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,oddOrig:p.odd,odd:1.00,book:p.book,result:'V'});return;} w=(sf.winnerHome===(p.pickKey==='home')); } else if(sf&&!sf.done){still.push(p);return;} if(w===null) w=espnPairResult(p.homeName,p.awayName,(p.pickLabel||'').replace(/^Gana\s+/i,''),espn.finished); if(w===null) w=manualPickResult(p,manualWinners); if(w===null){still.push(p);return;} RECORD.unshift({id:p.id,date:p.date,match:p.match,pick:p.pickLabel,odd:p.odd,book:p.book,result:w?'W':'L'}); }); PENDING=still;
     const cstill=[]; COMBO_PENDING.forEach(c=>{ if(!c.legs.every(l=>pe(l.ts))){cstill.push(c);return;} const states=c.legs.map(l=>{ if(pickVoided({match:l.match,pickLabel:l.pick,homeName:(l.match||'').split('–')[0],awayName:(l.match||'').split('–')[1]},voidPairs,voidNames)) return 'V'; const s=(l.sofa&&sofa[l.sofa])||nameRes(l.homeName,l.awayName); if(s&&s.done&&s.voided) return 'V'; if(s&&s.done&&!s.voided) return (s.winnerHome===(l.side==='home')); const nm=(l.match||'').split('–'); let r=espnPairResult(nm[0],nm[1],(l.pick||'').replace(/^Gana\s+/i,''),espn.finished); if(r===null) r=manualLegResult(l,manualWinners); if(r===null) r=legWin(scores,l); return r; }); if(states.some(r=>r===null)){cstill.push(c);return;} const nonVoid=states.filter(r=>r!=='V'); const won=nonVoid.length>0&&nonVoid.every(r=>r===true); const allVoid=nonVoid.length===0; const totalOdd=+c.legs.reduce((p,l,i)=>p*(states[i]==='V'?1:l.odd),1).toFixed(2); COMBO_RECORD.unshift({date:c.date,name:c.name,totalOdd,result:allVoid?'V':(won?'W':'L'),legs:c.legs.map((l,i)=>({match:l.match,pick:l.pick,odd:states[i]==='V'?1.00:l.odd,win:states[i]==='V'?null:states[i],voided:states[i]==='V'}))}); }); COMBO_PENDING=cstill;
     const astill=[]; ARB_PENDING.forEach(a=>{ if(!pe(a.ts)){astill.push(a);return;} const sfa=(a.sofa&&sofa[a.sofa])||nameRes(a.homeName,a.awayName); const sfaVoid=(sfa&&sfa.done&&sfa.voided)||pickVoided({homeName:a.homeName,awayName:a.awayName,match:a.match},voidPairs,voidNames); const done=(sfa&&sfa.done)||espnPairDone(a.homeName,a.awayName,espn.finished)||matchFinished(scores,a.homeName,a.awayName)||sfaVoid; if(!done){astill.push(a);return;} if(sfaVoid) return; ARB_RECORD.unshift({date:a.date,match:a.match,marginPct:a.marginPct,profit:a.profit,legs:a.legs}); }); ARB_PENDING=astill;
+    // RETO ESCALERA (solo liquidar el peldaño de hoy; NO genera el siguiente — eso lo hace el run de odds)
+    try {
+      const L=d.LADDER; const LH=d.LADDER_HISTORY||[];
+      if(L && Array.isArray(L.rungs)){
+        const fin=(espn.finished||[]).map(f=>({a:surnameKey(f.home),b:surnameKey(f.away),w:surnameKey(f.winner)}));
+        const tr=L.rungs.find(r=>r.result==='today');
+        if(tr){
+          const nm=(tr.match||'').split('–').map(s=>surnameKey(s));
+          const f=nm.length>=2?fin.find(v=>(v.a===nm[0]&&v.b===nm[1])||(v.a===nm[1]&&v.b===nm[0])):null;
+          if(f){
+            const won=f.w===surnameKey((tr.pick||'').replace(/^Gana\s+/i,''));
+            if(won){ tr.result='W'; L.current=(L.current||0)+1; L.bank=tr.bank; }
+            else { tr.result='L'; LH.unshift({id:L.id,start:L.start,target:L.target,brokeAt:tr.n,reached:+((L.bank)||L.start).toFixed(2),result:'broken',date:tr.date||''}); d.LADDER=null; }
+            d.LADDER_HISTORY=LH.slice(0,12);
+            console.log('· Reto escalera (ESPN): peldaño '+tr.n+' → '+(won?'GANADO':'FALLADO'));
+          }
+        }
+        if(d.LADDER && d.LADDER.current>=d.LADDER.steps){ LH.unshift({id:d.LADDER.id,start:d.LADDER.start,target:d.LADDER.target,reached:+d.LADDER.bank.toFixed(2),result:'completed',date:''}); d.LADDER=null; d.LADDER_HISTORY=LH.slice(0,12); }
+      }
+    } catch(e){ console.log('· escalera scores-only error:', e.message); }
   } catch(e){ console.log('· scores-only: error', e.message); }
   d.RECORD=RECORD.slice(0,60); d.PENDING=PENDING; d.COMBO_RECORD=COMBO_RECORD.slice(0,40); d.COMBO_PENDING=COMBO_PENDING; d.ARB_RECORD=ARB_RECORD.slice(0,40); d.ARB_PENDING=ARB_PENDING; d.MODEL_RECORD=MODEL_RECORD.slice(0,400); d.MODEL_PENDING=MODEL_PENDING;
   if(d.meta) d.meta.updatedAt=new Date().toISOString();
