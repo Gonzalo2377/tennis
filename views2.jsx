@@ -218,7 +218,7 @@ function Combos({ t, go }) {
 
 /* ============================================================ EQUITY CURVE */
 function EquityCurve() {
-  const pts = window.equitySeries ? window.equitySeries() : [{x:0,y:0}];
+  const pts = window.equitySeries ? window.equitySeries() : [{x:0,y:0,picks:[]}];
   const [hover, setHover] = useState(null);
   const w=600, h=120, pad=6;
   const xs=pts.map(p=>p.x), ys=pts.map(p=>p.y);
@@ -231,14 +231,16 @@ function EquityCurve() {
   const zeroY=sy(0);
   const onMove=(e)=>{
     const r=e.currentTarget.getBoundingClientRect();
-    const rel=(e.clientX-r.left)/r.width*w;          // a coords del viewBox
+    const rel=(e.clientX-r.left)/r.width*w;
     let best=1, bd=1e9;
     for(let i=1;i<pts.length;i++){ const d=Math.abs(sx(pts[i].x)-rel); if(d<bd){bd=d;best=i;} }
     setHover(best);
   };
   const hp = hover!=null ? pts[hover] : null;
+  // etiquetas de fecha en el eje X (primera, media, última)
+  const labelIdx = pts.length>2 ? [1, Math.round(pts.length/2), pts.length-1] : pts.slice(1).map((_,i)=>i+1);
   return (
-    <div style={{position:'relative', width:'100%'}}>
+    <div style={{position:'relative', width:'100%', paddingTop:62}}>
       <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" style={{width:'100%', height:120, display:'block'}}
            onMouseMove={onMove} onMouseLeave={()=>setHover(null)}>
         <defs><linearGradient id="eqT" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="rgba(31,111,74,.28)"/><stop offset="100%" stopColor="rgba(31,111,74,0)"/></linearGradient></defs>
@@ -246,15 +248,24 @@ function EquityCurve() {
         <path d={area} fill="url(#eqT)"/>
         <path d={line} fill="none" stroke="var(--court)" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
         {hp && <line x1={sx(hp.x)} y1={pad} x2={sx(hp.x)} y2={h-pad} stroke="rgba(23,21,15,.25)" strokeWidth="1"/>}
-        {hp && <circle cx={sx(hp.x)} cy={sy(hp.y)} r="3.5" fill={hp.result==='W'?'var(--pos)':'var(--neg)'} stroke="#fff" strokeWidth="1.5"/>}
+        {hp && <circle cx={sx(hp.x)} cy={sy(hp.y)} r="3.5" fill={(hp.picks&&hp.picks.every(p=>p.result==='W'))?'var(--pos)':(hp.picks&&hp.picks.some(p=>p.result==='W'))?'#caa033':'var(--neg)'} stroke="#fff" strokeWidth="1.5"/>}
       </svg>
-      {hp && hp.match && (
-        <div style={{position:'absolute', left:`${(sx(hp.x)/w)*100}%`, top:-6, transform:'translateY(-100%)', pointerEvents:'none',
-          background:'var(--ink)', color:'#fff', padding:'7px 10px', borderRadius:8, fontSize:'.72rem', whiteSpace:'nowrap', boxShadow:'0 4px 14px rgba(0,0,0,.25)', zIndex:5,
-          marginLeft: sx(hp.x)/w>0.6 ? -160 : 4}}>
-          <div style={{fontFamily:'var(--font-mono)', opacity:.7, fontSize:'.62rem'}}>{hp.date}</div>
-          <div style={{fontWeight:700}}>{hp.pick} <span style={{color:hp.result==='W'?'var(--lime)':'#ff8a8a'}}>{hp.result==='W'?'✓ '+hp.odd.toFixed(2):'✗'}</span></div>
-          <div style={{opacity:.7}}>{hp.match} · {hp.y>=0?'+':''}{hp.y}u</div>
+      {/* etiquetas de fecha (eje X) */}
+      <div style={{position:'relative', height:16, marginTop:2}}>
+        {labelIdx.map((idx,k)=> pts[idx] ? (
+          <span key={k} style={{position:'absolute', left:`${(sx(pts[idx].x)/w)*100}%`, transform:'translateX(-50%)', fontFamily:'var(--font-mono)', fontSize:'.6rem', color:'var(--muted)', whiteSpace:'nowrap'}}>{pts[idx].date}</span>
+        ) : null)}
+      </div>
+      {hp && hp.picks && hp.picks.length>0 && (
+        <div style={{position:'absolute', left:`${(sx(hp.x)/w)*100}%`, top:0, pointerEvents:'none',
+          background:'var(--ink)', color:'#fff', padding:'7px 10px', borderRadius:8, fontSize:'.72rem', boxShadow:'0 4px 14px rgba(0,0,0,.25)', zIndex:5,
+          maxWidth:240, transform: sx(hp.x)/w>0.6 ? 'translateX(-100%)' : 'none', marginLeft: sx(hp.x)/w>0.6 ? -6 : 6}}>
+          <div style={{fontFamily:'var(--font-mono)', opacity:.7, fontSize:'.62rem', marginBottom:3}}>{hp.date} · {hp.y>=0?'+':''}{hp.y}u</div>
+          {hp.picks.map((pk,j)=>(
+            <div key={j} style={{fontWeight:700, lineHeight:1.4, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>
+              {pk.pick} <span style={{color:pk.result==='W'?'var(--lime)':pk.result==='V'?'#bbb':'#ff8a8a'}}>{pk.result==='W'?'✓ '+pk.odd.toFixed(2):pk.result==='V'?'∅':'✗'}</span>
+            </div>
+          ))}
         </div>
       )}
     </div>

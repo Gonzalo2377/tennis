@@ -273,13 +273,19 @@ window.modelSummary = function(){
 };
 /* cumulative profit points for the equity curve (1u flat per pick) */
 window.equitySeries = function(){
-    let cum=0; const pts=[{x:0,y:0}];
-    (window.RECORD||[]).filter(x=>x&&!x.legs&&x.result).forEach((x,i)=>{
+    // cronológico: RECORD viene del más reciente al más antiguo → lo invertimos
+    const settled=(window.RECORD||[]).filter(x=>x&&!x.legs&&x.result).slice().reverse();
+    // agrupar por día para mostrar TODOS los picks de esa fecha en el tooltip
+    let cum=0; const pts=[{x:0,y:0,picks:[]}]; const byDay={}; const order=[];
+    settled.forEach(x=>{
         const odd=(+x.odd)||0;
-        if(x.result==='W') cum += (odd-1);
-        else if(x.result==='L') cum -= 1;
-        pts.push({x:i+1, y:+cum.toFixed(2), date:x.date||'', match:x.match||'', pick:x.pick||'', result:x.result, odd});
+        if(x.result==='W') cum += (odd-1); else if(x.result==='L') cum -= 1;
+        const d=x.date||'—';
+        if(!(d in byDay)){ byDay[d]={date:d,picks:[]}; order.push(d); }
+        byDay[d].picks.push({pick:x.pick||'', match:x.match||'', result:x.result, odd});
+        byDay[d].y=+cum.toFixed(2);
     });
+    order.forEach((d,i)=> pts.push({x:i+1, y:byDay[d].y, date:d, picks:byDay[d].picks}));
     return pts;
 };
 window.recordSummary = function(){
