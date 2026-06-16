@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-16T14:00:29.255Z",
+    "updatedAt": "2026-06-16T16:00:41.660Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3384,6 +3384,25 @@
   ],
   "RECORD": [
     {
+      "id": "20540fa3fc2cda1a3a0cee08a1ab289b",
+      "date": "16 JUN",
+      "match": "F. Marozsan – M. Kecmanovic",
+      "pick": "Gana F. Marozsan",
+      "odd": 2.45,
+      "book": "leovegas_se",
+      "result": "W"
+    },
+    {
+      "id": "612c73cc96cb269cd55b6bbbaf277b8a",
+      "date": "16 JUN",
+      "match": "E. Svitolina – A. Kalinskaya",
+      "pick": "Gana E. Svitolina",
+      "oddOrig": 1.49,
+      "odd": 1,
+      "book": "betfair_ex_eu",
+      "result": "V"
+    },
+    {
       "id": "1d188e1774cc897f9ca7b0b4c437f751",
       "date": "16 JUN",
       "match": "K. Siniakova – R. Masarova",
@@ -3444,7 +3463,7 @@
       "pick": "Gana A. Kovacevic",
       "odd": 2.45,
       "book": "betclic_fr",
-      "result": "W"
+      "result": "L"
     },
     {
       "id": "86750e7ee306a4ff0bea0aab605580a5",
@@ -3906,23 +3925,6 @@
       "odd": 3.05,
       "book": "winamax.es",
       "result": "W"
-    },
-    {
-      "id": "e8fd9e22f4de0704558bc7a7f08171ce",
-      "date": "05 JUN",
-      "match": "M. Arnaldi – F. Cobolli",
-      "pick": "Gana M. Arnaldi",
-      "odd": 1,
-      "book": "betvictor",
-      "result": "V"
-    },
-    {
-      "date": "04 JUN",
-      "match": "M. Kostyuk – M. Andreeva",
-      "pick": "Gana M. Andreeva",
-      "odd": 2.2,
-      "book": "betfair",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -3940,21 +3942,6 @@
       "book": "betfair_ex_eu",
       "homeName": "K. Majchrzak",
       "awayName": "J. Lehecka"
-    },
-    {
-      "id": "612c73cc96cb269cd55b6bbbaf277b8a",
-      "sport": "tennis_wta_german_open",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "E. Svitolina – A. Kalinskaya",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Svitolina",
-      "odd": 1.49,
-      "book": "betfair_ex_eu",
-      "homeName": "E. Svitolina",
-      "awayName": "A. Kalinskaya"
     },
     {
       "id": "2791bdfb47ed6ab784ea5bbc8f2a6473",
@@ -3985,21 +3972,6 @@
       "book": "gtbets",
       "homeName": "L. Tien",
       "awayName": "F. Auger-Aliassime"
-    },
-    {
-      "id": "20540fa3fc2cda1a3a0cee08a1ab289b",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781610600000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "F. Marozsan – M. Kecmanovic",
-      "pickKey": "home",
-      "pickLabel": "Gana F. Marozsan",
-      "odd": 2.45,
-      "book": "leovegas_se",
-      "homeName": "F. Marozsan",
-      "awayName": "M. Kecmanovic"
     }
   ],
   "COMBO_RECORD": [
@@ -5475,6 +5447,34 @@
   "MODEL_RECORD": [
     {
       "date": "16 JUN",
+      "match": "A. Kovacevic – F. Cerundolo",
+      "predName": "F. Cerundolo",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "16 JUN",
+      "match": "F. Marozsan – M. Kecmanovic",
+      "predName": "M. Kecmanovic",
+      "prob": 52,
+      "ok": false
+    },
+    {
+      "date": "16 JUN",
+      "match": "A. Zverev – V. Kopriva",
+      "predName": "A. Zverev",
+      "prob": 79,
+      "ok": true
+    },
+    {
+      "date": "15 JUN",
+      "match": "G. Mpetshi Perricard – C. Moutet",
+      "predName": "C. Moutet",
+      "prob": 66,
+      "ok": true
+    },
+    {
+      "date": "16 JUN",
       "match": "K. Siniakova – R. Masarova",
       "predName": "K. Siniakova",
       "prob": 68,
@@ -6120,17 +6120,6 @@
     {
       "date": "15 JUN",
       "ts": 1781532000000,
-      "match": "G. Mpetshi Perricard – C. Moutet",
-      "predHome": false,
-      "prob": 66,
-      "predName": "C. Moutet",
-      "sofa": null,
-      "homeName": "G. Mpetshi Perricard",
-      "awayName": "C. Moutet"
-    },
-    {
-      "date": "15 JUN",
-      "ts": 1781532000000,
       "match": "E. Alexandrova – A. Potapova",
       "predHome": true,
       "prob": 65,
@@ -6230,17 +6219,6 @@
     {
       "date": "16 JUN",
       "ts": 1781602200000,
-      "match": "A. Zverev – V. Kopriva",
-      "predHome": true,
-      "prob": 79,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "A. Zverev",
-      "awayName": "V. Kopriva"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781602200000,
       "match": "B. Shelton – N. Kyrgios",
       "predHome": true,
       "prob": 64,
@@ -6263,17 +6241,6 @@
     {
       "date": "16 JUN",
       "ts": 1781602200000,
-      "match": "F. Marozsan – M. Kecmanovic",
-      "predHome": false,
-      "prob": 52,
-      "predName": "M. Kecmanovic",
-      "sofa": null,
-      "homeName": "F. Marozsan",
-      "awayName": "M. Kecmanovic"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781602200000,
       "match": "Z. Bergs – T. Fritz",
       "predHome": false,
       "prob": 68,
@@ -6292,17 +6259,6 @@
       "sofa": null,
       "homeName": "R. Hijikata",
       "awayName": "A. Tabilo"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781605800000,
-      "match": "A. Kovacevic – F. Cerundolo",
-      "predHome": false,
-      "prob": 51,
-      "predName": "F. Cerundolo",
-      "sofa": null,
-      "homeName": "A. Kovacevic",
-      "awayName": "F. Cerundolo"
     },
     {
       "date": "16 JUN",
