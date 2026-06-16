@@ -219,6 +219,7 @@ function Combos({ t, go }) {
 /* ============================================================ EQUITY CURVE */
 function EquityCurve() {
   const pts = window.equitySeries ? window.equitySeries() : [{x:0,y:0}];
+  const [hover, setHover] = useState(null);
   const w=600, h=120, pad=6;
   const xs=pts.map(p=>p.x), ys=pts.map(p=>p.y);
   const minY=Math.min(0,...ys), maxY=Math.max(...ys,1);
@@ -228,19 +229,58 @@ function EquityCurve() {
   const line=pts.map((p,i)=>`${i?'L':'M'}${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`).join(' ');
   const area=`${line} L${sx(xs[xs.length-1]).toFixed(1)},${(h-pad).toFixed(1)} L${sx(0).toFixed(1)},${(h-pad).toFixed(1)} Z`;
   const zeroY=sy(0);
+  const onMove=(e)=>{
+    const r=e.currentTarget.getBoundingClientRect();
+    const rel=(e.clientX-r.left)/r.width*w;          // a coords del viewBox
+    let best=1, bd=1e9;
+    for(let i=1;i<pts.length;i++){ const d=Math.abs(sx(pts[i].x)-rel); if(d<bd){bd=d;best=i;} }
+    setHover(best);
+  };
+  const hp = hover!=null ? pts[hover] : null;
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" style={{width:'100%', height:120, display:'block'}}>
-      <defs><linearGradient id="eqT" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="rgba(31,111,74,.28)"/><stop offset="100%" stopColor="rgba(31,111,74,0)"/></linearGradient></defs>
-      <line x1={pad} y1={zeroY} x2={w-pad} y2={zeroY} stroke="rgba(23,21,15,.14)" strokeWidth="1" strokeDasharray="4 4"/>
-      <path d={area} fill="url(#eqT)"/>
-      <path d={line} fill="none" stroke="var(--court)" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
-    </svg>
+    <div style={{position:'relative', width:'100%'}}>
+      <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" style={{width:'100%', height:120, display:'block'}}
+           onMouseMove={onMove} onMouseLeave={()=>setHover(null)}>
+        <defs><linearGradient id="eqT" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="rgba(31,111,74,.28)"/><stop offset="100%" stopColor="rgba(31,111,74,0)"/></linearGradient></defs>
+        <line x1={pad} y1={zeroY} x2={w-pad} y2={zeroY} stroke="rgba(23,21,15,.14)" strokeWidth="1" strokeDasharray="4 4"/>
+        <path d={area} fill="url(#eqT)"/>
+        <path d={line} fill="none" stroke="var(--court)" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
+        {hp && <line x1={sx(hp.x)} y1={pad} x2={sx(hp.x)} y2={h-pad} stroke="rgba(23,21,15,.25)" strokeWidth="1"/>}
+        {hp && <circle cx={sx(hp.x)} cy={sy(hp.y)} r="3.5" fill={hp.result==='W'?'var(--pos)':'var(--neg)'} stroke="#fff" strokeWidth="1.5"/>}
+      </svg>
+      {hp && hp.match && (
+        <div style={{position:'absolute', left:`${(sx(hp.x)/w)*100}%`, top:-6, transform:'translateY(-100%)', pointerEvents:'none',
+          background:'var(--ink)', color:'#fff', padding:'7px 10px', borderRadius:8, fontSize:'.72rem', whiteSpace:'nowrap', boxShadow:'0 4px 14px rgba(0,0,0,.25)', zIndex:5,
+          marginLeft: sx(hp.x)/w>0.6 ? -160 : 4}}>
+          <div style={{fontFamily:'var(--font-mono)', opacity:.7, fontSize:'.62rem'}}>{hp.date}</div>
+          <div style={{fontWeight:700}}>{hp.pick} <span style={{color:hp.result==='W'?'var(--lime)':'#ff8a8a'}}>{hp.result==='W'?'✓ '+hp.odd.toFixed(2):'✗'}</span></div>
+          <div style={{opacity:.7}}>{hp.match} · {hp.y>=0?'+':''}{hp.y}u</div>
+        </div>
+      )}
+    </div>
   );
 }
 
 /* ============================================================ RÉCORD */
+const PER_PAGE = 10;
+function Pager({page,total,per,setPage}){
+  const pages=Math.ceil(total/per)||1;
+  if(pages<=1) return null;
+  const btn={width:34,height:34,borderRadius:9,border:'1px solid var(--line)',background:'var(--surface)',cursor:'pointer',fontSize:'1rem',color:'var(--ink)'};
+  const dis={...btn,opacity:.35,cursor:'default'};
+  return (
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:14,padding:'14px 0 2px'}}>
+      <button style={page===0?dis:btn} disabled={page===0} onClick={()=>setPage(page-1)}>←</button>
+      <span style={{fontFamily:'var(--font-mono)',fontSize:'.8rem',color:'var(--muted)'}}>{page+1} / {pages}</span>
+      <button style={page>=pages-1?dis:btn} disabled={page>=pages-1} onClick={()=>setPage(page+1)}>→</button>
+    </div>
+  );
+}
 function Record({ t, go }) {
   const s = window.recordSummary();
+  const [pgPick,setPgPick]=useState(0);
+  const [pgCombo,setPgCombo]=useState(0);
+  const [pgArb,setPgArb]=useState(0);
   let cum=0;
   // normalize so "Gana M. Arnaldi" (robot) and "M. Arnaldi" (live board) collapse to one
   const _ns=s=>(s||'').trim().replace(/^[A-Za-z]\.\s*/,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
@@ -311,7 +351,7 @@ function Record({ t, go }) {
             <table className="vboard">
               <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.colOdd}</th><th>{t.colBook}</th><th>{t.colResult}</th></tr></thead>
               <tbody>
-                {window.RECORD.map((r,i)=>(
+                {window.RECORD.slice(pgPick*PER_PAGE,(pgPick+1)*PER_PAGE).map((r,i)=>(
                   <tr key={i} style={{cursor:'default'}}>
                     <td><span className="vb-sub">{r.date}</span></td>
                     <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{r.match}</span></td>
@@ -323,7 +363,7 @@ function Record({ t, go }) {
                 ))}
               </tbody>
             </table>
-          </div></div>
+          </div><Pager page={pgPick} total={window.RECORD.length} per={PER_PAGE} setPage={setPgPick} /></div>
 
           {Array.isArray(window.COMBO_PENDING) && window.COMBO_PENDING.length>0 && (
             <div style={{marginTop:30}}>
@@ -368,7 +408,7 @@ function Record({ t, go }) {
                 </div>
               ); })()}
               <div className="grid grid--2">
-                {window.COMBO_RECORD.map((c,i)=>{
+                {window.COMBO_RECORD.slice(pgCombo*PER_PAGE,(pgCombo+1)*PER_PAGE).map((c,i)=>{
                   const won=c.result==='W'; const vd=c.result==='V';
                   return (
                     <div className="panel" key={i} style={{borderColor: vd?'rgba(131,125,108,.4)':won?'rgba(31,138,76,.4)':'rgba(210,64,42,.4)', borderWidth:1, borderStyle:'solid'}}>
@@ -395,6 +435,7 @@ function Record({ t, go }) {
                   );
                 })}
               </div>
+              <Pager page={pgCombo} total={window.COMBO_RECORD.length} per={PER_PAGE} setPage={setPgCombo} />
             </div>
           )}
 
@@ -411,7 +452,7 @@ function Record({ t, go }) {
                 <table className="vboard">
                   <thead><tr><th>{t.colDate}</th><th className="l">{t.colMatch}</th><th className="l">{t.colPick}</th><th>{t.arbRecMargin}</th><th>{t.stProfit}</th></tr></thead>
                   <tbody>
-                    {window.ARB_RECORD.map((a,i)=>(
+                    {window.ARB_RECORD.slice(pgArb*PER_PAGE,(pgArb+1)*PER_PAGE).map((a,i)=>(
                       <tr key={i} style={{cursor:'default'}}>
                         <td><span className="vb-sub">{a.date}</span></td>
                         <td className="l"><span className="vb-match" style={{fontSize:'.9rem'}}>{a.match}</span></td>
@@ -422,7 +463,7 @@ function Record({ t, go }) {
                     ))}
                   </tbody>
                 </table>
-              </div></div>
+              </div><Pager page={pgArb} total={window.ARB_RECORD.length} per={PER_PAGE} setPage={setPgArb} /></div>
             </div>
           ); })()}
           <div className="disclaimer" style={{marginTop:24}}><b>{t.discTitle}</b> {t.disc}</div>

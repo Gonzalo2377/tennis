@@ -278,7 +278,7 @@ window.equitySeries = function(){
         const odd=(+x.odd)||0;
         if(x.result==='W') cum += (odd-1);
         else if(x.result==='L') cum -= 1;
-        pts.push({x:i+1, y:+cum.toFixed(2)});
+        pts.push({x:i+1, y:+cum.toFixed(2), date:x.date||'', match:x.match||'', pick:x.pick||'', result:x.result, odd});
     });
     return pts;
 };
