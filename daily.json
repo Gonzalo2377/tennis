@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-16T07:00:28.523Z",
+    "updatedAt": "2026-06-16T08:00:28.539Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -49,7 +49,7 @@
       "tour": "atp",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1926_a-popyrin.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/128552/image"
     },
     "raphaelcollignon": {
       "id": "raphaelcollignon",
@@ -235,7 +235,8 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": []
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2984_n-kyrgios.jpg"
     },
     "learnertien": {
       "id": "learnertien",
@@ -378,7 +379,7 @@
       "tour": "atp",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1106_a-deminaur.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
     },
     "gabrieldiallo": {
       "id": "gabrieldiallo",
@@ -455,7 +456,7 @@
       "tour": "atp",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/2842_a-davidovichfokina.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
     },
     "rinkyhijikata": {
       "id": "rinkyhijikata",
@@ -3383,6 +3384,42 @@
   ],
   "RECORD": [
     {
+      "id": "c3057051daa976bb89578f1c11157206",
+      "date": "16 JUN",
+      "match": "A. Fery – T. Samuel",
+      "pick": "Gana T. Samuel",
+      "odd": 2.32,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "99e4cf84297a7ea0fbcce4238bef2787",
+      "date": "16 JUN",
+      "match": "A. Rinderknech – H. Medjedovic",
+      "pick": "Gana A. Rinderknech",
+      "odd": 1.89,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "ed196242a9eaa04e86d638c20cc40043",
+      "date": "16 JUN",
+      "match": "J. Mensik – A. Mannarino",
+      "pick": "Gana A. Mannarino",
+      "odd": 2.75,
+      "book": "betanysports",
+      "result": "W"
+    },
+    {
+      "id": "edd2a079158a578b9cc7bcc89c5d6b88",
+      "date": "16 JUN",
+      "match": "D. Vekic – A. Eala",
+      "pick": "Gana A. Eala",
+      "odd": 2.15,
+      "book": "betonlineag",
+      "result": "L"
+    },
+    {
       "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
       "date": "15 JUN",
       "match": "E. Mertens – L. Samsonova",
@@ -3798,21 +3835,6 @@
   ],
   "PENDING": [
     {
-      "id": "edd2a079158a578b9cc7bcc89c5d6b88",
-      "sport": "tennis_wta_german_open",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "D. Vekic – A. Eala",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Eala",
-      "odd": 2.15,
-      "book": "betonlineag",
-      "homeName": "D. Vekic",
-      "awayName": "A. Eala"
-    },
-    {
       "id": "04d045e8e3f9c090f9be4512b5f60bb0",
       "sport": "tennis_atp_halle_open",
       "ts": 1781602200000,
@@ -3856,51 +3878,6 @@
       "book": "betfair_ex_eu",
       "homeName": "T. Griekspoor",
       "awayName": "S. Shimabukuro"
-    },
-    {
-      "id": "ed196242a9eaa04e86d638c20cc40043",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Mensik – A. Mannarino",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Mannarino",
-      "odd": 2.75,
-      "book": "betanysports",
-      "homeName": "J. Mensik",
-      "awayName": "A. Mannarino"
-    },
-    {
-      "id": "99e4cf84297a7ea0fbcce4238bef2787",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Rinderknech – H. Medjedovic",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Rinderknech",
-      "odd": 1.89,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Rinderknech",
-      "awayName": "H. Medjedovic"
-    },
-    {
-      "id": "c3057051daa976bb89578f1c11157206",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "A. Fery – T. Samuel",
-      "pickKey": "away",
-      "pickLabel": "Gana T. Samuel",
-      "odd": 2.32,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Fery",
-      "awayName": "T. Samuel"
     },
     {
       "id": "54ef7746e9eaecaad0f9b1c9516930b0",
