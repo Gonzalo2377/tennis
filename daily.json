@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-16T18:00:28.442Z",
+    "updatedAt": "2026-06-16T20:00:26.737Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3384,6 +3384,24 @@
   ],
   "RECORD": [
     {
+      "id": "2791bdfb47ed6ab784ea5bbc8f2a6473",
+      "date": "16 JUN",
+      "match": "C. Norrie – A. Davidovich Fokina",
+      "pick": "Gana C. Norrie",
+      "odd": 2.2,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
+      "id": "5fd9d5a716dc1c26827e66b6607e5433",
+      "date": "16 JUN",
+      "match": "K. Majchrzak – J. Lehecka",
+      "pick": "Gana J. Lehecka",
+      "odd": 1.58,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "20540fa3fc2cda1a3a0cee08a1ab289b",
       "date": "16 JUN",
       "match": "F. Marozsan – M. Kecmanovic",
@@ -3907,57 +3925,9 @@
       "odd": 1.29,
       "book": "onexbet",
       "result": "W"
-    },
-    {
-      "id": "opid1203937771828642",
-      "date": "05 JUN",
-      "match": "A. Ilagan – Y. Shimizu",
-      "pick": "Gana Y. Shimizu",
-      "odd": 2.35,
-      "book": "winamax.de",
-      "result": "L"
-    },
-    {
-      "id": "opid1205181071750486",
-      "date": "05 JUN",
-      "match": "M. Trungelliti – D. Dedura-Palomero",
-      "pick": "Gana D. Dedura-Palomero",
-      "odd": 3.05,
-      "book": "winamax.es",
-      "result": "W"
     }
   ],
   "PENDING": [
-    {
-      "id": "5fd9d5a716dc1c26827e66b6607e5433",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Majchrzak – J. Lehecka",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 1.58,
-      "book": "betfair_ex_eu",
-      "homeName": "K. Majchrzak",
-      "awayName": "J. Lehecka"
-    },
-    {
-      "id": "2791bdfb47ed6ab784ea5bbc8f2a6473",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781596800000,
-      "date": "16 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "C. Norrie – A. Davidovich Fokina",
-      "pickKey": "home",
-      "pickLabel": "Gana C. Norrie",
-      "odd": 2.2,
-      "book": "betfair_ex_eu",
-      "homeName": "C. Norrie",
-      "awayName": "A. Davidovich Fokina"
-    },
     {
       "id": "b0ca66fc32c38bd07a4a95e5e6ffbd82",
       "sport": "tennis_atp_halle_open",
@@ -3975,6 +3945,64 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "16 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.84,
+      "result": "L",
+      "legs": [
+        {
+          "match": "M. Bellucci – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.36,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "S. Zhang – K. Muchova",
+          "pick": "Gana K. Muchova",
+          "odd": 1.4,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Majchrzak – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.49,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "15 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.75,
+      "result": "L",
+      "legs": [
+        {
+          "match": "M. Schoenhaus – L. Tien",
+          "pick": "Gana L. Tien",
+          "odd": 1.21,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "M. Bellucci – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.44,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "K. Majchrzak – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.58,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "16 JUN",
       "name": "Combinada Valor",
@@ -4501,88 +4529,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "15 JUN·c1",
-      "date": "15 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "e955e6ef5b6de115b8a75152aa437afc",
-          "sport": "tennis_atp_halle_open",
-          "side": "away",
-          "sofa": null,
-          "match": "M. Schoenhaus – L. Tien",
-          "pick": "Gana L. Tien",
-          "odd": 1.21,
-          "homeName": "M. Schoenhaus",
-          "awayName": "L. Tien"
-        },
-        {
-          "id": "54ef7746e9eaecaad0f9b1c9516930b0",
-          "sport": "tennis_atp_halle_open",
-          "side": "away",
-          "sofa": null,
-          "match": "M. Bellucci – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.44,
-          "homeName": "M. Bellucci",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "5fd9d5a716dc1c26827e66b6607e5433",
-          "sport": "tennis_atp_queens_club_champ",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Majchrzak – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.58,
-          "homeName": "K. Majchrzak",
-          "awayName": "J. Lehecka"
-        }
-      ]
-    },
-    {
-      "dayId": "16 JUN·c1",
-      "date": "16 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "54ef7746e9eaecaad0f9b1c9516930b0",
-          "sport": "tennis_atp_halle_open",
-          "side": "away",
-          "sofa": null,
-          "match": "M. Bellucci – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.36,
-          "homeName": "M. Bellucci",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "278d6ee7cb48d7d5a260ba686664b6a0",
-          "sport": "tennis_wta_german_open",
-          "side": "away",
-          "sofa": null,
-          "match": "S. Zhang – K. Muchova",
-          "pick": "Gana K. Muchova",
-          "odd": 1.4,
-          "homeName": "S. Zhang",
-          "awayName": "K. Muchova"
-        },
-        {
-          "id": "5fd9d5a716dc1c26827e66b6607e5433",
-          "sport": "tennis_atp_queens_club_champ",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Majchrzak – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.49,
-          "homeName": "K. Majchrzak",
-          "awayName": "J. Lehecka"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "16 JUN",
@@ -5447,6 +5394,20 @@
   "MODEL_RECORD": [
     {
       "date": "16 JUN",
+      "match": "K. Majchrzak – J. Lehecka",
+      "predName": "J. Lehecka",
+      "prob": 76,
+      "ok": true
+    },
+    {
+      "date": "16 JUN",
+      "match": "C. Norrie – A. Davidovich Fokina",
+      "predName": "A. Davidovich Fokina",
+      "prob": 55,
+      "ok": true
+    },
+    {
+      "date": "16 JUN",
       "match": "R. Hijikata – A. Tabilo",
       "predName": "A. Tabilo",
       "prob": 64,
@@ -6166,17 +6127,6 @@
     {
       "date": "16 JUN",
       "ts": 1781596800000,
-      "match": "C. Norrie – A. Davidovich Fokina",
-      "predHome": false,
-      "prob": 55,
-      "predName": "A. Davidovich Fokina",
-      "sofa": null,
-      "homeName": "C. Norrie",
-      "awayName": "A. Davidovich Fokina"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781596800000,
       "match": "I. Buse – R. Jodar",
       "predHome": false,
       "prob": 51,
@@ -6184,17 +6134,6 @@
       "sofa": null,
       "homeName": "I. Buse",
       "awayName": "R. Jodar"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781596800000,
-      "match": "K. Majchrzak – J. Lehecka",
-      "predHome": false,
-      "prob": 76,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "K. Majchrzak",
-      "awayName": "J. Lehecka"
     },
     {
       "date": "16 JUN",
