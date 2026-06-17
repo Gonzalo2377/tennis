@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-17T10:00:23.712Z",
+    "updatedAt": "2026-06-17T12:00:30.866Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2722,7 +2722,7 @@
       "pick": "Gana A. Eala",
       "odd": 2.15,
       "book": "betonlineag",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "a1b09ee3fd5d73bb62d8f1c85a0d5185",
@@ -3338,7 +3338,7 @@
           "match": "D. Vekic – A. Eala",
           "pick": "Gana A. Eala",
           "odd": 2.09,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -3361,7 +3361,7 @@
       "date": "15 JUN",
       "name": "Combinada Valor",
       "totalOdd": 3.87,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "E. Alexandrova – A. Potapova",
@@ -3374,7 +3374,7 @@
           "match": "D. Vekic – A. Eala",
           "pick": "Gana A. Eala",
           "odd": 2.14,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -4821,6 +4821,34 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "17 JUN",
+      "match": "B. Nakashima – I. Buse",
+      "predName": "I. Buse",
+      "prob": 52,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
+      "match": "E. Mertens – N. Bartunkova",
+      "predName": "E. Mertens",
+      "prob": 66,
+      "ok": false
+    },
+    {
+      "date": "16 JUN",
+      "match": "Z. Bergs – T. Fritz",
+      "predName": "T. Fritz",
+      "prob": 68,
+      "ok": true
+    },
+    {
+      "date": "16 JUN",
+      "match": "D. Vekic – A. Eala",
+      "predName": "A. Eala",
+      "prob": 59,
+      "ok": true
+    },
+    {
       "date": "16 JUN",
       "match": "K. Majchrzak – J. Lehecka",
       "predName": "J. Lehecka",
@@ -5566,17 +5594,6 @@
     {
       "date": "16 JUN",
       "ts": 1781596800000,
-      "match": "D. Vekic – A. Eala",
-      "predHome": false,
-      "prob": 59,
-      "predName": "A. Eala",
-      "sofa": null,
-      "homeName": "D. Vekic",
-      "awayName": "A. Eala"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781596800000,
       "match": "E. Svitolina – A. Kalinskaya",
       "predHome": true,
       "prob": 74,
@@ -5595,17 +5612,6 @@
       "sofa": null,
       "homeName": "B. Shelton",
       "awayName": "N. Kyrgios"
-    },
-    {
-      "date": "16 JUN",
-      "ts": 1781602200000,
-      "match": "Z. Bergs – T. Fritz",
-      "predHome": false,
-      "prob": 68,
-      "predName": "T. Fritz",
-      "sofa": null,
-      "homeName": "Z. Bergs",
-      "awayName": "T. Fritz"
     },
     {
       "date": "16 JUN",
@@ -5639,17 +5645,6 @@
       "sofa": null,
       "homeName": "L. Tien",
       "awayName": "F. Auger-Aliassime"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781688600000,
-      "match": "E. Mertens – N. Bartunkova",
-      "predHome": true,
-      "prob": 66,
-      "predName": "E. Mertens",
-      "sofa": null,
-      "homeName": "E. Mertens",
-      "awayName": "N. Bartunkova"
     },
     {
       "date": "17 JUN",
@@ -5705,17 +5700,6 @@
       "sofa": null,
       "homeName": "Y. Starodubtseva",
       "awayName": "E. Navarro"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781692200000,
-      "match": "B. Nakashima – I. Buse",
-      "predHome": false,
-      "prob": 52,
-      "predName": "I. Buse",
-      "sofa": null,
-      "homeName": "B. Nakashima",
-      "awayName": "I. Buse"
     },
     {
       "date": "17 JUN",
