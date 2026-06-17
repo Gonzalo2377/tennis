@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-17T14:00:37.959Z",
+    "updatedAt": "2026-06-17T16:00:34.066Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2544,6 +2544,15 @@
   ],
   "RECORD": [
     {
+      "id": "48e2d19799a5941a7b8690b63f10011c",
+      "date": "17 JUN",
+      "match": "A. Mannarino – A. Fery",
+      "pick": "Gana A. Mannarino",
+      "odd": 1.8,
+      "book": "winamax_de",
+      "result": "L"
+    },
+    {
       "id": "c616f37ad2ee158e05edb810e8e230ab",
       "date": "17 JUN",
       "match": "F. Tiafoe – S. Shimabukuro",
@@ -3075,16 +3084,6 @@
       "odd": 3.55,
       "book": "betfair-ex",
       "result": "W"
-    },
-    {
-      "id": "opid1200277571958070",
-      "date": "08 JUN",
-      "match": "T. Paul – G. Mpetshi Perricard",
-      "pick": "Gana T. Paul",
-      "oddOrig": 1.48,
-      "odd": 1,
-      "book": "winamax.de",
-      "result": "V"
     }
   ],
   "PENDING": [
@@ -3117,21 +3116,6 @@
       "book": "matchbook",
       "homeName": "J. Brooksby",
       "awayName": "F. Cerundolo"
-    },
-    {
-      "id": "48e2d19799a5941a7b8690b63f10011c",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781700600000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Mannarino – A. Fery",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Mannarino",
-      "odd": 1.8,
-      "book": "winamax_de",
-      "homeName": "A. Mannarino",
-      "awayName": "A. Fery"
     },
     {
       "id": "b3bd8676acdefc2a877762106b90c373",
@@ -3225,6 +3209,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "17 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 5.08,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Vekic – A. Eala",
+          "pick": "Gana A. Eala",
+          "odd": 2.14,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "A. Mannarino – A. Fery",
+          "pick": "Gana A. Mannarino",
+          "odd": 1.77,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "P. Badosa – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 1.34,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "16 JUN",
       "name": "Combinada del Día",
@@ -3847,46 +3860,6 @@
           "odd": 1.36,
           "homeName": "R. Hijikata",
           "awayName": "J. Lehecka"
-        }
-      ]
-    },
-    {
-      "dayId": "17 JUN·c2",
-      "date": "17 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "edd2a079158a578b9cc7bcc89c5d6b88",
-          "sport": "tennis_wta_german_open",
-          "side": "away",
-          "sofa": null,
-          "match": "D. Vekic – A. Eala",
-          "pick": "Gana A. Eala",
-          "odd": 2.14,
-          "homeName": "D. Vekic",
-          "awayName": "A. Eala"
-        },
-        {
-          "id": "48e2d19799a5941a7b8690b63f10011c",
-          "sport": "tennis_atp_queens_club_champ",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Mannarino – A. Fery",
-          "pick": "Gana A. Mannarino",
-          "odd": 1.77,
-          "homeName": "A. Mannarino",
-          "awayName": "A. Fery"
-        },
-        {
-          "id": "ba8b9e6daa1d282063d372f434d27bae",
-          "sport": "tennis_wta_german_open",
-          "side": "away",
-          "sofa": null,
-          "match": "P. Badosa – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 1.34,
-          "homeName": "P. Badosa",
-          "awayName": "C. Gauff"
         }
       ]
     }
@@ -4775,6 +4748,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "17 JUN",
+      "match": "P. Badosa – C. Gauff",
+      "predName": "C. Gauff",
+      "prob": 86,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
+      "match": "A. Mannarino – A. Fery",
+      "predName": "A. Mannarino",
+      "prob": 67,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
+      "match": "H. Hurkacz – D. Altmaier",
+      "predName": "H. Hurkacz",
+      "prob": 70,
+      "ok": false
+    },
     {
       "date": "17 JUN",
       "match": "A. de Minaur – D. Shapovalov",
@@ -5682,28 +5676,6 @@
     },
     {
       "date": "17 JUN",
-      "ts": 1781698200000,
-      "match": "H. Hurkacz – D. Altmaier",
-      "predHome": true,
-      "prob": 70,
-      "predName": "H. Hurkacz",
-      "sofa": null,
-      "homeName": "H. Hurkacz",
-      "awayName": "D. Altmaier"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781700600000,
-      "match": "A. Mannarino – A. Fery",
-      "predHome": true,
-      "prob": 67,
-      "predName": "A. Mannarino",
-      "sofa": null,
-      "homeName": "A. Mannarino",
-      "awayName": "A. Fery"
-    },
-    {
-      "date": "17 JUN",
       "ts": 1781700600000,
       "match": "D. Yastremska – T. Maria",
       "predHome": true,
@@ -5723,17 +5695,6 @@
       "sofa": null,
       "homeName": "T. Atmane",
       "awayName": "D. Medvedev"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781703000000,
-      "match": "P. Badosa – C. Gauff",
-      "predHome": false,
-      "prob": 86,
-      "predName": "C. Gauff",
-      "sofa": null,
-      "homeName": "P. Badosa",
-      "awayName": "C. Gauff"
     },
     {
       "date": "17 JUN",
