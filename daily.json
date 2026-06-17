@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-17T16:00:34.066Z",
+    "updatedAt": "2026-06-17T18:00:31.566Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2544,6 +2544,33 @@
   ],
   "RECORD": [
     {
+      "id": "opid1201233372027920",
+      "date": "17 JUN",
+      "match": "D. Yastremska – T. Maria",
+      "pick": "Gana D. Yastremska",
+      "odd": 2.04,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
+      "id": "476c87ee04f06466ce2ada417b3a62b9",
+      "date": "17 JUN",
+      "match": "J. Brooksby – F. Cerundolo",
+      "pick": "Gana J. Brooksby",
+      "odd": 2.78,
+      "book": "matchbook",
+      "result": "L"
+    },
+    {
+      "id": "b0ca66fc32c38bd07a4a95e5e6ffbd82",
+      "date": "17 JUN",
+      "match": "L. Tien – F. Auger-Aliassime",
+      "pick": "Gana L. Tien",
+      "odd": 2.45,
+      "book": "gtbets",
+      "result": "L"
+    },
+    {
       "id": "48e2d19799a5941a7b8690b63f10011c",
       "date": "17 JUN",
       "match": "A. Mannarino – A. Fery",
@@ -3057,66 +3084,9 @@
       "odd": 2.64,
       "book": "betfair-ex",
       "result": "L"
-    },
-    {
-      "id": "opid1200762571974704",
-      "date": "09 JUN",
-      "match": "K. Volynets – Z. Sonmez",
-      "pick": "Gana Z. Sonmez",
-      "odd": 2.92,
-      "book": "betfair-ex",
-      "result": "W"
-    },
-    {
-      "id": "daa279b72aed6d97b05cef9440c3242f",
-      "date": "09 JUN",
-      "match": "L. Siegemund – F. Jones",
-      "pick": "Gana F. Jones",
-      "odd": 3.2,
-      "book": "betfair_ex_uk",
-      "result": "L"
-    },
-    {
-      "id": "opid1204432371961846",
-      "date": "08 JUN",
-      "match": "Q. Zheng – J. Cristian",
-      "pick": "Gana J. Cristian",
-      "odd": 3.55,
-      "book": "betfair-ex",
-      "result": "W"
     }
   ],
   "PENDING": [
-    {
-      "id": "b0ca66fc32c38bd07a4a95e5e6ffbd82",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781688600000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "L. Tien – F. Auger-Aliassime",
-      "pickKey": "home",
-      "pickLabel": "Gana L. Tien",
-      "odd": 2.45,
-      "book": "gtbets",
-      "homeName": "L. Tien",
-      "awayName": "F. Auger-Aliassime"
-    },
-    {
-      "id": "476c87ee04f06466ce2ada417b3a62b9",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781713800000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Brooksby – F. Cerundolo",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Brooksby",
-      "odd": 2.78,
-      "book": "matchbook",
-      "homeName": "J. Brooksby",
-      "awayName": "F. Cerundolo"
-    },
     {
       "id": "b3bd8676acdefc2a877762106b90c373",
       "sport": "tennis_atp_halle_open",
@@ -3131,21 +3101,6 @@
       "book": "pmu_fr",
       "homeName": "R. Collignon",
       "awayName": "M. Bellucci"
-    },
-    {
-      "id": "opid1201233372027920",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1781700600000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "D. Yastremska – T. Maria",
-      "pickKey": "home",
-      "pickLabel": "Gana D. Yastremska",
-      "odd": 2.04,
-      "book": "betfair-ex",
-      "homeName": "D. Yastremska",
-      "awayName": "T. Maria"
     },
     {
       "id": "a1bf0781a6814a374805ba062b4055d6",
@@ -4750,6 +4705,34 @@
   "MODEL_RECORD": [
     {
       "date": "17 JUN",
+      "match": "J. Brooksby – F. Cerundolo",
+      "predName": "F. Cerundolo",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "17 JUN",
+      "match": "D. Yastremska – T. Maria",
+      "predName": "D. Yastremska",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
+      "match": "A. Sabalenka – E. Alexandrova",
+      "predName": "A. Sabalenka",
+      "prob": 75,
+      "ok": true
+    },
+    {
+      "date": "17 JUN",
+      "match": "L. Tien – F. Auger-Aliassime",
+      "predName": "L. Tien",
+      "prob": 58,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
       "match": "P. Badosa – C. Gauff",
       "predName": "C. Gauff",
       "prob": 86,
@@ -5621,28 +5604,6 @@
     },
     {
       "date": "17 JUN",
-      "ts": 1781688600000,
-      "match": "L. Tien – F. Auger-Aliassime",
-      "predHome": true,
-      "prob": 58,
-      "predName": "L. Tien",
-      "sofa": null,
-      "homeName": "L. Tien",
-      "awayName": "F. Auger-Aliassime"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781697600000,
-      "match": "A. Sabalenka – E. Alexandrova",
-      "predHome": true,
-      "prob": 75,
-      "predName": "A. Sabalenka",
-      "sofa": null,
-      "homeName": "A. Sabalenka",
-      "awayName": "E. Alexandrova"
-    },
-    {
-      "date": "17 JUN",
       "ts": 1781683200000,
       "match": "C. Moutet – A. Davidovich Fokina",
       "predHome": false,
@@ -5676,17 +5637,6 @@
     },
     {
       "date": "17 JUN",
-      "ts": 1781700600000,
-      "match": "D. Yastremska – T. Maria",
-      "predHome": true,
-      "prob": 53,
-      "predName": "D. Yastremska",
-      "sofa": null,
-      "homeName": "D. Yastremska",
-      "awayName": "T. Maria"
-    },
-    {
-      "date": "17 JUN",
       "ts": 1781701200000,
       "match": "T. Atmane – D. Medvedev",
       "predHome": false,
@@ -5695,17 +5645,6 @@
       "sofa": null,
       "homeName": "T. Atmane",
       "awayName": "D. Medvedev"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781713800000,
-      "match": "J. Brooksby – F. Cerundolo",
-      "predHome": false,
-      "prob": 51,
-      "predName": "F. Cerundolo",
-      "sofa": null,
-      "homeName": "J. Brooksby",
-      "awayName": "F. Cerundolo"
     },
     {
       "date": "18 JUN",
