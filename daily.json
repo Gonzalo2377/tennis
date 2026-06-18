@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-18T12:00:34.016Z",
+    "updatedAt": "2026-06-18T14:00:38.115Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1874,6 +1874,42 @@
   ],
   "RECORD": [
     {
+      "id": "opid1201233372027912",
+      "date": "18 JUN",
+      "match": "K. Pliskova – C. McNally",
+      "pick": "Gana C. McNally",
+      "odd": 1.96,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
+      "id": "opid1201233372027928",
+      "date": "18 JUN",
+      "match": "V. Golubic – Z. Sonmez",
+      "pick": "Gana V. Golubic",
+      "odd": 2.52,
+      "book": "betfair-ex",
+      "result": "W"
+    },
+    {
+      "id": "202aedc8fd4c6ae3bcad0563143e4e9c",
+      "date": "18 JUN",
+      "match": "B. Shelton – E. Quinn",
+      "pick": "Gana E. Quinn",
+      "odd": 4.5,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
+      "id": "a530ea13afd796d2915cdcc2440bc876",
+      "date": "17 JUN",
+      "match": "C. Moutet – A. Davidovich Fokina",
+      "pick": "Gana A. Davidovich Fokina",
+      "odd": 1.73,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "710a08101278e0da38c41c3d1f3e0ba9",
       "date": "18 JUN",
       "match": "L. Noskova – D. Parry",
@@ -2382,36 +2418,6 @@
       "awayName": "K. Muchova"
     },
     {
-      "id": "a530ea13afd796d2915cdcc2440bc876",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781683200000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "C. Moutet – A. Davidovich Fokina",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Davidovich Fokina",
-      "odd": 1.73,
-      "book": "betfair_ex_eu",
-      "homeName": "C. Moutet",
-      "awayName": "A. Davidovich Fokina"
-    },
-    {
-      "id": "202aedc8fd4c6ae3bcad0563143e4e9c",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1781779200000,
-      "date": "18 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "B. Shelton – E. Quinn",
-      "pickKey": "away",
-      "pickLabel": "Gana E. Quinn",
-      "odd": 4.5,
-      "book": "betfair_ex_eu",
-      "homeName": "B. Shelton",
-      "awayName": "E. Quinn"
-    },
-    {
       "id": "0400c5a7cf4fe78e0204ad9c6989e397",
       "sport": "tennis_atp_halle_open",
       "ts": 1781861400000,
@@ -2425,36 +2431,6 @@
       "book": "onexbet",
       "homeName": "F. Tiafoe",
       "awayName": "F. Auger-Aliassime"
-    },
-    {
-      "id": "opid1201233372027928",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1781776800000,
-      "date": "18 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "V. Golubic – Z. Sonmez",
-      "pickKey": "home",
-      "pickLabel": "Gana V. Golubic",
-      "odd": 2.52,
-      "book": "betfair-ex",
-      "homeName": "V. Golubic",
-      "awayName": "Z. Sonmez"
-    },
-    {
-      "id": "opid1201233372027912",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1781778600000,
-      "date": "18 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Pliskova – C. McNally",
-      "pickKey": "away",
-      "pickLabel": "Gana C. McNally",
-      "odd": 1.96,
-      "book": "betfair-ex",
-      "homeName": "K. Pliskova",
-      "awayName": "C. McNally"
     },
     {
       "id": "239a91f2804fbbf8fdb1c3dc3c5d31de",
@@ -4094,6 +4070,34 @@
   "MODEL_RECORD": [
     {
       "date": "18 JUN",
+      "match": "B. Shelton – E. Quinn",
+      "predName": "B. Shelton",
+      "prob": 58,
+      "ok": true
+    },
+    {
+      "date": "18 JUN",
+      "match": "K. Pliskova – C. McNally",
+      "predName": "C. McNally",
+      "prob": 57,
+      "ok": false
+    },
+    {
+      "date": "18 JUN",
+      "match": "V. Golubic – Z. Sonmez",
+      "predName": "Z. Sonmez",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "17 JUN",
+      "match": "C. Moutet – A. Davidovich Fokina",
+      "predName": "A. Davidovich Fokina",
+      "prob": 60,
+      "ok": true
+    },
+    {
+      "date": "18 JUN",
       "match": "F. Marozsan – T. Fritz",
       "predName": "T. Fritz",
       "prob": 71,
@@ -5022,17 +5026,6 @@
     {
       "date": "17 JUN",
       "ts": 1781683200000,
-      "match": "C. Moutet – A. Davidovich Fokina",
-      "predHome": false,
-      "prob": 60,
-      "predName": "A. Davidovich Fokina",
-      "sofa": null,
-      "homeName": "C. Moutet",
-      "awayName": "A. Davidovich Fokina"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781683200000,
       "match": "H. Medjedovic – U. Humbert",
       "predHome": false,
       "prob": 58,
@@ -5095,39 +5088,6 @@
       "sofa": null,
       "homeName": "M. Keys",
       "awayName": "K. Muchova"
-    },
-    {
-      "date": "18 JUN",
-      "ts": 1781776800000,
-      "match": "V. Golubic – Z. Sonmez",
-      "predHome": false,
-      "prob": 53,
-      "predName": "Z. Sonmez",
-      "sofa": null,
-      "homeName": "V. Golubic",
-      "awayName": "Z. Sonmez"
-    },
-    {
-      "date": "18 JUN",
-      "ts": 1781778600000,
-      "match": "K. Pliskova – C. McNally",
-      "predHome": false,
-      "prob": 57,
-      "predName": "C. McNally",
-      "sofa": null,
-      "homeName": "K. Pliskova",
-      "awayName": "C. McNally"
-    },
-    {
-      "date": "18 JUN",
-      "ts": 1781779200000,
-      "match": "B. Shelton – E. Quinn",
-      "predHome": true,
-      "prob": 58,
-      "predName": "B. Shelton",
-      "sofa": null,
-      "homeName": "B. Shelton",
-      "awayName": "E. Quinn"
     },
     {
       "date": "18 JUN",
