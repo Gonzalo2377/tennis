@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-18T18:00:38.419Z",
+    "updatedAt": "2026-06-18T20:00:39.271Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1874,6 +1874,15 @@
   ],
   "RECORD": [
     {
+      "id": "a1bf0781a6814a374805ba062b4055d6",
+      "date": "17 JUN",
+      "match": "R. Hijikata – J. Lehecka",
+      "pick": "Gana J. Lehecka",
+      "odd": 1.36,
+      "book": "onexbet",
+      "result": "L"
+    },
+    {
       "id": "b3bd8676acdefc2a877762106b90c373",
       "date": "18 JUN",
       "match": "R. Collignon – M. Bellucci",
@@ -2391,21 +2400,6 @@
   ],
   "PENDING": [
     {
-      "id": "a1bf0781a6814a374805ba062b4055d6",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781683200000,
-      "date": "17 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "R. Hijikata – J. Lehecka",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 1.36,
-      "book": "onexbet",
-      "homeName": "R. Hijikata",
-      "awayName": "J. Lehecka"
-    },
-    {
       "id": "0400c5a7cf4fe78e0204ad9c6989e397",
       "sport": "tennis_atp_halle_open",
       "ts": 1781861400000,
@@ -2437,6 +2431,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "17 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.24,
+      "result": "L",
+      "legs": [
+        {
+          "match": "P. Badosa – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 1.33,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "E. Svitolina – E. Lys",
+          "pick": "Gana E. Svitolina",
+          "odd": 1.24,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "R. Hijikata – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.36,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "17 JUN",
       "name": "Combinada Valor",
@@ -3051,46 +3074,6 @@
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "17 JUN·c1",
-      "date": "17 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "ba8b9e6daa1d282063d372f434d27bae",
-          "sport": "tennis_wta_german_open",
-          "side": "away",
-          "sofa": null,
-          "match": "P. Badosa – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 1.33,
-          "homeName": "P. Badosa",
-          "awayName": "C. Gauff"
-        },
-        {
-          "id": "379eabc20d8445b26f7ad1b648383432",
-          "sport": "tennis_wta_german_open",
-          "side": "home",
-          "sofa": null,
-          "match": "E. Svitolina – E. Lys",
-          "pick": "Gana E. Svitolina",
-          "odd": 1.24,
-          "homeName": "E. Svitolina",
-          "awayName": "E. Lys"
-        },
-        {
-          "id": "a1bf0781a6814a374805ba062b4055d6",
-          "sport": "tennis_atp_queens_club_champ",
-          "side": "away",
-          "sofa": null,
-          "match": "R. Hijikata – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.36,
-          "homeName": "R. Hijikata",
-          "awayName": "J. Lehecka"
-        }
-      ]
-    },
     {
       "dayId": "18 JUN·c1",
       "date": "18 JUN",
@@ -4056,6 +4039,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "17 JUN",
+      "match": "R. Hijikata – J. Lehecka",
+      "predName": "J. Lehecka",
+      "prob": 79,
+      "ok": false
+    },
     {
       "date": "18 JUN",
       "match": "A. Eala – E. Rybakina",
@@ -5056,17 +5046,6 @@
       "sofa": null,
       "homeName": "H. Medjedovic",
       "awayName": "U. Humbert"
-    },
-    {
-      "date": "17 JUN",
-      "ts": 1781683200000,
-      "match": "R. Hijikata – J. Lehecka",
-      "predHome": false,
-      "prob": 79,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "R. Hijikata",
-      "awayName": "J. Lehecka"
     },
     {
       "date": "19 JUN",
