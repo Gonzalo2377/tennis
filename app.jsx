@@ -101,24 +101,23 @@ function applyDaily(d){
 async function boot(){
   const cfg = window.ACE_CONFIG || {};
   const url = cfg.dataUrl || 'daily.json';
-  const cacheMs = (cfg.cacheHours||12)*3600*1000;
   const hasReal = (d)=> d && Array.isArray(d.MATCHES) && d.MATCHES.length > 0;
+  // RED PRIMERO: siempre intentamos traer lo de hoy. La caché solo es respaldo si falla la red.
   try {
-    const cached = JSON.parse(localStorage.getItem('ace_feed')||'null');
-    // only trust the cache if it actually holds real matches (never cache the demo placeholder)
-    if(cached && cached._ts && (Date.now()-cached._ts)<cacheMs && hasReal(cached.data)){
-      applyDaily(cached.data);
-      console.log('[ACEVALUE] feed from cache');
-    } else {
+    let loaded = false;
+    try {
       const res = await fetch(url + '?t=' + Date.now(), { cache:'no-store' });
       if(res.ok){
         const data = await res.json();
         applyDaily(data);
-        // only store real feeds → if the robot hasn't run yet, we keep re-checking on every load
+        loaded = true;
         if(hasReal(data)) { try { localStorage.setItem('ace_feed', JSON.stringify({ _ts:Date.now(), data })); } catch(e){} }
-        else { try { localStorage.removeItem('ace_feed'); } catch(e){} }
         console.log('[ACEVALUE] feed loaded · matches=' + ((data.MATCHES||[]).length) + ' · ' + (data.meta&&data.meta.updatedAt||''));
       }
+    } catch(e){ /* sin red → caemos al respaldo */ }
+    if(!loaded){
+      const cached = JSON.parse(localStorage.getItem('ace_feed')||'null');
+      if(cached && hasReal(cached.data)){ applyDaily(cached.data); console.log('[ACEVALUE] feed from cache (sin red)'); }
     }
   } catch(e){ console.log('[ACEVALUE] feed unavailable, using sample data'); }
   // ¿plan del usuario? (cookie firmada en el backend de Cloudflare)

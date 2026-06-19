@@ -184,6 +184,14 @@ button{font-family:inherit;cursor:pointer}
 .sw::after{content:'';position:absolute;top:2px;left:2px;width:19px;height:19px;border-radius:50%;background:#fff;transition:.18s}
 .sw.on::after{left:19px}
 
+/* ---- bookmaker filter: móvil → panel centrado tipo hoja, casas legibles ---- */
+@media (max-width: 600px){
+  .bookf__panel{position:fixed;top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;border-radius:16px 16px 0 0;max-height:72vh;display:flex;flex-direction:column}
+  .bookf__list{max-height:none;flex:1;overflow-y:auto}
+  .bookf__row{padding:14px 18px}
+  .bookf__scrim{background:rgba(0,0,0,.35)}
+}
+
 /* ---- record stat tiles ---- */
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
 .stat__lbl{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
