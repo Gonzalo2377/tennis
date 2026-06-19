@@ -43,7 +43,9 @@ function reorder(n){ n=(n||'').replace(/[.,;:]+/g,' ').replace(/\s+/g,' ').trim(
 const ALLOWED_BOOKS = (process.env.ODDSPAPI_BOOKS ||
   'bet365,betfair,williamhill,unibet,betsson,marathonbet,1xbet,onexbet,pinnacle,888sport,sport888,betclic,nordicbet,coolbet,winamax,betano,betway,betvictor,tipico,bwin,leovegas,betfred,paddypower,ladbrokes,codere,parionssport,pmu,oddset,22bet,marathon'
 ).split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
-const bookAllowed = (slug) => ALLOWED_BOOKS.some(a => String(slug).toLowerCase().includes(a));
+const bookAllowed = (slug) => { const s=String(slug).toLowerCase(); if(BLOCK_BOOKS.some(b=>s.includes(b))) return false; return ALLOWED_BOOKS.some(a => s.includes(a)); };
+// casas bloqueadas (cuotas raras/desfasadas que distorsionan). Editable con ODDSPAPI_BLOCK.
+const BLOCK_BOOKS = (process.env.ODDSPAPI_BLOCK || 'marathon,nordicbet,coolbet,pmu,betonline,betanything,everygame,gtbets,ladbrokes,22bet,tipico').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
 
 module.exports = async function fetchOddspapi(key, opts){
   const { windowHours = 96, maxOdds = 6, existingEvents = [] } = opts || {};

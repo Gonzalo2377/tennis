@@ -269,6 +269,13 @@ function canonBook(id, title){
   const alias={ onexbet:'1xbet', betfairexchange:'betfair', betfairex:'betfair', betfairsportsbook:'betfair', sport888:'888sport', '888':'888sport' };
   return alias[s] || s || id;
 }
+/* CASAS bloqueadas: mercado España. Deja fuera variantes regionales/raras.
+   Edita BOOK_DENY para añadir o quitar (por id o nombre, minúsculas). */
+const BOOK_DENY = ['marathon','nordicbet','coolbet','pmu','betonline','betanything','everygame','gtbets','ladbrokes','bwin.be','bwinbe','unibet.be','unibetbe','22bet','tipico'];
+function bookDenied(id, title){
+  const s = ((id||'')+' '+(title||'')).toLowerCase();
+  return BOOK_DENY.some(d => s.includes(d));
+}
 function dedupeBooks(MATCHES, BOOKS){
   const canonOf={}, newBooks={};
   for(const id in BOOKS){ const c=canonBook(id, BOOKS[id]&&BOOKS[id].name); canonOf[id]=c; if(!newBooks[c]) newBooks[c]=Object.assign({}, BOOKS[id], { id:c }); }
@@ -397,7 +404,7 @@ async function main(){
       const oA = mkt.outcomes.find(o=>o.name===ev.away_team);
       if (!oH || !oA) return;
       const bid = bk.key;
-      if (/marathon/i.test(bid) || /marathon/i.test(bk.title||'')) return;   // casa con cuotas raras → fuera
+      if (bookDenied(bid, bk.title)) return;   // casas no relevantes para España / cuotas raras → fuera
       BOOKS[bid] = BOOKS[bid] || { id:bid, name:bk.title||bid, abbr:(bk.title||bid).replace(/[^a-zA-Z0-9]/g,'').slice(0,3).toUpperCase(), color: COLORS[Object.keys(BOOKS).length % COLORS.length] };
       oddsH[bid] = +oH.price; oddsA[bid] = +oA.price;
     });
