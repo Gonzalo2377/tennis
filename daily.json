@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-20T16:00:31.978Z",
+    "updatedAt": "2026-06-20T18:00:32.500Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -722,6 +722,24 @@
   ],
   "RECORD": [
     {
+      "id": "9727ed72b3019e53fba529cb07965e34",
+      "date": "20 JUN",
+      "match": "L. Noskova – A. Eala",
+      "pick": "Gana L. Noskova",
+      "odd": 1.75,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
+      "id": "5e783844fb4c815f2552a807c11f13a3",
+      "date": "20 JUN",
+      "match": "T. Paul – U. Humbert",
+      "pick": "Gana U. Humbert",
+      "odd": 2.7,
+      "book": "matchbook",
+      "result": "L"
+    },
+    {
       "id": "eb2c5a87635273bd4cdb234abfe25b94",
       "date": "20 JUN",
       "match": "A. Sabalenka – J. Pegula",
@@ -1244,59 +1262,39 @@
       "odd": 4,
       "book": "betway",
       "result": "L"
-    },
-    {
-      "id": "99ee759cc3a1122c1c9d69a9c3196f7f",
-      "date": "10 JUN",
-      "match": "V. Mboko – K. Pliskova",
-      "pick": "Gana V. Mboko",
-      "odd": 1,
-      "book": "unibet_uk",
-      "result": "V"
-    },
-    {
-      "id": "opid1200762571974706",
-      "date": "09 JUN",
-      "match": "N. Bartunkova – H. Vandewinkel",
-      "pick": "Gana N. Bartunkova",
-      "odd": 1.9,
-      "book": "oddset",
-      "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "5e783844fb4c815f2552a807c11f13a3",
-      "sport": "tennis_atp_queens_club_champ",
-      "ts": 1781964000000,
-      "date": "20 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Paul – U. Humbert",
-      "pickKey": "away",
-      "pickLabel": "Gana U. Humbert",
-      "odd": 2.7,
-      "book": "matchbook",
-      "homeName": "T. Paul",
-      "awayName": "U. Humbert"
-    },
-    {
-      "id": "9727ed72b3019e53fba529cb07965e34",
-      "sport": "tennis_wta_german_open",
-      "ts": 1781956800000,
-      "date": "20 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "L. Noskova – A. Eala",
-      "pickKey": "home",
-      "pickLabel": "Gana L. Noskova",
-      "odd": 1.75,
-      "book": "matchbook",
-      "homeName": "L. Noskova",
-      "awayName": "A. Eala"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "20 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 3.12,
+      "result": "L",
+      "legs": [
+        {
+          "match": "A. Molcan – Z. Sesko",
+          "pick": "Gana A. Molcan",
+          "odd": 1.2,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "A. Sabalenka – J. Pegula",
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.54,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "L. Noskova – A. Eala",
+          "pick": "Gana L. Noskova",
+          "odd": 1.69,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "19 JUN",
       "name": "Combinada Valor",
@@ -2055,48 +2053,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "20 JUN·c1",
-      "date": "20 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1203147572228976",
-          "sport": "tennis_oddspapi_atp",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Molcan – Z. Sesko",
-          "pick": "Gana A. Molcan",
-          "odd": 1.2,
-          "homeName": "A. Molcan",
-          "awayName": "Z. Sesko"
-        },
-        {
-          "id": "eb2c5a87635273bd4cdb234abfe25b94",
-          "sport": "tennis_wta_german_open",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Sabalenka – J. Pegula",
-          "pick": "Gana A. Sabalenka",
-          "odd": 1.54,
-          "homeName": "A. Sabalenka",
-          "awayName": "J. Pegula"
-        },
-        {
-          "id": "9727ed72b3019e53fba529cb07965e34",
-          "sport": "tennis_wta_german_open",
-          "side": "home",
-          "sofa": null,
-          "match": "L. Noskova – A. Eala",
-          "pick": "Gana L. Noskova",
-          "odd": 1.69,
-          "homeName": "L. Noskova",
-          "awayName": "A. Eala"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "20 JUN",
@@ -2981,6 +2938,34 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "20 JUN",
+      "match": "D. Altmaier – F. Tiafoe",
+      "predName": "F. Tiafoe",
+      "prob": 67,
+      "ok": true
+    },
+    {
+      "date": "20 JUN",
+      "match": "T. Paul – U. Humbert",
+      "predName": "T. Paul",
+      "prob": 54,
+      "ok": true
+    },
+    {
+      "date": "20 JUN",
+      "match": "A. Zverev – T. Fritz",
+      "predName": "A. Zverev",
+      "prob": 57,
+      "ok": false
+    },
+    {
+      "date": "20 JUN",
+      "match": "L. Noskova – A. Eala",
+      "predName": "L. Noskova",
+      "prob": 66,
+      "ok": true
+    },
     {
       "date": "20 JUN",
       "match": "B. Nakashima – F. Cerundolo",
@@ -4110,50 +4095,6 @@
       "sofa": null,
       "homeName": "L. Boisson",
       "awayName": "D. Yastremska"
-    },
-    {
-      "date": "20 JUN",
-      "ts": 1781956800000,
-      "match": "L. Noskova – A. Eala",
-      "predHome": true,
-      "prob": 66,
-      "predName": "L. Noskova",
-      "sofa": null,
-      "homeName": "L. Noskova",
-      "awayName": "A. Eala"
-    },
-    {
-      "date": "20 JUN",
-      "ts": 1781960400000,
-      "match": "A. Zverev – T. Fritz",
-      "predHome": true,
-      "prob": 57,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "A. Zverev",
-      "awayName": "T. Fritz"
-    },
-    {
-      "date": "20 JUN",
-      "ts": 1781964000000,
-      "match": "T. Paul – U. Humbert",
-      "predHome": true,
-      "prob": 54,
-      "predName": "T. Paul",
-      "sofa": null,
-      "homeName": "T. Paul",
-      "awayName": "U. Humbert"
-    },
-    {
-      "date": "20 JUN",
-      "ts": 1781965800000,
-      "match": "D. Altmaier – F. Tiafoe",
-      "predHome": false,
-      "prob": 67,
-      "predName": "F. Tiafoe",
-      "sofa": null,
-      "homeName": "D. Altmaier",
-      "awayName": "F. Tiafoe"
     }
   ],
   "LADDER": {
