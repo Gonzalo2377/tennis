@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-21T10:00:31.888Z",
+    "updatedAt": "2026-06-21T12:00:33.817Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -531,13 +531,22 @@
   ],
   "RECORD": [
     {
+      "id": "opid1203130572243356",
+      "date": "21 JUN",
+      "match": "S. Sierra – A. Blinkova",
+      "pick": "Gana S. Sierra",
+      "odd": 2.21,
+      "book": "1xbet",
+      "result": "W"
+    },
+    {
       "id": "opid1203130572228340",
       "date": "21 JUN",
       "match": "L. Samsonova – K. Siniakova",
       "pick": "Gana L. Samsonova",
       "odd": 2.58,
       "book": "betfair-ex",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "9727ed72b3019e53fba529cb07965e34",
@@ -1062,15 +1071,6 @@
       "odd": 1.71,
       "book": "pinnacle",
       "result": "L"
-    },
-    {
-      "id": "opid1200277571900534",
-      "date": "11 JUN",
-      "match": "J. Lehecka – J. Duckworth",
-      "pick": "Gana J. Lehecka",
-      "odd": 1.35,
-      "book": "betfair-ex",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1103,21 +1103,6 @@
       "book": "betfair_ex_eu",
       "homeName": "J. Pegula",
       "awayName": "L. Noskova"
-    },
-    {
-      "id": "opid1203130572243356",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1782032400000,
-      "date": "21 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "S. Sierra – A. Blinkova",
-      "pickKey": "home",
-      "pickLabel": "Gana S. Sierra",
-      "odd": 2.21,
-      "book": "1xbet",
-      "homeName": "S. Sierra",
-      "awayName": "A. Blinkova"
     }
   ],
   "COMBO_RECORD": [
@@ -2835,6 +2820,20 @@
   "ARB_PENDING": [],
   "MODEL_RECORD": [
     {
+      "date": "21 JUN",
+      "match": "S. Sierra – A. Blinkova",
+      "predName": "S. Sierra",
+      "prob": 56,
+      "ok": true
+    },
+    {
+      "date": "21 JUN",
+      "match": "L. Samsonova – K. Siniakova",
+      "predName": "L. Samsonova",
+      "prob": 58,
+      "ok": true
+    },
+    {
       "date": "20 JUN",
       "match": "D. Altmaier – F. Tiafoe",
       "predName": "F. Tiafoe",
@@ -3991,28 +3990,6 @@
       "sofa": null,
       "homeName": "L. Boisson",
       "awayName": "D. Yastremska"
-    },
-    {
-      "date": "21 JUN",
-      "ts": 1782032400000,
-      "match": "L. Samsonova – K. Siniakova",
-      "predHome": true,
-      "prob": 58,
-      "predName": "L. Samsonova",
-      "sofa": null,
-      "homeName": "L. Samsonova",
-      "awayName": "K. Siniakova"
-    },
-    {
-      "date": "21 JUN",
-      "ts": 1782032400000,
-      "match": "S. Sierra – A. Blinkova",
-      "predHome": true,
-      "prob": 56,
-      "predName": "S. Sierra",
-      "sofa": null,
-      "homeName": "S. Sierra",
-      "awayName": "A. Blinkova"
     },
     {
       "date": "21 JUN",
