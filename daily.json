@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-21T16:00:35.437Z",
+    "updatedAt": "2026-06-21T18:00:35.658Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -530,6 +530,15 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "32bde0a6dc3f7883533b11f4f48007a1",
+      "date": "21 JUN",
+      "match": "J. Pegula – L. Noskova",
+      "pick": "Gana L. Noskova",
+      "odd": 2.52,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
     {
       "id": "52ed9ffc3c06fa4cf09332746f663b47",
       "date": "21 JUN",
@@ -1062,35 +1071,39 @@
       "odd": 4.2,
       "book": "betfair",
       "result": "W"
-    },
-    {
-      "id": "opid1200277571900532",
-      "date": "11 JUN",
-      "match": "R. Hijikata – F. Tiafoe",
-      "pick": "Gana F. Tiafoe",
-      "odd": 1.45,
-      "book": "winamax.es",
-      "result": "W"
     }
   ],
-  "PENDING": [
-    {
-      "id": "32bde0a6dc3f7883533b11f4f48007a1",
-      "sport": "tennis_wta_german_open",
-      "ts": 1782036300000,
-      "date": "21 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Pegula – L. Noskova",
-      "pickKey": "away",
-      "pickLabel": "Gana L. Noskova",
-      "odd": 2.52,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Pegula",
-      "awayName": "L. Noskova"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "21 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 11.49,
+      "result": "W",
+      "legs": [
+        {
+          "match": "L. Samsonova – K. Siniakova",
+          "pick": "Gana L. Samsonova",
+          "odd": 2.46,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "S. Sierra – A. Blinkova",
+          "pick": "Gana S. Sierra",
+          "odd": 1.93,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "J. Pegula – L. Noskova",
+          "pick": "Gana L. Noskova",
+          "odd": 2.42,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "20 JUN",
       "name": "Combinada del Día",
@@ -1878,48 +1891,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "21 JUN·c1",
-      "date": "21 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1203130572228340",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "L. Samsonova – K. Siniakova",
-          "pick": "Gana L. Samsonova",
-          "odd": 2.46,
-          "homeName": "L. Samsonova",
-          "awayName": "K. Siniakova"
-        },
-        {
-          "id": "opid1203130572243356",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "S. Sierra – A. Blinkova",
-          "pick": "Gana S. Sierra",
-          "odd": 1.93,
-          "homeName": "S. Sierra",
-          "awayName": "A. Blinkova"
-        },
-        {
-          "id": "32bde0a6dc3f7883533b11f4f48007a1",
-          "sport": "tennis_wta_german_open",
-          "side": "away",
-          "sofa": null,
-          "match": "J. Pegula – L. Noskova",
-          "pick": "Gana L. Noskova",
-          "odd": 2.42,
-          "homeName": "J. Pegula",
-          "awayName": "L. Noskova"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "21 JUN",
@@ -2804,6 +2776,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "21 JUN",
+      "match": "J. Pegula – L. Noskova",
+      "predName": "J. Pegula",
+      "prob": 50,
+      "ok": false
+    },
     {
       "date": "21 JUN",
       "match": "T. Fritz – F. Tiafoe",
@@ -3989,17 +3968,6 @@
       "sofa": null,
       "homeName": "L. Boisson",
       "awayName": "D. Yastremska"
-    },
-    {
-      "date": "21 JUN",
-      "ts": 1782036300000,
-      "match": "J. Pegula – L. Noskova",
-      "predHome": true,
-      "prob": 50,
-      "predName": "J. Pegula",
-      "sofa": null,
-      "homeName": "J. Pegula",
-      "awayName": "L. Noskova"
     }
   ],
   "LADDER": {
