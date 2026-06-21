@@ -80,6 +80,13 @@ function applyDaily(d){
   const akey=a=>normMatch(a.match);
 
   if(d.PLAYERS) window.PLAYERS = d.PLAYERS;
+  // estampa el Elo (mapa ELO/RANK_ELO del robot, indexado por apellido) en cada jugador,
+  // para que el Stats Ranking tenga rating sin tener que re-correr el robot.
+  if(d.PLAYERS){
+    const elo = Object.assign({}, d.RANK_ELO||{}, d.ELO||{});
+    const lk = (n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
+    Object.values(window.PLAYERS).forEach(p=>{ if(p.elo==null){ const e=elo[lk(p.name)]; if(e!=null) p.elo=e; } });
+  }
   if(d.BOOKS)   window.BOOKS   = d.BOOKS;
   if(Array.isArray(d.MATCHES) && d.MATCHES.length) window.MATCHES = d.MATCHES.filter(m=>!m.noModel);   // oculta partidos de jugadores desconocidos
   if(Array.isArray(d.COMBOS))  window.COMBOS  = d.COMBOS;
