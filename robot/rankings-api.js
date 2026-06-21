@@ -29,8 +29,8 @@ async function fetchStanding(key, eventType){
 
 /* returns { [surnameKey]: eloBase } for all ranked ATP + WTA players */
 module.exports = async function fetchRankElo(key){
-  if (!key) return {};
-  const out = {};
+  if (!key) return { elo:{}, list:[] };
+  const out = {}; const list = [];
   for (const type of ['ATP', 'WTA']){
     const rows = await fetchStanding(key, type);
     rows.forEach(p => {
@@ -39,10 +39,11 @@ module.exports = async function fetchRankElo(key){
       if (!name || !rank) return;
       const k = sk(name);
       const elo = rankToElo(rank);
-      // si un apellido aparece en ATP y WTA (raro), nos quedamos con el mejor Elo
       if (out[k] == null || elo > out[k]) out[k] = elo;
+      list.push({ name, tour:type.toLowerCase(), rank:+rank, elo, country:p.country||'' });
     });
   }
+  list.sort((a,b)=>a.rank-b.rank);
   console.log(`· rankings api-tennis → Elo base de ${Object.keys(out).length} jugadores`);
-  return out;
+  return { elo: out, list };
 };

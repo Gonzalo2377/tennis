@@ -333,6 +333,17 @@ window.bankrollPlan = function(budget, risk, nPicks){
    Ranking de jugadores por métrica/superficie usando lo que tenemos
    en window.PLAYERS (elo global + eloSurf si el robot lo guarda). */
 window.statsRanking = function(tour, surface){
+    // 1º usa el RANKING completo del robot (ATP+WTA, ~300 jugadores) si existe
+    const full = window.RANKING_FULL;
+    if (Array.isArray(full) && full.length){
+        return full.filter(p=> !tour || tour==='all' || p.tour===tour)
+            .map(p=>({ id:p.id||p.name, name:p.name, tour:p.tour, country:p.country||'', photo:p.photo||null,
+                elo:Math.round(p.elo||0), form:p.form||[], wr:null }))
+            .filter(p=>p.elo>0)
+            .sort((a,b)=> (a.rank&&b.rank? a.rank-b.rank : b.elo-a.elo))
+            .slice(0,100);
+    }
+    // fallback: jugadores de los partidos cargados
     const arr = Object.values(window.PLAYERS||{}).filter(p=>{
         if(tour && tour!=='all' && p.tour!==tour) return false;
         return (p.elo!=null) || (p.eloSurf && surface!=='all');

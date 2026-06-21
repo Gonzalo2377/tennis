@@ -348,8 +348,10 @@ async function main(){
   try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; RANK_ELO = prevE.RANK_ELO || {}; RANK_TS = prevE.RANK_TS || 0; } catch(e){}
   if (Object.keys(LIVE_ELO).length === 0) { for (const k in RATINGS) LIVE_ELO[k] = RATINGS[k].elo; console.log(`· Elo sembrado con ${Object.keys(LIVE_ELO).length} jugadores de ratings.js`); }
   // RANKING ATP/WTA → Elo base (1 vez por semana). Da nivel real a TODOS los rankeados (incl. challenger).
+  let RANKING = [];
+  try { const prevR = JSON.parse(fs.readFileSync(OUT,'utf8')); RANKING = prevR.RANKING || []; } catch(e){}
   if (APITENNIS_KEY && (Date.now() - (RANK_TS||0) > 7*24*3600*1000)){
-    try { const re = await fetchRankElo(APITENNIS_KEY); if (Object.keys(re).length){ RANK_ELO = re; RANK_TS = Date.now(); } } catch(e){ console.log('· rankings no disponibles:', e.message); }
+    try { const re = await fetchRankElo(APITENNIS_KEY); if (re && re.elo && Object.keys(re.elo).length){ RANK_ELO = re.elo; RANK_TS = Date.now(); if (re.list && re.list.length) RANKING = re.list; } } catch(e){ console.log('· rankings no disponibles:', e.message); }
   }
   // siembra el Elo base de ranking en jugadores que aún no hemos aprendido (no pisa lo aprendido)
   for (const k in RANK_ELO){ if (LIVE_ELO[k] == null) LIVE_ELO[k] = RANK_ELO[k]; }
@@ -829,6 +831,7 @@ async function main(){
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
     MODEL_RECORD: MODEL_RECORD.slice(0,400), MODEL_PENDING,
     LADDER, LADDER_HISTORY,
+    RANKING: (function(){ let lib={}; try{ lib=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; }catch(e){} const cs=require('./name-canon.js').canonSurname; return (RANKING||[]).slice(0,300).map(r=>{ const k=lastKey(r.name); return { name:r.name, tour:r.tour, rank:r.rank, elo:(LIVE_ELO[k]!=null?LIVE_ELO[k]:r.elo), country:r.country||'', photo:(lib[cs(r.name)]||lib[k]||null) }; }); })(),
     ELO:LIVE_ELO, ELO_DONE, RANK_ELO, RANK_TS,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));

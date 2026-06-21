@@ -80,6 +80,7 @@ function applyDaily(d){
   const akey=a=>normMatch(a.match);
 
   if(d.PLAYERS) window.PLAYERS = d.PLAYERS;
+  if(Array.isArray(d.RANKING)) window.RANKING_FULL = d.RANKING;   // ranking completo ATP+WTA del robot
   // estampa el Elo (mapa ELO/RANK_ELO del robot, indexado por apellido) en cada jugador,
   // para que el Stats Ranking tenga rating sin tener que re-correr el robot.
   if(d.PLAYERS){
