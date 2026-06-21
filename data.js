@@ -292,14 +292,14 @@ window.equitySeries = function(){
    Reparte un presupuesto entre los picks de valor del día según perfil
    de riesgo (Kelly fraccionado) y diversificación. Devuelve líneas con
    stake sugerido, retorno potencial y EV. No gasta créditos. */
-window.bankrollPlan = function(budget, risk, spread){
+window.bankrollPlan = function(budget, risk, nPicks){
     const picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
         .filter(x=>x.v && x.v.positive)
         .sort((a,b)=> b.v.edge - a.v.edge);
-    if(!picks.length) return { lines:[], total:0, evTotal:0 };
-    // nº de picks según diversificación
-    const maxN = spread==='concentrado' ? 3 : spread==='diversificado' ? 12 : 6;
-    const sel = picks.slice(0, maxN);
+    if(!picks.length) return { lines:[], total:0, evTotal:0, maxPicks:0 };
+    const maxN = picks.length;
+    const want = Math.max(1, Math.min(maxN, +nPicks || maxN));
+    const sel = picks.slice(0, want);
     // riesgo: exponente que concentra el dinero. conservador = reparto plano;
     // arriesgado = mucho más peso en los picks de más valor. Además ajusta cuánto del
     // presupuesto se despliega (conservador arriesga menos).

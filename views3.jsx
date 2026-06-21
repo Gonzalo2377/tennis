@@ -4,10 +4,12 @@
 function Distributor({ t, go }) {
   const [budget, setBudget] = useState(()=>{ try { return +localStorage.getItem('ace_bank')||100; } catch(e){ return 100; } });
   const [risk, setRisk]   = useState(()=>{ try { return localStorage.getItem('ace_risk')||'equilibrado'; } catch(e){ return 'equilibrado'; } });
-  const [spread, setSpread] = useState(()=>{ try { return localStorage.getItem('ace_spread')||'equilibrado'; } catch(e){ return 'equilibrado'; } });
-  useEffect(()=>{ try{ localStorage.setItem('ace_bank',budget); localStorage.setItem('ace_risk',risk); localStorage.setItem('ace_spread',spread); }catch(e){} },[budget,risk,spread]);
+  const [nPicks, setNPicks] = useState(()=>{ try { const v=localStorage.getItem('ace_npicks'); return v?+v:0; } catch(e){ return 0; } });
+  useEffect(()=>{ try{ localStorage.setItem('ace_bank',budget); localStorage.setItem('ace_risk',risk); localStorage.setItem('ace_npicks',nPicks); }catch(e){} },[budget,risk,nPicks]);
 
-  const plan = window.bankrollPlan(Math.max(1,+budget||0), risk, spread);
+  const maxAvail = (window.MATCHES||[]).map(m=>({v:window.matchValue(m)})).filter(x=>x.v&&x.v.positive).length;
+  const effN = nPicks>0 ? Math.min(nPicks, maxAvail) : maxAvail;
+  const plan = window.bankrollPlan(Math.max(1,+budget||0), risk, effN);
   const Seg = ({val,set,opts}) => (
     <div style={{display:'flex', gap:0, border:'1px solid var(--line)', borderRadius:10, overflow:'hidden'}}>
       {opts.map(([k,lbl])=>(
@@ -48,9 +50,12 @@ function Distributor({ t, go }) {
               <div style={{fontFamily:'var(--font-mono)', fontSize:'.62rem', color:'var(--muted)', marginTop:8, lineHeight:1.4}}>{risk==='conservador'?t.distConsH:risk==='arriesgado'?t.distAggH:t.distEqH}</div>
             </div>
             <div>
-              <label style={{fontFamily:'var(--font-mono)', fontSize:'.64rem', letterSpacing:'.1em', textTransform:'uppercase', color:'var(--muted)', display:'block', marginBottom:6}}>{t.distSpread}</label>
-              <Seg val={spread} set={setSpread} opts={[['concentrado',t.distConc],['equilibrado',t.distEq],['diversificado',t.distDiv]]} />
-              <div style={{fontFamily:'var(--font-mono)', fontSize:'.62rem', color:'var(--muted)', marginTop:8, lineHeight:1.4}}>{t.distSpreadH}</div>
+              <label style={{fontFamily:'var(--font-mono)', fontSize:'.64rem', letterSpacing:'.1em', textTransform:'uppercase', color:'var(--muted)', display:'flex', justifyContent:'space-between', marginBottom:6}}>
+                <span>{t.distSpread}</span><span style={{color:'var(--court)'}}>{effN} / {maxAvail}</span>
+              </label>
+              <input type="range" min="1" max={Math.max(1,maxAvail)} value={effN} onChange={e=>setNPicks(+e.target.value)}
+                style={{width:'100%', accentColor:'var(--court)', height:28, cursor:'pointer'}} />
+              <div style={{fontFamily:'var(--font-mono)', fontSize:'.62rem', color:'var(--muted)', marginTop:4, lineHeight:1.4}}>{t.distSpreadH}</div>
             </div>
           </div>
 
