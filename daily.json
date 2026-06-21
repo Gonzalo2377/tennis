@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-21T14:00:36.039Z",
+    "updatedAt": "2026-06-21T16:00:35.437Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -530,6 +530,15 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "52ed9ffc3c06fa4cf09332746f663b47",
+      "date": "21 JUN",
+      "match": "T. Fritz – F. Tiafoe",
+      "pick": "Gana F. Tiafoe",
+      "odd": 3.15,
+      "book": "matchbook",
+      "result": "W"
+    },
     {
       "id": "opid1203130572243356",
       "date": "21 JUN",
@@ -1062,33 +1071,9 @@
       "odd": 1.45,
       "book": "winamax.es",
       "result": "W"
-    },
-    {
-      "id": "opid1200762571900850",
-      "date": "11 JUN",
-      "match": "R. Montgomery – G. Minnen",
-      "pick": "Gana G. Minnen",
-      "odd": 1.71,
-      "book": "pinnacle",
-      "result": "L"
     }
   ],
   "PENDING": [
-    {
-      "id": "52ed9ffc3c06fa4cf09332746f663b47",
-      "sport": "tennis_atp_halle_open",
-      "ts": 1782048600000,
-      "date": "21 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Fritz – F. Tiafoe",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Tiafoe",
-      "odd": 3.15,
-      "book": "matchbook",
-      "homeName": "T. Fritz",
-      "awayName": "F. Tiafoe"
-    },
     {
       "id": "32bde0a6dc3f7883533b11f4f48007a1",
       "sport": "tennis_wta_german_open",
@@ -2821,6 +2806,20 @@
   "MODEL_RECORD": [
     {
       "date": "21 JUN",
+      "match": "T. Fritz – F. Tiafoe",
+      "predName": "T. Fritz",
+      "prob": 56,
+      "ok": false
+    },
+    {
+      "date": "21 JUN",
+      "match": "F. Cerundolo – T. Paul",
+      "predName": "T. Paul",
+      "prob": 62,
+      "ok": false
+    },
+    {
+      "date": "21 JUN",
       "match": "S. Sierra – A. Blinkova",
       "predName": "S. Sierra",
       "prob": 56,
@@ -4001,28 +4000,6 @@
       "sofa": null,
       "homeName": "J. Pegula",
       "awayName": "L. Noskova"
-    },
-    {
-      "date": "21 JUN",
-      "ts": 1782045000000,
-      "match": "F. Cerundolo – T. Paul",
-      "predHome": false,
-      "prob": 62,
-      "predName": "T. Paul",
-      "sofa": null,
-      "homeName": "F. Cerundolo",
-      "awayName": "T. Paul"
-    },
-    {
-      "date": "21 JUN",
-      "ts": 1782048600000,
-      "match": "T. Fritz – F. Tiafoe",
-      "predHome": true,
-      "prob": 56,
-      "predName": "T. Fritz",
-      "sofa": null,
-      "homeName": "T. Fritz",
-      "awayName": "F. Tiafoe"
     }
   ],
   "LADDER": {
