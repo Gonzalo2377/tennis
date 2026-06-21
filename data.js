@@ -300,18 +300,22 @@ window.bankrollPlan = function(budget, risk, spread){
     // nº de picks según diversificación
     const maxN = spread==='concentrado' ? 3 : spread==='diversificado' ? 12 : 6;
     const sel = picks.slice(0, maxN);
-    // fracción Kelly por perfil
-    const kFrac = risk==='conservador' ? 0.25 : risk==='arriesgado' ? 0.75 : 0.45;
+    // riesgo: exponente que concentra el dinero. conservador = reparto plano;
+    // arriesgado = mucho más peso en los picks de más valor. Además ajusta cuánto del
+    // presupuesto se despliega (conservador arriesga menos).
+    const expo = risk==='conservador' ? 0.4 : risk==='arriesgado' ? 2.0 : 1.0;
+    const deploy = risk==='conservador' ? 0.6 : risk==='arriesgado' ? 1.0 : 0.82;
     let weights = sel.map(x=>{
-        const p = x.v.pick.p;                 // prob real
-        const o = x.v.pick.best.price;         // cuota
+        const p = x.v.pick.p;                  // prob real
+        const o = x.v.pick.best.price;          // cuota
         const b = o - 1;
         const kelly = Math.max(0, (p*b - (1-p)) / b);   // fracción Kelly óptima
-        return Math.max(0, kelly * kFrac);
+        return Math.pow(Math.max(0.0001, kelly), expo); // el exponente concentra/aplana
     });
     const sumW = weights.reduce((s,w)=>s+w,0) || 1;
+    const pot = Math.max(1,+budget||0) * deploy;        // presupuesto efectivo según riesgo
     let lines = sel.map((x,i)=>{
-        const stake = +(budget * weights[i] / sumW).toFixed(2);
+        const stake = +(pot * weights[i] / sumW).toFixed(2);
         const o = x.v.pick.best.price;
         return {
             m: x.m, pickKey: x.v.pick.k,
