@@ -288,6 +288,62 @@ window.equitySeries = function(){
     order.forEach((d,i)=> pts.push({x:i+1, y:byDay[d].y, date:d, picks:byDay[d].picks}));
     return pts;
 };
+/* ---- DISTRIBUIDOR DE BANKROLL ----------------------------------
+   Reparte un presupuesto entre los picks de valor del día según perfil
+   de riesgo (Kelly fraccionado) y diversificación. Devuelve líneas con
+   stake sugerido, retorno potencial y EV. No gasta créditos. */
+window.bankrollPlan = function(budget, risk, spread){
+    const picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
+        .filter(x=>x.v && x.v.positive)
+        .sort((a,b)=> b.v.edge - a.v.edge);
+    if(!picks.length) return { lines:[], total:0, evTotal:0 };
+    // nº de picks según diversificación
+    const maxN = spread==='concentrado' ? 3 : spread==='diversificado' ? 12 : 6;
+    const sel = picks.slice(0, maxN);
+    // fracción Kelly por perfil
+    const kFrac = risk==='conservador' ? 0.25 : risk==='arriesgado' ? 0.75 : 0.45;
+    let weights = sel.map(x=>{
+        const p = x.v.pick.p;                 // prob real
+        const o = x.v.pick.best.price;         // cuota
+        const b = o - 1;
+        const kelly = Math.max(0, (p*b - (1-p)) / b);   // fracción Kelly óptima
+        return Math.max(0, kelly * kFrac);
+    });
+    const sumW = weights.reduce((s,w)=>s+w,0) || 1;
+    let lines = sel.map((x,i)=>{
+        const stake = +(budget * weights[i] / sumW).toFixed(2);
+        const o = x.v.pick.best.price;
+        return {
+            m: x.m, pickKey: x.v.pick.k,
+            name: window.outcomeLabel(x.v.pick.k, x.m),
+            odd: o, book: x.v.pick.best.book, edge: x.v.edge, p: x.v.pick.p,
+            stake, ret: +(stake*o).toFixed(2),
+            ev: +(stake * ((x.v.pick.p*o)-1)).toFixed(2),
+        };
+    }).filter(l=>l.stake>=0.5);
+    const total = +lines.reduce((s,l)=>s+l.stake,0).toFixed(2);
+    const evTotal = +lines.reduce((s,l)=>s+l.ev,0).toFixed(2);
+    return { lines, total, evTotal };
+};
+/* ---- STATS RANKING -------------------------------------------------
+   Ranking de jugadores por métrica/superficie usando lo que tenemos
+   en window.PLAYERS (elo global + eloSurf si el robot lo guarda). */
+window.statsRanking = function(tour, surface){
+    const arr = Object.values(window.PLAYERS||{}).filter(p=>{
+        if(tour && tour!=='all' && p.tour!==tour) return false;
+        return (p.elo!=null) || (p.eloSurf && surface!=='all');
+    });
+    const eloFor = (p)=>{
+        if(surface!=='all' && p.eloSurf && p.eloSurf[surface]!=null) return p.eloSurf[surface];
+        return p.elo!=null ? p.elo : 0;
+    };
+    const winRate = (p)=>{ const f=(p.form||[]); if(!f.length) return null; return f.filter(r=>r==='W').length/f.length; };
+    return arr.map(p=>({ id:p.id, name:p.name, tour:p.tour, country:p.country, photo:p.photo,
+        elo:Math.round(eloFor(p)), form:p.form||[], wr:winRate(p) }))
+        .filter(p=>p.elo>0)
+        .sort((a,b)=>b.elo-a.elo)
+        .slice(0,60);
+};
 window.recordSummary = function(){
     const r = window.RECORD || [];
     let staked=0, returned=0, w=0, l=0, voids=0;
@@ -322,7 +378,21 @@ window.arbSummary = function(){
 window.I18N = {
   es: {
     brandSub:'TENIS · VALOR',
-    navValue:'Valor', navArb:'Sin Riesgo', navCombos:'Combinadas', navRecord:'Récord', navModel:'Aciertos', navReto:'Reto', navHow:'Cómo funciona', statusPend:'EN JUEGO',
+    navValue:'Valor', navArb:'SUREBET', navCombos:'Combinadas', navRecord:'Récord', navModel:'Aciertos', navReto:'Reto', navHow:'Cómo funciona', navDist:'Plan', navRanking:'Ranking', statusPend:'EN JUEGO',
+    distEyebrow:'DISTRIBUIDOR DE BANKROLL', distTitle:'Tu plan del día',
+    distLead:'Pon tu presupuesto y tu perfil, y repartimos el dinero entre los picks de valor del día con criterio (Kelly fraccionado). Cuánto poner en cada uno, sin pensar.',
+    distBudget:'Presupuesto', distRisk:'Riesgo', distSpread:'Diversificación',
+    distCons:'Conservador', distEq:'Equilibrado', distAgg:'Arriesgado',
+    distConc:'Concentrado', distDiv:'Diversificado',
+    distConsH:'Apuestas pequeñas, protege la banca.', distEqH:'Equilibrio entre riesgo y crecimiento.', distAggH:'Apuestas mayores en los picks con más valor.',
+    distSpreadH:'Cuántos picks repartir: pocos y fuertes, o muchos y pequeños.',
+    distPick:'Selección', distStake:'Apuesta', distRet:'Devuelve', distAssigned:'Asignado', distEV:'Valor esperado:',
+    distNone:'Hoy no hay picks de valor', distNoneH:'Cuando haya valor, aquí tendrás tu plan de reparto. Vuelve mañana.',
+    distDisc:'Reparto orientativo (Kelly fraccionado), no es consejo de inversión. Apostar conlleva riesgo. +18.',
+    rankEyebrow:'STATS RANKING', rankTitle:'Ranking por nivel',
+    rankLead:'Jugadores ordenados por nuestro rating (Elo) global y por superficie. Quién llega más fuerte a cada tipo de pista.',
+    rankAll:'Todas', rankPlayer:'Jugador', rankRating:'Rating', rankForm:'Forma', rankNone:'Sin datos de ranking todavía.',
+    rankNote:'Rating ACEVALUE.', rankNoteH:'Elo propio que se autoajusta con cada resultado. Por superficie cuando hay datos suficientes.',
     ladEyebrow:'RETO ESCALERA · PREMIUM', ladTitle:'El Reto 10 → 250',
     ladLead:'Cada día, el pick más claro (cuota baja) para multiplicar la banca peldaño a peldaño. De 10€ a 250€ en 10 días. Si la escalera cae, empezamos otra sin coste — sigues suscrito hasta que se complete una.',
     ladStep:'Peldaño', ladTodayLocked:'Pick de hoy bloqueado', ladSoon:'Pick disponible pronto',
@@ -352,7 +422,7 @@ window.I18N = {
     vaProb:'Prob. modelo', vaOur:'Nuestra cuota', vaAvg:'Media mercado', vaFair:'Cuota justa', vaBest:'Mejor cuota', vaNoValue:'Sin valor',
     vaFoot:'Prob. modelo = nuestra estimación (Elo + superficie + forma) · Nuestra cuota = 1/prob · Media = promedio de casas · Valor = cuánto paga de más la mejor casa frente a lo justo.',
     // arb
-    arbEyebrow:'BENEFICIO GARANTIZADO · GANE QUIEN GANE', arbTitle:'Apuestas sin riesgo',
+    arbEyebrow:'BENEFICIO GARANTIZADO · GANE QUIEN GANE', arbTitle:'Surebet',
     arbLead:'En tenis solo hay dos resultados. Apostando a los DOS jugadores —cada uno en la casa que mejor lo paga— recuperas lo mismo gane quien gane. Aquí escaneamos cada partido buscando esa diferencia.',
     arbStakeLabel:'Inversión total a repartir', arbFound:'sin riesgo hoy',
     arbNone:'Ahora mismo no hay apuestas sin riesgo', arbNoneLead:'Cambian en segundos. Te mostramos las oportunidades más cercanas, ordenadas por margen.',
@@ -388,7 +458,21 @@ window.I18N = {
   },
   en: {
     brandSub:'TENNIS · VALUE',
-    navValue:'Value', navArb:'No-Risk', navCombos:'Accas', navRecord:'Record', navModel:'Accuracy', navReto:'Challenge', navHow:'How it works', statusPend:'LIVE',
+    navValue:'Value', navArb:'SUREBET', navCombos:'Accas', navRecord:'Record', navModel:'Accuracy', navReto:'Challenge', navHow:'How it works', navDist:'Plan', navRanking:'Ranking', statusPend:'LIVE',
+    distEyebrow:'BANKROLL DISTRIBUTOR', distTitle:'Your daily plan',
+    distLead:'Set your budget and profile, and we split the money across today\u2019s value picks with discipline (fractional Kelly). How much to put on each, no thinking.',
+    distBudget:'Budget', distRisk:'Risk', distSpread:'Diversification',
+    distCons:'Conservative', distEq:'Balanced', distAgg:'Aggressive',
+    distConc:'Concentrated', distDiv:'Diversified',
+    distConsH:'Small stakes, protects the bank.', distEqH:'Balance of risk and growth.', distAggH:'Bigger stakes on the highest-value picks.',
+    distSpreadH:'How many picks to spread across: few and strong, or many and small.',
+    distPick:'Selection', distStake:'Stake', distRet:'Returns', distAssigned:'Assigned', distEV:'Expected value:',
+    distNone:'No value picks today', distNoneH:'When there\u2019s value, your allocation plan shows here. Check back tomorrow.',
+    distDisc:'Indicative split (fractional Kelly), not investment advice. Betting carries risk. 18+.',
+    rankEyebrow:'STATS RANKING', rankTitle:'Ranking by level',
+    rankLead:'Players ranked by our overall and per-surface rating (Elo). Who arrives strongest to each court type.',
+    rankAll:'All', rankPlayer:'Player', rankRating:'Rating', rankForm:'Form', rankNone:'No ranking data yet.',
+    rankNote:'ACEVALUE rating.', rankNoteH:'Our own Elo, self-adjusting with every result. Per surface when enough data.',
     ladEyebrow:'LADDER CHALLENGE · PREMIUM', ladTitle:'The 10 → 250 Challenge',
     ladLead:'Each day, the clearest pick (low odds) to compound the bank rung by rung. From 10€ to 250€ in 10 days. If the ladder breaks, we start another at no cost — you stay subscribed until one completes.',
     ladStep:'Rung', ladTodayLocked:'Today\u2019s pick locked', ladSoon:'Pick available soon',
@@ -417,7 +501,7 @@ window.I18N = {
     vaTitle:'Value breakdown', vaIntro:'We compute the true probability with OUR model ({src}): player Elo + surface edge + recent form. We compare it to the market average price and the best available. If they pay more than fair, there is value.',
     vaProb:'Model prob', vaOur:'Our odds', vaAvg:'Market avg', vaFair:'Fair odds', vaBest:'Best odds', vaNoValue:'No value',
     vaFoot:'Model prob = our estimate (Elo + surface + form) · Our odds = 1/prob · Avg = books average · Value = how much more the best book pays vs fair.',
-    arbEyebrow:'GUARANTEED PROFIT · WHOEVER WINS', arbTitle:'No-risk bets',
+    arbEyebrow:'GUARANTEED PROFIT · WHOEVER WINS', arbTitle:'Surebet',
     arbLead:'Tennis has only two outcomes. Backing BOTH players —each at the bookmaker paying it best— returns the same whoever wins. Here we scan every match for that gap.',
     arbStakeLabel:'Total stake to split', arbFound:'no-risk today',
     arbNone:'No no-risk bets right now', arbNoneLead:'They change within seconds. We show the closest opportunities, sorted by margin.',

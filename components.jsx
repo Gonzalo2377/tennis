@@ -15,24 +15,30 @@ const Icon = {
   search: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...p}><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>),
   arrow: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...p}><path d="M5 12h14M13 6l6 6-6 6"/></svg>),
   bolt: (p={}) => (<svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>),
+  wallet: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><path d="M3 7a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v2M3 7v10a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-3M3 7h16M21 11h-4a2 2 0 0 0 0 4h4z"/></svg>),
+  shield: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>),
+  trophy: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3M9 19h6M12 14v5"/></svg>),
+  ledger: (p={}) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><path d="M5 3h11l3 3v15H5zM9 3v18M13 8h3M13 12h3"/></svg>),
 };
 
 /* ---------- player avatar (photo if provided, else polished monogram) ---------- */
 function Avatar({ id, size = 44, badge = true }) {
   const p = playerById(id);
+  const [failed, setFailed] = useState(false);
   const initials = (p.name || '?').replace(/[^A-Za-zÀ-ÿ.\s]/g, '').split(/\s+/).filter(Boolean).map(s => s[0]).join('').slice(0,2).toUpperCase();
   // unique, deterministic colour per player → every tennista gets a distinct pro avatar
   const seed = ((p.name || id || '?') + (p.tour||'')).split('').reduce((a,c)=>a + c.charCodeAt(0)*31, 0);
   const hue = Math.abs(seed) % 360;
   const grad = `linear-gradient(140deg, hsl(${hue} 54% 44%), hsl(${(hue+28)%360} 58% 30%))`;
-  const photo = p.photo || (window.ACE_PHOTOS && window.ACE_PHOTOS[id]);
+  const photo = (!failed) && (p.photo || (window.ACE_PHOTOS && window.ACE_PHOTOS[id]));
   const wrap = { position:'relative', width:size, height:size, flexShrink:0, display:'inline-block' };
   const circle = { width:size, height:size, borderRadius:'50%', overflow:'hidden', display:'grid', placeItems:'center', boxShadow:'0 2px 8px rgba(23,21,15,.18)', border:'2px solid var(--surface)' };
+  const mono = <span style={{ ...circle, background:grad, color:'#fff', fontFamily:'var(--font-head)', fontWeight:800, fontSize:size*0.36 }}>{initials}</span>;
   return (
     <span style={wrap}>
       {photo
-        ? <span style={circle}><img src={photo} alt={p.name} style={{ width:'100%', height:'100%', objectFit:'cover' }} onError={(e)=>{ e.target.style.display='none'; }} /></span>
-        : <span style={{ ...circle, background:grad, color:'#fff', fontFamily:'var(--font-head)', fontWeight:800, fontSize:size*0.36 }}>{initials}</span>}
+        ? <span style={circle}><img src={photo} alt={p.name} style={{ width:'100%', height:'100%', objectFit:'cover' }} onError={()=>setFailed(true)} /></span>
+        : mono}
       {badge && p.flag && <span style={{ position:'absolute', bottom:-2, right:-2, fontSize:size*0.34, lineHeight:1, filter:'drop-shadow(0 1px 1px rgba(0,0,0,.3))' }}>{p.flag}</span>}
     </span>
   );
@@ -222,10 +228,12 @@ function Nav({ t, lang, setLang, route, go }) {
   const [open, setOpen] = useState(false);
   const links = [
     ['value', t.navValue, Icon.target],
-    ['arb', t.navArb, Icon.scale],
+    ['dist', t.navDist, Icon.wallet],
+    ['arb', t.navArb, Icon.shield],
     ['combos', t.navCombos, Icon.layers],
+    ['ranking', t.navRanking, Icon.trophy],
     ['reto', t.navReto, Icon.bolt],
-    ['record', t.navRecord, Icon.chart],
+    ['record', t.navRecord, Icon.ledger],
     ['model', t.navModel, Icon.target],
     ['how', t.navHow, Icon.book],
   ];
@@ -267,10 +275,11 @@ function Nav({ t, lang, setLang, route, go }) {
 function MobileNav({ t, route, go }) {
   const items = [
     ['value', t.navValue, Icon.target],
-    ['arb', t.navArb, Icon.scale],
+    ['dist', t.navDist, Icon.wallet],
+    ['arb', t.navArb, Icon.shield],
     ['combos', t.navCombos, Icon.layers],
     ['reto', t.navReto, Icon.bolt],
-    ['record', t.navRecord, Icon.chart],
+    ['record', t.navRecord, Icon.ledger],
   ];
   const isActive = (k) => route.view === k || (k==='value'&&route.view==='match');
   return (

@@ -50,6 +50,8 @@ function App() {
     case 'record': view = <Record t={t} go={go} />; break;
     case 'model':  view = <ModelAccuracy t={t} go={go} />; break;
     case 'reto':   view = <Ladder t={t} go={go} />; break;
+    case 'dist':   view = <Distributor t={t} go={go} />; break;
+    case 'ranking':view = <StatsRanking t={t} go={go} />; break;
     case 'how':    view = <How t={t} go={go} />; break;
     default:       view = <Home t={t} go={go} />;
   }
