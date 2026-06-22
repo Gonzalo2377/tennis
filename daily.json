@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-22T16:00:51.230Z",
+    "updatedAt": "2026-06-22T18:00:38.622Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3141,13 +3141,31 @@
   ],
   "RECORD": [
     {
+      "id": "acb29afbfe66647dba0cebc49280689d",
+      "date": "22 JUN",
+      "match": "Z. Zhang – H. Searle",
+      "pick": "Gana Z. Zhang",
+      "odd": 1.67,
+      "book": "mybookieag",
+      "result": "L"
+    },
+    {
+      "id": "c7c95437d7ab06483eec65f3781e4b2e",
+      "date": "22 JUN",
+      "match": "O. Crawford – J. Rodionov",
+      "pick": "Gana O. Crawford",
+      "odd": 3.31,
+      "book": "pinnacle",
+      "result": "L"
+    },
+    {
       "id": "e78db023e1699efbd719293567e29401",
       "date": "22 JUN",
       "match": "H. Rocha – N. Mejia",
       "pick": "Gana N. Mejia",
       "odd": 3.79,
       "book": "pinnacle",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "5f0a49eaf22be4e6a912bbe83bafeeaa",
@@ -3664,59 +3682,68 @@
       "odd": 1.54,
       "book": "betfair_ex_eu",
       "result": "W"
-    },
-    {
-      "id": "e955e6ef5b6de115b8a75152aa437afc",
-      "date": "15 JUN",
-      "match": "M. Schoenhaus – L. Tien",
-      "pick": "Gana L. Tien",
-      "odd": 1.23,
-      "book": "leovegas_se",
-      "result": "W"
-    },
-    {
-      "id": "ab55f89190f9b59dd5d495873a63c4b0",
-      "date": "15 JUN",
-      "match": "N. Basilashvili – D. Altmaier",
-      "pick": "Gana D. Altmaier",
-      "odd": 2.44,
-      "book": "betfair_ex_eu",
-      "result": "W"
     }
   ],
-  "PENDING": [
-    {
-      "id": "c7c95437d7ab06483eec65f3781e4b2e",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782144000000,
-      "date": "22 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "O. Crawford – J. Rodionov",
-      "pickKey": "home",
-      "pickLabel": "Gana O. Crawford",
-      "odd": 3.31,
-      "book": "pinnacle",
-      "homeName": "O. Crawford",
-      "awayName": "J. Rodionov"
-    },
-    {
-      "id": "acb29afbfe66647dba0cebc49280689d",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782144000000,
-      "date": "22 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "Z. Zhang – H. Searle",
-      "pickKey": "home",
-      "pickLabel": "Gana Z. Zhang",
-      "odd": 1.67,
-      "book": "mybookieag",
-      "homeName": "Z. Zhang",
-      "awayName": "H. Searle"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "22 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 4.27,
+      "result": "L",
+      "legs": [
+        {
+          "match": "Z. Zhang – H. Searle",
+          "pick": "Gana Z. Zhang",
+          "odd": 1.65,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "H. Squire – M. Zheng",
+          "pick": "Gana M. Zheng",
+          "odd": 1.43,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "A. Matusevich – R. Sakamoto",
+          "pick": "Gana R. Sakamoto",
+          "odd": 1.81,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "22 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.64,
+      "result": "L",
+      "legs": [
+        {
+          "match": "N. Sanchez Izquierdo – S. Kwon",
+          "pick": "Gana S. Kwon",
+          "odd": 1.12,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "H. Squire – M. Zheng",
+          "pick": "Gana M. Zheng",
+          "odd": 1.43,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "Z. Zhang – H. Searle",
+          "pick": "Gana Z. Zhang",
+          "odd": 1.65,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "21 JUN",
       "name": "Combinada del Día",
@@ -4533,88 +4560,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "22 JUN·c1",
-      "date": "22 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "f275338cea5a643aeb562c2d4ebbb8c7",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "N. Sanchez Izquierdo – S. Kwon",
-          "pick": "Gana S. Kwon",
-          "odd": 1.12,
-          "homeName": "N. Sanchez Izquierdo",
-          "awayName": "S. Kwon"
-        },
-        {
-          "id": "e4caecf815b3dcddc0bbd05aab152678",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "H. Squire – M. Zheng",
-          "pick": "Gana M. Zheng",
-          "odd": 1.43,
-          "homeName": "H. Squire",
-          "awayName": "M. Zheng"
-        },
-        {
-          "id": "acb29afbfe66647dba0cebc49280689d",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "Z. Zhang – H. Searle",
-          "pick": "Gana Z. Zhang",
-          "odd": 1.65,
-          "homeName": "Z. Zhang",
-          "awayName": "H. Searle"
-        }
-      ]
-    },
-    {
-      "dayId": "22 JUN·c2",
-      "date": "22 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "acb29afbfe66647dba0cebc49280689d",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "Z. Zhang – H. Searle",
-          "pick": "Gana Z. Zhang",
-          "odd": 1.65,
-          "homeName": "Z. Zhang",
-          "awayName": "H. Searle"
-        },
-        {
-          "id": "e4caecf815b3dcddc0bbd05aab152678",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "H. Squire – M. Zheng",
-          "pick": "Gana M. Zheng",
-          "odd": 1.43,
-          "homeName": "H. Squire",
-          "awayName": "M. Zheng"
-        },
-        {
-          "id": "1f15ce99a87d5fe981f645f3f36e3116",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "A. Matusevich – R. Sakamoto",
-          "pick": "Gana R. Sakamoto",
-          "odd": 1.81,
-          "homeName": "A. Matusevich",
-          "awayName": "R. Sakamoto"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "22 JUN",
@@ -5499,6 +5445,83 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "22 JUN",
+      "match": "T. Gentzsch – Z. Kolar",
+      "predName": "Z. Kolar",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "22 JUN",
+      "match": "P. Herbert – P. Jubb",
+      "predName": "P. Herbert",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "22 JUN",
+      "match": "M. Cecchinato – M. Tomas Barrios Vera",
+      "predName": "M. Tomas Barrios Vera",
+      "prob": 85,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "O. Crawford – J. Rodionov",
+      "predName": "J. Rodionov",
+      "prob": 56,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "Z. Zhang – H. Searle",
+      "predName": "Z. Zhang",
+      "prob": 74,
+      "ok": false
+    },
+    {
+      "date": "22 JUN",
+      "match": "H. Rocha – N. Mejia",
+      "predName": "H. Rocha",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "22 JUN",
+      "match": "L. Neumayer – D. Lajovic",
+      "predName": "D. Lajovic",
+      "prob": 55,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "C. Tseng – G. Heide",
+      "predName": "G. Heide",
+      "prob": 52,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "K. Uchida – B. Tomic",
+      "predName": "B. Tomic",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "L. Broady – A. Holmgren",
+      "predName": "A. Holmgren",
+      "prob": 55,
+      "ok": true
+    },
+    {
+      "date": "22 JUN",
+      "match": "V. Williams – I. Begu",
+      "predName": "I. Begu",
+      "prob": 61,
+      "ok": true
+    },
     {
       "date": "22 JUN",
       "match": "O. Virtanen – P. Martinez",
@@ -6972,28 +6995,6 @@
     },
     {
       "date": "22 JUN",
-      "ts": 1782135000000,
-      "match": "V. Williams – I. Begu",
-      "predHome": false,
-      "prob": 61,
-      "predName": "I. Begu",
-      "sofa": null,
-      "homeName": "V. Williams",
-      "awayName": "I. Begu"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782136800000,
-      "match": "L. Broady – A. Holmgren",
-      "predHome": false,
-      "prob": 55,
-      "predName": "A. Holmgren",
-      "sofa": null,
-      "homeName": "L. Broady",
-      "awayName": "A. Holmgren"
-    },
-    {
-      "date": "22 JUN",
       "ts": 1782136800000,
       "match": "D. Blanch – U. Blanchet",
       "predHome": false,
@@ -7017,83 +7018,6 @@
     {
       "date": "22 JUN",
       "ts": 1782144000000,
-      "match": "K. Uchida – B. Tomic",
-      "predHome": false,
-      "prob": 53,
-      "predName": "B. Tomic",
-      "sofa": null,
-      "homeName": "K. Uchida",
-      "awayName": "B. Tomic"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "C. Tseng – G. Heide",
-      "predHome": false,
-      "prob": 52,
-      "predName": "G. Heide",
-      "sofa": null,
-      "homeName": "C. Tseng",
-      "awayName": "G. Heide"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "L. Neumayer – D. Lajovic",
-      "predHome": false,
-      "prob": 55,
-      "predName": "D. Lajovic",
-      "sofa": null,
-      "homeName": "L. Neumayer",
-      "awayName": "D. Lajovic"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "H. Rocha – N. Mejia",
-      "predHome": true,
-      "prob": 55,
-      "predName": "H. Rocha",
-      "sofa": null,
-      "homeName": "H. Rocha",
-      "awayName": "N. Mejia"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "Z. Zhang – H. Searle",
-      "predHome": true,
-      "prob": 74,
-      "predName": "Z. Zhang",
-      "sofa": null,
-      "homeName": "Z. Zhang",
-      "awayName": "H. Searle"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "O. Crawford – J. Rodionov",
-      "predHome": false,
-      "prob": 56,
-      "predName": "J. Rodionov",
-      "sofa": null,
-      "homeName": "O. Crawford",
-      "awayName": "J. Rodionov"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "M. Cecchinato – M. Tomas Barrios Vera",
-      "predHome": false,
-      "prob": 85,
-      "predName": "M. Tomas Barrios Vera",
-      "sofa": null,
-      "homeName": "M. Cecchinato",
-      "awayName": "M. Tomas Barrios Vera"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
       "match": "V. Gaubas – M. Mmoh",
       "predHome": true,
       "prob": 57,
@@ -7101,28 +7025,6 @@
       "sofa": null,
       "homeName": "V. Gaubas",
       "awayName": "M. Mmoh"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "P. Herbert – P. Jubb",
-      "predHome": true,
-      "prob": 55,
-      "predName": "P. Herbert",
-      "sofa": null,
-      "homeName": "P. Herbert",
-      "awayName": "P. Jubb"
-    },
-    {
-      "date": "22 JUN",
-      "ts": 1782144000000,
-      "match": "T. Gentzsch – Z. Kolar",
-      "predHome": false,
-      "prob": 55,
-      "predName": "Z. Kolar",
-      "sofa": null,
-      "homeName": "T. Gentzsch",
-      "awayName": "Z. Kolar"
     }
   ],
   "LADDER": {
