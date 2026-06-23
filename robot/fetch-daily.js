@@ -305,10 +305,14 @@ function eloOf(name, surface){
   const base = (LIVE_ELO[k] != null) ? LIVE_ELO[k] : (RATINGS[k] ? RATINGS[k].elo : null);
   if (base == null) return null;
   const surfDelta = RATINGS[k] ? (RATINGS[k][surface[0]] || 0) : 0;
-  return base + surfDelta;
+  // bonus por forma reciente (últimos 5): cada victoria suma, cada derrota resta, cap ±25
+  const f = (FORM_DB[k]||[]).slice(-5);
+  const fb = f.length>=3 ? Math.max(-25, Math.min(25, (f.filter(r=>r==='W').length - f.filter(r=>r==='L').length)*7)) : 0;
+  return base + surfDelta + fb;
 }
 /* learn Elo from finished matches (self-updating, K=24, surface-neutral base) */
 let LIVE_ELO = {}, ELO_DONE = {}, RANK_ELO = {}, RANK_TS = 0;
+let FORM_DB = {}, FORM_DONE = {};   // historial W/L por jugador (clave lastKey) + dedup de partidos ya contados
 const SEEDED = new Set();   // jugadores cuyo Elo se INVENTÓ del mercado (no los conocemos de verdad)
 function seedElo(name){ const k=lastKey(name); if(LIVE_ELO[k]!=null) return LIVE_ELO[k]; LIVE_ELO[k] = RATINGS[k] ? RATINGS[k].elo : 1700; return LIVE_ELO[k]; }
 function updateElo(scores){
@@ -345,7 +349,7 @@ async function main(){
   // SCORES-ONLY mode: cheap refresh that only settles finished picks/combos/surebets.
   if ((process.env.ODDS_MODE||'').toLowerCase()==='scores'){ await scoresOnly(); return; }
   // load the self-updating Elo learned so far (seeded from ratings.js on first run)
-  try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; RANK_ELO = prevE.RANK_ELO || {}; RANK_TS = prevE.RANK_TS || 0; } catch(e){}
+  try { const prevE = JSON.parse(fs.readFileSync(OUT,'utf8')); LIVE_ELO = prevE.ELO || {}; ELO_DONE = prevE.ELO_DONE || {}; RANK_ELO = prevE.RANK_ELO || {}; RANK_TS = prevE.RANK_TS || 0; FORM_DB = prevE.FORM_DB || {}; FORM_DONE = prevE.FORM_DONE || {}; } catch(e){}
   if (Object.keys(LIVE_ELO).length === 0) { for (const k in RATINGS) LIVE_ELO[k] = RATINGS[k].elo; console.log(`· Elo sembrado con ${Object.keys(LIVE_ELO).length} jugadores de ratings.js`); }
   // RANKING ATP/WTA → Elo base (1 vez por semana). Da nivel real a TODOS los rankeados (incl. challenger).
   let RANKING = [];
@@ -469,7 +473,7 @@ async function main(){
     const simpleF = (n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
     let lib={}; try { lib=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; } catch(e){}
     const noPhoto=[];
-    Object.values(PLAYERS).forEach(p=>{ const u=lib[canonF(p.name)]||lib[simpleF(p.name)]; if(u) p.photo=u; else if(!p.photo) noPhoto.push(p.name); });
+    Object.values(PLAYERS).forEach(p=>{ const u=lib[canonF(p.name)]||lib[simpleF(p.name)]; if(u) p.photo=u; else if(!p.photo) noPhoto.push(p.name); const fk=lastKey(p.name); if(FORM_DB[fk]&&FORM_DB[fk].length) p.form=FORM_DB[fk].slice(-5); });
     if (noPhoto.length) console.log(`· ${noPhoto.length} jugadores SIN foto en biblioteca: ${noPhoto.join(', ')}`);
   } catch(e){ console.log('· fotos biblioteca error:', e.message); }
 
@@ -608,6 +612,8 @@ async function main(){
       } catch(e){ console.log('· SofaScore fotos no disponibles:', e.message); }
       const learned = updateElo(scores);            // self-update Elo from finished matches
       if (learned) console.log(`· Elo actualizado con ${learned} resultados`);
+      // acumula FORMA (W/L) por jugador desde los partidos terminados, sin duplicar
+      (LAST_FINISHED||[]).forEach(f=>{ if(!f||!f.winner) return; const sig=surnameKey(f.home)+'|'+surnameKey(f.away)+'|'+surnameKey(f.winner); if(FORM_DONE[sig]) return; FORM_DONE[sig]=1; const wk=lastKey(f.winner), lk=lastKey(f.winner===f.home?f.away:f.home); if(wk){(FORM_DB[wk]=FORM_DB[wk]||[]).push('W'); FORM_DB[wk]=FORM_DB[wk].slice(-10);} if(lk){(FORM_DB[lk]=FORM_DB[lk]||[]).push('L'); FORM_DB[lk]=FORM_DB[lk].slice(-10);} });
       const winners={}; scores.forEach(s=>{ const w=winnerOf(s); if(w) winners[shortName(w)]=w; });
       // settleable once the match has STARTED; if there's no confirmed result yet it just stays pending.
       const playedEnough = ts => !ts || ts <= Date.now();
@@ -832,7 +838,8 @@ async function main(){
     RECORD, PENDING, COMBO_RECORD, COMBO_PENDING, ARB_RECORD, ARB_PENDING,
     MODEL_RECORD: MODEL_RECORD.slice(0,400), MODEL_PENDING,
     LADDER, LADDER_HISTORY,
-    RANKING: (function(){ let lib={}; try{ lib=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; }catch(e){} const cs=require('./name-canon.js').canonSurname; return (RANKING||[]).slice(0,300).map(r=>{ const k=lastKey(r.name); return { name:r.name, tour:r.tour, rank:r.rank, elo:(LIVE_ELO[k]!=null?LIVE_ELO[k]:r.elo), country:r.country||'', photo:(lib[cs(r.name)]||lib[k]||null) }; }); })(),
+    RANKING: (function(){ let lib={}; try{ lib=(JSON.parse(fs.readFileSync(__dirname+'/player-photos.json','utf8')).photos)||{}; }catch(e){} const cs=require('./name-canon.js').canonSurname; return (RANKING||[]).slice(0,300).map(r=>{ const k=lastKey(r.name); return { name:r.name, tour:r.tour, rank:r.rank, elo:(LIVE_ELO[k]!=null?LIVE_ELO[k]:r.elo), country:r.country||'', photo:(lib[cs(r.name)]||lib[k]||null), form:(FORM_DB[k]||[]).slice(-5) }; }); })(),
+    FORM_DB, FORM_DONE,
     ELO:LIVE_ELO, ELO_DONE, RANK_ELO, RANK_TS,
   };
   fs.writeFileSync(OUT, JSON.stringify(daily, null, 2));
