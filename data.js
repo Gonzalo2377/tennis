@@ -293,16 +293,19 @@ window.equitySeries = function(){
    de riesgo (Kelly fraccionado) y diversificación. Devuelve líneas con
    stake sugerido, retorno potencial y EV. No gasta créditos. */
 window.bankrollPlan = function(budget, risk, nPicks){
-    const picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
+    // perfil de riesgo → filtra por CUOTA del pick: conservador favoritos claros,
+    // arriesgado cuotas altas, equilibrado en medio.
+    const oddOk = risk==='conservador' ? (o)=>o<=1.55 : risk==='arriesgado' ? (o)=>o>=1.90 : (o)=>o>=1.30&&o<=2.10;
+    let picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
         .filter(x=>x.v && x.v.positive)
         .sort((a,b)=> b.v.edge - a.v.edge);
-    if(!picks.length) return { lines:[], total:0, evTotal:0, maxPicks:0 };
+    const filtered = picks.filter(x=>oddOk(x.v.pick.best.price));
+    if(filtered.length) picks = filtered;   // si el filtro deja alguno, úsalo; si no, no dejamos al usuario sin plan
+    if(!picks.length) return { lines:[], total:0, evTotal:0, winAll:0, maxPicks:0 };
     const maxN = picks.length;
     const want = Math.max(1, Math.min(maxN, +nPicks || maxN));
     const sel = picks.slice(0, want);
-    // riesgo: exponente que concentra el dinero. conservador = reparto plano;
-    // arriesgado = mucho más peso en los picks de más valor. Además ajusta cuánto del
-    // presupuesto se despliega (conservador arriesga menos).
+    // exponente que concentra el dinero. conservador = reparto plano; arriesgado = más peso al de más valor.
     const expo = risk==='conservador' ? 0.4 : risk==='arriesgado' ? 2.0 : 1.0;
     const deploy = risk==='conservador' ? 0.6 : risk==='arriesgado' ? 1.0 : 0.82;
     let weights = sel.map(x=>{

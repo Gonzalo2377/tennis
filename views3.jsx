@@ -132,7 +132,9 @@ function StatsRanking({ t, go }) {
                   <tr key={p.id} style={{cursor:'default'}}>
                     <td><b style={{fontFamily:'var(--font-mono)', color:i<3?'var(--lime-deep)':'var(--muted)'}}>{i+1}</b></td>
                     <td className="l"><div style={{display:'flex', alignItems:'center', gap:9}}>
-                      <Avatar id={p.id} size={28} badge={false} />
+                      {p.photo
+                        ? <img src={p.photo} alt={p.name} style={{width:28, height:28, borderRadius:'50%', objectFit:'cover', flexShrink:0, border:'1px solid var(--line)'}} onError={(e)=>{e.target.style.display='none';}} />
+                        : <span style={{width:28, height:28, borderRadius:'50%', flexShrink:0, background:'var(--court)', color:'#fff', display:'grid', placeItems:'center', fontFamily:'var(--font-mono)', fontSize:'.6rem', fontWeight:700}}>{(p.name||'?').split(' ').pop().slice(0,2).toUpperCase()}</span>}
                       <span><b style={{fontFamily:'var(--font-head)'}}>{p.name}</b> <span className="vb-sub">{p.country}</span></span>
                     </div></td>
                     <td><b style={{fontFamily:'var(--font-mono)'}}>{p.elo}</b></td>

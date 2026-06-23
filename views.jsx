@@ -16,6 +16,10 @@ function Home({ t, go }) {
           <div className="hero__cta">
             <button className="btn btn--ink" onClick={()=>go({view:'value'})}>{t.heroCta1} {Icon.arrow({style:{width:16,height:16}})}</button>
             <button className="btn btn--lime" onClick={()=>go({view:'arb'})}>{Icon.scale({style:{width:16,height:16}})} {t.heroCta2}</button>
+            <a className="btn" href="https://twitter.com/AceValue_" target="_blank" rel="noopener" style={{background:'#000', color:'#fff'}}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6l-4.7-6.1L5.9 22H3l7-8L2 2h6.1l4.2 5.6zM17 20h1.6L7 4H5.3z"/></svg>
+              Síguenos · @AceValue_
+            </a>
           </div>
         </div>
       </section>

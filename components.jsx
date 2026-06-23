@@ -256,6 +256,7 @@ function Nav({ t, lang, setLang, route, go }) {
           </nav>
           <span className="nav__spacer" />
           <SearchBox t={t} go={go} />
+          <a className="lang-btn" href="https://twitter.com/AceValue_" target="_blank" rel="noopener" title="@AceValue_ en X" style={{display:'inline-flex',alignItems:'center'}}><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6l-4.7-6.1L5.9 22H3l7-8L2 2h6.1l4.2 5.6zM17 20h1.6L7 4H5.3z"/></svg></a>
           <button className="lang-btn" onClick={()=>setLang(lang==='es'?'en':'es')}>{lang==='es'?'🇪🇸 ES':'🇬🇧 EN'}</button>
           <button className={'nav__toggle'+(open?' open':'')} onClick={()=>setOpen(!open)} aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
@@ -302,6 +303,10 @@ function Footer({ t, go }) {
             <span className="brand__name" style={{color:'#f3f1ea'}}>ACE<span style={{color:'var(--lime)'}}>VALUE</span></span>
           </div>
           <p style={{ fontSize:'.86rem', maxWidth:'34ch', lineHeight:1.6 }}>{t.disc}</p>
+          <a href="https://twitter.com/AceValue_" target="_blank" rel="noopener" style={{ display:'inline-flex', alignItems:'center', gap:7, marginTop:12, color:'var(--lime)', fontWeight:700, fontSize:'.9rem' }}>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6l-4.7-6.1L5.9 22H3l7-8L2 2h6.1l4.2 5.6zM17 20h1.6L7 4H5.3z"/></svg>
+            @AceValue_
+          </a>
         </div>
         <div><h4>{t.footProduct}</h4>
           <a href="#" onClick={(e)=>{e.preventDefault();go({view:'value'});}}>{t.footValue}</a>
