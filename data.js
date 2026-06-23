@@ -295,12 +295,23 @@ window.equitySeries = function(){
 window.bankrollPlan = function(budget, risk, nPicks){
     // perfil de riesgo → filtra por CUOTA del pick: conservador favoritos claros,
     // arriesgado cuotas altas, equilibrado en medio.
-    const oddOk = risk==='conservador' ? (o)=>o<=1.55 : risk==='arriesgado' ? (o)=>o>=1.90 : (o)=>o>=1.30&&o<=2.10;
-    let picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
-        .filter(x=>x.v && x.v.positive)
+    const oddOk = risk==='arriesgado' ? (o)=>o>=1.90 : (o)=>o>=1.30&&o<=2.10;
+    let picks;
+    if(risk==='conservador'){
+      // CONSERVADOR: favoritos claros (cuota baja = alta prob), AUNQUE no tengan "valor".
+      // La gracia es el alto % de acierto, no el valor — una cuota 1.30 normal no da valor.
+      picks = (window.MATCHES||[]).map(m=>{
+        const h=window.saneBest(m.odds.home), a=window.saneBest(m.odds.away);
+        const fav = h.price<=a.price ? {k:'home',best:h} : {k:'away',best:a};
+        const mk = window.marketProbs(m);
+        return { m, v:{ pick:{ k:fav.k, best:fav.best, p:mk[fav.k] }, edge:0, positive:true } };
+      }).filter(x=> x.v.pick.best.price>=1.20 && x.v.pick.best.price<=1.55 && x.v.pick.p>=0.62)
+        .sort((a,b)=> a.v.pick.best.price - b.v.pick.best.price);   // los más claros primero
+    } else {
+      picks = (window.MATCHES||[]).map(m=>({m,v:window.matchValue(m)}))
+        .filter(x=>x.v && x.v.positive && oddOk(x.v.pick.best.price))
         .sort((a,b)=> b.v.edge - a.v.edge);
-    const filtered = picks.filter(x=>oddOk(x.v.pick.best.price));
-    picks = filtered;   // perfil estricto: si no hay picks en su rango de cuota, no se fuerza nada
+    }
     if(!picks.length) return { lines:[], total:0, evTotal:0, winAll:0, maxPicks:0 };
     const maxN = picks.length;
     const want = Math.max(1, Math.min(maxN, +nPicks || maxN));
