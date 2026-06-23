@@ -287,6 +287,8 @@ button{font-family:inherit;cursor:pointer}
 
 /* evita zoom de iOS al enfocar inputs (font-size ≥16px) */
 @media(max-width:880px){
+  .dist-grid{grid-template-columns:1fr !important;}
+  .dist-grid > div{min-width:0}
   input,select,textarea{font-size:16px}
   .search input{font-size:16px}
 }

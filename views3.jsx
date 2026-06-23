@@ -30,7 +30,7 @@ function Distributor({ t, go }) {
           <p style={{color:'var(--ink-2)', maxWidth:680, margin:'-6px 0 20px', lineHeight:1.6}}>{t.distLead}</p>
 
           {/* controles */}
-          <div className="panel panel--pad" style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:16, marginBottom:22}}>
+          <div className="panel panel--pad dist-grid" style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:16, marginBottom:22}}>
             <div>
               <label style={{fontFamily:'var(--font-mono)', fontSize:'.64rem', letterSpacing:'.1em', textTransform:'uppercase', color:'var(--muted)', display:'block', marginBottom:6}}>{t.distBudget}</label>
               <div style={{display:'flex', alignItems:'center', gap:8}}>
@@ -81,7 +81,7 @@ function Distributor({ t, go }) {
               </div>
               <div className="combo__foot">
                 <span style={{fontFamily:'var(--font-mono)', fontSize:'.74rem', color:'var(--muted)'}}>{t.distAssigned}: <b style={{color:'var(--ink)'}}>{plan.total.toFixed(2)}€</b> / {(+budget).toFixed(0)}€</span>
-                <span style={{fontFamily:'var(--font-head)', fontWeight:800, color:'var(--pos)'}}>{t.distEV} +{plan.evTotal.toFixed(2)}€</span>
+                <span style={{fontFamily:'var(--font-head)', fontWeight:800, color:'var(--pos)'}}>{t.distEV} +{plan.winAll.toFixed(2)}€</span>
               </div></div>
               <div className="disclaimer" style={{marginTop:18}}><b>{t.discTitle}</b> {t.distDisc}</div>
             </React.Fragment>

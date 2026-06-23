@@ -317,17 +317,23 @@ window.bankrollPlan = function(budget, risk, nPicks){
     let lines = sel.map((x,i)=>{
         const stake = +(pot * weights[i] / sumW).toFixed(2);
         const o = x.v.pick.best.price;
+        const p = x.v.pick.p;
+        // EV realista: encogemos la probabilidad del modelo hacia la implícita del mercado (1/o)
+        // a la mitad, para no inflar el "valor esperado" con sobre-confianza del modelo.
+        const pEV = (1/o) + 0.5*(p - 1/o);
         return {
             m: x.m, pickKey: x.v.pick.k,
             name: window.outcomeLabel(x.v.pick.k, x.m),
-            odd: o, book: x.v.pick.best.book, edge: x.v.edge, p: x.v.pick.p,
+            odd: o, book: x.v.pick.best.book, edge: x.v.edge, p,
             stake, ret: +(stake*o).toFixed(2),
-            ev: +(stake * ((x.v.pick.p*o)-1)).toFixed(2),
+            ev: +(stake * Math.max(0,(pEV*o)-1)).toFixed(2),
         };
     }).filter(l=>l.stake>=0.5);
     const total = +lines.reduce((s,l)=>s+l.stake,0).toFixed(2);
     const evTotal = +lines.reduce((s,l)=>s+l.ev,0).toFixed(2);
-    return { lines, total, evTotal };
+    // beneficio si TODOS los picks aciertan (combi personalizada): suma de retornos − total apostado
+    const winAll = +(lines.reduce((s,l)=>s+l.ret,0) - total).toFixed(2);
+    return { lines, total, evTotal, winAll };
 };
 /* ---- STATS RANKING -------------------------------------------------
    Ranking de jugadores por métrica/superficie usando lo que tenemos
@@ -401,7 +407,7 @@ window.I18N = {
     distConc:'Concentrado', distDiv:'Diversificado',
     distConsH:'Apuestas pequeñas, protege la banca.', distEqH:'Equilibrio entre riesgo y crecimiento.', distAggH:'Apuestas mayores en los picks con más valor.',
     distSpreadH:'Cuántos picks repartir: pocos y fuertes, o muchos y pequeños.',
-    distPick:'Selección', distStake:'Apuesta', distRet:'Devuelve', distAssigned:'Asignado', distEV:'Valor esperado:',
+    distPick:'Selección', distStake:'Apuesta', distRet:'Devuelve', distAssigned:'Asignado', distEV:'Si aciertan todos:',
     distNone:'Hoy no hay picks de valor', distNoneH:'Cuando haya valor, aquí tendrás tu plan de reparto. Vuelve mañana.',
     distDisc:'Reparto orientativo (Kelly fraccionado), no es consejo de inversión. Apostar conlleva riesgo. +18.',
     rankEyebrow:'STATS RANKING', rankTitle:'Ranking por nivel',
@@ -481,7 +487,7 @@ window.I18N = {
     distConc:'Concentrated', distDiv:'Diversified',
     distConsH:'Small stakes, protects the bank.', distEqH:'Balance of risk and growth.', distAggH:'Bigger stakes on the highest-value picks.',
     distSpreadH:'How many picks to spread across: few and strong, or many and small.',
-    distPick:'Selection', distStake:'Stake', distRet:'Returns', distAssigned:'Assigned', distEV:'Expected value:',
+    distPick:'Selection', distStake:'Stake', distRet:'Returns', distAssigned:'Assigned', distEV:'If all win:',
     distNone:'No value picks today', distNoneH:'When there\u2019s value, your allocation plan shows here. Check back tomorrow.',
     distDisc:'Indicative split (fractional Kelly), not investment advice. Betting carries risk. 18+.',
     rankEyebrow:'STATS RANKING', rankTitle:'Ranking by level',

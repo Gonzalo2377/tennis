@@ -724,18 +724,19 @@ async function main(){
         LADDER=null;   // se rompió → nueva escalera
       }
     }
-    // 2) ¿completada?
-    if(LADDER && LADDER.current>=LADDER.steps){
+    // 2) ¿completada? Solo cuando la banca llega a la META (250€), no por nº de peldaños.
+    if(LADDER && LADDER.bank>=LADDER.target){
       LADDER_HISTORY.unshift({ id:LADDER.id, start:LADDER.start, target:LADDER.target, reached:+LADDER.bank.toFixed(2), result:'completed', date:today });
       LADDER=null;
+    } else if(LADDER && LADDER.current>=LADDER.steps){
+      LADDER.steps = LADDER.current + 1;   // aún no llega a 250 → añade un peldaño (más días)
     }
     if(!LADDER) LADDER={ id:'L'+Date.now().toString(36), start:LAD_START, target:LAD_TARGET, steps:LAD_STEPS, current:0, status:'live', bank:LAD_START, rungs:[] };
 
     // 3) generar el peldaño de HOY si no hay uno pendiente: el pick MÁS CLARO (cuota más baja, prob alta)
     const hasToday=LADDER.rungs.some(r=>r.result==='today');
-    // sólo un peldaño por día: si ya se jugó/generó uno con la fecha de HOY, esperamos a mañana
     const settledToday=LADDER.rungs.some(r=>(r.result==='W'||r.result==='L') && r.date===today);
-    if(!hasToday && !settledToday && LADDER.current<LADDER.steps){
+    if(!hasToday && !settledToday && LADDER.bank<LADDER.target){
       // candidatos: favoritos creíbles del modelo, cuota 1.20–1.55, que empiecen pronto
       const cand=MATCHES.map(m=>{ const v=matchValue(m); const mk=marketProbs(m); const mdl=(m.model&&typeof m.model.home==='number')?m.model:mk;
           const k=mdl.home>=mdl.away?'home':'away'; const best=saneBest(m.odds[k]); return {m,k,prob:mdl[k],odd:best.price,book:best.book}; })
@@ -749,12 +750,12 @@ async function main(){
         LADDER.rungs.push({ n:stepN, match:`${PLAYERS[pick.m.home].name} – ${PLAYERS[pick.m.away].name}`,
           pick:`Gana ${PLAYERS[pick.k==='home'?pick.m.home:pick.m.away].name}`, odd:+pick.odd.toFixed(2), book:pick.book,
           bank:newBank, result:'today', date:today, sofa:pick.m.sofa||null });
-        // rellena peldaños futuros vacíos para el visual
+        // limita peldaños futuros mostrados a la META: no rellenar más allá de lo necesario
         for(let i=stepN+1;i<=LADDER.steps;i++) LADDER.rungs.push({ n:i });
       } else { console.log('· Reto escalera: sin pick claro hoy, esperamos a mañana'); }
     }
     LADDER_HISTORY=LADDER_HISTORY.slice(0,12);
-    console.log(`· Reto escalera: peldaño ${LADDER.current}/${LADDER.steps} · banca ${(LADDER.bank||LADDER.start).toFixed(2)}€`);
+    console.log(`· Reto escalera: peldaño ${LADDER.current}/${LADDER.steps} · banca ${(LADDER.bank||LADDER.start).toFixed(2)}€ · meta ${LADDER.target}€`);
   } catch(e){ console.log('· reto escalera error:', e.message); }
 
   // already-settled signature (match+pick normalized) → never re-add a pick that's in the record
@@ -961,7 +962,7 @@ async function scoresOnly(){
             console.log('· Reto escalera (ESPN): peldaño '+tr.n+' → '+(won?'GANADO':'FALLADO'));
           }
         }
-        if(d.LADDER && d.LADDER.current>=d.LADDER.steps){ LH.unshift({id:d.LADDER.id,start:d.LADDER.start,target:d.LADDER.target,reached:+d.LADDER.bank.toFixed(2),result:'completed',date:''}); d.LADDER=null; d.LADDER_HISTORY=LH.slice(0,12); }
+        if(d.LADDER && d.LADDER.bank>=d.LADDER.target){ LH.unshift({id:d.LADDER.id,start:d.LADDER.start,target:d.LADDER.target,reached:+d.LADDER.bank.toFixed(2),result:'completed',date:''}); d.LADDER=null; d.LADDER_HISTORY=LH.slice(0,12); } else if(d.LADDER && d.LADDER.current>=d.LADDER.steps){ d.LADDER.steps=d.LADDER.current+1; }
       }
     } catch(e){ console.log('· escalera scores-only error:', e.message); }
   } catch(e){ console.log('· scores-only: error', e.message); }
