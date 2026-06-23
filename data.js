@@ -300,14 +300,14 @@ window.bankrollPlan = function(budget, risk, nPicks){
         .filter(x=>x.v && x.v.positive)
         .sort((a,b)=> b.v.edge - a.v.edge);
     const filtered = picks.filter(x=>oddOk(x.v.pick.best.price));
-    if(filtered.length) picks = filtered;   // si el filtro deja alguno, úsalo; si no, no dejamos al usuario sin plan
+    picks = filtered;   // perfil estricto: si no hay picks en su rango de cuota, no se fuerza nada
     if(!picks.length) return { lines:[], total:0, evTotal:0, winAll:0, maxPicks:0 };
     const maxN = picks.length;
     const want = Math.max(1, Math.min(maxN, +nPicks || maxN));
     const sel = picks.slice(0, want);
     // exponente que concentra el dinero. conservador = reparto plano; arriesgado = más peso al de más valor.
     const expo = risk==='conservador' ? 0.4 : risk==='arriesgado' ? 2.0 : 1.0;
-    const deploy = risk==='conservador' ? 0.6 : risk==='arriesgado' ? 1.0 : 0.82;
+    const deploy = 1.0;   // siempre repartimos el presupuesto COMPLETO (100€ → 100€ exactos)
     let weights = sel.map(x=>{
         const p = x.v.pick.p;                  // prob real
         const o = x.v.pick.best.price;          // cuota
@@ -333,10 +333,12 @@ window.bankrollPlan = function(budget, risk, nPicks){
         };
     }).filter(l=>l.stake>=0.5);
     const total = +lines.reduce((s,l)=>s+l.stake,0).toFixed(2);
+    // ajuste de redondeo: el sobrante/faltante va al primer pick para sumar EXACTO el presupuesto
+    if(lines.length){ const diff=+( (Math.max(1,+budget||0)*deploy) - total ).toFixed(2); lines[0].stake=+(lines[0].stake+diff).toFixed(2); lines[0].ret=+(lines[0].stake*lines[0].odd).toFixed(2); }
+    const total2 = +lines.reduce((s,l)=>s+l.stake,0).toFixed(2);
     const evTotal = +lines.reduce((s,l)=>s+l.ev,0).toFixed(2);
-    // beneficio si TODOS los picks aciertan (combi personalizada): suma de retornos − total apostado
-    const winAll = +(lines.reduce((s,l)=>s+l.ret,0) - total).toFixed(2);
-    return { lines, total, evTotal, winAll };
+    const winAll = +(lines.reduce((s,l)=>s+l.ret,0) - total2).toFixed(2);
+    return { lines, total: total2, evTotal, winAll };
 };
 /* ---- STATS RANKING -------------------------------------------------
    Ranking de jugadores por métrica/superficie usando lo que tenemos
