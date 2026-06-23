@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-23T16:00:46.316Z",
+    "updatedAt": "2026-06-23T18:00:44.556Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3123,6 +3123,42 @@
   ],
   "RECORD": [
     {
+      "id": "a9c5252b794f1cdaba838c6153152274",
+      "date": "23 JUN",
+      "match": "J. Grabher – M. Bolkvadze",
+      "pick": "Gana J. Grabher",
+      "odd": 1.74,
+      "book": "pinnacle",
+      "result": "L"
+    },
+    {
+      "id": "1780c4aea100de9784fdb0cdd0bcd9e1",
+      "date": "23 JUN",
+      "match": "X. You – L. Jeanjean",
+      "pick": "Gana X. You",
+      "odd": 2.7,
+      "book": "pinnacle",
+      "result": "L"
+    },
+    {
+      "id": "7f4d4db9a7c439e54f8260c98d0f6cf4",
+      "date": "23 JUN",
+      "match": "M. Timofeeva – W. Osuigwe",
+      "pick": "Gana W. Osuigwe",
+      "odd": 2.96,
+      "book": "pinnacle",
+      "result": "L"
+    },
+    {
+      "id": "b248c0a11817feefe0ca8cf29c478fb0",
+      "date": "23 JUN",
+      "match": "A. Friedsam – C. Ngounoue",
+      "pick": "Gana A. Friedsam",
+      "odd": 2.36,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "89688c590b9945e9e0764f5ae9a34106",
       "date": "23 JUN",
       "match": "L. Fruhvirtova – E. Jones",
@@ -3593,69 +3629,66 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "b248c0a11817feefe0ca8cf29c478fb0",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1782223200000,
-      "date": "23 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Friedsam – C. Ngounoue",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Friedsam",
-      "odd": 2.36,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Friedsam",
-      "awayName": "C. Ngounoue"
-    },
-    {
-      "id": "7f4d4db9a7c439e54f8260c98d0f6cf4",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1782230400000,
-      "date": "23 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Timofeeva – W. Osuigwe",
-      "pickKey": "away",
-      "pickLabel": "Gana W. Osuigwe",
-      "odd": 2.96,
-      "book": "pinnacle",
-      "homeName": "M. Timofeeva",
-      "awayName": "W. Osuigwe"
-    },
-    {
-      "id": "1780c4aea100de9784fdb0cdd0bcd9e1",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1782223200000,
-      "date": "23 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "X. You – L. Jeanjean",
-      "pickKey": "home",
-      "pickLabel": "Gana X. You",
-      "odd": 2.7,
-      "book": "pinnacle",
-      "homeName": "X. You",
-      "awayName": "L. Jeanjean"
-    },
-    {
-      "id": "a9c5252b794f1cdaba838c6153152274",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1782230400000,
-      "date": "23 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Grabher – M. Bolkvadze",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Grabher",
-      "odd": 1.74,
-      "book": "pinnacle",
-      "homeName": "J. Grabher",
-      "awayName": "M. Bolkvadze"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "23 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 8.15,
+      "result": "L",
+      "legs": [
+        {
+          "match": "Z. Bai – T. Zidansek",
+          "pick": "Gana T. Zidansek",
+          "odd": 2.13,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "A. Friedsam – C. Ngounoue",
+          "pick": "Gana A. Friedsam",
+          "odd": 2.2,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "J. Grabher – M. Bolkvadze",
+          "pick": "Gana J. Grabher",
+          "odd": 1.74,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "23 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 3.75,
+      "result": "L",
+      "legs": [
+        {
+          "match": "X. Wang – G. Hanyu",
+          "pick": "Gana X. Wang",
+          "odd": 1.38,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "J. Grabher – M. Bolkvadze",
+          "pick": "Gana J. Grabher",
+          "odd": 1.74,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "E. Lys – E. Navarro",
+          "pick": "Gana E. Navarro",
+          "odd": 1.56,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "22 JUN",
       "name": "Combinada Valor",
@@ -4530,88 +4563,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "23 JUN·c1",
-      "date": "23 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "f6874a97e0eb7c1c3ed7de2065239ce2",
-          "sport": "tennis_wta_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "X. Wang – G. Hanyu",
-          "pick": "Gana X. Wang",
-          "odd": 1.38,
-          "homeName": "X. Wang",
-          "awayName": "G. Hanyu"
-        },
-        {
-          "id": "a9c5252b794f1cdaba838c6153152274",
-          "sport": "tennis_wta_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "J. Grabher – M. Bolkvadze",
-          "pick": "Gana J. Grabher",
-          "odd": 1.74,
-          "homeName": "J. Grabher",
-          "awayName": "M. Bolkvadze"
-        },
-        {
-          "id": "a7bf04353655a8975f1bf0d7867c606a",
-          "sport": "tennis_wta_bad_homburg_open",
-          "side": "away",
-          "sofa": null,
-          "match": "E. Lys – E. Navarro",
-          "pick": "Gana E. Navarro",
-          "odd": 1.56,
-          "homeName": "E. Lys",
-          "awayName": "E. Navarro"
-        }
-      ]
-    },
-    {
-      "dayId": "23 JUN·c2",
-      "date": "23 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "b089f7a45cef45ab2666ddffa62b5a7d",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "Z. Bai – T. Zidansek",
-          "pick": "Gana T. Zidansek",
-          "odd": 2.13,
-          "homeName": "Z. Bai",
-          "awayName": "T. Zidansek"
-        },
-        {
-          "id": "b248c0a11817feefe0ca8cf29c478fb0",
-          "sport": "tennis_wta_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Friedsam – C. Ngounoue",
-          "pick": "Gana A. Friedsam",
-          "odd": 2.2,
-          "homeName": "A. Friedsam",
-          "awayName": "C. Ngounoue"
-        },
-        {
-          "id": "a9c5252b794f1cdaba838c6153152274",
-          "sport": "tennis_wta_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "J. Grabher – M. Bolkvadze",
-          "pick": "Gana J. Grabher",
-          "odd": 1.74,
-          "homeName": "J. Grabher",
-          "awayName": "M. Bolkvadze"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "23 JUN",
@@ -5496,6 +5448,83 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "23 JUN",
+      "match": "R. Sramkova – V. Hruncakova",
+      "predName": "R. Sramkova",
+      "prob": 59,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "M. Timofeeva – W. Osuigwe",
+      "predName": "M. Timofeeva",
+      "prob": 57,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "M. Barthel – L. Zhu",
+      "predName": "L. Zhu",
+      "prob": 55,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "J. Grabher – M. Bolkvadze",
+      "predName": "J. Grabher",
+      "prob": 69,
+      "ok": false
+    },
+    {
+      "date": "23 JUN",
+      "match": "H. Watson – M. Sherif",
+      "predName": "M. Sherif",
+      "prob": 63,
+      "ok": false
+    },
+    {
+      "date": "23 JUN",
+      "match": "C. Monnet – T. Prozorova",
+      "predName": "T. Prozorova",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "L. Samsonova – E. Svitolina",
+      "predName": "E. Svitolina",
+      "prob": 69,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "X. You – L. Jeanjean",
+      "predName": "L. Jeanjean",
+      "prob": 55,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "A. Friedsam – C. Ngounoue",
+      "predName": "A. Friedsam",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "23 JUN",
+      "match": "E. Mandlik – A. Charaeva",
+      "predName": "A. Charaeva",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "23 JUN",
+      "match": "A. Sasnovich – K. Dunne",
+      "predName": "A. Sasnovich",
+      "prob": 70,
+      "ok": true
+    },
     {
       "date": "23 JUN",
       "match": "Z. Bai – T. Zidansek",
@@ -7331,61 +7360,6 @@
     },
     {
       "date": "23 JUN",
-      "ts": 1782223200000,
-      "match": "A. Sasnovich – K. Dunne",
-      "predHome": true,
-      "prob": 70,
-      "predName": "A. Sasnovich",
-      "sofa": null,
-      "homeName": "A. Sasnovich",
-      "awayName": "K. Dunne"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782223200000,
-      "match": "E. Mandlik – A. Charaeva",
-      "predHome": false,
-      "prob": 53,
-      "predName": "A. Charaeva",
-      "sofa": null,
-      "homeName": "E. Mandlik",
-      "awayName": "A. Charaeva"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782223200000,
-      "match": "A. Friedsam – C. Ngounoue",
-      "predHome": true,
-      "prob": 55,
-      "predName": "A. Friedsam",
-      "sofa": null,
-      "homeName": "A. Friedsam",
-      "awayName": "C. Ngounoue"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782223200000,
-      "match": "X. You – L. Jeanjean",
-      "predHome": false,
-      "prob": 55,
-      "predName": "L. Jeanjean",
-      "sofa": null,
-      "homeName": "X. You",
-      "awayName": "L. Jeanjean"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782228600000,
-      "match": "L. Samsonova – E. Svitolina",
-      "predHome": false,
-      "prob": 69,
-      "predName": "E. Svitolina",
-      "sofa": null,
-      "homeName": "L. Samsonova",
-      "awayName": "E. Svitolina"
-    },
-    {
-      "date": "23 JUN",
       "ts": 1782230400000,
       "match": "T. Sarah Rajaonah – C. Young Suh Lee",
       "predHome": false,
@@ -7398,17 +7372,6 @@
     {
       "date": "23 JUN",
       "ts": 1782230400000,
-      "match": "C. Monnet – T. Prozorova",
-      "predHome": false,
-      "prob": 51,
-      "predName": "T. Prozorova",
-      "sofa": null,
-      "homeName": "C. Monnet",
-      "awayName": "T. Prozorova"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
       "match": "X. Wang – G. Hanyu",
       "predHome": true,
       "prob": 69,
@@ -7416,39 +7379,6 @@
       "sofa": null,
       "homeName": "X. Wang",
       "awayName": "G. Hanyu"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
-      "match": "H. Watson – M. Sherif",
-      "predHome": false,
-      "prob": 63,
-      "predName": "M. Sherif",
-      "sofa": null,
-      "homeName": "H. Watson",
-      "awayName": "M. Sherif"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
-      "match": "J. Grabher – M. Bolkvadze",
-      "predHome": true,
-      "prob": 69,
-      "predName": "J. Grabher",
-      "sofa": null,
-      "homeName": "J. Grabher",
-      "awayName": "M. Bolkvadze"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
-      "match": "M. Barthel – L. Zhu",
-      "predHome": false,
-      "prob": 55,
-      "predName": "L. Zhu",
-      "sofa": null,
-      "homeName": "M. Barthel",
-      "awayName": "L. Zhu"
     },
     {
       "date": "23 JUN",
@@ -7471,28 +7401,6 @@
       "sofa": null,
       "homeName": "M. Lourdes Carle",
       "awayName": "L. Havlickova"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
-      "match": "M. Timofeeva – W. Osuigwe",
-      "predHome": true,
-      "prob": 57,
-      "predName": "M. Timofeeva",
-      "sofa": null,
-      "homeName": "M. Timofeeva",
-      "awayName": "W. Osuigwe"
-    },
-    {
-      "date": "23 JUN",
-      "ts": 1782230400000,
-      "match": "R. Sramkova – V. Hruncakova",
-      "predHome": true,
-      "prob": 59,
-      "predName": "R. Sramkova",
-      "sofa": null,
-      "homeName": "R. Sramkova",
-      "awayName": "V. Hruncakova"
     }
   ],
   "LADDER": {
