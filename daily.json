@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-24T16:00:32.578Z",
+    "updatedAt": "2026-06-24T18:00:32.905Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2181,6 +2181,15 @@
   ],
   "RECORD": [
     {
+      "id": "eb8072146eee8a2343840e0777a28267",
+      "date": "24 JUN",
+      "match": "E. Ymer – T. Skatov",
+      "pick": "Gana T. Skatov",
+      "odd": 2.36,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "a249ee0e179f54d1cbc8d6619c402657",
       "date": "24 JUN",
       "match": "J. Kym – A. Holmgren",
@@ -2712,16 +2721,6 @@
       "odd": 2.45,
       "book": "leovegas_se",
       "result": "W"
-    },
-    {
-      "id": "612c73cc96cb269cd55b6bbbaf277b8a",
-      "date": "16 JUN",
-      "match": "E. Svitolina – A. Kalinskaya",
-      "pick": "Gana E. Svitolina",
-      "oddOrig": 1.49,
-      "odd": 1,
-      "book": "betfair_ex_eu",
-      "result": "V"
     }
   ],
   "PENDING": [
@@ -2741,21 +2740,6 @@
       "awayName": "H. Mayot"
     },
     {
-      "id": "eb8072146eee8a2343840e0777a28267",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782309600000,
-      "date": "24 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "E. Ymer – T. Skatov",
-      "pickKey": "away",
-      "pickLabel": "Gana T. Skatov",
-      "odd": 2.36,
-      "book": "betfair_ex_eu",
-      "homeName": "E. Ymer",
-      "awayName": "T. Skatov"
-    },
-    {
       "id": "fad40fa9e9a97d544ca8f1cba379f7d0",
       "sport": "tennis_atp_wimbledon",
       "ts": 1782309600000,
@@ -2772,6 +2756,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "24 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 4.86,
+      "result": "W",
+      "legs": [
+        {
+          "match": "D. Sweeny – D. Blanch",
+          "pick": "Gana D. Sweeny",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        },
+        {
+          "match": "H. Gaston – F. Cinà",
+          "pick": "Gana H. Gaston",
+          "odd": 2.07,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "E. Ymer – T. Skatov",
+          "pick": "Gana T. Skatov",
+          "odd": 2.35,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "24 JUN",
       "name": "Combinada del Día",
@@ -2796,7 +2809,7 @@
           "match": "K. Muchova – I. Begu",
           "pick": "Gana K. Muchova",
           "odd": 1.15,
-          "win": false,
+          "win": true,
           "voided": false
         }
       ]
@@ -3733,48 +3746,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "24 JUN·c2",
-      "date": "24 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "5ef08c1cdd8fd3236bd88ec6050d6d91",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "D. Sweeny – D. Blanch",
-          "pick": "Gana D. Sweeny",
-          "odd": 2.36,
-          "homeName": "D. Sweeny",
-          "awayName": "D. Blanch"
-        },
-        {
-          "id": "46f821fcbd85a60f8698cb38a464edc4",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "H. Gaston – F. Cinà",
-          "pick": "Gana H. Gaston",
-          "odd": 2.07,
-          "homeName": "H. Gaston",
-          "awayName": "F. Cinà"
-        },
-        {
-          "id": "eb8072146eee8a2343840e0777a28267",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "E. Ymer – T. Skatov",
-          "pick": "Gana T. Skatov",
-          "odd": 2.35,
-          "homeName": "E. Ymer",
-          "awayName": "T. Skatov"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "24 JUN",
@@ -4659,6 +4631,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "24 JUN",
+      "match": "K. Muchova – I. Begu",
+      "predName": "K. Muchova",
+      "prob": 87,
+      "ok": true
+    },
+    {
+      "date": "24 JUN",
+      "match": "V. Gaubas – H. Searle",
+      "predName": "V. Gaubas",
+      "prob": 64,
+      "ok": true
+    },
+    {
+      "date": "24 JUN",
+      "match": "E. Ymer – T. Skatov",
+      "predName": "T. Skatov",
+      "prob": 50,
+      "ok": true
+    },
+    {
+      "date": "24 JUN",
+      "match": "C. Rodesch – D. Lajovic",
+      "predName": "D. Lajovic",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "24 JUN",
+      "match": "A. Dougaz – R. Sakamoto",
+      "predName": "R. Sakamoto",
+      "prob": 70,
+      "ok": true
+    },
     {
       "date": "24 JUN",
       "match": "P. Llamas Ruiz – P. Martin Tiffon",
@@ -6816,61 +6823,6 @@
       "sofa": null,
       "homeName": "S. Kwon",
       "awayName": "A. Gea"
-    },
-    {
-      "date": "24 JUN",
-      "ts": 1782309600000,
-      "match": "A. Dougaz – R. Sakamoto",
-      "predHome": false,
-      "prob": 70,
-      "predName": "R. Sakamoto",
-      "sofa": null,
-      "homeName": "A. Dougaz",
-      "awayName": "R. Sakamoto"
-    },
-    {
-      "date": "24 JUN",
-      "ts": 1782309600000,
-      "match": "C. Rodesch – D. Lajovic",
-      "predHome": false,
-      "prob": 53,
-      "predName": "D. Lajovic",
-      "sofa": null,
-      "homeName": "C. Rodesch",
-      "awayName": "D. Lajovic"
-    },
-    {
-      "date": "24 JUN",
-      "ts": 1782309600000,
-      "match": "E. Ymer – T. Skatov",
-      "predHome": false,
-      "prob": 50,
-      "predName": "T. Skatov",
-      "sofa": null,
-      "homeName": "E. Ymer",
-      "awayName": "T. Skatov"
-    },
-    {
-      "date": "24 JUN",
-      "ts": 1782309600000,
-      "match": "V. Gaubas – H. Searle",
-      "predHome": true,
-      "prob": 64,
-      "predName": "V. Gaubas",
-      "sofa": null,
-      "homeName": "V. Gaubas",
-      "awayName": "H. Searle"
-    },
-    {
-      "date": "24 JUN",
-      "ts": 1782313200000,
-      "match": "K. Muchova – I. Begu",
-      "predHome": true,
-      "prob": 87,
-      "predName": "K. Muchova",
-      "sofa": null,
-      "homeName": "K. Muchova",
-      "awayName": "I. Begu"
     }
   ],
   "LADDER": {
