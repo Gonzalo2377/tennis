@@ -30,12 +30,12 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # resultados + fotos (api-tennis.com)
           ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}     # cuotas Challenger/ITF (oddspapi.io)
-          ODDSPAPI_MAX: '2'                             # nº de partidos extra al día (free = 250/mes ≈ 8/día)
+          ODDSPAPI_MAX: '2'                            # bajado a 2/día → llegar a fin de mes (quedan ~26)
           RESET: ${{ github.event.inputs.reset }}       # pon 1 al lanzar a mano para vaciar historial
           ODDS_SPORT: auto          # descubre torneos ATP/WTA activos
-          ODDS_MAX: '2'
-          ODDS_REGIONS: eu       # eu (Winamax, DAZNbet, Unibet…) + uk (Bet365, Betfair, William Hill…)
-          ODDS_WINDOW_HOURS: '24'   # 4 días hacia delante
+          ODDS_MAX: '1'             # 1 torneo/día (fin de mes ajustado). El 1-jul subir a 2-3.
+          ODDS_REGIONS: eu          # SOLO eu → mitad de créditos en the-odds-api (uk doblaba el coste)
+          ODDS_WINDOW_HOURS: '96'   # 4 días hacia delante
         run: node robot/fetch-daily.js
       - name: Commit si hay cambios
         run: |
