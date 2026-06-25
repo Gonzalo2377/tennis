@@ -568,7 +568,7 @@ async function main(){
     // scores for pending picks/combos AND for today's active tournaments (so Elo keeps learning)
     const need=[...new Set([...PENDING.map(p=>p.sport), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sport)), ...ARB_PENDING.map(p=>p.sport), ...keys].filter(Boolean))];
     if (need.length){
-      const scores=await fetchScores(need);
+      const scores=[];   // resultados SOLO por api-tennis/ESPN (gratis); NO gastamos /scores de The Odds API
       const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], finished:[], logos:{} };
       let espn = { winners:[], finished:[] };
       try { espn = await espnResults(5); console.log(`· ESPN: ${espn.winners.length} ganadores · ${espn.finished.length} partidos terminados`); }
