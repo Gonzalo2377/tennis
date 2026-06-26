@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-26T12:01:08.982Z",
+    "updatedAt": "2026-06-26T14:01:06.232Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -483,6 +483,15 @@
   ],
   "RECORD": [
     {
+      "id": "a58bbff9f176bece47bf512ae2294e51",
+      "date": "26 JUN",
+      "match": "X. Wang – N. Osaka",
+      "pick": "Gana X. Wang",
+      "odd": 4.1,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "opid1200287772165976",
       "date": "26 JUN",
       "match": "T. Maria – J. Ostapenko",
@@ -946,21 +955,6 @@
     }
   ],
   "PENDING": [
-    {
-      "id": "a58bbff9f176bece47bf512ae2294e51",
-      "sport": "tennis_wta_bad_homburg_open",
-      "ts": 1782471600000,
-      "date": "26 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "X. Wang – N. Osaka",
-      "pickKey": "home",
-      "pickLabel": "Gana X. Wang",
-      "odd": 4.1,
-      "book": "betfair_ex_eu",
-      "homeName": "X. Wang",
-      "awayName": "N. Osaka"
-    },
     {
       "id": "b118bd8f6c541cc2ebada357554fc301",
       "sport": "tennis_wta_bad_homburg_open",
@@ -2934,6 +2928,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "26 JUN",
+      "match": "X. Wang – N. Osaka",
+      "predName": "N. Osaka",
+      "prob": 60,
+      "ok": true
+    },
     {
       "date": "25 JUN",
       "match": "K. Muchova – C. Tauson",
@@ -5262,17 +5263,6 @@
       "sofa": null,
       "homeName": "T. Maria",
       "awayName": "J. Ostapenko"
-    },
-    {
-      "date": "26 JUN",
-      "ts": 1782471600000,
-      "match": "X. Wang – N. Osaka",
-      "predHome": false,
-      "prob": 60,
-      "predName": "N. Osaka",
-      "sofa": null,
-      "homeName": "X. Wang",
-      "awayName": "N. Osaka"
     },
     {
       "date": "26 JUN",
