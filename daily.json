@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-26T16:01:04.439Z",
+    "updatedAt": "2026-06-26T18:01:05.806Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -483,6 +483,15 @@
   ],
   "RECORD": [
     {
+      "id": "b118bd8f6c541cc2ebada357554fc301",
+      "date": "26 JUN",
+      "match": "E. Gabriela Ruse – K. Muchova",
+      "pick": "Gana K. Muchova",
+      "odd": 1.5,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "a58bbff9f176bece47bf512ae2294e51",
       "date": "26 JUN",
       "match": "X. Wang – N. Osaka",
@@ -954,24 +963,30 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "b118bd8f6c541cc2ebada357554fc301",
-      "sport": "tennis_wta_bad_homburg_open",
-      "ts": 1782478800000,
-      "date": "26 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "E. Gabriela Ruse – K. Muchova",
-      "pickKey": "away",
-      "pickLabel": "Gana K. Muchova",
-      "odd": 1.5,
-      "book": "betfair_ex_eu",
-      "homeName": "E. Gabriela Ruse",
-      "awayName": "K. Muchova"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "26 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 1.49,
+      "result": "W",
+      "legs": [
+        {
+          "match": "E. Gabriela Ruse – K. Muchova",
+          "pick": "Gana K. Muchova",
+          "odd": 1.49,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "T. Maria – J. Ostapenko",
+          "pick": "Gana J. Ostapenko",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        }
+      ]
+    },
     {
       "date": "25 JUN",
       "name": "Combinada del Día",
@@ -2013,37 +2028,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "26 JUN·c1",
-      "date": "26 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "b118bd8f6c541cc2ebada357554fc301",
-          "sport": "tennis_wta_bad_homburg_open",
-          "side": "away",
-          "sofa": null,
-          "match": "E. Gabriela Ruse – K. Muchova",
-          "pick": "Gana K. Muchova",
-          "odd": 1.49,
-          "homeName": "E. Gabriela Ruse",
-          "awayName": "K. Muchova"
-        },
-        {
-          "id": "opid1200287772165976",
-          "sport": "tennis_oddspapi_wta",
-          "side": "away",
-          "sofa": null,
-          "match": "T. Maria – J. Ostapenko",
-          "pick": "Gana J. Ostapenko",
-          "odd": 1.54,
-          "homeName": "T. Maria",
-          "awayName": "J. Ostapenko"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "26 JUN",
@@ -2928,6 +2913,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "26 JUN",
+      "match": "E. Gabriela Ruse – K. Muchova",
+      "predName": "K. Muchova",
+      "prob": 71,
+      "ok": true
+    },
     {
       "date": "26 JUN",
       "match": "X. Wang – N. Osaka",
@@ -5274,17 +5266,6 @@
       "sofa": null,
       "homeName": "P. Marcinko",
       "awayName": "M. Keys"
-    },
-    {
-      "date": "26 JUN",
-      "ts": 1782478800000,
-      "match": "E. Gabriela Ruse – K. Muchova",
-      "predHome": false,
-      "prob": 71,
-      "predName": "K. Muchova",
-      "sofa": null,
-      "homeName": "E. Gabriela Ruse",
-      "awayName": "K. Muchova"
     }
   ],
   "LADDER": {
@@ -5292,9 +5273,9 @@
     "start": 10,
     "target": 250,
     "steps": 10,
-    "current": 8,
+    "current": 9,
     "status": "live",
-    "bank": 57.35,
+    "bank": 86.03,
     "rungs": [
       {
         "n": 1,
@@ -5391,7 +5372,7 @@
         "odd": 1.5,
         "book": "betfair_ex_eu",
         "bank": 86.03,
-        "result": "today",
+        "result": "W",
         "date": "26 JUN",
         "sofa": null
       },
