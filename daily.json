@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-27T14:01:03.122Z",
+    "updatedAt": "2026-06-27T16:01:06.835Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -372,6 +372,15 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "opid1203147572165672",
+      "date": "27 JUN",
+      "match": "E. Quinn – A. Davidovich Fokina",
+      "pick": "Gana A. Davidovich Fokina",
+      "odd": 1.66,
+      "book": "betfair-ex",
+      "result": "W"
+    },
     {
       "id": "75a2b8c0d5758ebda180e9d65af8d4f8",
       "date": "27 JUN",
@@ -863,24 +872,30 @@
       "result": "L"
     }
   ],
-  "PENDING": [
-    {
-      "id": "opid1203147572165672",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1782565200000,
-      "date": "27 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "E. Quinn – A. Davidovich Fokina",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Davidovich Fokina",
-      "odd": 1.66,
-      "book": "betfair-ex",
-      "homeName": "E. Quinn",
-      "awayName": "A. Davidovich Fokina"
-    }
-  ],
+  "PENDING": [],
   "COMBO_RECORD": [
+    {
+      "date": "27 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 1.65,
+      "result": "W",
+      "legs": [
+        {
+          "match": "E. Quinn – A. Davidovich Fokina",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.65,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Muchova – N. Osaka",
+          "pick": "Gana K. Muchova",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        }
+      ]
+    },
     {
       "date": "26 JUN",
       "name": "Combinada del Día",
@@ -1944,37 +1959,7 @@
       ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "27 JUN·c1",
-      "date": "27 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1203147572165672",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": null,
-          "match": "E. Quinn – A. Davidovich Fokina",
-          "pick": "Gana A. Davidovich Fokina",
-          "odd": 1.65,
-          "homeName": "E. Quinn",
-          "awayName": "A. Davidovich Fokina"
-        },
-        {
-          "id": "75a2b8c0d5758ebda180e9d65af8d4f8",
-          "sport": "tennis_wta_bad_homburg_open",
-          "side": "home",
-          "sofa": null,
-          "match": "K. Muchova – N. Osaka",
-          "pick": "Gana K. Muchova",
-          "odd": 2.33,
-          "homeName": "K. Muchova",
-          "awayName": "N. Osaka"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "26 JUN",
@@ -2859,6 +2844,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "27 JUN",
+      "match": "E. Quinn – A. Davidovich Fokina",
+      "predName": "A. Davidovich Fokina",
+      "prob": 65,
+      "ok": true
+    },
     {
       "date": "27 JUN",
       "match": "T. Maria – M. Keys",
@@ -5230,17 +5222,6 @@
       "sofa": null,
       "homeName": "K. Muchova",
       "awayName": "N. Osaka"
-    },
-    {
-      "date": "27 JUN",
-      "ts": 1782565200000,
-      "match": "E. Quinn – A. Davidovich Fokina",
-      "predHome": false,
-      "prob": 65,
-      "predName": "A. Davidovich Fokina",
-      "sofa": null,
-      "homeName": "E. Quinn",
-      "awayName": "A. Davidovich Fokina"
     }
   ],
   "LADDER": {
