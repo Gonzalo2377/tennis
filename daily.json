@@ -1,20 +1,20 @@
 {
   "meta": {
-    "updatedAt": "2026-06-28T22:01:02.892Z",
+    "updatedAt": "2026-06-29T07:01:04.888Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
     "matches": 65,
     "valuePicks": 24,
-    "books": 14,
+    "books": 15,
     "stale": false,
     "model": {
       "players": 3444
     },
     "credits": {
-      "remaining": 2,
-      "used": 498
+      "remaining": 1,
+      "used": 499
     }
   },
   "PLAYERS": {
@@ -451,11 +451,11 @@
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
         "L",
         "L",
-        "L"
+        "W",
+        "L",
+        "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg"
     },
@@ -570,7 +570,9 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
+      "form": [
+        "L"
+      ],
       "photo": "https://api.api-tennis.com/logo-tennis/10869_d-prizmic.jpg"
     },
     "janniksinner": {
@@ -691,7 +693,9 @@
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [],
+      "form": [
+        "L"
+      ],
       "photo": "https://api.sofascore.app/api/v1/team/4475/image"
     },
     "joaofonseca": {
@@ -771,8 +775,8 @@
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -799,11 +803,11 @@
       "tour": "atp",
       "elo": null,
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/9225_e-quinn.jpg"
     },
@@ -817,6 +821,7 @@
       "elo": null,
       "form": [
         "W",
+        "L",
         "L",
         "L"
       ],
@@ -1095,6 +1100,88 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2982_a-tabilo.jpg"
     },
+    "yannickhanfmann": {
+      "id": "yannickhanfmann",
+      "name": "Y. Hanfmann",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
+    },
+    "giovannimpetship": {
+      "id": "giovannimpetship",
+      "name": "G. Mpetshi Perricard",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9222_g-mpetshiperricard.jpg"
+    },
+    "valentinroyer": {
+      "id": "valentinroyer",
+      "name": "V. Royer",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/954_v-royer.jpg"
+    },
+    "harrywendelken": {
+      "id": "harrywendelken",
+      "name": "H. Wendelken",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/7009_h-wendelken.jpg"
+    },
+    "shoshimabukuro": {
+      "id": "shoshimabukuro",
+      "name": "S. Shimabukuro",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/9608_s-shimabukuro.jpg"
+    },
+    "jaimefaria": {
+      "id": "jaimefaria",
+      "name": "J. Faria",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/824_j-faria.jpg"
+    },
     "alexmichelsen": {
       "id": "alexmichelsen",
       "name": "A. Michelsen",
@@ -1166,33 +1253,6 @@
       "form": [],
       "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg"
     },
-    "jirilehecka": {
-      "id": "jirilehecka",
-      "name": "J. Lehecka",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
-    },
-    "alexeipopyrin": {
-      "id": "alexeipopyrin",
-      "name": "A. Popyrin",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/128552/image"
-    },
     "damirdzumhur": {
       "id": "damirdzumhur",
       "name": "D. Dzumhur",
@@ -1255,34 +1315,6 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2973_b-shelton.jpg"
     },
-    "benjaminbonzi": {
-      "id": "benjaminbonzi",
-      "name": "B. Bonzi",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
-    },
-    "gabrieldiallo": {
-      "id": "gabrieldiallo",
-      "name": "G. Diallo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9909_g-diallo.jpg"
-    },
     "karenkhachanov": {
       "id": "karenkhachanov",
       "name": "K. Khachanov",
@@ -1311,6 +1343,153 @@
         "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1186_b-harris.jpg"
+    },
+    "kyrianjacquet": {
+      "id": "kyrianjacquet",
+      "name": "K. Jacquet",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1335_k-jacquet.jpg"
+    },
+    "viliusgaubas": {
+      "id": "viliusgaubas",
+      "name": "V. Gaubas",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9385_v-gaubas.jpg"
+    },
+    "matteoarnaldi": {
+      "id": "matteoarnaldi",
+      "name": "M. Arnaldi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
+    },
+    "quentinhalys": {
+      "id": "quentinhalys",
+      "name": "Q. Halys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
+    },
+    "mattiabellucci": {
+      "id": "mattiabellucci",
+      "name": "M. Bellucci",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
+    },
+    "zacharysvajda": {
+      "id": "zacharysvajda",
+      "name": "Z. Svajda",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
+    },
+    "benjaminbonzi": {
+      "id": "benjaminbonzi",
+      "name": "B. Bonzi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
+    },
+    "gabrieldiallo": {
+      "id": "gabrieldiallo",
+      "name": "G. Diallo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9909_g-diallo.jpg"
+    },
+    "jaumemunar": {
+      "id": "jaumemunar",
+      "name": "J. Munar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2083_j-munar.jpg"
+    },
+    "franciscocerundo": {
+      "id": "franciscocerundo",
+      "name": "F. Cerundolo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
     },
     "corentinmoutet": {
       "id": "corentinmoutet",
@@ -1371,89 +1550,76 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2384_g-dimitrov.jpg"
     },
-    "marianonavone": {
-      "id": "marianonavone",
-      "name": "M. Navone",
+    "jakubmensik": {
+      "id": "jakubmensik",
+      "name": "J. Mensik",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/902_j-mensik.jpg"
+    },
+    "tobysamuel": {
+      "id": "tobysamuel",
+      "name": "T. Samuel",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/949_m-navone.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/15184_t-samuel.jpg"
     },
-    "flaviocobolli": {
-      "id": "flaviocobolli",
-      "name": "F. Cobolli",
+    "lorenzosonego": {
+      "id": "lorenzosonego",
+      "name": "L. Sonego",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
+    },
+    "tomasmartinetche": {
+      "id": "tomasmartinetche",
+      "name": "T. Martin Etcheverry",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1777_m-etcheverry.jpg"
     },
-    "francestiafoe": {
-      "id": "francestiafoe",
-      "name": "F. Tiafoe",
+    "patrickkypson": {
+      "id": "patrickkypson",
+      "name": "P. Kypson",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2846_f-tiafoe.jpg"
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/8130_p-kypson.jpg"
     },
-    "terenceatmane": {
-      "id": "terenceatmane",
-      "name": "T. Atmane",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
-    },
-    "jaumemunar": {
-      "id": "jaumemunar",
-      "name": "J. Munar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2083_j-munar.jpg"
-    },
-    "franciscocerundo": {
-      "id": "franciscocerundo",
-      "name": "F. Cerundolo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
-    },
-    "yannickhanfmann": {
-      "id": "yannickhanfmann",
-      "name": "Y. Hanfmann",
+    "mackenziemcdonal": {
+      "id": "mackenziemcdonal",
+      "name": "M. McDonald",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1462,48 +1628,11 @@
       "form": [
         "L",
         "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
-    },
-    "giovannimpetship": {
-      "id": "giovannimpetship",
-      "name": "G. Mpetshi Perricard",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
+        "W",
+        "L",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9222_g-mpetshiperricard.jpg"
-    },
-    "valentinroyer": {
-      "id": "valentinroyer",
-      "name": "V. Royer",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/954_v-royer.jpg"
-    },
-    "harrywendelken": {
-      "id": "harrywendelken",
-      "name": "H. Wendelken",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/7009_h-wendelken.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2839_m-mcdonald.jpg"
     },
     "taylorfritz": {
       "id": "taylorfritz",
@@ -1537,63 +1666,59 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/7011_j-draper.jpg"
     },
-    "shoshimabukuro": {
-      "id": "shoshimabukuro",
-      "name": "S. Shimabukuro",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/9608_s-shimabukuro.jpg"
-    },
-    "jaimefaria": {
-      "id": "jaimefaria",
-      "name": "J. Faria",
+    "marianonavone": {
+      "id": "marianonavone",
+      "name": "M. Navone",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/824_j-faria.jpg"
-    },
-    "jakubmensik": {
-      "id": "jakubmensik",
-      "name": "J. Mensik",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/902_j-mensik.jpg"
-    },
-    "tobysamuel": {
-      "id": "tobysamuel",
-      "name": "T. Samuel",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/15184_t-samuel.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/949_m-navone.jpg"
+    },
+    "flaviocobolli": {
+      "id": "flaviocobolli",
+      "name": "F. Cobolli",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
+    },
+    "francestiafoe": {
+      "id": "francestiafoe",
+      "name": "F. Tiafoe",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2846_f-tiafoe.jpg"
+    },
+    "terenceatmane": {
+      "id": "terenceatmane",
+      "name": "T. Atmane",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
     },
     "tallongriekspoor": {
       "id": "tallongriekspoor",
@@ -1651,149 +1776,32 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/5979_j-choinski.jpg"
     },
-    "kyrianjacquet": {
-      "id": "kyrianjacquet",
-      "name": "K. Jacquet",
+    "jirilehecka": {
+      "id": "jirilehecka",
+      "name": "J. Lehecka",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1335_k-jacquet.jpg"
-    },
-    "viliusgaubas": {
-      "id": "viliusgaubas",
-      "name": "V. Gaubas",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9385_v-gaubas.jpg"
-    },
-    "lorenzosonego": {
-      "id": "lorenzosonego",
-      "name": "L. Sonego",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
-    },
-    "tomasmartinetche": {
-      "id": "tomasmartinetche",
-      "name": "T. Martin Etcheverry",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1777_m-etcheverry.jpg"
-    },
-    "patrickkypson": {
-      "id": "patrickkypson",
-      "name": "P. Kypson",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/8130_p-kypson.jpg"
-    },
-    "mackenziemcdonal": {
-      "id": "mackenziemcdonal",
-      "name": "M. McDonald",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
         "L",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2839_m-mcdonald.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
     },
-    "matteoarnaldi": {
-      "id": "matteoarnaldi",
-      "name": "M. Arnaldi",
+    "alexeipopyrin": {
+      "id": "alexeipopyrin",
+      "name": "A. Popyrin",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
-    },
-    "quentinhalys": {
-      "id": "quentinhalys",
-      "name": "Q. Halys",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
-    },
-    "mattiabellucci": {
-      "id": "mattiabellucci",
-      "name": "M. Bellucci",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
-    },
-    "zacharysvajda": {
-      "id": "zacharysvajda",
-      "name": "Z. Svajda",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/128552/image"
     },
     "belindabencic": {
       "id": "belindabencic",
@@ -1897,11 +1905,17 @@
       "abbr": "BET",
       "color": "#d11a2a"
     },
+    "bet365": {
+      "id": "bet365",
+      "name": "bet365",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
     "unibetco": {
       "id": "unibetco",
       "name": "unibet.co.uk",
       "abbr": "UNI",
-      "color": "#d11a2a"
+      "color": "#1c1c1c"
     }
   },
   "MATCHES": [
@@ -1918,33 +1932,33 @@
       "odds": {
         "home": {
           "unibet": 2.55,
-          "mybookieag": 2.38,
+          "mybookieag": 2.51,
           "betfair": 2.66,
-          "1xbet": 2.52,
+          "1xbet": 2.6,
           "williamhill": 2.5,
-          "betclic": 2.42,
+          "betclic": 2.6,
           "leovegas": 2.55,
-          "888sport": 2.5,
-          "pinnacle": 2.58,
+          "888sport": 2.6,
+          "pinnacle": 2.66,
           "matchbook": 2.66,
-          "winamax": 2.45,
-          "codere": 2.38,
-          "betsson": 2.37
+          "winamax": 2.55,
+          "codere": 2.55,
+          "betsson": 2.46
         },
         "away": {
-          "unibet": 1.56,
-          "mybookieag": 1.56,
-          "betfair": 1.57,
-          "1xbet": 1.6,
+          "unibet": 1.52,
+          "mybookieag": 1.53,
+          "betfair": 1.59,
+          "1xbet": 1.57,
           "williamhill": 1.53,
-          "betclic": 1.55,
-          "leovegas": 1.51,
-          "888sport": 1.53,
-          "pinnacle": 1.56,
-          "matchbook": 1.57,
-          "winamax": 1.6,
-          "codere": 1.56,
-          "betsson": 1.56
+          "betclic": 1.53,
+          "leovegas": 1.5,
+          "888sport": 1.5,
+          "pinnacle": 1.53,
+          "matchbook": 1.59,
+          "winamax": 1.54,
+          "codere": 1.55,
+          "betsson": 1.52
         }
       },
       "model": {
@@ -1972,32 +1986,32 @@
         "home": {
           "1xbet": 2.95,
           "unibet": 2.8,
-          "mybookieag": 2.79,
+          "mybookieag": 2.78,
           "williamhill": 2.75,
-          "betclic": 2.8,
+          "betclic": 2.85,
           "leovegas": 2.8,
           "888sport": 2.75,
           "pinnacle": 2.83,
-          "betfair": 2.84,
-          "matchbook": 2.84,
-          "winamax": 2.9,
-          "codere": 2.8,
-          "betsson": 2.81
+          "betfair": 2.96,
+          "matchbook": 2.96,
+          "winamax": 2.85,
+          "codere": 2.85,
+          "betsson": 2.75
         },
         "away": {
           "1xbet": 1.47,
           "unibet": 1.43,
-          "mybookieag": 1.42,
+          "mybookieag": 1.45,
           "williamhill": 1.44,
-          "betclic": 1.43,
+          "betclic": 1.46,
           "leovegas": 1.43,
           "888sport": 1.44,
           "pinnacle": 1.48,
-          "betfair": 1.49,
-          "matchbook": 1.49,
-          "winamax": 1.45,
-          "codere": 1.43,
-          "betsson": 1.41
+          "betfair": 1.5,
+          "matchbook": 1.5,
+          "winamax": 1.46,
+          "codere": 1.46,
+          "betsson": 1.43
         }
       },
       "model": {
@@ -2023,34 +2037,34 @@
       "away": "romansafiullin",
       "odds": {
         "home": {
-          "mybookieag": 1.49,
-          "unibet": 1.52,
-          "betfair": 1.55,
-          "1xbet": 1.55,
-          "williamhill": 1.5,
-          "betclic": 1.49,
-          "leovegas": 1.5,
-          "888sport": 1.5,
-          "pinnacle": 1.53,
-          "matchbook": 1.55,
-          "winamax": 1.52,
-          "codere": 1.49,
-          "betsson": 1.48
+          "mybookieag": 1.41,
+          "unibet": 1.43,
+          "betfair": 1.48,
+          "1xbet": 1.48,
+          "williamhill": 1.44,
+          "betclic": 1.42,
+          "leovegas": 1.43,
+          "888sport": 1.44,
+          "pinnacle": 1.47,
+          "matchbook": 1.48,
+          "winamax": 1.44,
+          "codere": 1.42,
+          "betsson": 1.4
         },
         "away": {
-          "mybookieag": 2.57,
-          "unibet": 2.6,
-          "betfair": 2.76,
-          "1xbet": 2.67,
-          "williamhill": 2.6,
-          "betclic": 2.55,
-          "leovegas": 2.6,
-          "888sport": 2.6,
-          "pinnacle": 2.68,
-          "matchbook": 2.76,
-          "winamax": 2.65,
-          "codere": 2.55,
-          "betsson": 2.56
+          "mybookieag": 2.91,
+          "unibet": 3,
+          "betfair": 3,
+          "1xbet": 2.91,
+          "williamhill": 2.75,
+          "betclic": 2.95,
+          "leovegas": 2.8,
+          "888sport": 2.75,
+          "pinnacle": 2.89,
+          "matchbook": 3,
+          "winamax": 2.95,
+          "codere": 2.95,
+          "betsson": 2.87
         }
       },
       "model": {
@@ -2076,34 +2090,34 @@
       "away": "learnertien",
       "odds": {
         "home": {
-          "unibet": 6.4,
-          "mybookieag": 6.4,
-          "1xbet": 7.5,
+          "unibet": 7,
+          "mybookieag": 7,
+          "1xbet": 8.35,
           "williamhill": 6,
-          "betclic": 6.4,
-          "leovegas": 6,
-          "888sport": 6,
-          "betfair": 7.6,
-          "pinnacle": 6.89,
-          "matchbook": 7.6,
-          "winamax": 7,
-          "codere": 6.4,
-          "betsson": 6.46
+          "betclic": 7.4,
+          "leovegas": 7,
+          "888sport": 6.5,
+          "betfair": 8.2,
+          "pinnacle": 7.03,
+          "matchbook": 8.2,
+          "winamax": 7.5,
+          "codere": 7.4,
+          "betsson": 6.83
         },
         "away": {
-          "unibet": 1.13,
-          "mybookieag": 1.11,
-          "1xbet": 1.13,
+          "unibet": 1.1,
+          "mybookieag": 1.1,
+          "1xbet": 1.11,
           "williamhill": 1.12,
           "betclic": 1.11,
-          "leovegas": 1.13,
-          "888sport": 1.12,
+          "leovegas": 1.1,
+          "888sport": 1.11,
           "betfair": 1.13,
           "pinnacle": 1.12,
           "matchbook": 1.13,
-          "winamax": 1.12,
+          "winamax": 1.11,
           "codere": 1.11,
-          "betsson": 1.1
+          "betsson": 1.09
         }
       },
       "model": {
@@ -2129,37 +2143,44 @@
       "away": "pablocarrenobust",
       "odds": {
         "home": {
-          "unibet": 1.32,
-          "betfair": 1.33,
-          "mybookieag": 1.29,
-          "1xbet": 1.33,
-          "betclic": 1.3,
-          "leovegas": 1.32,
-          "888sport": 1.3,
-          "pinnacle": 1.32,
-          "matchbook": 1.33,
-          "winamax": 1.31,
-          "codere": 1.29,
-          "betsson": 1.29,
-          "williamhill": 1.3
+          "unibet": 1.36,
+          "betfair": 1.41,
+          "mybookieag": 1.34,
+          "1xbet": 1.39,
+          "betclic": 1.35,
+          "leovegas": 1.36,
+          "888sport": 1.36,
+          "pinnacle": 1.4,
+          "matchbook": 1.41,
+          "winamax": 1.35,
+          "codere": 1.35,
+          "betsson": 1.32,
+          "williamhill": 1.36
         },
         "away": {
-          "unibet": 3.5,
-          "betfair": 3.75,
-          "mybookieag": 3.48,
-          "1xbet": 3.72,
-          "betclic": 3.38,
-          "leovegas": 3.4,
-          "888sport": 3.5,
-          "pinnacle": 3.66,
-          "matchbook": 3.75,
-          "winamax": 3.65,
-          "codere": 3.5,
-          "betsson": 3.49,
-          "williamhill": 3.5
+          "unibet": 3.2,
+          "betfair": 3.4,
+          "mybookieag": 3.28,
+          "1xbet": 3.35,
+          "betclic": 3.35,
+          "leovegas": 3.1,
+          "888sport": 3.1,
+          "pinnacle": 3.2,
+          "matchbook": 3.4,
+          "winamax": 3.35,
+          "codere": 3.35,
+          "betsson": 3.24,
+          "williamhill": 3.1
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.7291099628977525,
+        "away": 0.27089003710224746,
+        "fromModel": true,
+        "eloH": 1834,
+        "eloA": 1662,
+        "surface": "grass"
+      },
       "ts": 1782727200000,
       "sofa": null
     },
@@ -2175,32 +2196,32 @@
       "away": "ignaciobuse",
       "odds": {
         "home": {
-          "unibet": 2.32,
-          "mybookieag": 2.25,
-          "betfair": 2.42,
-          "betclic": 2.25,
-          "leovegas": 2.32,
+          "unibet": 2.3,
+          "mybookieag": 2.27,
+          "betfair": 2.36,
+          "betclic": 2.3,
+          "leovegas": 2.23,
           "888sport": 2.2,
-          "1xbet": 2.35,
-          "pinnacle": 2.33,
-          "matchbook": 2.42,
+          "1xbet": 2.32,
+          "pinnacle": 2.24,
+          "matchbook": 2.36,
           "winamax": 2.3,
-          "codere": 2.25,
+          "codere": 2.3,
           "betsson": 2.24,
           "williamhill": 2.2
         },
         "away": {
-          "unibet": 1.61,
-          "mybookieag": 1.62,
-          "betfair": 1.68,
-          "betclic": 1.63,
-          "leovegas": 1.61,
+          "unibet": 1.66,
+          "mybookieag": 1.64,
+          "betfair": 1.73,
+          "betclic": 1.65,
+          "leovegas": 1.66,
           "888sport": 1.67,
-          "1xbet": 1.68,
-          "pinnacle": 1.67,
-          "matchbook": 1.68,
+          "1xbet": 1.69,
+          "pinnacle": 1.72,
+          "matchbook": 1.73,
           "winamax": 1.66,
-          "codere": 1.63,
+          "codere": 1.65,
           "betsson": 1.62,
           "williamhill": 1.67
         }
@@ -2228,34 +2249,34 @@
       "away": "felixgill",
       "odds": {
         "home": {
-          "888sport": 1.22,
-          "betfair": 1.22,
-          "unibet": 1.2,
-          "leovegas": 1.2,
-          "1xbet": 1.22,
-          "mybookieag": 1.19,
-          "betclic": 1.19,
-          "matchbook": 1.22,
-          "pinnacle": 1.22,
-          "winamax": 1.19,
-          "codere": 1.19,
-          "betsson": 1.18,
-          "williamhill": 1.22
+          "888sport": 1.17,
+          "betfair": 1.17,
+          "unibet": 1.19,
+          "leovegas": 1.19,
+          "1xbet": 1.18,
+          "mybookieag": 1.17,
+          "betclic": 1.17,
+          "matchbook": 1.17,
+          "pinnacle": 1.17,
+          "winamax": 1.18,
+          "codere": 1.17,
+          "betsson": 1.15,
+          "williamhill": 1.17
         },
         "away": {
-          "888sport": 4.2,
-          "betfair": 5.1,
-          "unibet": 4.6,
+          "888sport": 5,
+          "betfair": 6.4,
+          "unibet": 5,
           "leovegas": 4.6,
-          "1xbet": 5.03,
-          "mybookieag": 4.6,
-          "betclic": 4.6,
-          "matchbook": 5.1,
-          "pinnacle": 4.83,
-          "winamax": 5.1,
-          "codere": 4.6,
-          "betsson": 4.62,
-          "williamhill": 4.2
+          "1xbet": 5.72,
+          "mybookieag": 5.1,
+          "betclic": 5.2,
+          "matchbook": 6.4,
+          "pinnacle": 5.77,
+          "winamax": 5.4,
+          "codere": 5.2,
+          "betsson": 5.06,
+          "williamhill": 5
         }
       },
       "model": {
@@ -2283,35 +2304,42 @@
         "home": {
           "unibet": 2.95,
           "1xbet": 2.95,
-          "mybookieag": 2.84,
-          "betclic": 2.85,
+          "mybookieag": 2.9,
+          "betclic": 2.78,
           "leovegas": 2.95,
-          "888sport": 2.9,
-          "pinnacle": 3.03,
-          "betfair": 3.1,
-          "matchbook": 3.1,
-          "winamax": 2.9,
-          "codere": 2.85,
+          "888sport": 2.75,
+          "pinnacle": 2.8,
+          "betfair": 2.92,
+          "matchbook": 2.84,
+          "winamax": 2.95,
+          "codere": 2.95,
           "betsson": 2.76,
-          "williamhill": 2.9
+          "williamhill": 2.75
         },
         "away": {
           "unibet": 1.4,
           "1xbet": 1.47,
-          "mybookieag": 1.41,
-          "betclic": 1.41,
+          "mybookieag": 1.42,
+          "betclic": 1.46,
           "leovegas": 1.4,
-          "888sport": 1.4,
-          "pinnacle": 1.43,
-          "betfair": 1.45,
-          "matchbook": 1.45,
-          "winamax": 1.45,
-          "codere": 1.41,
+          "888sport": 1.44,
+          "pinnacle": 1.49,
+          "betfair": 1.51,
+          "matchbook": 1.51,
+          "winamax": 1.43,
+          "codere": 1.43,
           "betsson": 1.43,
-          "williamhill": 1.4
+          "williamhill": 1.44
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.3546475495606176,
+        "away": 0.6453524504393824,
+        "fromModel": true,
+        "eloH": 1679,
+        "eloA": 1783,
+        "surface": "grass"
+      },
       "ts": 1782727200000,
       "sofa": null
     },
@@ -2327,34 +2355,34 @@
       "away": "martindammjr",
       "odds": {
         "home": {
-          "unibet": 4.05,
-          "1xbet": 4.24,
-          "leovegas": 3.9,
-          "mybookieag": 4,
-          "betclic": 4,
-          "888sport": 4,
-          "betfair": 4.2,
-          "pinnacle": 4.02,
-          "matchbook": 4.2,
-          "winamax": 4.1,
-          "codere": 4,
+          "unibet": 4.6,
+          "1xbet": 4.64,
+          "leovegas": 4.6,
+          "mybookieag": 4.1,
+          "betclic": 4.4,
+          "888sport": 4.2,
+          "betfair": 4.7,
+          "pinnacle": 4.37,
+          "matchbook": 4.7,
+          "winamax": 4.2,
+          "codere": 4.2,
           "betsson": 4.02,
-          "williamhill": 4
+          "williamhill": 4.2
         },
         "away": {
-          "unibet": 1.26,
-          "1xbet": 1.27,
-          "leovegas": 1.26,
-          "mybookieag": 1.23,
+          "unibet": 1.23,
+          "1xbet": 1.24,
+          "leovegas": 1.2,
+          "mybookieag": 1.24,
           "betclic": 1.23,
-          "888sport": 1.25,
-          "betfair": 1.29,
-          "pinnacle": 1.28,
-          "matchbook": 1.29,
-          "winamax": 1.26,
-          "codere": 1.23,
+          "888sport": 1.22,
+          "betfair": 1.26,
+          "pinnacle": 1.25,
+          "matchbook": 1.26,
+          "winamax": 1.25,
+          "codere": 1.25,
           "betsson": 1.23,
-          "williamhill": 1.25
+          "williamhill": 1.22
         }
       },
       "model": {
@@ -2380,33 +2408,33 @@
       "away": "maxbasing",
       "odds": {
         "home": {
-          "betfair": 1.44,
+          "betfair": 1.47,
           "leovegas": 1.4,
-          "mybookieag": 1.42,
+          "mybookieag": 1.41,
           "888sport": 1.44,
-          "unibet": 1.42,
+          "unibet": 1.4,
           "betclic": 1.42,
-          "1xbet": 1.51,
-          "matchbook": 1.44,
-          "pinnacle": 1.44,
-          "winamax": 1.44,
+          "1xbet": 1.41,
+          "matchbook": 1.45,
+          "pinnacle": 1.46,
+          "winamax": 1.42,
           "codere": 1.42,
-          "betsson": 1.41,
+          "betsson": 1.39,
           "williamhill": 1.44
         },
         "away": {
-          "betfair": 3.2,
+          "betfair": 3.1,
           "leovegas": 2.95,
-          "mybookieag": 2.82,
+          "mybookieag": 2.95,
           "888sport": 2.75,
           "unibet": 2.95,
-          "betclic": 2.8,
-          "1xbet": 2.79,
+          "betclic": 3,
+          "1xbet": 3.19,
           "matchbook": 3.15,
-          "pinnacle": 3,
-          "winamax": 2.9,
-          "codere": 2.8,
-          "betsson": 2.81,
+          "pinnacle": 2.9,
+          "winamax": 3,
+          "codere": 3,
+          "betsson": 2.9,
           "williamhill": 2.75
         }
       },
@@ -2433,20 +2461,22 @@
       "away": "mikastojsavljevi",
       "odds": {
         "home": {
+          "bet365": 1.08,
           "unibet": 1.11,
-          "betsson": 1.11,
+          "betsson": 1.08,
           "leovegas": 1.11,
-          "pinnacle": 1.102,
-          "codere": 1.11,
+          "pinnacle": 1.103,
+          "codere": 1.1,
           "betfair": 1.12,
           "unibetco": 1.09
         },
         "away": {
+          "bet365": 8,
           "unibet": 6.75,
-          "betsson": 6.22,
+          "betsson": 7.23,
           "leovegas": 6.75,
-          "pinnacle": 7.29,
-          "codere": 5.5,
+          "pinnacle": 7.24,
+          "codere": 6.75,
           "betfair": 8.6,
           "unibetco": 7.5
         }
@@ -2476,30 +2506,30 @@
         "home": {
           "888sport": 15,
           "betfair": 21,
-          "unibet": 18,
-          "leovegas": 18,
+          "unibet": 19,
+          "leovegas": 19,
           "williamhill": 15,
-          "1xbet": 23,
+          "1xbet": 32,
           "betclic": 15,
           "matchbook": 21,
-          "winamax": 22,
+          "winamax": 16,
           "codere": 15,
-          "betsson": 17,
-          "pinnacle": 15.41
+          "betsson": 14,
+          "pinnacle": 15.56
         },
         "away": {
           "888sport": 1.02,
           "betfair": 1.04,
-          "unibet": 1.01,
+          "unibet": 1.02,
           "leovegas": 1.01,
           "williamhill": 1.02,
-          "1xbet": 1.02,
-          "betclic": 1.01,
+          "1xbet": 1.01,
+          "betclic": 1.03,
           "matchbook": 1.04,
-          "winamax": 1.01,
-          "codere": 1.01,
-          "betsson": 1.01,
-          "pinnacle": 1.03
+          "winamax": 1.03,
+          "codere": 1.03,
+          "betsson": 1.02,
+          "pinnacle": 1.04
         }
       },
       "model": {
@@ -2525,34 +2555,34 @@
       "away": "cameronnorrie",
       "odds": {
         "home": {
-          "unibet": 2.3,
-          "1xbet": 2.45,
-          "betfair": 2.38,
-          "mybookieag": 2.32,
-          "betclic": 2.28,
-          "leovegas": 2.25,
-          "888sport": 2.3,
-          "pinnacle": 2.34,
-          "matchbook": 2.38,
-          "winamax": 2.4,
-          "codere": 2.32,
-          "betsson": 2.32,
-          "williamhill": 2.3
+          "unibet": 2.4,
+          "1xbet": 2.5,
+          "betfair": 2.58,
+          "mybookieag": 2.43,
+          "betclic": 2.53,
+          "leovegas": 2.32,
+          "888sport": 2.5,
+          "pinnacle": 2.52,
+          "matchbook": 2.6,
+          "winamax": 2.45,
+          "codere": 2.46,
+          "betsson": 2.39,
+          "williamhill": 2.5
         },
         "away": {
-          "unibet": 1.64,
-          "1xbet": 1.63,
-          "betfair": 1.67,
-          "mybookieag": 1.59,
-          "betclic": 1.61,
-          "leovegas": 1.64,
-          "888sport": 1.61,
-          "pinnacle": 1.66,
-          "matchbook": 1.67,
-          "winamax": 1.62,
-          "codere": 1.59,
-          "betsson": 1.58,
-          "williamhill": 1.62
+          "unibet": 1.61,
+          "1xbet": 1.61,
+          "betfair": 1.61,
+          "mybookieag": 1.57,
+          "betclic": 1.54,
+          "leovegas": 1.61,
+          "888sport": 1.53,
+          "pinnacle": 1.58,
+          "matchbook": 1.61,
+          "winamax": 1.58,
+          "codere": 1.58,
+          "betsson": 1.55,
+          "williamhill": 1.53
         }
       },
       "model": {
@@ -2578,37 +2608,44 @@
       "away": "danielmeridaagui",
       "odds": {
         "home": {
-          "unibet": 1.94,
-          "betfair": 2.02,
-          "mybookieag": 1.87,
-          "1xbet": 1.89,
-          "williamhill": 1.95,
-          "betclic": 1.91,
+          "unibet": 1.97,
+          "betfair": 2.1,
+          "mybookieag": 2.01,
+          "1xbet": 2.02,
+          "williamhill": 2,
+          "betclic": 2.05,
           "leovegas": 1.94,
-          "888sport": 1.95,
-          "pinnacle": 1.98,
-          "matchbook": 2.02,
-          "winamax": 1.98,
-          "codere": 1.87,
-          "betsson": 1.88
+          "888sport": 2,
+          "pinnacle": 2.1,
+          "matchbook": 2.1,
+          "winamax": 2,
+          "codere": 2,
+          "betsson": 1.98
         },
         "away": {
-          "unibet": 1.89,
-          "betfair": 1.92,
-          "mybookieag": 1.91,
-          "1xbet": 2.03,
-          "williamhill": 1.85,
-          "betclic": 1.86,
+          "unibet": 1.85,
+          "betfair": 1.89,
+          "mybookieag": 1.81,
+          "1xbet": 1.9,
+          "williamhill": 1.8,
+          "betclic": 1.81,
           "leovegas": 1.85,
-          "888sport": 1.85,
-          "pinnacle": 1.91,
-          "matchbook": 1.92,
-          "winamax": 1.9,
-          "codere": 1.91,
-          "betsson": 1.88
+          "888sport": 1.8,
+          "pinnacle": 1.81,
+          "matchbook": 1.89,
+          "winamax": 1.84,
+          "codere": 1.78,
+          "betsson": 1.79
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.49424379158885506,
+        "away": 0.5057562084111449,
+        "fromModel": true,
+        "eloH": 1696,
+        "eloA": 1700,
+        "surface": "grass"
+      },
       "ts": 1782733200000,
       "sofa": null
     },
@@ -2624,34 +2661,34 @@
       "away": "huberthurkacz",
       "odds": {
         "home": {
-          "unibet": 2.75,
-          "1xbet": 2.91,
-          "betfair": 2.94,
-          "mybookieag": 2.85,
-          "williamhill": 2.75,
-          "betclic": 2.8,
-          "leovegas": 2.75,
+          "unibet": 2.88,
+          "1xbet": 2.95,
+          "betfair": 2.88,
+          "mybookieag": 2.82,
+          "williamhill": 2.9,
+          "betclic": 2.85,
+          "leovegas": 2.88,
           "888sport": 2.75,
-          "pinnacle": 2.84,
-          "matchbook": 2.94,
-          "winamax": 2.95,
+          "pinnacle": 2.83,
+          "matchbook": 2.88,
+          "winamax": 2.85,
           "codere": 2.85,
-          "betsson": 2.85
+          "betsson": 2.76
         },
         "away": {
-          "unibet": 1.45,
-          "1xbet": 1.48,
-          "betfair": 1.51,
-          "mybookieag": 1.41,
-          "williamhill": 1.44,
-          "betclic": 1.42,
-          "leovegas": 1.44,
+          "unibet": 1.46,
+          "1xbet": 1.47,
+          "betfair": 1.52,
+          "mybookieag": 1.44,
+          "williamhill": 1.4,
+          "betclic": 1.45,
+          "leovegas": 1.42,
           "888sport": 1.44,
           "pinnacle": 1.48,
-          "matchbook": 1.51,
-          "winamax": 1.44,
-          "codere": 1.41,
-          "betsson": 1.4
+          "matchbook": 1.52,
+          "winamax": 1.46,
+          "codere": 1.45,
+          "betsson": 1.43
         }
       },
       "model": {
@@ -2677,33 +2714,33 @@
       "away": "sebastianofner",
       "odds": {
         "home": {
-          "betfair": 1.52,
-          "unibet": 1.49,
+          "betfair": 1.5,
+          "unibet": 1.48,
           "mybookieag": 1.46,
           "1xbet": 1.52,
-          "betclic": 1.49,
-          "leovegas": 1.49,
-          "888sport": 1.5,
-          "pinnacle": 1.5,
-          "matchbook": 1.52,
-          "winamax": 1.5,
-          "codere": 1.46,
-          "betsson": 1.45,
+          "betclic": 1.47,
+          "leovegas": 1.48,
+          "888sport": 1.44,
+          "pinnacle": 1.49,
+          "matchbook": 1.5,
+          "winamax": 1.48,
+          "codere": 1.47,
+          "betsson": 1.44,
           "williamhill": 1.5
         },
         "away": {
-          "betfair": 2.8,
-          "unibet": 2.65,
-          "mybookieag": 2.66,
+          "betfair": 2.96,
+          "unibet": 2.7,
+          "mybookieag": 2.74,
           "1xbet": 2.76,
-          "betclic": 2.58,
-          "leovegas": 2.63,
-          "888sport": 2.6,
-          "pinnacle": 2.77,
-          "matchbook": 2.82,
-          "winamax": 2.65,
-          "codere": 2.65,
-          "betsson": 2.66,
+          "betclic": 2.8,
+          "leovegas": 2.65,
+          "888sport": 2.75,
+          "pinnacle": 2.79,
+          "matchbook": 2.96,
+          "winamax": 2.75,
+          "codere": 2.8,
+          "betsson": 2.7,
           "williamhill": 2.6
         }
       },
@@ -2730,33 +2767,33 @@
       "away": "stefanostsitsipa",
       "odds": {
         "home": {
-          "unibet": 2.88,
-          "betfair": 3,
-          "mybookieag": 2.81,
-          "betclic": 2.8,
-          "leovegas": 2.88,
+          "unibet": 2.85,
+          "betfair": 2.98,
+          "mybookieag": 2.8,
+          "betclic": 2.85,
+          "leovegas": 2.55,
           "888sport": 2.75,
-          "1xbet": 2.95,
-          "pinnacle": 2.97,
-          "matchbook": 3,
+          "1xbet": 2.83,
+          "pinnacle": 2.93,
+          "matchbook": 2.98,
           "winamax": 2.9,
-          "codere": 2.8,
-          "betsson": 2.81,
+          "codere": 2.85,
+          "betsson": 2.76,
           "williamhill": 2.75
         },
         "away": {
-          "unibet": 1.42,
-          "betfair": 1.48,
-          "mybookieag": 1.42,
-          "betclic": 1.42,
-          "leovegas": 1.42,
+          "unibet": 1.5,
+          "betfair": 1.5,
+          "mybookieag": 1.44,
+          "betclic": 1.45,
+          "leovegas": 1.5,
           "888sport": 1.44,
-          "1xbet": 1.47,
-          "pinnacle": 1.44,
-          "matchbook": 1.48,
+          "1xbet": 1.5,
+          "pinnacle": 1.45,
+          "matchbook": 1.5,
           "winamax": 1.45,
-          "codere": 1.42,
-          "betsson": 1.41,
+          "codere": 1.45,
+          "betsson": 1.43,
           "williamhill": 1.44
         }
       },
@@ -2784,31 +2821,33 @@
       "odds": {
         "home": {
           "1xbet": 2.58,
-          "mybookieag": 2.35,
-          "unibet": 2.38,
-          "betclic": 2.3,
+          "mybookieag": 2.42,
+          "betfair": 2.56,
+          "unibet": 2.4,
+          "betclic": 2.45,
           "leovegas": 2.38,
-          "888sport": 2.3,
-          "matchbook": 2.46,
-          "pinnacle": 2.34,
-          "winamax": 2.4,
-          "codere": 2.35,
-          "betsson": 2.34,
-          "williamhill": 2.3
+          "888sport": 2.38,
+          "matchbook": 2.56,
+          "pinnacle": 2.45,
+          "winamax": 2.35,
+          "codere": 2.45,
+          "betsson": 2.39,
+          "williamhill": 2.38
         },
         "away": {
           "1xbet": 1.58,
           "mybookieag": 1.57,
+          "betfair": 1.63,
           "unibet": 1.57,
-          "betclic": 1.6,
+          "betclic": 1.58,
           "leovegas": 1.57,
-          "888sport": 1.61,
-          "matchbook": 1.67,
-          "pinnacle": 1.66,
-          "winamax": 1.6,
+          "888sport": 1.57,
+          "matchbook": 1.63,
+          "pinnacle": 1.61,
+          "winamax": 1.64,
           "codere": 1.58,
-          "betsson": 1.57,
-          "williamhill": 1.62
+          "betsson": 1.55,
+          "williamhill": 1.57
         }
       },
       "model": {
@@ -2837,29 +2876,31 @@
           "unibet": 1.32,
           "betfair": 1.32,
           "mybookieag": 1.3,
-          "1xbet": 1.36,
+          "1xbet": 1.35,
           "betclic": 1.3,
           "leovegas": 1.32,
           "888sport": 1.3,
           "pinnacle": 1.3,
-          "matchbook": 1.32,
+          "matchbook": 1.33,
           "codere": 1.31,
-          "betsson": 1.3,
-          "williamhill": 1.3
+          "betsson": 1.29,
+          "williamhill": 1.3,
+          "winamax": 1.29
         },
         "away": {
-          "unibet": 3.4,
-          "betfair": 3.9,
-          "mybookieag": 3.38,
-          "1xbet": 3.48,
-          "betclic": 3.45,
+          "unibet": 3.5,
+          "betfair": 3.95,
+          "mybookieag": 3.55,
+          "1xbet": 3.56,
+          "betclic": 3.73,
           "leovegas": 3.4,
           "888sport": 3.5,
           "pinnacle": 3.8,
-          "matchbook": 3.9,
-          "codere": 3.4,
-          "betsson": 3.38,
-          "williamhill": 3.5
+          "matchbook": 3.95,
+          "codere": 3.6,
+          "betsson": 3.49,
+          "williamhill": 3.5,
+          "winamax": 3.85
         }
       },
       "model": {
@@ -2885,34 +2926,34 @@
       "away": "olivertarvet",
       "odds": {
         "home": {
-          "unibet": 1.74,
-          "betfair": 1.72,
-          "mybookieag": 1.7,
-          "1xbet": 1.75,
+          "unibet": 1.68,
+          "betfair": 1.73,
+          "mybookieag": 1.68,
+          "1xbet": 1.74,
           "williamhill": 1.67,
-          "betclic": 1.65,
-          "leovegas": 1.74,
+          "betclic": 1.67,
+          "leovegas": 1.68,
           "888sport": 1.67,
-          "pinnacle": 1.69,
-          "matchbook": 1.72,
-          "winamax": 1.74,
-          "codere": 1.7,
-          "betsson": 1.7
+          "pinnacle": 1.68,
+          "matchbook": 1.73,
+          "winamax": 1.68,
+          "codere": 1.69,
+          "betsson": 1.66
         },
         "away": {
-          "unibet": 2.15,
-          "betfair": 2.32,
-          "mybookieag": 2.11,
-          "1xbet": 2.22,
+          "unibet": 2.25,
+          "betfair": 2.34,
+          "mybookieag": 2.2,
+          "1xbet": 2.25,
           "williamhill": 2.2,
-          "betclic": 2.2,
-          "leovegas": 2.08,
+          "betclic": 2.25,
+          "leovegas": 2.18,
           "888sport": 2.2,
-          "pinnacle": 2.29,
-          "matchbook": 2.32,
-          "winamax": 2.15,
-          "codere": 2.11,
-          "betsson": 2.11
+          "pinnacle": 2.31,
+          "matchbook": 2.34,
+          "winamax": 2.25,
+          "codere": 2.23,
+          "betsson": 2.17
         }
       },
       "model": {
@@ -2939,29 +2980,31 @@
       "odds": {
         "home": {
           "unibet": 2.3,
-          "mybookieag": 2.23,
-          "1xbet": 2.3,
-          "betclic": 2.13,
+          "mybookieag": 2.21,
+          "1xbet": 2.23,
+          "betclic": 2.2,
           "leovegas": 2.18,
-          "888sport": 2.2,
-          "pinnacle": 2.24,
-          "matchbook": 2.28,
-          "winamax": 2.25,
-          "codere": 2.23,
-          "betsson": 2.22
+          "888sport": 2.1,
+          "pinnacle": 2.19,
+          "matchbook": 2.22,
+          "winamax": 2.2,
+          "codere": 2.2,
+          "betsson": 2.15,
+          "betfair": 2.2
         },
         "away": {
           "unibet": 1.68,
-          "mybookieag": 1.64,
-          "1xbet": 1.71,
-          "betclic": 1.69,
+          "mybookieag": 1.67,
+          "1xbet": 1.75,
+          "betclic": 1.71,
           "leovegas": 1.68,
-          "888sport": 1.67,
-          "pinnacle": 1.71,
-          "matchbook": 1.75,
-          "winamax": 1.7,
-          "codere": 1.64,
-          "betsson": 1.63
+          "888sport": 1.73,
+          "pinnacle": 1.75,
+          "matchbook": 1.8,
+          "winamax": 1.72,
+          "codere": 1.71,
+          "betsson": 1.67,
+          "betfair": 1.8
         }
       },
       "model": {
@@ -2987,28 +3030,26 @@
       "away": "miomirkecmanovic",
       "odds": {
         "home": {
-          "unibet": 1.01,
           "betclic": 1.01,
-          "leovegas": 1.01,
           "888sport": 1.01,
           "matchbook": 1.02,
           "1xbet": 1.01,
           "winamax": 1.01,
           "codere": 1.01,
-          "pinnacle": 1.01,
-          "williamhill": 1.01
+          "pinnacle": 1.02,
+          "williamhill": 1.01,
+          "betfair": 1.02
         },
         "away": {
-          "unibet": 18,
-          "betclic": 15,
-          "leovegas": 18,
+          "betclic": 20,
           "888sport": 21,
-          "matchbook": 34,
-          "1xbet": 31,
-          "winamax": 23,
-          "codere": 15,
-          "pinnacle": 31.7,
-          "williamhill": 21
+          "matchbook": 38,
+          "1xbet": 32,
+          "winamax": 24,
+          "codere": 20,
+          "pinnacle": 22.26,
+          "williamhill": 21,
+          "betfair": 36
         }
       },
       "model": {
@@ -3034,31 +3075,40 @@
       "away": "nicolasmejia",
       "odds": {
         "home": {
-          "mybookieag": 1.61,
+          "betfair": 1.68,
+          "mybookieag": 1.62,
           "unibet": 1.61,
           "1xbet": 1.67,
-          "betclic": 1.6,
+          "betclic": 1.63,
           "leovegas": 1.61,
           "888sport": 1.61,
-          "pinnacle": 1.62,
-          "matchbook": 1.66,
-          "winamax": 1.66,
-          "codere": 1.61
+          "pinnacle": 1.64,
+          "matchbook": 1.7,
+          "winamax": 1.62,
+          "codere": 1.63
         },
         "away": {
-          "mybookieag": 2.29,
-          "unibet": 2.32,
+          "betfair": 2.42,
+          "mybookieag": 2.32,
+          "unibet": 2.3,
           "1xbet": 2.38,
-          "betclic": 2.3,
-          "leovegas": 2.32,
+          "betclic": 2.34,
+          "leovegas": 2.3,
           "888sport": 2.3,
-          "pinnacle": 2.42,
-          "matchbook": 2.44,
-          "winamax": 2.3,
-          "codere": 2.29
+          "pinnacle": 2.38,
+          "matchbook": 2.4,
+          "winamax": 2.35,
+          "codere": 2.34
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.558731369324761,
+        "away": 0.441268630675239,
+        "fromModel": true,
+        "eloH": 1750,
+        "eloA": 1709,
+        "surface": "grass"
+      },
       "ts": 1782737400000,
       "sofa": null
     },
@@ -3074,26 +3124,28 @@
       "away": "alexandershevche",
       "odds": {
         "home": {
-          "unibet": 1.03,
+          "unibet": 1.04,
+          "betfair": 1.04,
           "betclic": 1.02,
-          "leovegas": 1.03,
+          "leovegas": 1.04,
           "888sport": 1.02,
           "1xbet": 1.01,
           "matchbook": 1.04,
           "winamax": 1.02,
           "codere": 1.02,
-          "pinnacle": 1.02
+          "pinnacle": 1.03
         },
         "away": {
-          "unibet": 12.5,
-          "betclic": 12,
-          "leovegas": 12,
+          "unibet": 13,
+          "betfair": 21,
+          "betclic": 16,
+          "leovegas": 11.5,
           "888sport": 15,
           "1xbet": 32,
           "matchbook": 21,
-          "winamax": 16,
-          "codere": 12,
-          "pinnacle": 19.2
+          "winamax": 18,
+          "codere": 16,
+          "pinnacle": 18.51
         }
       },
       "model": {
@@ -3119,31 +3171,40 @@
       "away": "fabianmarozsan",
       "odds": {
         "home": {
-          "1xbet": 3.15,
-          "888sport": 2.9,
-          "unibet": 3.1,
-          "leovegas": 3.1,
-          "mybookieag": 2.97,
-          "betclic": 2.95,
+          "1xbet": 2.99,
+          "888sport": 2.75,
+          "unibet": 2.95,
+          "leovegas": 2.95,
+          "mybookieag": 2.83,
+          "betclic": 2.9,
           "matchbook": 3.05,
-          "pinnacle": 2.98,
-          "winamax": 3.1,
-          "codere": 2.95
+          "pinnacle": 2.94,
+          "winamax": 2.9,
+          "codere": 2.85,
+          "betfair": 3
         },
         "away": {
-          "1xbet": 1.42,
-          "888sport": 1.4,
-          "unibet": 1.36,
-          "leovegas": 1.36,
-          "mybookieag": 1.38,
-          "betclic": 1.38,
-          "matchbook": 1.46,
-          "pinnacle": 1.44,
-          "winamax": 1.41,
-          "codere": 1.38
+          "1xbet": 1.46,
+          "888sport": 1.44,
+          "unibet": 1.4,
+          "leovegas": 1.4,
+          "mybookieag": 1.43,
+          "betclic": 1.44,
+          "matchbook": 1.47,
+          "pinnacle": 1.45,
+          "winamax": 1.45,
+          "codere": 1.45,
+          "betfair": 1.47
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.3063120835780346,
+        "away": 0.6936879164219654,
+        "fromModel": true,
+        "eloH": 1667,
+        "eloA": 1809,
+        "surface": "grass"
+      },
       "ts": 1782737400000,
       "sofa": null
     },
@@ -3159,28 +3220,30 @@
       "away": "joaofonseca",
       "odds": {
         "home": {
-          "unibet": 4.6,
+          "unibet": 4.45,
           "mybookieag": 4.5,
           "1xbet": 4.8,
-          "betclic": 4.25,
-          "leovegas": 4.6,
-          "888sport": 4.5,
-          "pinnacle": 4.83,
-          "matchbook": 5.2,
-          "winamax": 4.8,
-          "codere": 4.5
+          "betfair": 4.7,
+          "betclic": 4.7,
+          "leovegas": 4.35,
+          "888sport": 4.2,
+          "pinnacle": 4.62,
+          "matchbook": 4.8,
+          "winamax": 4.7,
+          "codere": 4.7
         },
         "away": {
-          "unibet": 1.2,
-          "mybookieag": 1.19,
+          "unibet": 1.21,
+          "mybookieag": 1.2,
           "1xbet": 1.23,
+          "betfair": 1.25,
           "betclic": 1.21,
-          "leovegas": 1.2,
-          "888sport": 1.2,
-          "pinnacle": 1.22,
-          "matchbook": 1.23,
+          "leovegas": 1.21,
+          "888sport": 1.22,
+          "pinnacle": 1.23,
+          "matchbook": 1.25,
           "winamax": 1.21,
-          "codere": 1.19
+          "codere": 1.21
         }
       },
       "model": {
@@ -3207,27 +3270,29 @@
       "odds": {
         "home": {
           "unibet": 3.15,
-          "1xbet": 3.35,
-          "mybookieag": 3.12,
-          "betclic": 3.1,
-          "leovegas": 3.15,
+          "1xbet": 3.29,
+          "betfair": 3.4,
+          "mybookieag": 3.22,
+          "betclic": 3.3,
+          "leovegas": 3.05,
           "888sport": 3.3,
-          "pinnacle": 3.42,
+          "pinnacle": 3.41,
           "matchbook": 3.4,
-          "winamax": 3.25,
-          "codere": 3.1
+          "winamax": 3.45,
+          "codere": 3.3
         },
         "away": {
-          "unibet": 1.36,
-          "1xbet": 1.39,
+          "unibet": 1.38,
+          "1xbet": 1.4,
+          "betfair": 1.4,
           "mybookieag": 1.35,
-          "betclic": 1.35,
-          "leovegas": 1.36,
+          "betclic": 1.36,
+          "leovegas": 1.38,
           "888sport": 1.33,
           "pinnacle": 1.36,
-          "matchbook": 1.39,
-          "winamax": 1.37,
-          "codere": 1.35
+          "matchbook": 1.4,
+          "winamax": 1.34,
+          "codere": 1.36
         }
       },
       "model": {
@@ -3254,27 +3319,29 @@
       "odds": {
         "home": {
           "unibet": 1.38,
-          "mybookieag": 1.38,
-          "betclic": 1.4,
+          "mybookieag": 1.37,
+          "betclic": 1.38,
           "leovegas": 1.38,
-          "888sport": 1.4,
-          "pinnacle": 1.41,
-          "1xbet": 1.43,
-          "matchbook": 1.43,
-          "winamax": 1.41,
-          "codere": 1.38
+          "888sport": 1.36,
+          "pinnacle": 1.39,
+          "1xbet": 1.41,
+          "matchbook": 1.4,
+          "winamax": 1.38,
+          "codere": 1.38,
+          "betfair": 1.4
         },
         "away": {
           "unibet": 3,
-          "mybookieag": 2.98,
-          "betclic": 2.9,
+          "mybookieag": 3.14,
+          "betclic": 3.2,
           "leovegas": 3,
-          "888sport": 2.9,
-          "pinnacle": 3.13,
-          "1xbet": 3.09,
-          "matchbook": 3.15,
-          "winamax": 3.05,
-          "codere": 3
+          "888sport": 3.1,
+          "pinnacle": 3.22,
+          "1xbet": 3.19,
+          "matchbook": 3.45,
+          "winamax": 3.2,
+          "codere": 3.2,
+          "betfair": 3.4
         }
       },
       "model": {
@@ -3300,31 +3367,40 @@
       "away": "juanmanuelcerund",
       "odds": {
         "home": {
-          "pinnacle": 1.29,
-          "1xbet": 1.27,
+          "pinnacle": 1.28,
+          "betfair": 1.29,
+          "1xbet": 1.29,
           "888sport": 1.29,
-          "unibet": 1.24,
-          "betclic": 1.25,
-          "mybookieag": 1.23,
+          "unibet": 1.26,
+          "betclic": 1.26,
+          "mybookieag": 1.26,
           "matchbook": 1.29,
-          "winamax": 1.24,
-          "codere": 1.23,
-          "leovegas": 1.24
+          "winamax": 1.27,
+          "codere": 1.26,
+          "leovegas": 1.26
         },
         "away": {
-          "pinnacle": 3.9,
-          "1xbet": 4.24,
+          "pinnacle": 3.99,
+          "betfair": 4.3,
+          "1xbet": 4.12,
           "888sport": 3.6,
-          "unibet": 4.05,
-          "betclic": 3.85,
-          "mybookieag": 4.1,
-          "matchbook": 4,
-          "winamax": 4.3,
-          "codere": 4.1,
-          "leovegas": 4
+          "unibet": 3.9,
+          "betclic": 4,
+          "mybookieag": 3.95,
+          "matchbook": 4.3,
+          "winamax": 4.1,
+          "codere": 4,
+          "leovegas": 3.9
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.784053683887815,
+        "away": 0.21594631611218496,
+        "fromModel": true,
+        "eloH": 1941,
+        "eloA": 1717,
+        "surface": "grass"
+      },
       "ts": 1782741600000,
       "sofa": null
     },
@@ -3340,36 +3416,38 @@
       "away": "lucianodarderi",
       "odds": {
         "home": {
-          "pinnacle": 1.67,
-          "betclic": 1.6,
+          "pinnacle": 1.64,
+          "betclic": 1.62,
+          "betfair": 1.65,
           "888sport": 1.61,
-          "unibet": 1.61,
-          "mybookieag": 1.57,
-          "1xbet": 1.65,
-          "matchbook": 1.68,
-          "winamax": 1.6,
-          "codere": 1.57,
-          "leovegas": 1.61
+          "unibet": 1.63,
+          "mybookieag": 1.61,
+          "1xbet": 1.66,
+          "matchbook": 1.65,
+          "winamax": 1.64,
+          "codere": 1.62,
+          "leovegas": 1.63
         },
         "away": {
-          "pinnacle": 2.33,
-          "betclic": 2.3,
+          "pinnacle": 2.39,
+          "betclic": 2.37,
+          "betfair": 2.5,
           "888sport": 2.3,
-          "unibet": 2.35,
-          "mybookieag": 2.37,
-          "1xbet": 2.41,
-          "matchbook": 2.4,
-          "winamax": 2.45,
+          "unibet": 2.3,
+          "mybookieag": 2.34,
+          "1xbet": 2.39,
+          "matchbook": 2.5,
+          "winamax": 2.3,
           "codere": 2.37,
-          "leovegas": 2.32
+          "leovegas": 2.28
         }
       },
       "model": {
-        "home": 0.3868631798468569,
-        "away": 0.6131368201531431,
+        "home": 0.39646368147382194,
+        "away": 0.6035363185261781,
         "fromModel": true,
         "eloH": 1830,
-        "eloA": 1910,
+        "eloA": 1903,
         "surface": "grass"
       },
       "ts": 1782741600000,
@@ -3388,30 +3466,39 @@
       "odds": {
         "home": {
           "unibet": 3.25,
-          "1xbet": 3.46,
+          "1xbet": 3.42,
           "leovegas": 3.25,
+          "betfair": 3.35,
           "mybookieag": 3.26,
-          "betclic": 3.25,
-          "888sport": 3.3,
-          "pinnacle": 3.4,
-          "matchbook": 3.55,
-          "winamax": 3.4,
-          "codere": 3.25
+          "betclic": 3.3,
+          "888sport": 3.1,
+          "pinnacle": 3.31,
+          "matchbook": 3.35,
+          "winamax": 3.35,
+          "codere": 3.3
         },
         "away": {
           "unibet": 1.34,
           "1xbet": 1.37,
           "leovegas": 1.34,
-          "mybookieag": 1.32,
-          "betclic": 1.33,
-          "888sport": 1.33,
-          "pinnacle": 1.36,
-          "matchbook": 1.37,
-          "winamax": 1.35,
-          "codere": 1.33
+          "betfair": 1.41,
+          "mybookieag": 1.34,
+          "betclic": 1.35,
+          "888sport": 1.36,
+          "pinnacle": 1.38,
+          "matchbook": 1.41,
+          "winamax": 1.36,
+          "codere": 1.35
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.2882774756572447,
+        "away": 0.7117225243427553,
+        "fromModel": true,
+        "eloH": 1585,
+        "eloA": 1742,
+        "surface": "grass"
+      },
       "ts": 1782741600000,
       "sofa": null
     },
@@ -3429,27 +3516,38 @@
         "home": {
           "1xbet": 18,
           "unibet": 11,
-          "betclic": 11,
+          "betclic": 12,
           "leovegas": 10,
           "888sport": 11,
-          "pinnacle": 11.42,
-          "matchbook": 16,
-          "winamax": 13.5,
-          "codere": 11
+          "pinnacle": 13.58,
+          "matchbook": 17.5,
+          "winamax": 13,
+          "codere": 12,
+          "betfair": 16,
+          "mybookieag": 11.25
         },
         "away": {
           "1xbet": 1.04,
           "unibet": 1.05,
-          "betclic": 1.03,
+          "betclic": 1.05,
           "leovegas": 1.05,
           "888sport": 1.04,
-          "pinnacle": 1.06,
-          "matchbook": 1.06,
+          "pinnacle": 1.04,
+          "matchbook": 1.05,
           "winamax": 1.04,
-          "codere": 1.03
+          "codere": 1.05,
+          "betfair": 1.06,
+          "mybookieag": 1.04
         }
       },
-      "noModel": true,
+      "model": {
+        "home": 0.06298627871190775,
+        "away": 0.9370137212880922,
+        "fromModel": true,
+        "eloH": 1641,
+        "eloA": 2110,
+        "surface": "grass"
+      },
       "ts": 1782746400000,
       "sofa": null
     },
@@ -3465,28 +3563,30 @@
       "away": "jackpinningtonjo",
       "odds": {
         "home": {
-          "unibet": 1.28,
-          "mybookieag": 1.24,
-          "1xbet": 1.27,
-          "betclic": 1.23,
-          "leovegas": 1.28,
+          "unibet": 1.26,
+          "betfair": 1.25,
+          "mybookieag": 1.23,
+          "1xbet": 1.26,
+          "betclic": 1.24,
+          "leovegas": 1.26,
           "888sport": 1.25,
           "pinnacle": 1.25,
-          "matchbook": 1.26,
+          "matchbook": 1.25,
           "winamax": 1.24,
           "codere": 1.24
         },
         "away": {
-          "unibet": 3.9,
-          "mybookieag": 3.9,
-          "1xbet": 4.24,
-          "betclic": 4,
-          "leovegas": 3.7,
+          "unibet": 4.05,
+          "betfair": 4.6,
+          "mybookieag": 4.2,
+          "1xbet": 4.36,
+          "betclic": 4.3,
+          "leovegas": 3.85,
           "888sport": 4,
-          "pinnacle": 4.32,
-          "matchbook": 4.4,
-          "winamax": 4.3,
-          "codere": 3.9
+          "pinnacle": 4.38,
+          "matchbook": 4.6,
+          "winamax": 4.4,
+          "codere": 4.3
         }
       },
       "model": {
@@ -3512,28 +3612,26 @@
       "away": "danielaltmaier",
       "odds": {
         "home": {
-          "pinnacle": 1.98,
-          "unibet": 2,
-          "betfair": 2.04,
-          "1xbet": 2.18,
+          "pinnacle": 2,
           "888sport": 1.95,
-          "betclic": 1.96,
-          "mybookieag": 1.98,
+          "betclic": 1.98,
+          "mybookieag": 1.99,
           "matchbook": 2.04,
           "winamax": 1.96,
-          "codere": 2.02
+          "codere": 1.99,
+          "unibet": 1.89,
+          "leovegas": 1.89
         },
         "away": {
-          "pinnacle": 1.91,
-          "unibet": 1.75,
-          "betfair": 1.9,
-          "1xbet": 1.78,
+          "pinnacle": 1.89,
           "888sport": 1.85,
-          "betclic": 1.76,
-          "mybookieag": 1.74,
-          "matchbook": 1.9,
+          "betclic": 1.81,
+          "mybookieag": 1.79,
+          "matchbook": 1.92,
           "winamax": 1.9,
-          "codere": 1.77
+          "codere": 1.8,
+          "unibet": 1.89,
+          "leovegas": 1.89
         }
       },
       "model": {
@@ -3559,30 +3657,30 @@
       "away": "alexanderzverev",
       "odds": {
         "home": {
-          "888sport": 7,
-          "betfair": 8,
-          "unibet": 7.6,
-          "leovegas": 6.25,
-          "1xbet": 10,
-          "betclic": 6.75,
-          "pinnacle": 7.7,
-          "mybookieag": 6.9,
-          "matchbook": 8,
+          "888sport": 8,
+          "betfair": 7.8,
+          "unibet": 7.5,
+          "leovegas": 7.5,
+          "1xbet": 10.5,
+          "betclic": 7.2,
+          "pinnacle": 7.49,
+          "mybookieag": 7.2,
+          "matchbook": 7.8,
           "winamax": 7.75,
-          "codere": 7.6
+          "codere": 7.2
         },
         "away": {
-          "888sport": 1.1,
-          "betfair": 1.11,
+          "888sport": 1.06,
+          "betfair": 1.13,
           "unibet": 1.09,
-          "leovegas": 1.09,
-          "1xbet": 1.09,
+          "leovegas": 1.08,
+          "1xbet": 1.08,
           "betclic": 1.09,
-          "pinnacle": 1.1,
-          "mybookieag": 1.07,
-          "matchbook": 1.12,
+          "pinnacle": 1.11,
+          "mybookieag": 1.08,
+          "matchbook": 1.13,
           "winamax": 1.1,
-          "codere": 1.08
+          "codere": 1.09
         }
       },
       "model": {
@@ -3608,24 +3706,26 @@
       "away": "arthurfils",
       "odds": {
         "home": {
-          "pinnacle": 2.24,
-          "mybookieag": 2.13,
+          "pinnacle": 2.26,
+          "mybookieag": 2.17,
           "matchbook": 2.28,
-          "betfair": 2.26,
           "888sport": 2.2,
           "betclic": 2.17,
           "winamax": 2.2,
-          "codere": 2.17
+          "codere": 2.17,
+          "unibet": 2.1,
+          "leovegas": 2.1
         },
         "away": {
           "pinnacle": 1.71,
-          "mybookieag": 1.64,
+          "mybookieag": 1.67,
           "matchbook": 1.76,
-          "betfair": 1.76,
           "888sport": 1.67,
           "betclic": 1.67,
           "winamax": 1.7,
-          "codere": 1.67
+          "codere": 1.67,
+          "unibet": 1.72,
+          "leovegas": 1.72
         }
       },
       "model": {
@@ -3651,24 +3751,26 @@
       "away": "matteoberrettini",
       "odds": {
         "home": {
-          "pinnacle": 3.87,
+          "pinnacle": 3.88,
           "betclic": 3.65,
           "888sport": 3.6,
-          "betfair": 4.1,
-          "mybookieag": 3.5,
-          "matchbook": 4.1,
+          "mybookieag": 3.65,
+          "matchbook": 4.2,
           "winamax": 4,
-          "codere": 3.65
+          "codere": 3.65,
+          "unibet": 3.6,
+          "leovegas": 3.6
         },
         "away": {
           "pinnacle": 1.3,
           "betclic": 1.27,
           "888sport": 1.29,
-          "betfair": 1.3,
-          "mybookieag": 1.26,
+          "mybookieag": 1.28,
           "matchbook": 1.3,
           "winamax": 1.27,
-          "codere": 1.27
+          "codere": 1.27,
+          "unibet": 1.29,
+          "leovegas": 1.29
         }
       },
       "model": {
@@ -3694,24 +3796,30 @@
       "away": "zizoubergs",
       "odds": {
         "home": {
-          "pinnacle": 1.41,
-          "mybookieag": 1.36,
-          "matchbook": 1.41,
-          "betfair": 1.4,
-          "888sport": 1.4,
-          "betclic": 1.39,
-          "winamax": 1.4,
-          "codere": 1.37
+          "pinnacle": 1.57,
+          "mybookieag": 1.55,
+          "matchbook": 1.59,
+          "betfair": 1.59,
+          "1xbet": 1.61,
+          "888sport": 1.5,
+          "betclic": 1.55,
+          "winamax": 1.58,
+          "codere": 1.55,
+          "unibet": 1.6,
+          "leovegas": 1.6
         },
         "away": {
-          "pinnacle": 3.13,
-          "mybookieag": 2.92,
-          "matchbook": 3.25,
-          "betfair": 3.25,
-          "888sport": 2.9,
-          "betclic": 2.92,
-          "winamax": 3.15,
-          "codere": 3
+          "pinnacle": 2.55,
+          "mybookieag": 2.42,
+          "matchbook": 2.66,
+          "betfair": 2.64,
+          "1xbet": 2.5,
+          "888sport": 2.6,
+          "betclic": 2.42,
+          "winamax": 2.5,
+          "codere": 2.42,
+          "unibet": 2.4,
+          "leovegas": 2.35
         }
       },
       "model": {
@@ -3739,26 +3847,26 @@
         "home": {
           "betfair": 1.61,
           "unibet": 1.57,
-          "1xbet": 1.6,
+          "1xbet": 1.61,
           "betclic": 1.53,
           "leovegas": 1.57,
           "888sport": 1.57,
           "pinnacle": 1.56,
-          "mybookieag": 1.53,
+          "mybookieag": 1.56,
           "matchbook": 1.61,
           "winamax": 1.56,
           "codere": 1.56
         },
         "away": {
-          "betfair": 2.54,
-          "unibet": 2.35,
-          "1xbet": 2.52,
+          "betfair": 2.6,
+          "unibet": 2.38,
+          "1xbet": 2.5,
           "betclic": 2.48,
-          "leovegas": 2.35,
+          "leovegas": 2.38,
           "888sport": 2.38,
-          "pinnacle": 2.56,
-          "mybookieag": 2.33,
-          "matchbook": 2.54,
+          "pinnacle": 2.58,
+          "mybookieag": 2.39,
+          "matchbook": 2.6,
           "winamax": 2.5,
           "codere": 2.39
         }
@@ -3787,27 +3895,27 @@
       "odds": {
         "home": {
           "unibet": 1.44,
-          "1xbet": 1.48,
+          "1xbet": 1.49,
           "betfair": 1.49,
           "betclic": 1.44,
           "leovegas": 1.43,
           "888sport": 1.44,
-          "mybookieag": 1.42,
+          "mybookieag": 1.44,
           "pinnacle": 1.47,
-          "matchbook": 1.49,
+          "matchbook": 1.5,
           "winamax": 1.46,
           "codere": 1.44
         },
         "away": {
           "unibet": 2.8,
-          "1xbet": 2.91,
-          "betfair": 2.88,
+          "1xbet": 2.87,
+          "betfair": 2.96,
           "betclic": 2.75,
           "leovegas": 2.8,
           "888sport": 2.75,
-          "mybookieag": 2.66,
+          "mybookieag": 2.74,
           "pinnacle": 2.85,
-          "matchbook": 2.88,
+          "matchbook": 2.94,
           "winamax": 2.85,
           "codere": 2.75
         }
@@ -3818,626 +3926,6 @@
         "fromModel": true,
         "eloH": 1758,
         "eloA": 1842,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "14e1451c778870ff2953df9faeea10ec",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "alexmichelsen",
-      "away": "jacobfearnley",
-      "odds": {
-        "home": {
-          "betfair": 1.85,
-          "888sport": 1.8,
-          "unibet": 1.76,
-          "betclic": 1.78,
-          "leovegas": 1.76,
-          "1xbet": 1.75,
-          "pinnacle": 1.83,
-          "mybookieag": 1.71,
-          "matchbook": 1.85,
-          "winamax": 1.8,
-          "codere": 1.74
-        },
-        "away": {
-          "betfair": 2.1,
-          "888sport": 2,
-          "unibet": 2.07,
-          "betclic": 2,
-          "leovegas": 2.07,
-          "1xbet": 2.23,
-          "pinnacle": 2.08,
-          "mybookieag": 2.02,
-          "matchbook": 2.1,
-          "winamax": 2.05,
-          "codere": 2.06
-        }
-      },
-      "model": {
-        "home": 0.6519120398746636,
-        "away": 0.3480879601253364,
-        "fromModel": true,
-        "eloH": 1827,
-        "eloA": 1718,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "b2957a20a6add0bae2029fc52472853b",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "alexdeminaur",
-      "away": "romanandresburru",
-      "odds": {
-        "home": {
-          "unibet": 1.03,
-          "1xbet": 1.03,
-          "leovegas": 1.03,
-          "betfair": 1.06,
-          "betclic": 1.03,
-          "888sport": 1.04,
-          "matchbook": 1.06,
-          "winamax": 1.03,
-          "pinnacle": 1.05,
-          "codere": 1.03
-        },
-        "away": {
-          "unibet": 13,
-          "1xbet": 21,
-          "leovegas": 13,
-          "betfair": 15,
-          "betclic": 12,
-          "888sport": 11,
-          "matchbook": 15,
-          "winamax": 15,
-          "pinnacle": 12.16,
-          "codere": 12
-        }
-      },
-      "noModel": true,
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "1a76e2740082417247d02923fdbf8dd1",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "thanasikokkinaki",
-      "away": "alexanderbublik",
-      "odds": {
-        "home": {
-          "unibet": 3.1,
-          "leovegas": 3.1,
-          "betfair": 3.1,
-          "betclic": 2.9,
-          "888sport": 2.9,
-          "mybookieag": 2.83,
-          "matchbook": 3.1,
-          "pinnacle": 3.01,
-          "winamax": 3.05,
-          "codere": 2.9
-        },
-        "away": {
-          "unibet": 1.36,
-          "leovegas": 1.36,
-          "betfair": 1.45,
-          "betclic": 1.39,
-          "888sport": 1.4,
-          "mybookieag": 1.38,
-          "matchbook": 1.45,
-          "pinnacle": 1.43,
-          "winamax": 1.42,
-          "codere": 1.39
-        }
-      },
-      "model": {
-        "home": 0.05807841419526414,
-        "away": 0.9419215858047358,
-        "fromModel": true,
-        "eloH": 1526,
-        "eloA": 2010,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "bf95b92b1856ff46a8bd2b89958e4657",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "jirilehecka",
-      "away": "alexeipopyrin",
-      "odds": {
-        "home": {
-          "unibet": 1.3,
-          "1xbet": 1.29,
-          "leovegas": 1.3,
-          "betfair": 1.31,
-          "betclic": 1.28,
-          "888sport": 1.29,
-          "pinnacle": 1.3,
-          "mybookieag": 1.24,
-          "matchbook": 1.31,
-          "winamax": 1.27,
-          "codere": 1.25
-        },
-        "away": {
-          "unibet": 3.6,
-          "1xbet": 4.12,
-          "leovegas": 3.55,
-          "betfair": 4.1,
-          "betclic": 3.6,
-          "888sport": 3.6,
-          "pinnacle": 3.82,
-          "mybookieag": 3.65,
-          "matchbook": 4.2,
-          "winamax": 4,
-          "codere": 3.85
-        }
-      },
-      "model": {
-        "home": 0.7358774441014764,
-        "away": 0.2641225558985236,
-        "fromModel": true,
-        "eloH": 1967,
-        "eloA": 1789,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "bdd4cc16157f42d8f1c91c2b37c8c9ba",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "damirdzumhur",
-      "away": "arthurfery",
-      "odds": {
-        "home": {
-          "unibet": 4.2,
-          "1xbet": 4.64,
-          "betfair": 4.5,
-          "betclic": 4.2,
-          "leovegas": 4,
-          "888sport": 4.2,
-          "pinnacle": 4.49,
-          "mybookieag": 4,
-          "matchbook": 4.5,
-          "winamax": 4.4,
-          "codere": 4.2
-        },
-        "away": {
-          "unibet": 1.24,
-          "1xbet": 1.24,
-          "betfair": 1.24,
-          "betclic": 1.22,
-          "leovegas": 1.24,
-          "888sport": 1.22,
-          "pinnacle": 1.24,
-          "mybookieag": 1.2,
-          "matchbook": 1.24,
-          "winamax": 1.23,
-          "codere": 1.22
-        }
-      },
-      "model": {
-        "home": 0.5910755963149433,
-        "away": 0.40892440368505667,
-        "fromModel": true,
-        "eloH": 1761,
-        "eloA": 1697,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "11cb4a8d64c55c75fbbf745ae653a21f",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "ottovirtanen",
-      "away": "benshelton",
-      "odds": {
-        "home": {
-          "betfair": 4.1,
-          "unibet": 3.45,
-          "betclic": 3.75,
-          "leovegas": 3.45,
-          "888sport": 3.6,
-          "mybookieag": 3.55,
-          "matchbook": 4.1,
-          "pinnacle": 3.81,
-          "winamax": 3.9,
-          "codere": 3.7
-        },
-        "away": {
-          "betfair": 1.31,
-          "unibet": 1.3,
-          "betclic": 1.26,
-          "leovegas": 1.3,
-          "888sport": 1.29,
-          "mybookieag": 1.26,
-          "matchbook": 1.31,
-          "pinnacle": 1.3,
-          "winamax": 1.29,
-          "codere": 1.27
-        }
-      },
-      "model": {
-        "home": 0.3174296145252281,
-        "away": 0.6825703854747719,
-        "fromModel": true,
-        "eloH": 1732,
-        "eloA": 1865,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "4c10f9c86780b761fa8b22928e0534f9",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "benjaminbonzi",
-      "away": "gabrieldiallo",
-      "odds": {
-        "home": {
-          "unibet": 2.06,
-          "1xbet": 2.1,
-          "leovegas": 2.06,
-          "betfair": 2.12,
-          "betclic": 2,
-          "888sport": 2,
-          "pinnacle": 2.05,
-          "mybookieag": 2.01,
-          "matchbook": 2.08,
-          "winamax": 2.1,
-          "codere": 2.05
-        },
-        "away": {
-          "unibet": 1.77,
-          "1xbet": 1.84,
-          "leovegas": 1.77,
-          "betfair": 1.86,
-          "betclic": 1.78,
-          "888sport": 1.8,
-          "pinnacle": 1.85,
-          "mybookieag": 1.71,
-          "matchbook": 1.85,
-          "winamax": 1.78,
-          "codere": 1.75
-        }
-      },
-      "model": {
-        "home": 0.39646368147382194,
-        "away": 0.6035363185261781,
-        "fromModel": true,
-        "eloH": 1745,
-        "eloA": 1818,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "a781545b6be54ba4f37eea8f21ed6695",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "karenkhachanov",
-      "away": "billyharris",
-      "odds": {
-        "home": {
-          "1xbet": 1.35,
-          "betfair": 1.37,
-          "unibet": 1.3,
-          "betclic": 1.31,
-          "leovegas": 1.3,
-          "888sport": 1.33,
-          "pinnacle": 1.34,
-          "mybookieag": 1.29,
-          "matchbook": 1.37,
-          "winamax": 1.33,
-          "codere": 1.31
-        },
-        "away": {
-          "1xbet": 3.56,
-          "betfair": 3.65,
-          "unibet": 3.5,
-          "betclic": 3.4,
-          "leovegas": 3.5,
-          "888sport": 3.3,
-          "pinnacle": 3.54,
-          "mybookieag": 3.28,
-          "matchbook": 3.65,
-          "winamax": 3.55,
-          "codere": 3.4
-        }
-      },
-      "model": {
-        "home": 0.7761545753418307,
-        "away": 0.22384542465816926,
-        "fromModel": true,
-        "eloH": 1934,
-        "eloA": 1718,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "289a97fe64fe86154553f9dfdde13bcb",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "corentinmoutet",
-      "away": "marcosgiron",
-      "odds": {
-        "home": {
-          "betfair": 2.06,
-          "unibet": 2.05,
-          "1xbet": 2.17,
-          "betclic": 2,
-          "leovegas": 2.05,
-          "888sport": 2,
-          "pinnacle": 2.05,
-          "mybookieag": 2,
-          "matchbook": 2.06,
-          "winamax": 2.05,
-          "codere": 2.04
-        },
-        "away": {
-          "betfair": 1.86,
-          "unibet": 1.77,
-          "1xbet": 1.79,
-          "betclic": 1.79,
-          "leovegas": 1.77,
-          "888sport": 1.8,
-          "pinnacle": 1.85,
-          "mybookieag": 1.72,
-          "matchbook": 1.86,
-          "winamax": 1.8,
-          "codere": 1.76
-        }
-      },
-      "model": {
-        "home": 0.6374083767444845,
-        "away": 0.3625916232555155,
-        "fromModel": true,
-        "eloH": 1848,
-        "eloA": 1750,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "d85a15638614401bf53f2f4105ebea99",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "danesweeny",
-      "away": "grigordimitrov",
-      "odds": {
-        "home": {
-          "unibet": 3.95,
-          "1xbet": 4.24,
-          "leovegas": 3.95,
-          "betclic": 3.88,
-          "888sport": 4,
-          "betfair": 4.3,
-          "pinnacle": 4.23,
-          "mybookieag": 3.75,
-          "matchbook": 4.3,
-          "winamax": 4.2,
-          "codere": 3.95
-        },
-        "away": {
-          "unibet": 1.25,
-          "1xbet": 1.27,
-          "leovegas": 1.25,
-          "betclic": 1.24,
-          "888sport": 1.25,
-          "betfair": 1.26,
-          "pinnacle": 1.26,
-          "mybookieag": 1.23,
-          "matchbook": 1.26,
-          "winamax": 1.26,
-          "codere": 1.24
-        }
-      },
-      "model": {
-        "home": 0.27089003710224746,
-        "away": 0.7291099628977525,
-        "fromModel": true,
-        "eloH": 1713,
-        "eloA": 1885,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "8db5bd8b78df6f2384e180511464bc2f",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "marianonavone",
-      "away": "flaviocobolli",
-      "odds": {
-        "home": {
-          "unibet": 3.9,
-          "1xbet": 4.36,
-          "leovegas": 3.9,
-          "betfair": 4.1,
-          "betclic": 4,
-          "888sport": 4,
-          "mybookieag": 3.9,
-          "pinnacle": 4.05,
-          "matchbook": 4.2,
-          "winamax": 4.3,
-          "codere": 4.1
-        },
-        "away": {
-          "unibet": 1.25,
-          "1xbet": 1.26,
-          "leovegas": 1.25,
-          "betfair": 1.29,
-          "betclic": 1.24,
-          "888sport": 1.25,
-          "mybookieag": 1.22,
-          "pinnacle": 1.28,
-          "matchbook": 1.29,
-          "winamax": 1.25,
-          "codere": 1.23
-        }
-      },
-      "model": {
-        "home": 0.581301478368915,
-        "away": 0.418698521631085,
-        "fromModel": true,
-        "eloH": 1837,
-        "eloA": 1780,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "be9660c95afe70b298a651e964aaebef",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "francestiafoe",
-      "away": "terenceatmane",
-      "odds": {
-        "home": {
-          "unibet": 1.27,
-          "betclic": 1.22,
-          "leovegas": 1.27,
-          "888sport": 1.25,
-          "pinnacle": 1.26,
-          "betfair": 1.25,
-          "mybookieag": 1.21,
-          "matchbook": 1.25,
-          "winamax": 1.23,
-          "codere": 1.22
-        },
-        "away": {
-          "unibet": 4.1,
-          "betclic": 4.1,
-          "leovegas": 3.8,
-          "888sport": 4,
-          "pinnacle": 4.29,
-          "betfair": 4.7,
-          "mybookieag": 3.95,
-          "matchbook": 4.7,
-          "winamax": 4.5,
-          "codere": 4.1
-        }
-      },
-      "model": {
-        "home": 0.6813218351663937,
-        "away": 0.31867816483360634,
-        "fromModel": true,
-        "eloH": 1937,
-        "eloA": 1805,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "9790547605ef70511264c7e5bb6122e9",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "jaumemunar",
-      "away": "franciscocerundo",
-      "odds": {
-        "home": {
-          "betfair": 4.1,
-          "unibet": 3.8,
-          "betclic": 3.9,
-          "leovegas": 3.8,
-          "888sport": 4,
-          "pinnacle": 4.06,
-          "mybookieag": 3.48,
-          "matchbook": 4.1,
-          "winamax": 4,
-          "codere": 3.6
-        },
-        "away": {
-          "betfair": 1.29,
-          "unibet": 1.28,
-          "betclic": 1.25,
-          "leovegas": 1.27,
-          "888sport": 1.25,
-          "pinnacle": 1.28,
-          "mybookieag": 1.26,
-          "matchbook": 1.3,
-          "winamax": 1.27,
-          "codere": 1.28
-        }
-      },
-      "model": {
-        "home": 0.525880930891169,
-        "away": 0.47411906910883095,
-        "fromModel": true,
-        "eloH": 1829,
-        "eloA": 1811,
         "surface": "grass"
       },
       "ts": 1782813600000,
@@ -4457,26 +3945,28 @@
         "home": {
           "unibet": 2.25,
           "leovegas": 2.25,
-          "betfair": 1.56,
-          "betclic": 2.08,
+          "betfair": 2.26,
+          "betclic": 2.05,
           "888sport": 2.1,
-          "mybookieag": 2.14,
-          "matchbook": 2.22,
-          "pinnacle": 2.22,
+          "mybookieag": 2.15,
+          "1xbet": 2.23,
+          "matchbook": 2.26,
+          "pinnacle": 2.17,
           "winamax": 2.2,
-          "codere": 2.18
+          "codere": 2.15
         },
         "away": {
-          "unibet": 1.65,
-          "leovegas": 1.65,
-          "betfair": 1.69,
-          "betclic": 1.72,
+          "unibet": 1.68,
+          "leovegas": 1.64,
+          "betfair": 1.77,
+          "betclic": 1.74,
           "888sport": 1.73,
-          "mybookieag": 1.63,
-          "matchbook": 1.73,
-          "pinnacle": 1.73,
-          "winamax": 1.7,
-          "codere": 1.66
+          "mybookieag": 1.68,
+          "1xbet": 1.75,
+          "matchbook": 1.77,
+          "pinnacle": 1.76,
+          "winamax": 1.72,
+          "codere": 1.68
         }
       },
       "model": {
@@ -4502,28 +3992,28 @@
       "away": "harrywendelken",
       "odds": {
         "home": {
-          "betfair": 1.77,
-          "unibet": 1.7,
+          "betfair": 1.8,
+          "unibet": 1.72,
           "1xbet": 1.77,
           "betclic": 1.72,
           "leovegas": 1.7,
           "888sport": 1.73,
-          "mybookieag": 1.69,
-          "matchbook": 1.78,
-          "pinnacle": 1.76,
+          "mybookieag": 1.72,
+          "matchbook": 1.8,
+          "pinnacle": 1.79,
           "winamax": 1.76,
           "codere": 1.72
         },
         "away": {
-          "betfair": 2.06,
+          "betfair": 2.16,
           "unibet": 2.16,
           "1xbet": 2.2,
           "betclic": 2.09,
           "leovegas": 2.16,
           "888sport": 2.1,
-          "mybookieag": 2.04,
+          "mybookieag": 2.09,
           "matchbook": 2.16,
-          "pinnacle": 2.16,
+          "pinnacle": 2.13,
           "winamax": 2.15,
           "codere": 2.09
         }
@@ -4534,53 +4024,6 @@
         "fromModel": true,
         "eloH": 1770,
         "eloA": 1658,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "2953d0eade4d5062d058efbc9e7b1458",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "taylorfritz",
-      "away": "jackdraper",
-      "odds": {
-        "home": {
-          "betfair": 1.67,
-          "unibet": 1.68,
-          "betclic": 1.65,
-          "leovegas": 1.68,
-          "888sport": 1.67,
-          "mybookieag": 1.62,
-          "matchbook": 1.67,
-          "pinnacle": 1.67,
-          "winamax": 1.68,
-          "codere": 1.65
-        },
-        "away": {
-          "betfair": 2.44,
-          "unibet": 2.18,
-          "betclic": 2.21,
-          "leovegas": 2.18,
-          "888sport": 2.2,
-          "mybookieag": 2.16,
-          "matchbook": 2.44,
-          "pinnacle": 2.33,
-          "winamax": 2.25,
-          "codere": 2.21
-        }
-      },
-      "model": {
-        "home": 0.750163481828642,
-        "away": 0.249836518171358,
-        "fromModel": true,
-        "eloH": 1974,
-        "eloA": 1783,
         "surface": "grass"
       },
       "ts": 1782813600000,
@@ -4599,27 +4042,29 @@
       "odds": {
         "home": {
           "unibet": 1.85,
-          "betfair": 1.88,
-          "betclic": 1.85,
+          "betfair": 1.9,
+          "1xbet": 1.91,
+          "betclic": 1.83,
           "leovegas": 1.85,
           "888sport": 1.85,
-          "mybookieag": 1.82,
-          "matchbook": 1.89,
+          "mybookieag": 1.83,
+          "matchbook": 1.9,
           "pinnacle": 1.88,
           "winamax": 1.9,
-          "codere": 1.85
+          "codere": 1.83
         },
         "away": {
           "unibet": 1.95,
-          "betfair": 2.04,
-          "betclic": 1.92,
-          "leovegas": 1.95,
+          "betfair": 2.06,
+          "1xbet": 2.01,
+          "betclic": 1.95,
+          "leovegas": 1.94,
           "888sport": 1.95,
-          "mybookieag": 1.88,
-          "matchbook": 2.04,
-          "pinnacle": 2.01,
+          "mybookieag": 1.95,
+          "matchbook": 2.06,
+          "pinnacle": 2.02,
           "winamax": 1.96,
-          "codere": 1.92
+          "codere": 1.95
         }
       },
       "model": {
@@ -4634,39 +4079,654 @@
       "sofa": null
     },
     {
+      "id": "14e1451c778870ff2953df9faeea10ec",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "alexmichelsen",
+      "away": "jacobfearnley",
+      "odds": {
+        "home": {
+          "betfair": 1.78,
+          "888sport": 1.67,
+          "unibet": 1.76,
+          "betclic": 1.73,
+          "leovegas": 1.76,
+          "1xbet": 1.75,
+          "pinnacle": 1.74,
+          "mybookieag": 1.7,
+          "matchbook": 1.78,
+          "winamax": 1.76,
+          "codere": 1.7
+        },
+        "away": {
+          "betfair": 2.2,
+          "888sport": 2.2,
+          "unibet": 2.1,
+          "betclic": 2.05,
+          "leovegas": 2.07,
+          "1xbet": 2.23,
+          "pinnacle": 2.2,
+          "mybookieag": 2.12,
+          "matchbook": 2.24,
+          "winamax": 2.1,
+          "codere": 2.12
+        }
+      },
+      "model": {
+        "home": 0.6519120398746636,
+        "away": 0.3480879601253364,
+        "fromModel": true,
+        "eloH": 1827,
+        "eloA": 1718,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "b2957a20a6add0bae2029fc52472853b",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "alexdeminaur",
+      "away": "romanandresburru",
+      "odds": {
+        "home": {
+          "unibet": 1.04,
+          "1xbet": 1.02,
+          "leovegas": 1.04,
+          "betfair": 1.06,
+          "betclic": 1.03,
+          "888sport": 1.04,
+          "matchbook": 1.06,
+          "winamax": 1.03,
+          "pinnacle": 1.05,
+          "codere": 1.03
+        },
+        "away": {
+          "unibet": 11.5,
+          "1xbet": 22,
+          "leovegas": 11,
+          "betfair": 15.5,
+          "betclic": 11,
+          "888sport": 11,
+          "matchbook": 15.5,
+          "winamax": 14.5,
+          "pinnacle": 12.53,
+          "codere": 11
+        }
+      },
+      "model": {
+        "home": 0.9317211857068733,
+        "away": 0.06827881429312666,
+        "fromModel": true,
+        "eloH": 1935,
+        "eloA": 1481,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "1a76e2740082417247d02923fdbf8dd1",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "thanasikokkinaki",
+      "away": "alexanderbublik",
+      "odds": {
+        "home": {
+          "unibet": 3.05,
+          "1xbet": 3.09,
+          "leovegas": 3.05,
+          "betfair": 3.1,
+          "betclic": 2.85,
+          "888sport": 2.9,
+          "mybookieag": 2.92,
+          "matchbook": 3.15,
+          "pinnacle": 3.01,
+          "winamax": 3.05,
+          "codere": 2.9
+        },
+        "away": {
+          "unibet": 1.39,
+          "1xbet": 1.43,
+          "leovegas": 1.38,
+          "betfair": 1.45,
+          "betclic": 1.41,
+          "888sport": 1.4,
+          "mybookieag": 1.39,
+          "matchbook": 1.46,
+          "pinnacle": 1.43,
+          "winamax": 1.42,
+          "codere": 1.39
+        }
+      },
+      "model": {
+        "home": 0.05807841419526414,
+        "away": 0.9419215858047358,
+        "fromModel": true,
+        "eloH": 1526,
+        "eloA": 2010,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "bdd4cc16157f42d8f1c91c2b37c8c9ba",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "damirdzumhur",
+      "away": "arthurfery",
+      "odds": {
+        "home": {
+          "unibet": 4.2,
+          "1xbet": 4.64,
+          "betfair": 4.6,
+          "betclic": 4.2,
+          "leovegas": 4,
+          "888sport": 4.2,
+          "pinnacle": 4.49,
+          "mybookieag": 4.2,
+          "matchbook": 4.6,
+          "winamax": 4.4,
+          "codere": 4.2
+        },
+        "away": {
+          "unibet": 1.24,
+          "1xbet": 1.24,
+          "betfair": 1.25,
+          "betclic": 1.22,
+          "leovegas": 1.24,
+          "888sport": 1.22,
+          "pinnacle": 1.24,
+          "mybookieag": 1.22,
+          "matchbook": 1.26,
+          "winamax": 1.23,
+          "codere": 1.22
+        }
+      },
+      "model": {
+        "home": 0.5910755963149433,
+        "away": 0.40892440368505667,
+        "fromModel": true,
+        "eloH": 1761,
+        "eloA": 1697,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "11cb4a8d64c55c75fbbf745ae653a21f",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "ottovirtanen",
+      "away": "benshelton",
+      "odds": {
+        "home": {
+          "1xbet": 3.86,
+          "betfair": 4.2,
+          "unibet": 3.7,
+          "betclic": 3.65,
+          "leovegas": 3.7,
+          "888sport": 3.5,
+          "mybookieag": 3.6,
+          "matchbook": 4.2,
+          "pinnacle": 3.79,
+          "winamax": 3.8,
+          "codere": 3.6
+        },
+        "away": {
+          "1xbet": 1.31,
+          "betfair": 1.3,
+          "unibet": 1.28,
+          "betclic": 1.27,
+          "leovegas": 1.28,
+          "888sport": 1.3,
+          "mybookieag": 1.28,
+          "matchbook": 1.3,
+          "pinnacle": 1.31,
+          "winamax": 1.29,
+          "codere": 1.28
+        }
+      },
+      "model": {
+        "home": 0.3174296145252281,
+        "away": 0.6825703854747719,
+        "fromModel": true,
+        "eloH": 1732,
+        "eloA": 1865,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "a781545b6be54ba4f37eea8f21ed6695",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "karenkhachanov",
+      "away": "billyharris",
+      "odds": {
+        "home": {
+          "1xbet": 1.34,
+          "betfair": 1.34,
+          "unibet": 1.3,
+          "betclic": 1.3,
+          "leovegas": 1.3,
+          "888sport": 1.3,
+          "pinnacle": 1.32,
+          "mybookieag": 1.29,
+          "matchbook": 1.35,
+          "winamax": 1.32,
+          "codere": 1.3
+        },
+        "away": {
+          "1xbet": 3.64,
+          "betfair": 3.8,
+          "unibet": 3.5,
+          "betclic": 3.45,
+          "leovegas": 3.5,
+          "888sport": 3.5,
+          "pinnacle": 3.68,
+          "mybookieag": 3.46,
+          "matchbook": 3.8,
+          "winamax": 3.65,
+          "codere": 3.45
+        }
+      },
+      "model": {
+        "home": 0.7761545753418307,
+        "away": 0.22384542465816926,
+        "fromModel": true,
+        "eloH": 1934,
+        "eloA": 1718,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "ac6f094b413a84d452192b5b4fb636a4",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "kyrianjacquet",
+      "away": "viliusgaubas",
+      "odds": {
+        "home": {
+          "unibet": 1.45,
+          "1xbet": 1.49,
+          "leovegas": 1.42,
+          "betfair": 1.51,
+          "betclic": 1.47,
+          "888sport": 1.5,
+          "pinnacle": 1.49,
+          "mybookieag": 1.45,
+          "matchbook": 1.51,
+          "winamax": 1.48,
+          "codere": 1.45
+        },
+        "away": {
+          "unibet": 2.88,
+          "1xbet": 2.87,
+          "leovegas": 2.88,
+          "betfair": 2.86,
+          "betclic": 2.62,
+          "888sport": 2.6,
+          "pinnacle": 2.79,
+          "mybookieag": 2.7,
+          "matchbook": 2.88,
+          "winamax": 2.8,
+          "codere": 2.7
+        }
+      },
+      "model": {
+        "home": 0.48561281583400134,
+        "away": 0.5143871841659986,
+        "fromModel": true,
+        "eloH": 1723,
+        "eloA": 1733,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "4579733c9a884ba46e917832c215723c",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "matteoarnaldi",
+      "away": "quentinhalys",
+      "odds": {
+        "home": {
+          "unibet": 2.15,
+          "betfair": 2.18,
+          "1xbet": 2.14,
+          "betclic": 2.06,
+          "leovegas": 1.97,
+          "888sport": 2.1,
+          "mybookieag": 2.06,
+          "pinnacle": 2.14,
+          "matchbook": 2.18,
+          "winamax": 2.1,
+          "codere": 2.06
+        },
+        "away": {
+          "unibet": 1.82,
+          "betfair": 1.8,
+          "1xbet": 1.81,
+          "betclic": 1.74,
+          "leovegas": 1.82,
+          "888sport": 1.73,
+          "mybookieag": 1.74,
+          "pinnacle": 1.78,
+          "matchbook": 1.8,
+          "winamax": 1.78,
+          "codere": 1.74
+        }
+      },
+      "model": {
+        "home": 0.5330513938844411,
+        "away": 0.4669486061155589,
+        "fromModel": true,
+        "eloH": 1767,
+        "eloA": 1744,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "cf27d2437d51cc92259b62ce0b8d7c23",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:10",
+      "day": "30 JUN",
+      "home": "mattiabellucci",
+      "away": "zacharysvajda",
+      "odds": {
+        "home": {
+          "unibet": 1.73,
+          "leovegas": 1.73,
+          "mybookieag": 1.75,
+          "pinnacle": 1.81,
+          "matchbook": 1.79,
+          "winamax": 1.78,
+          "codere": 1.75
+        },
+        "away": {
+          "unibet": 2.1,
+          "leovegas": 2.1,
+          "mybookieag": 2.04,
+          "pinnacle": 2.11,
+          "matchbook": 2.12,
+          "winamax": 2.1,
+          "codere": 2.04
+        }
+      },
+      "model": {
+        "home": 0.5115108912177917,
+        "away": 0.4884891087822083,
+        "fromModel": true,
+        "eloH": 1764,
+        "eloA": 1756,
+        "surface": "grass"
+      },
+      "ts": 1782817800000,
+      "sofa": null
+    },
+    {
+      "id": "4c10f9c86780b761fa8b22928e0534f9",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:40",
+      "day": "30 JUN",
+      "home": "benjaminbonzi",
+      "away": "gabrieldiallo",
+      "odds": {
+        "home": {
+          "unibet": 1.93,
+          "1xbet": 1.98,
+          "leovegas": 1.93,
+          "betfair": 1.98,
+          "betclic": 1.9,
+          "888sport": 1.95,
+          "pinnacle": 1.95,
+          "mybookieag": 1.9,
+          "matchbook": 1.98,
+          "winamax": 1.94,
+          "codere": 1.9
+        },
+        "away": {
+          "unibet": 1.87,
+          "1xbet": 1.94,
+          "leovegas": 1.87,
+          "betfair": 1.98,
+          "betclic": 1.87,
+          "888sport": 1.85,
+          "pinnacle": 1.93,
+          "mybookieag": 1.88,
+          "matchbook": 2,
+          "winamax": 1.92,
+          "codere": 1.87
+        }
+      },
+      "model": {
+        "home": 0.39646368147382194,
+        "away": 0.6035363185261781,
+        "fromModel": true,
+        "eloH": 1745,
+        "eloA": 1818,
+        "surface": "grass"
+      },
+      "ts": 1782819600000,
+      "sofa": null
+    },
+    {
+      "id": "9790547605ef70511264c7e5bb6122e9",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "13:40",
+      "day": "30 JUN",
+      "home": "jaumemunar",
+      "away": "franciscocerundo",
+      "odds": {
+        "home": {
+          "betfair": 4.1,
+          "unibet": 3.9,
+          "betclic": 3.9,
+          "leovegas": 3.9,
+          "888sport": 4,
+          "pinnacle": 4.06,
+          "mybookieag": 3.6,
+          "matchbook": 4.1,
+          "winamax": 4,
+          "codere": 3.6
+        },
+        "away": {
+          "betfair": 1.28,
+          "unibet": 1.28,
+          "betclic": 1.25,
+          "leovegas": 1.25,
+          "888sport": 1.25,
+          "pinnacle": 1.28,
+          "mybookieag": 1.28,
+          "matchbook": 1.28,
+          "winamax": 1.27,
+          "codere": 1.28
+        }
+      },
+      "model": {
+        "home": 0.525880930891169,
+        "away": 0.47411906910883095,
+        "fromModel": true,
+        "eloH": 1829,
+        "eloA": 1811,
+        "surface": "grass"
+      },
+      "ts": 1782819600000,
+      "sofa": null
+    },
+    {
+      "id": "289a97fe64fe86154553f9dfdde13bcb",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:50",
+      "day": "30 JUN",
+      "home": "corentinmoutet",
+      "away": "marcosgiron",
+      "odds": {
+        "home": {
+          "unibet": 2,
+          "betclic": 2,
+          "leovegas": 2,
+          "888sport": 2,
+          "pinnacle": 2.05,
+          "mybookieag": 2.04,
+          "matchbook": 2.08,
+          "winamax": 2.05,
+          "codere": 2.04
+        },
+        "away": {
+          "unibet": 1.81,
+          "betclic": 1.8,
+          "leovegas": 1.81,
+          "888sport": 1.8,
+          "pinnacle": 1.85,
+          "mybookieag": 1.75,
+          "matchbook": 1.86,
+          "winamax": 1.8,
+          "codere": 1.75
+        }
+      },
+      "model": {
+        "home": 0.6374083767444845,
+        "away": 0.3625916232555155,
+        "fromModel": true,
+        "eloH": 1848,
+        "eloA": 1750,
+        "surface": "grass"
+      },
+      "ts": 1782823800000,
+      "sofa": null
+    },
+    {
+      "id": "d85a15638614401bf53f2f4105ebea99",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:50",
+      "day": "30 JUN",
+      "home": "danesweeny",
+      "away": "grigordimitrov",
+      "odds": {
+        "home": {
+          "unibet": 3.95,
+          "leovegas": 3.95,
+          "betclic": 3.88,
+          "888sport": 4,
+          "pinnacle": 4.22,
+          "mybookieag": 3.95,
+          "matchbook": 4.3,
+          "winamax": 4.2,
+          "codere": 3.95
+        },
+        "away": {
+          "unibet": 1.25,
+          "leovegas": 1.25,
+          "betclic": 1.24,
+          "888sport": 1.25,
+          "pinnacle": 1.26,
+          "mybookieag": 1.24,
+          "matchbook": 1.27,
+          "winamax": 1.25,
+          "codere": 1.24
+        }
+      },
+      "model": {
+        "home": 0.27089003710224746,
+        "away": 0.7291099628977525,
+        "fromModel": true,
+        "eloH": 1713,
+        "eloA": 1885,
+        "surface": "grass"
+      },
+      "ts": 1782823800000,
+      "sofa": null
+    },
+    {
       "id": "5ebcde4d1cf57d0a3b9b99c4a40b00a1",
       "tour": "atp",
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "14:50",
       "day": "30 JUN",
       "home": "jakubmensik",
       "away": "tobysamuel",
       "odds": {
         "home": {
-          "unibet": 1.42,
-          "leovegas": 1.42,
-          "betfair": 1.45,
-          "betclic": 1.41,
+          "unibet": 1.38,
+          "leovegas": 1.38,
+          "betclic": 1.38,
           "888sport": 1.4,
-          "pinnacle": 1.43,
-          "mybookieag": 1.39,
-          "matchbook": 1.45,
-          "winamax": 1.43,
-          "codere": 1.41
+          "pinnacle": 1.4,
+          "mybookieag": 1.38,
+          "matchbook": 1.43,
+          "winamax": 1.41,
+          "codere": 1.38
         },
         "away": {
-          "unibet": 2.9,
-          "leovegas": 2.88,
-          "betfair": 3.1,
-          "betclic": 2.88,
+          "unibet": 3,
+          "leovegas": 3,
+          "betclic": 3,
           "888sport": 2.9,
-          "pinnacle": 3.04,
-          "mybookieag": 2.77,
-          "matchbook": 3.15,
-          "winamax": 2.95,
-          "codere": 2.85
+          "pinnacle": 3.18,
+          "mybookieag": 2.96,
+          "matchbook": 3.2,
+          "winamax": 3.1,
+          "codere": 2.95
         }
       },
       "model": {
@@ -4677,7 +4737,234 @@
         "eloA": 1701,
         "surface": "grass"
       },
-      "ts": 1782813600000,
+      "ts": 1782823800000,
+      "sofa": null
+    },
+    {
+      "id": "6f5afd8b1147cc48f757ed20f14464d3",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:50",
+      "day": "30 JUN",
+      "home": "lorenzosonego",
+      "away": "tomasmartinetche",
+      "odds": {
+        "home": {
+          "unibet": 1.78,
+          "betclic": 1.79,
+          "leovegas": 1.78,
+          "888sport": 1.8,
+          "mybookieag": 1.79,
+          "pinnacle": 1.84,
+          "matchbook": 1.85,
+          "winamax": 1.82,
+          "codere": 1.79
+        },
+        "away": {
+          "unibet": 2.02,
+          "betclic": 2,
+          "leovegas": 2.02,
+          "888sport": 2,
+          "mybookieag": 2,
+          "pinnacle": 2.06,
+          "matchbook": 2.12,
+          "winamax": 2.05,
+          "codere": 2
+        }
+      },
+      "model": {
+        "home": 0.469815319996098,
+        "away": 0.5301846800039021,
+        "fromModel": true,
+        "eloH": 1776,
+        "eloA": 1797,
+        "surface": "grass"
+      },
+      "ts": 1782823800000,
+      "sofa": null
+    },
+    {
+      "id": "fb65964d02c99ad637e0a48d3afa66ad",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:50",
+      "day": "30 JUN",
+      "home": "patrickkypson",
+      "away": "mackenziemcdonal",
+      "odds": {
+        "home": {
+          "1xbet": 3.29,
+          "888sport": 3.1,
+          "unibet": 3.1,
+          "leovegas": 3.1,
+          "betclic": 3.15,
+          "mybookieag": 3.14,
+          "matchbook": 3.45,
+          "pinnacle": 3.31,
+          "winamax": 3.3,
+          "codere": 3.15
+        },
+        "away": {
+          "1xbet": 1.4,
+          "888sport": 1.36,
+          "unibet": 1.36,
+          "leovegas": 1.36,
+          "betclic": 1.35,
+          "mybookieag": 1.35,
+          "matchbook": 1.37,
+          "pinnacle": 1.38,
+          "winamax": 1.36,
+          "codere": 1.35
+        }
+      },
+      "model": {
+        "home": 0.5330513938844411,
+        "away": 0.4669486061155589,
+        "fromModel": true,
+        "eloH": 1747,
+        "eloA": 1724,
+        "surface": "grass"
+      },
+      "ts": 1782823800000,
+      "sofa": null
+    },
+    {
+      "id": "2953d0eade4d5062d058efbc9e7b1458",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "15:40",
+      "day": "30 JUN",
+      "home": "taylorfritz",
+      "away": "jackdraper",
+      "odds": {
+        "home": {
+          "unibet": 1.57,
+          "betclic": 1.6,
+          "leovegas": 1.57,
+          "888sport": 1.57,
+          "mybookieag": 1.6,
+          "matchbook": 1.61,
+          "pinnacle": 1.61,
+          "winamax": 1.64,
+          "codere": 1.6
+        },
+        "away": {
+          "unibet": 2.38,
+          "betclic": 2.29,
+          "leovegas": 2.38,
+          "888sport": 2.38,
+          "mybookieag": 2.29,
+          "matchbook": 2.58,
+          "pinnacle": 2.45,
+          "winamax": 2.35,
+          "codere": 2.29
+        }
+      },
+      "model": {
+        "home": 0.750163481828642,
+        "away": 0.249836518171358,
+        "fromModel": true,
+        "eloH": 1974,
+        "eloA": 1783,
+        "surface": "grass"
+      },
+      "ts": 1782826800000,
+      "sofa": null
+    },
+    {
+      "id": "8db5bd8b78df6f2384e180511464bc2f",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:00",
+      "day": "30 JUN",
+      "home": "marianonavone",
+      "away": "flaviocobolli",
+      "odds": {
+        "home": {
+          "unibet": 3.95,
+          "leovegas": 3.95,
+          "betclic": 3.8,
+          "888sport": 4,
+          "mybookieag": 3.9,
+          "pinnacle": 4,
+          "matchbook": 4.2,
+          "winamax": 4.1,
+          "codere": 3.9
+        },
+        "away": {
+          "unibet": 1.25,
+          "leovegas": 1.25,
+          "betclic": 1.26,
+          "888sport": 1.25,
+          "mybookieag": 1.24,
+          "pinnacle": 1.28,
+          "matchbook": 1.29,
+          "winamax": 1.26,
+          "codere": 1.25
+        }
+      },
+      "model": {
+        "home": 0.581301478368915,
+        "away": 0.418698521631085,
+        "fromModel": true,
+        "eloH": 1837,
+        "eloA": 1780,
+        "surface": "grass"
+      },
+      "ts": 1782828000000,
+      "sofa": null
+    },
+    {
+      "id": "be9660c95afe70b298a651e964aaebef",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:00",
+      "day": "30 JUN",
+      "home": "francestiafoe",
+      "away": "terenceatmane",
+      "odds": {
+        "home": {
+          "unibet": 1.27,
+          "betclic": 1.23,
+          "leovegas": 1.27,
+          "888sport": 1.25,
+          "pinnacle": 1.25,
+          "mybookieag": 1.22,
+          "matchbook": 1.27,
+          "winamax": 1.23,
+          "codere": 1.22
+        },
+        "away": {
+          "unibet": 3.75,
+          "betclic": 4,
+          "leovegas": 3.75,
+          "888sport": 4,
+          "pinnacle": 4.31,
+          "mybookieag": 4.1,
+          "matchbook": 4.6,
+          "winamax": 4.5,
+          "codere": 4.1
+        }
+      },
+      "model": {
+        "home": 0.6813218351663937,
+        "away": 0.31867816483360634,
+        "fromModel": true,
+        "eloH": 1937,
+        "eloA": 1805,
+        "surface": "grass"
+      },
+      "ts": 1782828000000,
       "sofa": null
     },
     {
@@ -4686,34 +4973,32 @@
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "16:00",
       "day": "30 JUN",
       "home": "tallongriekspoor",
       "away": "jamesduckworth",
       "odds": {
         "home": {
-          "unibet": 1.42,
-          "leovegas": 1.42,
-          "betclic": 1.4,
+          "unibet": 1.41,
+          "leovegas": 1.41,
+          "betclic": 1.39,
           "888sport": 1.4,
           "pinnacle": 1.42,
-          "betfair": 1.43,
           "mybookieag": 1.38,
-          "matchbook": 1.43,
-          "winamax": 1.42,
-          "codere": 1.4
+          "matchbook": 1.44,
+          "winamax": 1.41,
+          "codere": 1.39
         },
         "away": {
-          "unibet": 2.85,
-          "leovegas": 2.85,
-          "betclic": 2.9,
+          "unibet": 2.9,
+          "leovegas": 2.9,
+          "betclic": 2.95,
           "888sport": 2.9,
-          "pinnacle": 3.09,
-          "betfair": 3.1,
-          "mybookieag": 2.81,
-          "matchbook": 3.1,
-          "winamax": 3,
-          "codere": 2.9
+          "pinnacle": 3.08,
+          "mybookieag": 2.95,
+          "matchbook": 3.2,
+          "winamax": 3.05,
+          "codere": 2.95
         }
       },
       "model": {
@@ -4724,7 +5009,7 @@
         "eloA": 1760,
         "surface": "grass"
       },
-      "ts": 1782813600000,
+      "ts": 1782828000000,
       "sofa": null
     },
     {
@@ -4733,34 +5018,30 @@
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "16:00",
       "day": "30 JUN",
       "home": "vitkopriva",
       "away": "janchoinski",
       "odds": {
         "home": {
-          "unibet": 1.61,
-          "1xbet": 1.72,
-          "betfair": 1.7,
+          "unibet": 1.64,
           "betclic": 1.64,
-          "leovegas": 1.61,
-          "888sport": 1.67,
-          "mybookieag": 1.62,
-          "matchbook": 1.7,
-          "pinnacle": 1.68,
+          "leovegas": 1.64,
+          "888sport": 1.61,
+          "mybookieag": 1.64,
+          "matchbook": 1.69,
+          "pinnacle": 1.67,
           "winamax": 1.68,
           "codere": 1.64
         },
         "away": {
-          "unibet": 2.3,
-          "1xbet": 2.29,
-          "betfair": 2.26,
+          "unibet": 2.25,
           "betclic": 2.22,
-          "leovegas": 2.3,
-          "888sport": 2.2,
-          "mybookieag": 2.17,
-          "matchbook": 2.28,
-          "pinnacle": 2.29,
+          "leovegas": 2.25,
+          "888sport": 2.3,
+          "mybookieag": 2.22,
+          "matchbook": 2.34,
+          "pinnacle": 2.33,
           "winamax": 2.25,
           "codere": 2.22
         }
@@ -4773,248 +5054,52 @@
         "eloA": 1760,
         "surface": "grass"
       },
-      "ts": 1782813600000,
+      "ts": 1782828000000,
       "sofa": null
     },
     {
-      "id": "ac6f094b413a84d452192b5b4fb636a4",
+      "id": "bf95b92b1856ff46a8bd2b89958e4657",
       "tour": "atp",
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "16:50",
       "day": "30 JUN",
-      "home": "kyrianjacquet",
-      "away": "viliusgaubas",
+      "home": "jirilehecka",
+      "away": "alexeipopyrin",
       "odds": {
         "home": {
-          "unibet": 1.42,
-          "1xbet": 1.46,
-          "leovegas": 1.42,
-          "betfair": 1.46,
-          "betclic": 1.43,
-          "888sport": 1.44,
-          "pinnacle": 1.46,
-          "mybookieag": 1.38,
-          "matchbook": 1.46,
-          "winamax": 1.44,
-          "codere": 1.39
+          "unibet": 1.29,
+          "leovegas": 1.29,
+          "betclic": 1.29,
+          "888sport": 1.29,
+          "pinnacle": 1.29,
+          "mybookieag": 1.26,
+          "matchbook": 1.3,
+          "winamax": 1.28,
+          "codere": 1.26
         },
         "away": {
-          "unibet": 2.95,
-          "1xbet": 2.99,
-          "leovegas": 2.88,
-          "betfair": 3,
-          "betclic": 2.75,
-          "888sport": 2.75,
-          "pinnacle": 2.9,
-          "mybookieag": 2.84,
-          "matchbook": 3,
-          "winamax": 2.9,
-          "codere": 2.95
+          "unibet": 3.6,
+          "leovegas": 3.6,
+          "betclic": 3.5,
+          "888sport": 3.6,
+          "pinnacle": 3.9,
+          "mybookieag": 3.75,
+          "matchbook": 4.2,
+          "winamax": 3.95,
+          "codere": 3.75
         }
       },
       "model": {
-        "home": 0.48561281583400134,
-        "away": 0.5143871841659986,
+        "home": 0.7358774441014764,
+        "away": 0.2641225558985236,
         "fromModel": true,
-        "eloH": 1723,
-        "eloA": 1733,
+        "eloH": 1967,
+        "eloA": 1789,
         "surface": "grass"
       },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "6f5afd8b1147cc48f757ed20f14464d3",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "lorenzosonego",
-      "away": "tomasmartinetche",
-      "odds": {
-        "home": {
-          "1xbet": 1.82,
-          "unibet": 1.81,
-          "betclic": 1.76,
-          "leovegas": 1.78,
-          "888sport": 1.73,
-          "betfair": 1.74,
-          "mybookieag": 1.73,
-          "pinnacle": 1.8,
-          "matchbook": 1.8,
-          "winamax": 1.8,
-          "codere": 1.76
-        },
-        "away": {
-          "1xbet": 2.13,
-          "unibet": 2.02,
-          "betclic": 2.03,
-          "leovegas": 2.02,
-          "888sport": 2.1,
-          "betfair": 2.04,
-          "mybookieag": 1.99,
-          "pinnacle": 2.11,
-          "matchbook": 2.1,
-          "winamax": 2.05,
-          "codere": 2.03
-        }
-      },
-      "model": {
-        "home": 0.469815319996098,
-        "away": 0.5301846800039021,
-        "fromModel": true,
-        "eloH": 1776,
-        "eloA": 1797,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "fb65964d02c99ad637e0a48d3afa66ad",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "patrickkypson",
-      "away": "mackenziemcdonal",
-      "odds": {
-        "home": {
-          "888sport": 3.1,
-          "betfair": 3.5,
-          "unibet": 3,
-          "leovegas": 3,
-          "betclic": 3.1,
-          "mybookieag": 2.98,
-          "matchbook": 3.45,
-          "pinnacle": 3.31,
-          "winamax": 3.25,
-          "codere": 3.1
-        },
-        "away": {
-          "888sport": 1.36,
-          "betfair": 1.38,
-          "unibet": 1.35,
-          "leovegas": 1.35,
-          "betclic": 1.36,
-          "mybookieag": 1.34,
-          "matchbook": 1.38,
-          "pinnacle": 1.38,
-          "winamax": 1.37,
-          "codere": 1.36
-        }
-      },
-      "model": {
-        "home": 0.5330513938844411,
-        "away": 0.4669486061155589,
-        "fromModel": true,
-        "eloH": 1747,
-        "eloA": 1724,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "4579733c9a884ba46e917832c215723c",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "matteoarnaldi",
-      "away": "quentinhalys",
-      "odds": {
-        "home": {
-          "unibet": 2.1,
-          "betfair": 2.16,
-          "1xbet": 2.13,
-          "betclic": 1.97,
-          "leovegas": 1.97,
-          "888sport": 2.1,
-          "mybookieag": 1.99,
-          "pinnacle": 2.14,
-          "matchbook": 2.16,
-          "winamax": 2.05,
-          "codere": 2.03
-        },
-        "away": {
-          "unibet": 1.82,
-          "betfair": 1.8,
-          "1xbet": 1.82,
-          "betclic": 1.81,
-          "leovegas": 1.82,
-          "888sport": 1.73,
-          "mybookieag": 1.73,
-          "pinnacle": 1.78,
-          "matchbook": 1.8,
-          "winamax": 1.8,
-          "codere": 1.76
-        }
-      },
-      "model": {
-        "home": 0.5330513938844411,
-        "away": 0.4669486061155589,
-        "fromModel": true,
-        "eloH": 1767,
-        "eloA": 1744,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
-      "sofa": null
-    },
-    {
-      "id": "cf27d2437d51cc92259b62ce0b8d7c23",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "30 JUN",
-      "home": "mattiabellucci",
-      "away": "zacharysvajda",
-      "odds": {
-        "home": {
-          "betfair": 1.74,
-          "unibet": 1.73,
-          "betclic": 1.72,
-          "leovegas": 1.73,
-          "888sport": 1.73,
-          "mybookieag": 1.67,
-          "pinnacle": 1.75,
-          "matchbook": 1.74,
-          "winamax": 1.76,
-          "codere": 1.69
-        },
-        "away": {
-          "betfair": 2.26,
-          "unibet": 2.1,
-          "betclic": 2.08,
-          "leovegas": 2.1,
-          "888sport": 2.1,
-          "mybookieag": 2.08,
-          "pinnacle": 2.19,
-          "matchbook": 2.26,
-          "winamax": 2.1,
-          "codere": 2.13
-        }
-      },
-      "model": {
-        "home": 0.5115108912177917,
-        "away": 0.4884891087822083,
-        "fromModel": true,
-        "eloH": 1764,
-        "eloA": 1756,
-        "surface": "grass"
-      },
-      "ts": 1782813600000,
+      "ts": 1782831000000,
       "sofa": null
     }
   ],
@@ -5022,19 +5107,19 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 58,
-      "book": "betfair_ex_eu",
+      "conf": 59,
+      "book": "matchbook",
       "legs": [
         {
           "id": "1a76e2740082417247d02923fdbf8dd1",
           "sport": "tennis_atp_wimbledon",
-          "ts": 1782813600000,
+          "ts": 1782817800000,
           "side": "away",
           "sofa": null,
           "match": "T. Kokkinakis – A. Bublik",
           "pick": "Gana A. Bublik",
-          "odd": 1.45,
-          "book": "betfair_ex_eu"
+          "odd": 1.46,
+          "book": "matchbook"
         },
         {
           "id": "9c197a6a36fd1d26beeb13fab6c084f9",
@@ -5044,19 +5129,19 @@
           "sofa": null,
           "match": "A. Rinderknech – O. Tarvet",
           "pick": "Gana A. Rinderknech",
-          "odd": 1.72,
-          "book": "betfair_ex_eu"
+          "odd": 1.73,
+          "book": "matchbook"
         },
         {
-          "id": "a781545b6be54ba4f37eea8f21ed6695",
+          "id": "320fd6d02bf1479455f689e7e8e32652",
           "sport": "tennis_atp_wimbledon",
-          "ts": 1782813600000,
+          "ts": 1782741600000,
           "side": "home",
           "sofa": null,
-          "match": "K. Khachanov – B. Harris",
-          "pick": "Gana K. Khachanov",
-          "odd": 1.37,
-          "book": "betfair_ex_eu"
+          "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.29,
+          "book": "matchbook"
         }
       ]
     },
@@ -5064,19 +5149,8 @@
       "id": "c2",
       "name": "Combinada Valor",
       "conf": 28,
-      "book": "unibet_nl",
+      "book": "matchbook",
       "legs": [
-        {
-          "id": "289a97fe64fe86154553f9dfdde13bcb",
-          "sport": "tennis_atp_wimbledon",
-          "ts": 1782813600000,
-          "side": "home",
-          "sofa": null,
-          "match": "C. Moutet – M. Giron",
-          "pick": "Gana C. Moutet",
-          "odd": 2.05,
-          "book": "unibet_nl"
-        },
         {
           "id": "2ba367a0a2de0261300b51574f55dde7",
           "sport": "tennis_atp_wimbledon",
@@ -5085,19 +5159,30 @@
           "sofa": null,
           "match": "Y. Hanfmann – G. Mpetshi Perricard",
           "pick": "Gana Y. Hanfmann",
-          "odd": 2.25,
-          "book": "unibet_nl"
+          "odd": 2.26,
+          "book": "matchbook"
+        },
+        {
+          "id": "289a97fe64fe86154553f9dfdde13bcb",
+          "sport": "tennis_atp_wimbledon",
+          "ts": 1782823800000,
+          "side": "home",
+          "sofa": null,
+          "match": "C. Moutet – M. Giron",
+          "pick": "Gana C. Moutet",
+          "odd": 2.08,
+          "book": "matchbook"
         },
         {
           "id": "2953d0eade4d5062d058efbc9e7b1458",
           "sport": "tennis_atp_wimbledon",
-          "ts": 1782813600000,
+          "ts": 1782826800000,
           "side": "home",
           "sofa": null,
           "match": "T. Fritz – J. Draper",
           "pick": "Gana T. Fritz",
-          "odd": 1.68,
-          "book": "unibet_nl"
+          "odd": 1.61,
+          "book": "matchbook"
         }
       ]
     }
@@ -5963,6 +6048,51 @@
       "book": "betfair_ex_eu",
       "homeName": "J. Mensik",
       "awayName": "T. Samuel"
+    },
+    {
+      "id": "ac6f094b413a84d452192b5b4fb636a4",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1782817800000,
+      "date": "30 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "K. Jacquet – V. Gaubas",
+      "pickKey": "away",
+      "pickLabel": "Gana V. Gaubas",
+      "odd": 2.88,
+      "book": "unibet_nl",
+      "homeName": "K. Jacquet",
+      "awayName": "V. Gaubas"
+    },
+    {
+      "id": "2af6193491a1eaeeba23d9b48c069d29",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1782727200000,
+      "date": "29 JUN",
+      "sofa": null,
+      "pickHome": true,
+      "match": "D. Shapovalov – P. Carreno Busta",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Shapovalov",
+      "odd": 1.41,
+      "book": "betfair_ex_eu",
+      "homeName": "D. Shapovalov",
+      "awayName": "P. Carreno Busta"
+    },
+    {
+      "id": "68ba4da7fda72170ec9204bd16e38485",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1782738600000,
+      "date": "29 JUN",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Cilic – D. Medvedev",
+      "pickKey": "away",
+      "pickLabel": "Gana D. Medvedev",
+      "odd": 1.4,
+      "book": "onexbet",
+      "homeName": "M. Cilic",
+      "awayName": "D. Medvedev"
     }
   ],
   "COMBO_RECORD": [
@@ -7120,9 +7250,203 @@
           "awayName": "J. Draper"
         }
       ]
+    },
+    {
+      "dayId": "29 JUN·c1",
+      "date": "29 JUN",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "1a76e2740082417247d02923fdbf8dd1",
+          "sport": "tennis_atp_wimbledon",
+          "side": "away",
+          "sofa": null,
+          "match": "T. Kokkinakis – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.46,
+          "homeName": "T. Kokkinakis",
+          "awayName": "A. Bublik"
+        },
+        {
+          "id": "9c197a6a36fd1d26beeb13fab6c084f9",
+          "sport": "tennis_atp_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Rinderknech – O. Tarvet",
+          "pick": "Gana A. Rinderknech",
+          "odd": 1.73,
+          "homeName": "A. Rinderknech",
+          "awayName": "O. Tarvet"
+        },
+        {
+          "id": "320fd6d02bf1479455f689e7e8e32652",
+          "sport": "tennis_atp_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.29,
+          "homeName": "A. Davidovich Fokina",
+          "awayName": "J. Manuel Cerundolo"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "29 JUN",
+      "match": "T. Fritz – J. Draper",
+      "marginPct": 0.26,
+      "profit": 0.27,
+      "ts": 1782826800000,
+      "homeName": "T. Fritz",
+      "awayName": "J. Draper",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana T. Fritz",
+          "odd": 1.64,
+          "book": "winamax_de"
+        },
+        {
+          "pick": "Gana J. Draper",
+          "odd": 2.58,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "U. Humbert – Z. Bergs",
+      "marginPct": 0.29,
+      "profit": 0.3,
+      "ts": 1782810000000,
+      "homeName": "U. Humbert",
+      "awayName": "Z. Bergs",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana U. Humbert",
+          "odd": 1.61,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana Z. Bergs",
+          "odd": 2.66,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "J. Struff – S. Baez",
+      "marginPct": 0.09,
+      "profit": 0.09,
+      "ts": 1782738600000,
+      "homeName": "J. Struff",
+      "awayName": "S. Baez",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana J. Struff",
+          "odd": 1.41,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana S. Baez",
+          "odd": 3.45,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "A. Walton – D. Prizmic",
+      "marginPct": 0.97,
+      "profit": 0.98,
+      "ts": 1782735600000,
+      "homeName": "A. Walton",
+      "awayName": "D. Prizmic",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana A. Walton",
+          "odd": 2.3,
+          "book": "unibet_fr"
+        },
+        {
+          "pick": "Gana D. Prizmic",
+          "odd": 1.8,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "H. Medjedovic – S. Ofner",
+      "marginPct": 0.43,
+      "profit": 0.43,
+      "ts": 1782733200000,
+      "homeName": "H. Medjedovic",
+      "awayName": "S. Ofner",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana H. Medjedovic",
+          "odd": 1.52,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana S. Ofner",
+          "odd": 2.96,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "C. Ruud – H. Hurkacz",
+      "marginPct": 0.31,
+      "profit": 0.31,
+      "ts": 1782733200000,
+      "homeName": "C. Ruud",
+      "awayName": "H. Hurkacz",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana C. Ruud",
+          "odd": 2.95,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana H. Hurkacz",
+          "odd": 1.52,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "date": "29 JUN",
+      "match": "R. Jodar – F. Gill",
+      "marginPct": 0.34,
+      "profit": 0.34,
+      "ts": 1782727200000,
+      "homeName": "R. Jodar",
+      "awayName": "F. Gill",
+      "sport": "tennis_atp_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana R. Jodar",
+          "odd": 1.19,
+          "book": "unibet_se"
+        },
+        {
+          "pick": "Gana F. Gill",
+          "odd": 6.4,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
     {
       "date": "28 JUN",
       "match": "C. Moutet – M. Giron",
@@ -7846,160 +8170,6 @@
           "pick": "Gana A. Fery",
           "odd": 2.28,
           "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "17 JUN",
-      "match": "L. Tien – F. Auger-Aliassime",
-      "marginPct": 1.71,
-      "profit": 1.74,
-      "ts": 1781697000000,
-      "homeName": "L. Tien",
-      "awayName": "F. Auger-Aliassime",
-      "sport": "tennis_atp_halle_open",
-      "legs": [
-        {
-          "pick": "Gana L. Tien",
-          "odd": 2.45,
-          "book": "gtbets"
-        },
-        {
-          "pick": "Gana F. Auger-Aliassime",
-          "odd": 1.74,
-          "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "17 JUN",
-      "match": "B. Shelton – L. Sonego",
-      "marginPct": 0.99,
-      "profit": 1,
-      "ts": 1781692800000,
-      "homeName": "B. Shelton",
-      "awayName": "L. Sonego",
-      "sport": "tennis_atp_halle_open",
-      "legs": [
-        {
-          "pick": "Gana B. Shelton",
-          "odd": 1.32,
-          "book": "gtbets"
-        },
-        {
-          "pick": "Gana L. Sonego",
-          "odd": 4.3,
-          "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "17 JUN",
-      "match": "B. Nakashima – I. Buse",
-      "marginPct": 1.22,
-      "profit": 1.24,
-      "ts": 1781692200000,
-      "homeName": "B. Nakashima",
-      "awayName": "I. Buse",
-      "sport": "tennis_atp_queens_club_champ",
-      "legs": [
-        {
-          "pick": "Gana B. Nakashima",
-          "odd": 1.38,
-          "book": "gtbets"
-        },
-        {
-          "pick": "Gana I. Buse",
-          "odd": 3.8,
-          "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "17 JUN",
-      "match": "Z. Bergs – T. Fritz",
-      "marginPct": 0.74,
-      "profit": 0.75,
-      "ts": 1781688600000,
-      "homeName": "Z. Bergs",
-      "awayName": "T. Fritz",
-      "sport": "tennis_atp_halle_open",
-      "legs": [
-        {
-          "pick": "Gana Z. Bergs",
-          "odd": 4.6,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "pick": "Gana T. Fritz",
-          "odd": 1.29,
-          "book": "gtbets"
-        }
-      ]
-    },
-    {
-      "date": "17 JUN",
-      "match": "H. Medjedovic – U. Humbert",
-      "marginPct": 0.28,
-      "profit": 0.28,
-      "ts": 1781683200000,
-      "homeName": "H. Medjedovic",
-      "awayName": "U. Humbert",
-      "sport": "tennis_atp_queens_club_champ",
-      "legs": [
-        {
-          "pick": "Gana H. Medjedovic",
-          "odd": 2.51,
-          "book": "pinnacle"
-        },
-        {
-          "pick": "Gana U. Humbert",
-          "odd": 1.67,
-          "book": "gtbets"
-        }
-      ]
-    },
-    {
-      "date": "16 JUN",
-      "match": "U. Humbert – M. Cilic",
-      "marginPct": 1.2,
-      "profit": 1.21,
-      "ts": 1781627400000,
-      "homeName": "U. Humbert",
-      "awayName": "M. Cilic",
-      "sport": "tennis_atp_queens_club_champ",
-      "legs": [
-        {
-          "pick": "Gana U. Humbert",
-          "odd": 1.82,
-          "book": "gtbets"
-        },
-        {
-          "pick": "Gana M. Cilic",
-          "odd": 2.28,
-          "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "16 JUN",
-      "match": "T. Martin Etcheverry – D. Medvedev",
-      "marginPct": 1.77,
-      "profit": 1.8,
-      "ts": 1781619000000,
-      "homeName": "T. Martin Etcheverry",
-      "awayName": "D. Medvedev",
-      "sport": "tennis_atp_halle_open",
-      "legs": [
-        {
-          "pick": "Gana T. Martin Etcheverry",
-          "odd": 5.3,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "pick": "Gana D. Medvedev",
-          "odd": 1.26,
-          "book": "gtbets"
         }
       ]
     }
@@ -11920,11 +12090,11 @@
       "country": "France",
       "photo": "https://api.api-tennis.com/logo-tennis/1105_u-humbert.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -12318,6 +12488,7 @@
       "country": "Belgium",
       "photo": "https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg",
       "form": [
+        "W",
         "W",
         "W",
         "W"
@@ -12831,7 +13002,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg",
       "form": [
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -13465,7 +13637,8 @@
       "form": [
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -14362,7 +14535,7 @@
         "L",
         "L",
         "L",
-        "L"
+        "W"
       ]
     },
     {
@@ -14553,10 +14726,10 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/578_e-zhu.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -14803,7 +14976,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "villanueva": [
       "L",
@@ -14813,6 +14987,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "taipeiw": [
@@ -14930,6 +15105,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "tsao": [
@@ -14999,7 +15175,6 @@
     ],
     "zhu": [
       "L",
-      "L",
       "W",
       "W",
       "L",
@@ -15007,6 +15182,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "lu": [
@@ -15352,7 +15528,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "capurrotaborda": [
       "W",
@@ -15660,7 +15837,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vanlobensels": [
       "W",
@@ -15672,6 +15850,7 @@
     "karki": [
       "L",
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -15783,7 +15962,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "fritz": [
       "W",
@@ -15952,6 +16132,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "kusuhara": [
@@ -15978,7 +16159,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "kim": [
       "L",
@@ -16276,9 +16458,11 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "laskevich": [
+      "W",
       "W",
       "W",
       "W",
@@ -16322,7 +16506,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "damariei": [
       "L"
@@ -16481,7 +16666,8 @@
     "skoch": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "lumsden": [
       "W",
@@ -16608,9 +16794,11 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "kumstat": [
+      "L",
       "L",
       "L"
     ],
@@ -16688,11 +16876,13 @@
       "L"
     ],
     "cui": [
+      "L",
       "L"
     ],
     "martin": [
       "W",
       "W",
+      "L",
       "L"
     ],
     "pow": [
@@ -16746,6 +16936,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "hartig": [
@@ -16817,14 +17008,14 @@
     "delange": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ratiu": [
       "L",
@@ -16852,6 +17043,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -16902,6 +17094,7 @@
     "spopa": [
       "L",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -17035,7 +17228,9 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "thomasiglesias": [
       "L"
@@ -17116,7 +17311,8 @@
       "W",
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "rai": [
       "L",
@@ -17346,7 +17542,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hossamsalah": [
       "W",
@@ -17482,7 +17679,6 @@
       "L"
     ],
     "tabacco": [
-      "L",
       "W",
       "W",
       "L",
@@ -17491,7 +17687,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "nesterov": [
       "L",
@@ -17499,10 +17696,12 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "lavela": [
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -17513,6 +17712,7 @@
     "kravchenko": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -17529,7 +17729,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ssteurj": [
       "W",
@@ -17700,6 +17901,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "barrosocampos": [
@@ -17711,7 +17913,8 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "voljavec": [
       "L",
@@ -17722,6 +17925,7 @@
     ],
     "poljicak": [
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -17811,8 +18015,8 @@
       "W"
     ],
     "ratti": [
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -17857,7 +18061,8 @@
     "santillan": [
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "gorneswalkow": [
       "W",
@@ -17895,6 +18100,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -17968,6 +18174,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "meszaros": [
@@ -17996,6 +18203,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "jilly": [
@@ -18025,7 +18233,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "phillips": [
       "L"
@@ -18033,6 +18242,7 @@
     "psenthilkumar": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -18122,12 +18332,14 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "vkrstic": [
       "L"
     ],
     "djuric": [
+      "W",
       "W",
       "W",
       "W",
@@ -18220,6 +18432,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "piatti": [
@@ -18283,7 +18496,8 @@
     "almazanvaliente": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "juanmano": [
       "L"
@@ -18430,6 +18644,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "husar": [
@@ -18541,13 +18756,13 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "mlkva": [
       "L"
     ],
     "radovanovic": [
-      "L",
       "W",
       "W",
       "W",
@@ -18556,7 +18771,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "stevic": [
       "L"
@@ -18572,6 +18788,7 @@
     ],
     "langmo": [
       "W",
+      "L",
       "L"
     ],
     "kuzmenok": [
@@ -18580,7 +18797,8 @@
     ],
     "suresh": [
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "panasa": [
       "W",
@@ -18656,7 +18874,8 @@
       "L"
     ],
     "baris": [
-      "L"
+      "L",
+      "W"
     ],
     "vargas": [
       "L"
@@ -18682,9 +18901,11 @@
     "fenty": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "aguiard": [
+      "L",
       "L"
     ],
     "ccuno": [
@@ -18807,7 +19028,8 @@
       "L",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "garnevska": [
       "W",
@@ -18860,6 +19082,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -18951,6 +19174,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "satterfield": [
@@ -19027,7 +19251,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "podhajecka": [
       "W",
@@ -19086,6 +19311,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "tourkhani": [
@@ -19122,7 +19348,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "medjedovic": [
       "L"
@@ -19291,6 +19518,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "jacomejaramillo": [
@@ -19319,6 +19547,7 @@
     "sobolieva": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -19553,7 +19782,8 @@
     ],
     "svajda": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "huesler": [
       "L"
@@ -19781,6 +20011,7 @@
     ],
     "ncazacu": [
       "W",
+      "L",
       "L"
     ],
     "faucon": [
@@ -19800,6 +20031,7 @@
       "L"
     ],
     "huang": [
+      "L",
       "L"
     ],
     "kisimov": [
@@ -19817,7 +20049,8 @@
     "frubiofierros": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "sbentzel": [
       "L"
@@ -19825,9 +20058,11 @@
     "rocabatalla": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "palan": [
+      "L",
       "L"
     ],
     "kalyanpur": [
@@ -19843,7 +20078,8 @@
     ],
     "makk": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "barrientos": [
       "W",
@@ -19899,16 +20135,19 @@
       "L",
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "hayen": [
-      "L"
+      "L",
+      "W"
     ],
     "andradedasilva": [
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "hremondypagotto": [
       "L"
@@ -19919,6 +20158,7 @@
       "L"
     ],
     "price": [
+      "L",
       "L"
     ],
     "parisca": [
@@ -19944,7 +20184,8 @@
       "L"
     ],
     "goityzapico": [
-      "L"
+      "L",
+      "W"
     ],
     "huertasdelpinocordova": [
       "W",
@@ -19961,7 +20202,8 @@
       "L"
     ],
     "janvier": [
-      "L"
+      "L",
+      "W"
     ],
     "mertens": [
       "W",
@@ -19995,6 +20237,7 @@
       "L"
     ],
     "bergs": [
+      "W",
       "W",
       "W",
       "W"
@@ -20066,7 +20309,8 @@
     "compagnucci": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "mrva": [
       "L"
@@ -20101,6 +20345,7 @@
       "L"
     ],
     "castelnuovo": [
+      "L",
       "L"
     ],
     "cretu": [
@@ -20114,7 +20359,8 @@
       "L"
     ],
     "ghetu": [
-      "L"
+      "L",
+      "W"
     ],
     "krumich": [
       "W",
@@ -20129,6 +20375,7 @@
       "L"
     ],
     "stefani": [
+      "W",
       "W",
       "W",
       "W"
@@ -20173,7 +20420,8 @@
     ],
     "yevseyev": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "angelini": [
       "W",
@@ -20194,6 +20442,7 @@
       "L"
     ],
     "vedder": [
+      "W",
       "W",
       "W",
       "W",
@@ -20654,6 +20903,7 @@
     "saraivadossantos": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "kicker": [
@@ -20802,7 +21052,8 @@
       "L"
     ],
     "albot": [
-      "L"
+      "L",
+      "W"
     ],
     "hassan": [
       "W",
@@ -20812,7 +21063,8 @@
       "L"
     ],
     "fomin": [
-      "L"
+      "L",
+      "W"
     ],
     "nagal": [
       "W",
@@ -20826,7 +21078,8 @@
       "L"
     ],
     "simakin": [
-      "L"
+      "L",
+      "W"
     ],
     "kirkov": [
       "W",
@@ -20989,7 +21242,8 @@
     ],
     "erhard": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "piraino": [
       "L"
@@ -21065,6 +21319,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "mouffe": [
@@ -21080,6 +21335,7 @@
       "W"
     ],
     "alujas": [
+      "L",
       "L"
     ],
     "masabayashi": [
@@ -21323,7 +21579,8 @@
     "krueger": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "knutson": [
       "L"
@@ -21436,7 +21693,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "watson": [
       "W",
@@ -21515,9 +21773,11 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "ciavarella": [
+      "L",
       "L"
     ],
     "rscomparin": [
@@ -21592,7 +21852,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "allen": [
       "L"
@@ -21621,7 +21882,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "gloeckler": [
       "L"
@@ -21650,7 +21912,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "malige": [
       "L"
@@ -21699,6 +21962,7 @@
       "L"
     ],
     "lvandenbroek": [
+      "W",
       "W",
       "W",
       "W"
@@ -21876,6 +22140,7 @@
     ],
     "van": [
       "W",
+      "L",
       "L"
     ],
     "penzlin": [
@@ -21913,7 +22178,8 @@
     "rapagnetta": [
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "vitarubicondo": [
       "L"
@@ -21938,6 +22204,7 @@
     ],
     "krutykh": [
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -22092,7 +22359,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "stolarik": [
       "L"
@@ -22203,7 +22471,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "vuglar": [
       "L"
@@ -22382,7 +22651,8 @@
     ],
     "winter": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "orgilesgarciaretamero": [
       "L"
@@ -22936,12 +23206,14 @@
     "ramanathan": [
       "W",
       "W",
+      "L",
       "L"
     ],
     "vrbensky": [
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "falei": [
@@ -23104,7 +23376,8 @@
     "honer": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "iyengar": [
       "L"
@@ -23218,7 +23491,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "azmehnaw": [
       "W",
@@ -23258,7 +23532,8 @@
     "narti": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dekoning": [
       "L"
@@ -23330,7 +23605,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "fernandezflores": [
       "L"
@@ -23452,7 +23728,8 @@
     ],
     "sanchezmartinez": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "alazmeh": [
       "W",
@@ -23587,7 +23864,8 @@
     ],
     "fornasieri": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "mionescu": [
       "W"
@@ -23619,7 +23897,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "soulie": [
       "L"
@@ -23658,7 +23937,8 @@
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "trainauskas": [
       "L"
@@ -23806,6 +24086,7 @@
       "L"
     ],
     "soke": [
+      "W",
       "W",
       "W",
       "W",
@@ -23978,7 +24259,8 @@
     "donald": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "borrelli": [
       "W",
@@ -24076,6 +24358,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "beckles": [
@@ -24092,7 +24375,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "petit": [
       "L"
@@ -24181,6 +24465,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "novansky": [
@@ -24206,6 +24491,7 @@
     ],
     "paldanius": [
       "W",
+      "L",
       "L"
     ],
     "kucera": [
@@ -24249,6 +24535,7 @@
       "L"
     ],
     "akli": [
+      "W",
       "W",
       "W",
       "W",
@@ -24308,7 +24595,8 @@
     "sahdiieva": [
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "driscoll": [
       "W",
@@ -24326,7 +24614,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "fulgenzi": [
       "W",
@@ -24479,6 +24768,7 @@
     "seybothwild": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "fmiguel": [
@@ -24563,6 +24853,144 @@
       "L"
     ],
     "cobolli": [
+      "L"
+    ],
+    "poljak": [
+      "W"
+    ],
+    "psinescu": [
+      "L"
+    ],
+    "berge": [
+      "L"
+    ],
+    "latinovic": [
+      "L"
+    ],
+    "ajecan": [
+      "L"
+    ],
+    "gcolasanto": [
+      "L"
+    ],
+    "gombos": [
+      "W"
+    ],
+    "mazza": [
+      "L"
+    ],
+    "bilardo": [
+      "L"
+    ],
+    "sanchezquilez": [
+      "W"
+    ],
+    "forti": [
+      "L"
+    ],
+    "masur": [
+      "W"
+    ],
+    "seghetti": [
+      "L"
+    ],
+    "ursu": [
+      "L"
+    ],
+    "deschepper": [
+      "L"
+    ],
+    "erler": [
+      "L"
+    ],
+    "vales": [
+      "W"
+    ],
+    "chazal": [
+      "W"
+    ],
+    "lechnowasiutynski": [
+      "W"
+    ],
+    "gulin": [
+      "W"
+    ],
+    "damonte": [
+      "L"
+    ],
+    "geldof": [
+      "L"
+    ],
+    "ghazouanidurand": [
+      "W"
+    ],
+    "lagutin": [
+      "W"
+    ],
+    "staeheli": [
+      "W"
+    ],
+    "hernandezaguila": [
+      "L"
+    ],
+    "poling": [
+      "L"
+    ],
+    "vandecasteele": [
+      "L"
+    ],
+    "boulais": [
+      "W"
+    ],
+    "dharafriend": [
+      "W"
+    ],
+    "camus": [
+      "L"
+    ],
+    "mayew": [
+      "L"
+    ],
+    "ktrotter": [
+      "W"
+    ],
+    "banerjee": [
+      "W"
+    ],
+    "milavsky": [
+      "L"
+    ],
+    "ruiz": [
+      "L"
+    ],
+    "echazu": [
+      "W"
+    ],
+    "tenti": [
+      "W"
+    ],
+    "ahidalgoaguirre": [
+      "L"
+    ],
+    "amaciaselizalde": [
+      "L"
+    ],
+    "alvarado": [
+      "L"
+    ],
+    "maldonado": [
+      "W"
+    ],
+    "fwong": [
+      "L"
+    ],
+    "yunez": [
+      "W"
+    ],
+    "dedios": [
+      "L"
+    ],
+    "prashanth": [
       "L"
     ]
   },
@@ -27331,7 +27759,91 @@
     "kuramochi|miyamoto|kuramochi": 1,
     "hosogi|nugroho|nugroho": 1,
     "rodrigues|cordova|cordova": 1,
-    "dellavedova|purcell|purcell": 1
+    "dellavedova|purcell|purcell": 1,
+    "van|sahdiieva|sahdiieva": 1,
+    "narti|maquet|maquet": 1,
+    "stefani|skoch|stefani": 1,
+    "bergs|humbert|bergs": 1,
+    "picard|ferra|ferra": 1,
+    "dietrich|rehberg|rehberg": 1,
+    "bartel|arifullina|arifullina": 1,
+    "feistel|sobolieva|sobolieva": 1,
+    "martinez|krutykh|krutykh": 1,
+    "alkaya|overbeck|overbeck": 1,
+    "arnaboldi|oradini|arnaboldi": 1,
+    "zaytseva|radovanovic|zaytseva": 1,
+    "djuric|marchi|djuric": 1,
+    "popa|fornasieri|popa": 1,
+    "daems|ivanov|ivanov": 1,
+    "guo|laskevich|laskevich": 1,
+    "subasic|soke|soke": 1,
+    "chopra|kumar|kumar": 1,
+    "honer|akli|akli": 1,
+    "dlimi|bennani|dlimi": 1,
+    "poljak|palan|poljak": 1,
+    "simakin|turcanu|simakin": 1,
+    "sinescu|yevseyev|yevseyev": 1,
+    "castelnuovo|ghetu|ghetu": 1,
+    "santillan|berge|santillan": 1,
+    "cazacu|wallin|wallin": 1,
+    "albot|latinovic|albot": 1,
+    "fomin|jecan|fomin": 1,
+    "vrbensky|janvier|janvier": 1,
+    "compagnucci|colasanto|compagnucci": 1,
+    "donald|potenza|donald": 1,
+    "gombos|mazza|gombos": 1,
+    "bilardo|erhard|erhard": 1,
+    "ciavarella|kravchenko|kravchenko": 1,
+    "poljicak|quilez|quilez": 1,
+    "forti|tabacco|tabacco": 1,
+    "paldanius|masur|masur": 1,
+    "batalla|seghetti|batalla": 1,
+    "vela|nesterov|nesterov": 1,
+    "rapagnetta|ursu|rapagnetta": 1,
+    "villanueva|wild|wild": 1,
+    "schepper|wehnelt|wehnelt": 1,
+    "fierros|erler|fierros": 1,
+    "sperle|vales|vales": 1,
+    "chazal|alujas|chazal": 1,
+    "delaney|lechno-wasiutynski|lechno-wasiutynski": 1,
+    "gulin|damonte|gulin": 1,
+    "geldof|ribero|ribero": 1,
+    "huang|papamalamis|papamalamis": 1,
+    "zhu|valiente|valiente": 1,
+    "becroft|durand|durand": 1,
+    "kumstat|lagutin|lagutin": 1,
+    "staeheli|hernandez-aguila|staeheli": 1,
+    "sultanov|ivanovski|sultanov": 1,
+    "lange|majdandzic|majdandzic": 1,
+    "ratti|planinsek|ratti": 1,
+    "johnson|rozin|johnson": 1,
+    "vedder|micic|vedder": 1,
+    "fenty|poling|fenty": 1,
+    "shimizu|martin|shimizu": 1,
+    "svajda|cui|svajda": 1,
+    "vandecasteele|imamura|imamura": 1,
+    "boulais|aguiard|boulais": 1,
+    "camus|friend|friend": 1,
+    "mayew|winter|winter": 1,
+    "karki|trotter|trotter": 1,
+    "krueger|suresh|suresh": 1,
+    "langmo|banerjee|banerjee": 1,
+    "milavsky|baris|baris": 1,
+    "silva|ruiz|silva": 1,
+    "echazu|salazar|echazu": 1,
+    "aguirre|tenti|tenti": 1,
+    "elizalde|hayen|hayen": 1,
+    "martinez|alvarado|martinez": 1,
+    "price|maldonado|maldonado": 1,
+    "urrea|zeballos|zeballos": 1,
+    "wong|zapico|zapico": 1,
+    "yunez|dios|yunez": 1,
+    "hoeyeraal|wazny|hoeyeraal": 1,
+    "santos|cordova|santos": 1,
+    "nguyen|ahn|nguyen": 1,
+    "ramanathan|makk|makk": 1,
+    "kuzmanov|prashanth|kuzmanov": 1,
+    "maquet|broek|broek": 1
   },
   "ELO": {
     "sinner": 2180,
