@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-29T12:01:01.074Z",
+    "updatedAt": "2026-06-29T14:01:01.176Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -5189,6 +5189,15 @@
   ],
   "RECORD": [
     {
+      "id": "358d9f8f061afe1f32bc74d63fd80a18",
+      "date": "29 JUN",
+      "match": "A. Kovacevic – B. van de Zandschulp",
+      "pick": "Gana A. Kovacevic",
+      "odd": 2.66,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "35090f59026ece4c7ffb98c0066d7ad8",
       "date": "29 JUN",
       "match": "M. Zheng – C. Norrie",
@@ -5784,21 +5793,6 @@
       "book": "onexbet",
       "homeName": "C. Moutet",
       "awayName": "M. Giron"
-    },
-    {
-      "id": "358d9f8f061afe1f32bc74d63fd80a18",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782727200000,
-      "date": "29 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Kovacevic – B. van de Zandschulp",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Kovacevic",
-      "odd": 2.66,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Kovacevic",
-      "awayName": "B. van de Zandschulp"
     },
     {
       "id": "2ba367a0a2de0261300b51574f55dde7",
@@ -8152,6 +8146,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "29 JUN",
+      "match": "A. Muller – T. Paul",
+      "predName": "T. Paul",
+      "prob": 72,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "R. Jodar – F. Gill",
+      "predName": "R. Jodar",
+      "prob": 77,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "E. Nava – I. Buse",
+      "predName": "I. Buse",
+      "prob": 65,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "D. Svrcina – L. Tien",
+      "predName": "L. Tien",
+      "prob": 74,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "A. Kovacevic – B. van de Zandschulp",
+      "predName": "A. Kovacevic",
+      "prob": 51,
+      "ok": false
+    },
     {
       "date": "29 JUN",
       "match": "B. Bencic – M. Stojsavljevic",
@@ -10562,17 +10591,6 @@
     {
       "date": "29 JUN",
       "ts": 1782727200000,
-      "match": "A. Kovacevic – B. van de Zandschulp",
-      "predHome": true,
-      "prob": 51,
-      "predName": "A. Kovacevic",
-      "sofa": null,
-      "homeName": "A. Kovacevic",
-      "awayName": "B. van de Zandschulp"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782727200000,
       "match": "A. Rublev – R. Safiullin",
       "predHome": true,
       "prob": 78,
@@ -10584,17 +10602,6 @@
     {
       "date": "29 JUN",
       "ts": 1782727200000,
-      "match": "D. Svrcina – L. Tien",
-      "predHome": false,
-      "prob": 74,
-      "predName": "L. Tien",
-      "sofa": null,
-      "homeName": "D. Svrcina",
-      "awayName": "L. Tien"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782727200000,
       "match": "D. Shapovalov – P. Carreno Busta",
       "predHome": true,
       "prob": 73,
@@ -10602,28 +10609,6 @@
       "sofa": null,
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782727200000,
-      "match": "E. Nava – I. Buse",
-      "predHome": false,
-      "prob": 65,
-      "predName": "I. Buse",
-      "sofa": null,
-      "homeName": "E. Nava",
-      "awayName": "I. Buse"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782727200000,
-      "match": "R. Jodar – F. Gill",
-      "predHome": true,
-      "prob": 77,
-      "predName": "R. Jodar",
-      "sofa": null,
-      "homeName": "R. Jodar",
-      "awayName": "F. Gill"
     },
     {
       "date": "29 JUN",
@@ -10646,17 +10631,6 @@
       "sofa": null,
       "homeName": "M. Trungelliti",
       "awayName": "M. Damm Jr"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782731400000,
-      "match": "A. Muller – T. Paul",
-      "predHome": false,
-      "prob": 72,
-      "predName": "T. Paul",
-      "sofa": null,
-      "homeName": "A. Muller",
-      "awayName": "T. Paul"
     },
     {
       "date": "29 JUN",
@@ -11235,10 +11209,10 @@
     "id": "Lreset0615",
     "start": 10,
     "target": 250,
-    "steps": 11,
-    "current": 10,
+    "steps": 12,
+    "current": 11,
     "status": "live",
-    "bank": 113.56,
+    "bank": 138.54,
     "rungs": [
       {
         "n": 1,
@@ -11357,7 +11331,7 @@
         "odd": 1.22,
         "book": "sport888",
         "bank": 138.54,
-        "result": "today",
+        "result": "W",
         "date": "28 JUN",
         "sofa": null
       }
