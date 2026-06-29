@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-29T16:01:04.028Z",
+    "updatedAt": "2026-06-29T18:01:02.148Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -5189,6 +5189,24 @@
   ],
   "RECORD": [
     {
+      "id": "68ba4da7fda72170ec9204bd16e38485",
+      "date": "29 JUN",
+      "match": "M. Cilic – D. Medvedev",
+      "pick": "Gana D. Medvedev",
+      "odd": 1.4,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
+      "id": "bccd57db28819aad77c423add704c9bc",
+      "date": "29 JUN",
+      "match": "A. Walton – D. Prizmic",
+      "pick": "Gana A. Walton",
+      "odd": 2.3,
+      "book": "unibet_fr",
+      "result": "L"
+    },
+    {
       "id": "1e236c7f0ccd5b912738250955aa804f",
       "date": "29 JUN",
       "match": "H. Medjedovic – S. Ofner",
@@ -5713,24 +5731,6 @@
       "odd": 1.5,
       "book": "gtbets",
       "result": "W"
-    },
-    {
-      "id": "opid1201233372027926",
-      "date": "19 JUN",
-      "match": "K. Pliskova – T. Gibson",
-      "pick": "Gana T. Gibson",
-      "odd": 2.37,
-      "book": "bet365",
-      "result": "L"
-    },
-    {
-      "id": "239a91f2804fbbf8fdb1c3dc3c5d31de",
-      "date": "19 JUN",
-      "match": "A. Sabalenka – N. Bartunkova",
-      "pick": "Gana A. Sabalenka",
-      "odd": 1.13,
-      "book": "onexbet",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -5945,21 +5945,6 @@
       "awayName": "Z. Svajda"
     },
     {
-      "id": "bccd57db28819aad77c423add704c9bc",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782735600000,
-      "date": "29 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Walton – D. Prizmic",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Walton",
-      "odd": 2.3,
-      "book": "unibet_fr",
-      "homeName": "A. Walton",
-      "awayName": "D. Prizmic"
-    },
-    {
       "id": "a781545b6be54ba4f37eea8f21ed6695",
       "sport": "tennis_atp_wimbledon",
       "ts": 1782813600000,
@@ -6018,24 +6003,38 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "68ba4da7fda72170ec9204bd16e38485",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782738600000,
-      "date": "29 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Cilic – D. Medvedev",
-      "pickKey": "away",
-      "pickLabel": "Gana D. Medvedev",
-      "odd": 1.4,
-      "book": "onexbet",
-      "homeName": "M. Cilic",
-      "awayName": "D. Medvedev"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "29 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 3.26,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Kokkinakis – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.46,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "A. Rinderknech – O. Tarvet",
+          "pick": "Gana A. Rinderknech",
+          "odd": 1.73,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.29,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "28 JUN",
       "name": "Combinada del Día",
@@ -6053,7 +6052,7 @@
           "match": "A. Rinderknech – O. Tarvet",
           "pick": "Gana A. Rinderknech",
           "odd": 1.72,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -7121,33 +7120,6 @@
           "win": true
         }
       ]
-    },
-    {
-      "date": "05 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 7.17,
-      "result": "L",
-      "legs": [
-        {
-          "match": "M. Arnaldi – F. Cobolli",
-          "pick": "Gana M. Arnaldi",
-          "odd": 1,
-          "win": null,
-          "voided": true
-        },
-        {
-          "match": "M. Trungelliti – D. Dedura-Palomero",
-          "pick": "Gana D. Dedura-Palomero",
-          "odd": 3.05,
-          "win": true
-        },
-        {
-          "match": "A. Ilagan – Y. Shimizu",
-          "pick": "Gana Y. Shimizu",
-          "odd": 2.35,
-          "win": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
@@ -7188,46 +7160,6 @@
           "odd": 1.68,
           "homeName": "T. Fritz",
           "awayName": "J. Draper"
-        }
-      ]
-    },
-    {
-      "dayId": "29 JUN·c1",
-      "date": "29 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "1a76e2740082417247d02923fdbf8dd1",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "T. Kokkinakis – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.46,
-          "homeName": "T. Kokkinakis",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "9c197a6a36fd1d26beeb13fab6c084f9",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Rinderknech – O. Tarvet",
-          "pick": "Gana A. Rinderknech",
-          "odd": 1.73,
-          "homeName": "A. Rinderknech",
-          "awayName": "O. Tarvet"
-        },
-        {
-          "id": "320fd6d02bf1479455f689e7e8e32652",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
-          "pick": "Gana A. Davidovich Fokina",
-          "odd": 1.29,
-          "homeName": "A. Davidovich Fokina",
-          "awayName": "J. Manuel Cerundolo"
         }
       ]
     }
@@ -8116,6 +8048,83 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "29 JUN",
+      "match": "E. Quinn – L. Darderi",
+      "predName": "L. Darderi",
+      "prob": 61,
+      "ok": false
+    },
+    {
+      "date": "29 JUN",
+      "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
+      "predName": "A. Davidovich Fokina",
+      "prob": 76,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "J. Struff – S. Baez",
+      "predName": "S. Baez",
+      "prob": 52,
+      "ok": false
+    },
+    {
+      "date": "29 JUN",
+      "match": "M. Cilic – D. Medvedev",
+      "predName": "D. Medvedev",
+      "prob": 73,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "T. Agustin Tirante – F. Marozsan",
+      "predName": "F. Marozsan",
+      "prob": 68,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "F. Auger-Aliassime – A. Shevchenko",
+      "predName": "F. Auger-Aliassime",
+      "prob": 67,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "J. Sinner – M. Kecmanovic",
+      "predName": "J. Sinner",
+      "prob": 90,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "A. Walton – D. Prizmic",
+      "predName": "D. Prizmic",
+      "prob": 52,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "A. Rinderknech – O. Tarvet",
+      "predName": "A. Rinderknech",
+      "prob": 80,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "S. Kwon – M. Landaluce",
+      "predName": "M. Landaluce",
+      "prob": 61,
+      "ok": false
+    },
+    {
+      "date": "29 JUN",
+      "match": "H. Gaston – S. Tsitsipas",
+      "predName": "S. Tsitsipas",
+      "prob": 68,
+      "ok": true
+    },
     {
       "date": "29 JUN",
       "match": "N. Borges – T. Boyer",
@@ -10639,61 +10648,6 @@
     },
     {
       "date": "29 JUN",
-      "ts": 1782733200000,
-      "match": "H. Gaston – S. Tsitsipas",
-      "predHome": false,
-      "prob": 68,
-      "predName": "S. Tsitsipas",
-      "sofa": null,
-      "homeName": "H. Gaston",
-      "awayName": "S. Tsitsipas"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782733200000,
-      "match": "S. Kwon – M. Landaluce",
-      "predHome": false,
-      "prob": 61,
-      "predName": "M. Landaluce",
-      "sofa": null,
-      "homeName": "S. Kwon",
-      "awayName": "M. Landaluce"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782734400000,
-      "match": "A. Rinderknech – O. Tarvet",
-      "predHome": true,
-      "prob": 80,
-      "predName": "A. Rinderknech",
-      "sofa": null,
-      "homeName": "A. Rinderknech",
-      "awayName": "O. Tarvet"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782735600000,
-      "match": "A. Walton – D. Prizmic",
-      "predHome": false,
-      "prob": 52,
-      "predName": "D. Prizmic",
-      "sofa": null,
-      "homeName": "A. Walton",
-      "awayName": "D. Prizmic"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782736200000,
-      "match": "J. Sinner – M. Kecmanovic",
-      "predHome": true,
-      "prob": 90,
-      "predName": "J. Sinner",
-      "sofa": null,
-      "homeName": "J. Sinner",
-      "awayName": "M. Kecmanovic"
-    },
-    {
-      "date": "29 JUN",
       "ts": 1782737400000,
       "match": "A. Daniel Vallejo – N. Mejia",
       "predHome": true,
@@ -10706,28 +10660,6 @@
     {
       "date": "29 JUN",
       "ts": 1782737400000,
-      "match": "F. Auger-Aliassime – A. Shevchenko",
-      "predHome": true,
-      "prob": 67,
-      "predName": "F. Auger-Aliassime",
-      "sofa": null,
-      "homeName": "F. Auger-Aliassime",
-      "awayName": "A. Shevchenko"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782737400000,
-      "match": "T. Agustin Tirante – F. Marozsan",
-      "predHome": false,
-      "prob": 68,
-      "predName": "F. Marozsan",
-      "sofa": null,
-      "homeName": "T. Agustin Tirante",
-      "awayName": "F. Marozsan"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782737400000,
       "match": "R. Bautista Agut – J. Fonseca",
       "predHome": false,
       "prob": 71,
@@ -10735,50 +10667,6 @@
       "sofa": null,
       "homeName": "R. Bautista Agut",
       "awayName": "J. Fonseca"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782738600000,
-      "match": "M. Cilic – D. Medvedev",
-      "predHome": false,
-      "prob": 73,
-      "predName": "D. Medvedev",
-      "sofa": null,
-      "homeName": "M. Cilic",
-      "awayName": "D. Medvedev"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782738600000,
-      "match": "J. Struff – S. Baez",
-      "predHome": false,
-      "prob": 52,
-      "predName": "S. Baez",
-      "sofa": null,
-      "homeName": "J. Struff",
-      "awayName": "S. Baez"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782741600000,
-      "match": "A. Davidovich Fokina – J. Manuel Cerundolo",
-      "predHome": true,
-      "prob": 76,
-      "predName": "A. Davidovich Fokina",
-      "sofa": null,
-      "homeName": "A. Davidovich Fokina",
-      "awayName": "J. Manuel Cerundolo"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782741600000,
-      "match": "E. Quinn – L. Darderi",
-      "predHome": false,
-      "prob": 61,
-      "predName": "L. Darderi",
-      "sofa": null,
-      "homeName": "E. Quinn",
-      "awayName": "L. Darderi"
     },
     {
       "date": "29 JUN",
