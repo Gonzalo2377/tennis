@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T18:01:04.800Z",
+    "updatedAt": "2026-06-30T20:01:09.084Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3993,6 +3993,24 @@
   ],
   "RECORD": [
     {
+      "id": "8e6925fad6057e0590572c11cf78188d",
+      "date": "30 JUN",
+      "match": "V. Kopriva – J. Choinski",
+      "pick": "Gana J. Choinski",
+      "odd": 2.4,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "289a97fe64fe86154553f9dfdde13bcb",
+      "date": "30 JUN",
+      "match": "C. Moutet – M. Giron",
+      "pick": "Gana C. Moutet",
+      "odd": 2.17,
+      "book": "onexbet",
+      "result": "L"
+    },
+    {
       "id": "5ebcde4d1cf57d0a3b9b99c4a40b00a1",
       "date": "30 JUN",
       "match": "J. Mensik – T. Samuel",
@@ -4072,7 +4090,7 @@
       "pick": "Gana T. Martin Etcheverry",
       "odd": 2.13,
       "book": "onexbet",
-      "result": "W"
+      "result": "L"
     },
     {
       "id": "4579733c9a884ba46e917832c215723c",
@@ -4518,24 +4536,6 @@
       "odd": 1.81,
       "book": "pinnacle",
       "result": "W"
-    },
-    {
-      "id": "e4caecf815b3dcddc0bbd05aab152678",
-      "date": "22 JUN",
-      "match": "H. Squire – M. Zheng",
-      "pick": "Gana M. Zheng",
-      "odd": 1.46,
-      "book": "betfair_ex_eu",
-      "result": "W"
-    },
-    {
-      "id": "2116000d77fc19d27ddd744f0dca3e0f",
-      "date": "22 JUN",
-      "match": "R. Safiullin – J. McCabe",
-      "pick": "Gana J. McCabe",
-      "odd": 3.05,
-      "book": "betfair_ex_eu",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -4553,21 +4553,6 @@
       "book": "onexbet",
       "homeName": "M. Trungelliti",
       "awayName": "M. Damm Jr"
-    },
-    {
-      "id": "289a97fe64fe86154553f9dfdde13bcb",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782813600000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "C. Moutet – M. Giron",
-      "pickKey": "home",
-      "pickLabel": "Gana C. Moutet",
-      "odd": 2.17,
-      "book": "onexbet",
-      "homeName": "C. Moutet",
-      "awayName": "M. Giron"
     },
     {
       "id": "1f461af14cf88f5bb39b82541e8f7a8c",
@@ -4630,21 +4615,6 @@
       "awayName": "B. van de Zandschulp"
     },
     {
-      "id": "8e6925fad6057e0590572c11cf78188d",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782828000000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "V. Kopriva – J. Choinski",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Choinski",
-      "odd": 2.4,
-      "book": "betfair_ex_eu",
-      "homeName": "V. Kopriva",
-      "awayName": "J. Choinski"
-    },
-    {
       "id": "5e0919a8514a1242a386699a61e9eeaf",
       "sport": "tennis_atp_wimbledon",
       "ts": 1782896400000,
@@ -4676,6 +4646,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "28 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 4.61,
+      "result": "L",
+      "legs": [
+        {
+          "match": "C. Moutet – M. Giron",
+          "pick": "Gana C. Moutet",
+          "odd": 2.05,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "Y. Hanfmann – G. Mpetshi Perricard",
+          "pick": "Gana Y. Hanfmann",
+          "odd": 2.25,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "T. Fritz – J. Draper",
+          "pick": "Gana T. Fritz",
+          "odd": 1,
+          "win": null,
+          "voided": true
+        }
+      ]
+    },
     {
       "date": "29 JUN",
       "name": "Combinada del Día",
@@ -5764,75 +5763,9 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "05 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 9.25,
-      "result": "L",
-      "legs": [
-        {
-          "match": "M. Trungelliti – D. Dedura-Palomero",
-          "pick": "Gana D. Dedura-Palomero",
-          "odd": 3.05,
-          "win": true
-        },
-        {
-          "match": "A. Ilagan – Y. Shimizu",
-          "pick": "Gana Y. Shimizu",
-          "odd": 2.35,
-          "win": false
-        },
-        {
-          "match": "M. Chwalinska – M. Andreeva",
-          "pick": "Gana M. Andreeva",
-          "odd": 1.29,
-          "win": true
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "28 JUN·c2",
-      "date": "28 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "289a97fe64fe86154553f9dfdde13bcb",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "C. Moutet – M. Giron",
-          "pick": "Gana C. Moutet",
-          "odd": 2.05,
-          "homeName": "C. Moutet",
-          "awayName": "M. Giron"
-        },
-        {
-          "id": "2ba367a0a2de0261300b51574f55dde7",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "Y. Hanfmann – G. Mpetshi Perricard",
-          "pick": "Gana Y. Hanfmann",
-          "odd": 2.25,
-          "homeName": "Y. Hanfmann",
-          "awayName": "G. Mpetshi Perricard"
-        },
-        {
-          "id": "2953d0eade4d5062d058efbc9e7b1458",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "T. Fritz – J. Draper",
-          "pick": "Gana T. Fritz",
-          "odd": 1.68,
-          "homeName": "T. Fritz",
-          "awayName": "J. Draper"
-        }
-      ]
-    },
     {
       "dayId": "30 JUN·c1",
       "date": "30 JUN",
@@ -6798,6 +6731,55 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "30 JUN",
+      "match": "L. Sonego – T. Martin Etcheverry",
+      "predName": "T. Martin Etcheverry",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "V. Kopriva – J. Choinski",
+      "predName": "V. Kopriva",
+      "prob": 54,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "T. Griekspoor – J. Duckworth",
+      "predName": "T. Griekspoor",
+      "prob": 66,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "D. Sweeny – G. Dimitrov",
+      "predName": "G. Dimitrov",
+      "prob": 73,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "C. Moutet – M. Giron",
+      "predName": "C. Moutet",
+      "prob": 64,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "J. Lehecka – A. Popyrin",
+      "predName": "J. Lehecka",
+      "prob": 74,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "A. Blockx – A. Zverev",
+      "predName": "A. Zverev",
+      "prob": 74,
+      "ok": true
+    },
     {
       "date": "30 JUN",
       "match": "P. Kypson – M. McDonald",
@@ -9600,17 +9582,6 @@
     {
       "date": "30 JUN",
       "ts": 1782810000000,
-      "match": "A. Blockx – A. Zverev",
-      "predHome": false,
-      "prob": 74,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "A. Blockx",
-      "awayName": "A. Zverev"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782810000000,
       "match": "S. Wawrinka – M. Berrettini",
       "predHome": false,
       "prob": 70,
@@ -9622,17 +9593,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "J. Lehecka – A. Popyrin",
-      "predHome": true,
-      "prob": 74,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "J. Lehecka",
-      "awayName": "A. Popyrin"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "B. Bonzi – G. Diallo",
       "predHome": false,
       "prob": 60,
@@ -9640,28 +9600,6 @@
       "sofa": null,
       "homeName": "B. Bonzi",
       "awayName": "G. Diallo"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "C. Moutet – M. Giron",
-      "predHome": true,
-      "prob": 64,
-      "predName": "C. Moutet",
-      "sofa": null,
-      "homeName": "C. Moutet",
-      "awayName": "M. Giron"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "D. Sweeny – G. Dimitrov",
-      "predHome": false,
-      "prob": 73,
-      "predName": "G. Dimitrov",
-      "sofa": null,
-      "homeName": "D. Sweeny",
-      "awayName": "G. Dimitrov"
     },
     {
       "date": "30 JUN",
@@ -9695,39 +9633,6 @@
       "sofa": null,
       "homeName": "T. Fritz",
       "awayName": "J. Draper"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "T. Griekspoor – J. Duckworth",
-      "predHome": true,
-      "prob": 66,
-      "predName": "T. Griekspoor",
-      "sofa": null,
-      "homeName": "T. Griekspoor",
-      "awayName": "J. Duckworth"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "V. Kopriva – J. Choinski",
-      "predHome": true,
-      "prob": 54,
-      "predName": "V. Kopriva",
-      "sofa": null,
-      "homeName": "V. Kopriva",
-      "awayName": "J. Choinski"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "L. Sonego – T. Martin Etcheverry",
-      "predHome": false,
-      "prob": 53,
-      "predName": "T. Martin Etcheverry",
-      "sofa": null,
-      "homeName": "L. Sonego",
-      "awayName": "T. Martin Etcheverry"
     },
     {
       "date": "30 JUN",
