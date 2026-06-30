@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T14:01:11.327Z",
+    "updatedAt": "2026-06-30T16:01:07.667Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3993,6 +3993,24 @@
   ],
   "RECORD": [
     {
+      "id": "ac6f094b413a84d452192b5b4fb636a4",
+      "date": "30 JUN",
+      "match": "K. Jacquet – V. Gaubas",
+      "pick": "Gana V. Gaubas",
+      "odd": 2.88,
+      "book": "unibet_nl",
+      "result": "L"
+    },
+    {
+      "id": "14e1451c778870ff2953df9faeea10ec",
+      "date": "30 JUN",
+      "match": "A. Michelsen – J. Fearnley",
+      "pick": "Gana A. Michelsen",
+      "odd": 1.85,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "e9717b439a749ca3371aff2a287da57b",
       "date": "30 JUN",
       "match": "V. Royer – H. Wendelken",
@@ -4025,9 +4043,9 @@
       "date": "30 JUN",
       "match": "B. Bonzi – G. Diallo",
       "pick": "Gana G. Diallo",
-      "odd": 1.86,
+      "odd": 1,
       "book": "betfair_ex_eu",
-      "result": "W"
+      "result": "V"
     },
     {
       "id": "6f5afd8b1147cc48f757ed20f14464d3",
@@ -4519,24 +4537,6 @@
       "odd": 2.52,
       "book": "betfair_ex_eu",
       "result": "W"
-    },
-    {
-      "id": "52ed9ffc3c06fa4cf09332746f663b47",
-      "date": "21 JUN",
-      "match": "T. Fritz – F. Tiafoe",
-      "pick": "Gana F. Tiafoe",
-      "odd": 3.15,
-      "book": "matchbook",
-      "result": "W"
-    },
-    {
-      "id": "opid1203130572243356",
-      "date": "21 JUN",
-      "match": "S. Sierra – A. Blinkova",
-      "pick": "Gana S. Sierra",
-      "odd": 2.21,
-      "book": "1xbet",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -4569,21 +4569,6 @@
       "book": "onexbet",
       "homeName": "C. Moutet",
       "awayName": "M. Giron"
-    },
-    {
-      "id": "14e1451c778870ff2953df9faeea10ec",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782813600000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Michelsen – J. Fearnley",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Michelsen",
-      "odd": 1.85,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Michelsen",
-      "awayName": "J. Fearnley"
     },
     {
       "id": "cf2ea8e6f0ab96ed5970b0f09a464db6",
@@ -4629,21 +4614,6 @@
       "book": "betfair_ex_eu",
       "homeName": "J. Mensik",
       "awayName": "T. Samuel"
-    },
-    {
-      "id": "ac6f094b413a84d452192b5b4fb636a4",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782817800000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Jacquet – V. Gaubas",
-      "pickKey": "away",
-      "pickLabel": "Gana V. Gaubas",
-      "odd": 2.88,
-      "book": "unibet_nl",
-      "homeName": "K. Jacquet",
-      "awayName": "V. Gaubas"
     },
     {
       "id": "2af6193491a1eaeeba23d9b48c069d29",
@@ -6859,6 +6829,48 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "30 JUN",
+      "match": "M. Arnaldi – Q. Halys",
+      "predName": "M. Arnaldi",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "K. Jacquet – V. Gaubas",
+      "predName": "V. Gaubas",
+      "prob": 51,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "J. Munar – F. Cerundolo",
+      "predName": "J. Munar",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "O. Virtanen – B. Shelton",
+      "predName": "B. Shelton",
+      "prob": 68,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "D. Dzumhur – A. Fery",
+      "predName": "D. Dzumhur",
+      "prob": 59,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "A. Michelsen – J. Fearnley",
+      "predName": "A. Michelsen",
+      "prob": 65,
+      "ok": false
+    },
     {
       "date": "30 JUN",
       "match": "P. Llamas Ruiz – Z. Svajda",
@@ -9617,17 +9629,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "A. Michelsen – J. Fearnley",
-      "predHome": true,
-      "prob": 65,
-      "predName": "A. Michelsen",
-      "sofa": null,
-      "homeName": "A. Michelsen",
-      "awayName": "J. Fearnley"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "T. Kokkinakis – A. Bublik",
       "predHome": false,
       "prob": 94,
@@ -9646,28 +9647,6 @@
       "sofa": null,
       "homeName": "J. Lehecka",
       "awayName": "A. Popyrin"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "D. Dzumhur – A. Fery",
-      "predHome": true,
-      "prob": 59,
-      "predName": "D. Dzumhur",
-      "sofa": null,
-      "homeName": "D. Dzumhur",
-      "awayName": "A. Fery"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "O. Virtanen – B. Shelton",
-      "predHome": false,
-      "prob": 68,
-      "predName": "B. Shelton",
-      "sofa": null,
-      "homeName": "O. Virtanen",
-      "awayName": "B. Shelton"
     },
     {
       "date": "30 JUN",
@@ -9738,17 +9717,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "J. Munar – F. Cerundolo",
-      "predHome": true,
-      "prob": 53,
-      "predName": "J. Munar",
-      "sofa": null,
-      "homeName": "J. Munar",
-      "awayName": "F. Cerundolo"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "T. Fritz – J. Draper",
       "predHome": true,
       "prob": 75,
@@ -9793,17 +9761,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "K. Jacquet – V. Gaubas",
-      "predHome": false,
-      "prob": 51,
-      "predName": "V. Gaubas",
-      "sofa": null,
-      "homeName": "K. Jacquet",
-      "awayName": "V. Gaubas"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "L. Sonego – T. Martin Etcheverry",
       "predHome": false,
       "prob": 53,
@@ -9822,17 +9779,6 @@
       "sofa": null,
       "homeName": "P. Kypson",
       "awayName": "M. McDonald"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "M. Arnaldi – Q. Halys",
-      "predHome": true,
-      "prob": 53,
-      "predName": "M. Arnaldi",
-      "sofa": null,
-      "homeName": "M. Arnaldi",
-      "awayName": "Q. Halys"
     },
     {
       "date": "30 JUN",
@@ -9989,150 +9935,18 @@
       "awayName": "E. Quinn"
     }
   ],
-  "LADDER": {
-    "id": "Lreset0615",
-    "start": 10,
-    "target": 250,
-    "steps": 12,
-    "current": 11,
-    "status": "live",
-    "bank": 138.54,
-    "rungs": [
-      {
-        "n": 1,
-        "match": "A. de Minaur – G. Diallo",
-        "pick": "Gana A. de Minaur",
-        "odd": 1.22,
-        "book": "betfair_ex_eu",
-        "bank": 12.2,
-        "result": "W",
-        "date": "16 JUN",
-        "sofa": null
-      },
-      {
-        "n": 2,
-        "match": "T. Atmane – D. Medvedev",
-        "pick": "Gana D. Medvedev",
-        "odd": 1.22,
-        "book": "gtbets",
-        "bank": 14.88,
-        "result": "W",
-        "date": "17 JUN",
-        "sofa": null
-      },
-      {
-        "n": 3,
-        "match": "F. Marozsan – T. Fritz",
-        "pick": "Gana T. Fritz",
-        "odd": 1.26,
-        "book": "unibet_nl",
-        "bank": 18.75,
-        "result": "W",
-        "date": "18 JUN",
-        "sofa": null
-      },
-      {
-        "n": 4,
-        "match": "A. Zverev – R. Collignon",
-        "pick": "Gana A. Zverev",
-        "odd": 1.2,
-        "book": "matchbook",
-        "bank": 22.5,
-        "result": "W",
-        "date": "19 JUN",
-        "sofa": null
-      },
-      {
-        "n": 5,
-        "match": "T. Boyer – G. Alberto Olivieri",
-        "pick": "Gana T. Boyer",
-        "odd": 1.18,
-        "book": "pinnacle",
-        "bank": 26.55,
-        "result": "W",
-        "date": "22 JUN",
-        "sofa": null
-      },
-      {
-        "n": 6,
-        "match": "K. Quevedo – S. Ishii",
-        "pick": "Gana K. Quevedo",
-        "odd": 1.33,
-        "book": "pinnacle",
-        "bank": 35.31,
-        "result": "W",
-        "date": "23 JUN",
-        "sofa": null
-      },
-      {
-        "n": 7,
-        "match": "M. Cassone – E. Quinn",
-        "pick": "Gana E. Quinn",
-        "odd": 1.24,
-        "book": "betfair-ex",
-        "bank": 43.78,
-        "result": "W",
-        "date": "24 JUN",
-        "sofa": null
-      },
-      {
-        "n": 8,
-        "match": "N. Budkov Kjaer – O. Virtanen",
-        "pick": "Gana O. Virtanen",
-        "odd": 1.31,
-        "book": "betfair_ex_eu",
-        "bank": 57.35,
-        "result": "W",
-        "date": "25 JUN",
-        "sofa": null
-      },
-      {
-        "n": 9,
-        "match": "E. Gabriela Ruse – K. Muchova",
-        "pick": "Gana K. Muchova",
-        "odd": 1.5,
-        "book": "betfair_ex_eu",
-        "bank": 86.03,
-        "result": "W",
-        "date": "26 JUN",
-        "sofa": null
-      },
-      {
-        "n": 10,
-        "match": "T. Maria – M. Keys",
-        "pick": "Gana M. Keys",
-        "odd": 1.32,
-        "book": "betfair-ex",
-        "bank": 113.56,
-        "result": "W",
-        "date": "27 JUN",
-        "sofa": null
-      },
-      {
-        "n": 11,
-        "match": "R. Jodar – F. Gill",
-        "pick": "Gana R. Jodar",
-        "odd": 1.22,
-        "book": "sport888",
-        "bank": 138.54,
-        "result": "W",
-        "date": "28 JUN",
-        "sofa": null
-      },
-      {
-        "n": 12,
-        "match": "O. Virtanen – B. Shelton",
-        "pick": "Gana B. Shelton",
-        "odd": 1.26,
-        "book": "onexbet",
-        "bank": 174.56,
-        "result": "today",
-        "date": "30 JUN",
-        "sofa": null
-      }
-    ]
-  },
-  "LADDER_HISTORY": [],
+  "LADDER": null,
+  "LADDER_HISTORY": [
+    {
+      "id": "Lreset0615",
+      "start": 10,
+      "target": 250,
+      "brokeAt": 12,
+      "reached": 138.54,
+      "result": "broken",
+      "date": "30 JUN"
+    }
+  ],
   "RANKING": [
     {
       "name": "Jannik Sinner",
