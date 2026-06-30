@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T16:01:07.667Z",
+    "updatedAt": "2026-06-30T18:01:04.800Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3993,6 +3993,24 @@
   ],
   "RECORD": [
     {
+      "id": "5ebcde4d1cf57d0a3b9b99c4a40b00a1",
+      "date": "30 JUN",
+      "match": "J. Mensik – T. Samuel",
+      "pick": "Gana J. Mensik",
+      "odd": 1.45,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "cf2ea8e6f0ab96ed5970b0f09a464db6",
+      "date": "30 JUN",
+      "match": "R. Collignon – A. Fils",
+      "pick": "Gana A. Fils",
+      "odd": 1.76,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
       "id": "ac6f094b413a84d452192b5b4fb636a4",
       "date": "30 JUN",
       "match": "K. Jacquet – V. Gaubas",
@@ -4026,7 +4044,7 @@
       "pick": "Gana K. Khachanov",
       "odd": 1.37,
       "book": "betfair_ex_eu",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "cf27d2437d51cc92259b62ce0b8d7c23",
@@ -4518,25 +4536,6 @@
       "odd": 3.05,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "22fce0864ed4160e76cd25af8f49af6e",
-      "date": "22 JUN",
-      "match": "I. Jović – X. Wang",
-      "pick": "Gana X. Wang",
-      "oddOrig": 3.9,
-      "odd": 1,
-      "book": "matchbook",
-      "result": "V"
-    },
-    {
-      "id": "32bde0a6dc3f7883533b11f4f48007a1",
-      "date": "21 JUN",
-      "match": "J. Pegula – L. Noskova",
-      "pick": "Gana L. Noskova",
-      "odd": 2.52,
-      "book": "betfair_ex_eu",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -4571,21 +4570,6 @@
       "awayName": "M. Giron"
     },
     {
-      "id": "cf2ea8e6f0ab96ed5970b0f09a464db6",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782810000000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "R. Collignon – A. Fils",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Fils",
-      "odd": 1.76,
-      "book": "matchbook",
-      "homeName": "R. Collignon",
-      "awayName": "A. Fils"
-    },
-    {
       "id": "1f461af14cf88f5bb39b82541e8f7a8c",
       "sport": "tennis_atp_wimbledon",
       "ts": 1782810000000,
@@ -4599,21 +4583,6 @@
       "book": "pinnacle",
       "homeName": "A. Molcan",
       "awayName": "D. Altmaier"
-    },
-    {
-      "id": "5ebcde4d1cf57d0a3b9b99c4a40b00a1",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782813600000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Mensik – T. Samuel",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Mensik",
-      "odd": 1.45,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Mensik",
-      "awayName": "T. Samuel"
     },
     {
       "id": "2af6193491a1eaeeba23d9b48c069d29",
@@ -4711,13 +4680,13 @@
       "date": "29 JUN",
       "name": "Combinada del Día",
       "totalOdd": 3.26,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "T. Kokkinakis – A. Bublik",
           "pick": "Gana A. Bublik",
           "odd": 1.46,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -4740,13 +4709,13 @@
       "date": "28 JUN",
       "name": "Combinada del Día",
       "totalOdd": 3.42,
-      "result": "L",
+      "result": "W",
       "legs": [
         {
           "match": "T. Kokkinakis – A. Bublik",
           "pick": "Gana A. Bublik",
           "odd": 1.45,
-          "win": false,
+          "win": true,
           "voided": false
         },
         {
@@ -4760,7 +4729,7 @@
           "match": "K. Khachanov – B. Harris",
           "pick": "Gana K. Khachanov",
           "odd": 1.37,
-          "win": false,
+          "win": true,
           "voided": false
         }
       ]
@@ -6829,6 +6798,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "30 JUN",
+      "match": "P. Kypson – M. McDonald",
+      "predName": "P. Kypson",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "J. Mensik – T. Samuel",
+      "predName": "J. Mensik",
+      "prob": 73,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "K. Khachanov – B. Harris",
+      "predName": "K. Khachanov",
+      "prob": 78,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "T. Kokkinakis – A. Bublik",
+      "predName": "A. Bublik",
+      "prob": 94,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "R. Collignon – A. Fils",
+      "predName": "A. Fils",
+      "prob": 67,
+      "ok": true
+    },
     {
       "date": "30 JUN",
       "match": "M. Arnaldi – Q. Halys",
@@ -9607,17 +9611,6 @@
     {
       "date": "30 JUN",
       "ts": 1782810000000,
-      "match": "R. Collignon – A. Fils",
-      "predHome": false,
-      "prob": 67,
-      "predName": "A. Fils",
-      "sofa": null,
-      "homeName": "R. Collignon",
-      "awayName": "A. Fils"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782810000000,
       "match": "S. Wawrinka – M. Berrettini",
       "predHome": false,
       "prob": 70,
@@ -9625,17 +9618,6 @@
       "sofa": null,
       "homeName": "S. Wawrinka",
       "awayName": "M. Berrettini"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "T. Kokkinakis – A. Bublik",
-      "predHome": false,
-      "prob": 94,
-      "predName": "A. Bublik",
-      "sofa": null,
-      "homeName": "T. Kokkinakis",
-      "awayName": "A. Bublik"
     },
     {
       "date": "30 JUN",
@@ -9658,17 +9640,6 @@
       "sofa": null,
       "homeName": "B. Bonzi",
       "awayName": "G. Diallo"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "K. Khachanov – B. Harris",
-      "predHome": true,
-      "prob": 78,
-      "predName": "K. Khachanov",
-      "sofa": null,
-      "homeName": "K. Khachanov",
-      "awayName": "B. Harris"
     },
     {
       "date": "30 JUN",
@@ -9728,17 +9699,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "J. Mensik – T. Samuel",
-      "predHome": true,
-      "prob": 73,
-      "predName": "J. Mensik",
-      "sofa": null,
-      "homeName": "J. Mensik",
-      "awayName": "T. Samuel"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "T. Griekspoor – J. Duckworth",
       "predHome": true,
       "prob": 66,
@@ -9768,17 +9728,6 @@
       "sofa": null,
       "homeName": "L. Sonego",
       "awayName": "T. Martin Etcheverry"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "P. Kypson – M. McDonald",
-      "predHome": true,
-      "prob": 53,
-      "predName": "P. Kypson",
-      "sofa": null,
-      "homeName": "P. Kypson",
-      "awayName": "M. McDonald"
     },
     {
       "date": "30 JUN",
