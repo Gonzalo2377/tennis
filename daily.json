@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T12:01:14.033Z",
+    "updatedAt": "2026-06-30T14:01:11.327Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3993,6 +3993,15 @@
   ],
   "RECORD": [
     {
+      "id": "e9717b439a749ca3371aff2a287da57b",
+      "date": "30 JUN",
+      "match": "V. Royer – H. Wendelken",
+      "pick": "Gana V. Royer",
+      "odd": 1.78,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
       "id": "a781545b6be54ba4f37eea8f21ed6695",
       "date": "30 JUN",
       "match": "K. Khachanov – B. Harris",
@@ -4055,7 +4064,7 @@
       "pick": "Gana Y. Hanfmann",
       "odd": 2.25,
       "book": "unibet_nl",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "804a341f757c8a347d3f786fd8870aa5",
@@ -4528,15 +4537,6 @@
       "odd": 2.21,
       "book": "1xbet",
       "result": "W"
-    },
-    {
-      "id": "opid1203130572228340",
-      "date": "21 JUN",
-      "match": "L. Samsonova – K. Siniakova",
-      "pick": "Gana L. Samsonova",
-      "odd": 2.58,
-      "book": "betfair-ex",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -4599,21 +4599,6 @@
       "book": "matchbook",
       "homeName": "R. Collignon",
       "awayName": "A. Fils"
-    },
-    {
-      "id": "e9717b439a749ca3371aff2a287da57b",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782813600000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "V. Royer – H. Wendelken",
-      "pickKey": "home",
-      "pickLabel": "Gana V. Royer",
-      "odd": 1.78,
-      "book": "matchbook",
-      "homeName": "V. Royer",
-      "awayName": "H. Wendelken"
     },
     {
       "id": "1f461af14cf88f5bb39b82541e8f7a8c",
@@ -6874,6 +6859,69 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "30 JUN",
+      "match": "P. Llamas Ruiz – Z. Svajda",
+      "predName": "P. Llamas Ruiz",
+      "prob": 57,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "T. Fritz – D. Lajovic",
+      "predName": "T. Fritz",
+      "prob": 82,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "S. Shimabukuro – J. Faria",
+      "predName": "J. Faria",
+      "prob": 50,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "V. Royer – H. Wendelken",
+      "predName": "V. Royer",
+      "prob": 66,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "Y. Hanfmann – G. Mpetshi Perricard",
+      "predName": "Y. Hanfmann",
+      "prob": 60,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "A. de Minaur – R. Andres Burruchaga",
+      "predName": "A. de Minaur",
+      "prob": 93,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "K. Majchrzak – A. Tabilo",
+      "predName": "A. Tabilo",
+      "prob": 62,
+      "ok": false
+    },
+    {
+      "date": "29 JUN",
+      "match": "B. Nakashima – J. Pinnington Jones",
+      "predName": "B. Nakashima",
+      "prob": 61,
+      "ok": true
+    },
+    {
+      "date": "29 JUN",
+      "match": "J. De Jong – R. Hijikata",
+      "predName": "R. Hijikata",
+      "prob": 71,
+      "ok": false
+    },
     {
       "date": "30 JUN",
       "match": "I. Begu – K. Swan",
@@ -9513,17 +9561,6 @@
     },
     {
       "date": "29 JUN",
-      "ts": 1782741600000,
-      "match": "J. De Jong – R. Hijikata",
-      "predHome": false,
-      "prob": 71,
-      "predName": "R. Hijikata",
-      "sofa": null,
-      "homeName": "J. De Jong",
-      "awayName": "R. Hijikata"
-    },
-    {
-      "date": "29 JUN",
       "ts": 1782746400000,
       "match": "W. Yibing – N. Djokovic",
       "predHome": false,
@@ -9532,17 +9569,6 @@
       "sofa": null,
       "homeName": "W. Yibing",
       "awayName": "N. Djokovic"
-    },
-    {
-      "date": "29 JUN",
-      "ts": 1782748800000,
-      "match": "B. Nakashima – J. Pinnington Jones",
-      "predHome": true,
-      "prob": 61,
-      "predName": "B. Nakashima",
-      "sofa": null,
-      "homeName": "B. Nakashima",
-      "awayName": "J. Pinnington Jones"
     },
     {
       "date": "30 JUN",
@@ -9591,17 +9617,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "K. Majchrzak – A. Tabilo",
-      "predHome": false,
-      "prob": 62,
-      "predName": "A. Tabilo",
-      "sofa": null,
-      "homeName": "K. Majchrzak",
-      "awayName": "A. Tabilo"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "A. Michelsen – J. Fearnley",
       "predHome": true,
       "prob": 65,
@@ -9609,17 +9624,6 @@
       "sofa": null,
       "homeName": "A. Michelsen",
       "awayName": "J. Fearnley"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "A. de Minaur – R. Andres Burruchaga",
-      "predHome": true,
-      "prob": 93,
-      "predName": "A. de Minaur",
-      "sofa": null,
-      "homeName": "A. de Minaur",
-      "awayName": "R. Andres Burruchaga"
     },
     {
       "date": "30 JUN",
@@ -9745,28 +9749,6 @@
     {
       "date": "30 JUN",
       "ts": 1782813600000,
-      "match": "Y. Hanfmann – G. Mpetshi Perricard",
-      "predHome": true,
-      "prob": 60,
-      "predName": "Y. Hanfmann",
-      "sofa": null,
-      "homeName": "Y. Hanfmann",
-      "awayName": "G. Mpetshi Perricard"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "V. Royer – H. Wendelken",
-      "predHome": true,
-      "prob": 66,
-      "predName": "V. Royer",
-      "sofa": null,
-      "homeName": "V. Royer",
-      "awayName": "H. Wendelken"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
       "match": "T. Fritz – J. Draper",
       "predHome": true,
       "prob": 75,
@@ -9774,17 +9756,6 @@
       "sofa": null,
       "homeName": "T. Fritz",
       "awayName": "J. Draper"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "S. Shimabukuro – J. Faria",
-      "predHome": false,
-      "prob": 50,
-      "predName": "J. Faria",
-      "sofa": null,
-      "homeName": "S. Shimabukuro",
-      "awayName": "J. Faria"
     },
     {
       "date": "30 JUN",
@@ -9872,28 +9843,6 @@
       "predName": "M. Bellucci",
       "sofa": null,
       "homeName": "M. Bellucci",
-      "awayName": "Z. Svajda"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782820800000,
-      "match": "T. Fritz – D. Lajovic",
-      "predHome": true,
-      "prob": 82,
-      "predName": "T. Fritz",
-      "sofa": null,
-      "homeName": "T. Fritz",
-      "awayName": "D. Lajovic"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782820800000,
-      "match": "P. Llamas Ruiz – Z. Svajda",
-      "predHome": true,
-      "prob": 57,
-      "predName": "P. Llamas Ruiz",
-      "sofa": null,
-      "homeName": "P. Llamas Ruiz",
       "awayName": "Z. Svajda"
     },
     {
