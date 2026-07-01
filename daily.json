@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T12:01:07.133Z",
+    "updatedAt": "2026-07-01T14:01:09.397Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2585,6 +2585,24 @@
   ],
   "RECORD": [
     {
+      "id": "5e0919a8514a1242a386699a61e9eeaf",
+      "date": "01 JUL",
+      "match": "H. Hurkacz – S. Ofner",
+      "pick": "Gana H. Hurkacz",
+      "odd": 1.34,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
+      "id": "1f461af14cf88f5bb39b82541e8f7a8c",
+      "date": "30 JUN",
+      "match": "A. Molcan – D. Altmaier",
+      "pick": "Gana D. Altmaier",
+      "odd": 1.91,
+      "book": "pinnacle",
+      "result": "L"
+    },
+    {
       "id": "3c42b7c1e9ae3bc7fe1935d6b4ba1ce3",
       "date": "01 JUL",
       "match": "J. Brooksby – I. Buse",
@@ -3110,24 +3128,6 @@
       "odd": 1.78,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "e8d91403018b9c0490f997b5d8ecec59",
-      "date": "22 JUN",
-      "match": "S. Travaglia – L. Mikrut",
-      "pick": "Gana L. Mikrut",
-      "odd": 2.58,
-      "book": "betfair_ex_eu",
-      "result": "L"
-    },
-    {
-      "id": "90f64b3bc1ca615dbd21086a65338747",
-      "date": "22 JUN",
-      "match": "V. Sachko – S. Mochizuki",
-      "pick": "Gana V. Sachko",
-      "odd": 3.26,
-      "book": "pinnacle",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -3145,21 +3145,6 @@
       "book": "onexbet",
       "homeName": "M. Trungelliti",
       "awayName": "M. Damm Jr"
-    },
-    {
-      "id": "1f461af14cf88f5bb39b82541e8f7a8c",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782810000000,
-      "date": "30 JUN",
-      "sofa": null,
-      "pickHome": false,
-      "match": "A. Molcan – D. Altmaier",
-      "pickKey": "away",
-      "pickLabel": "Gana D. Altmaier",
-      "odd": 1.91,
-      "book": "pinnacle",
-      "homeName": "A. Molcan",
-      "awayName": "D. Altmaier"
     },
     {
       "id": "2af6193491a1eaeeba23d9b48c069d29",
@@ -3190,21 +3175,6 @@
       "book": "matchbook",
       "homeName": "R. Safiullin",
       "awayName": "B. van de Zandschulp"
-    },
-    {
-      "id": "5e0919a8514a1242a386699a61e9eeaf",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782896400000,
-      "date": "01 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "H. Hurkacz – S. Ofner",
-      "pickKey": "home",
-      "pickLabel": "Gana H. Hurkacz",
-      "odd": 1.34,
-      "book": "onexbet",
-      "homeName": "H. Hurkacz",
-      "awayName": "S. Ofner"
     },
     {
       "id": "b2cb08043dfe196ce2a3db3739453419",
@@ -3343,6 +3313,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "30 JUN",
+      "name": "Combinada del Día",
+      "totalOdd": 2.53,
+      "result": "W",
+      "legs": [
+        {
+          "match": "T. Kokkinakis – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.43,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Khachanov – B. Harris",
+          "pick": "Gana K. Khachanov",
+          "odd": 1.32,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "H. Hurkacz – S. Ofner",
+          "pick": "Gana H. Hurkacz",
+          "odd": 1.34,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "28 JUN",
       "name": "Combinada Valor",
@@ -4438,71 +4437,9 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "07 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 21.56,
-      "result": "L",
-      "legs": [
-        {
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "G. Blancaneaux, – L. Staeheli,",
-          "pick": "Gana L. Staeheli,",
-          "odd": 5.6,
-          "win": true,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "30 JUN·c1",
-      "date": "30 JUN",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "1a76e2740082417247d02923fdbf8dd1",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "T. Kokkinakis – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.43,
-          "homeName": "T. Kokkinakis",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "a781545b6be54ba4f37eea8f21ed6695",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "K. Khachanov – B. Harris",
-          "pick": "Gana K. Khachanov",
-          "odd": 1.32,
-          "homeName": "K. Khachanov",
-          "awayName": "B. Harris"
-        },
-        {
-          "id": "5e0919a8514a1242a386699a61e9eeaf",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "H. Hurkacz – S. Ofner",
-          "pick": "Gana H. Hurkacz",
-          "odd": 1.34,
-          "homeName": "H. Hurkacz",
-          "awayName": "S. Ofner"
-        }
-      ]
-    },
     {
       "dayId": "30 JUN·c2",
       "date": "30 JUN",
@@ -5508,6 +5445,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "01 JUL",
+      "match": "S. Kwon – T. Paul",
+      "predName": "T. Paul",
+      "prob": 74,
+      "ok": true
+    },
+    {
+      "date": "01 JUL",
+      "match": "M. Fucsovics – L. Tien",
+      "predName": "L. Tien",
+      "prob": 68,
+      "ok": false
+    },
+    {
+      "date": "01 JUL",
+      "match": "H. Hurkacz – S. Ofner",
+      "predName": "H. Hurkacz",
+      "prob": 76,
+      "ok": true
+    },
+    {
+      "date": "30 JUN",
+      "match": "M. Navone – F. Cobolli",
+      "predName": "M. Navone",
+      "prob": 58,
+      "ok": false
+    },
+    {
+      "date": "30 JUN",
+      "match": "A. Molcan – D. Altmaier",
+      "predName": "D. Altmaier",
+      "prob": 59,
+      "ok": false
+    },
     {
       "date": "01 JUL",
       "match": "A. Parks – M. Sawangkaew",
@@ -8368,17 +8340,6 @@
     },
     {
       "date": "30 JUN",
-      "ts": 1782810000000,
-      "match": "A. Molcan – D. Altmaier",
-      "predHome": false,
-      "prob": 59,
-      "predName": "D. Altmaier",
-      "sofa": null,
-      "homeName": "A. Molcan",
-      "awayName": "D. Altmaier"
-    },
-    {
-      "date": "30 JUN",
       "ts": 1782813600000,
       "match": "B. Bonzi – G. Diallo",
       "predHome": false,
@@ -8387,17 +8348,6 @@
       "sofa": null,
       "homeName": "B. Bonzi",
       "awayName": "G. Diallo"
-    },
-    {
-      "date": "30 JUN",
-      "ts": 1782813600000,
-      "match": "M. Navone – F. Cobolli",
-      "predHome": true,
-      "prob": 58,
-      "predName": "M. Navone",
-      "sofa": null,
-      "homeName": "M. Navone",
-      "awayName": "F. Cobolli"
     },
     {
       "date": "30 JUN",
@@ -8457,17 +8407,6 @@
     {
       "date": "01 JUL",
       "ts": 1782896400000,
-      "match": "H. Hurkacz – S. Ofner",
-      "predHome": true,
-      "prob": 76,
-      "predName": "H. Hurkacz",
-      "sofa": null,
-      "homeName": "H. Hurkacz",
-      "awayName": "S. Ofner"
-    },
-    {
-      "date": "01 JUL",
-      "ts": 1782896400000,
       "match": "J. Sinner – N. Borges",
       "predHome": true,
       "prob": 90,
@@ -8475,17 +8414,6 @@
       "sofa": null,
       "homeName": "J. Sinner",
       "awayName": "N. Borges"
-    },
-    {
-      "date": "01 JUL",
-      "ts": 1782896400000,
-      "match": "M. Fucsovics – L. Tien",
-      "predHome": false,
-      "prob": 68,
-      "predName": "L. Tien",
-      "sofa": null,
-      "homeName": "M. Fucsovics",
-      "awayName": "L. Tien"
     },
     {
       "date": "01 JUL",
@@ -8519,17 +8447,6 @@
       "sofa": null,
       "homeName": "R. Jodar",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "date": "01 JUL",
-      "ts": 1782896400000,
-      "match": "S. Kwon – T. Paul",
-      "predHome": false,
-      "prob": 74,
-      "predName": "T. Paul",
-      "sofa": null,
-      "homeName": "S. Kwon",
-      "awayName": "T. Paul"
     },
     {
       "date": "01 JUL",
