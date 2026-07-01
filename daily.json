@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T16:01:05.832Z",
+    "updatedAt": "2026-07-01T18:01:09.827Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2585,6 +2585,15 @@
   ],
   "RECORD": [
     {
+      "id": "15104fdfd9da4c652e14341586d49452",
+      "date": "01 JUL",
+      "match": "R. Safiullin – B. van de Zandschulp",
+      "pick": "Gana B. van de Zandschulp",
+      "odd": 2.24,
+      "book": "matchbook",
+      "result": "L"
+    },
+    {
       "id": "5e0919a8514a1242a386699a61e9eeaf",
       "date": "01 JUL",
       "match": "H. Hurkacz – S. Ofner",
@@ -3119,15 +3128,6 @@
       "odd": 3.79,
       "book": "pinnacle",
       "result": "W"
-    },
-    {
-      "id": "5f0a49eaf22be4e6a912bbe83bafeeaa",
-      "date": "22 JUN",
-      "match": "O. Tarvet – A. Bolt",
-      "pick": "Gana A. Bolt",
-      "odd": 1.78,
-      "book": "betfair_ex_eu",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -3160,21 +3160,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "15104fdfd9da4c652e14341586d49452",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782900000000,
-      "date": "01 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "R. Safiullin – B. van de Zandschulp",
-      "pickKey": "away",
-      "pickLabel": "Gana B. van de Zandschulp",
-      "odd": 2.24,
-      "book": "matchbook",
-      "homeName": "R. Safiullin",
-      "awayName": "B. van de Zandschulp"
     },
     {
       "id": "b2cb08043dfe196ce2a3db3739453419",
@@ -3313,6 +3298,64 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "01 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 9.88,
+      "result": "L",
+      "legs": [
+        {
+          "match": "J. Brooksby – I. Buse",
+          "pick": "Gana I. Buse",
+          "odd": 2.29,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "R. Safiullin – B. van de Zandschulp",
+          "pick": "Gana B. van de Zandschulp",
+          "odd": 2.18,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "G. Diallo – L. Sonego",
+          "pick": "Gana G. Diallo",
+          "odd": 1.98,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "30 JUN",
+      "name": "Combinada Valor",
+      "totalOdd": 11.64,
+      "result": "L",
+      "legs": [
+        {
+          "match": "J. Brooksby – I. Buse",
+          "pick": "Gana I. Buse",
+          "odd": 2.22,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "R. Safiullin – B. van de Zandschulp",
+          "pick": "Gana B. van de Zandschulp",
+          "odd": 2.24,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "M. Arnaldi – Q. Halys",
+          "pick": "Gana M. Arnaldi",
+          "odd": 2.34,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "30 JUN",
       "name": "Combinada del Día",
@@ -4386,100 +4429,9 @@
           "voided": true
         }
       ]
-    },
-    {
-      "date": "07 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 27.6,
-      "result": "L",
-      "legs": [
-        {
-          "match": "F. Cobolli – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 1.28,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "M. Kestelboim, – I. Radulov,",
-          "pick": "Gana M. Kestelboim,",
-          "odd": 3.85,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "G. Blancaneaux, – L. Staeheli,",
-          "pick": "Gana L. Staeheli,",
-          "odd": 5.6,
-          "win": true,
-          "voided": false
-        }
-      ]
-    },
-    {
-      "date": "06 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 1.65,
-      "result": "W",
-      "legs": [
-        {
-          "match": "M. Chwalinska – M. Andreeva",
-          "pick": "Gana M. Andreeva",
-          "odd": 1.28,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "F. Cobolli – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 1.29,
-          "win": true,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "30 JUN·c2",
-      "date": "30 JUN",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "3c42b7c1e9ae3bc7fe1935d6b4ba1ce3",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "J. Brooksby – I. Buse",
-          "pick": "Gana I. Buse",
-          "odd": 2.22,
-          "homeName": "J. Brooksby",
-          "awayName": "I. Buse"
-        },
-        {
-          "id": "15104fdfd9da4c652e14341586d49452",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "R. Safiullin – B. van de Zandschulp",
-          "pick": "Gana B. van de Zandschulp",
-          "odd": 2.24,
-          "homeName": "R. Safiullin",
-          "awayName": "B. van de Zandschulp"
-        },
-        {
-          "id": "4579733c9a884ba46e917832c215723c",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "M. Arnaldi – Q. Halys",
-          "pick": "Gana M. Arnaldi",
-          "odd": 2.34,
-          "homeName": "M. Arnaldi",
-          "awayName": "Q. Halys"
-        }
-      ]
-    },
     {
       "dayId": "01 JUL·c1",
       "date": "01 JUL",
@@ -4517,46 +4469,6 @@
           "odd": 1.34,
           "homeName": "R. Jodar",
           "awayName": "P. Carreno Busta"
-        }
-      ]
-    },
-    {
-      "dayId": "01 JUL·c2",
-      "date": "01 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "3c42b7c1e9ae3bc7fe1935d6b4ba1ce3",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "J. Brooksby – I. Buse",
-          "pick": "Gana I. Buse",
-          "odd": 2.29,
-          "homeName": "J. Brooksby",
-          "awayName": "I. Buse"
-        },
-        {
-          "id": "15104fdfd9da4c652e14341586d49452",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "R. Safiullin – B. van de Zandschulp",
-          "pick": "Gana B. van de Zandschulp",
-          "odd": 2.18,
-          "homeName": "R. Safiullin",
-          "awayName": "B. van de Zandschulp"
-        },
-        {
-          "id": "6f6bf7e8a3cf4f51b6e4a1275a8ab192",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "G. Diallo – L. Sonego",
-          "pick": "Gana G. Diallo",
-          "odd": 1.98,
-          "homeName": "G. Diallo",
-          "awayName": "L. Sonego"
         }
       ]
     }
@@ -5445,6 +5357,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "01 JUL",
+      "match": "J. De Jong – J. Fonseca",
+      "predName": "J. Fonseca",
+      "prob": 84,
+      "ok": true
+    },
+    {
+      "date": "01 JUL",
+      "match": "S. Mochizuki – E. Quinn",
+      "predName": "E. Quinn",
+      "prob": 64,
+      "ok": false
+    },
+    {
+      "date": "01 JUL",
+      "match": "R. Safiullin – B. van de Zandschulp",
+      "predName": "B. van de Zandschulp",
+      "prob": 58,
+      "ok": false
+    },
     {
       "date": "01 JUL",
       "match": "N. Mejia – M. Zheng",
@@ -8445,28 +8378,6 @@
     },
     {
       "date": "01 JUL",
-      "ts": 1782900000000,
-      "match": "R. Safiullin – B. van de Zandschulp",
-      "predHome": false,
-      "prob": 58,
-      "predName": "B. van de Zandschulp",
-      "sofa": null,
-      "homeName": "R. Safiullin",
-      "awayName": "B. van de Zandschulp"
-    },
-    {
-      "date": "01 JUL",
-      "ts": 1782900000000,
-      "match": "S. Mochizuki – E. Quinn",
-      "predHome": false,
-      "prob": 64,
-      "predName": "E. Quinn",
-      "sofa": null,
-      "homeName": "S. Mochizuki",
-      "awayName": "E. Quinn"
-    },
-    {
-      "date": "01 JUL",
       "ts": 1782912600000,
       "match": "B. Nakashima – J. Struff",
       "predHome": true,
@@ -8475,17 +8386,6 @@
       "sofa": null,
       "homeName": "B. Nakashima",
       "awayName": "J. Struff"
-    },
-    {
-      "date": "01 JUL",
-      "ts": 1782912600000,
-      "match": "J. De Jong – J. Fonseca",
-      "predHome": false,
-      "prob": 84,
-      "predName": "J. Fonseca",
-      "sofa": null,
-      "homeName": "J. De Jong",
-      "awayName": "J. Fonseca"
     },
     {
       "date": "02 JUL",
@@ -8636,9 +8536,9 @@
     "start": 10,
     "target": 250,
     "steps": 10,
-    "current": 0,
+    "current": 1,
     "status": "live",
-    "bank": 10,
+    "bank": 12,
     "rungs": [
       {
         "n": 1,
@@ -8647,7 +8547,7 @@
         "odd": 1.2,
         "book": "matchbook",
         "bank": 12,
-        "result": "today",
+        "result": "W",
         "date": "01 JUL",
         "sofa": null
       },
