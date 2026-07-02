@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T12:01:02.170Z",
+    "updatedAt": "2026-07-02T14:01:02.827Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2067,6 +2067,33 @@
   ],
   "RECORD": [
     {
+      "id": "57ccf4d5f11f84a3ed959a6e16e6b4a6",
+      "date": "02 JUL",
+      "match": "A. Fery – O. Virtanen",
+      "pick": "Gana A. Fery",
+      "odd": 2.58,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
+      "id": "b2cb08043dfe196ce2a3db3739453419",
+      "date": "01 JUL",
+      "match": "B. Nakashima – J. Struff",
+      "pick": "Gana J. Struff",
+      "odd": 4.01,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
+      "id": "7cfbcb8496407d13034b29b455f88b40",
+      "date": "29 JUN",
+      "match": "M. Trungelliti – M. Damm Jr",
+      "pick": "Gana M. Trungelliti",
+      "odd": 4.24,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
       "id": "6f6bf7e8a3cf4f51b6e4a1275a8ab192",
       "date": "02 JUL",
       "match": "G. Diallo – L. Sonego",
@@ -2583,51 +2610,9 @@
       "odd": 1.59,
       "book": "matchbook",
       "result": "W"
-    },
-    {
-      "id": "5f44b8e7716ea4b740e9a070b87acc81",
-      "date": "23 JUN",
-      "match": "A. Li – E. Alexandrova",
-      "pick": "Gana E. Alexandrova",
-      "odd": 1.71,
-      "book": "matchbook",
-      "result": "W"
-    },
-    {
-      "id": "acb29afbfe66647dba0cebc49280689d",
-      "date": "22 JUN",
-      "match": "Z. Zhang – H. Searle",
-      "pick": "Gana Z. Zhang",
-      "odd": 1.67,
-      "book": "mybookieag",
-      "result": "L"
-    },
-    {
-      "id": "c7c95437d7ab06483eec65f3781e4b2e",
-      "date": "22 JUN",
-      "match": "O. Crawford – J. Rodionov",
-      "pick": "Gana O. Crawford",
-      "odd": 3.31,
-      "book": "pinnacle",
-      "result": "L"
     }
   ],
   "PENDING": [
-    {
-      "id": "7cfbcb8496407d13034b29b455f88b40",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782727200000,
-      "date": "29 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "M. Trungelliti – M. Damm Jr",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Trungelliti",
-      "odd": 4.24,
-      "book": "onexbet",
-      "homeName": "M. Trungelliti",
-      "awayName": "M. Damm Jr"
-    },
     {
       "id": "2af6193491a1eaeeba23d9b48c069d29",
       "sport": "tennis_atp_wimbledon",
@@ -2642,21 +2627,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "b2cb08043dfe196ce2a3db3739453419",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782912600000,
-      "date": "01 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "B. Nakashima – J. Struff",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Struff",
-      "odd": 4.01,
-      "book": "onexbet",
-      "homeName": "B. Nakashima",
-      "awayName": "J. Struff"
     },
     {
       "id": "c2791b0b5f6904fd21d85b31fe9ce021",
@@ -2702,21 +2672,6 @@
       "book": "betfair_ex_eu",
       "homeName": "M. Berrettini",
       "awayName": "A. Fils"
-    },
-    {
-      "id": "57ccf4d5f11f84a3ed959a6e16e6b4a6",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782982800000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Fery – O. Virtanen",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Fery",
-      "odd": 2.58,
-      "book": "onexbet",
-      "homeName": "A. Fery",
-      "awayName": "O. Virtanen"
     },
     {
       "id": "5316dcc5c0e7a6949cca3612252e4062",
@@ -4879,6 +4834,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "02 JUL",
+      "match": "T. Fritz – P. Kypson",
+      "predName": "T. Fritz",
+      "prob": 79,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "A. Fery – O. Virtanen",
+      "predName": "O. Virtanen",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "01 JUL",
+      "match": "B. Nakashima – J. Struff",
+      "predName": "B. Nakashima",
+      "prob": 62,
+      "ok": false
+    },
     {
       "date": "02 JUL",
       "match": "E. Navarro – O. Selekhmeteva",
@@ -7905,17 +7881,6 @@
       "awayName": "M. Damm Jr"
     },
     {
-      "date": "01 JUL",
-      "ts": 1782912600000,
-      "match": "B. Nakashima – J. Struff",
-      "predHome": true,
-      "prob": 62,
-      "predName": "B. Nakashima",
-      "sofa": null,
-      "homeName": "B. Nakashima",
-      "awayName": "J. Struff"
-    },
-    {
       "date": "02 JUL",
       "ts": 1782982800000,
       "match": "K. Jacquet – A. Bublik",
@@ -7936,17 +7901,6 @@
       "sofa": null,
       "homeName": "V. Royer",
       "awayName": "A. Zverev"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "A. Fery – O. Virtanen",
-      "predHome": false,
-      "prob": 55,
-      "predName": "O. Virtanen",
-      "sofa": null,
-      "homeName": "A. Fery",
-      "awayName": "O. Virtanen"
     },
     {
       "date": "02 JUL",
@@ -8024,17 +7978,6 @@
       "sofa": null,
       "homeName": "Q. Halys",
       "awayName": "M. Giron"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "T. Fritz – P. Kypson",
-      "predHome": true,
-      "prob": 79,
-      "predName": "T. Fritz",
-      "sofa": null,
-      "homeName": "T. Fritz",
-      "awayName": "P. Kypson"
     },
     {
       "date": "02 JUL",
