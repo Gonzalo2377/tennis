@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T14:01:02.827Z",
+    "updatedAt": "2026-07-02T16:01:06.720Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2067,6 +2067,24 @@
   ],
   "RECORD": [
     {
+      "id": "e5d6695710cc298e0db270379849262d",
+      "date": "02 JUL",
+      "match": "Z. Bergs – J. Faria",
+      "pick": "Gana Z. Bergs",
+      "odd": 1.59,
+      "book": "pinnacle",
+      "result": "W"
+    },
+    {
+      "id": "c2791b0b5f6904fd21d85b31fe9ce021",
+      "date": "02 JUL",
+      "match": "Z. Svajda – K. Majchrzak",
+      "pick": "Gana Z. Svajda",
+      "odd": 3.04,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
       "id": "57ccf4d5f11f84a3ed959a6e16e6b4a6",
       "date": "02 JUL",
       "match": "A. Fery – O. Virtanen",
@@ -2592,24 +2610,6 @@
       "odd": 2.42,
       "book": "betfair_ex_eu",
       "result": "W"
-    },
-    {
-      "id": "851020643053c9e5c1b793a6aa615d1c",
-      "date": "23 JUN",
-      "match": "L. Giovannini – L. Stefanini",
-      "pick": "Gana L. Giovannini",
-      "odd": 2.84,
-      "book": "betfair_ex_eu",
-      "result": "L"
-    },
-    {
-      "id": "a7bf04353655a8975f1bf0d7867c606a",
-      "date": "23 JUN",
-      "match": "E. Lys – E. Navarro",
-      "pick": "Gana E. Navarro",
-      "odd": 1.59,
-      "book": "matchbook",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -2627,21 +2627,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "c2791b0b5f6904fd21d85b31fe9ce021",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782986400000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "Z. Svajda – K. Majchrzak",
-      "pickKey": "home",
-      "pickLabel": "Gana Z. Svajda",
-      "odd": 3.04,
-      "book": "onexbet",
-      "homeName": "Z. Svajda",
-      "awayName": "K. Majchrzak"
     },
     {
       "id": "fd09cf3c860ea9a59a315a30c7dd6edf",
@@ -2717,21 +2702,6 @@
       "book": "matchbook",
       "homeName": "K. Khachanov",
       "awayName": "Y. Hanfmann"
-    },
-    {
-      "id": "e5d6695710cc298e0db270379849262d",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782993600000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "Z. Bergs – J. Faria",
-      "pickKey": "home",
-      "pickLabel": "Gana Z. Bergs",
-      "odd": 1.59,
-      "book": "pinnacle",
-      "homeName": "Z. Bergs",
-      "awayName": "J. Faria"
     }
   ],
   "COMBO_RECORD": [
@@ -4834,6 +4804,34 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "02 JUL",
+      "match": "Z. Svajda – K. Majchrzak",
+      "predName": "K. Majchrzak",
+      "prob": 50,
+      "ok": false
+    },
+    {
+      "date": "02 JUL",
+      "match": "Q. Halys – M. Giron",
+      "predName": "M. Giron",
+      "prob": 51,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "Z. Bergs – J. Faria",
+      "predName": "Z. Bergs",
+      "prob": 66,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "G. Diallo – L. Sonego",
+      "predName": "G. Diallo",
+      "prob": 56,
+      "ok": false
+    },
     {
       "date": "02 JUL",
       "match": "T. Fritz – P. Kypson",
@@ -7916,17 +7914,6 @@
     {
       "date": "02 JUL",
       "ts": 1782982800000,
-      "match": "G. Diallo – L. Sonego",
-      "predHome": true,
-      "prob": 56,
-      "predName": "G. Diallo",
-      "sofa": null,
-      "homeName": "G. Diallo",
-      "awayName": "L. Sonego"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
       "match": "J. Mensik – G. Dimitrov",
       "predHome": false,
       "prob": 52,
@@ -7949,17 +7936,6 @@
     {
       "date": "02 JUL",
       "ts": 1782982800000,
-      "match": "Z. Bergs – J. Faria",
-      "predHome": true,
-      "prob": 66,
-      "predName": "Z. Bergs",
-      "sofa": null,
-      "homeName": "Z. Bergs",
-      "awayName": "J. Faria"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
       "match": "K. Khachanov – Y. Hanfmann",
       "predHome": true,
       "prob": 69,
@@ -7967,28 +7943,6 @@
       "sofa": null,
       "homeName": "K. Khachanov",
       "awayName": "Y. Hanfmann"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "Q. Halys – M. Giron",
-      "predHome": false,
-      "prob": 51,
-      "predName": "M. Giron",
-      "sofa": null,
-      "homeName": "Q. Halys",
-      "awayName": "M. Giron"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782986400000,
-      "match": "Z. Svajda – K. Majchrzak",
-      "predHome": false,
-      "prob": 50,
-      "predName": "K. Majchrzak",
-      "sofa": null,
-      "homeName": "Z. Svajda",
-      "awayName": "K. Majchrzak"
     },
     {
       "date": "02 JUL",
