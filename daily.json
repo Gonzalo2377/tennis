@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T16:01:06.720Z",
+    "updatedAt": "2026-07-02T18:01:05.484Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2067,6 +2067,33 @@
   ],
   "RECORD": [
     {
+      "id": "377d4696b263ff2928903f63e3fb4267",
+      "date": "02 JUL",
+      "match": "K. Khachanov – Y. Hanfmann",
+      "pick": "Gana K. Khachanov",
+      "odd": 1.51,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
+      "id": "2a1634e9fe0b4381b834507184b0c0ae",
+      "date": "02 JUL",
+      "match": "J. Fearnley – J. Munar",
+      "pick": "Gana J. Munar",
+      "odd": 1.6,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "9d5f5d50421cb63cd02de4f11ad91baa",
+      "date": "02 JUL",
+      "match": "M. Berrettini – A. Fils",
+      "pick": "Gana M. Berrettini",
+      "odd": 2.68,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "e5d6695710cc298e0db270379849262d",
       "date": "02 JUL",
       "match": "Z. Bergs – J. Faria",
@@ -2583,33 +2610,6 @@
       "odd": 1.27,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "0f6f63a7a067c2880bd3fd129c4b315b",
-      "date": "23 JUN",
-      "match": "L. Sun – L. Klimovicova",
-      "pick": "Gana L. Klimovicova",
-      "odd": 2.88,
-      "book": "betfair_ex_eu",
-      "result": "L"
-    },
-    {
-      "id": "89688c590b9945e9e0764f5ae9a34106",
-      "date": "23 JUN",
-      "match": "L. Fruhvirtova – E. Jones",
-      "pick": "Gana E. Jones",
-      "odd": 1.99,
-      "book": "betfair_ex_eu",
-      "result": "W"
-    },
-    {
-      "id": "c4e59cdef76caee450de2479fffd60fc",
-      "date": "23 JUN",
-      "match": "H. Tan – M. Pohánková",
-      "pick": "Gana H. Tan",
-      "odd": 2.42,
-      "book": "betfair_ex_eu",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -2644,21 +2644,6 @@
       "awayName": "G. Dimitrov"
     },
     {
-      "id": "9d5f5d50421cb63cd02de4f11ad91baa",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782982800000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "M. Berrettini – A. Fils",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Berrettini",
-      "odd": 2.68,
-      "book": "betfair_ex_eu",
-      "homeName": "M. Berrettini",
-      "awayName": "A. Fils"
-    },
-    {
       "id": "5316dcc5c0e7a6949cca3612252e4062",
       "sport": "tennis_atp_wimbledon",
       "ts": 1782982800000,
@@ -2672,36 +2657,6 @@
       "book": "onexbet",
       "homeName": "K. Jacquet",
       "awayName": "A. Bublik"
-    },
-    {
-      "id": "2a1634e9fe0b4381b834507184b0c0ae",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782982800000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Fearnley – J. Munar",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Munar",
-      "odd": 1.6,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Fearnley",
-      "awayName": "J. Munar"
-    },
-    {
-      "id": "377d4696b263ff2928903f63e3fb4267",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782982800000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "K. Khachanov – Y. Hanfmann",
-      "pickKey": "home",
-      "pickLabel": "Gana K. Khachanov",
-      "odd": 1.51,
-      "book": "matchbook",
-      "homeName": "K. Khachanov",
-      "awayName": "Y. Hanfmann"
     }
   ],
   "COMBO_RECORD": [
@@ -4804,6 +4759,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "02 JUL",
+      "match": "J. Duckworth – F. Cobolli",
+      "predName": "F. Cobolli",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "K. Khachanov – Y. Hanfmann",
+      "predName": "K. Khachanov",
+      "prob": 69,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "J. Fearnley – J. Munar",
+      "predName": "J. Munar",
+      "prob": 65,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "M. Berrettini – A. Fils",
+      "predName": "A. Fils",
+      "prob": 54,
+      "ok": false
+    },
+    {
+      "date": "02 JUL",
+      "match": "V. Royer – A. Zverev",
+      "predName": "A. Zverev",
+      "prob": 81,
+      "ok": true
+    },
     {
       "date": "02 JUL",
       "match": "Z. Svajda – K. Majchrzak",
@@ -7892,28 +7882,6 @@
     {
       "date": "02 JUL",
       "ts": 1782982800000,
-      "match": "V. Royer – A. Zverev",
-      "predHome": false,
-      "prob": 81,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "V. Royer",
-      "awayName": "A. Zverev"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "M. Berrettini – A. Fils",
-      "predHome": false,
-      "prob": 54,
-      "predName": "A. Fils",
-      "sofa": null,
-      "homeName": "M. Berrettini",
-      "awayName": "A. Fils"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
       "match": "J. Mensik – G. Dimitrov",
       "predHome": false,
       "prob": 52,
@@ -7921,28 +7889,6 @@
       "sofa": null,
       "homeName": "J. Mensik",
       "awayName": "G. Dimitrov"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "J. Fearnley – J. Munar",
-      "predHome": false,
-      "prob": 65,
-      "predName": "J. Munar",
-      "sofa": null,
-      "homeName": "J. Fearnley",
-      "awayName": "J. Munar"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
-      "match": "K. Khachanov – Y. Hanfmann",
-      "predHome": true,
-      "prob": 69,
-      "predName": "K. Khachanov",
-      "sofa": null,
-      "homeName": "K. Khachanov",
-      "awayName": "Y. Hanfmann"
     },
     {
       "date": "02 JUL",
@@ -7954,17 +7900,6 @@
       "sofa": null,
       "homeName": "J. Lehecka",
       "awayName": "A. Molcan"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782999000000,
-      "match": "J. Duckworth – F. Cobolli",
-      "predHome": false,
-      "prob": 53,
-      "predName": "F. Cobolli",
-      "sofa": null,
-      "homeName": "J. Duckworth",
-      "awayName": "F. Cobolli"
     },
     {
       "date": "02 JUL",
