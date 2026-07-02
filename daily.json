@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T18:01:05.484Z",
+    "updatedAt": "2026-07-02T20:01:17.350Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2067,6 +2067,15 @@
   ],
   "RECORD": [
     {
+      "id": "5316dcc5c0e7a6949cca3612252e4062",
+      "date": "02 JUL",
+      "match": "K. Jacquet – A. Bublik",
+      "pick": "Gana A. Bublik",
+      "odd": 1.32,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
       "id": "377d4696b263ff2928903f63e3fb4267",
       "date": "02 JUL",
       "match": "K. Khachanov – Y. Hanfmann",
@@ -2601,15 +2610,6 @@
       "odd": 2.56,
       "book": "betfair_ex_eu",
       "result": "W"
-    },
-    {
-      "id": "07834cf7ac4b28ca83d2d738cc0c4860",
-      "date": "24 JUN",
-      "match": "B. Yunchaokete – C. Tabur",
-      "pick": "Gana B. Yunchaokete",
-      "odd": 1.27,
-      "book": "betfair_ex_eu",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -2642,24 +2642,67 @@
       "book": "onexbet",
       "homeName": "J. Mensik",
       "awayName": "G. Dimitrov"
-    },
-    {
-      "id": "5316dcc5c0e7a6949cca3612252e4062",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782982800000,
-      "date": "02 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Jacquet – A. Bublik",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Bublik",
-      "odd": 1.32,
-      "book": "onexbet",
-      "homeName": "K. Jacquet",
-      "awayName": "A. Bublik"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "02 JUL",
+      "name": "Combinada del Día",
+      "totalOdd": 3.79,
+      "result": "W",
+      "legs": [
+        {
+          "match": "K. Jacquet – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.28,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Khachanov – Y. Hanfmann",
+          "pick": "Gana K. Khachanov",
+          "odd": 1.7,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "J. Fearnley – J. Munar",
+          "pick": "Gana J. Munar",
+          "odd": 1.74,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "01 JUL",
+      "name": "Combinada del Día",
+      "totalOdd": 2.05,
+      "result": "W",
+      "legs": [
+        {
+          "match": "J. De Jong – J. Fonseca",
+          "pick": "Gana J. Fonseca",
+          "odd": 1.16,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Jacquet – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 1.32,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "R. Jodar – P. Carreno Busta",
+          "pick": "Gana R. Jodar",
+          "odd": 1.34,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "01 JUL",
       "name": "Combinada Valor",
@@ -3740,141 +3783,9 @@
           "voided": true
         }
       ]
-    },
-    {
-      "date": "10 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 1.7,
-      "result": "W",
-      "legs": [
-        {
-          "match": "E. Rybakina – T. Maria",
-          "pick": "Gana E. Rybakina",
-          "odd": 1.26,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "V. Mboko – K. Pliskova",
-          "pick": "Gana V. Mboko",
-          "odd": 1,
-          "win": null,
-          "voided": true
-        },
-        {
-          "match": "L. Siegemund – A. Anisimova",
-          "pick": "Gana A. Anisimova",
-          "odd": 1.35,
-          "win": true,
-          "voided": false
-        }
-      ]
-    },
-    {
-      "date": "08 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 1.48,
-      "result": "L",
-      "legs": [
-        {
-          "match": "D. Kasatkina – R. Montgomery",
-          "pick": "Gana D. Kasatkina",
-          "odd": 1.48,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "T. Paul – G. Mpetshi Perricard",
-          "pick": "Gana T. Paul",
-          "odd": 1,
-          "win": null,
-          "voided": true
-        }
-      ]
     }
   ],
-  "COMBO_PENDING": [
-    {
-      "dayId": "01 JUL·c1",
-      "date": "01 JUL",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "daeaedb477e01f4db0186e37a820bbf0",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "J. De Jong – J. Fonseca",
-          "pick": "Gana J. Fonseca",
-          "odd": 1.16,
-          "homeName": "J. De Jong",
-          "awayName": "J. Fonseca"
-        },
-        {
-          "id": "5316dcc5c0e7a6949cca3612252e4062",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Jacquet – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.32,
-          "homeName": "K. Jacquet",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "5cd62d41639d452d84d2114bd9713f4b",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "R. Jodar – P. Carreno Busta",
-          "pick": "Gana R. Jodar",
-          "odd": 1.34,
-          "homeName": "R. Jodar",
-          "awayName": "P. Carreno Busta"
-        }
-      ]
-    },
-    {
-      "dayId": "02 JUL·c1",
-      "date": "02 JUL",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "5316dcc5c0e7a6949cca3612252e4062",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Jacquet – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.28,
-          "homeName": "K. Jacquet",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "377d4696b263ff2928903f63e3fb4267",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "K. Khachanov – Y. Hanfmann",
-          "pick": "Gana K. Khachanov",
-          "odd": 1.7,
-          "homeName": "K. Khachanov",
-          "awayName": "Y. Hanfmann"
-        },
-        {
-          "id": "2a1634e9fe0b4381b834507184b0c0ae",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "J. Fearnley – J. Munar",
-          "pick": "Gana J. Munar",
-          "odd": 1.74,
-          "homeName": "J. Fearnley",
-          "awayName": "J. Munar"
-        }
-      ]
-    }
-  ],
+  "COMBO_PENDING": [],
   "ARB_RECORD": [
     {
       "date": "02 JUL",
@@ -4759,6 +4670,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "02 JUL",
+      "match": "F. Tiafoe – J. Choinski",
+      "predName": "F. Tiafoe",
+      "prob": 73,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "J. Lehecka – A. Molcan",
+      "predName": "J. Lehecka",
+      "prob": 80,
+      "ok": true
+    },
+    {
+      "date": "02 JUL",
+      "match": "K. Jacquet – A. Bublik",
+      "predName": "A. Bublik",
+      "prob": 84,
+      "ok": true
+    },
     {
       "date": "02 JUL",
       "match": "J. Duckworth – F. Cobolli",
@@ -7871,17 +7803,6 @@
     {
       "date": "02 JUL",
       "ts": 1782982800000,
-      "match": "K. Jacquet – A. Bublik",
-      "predHome": false,
-      "prob": 84,
-      "predName": "A. Bublik",
-      "sofa": null,
-      "homeName": "K. Jacquet",
-      "awayName": "A. Bublik"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782982800000,
       "match": "J. Mensik – G. Dimitrov",
       "predHome": false,
       "prob": 52,
@@ -7889,28 +7810,6 @@
       "sofa": null,
       "homeName": "J. Mensik",
       "awayName": "G. Dimitrov"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782999000000,
-      "match": "J. Lehecka – A. Molcan",
-      "predHome": true,
-      "prob": 80,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "J. Lehecka",
-      "awayName": "A. Molcan"
-    },
-    {
-      "date": "02 JUL",
-      "ts": 1782999000000,
-      "match": "F. Tiafoe – J. Choinski",
-      "predHome": true,
-      "prob": 73,
-      "predName": "F. Tiafoe",
-      "sofa": null,
-      "homeName": "F. Tiafoe",
-      "awayName": "J. Choinski"
     },
     {
       "date": "03 JUL",
