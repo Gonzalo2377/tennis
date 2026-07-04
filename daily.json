@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-04T20:00:50.515Z",
+    "updatedAt": "2026-07-04T22:00:46.392Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2468,6 +2468,24 @@
   ],
   "RECORD": [
     {
+      "id": "cfc02240ad5be9509d5cb936e79e02ed",
+      "date": "04 JUL",
+      "match": "G. Dimitrov – M. Berrettini",
+      "pick": "Gana G. Dimitrov",
+      "odd": 2.2,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
+      "id": "0dcdb7b775c9c9802fb54feb8b1f1593",
+      "date": "04 JUL",
+      "match": "F. Tiafoe – A. Bublik",
+      "pick": "Gana A. Bublik",
+      "odd": 2.18,
+      "book": "onexbet",
+      "result": "W"
+    },
+    {
       "id": "7524184c36ede122c2c1cc353af1b2d3",
       "date": "04 JUL",
       "match": "K. Khachanov – F. Cobolli",
@@ -2993,24 +3011,6 @@
       "odd": 2.36,
       "book": "betfair_ex_eu",
       "result": "W"
-    },
-    {
-      "id": "a249ee0e179f54d1cbc8d6619c402657",
-      "date": "24 JUN",
-      "match": "J. Kym – A. Holmgren",
-      "pick": "Gana A. Holmgren",
-      "odd": 2.01,
-      "book": "pinnacle",
-      "result": "L"
-    },
-    {
-      "id": "ea81b99c2eb9651ec6e6ae800f08d049",
-      "date": "24 JUN",
-      "match": "J. Faria – L. Pavlovic",
-      "pick": "Gana L. Pavlovic",
-      "odd": 3.13,
-      "book": "pinnacle",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -3028,36 +3028,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "0dcdb7b775c9c9802fb54feb8b1f1593",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1783155600000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Tiafoe – A. Bublik",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Bublik",
-      "odd": 2.18,
-      "book": "onexbet",
-      "homeName": "F. Tiafoe",
-      "awayName": "A. Bublik"
-    },
-    {
-      "id": "cfc02240ad5be9509d5cb936e79e02ed",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1783155600000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "G. Dimitrov – M. Berrettini",
-      "pickKey": "home",
-      "pickLabel": "Gana G. Dimitrov",
-      "odd": 2.2,
-      "book": "matchbook",
-      "homeName": "G. Dimitrov",
-      "awayName": "M. Berrettini"
     },
     {
       "id": "b3d71ef368ca8a3172673e081f7fdee3",
@@ -3151,6 +3121,64 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "03 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 8.27,
+      "result": "L",
+      "legs": [
+        {
+          "match": "F. Tiafoe – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 2.16,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "Z. Bergs – A. Fery",
+          "pick": "Gana Z. Bergs",
+          "odd": 1.74,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "G. Dimitrov – M. Berrettini",
+          "pick": "Gana G. Dimitrov",
+          "odd": 2.2,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "03 JUL",
+      "name": "Combinada del Día",
+      "totalOdd": 7.01,
+      "result": "L",
+      "legs": [
+        {
+          "match": "K. Khachanov – F. Cobolli",
+          "pick": "Gana K. Khachanov",
+          "odd": 1.88,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "Z. Bergs – A. Fery",
+          "pick": "Gana Z. Bergs",
+          "odd": 1.71,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "F. Tiafoe – A. Bublik",
+          "pick": "Gana A. Bublik",
+          "odd": 2.18,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "04 JUL",
       "name": "Combinada Valor",
@@ -4231,147 +4259,9 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "09 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 6.42,
-      "result": "L",
-      "legs": [
-        {
-          "match": "G. Diallo – A. Mannarino",
-          "pick": "Gana G. Diallo",
-          "odd": 2.3,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "T. Korpatsch – E. Ruse",
-          "pick": "Gana E. Ruse",
-          "odd": 1.47,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "N. Bartunkova – H. Vandewinkel",
-          "pick": "Gana N. Bartunkova",
-          "odd": 1.9,
-          "win": false,
-          "voided": false
-        }
-      ]
-    },
-    {
-      "date": "09 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 4.41,
-      "result": "L",
-      "legs": [
-        {
-          "match": "T. Korpatsch – E. Ruse",
-          "pick": "Gana E. Ruse",
-          "odd": 1.47,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "E. Raducanu – A. Blinkova",
-          "pick": "Gana E. Raducanu",
-          "odd": 1.58,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "N. Bartunkova – H. Vandewinkel",
-          "pick": "Gana N. Bartunkova",
-          "odd": 1.9,
-          "win": false,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "03 JUL·c1",
-      "date": "03 JUL",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "7524184c36ede122c2c1cc353af1b2d3",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "K. Khachanov – F. Cobolli",
-          "pick": "Gana K. Khachanov",
-          "odd": 1.88,
-          "homeName": "K. Khachanov",
-          "awayName": "F. Cobolli"
-        },
-        {
-          "id": "f96720ebe957199507985213c07f5afb",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "Z. Bergs – A. Fery",
-          "pick": "Gana Z. Bergs",
-          "odd": 1.71,
-          "homeName": "Z. Bergs",
-          "awayName": "A. Fery"
-        },
-        {
-          "id": "0dcdb7b775c9c9802fb54feb8b1f1593",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "F. Tiafoe – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 2.18,
-          "homeName": "F. Tiafoe",
-          "awayName": "A. Bublik"
-        }
-      ]
-    },
-    {
-      "dayId": "03 JUL·c2",
-      "date": "03 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "0dcdb7b775c9c9802fb54feb8b1f1593",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "F. Tiafoe – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 2.16,
-          "homeName": "F. Tiafoe",
-          "awayName": "A. Bublik"
-        },
-        {
-          "id": "f96720ebe957199507985213c07f5afb",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "Z. Bergs – A. Fery",
-          "pick": "Gana Z. Bergs",
-          "odd": 1.74,
-          "homeName": "Z. Bergs",
-          "awayName": "A. Fery"
-        },
-        {
-          "id": "cfc02240ad5be9509d5cb936e79e02ed",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "G. Dimitrov – M. Berrettini",
-          "pick": "Gana G. Dimitrov",
-          "odd": 2.2,
-          "homeName": "G. Dimitrov",
-          "awayName": "M. Berrettini"
-        }
-      ]
-    },
     {
       "dayId": "04 JUL·c1",
       "date": "04 JUL",
@@ -5297,6 +5187,20 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "04 JUL",
+      "match": "G. Dimitrov – M. Berrettini",
+      "predName": "G. Dimitrov",
+      "prob": 52,
+      "ok": true
+    },
+    {
+      "date": "04 JUL",
+      "match": "F. Tiafoe – A. Bublik",
+      "predName": "A. Bublik",
+      "prob": 60,
+      "ok": true
+    },
     {
       "date": "04 JUL",
       "match": "T. Fritz – L. Sonego",
@@ -8082,20 +7986,6 @@
       "predName": "S. Cirstea",
       "prob": 76,
       "ok": true
-    },
-    {
-      "date": "09 JUN",
-      "match": "Z. Zhang – J. Brooksby",
-      "predName": "Z. Zhang",
-      "prob": 50,
-      "ok": true
-    },
-    {
-      "date": "09 JUN",
-      "match": "B. Krejcikova – R. Zarazua",
-      "predName": "B. Krejcikova",
-      "prob": 64,
-      "ok": true
     }
   ],
   "MODEL_PENDING": [
@@ -8538,28 +8428,6 @@
       "sofa": null,
       "homeName": "A. Rinderknech",
       "awayName": "M. Damm Jr"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783155600000,
-      "match": "F. Tiafoe – A. Bublik",
-      "predHome": false,
-      "prob": 60,
-      "predName": "A. Bublik",
-      "sofa": null,
-      "homeName": "F. Tiafoe",
-      "awayName": "A. Bublik"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783155600000,
-      "match": "G. Dimitrov – M. Berrettini",
-      "predHome": true,
-      "prob": 52,
-      "predName": "G. Dimitrov",
-      "sofa": null,
-      "homeName": "G. Dimitrov",
-      "awayName": "M. Berrettini"
     },
     {
       "date": "04 JUL",
