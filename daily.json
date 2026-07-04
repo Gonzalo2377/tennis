@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-04T12:00:34.636Z",
+    "updatedAt": "2026-07-04T14:00:52.784Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2468,6 +2468,24 @@
   ],
   "RECORD": [
     {
+      "id": "d7798a47d7d52d1bb0923fc9d3ad2220",
+      "date": "04 JUL",
+      "match": "D. Snigur – A. Krueger",
+      "pick": "Gana D. Snigur",
+      "odd": 1.98,
+      "book": "matchbook",
+      "result": "L"
+    },
+    {
+      "id": "3523e4c754ebf06f358ebf59979692cf",
+      "date": "04 JUL",
+      "match": "L. Samsonova – M. Bouzkova",
+      "pick": "Gana L. Samsonova",
+      "odd": 2.38,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "opid1200379572311474",
       "date": "04 JUL",
       "match": "M. Kasnikowski – Z. Piros",
@@ -2994,24 +3012,6 @@
       "odd": 2.16,
       "book": "matchbook",
       "result": "W"
-    },
-    {
-      "id": "6dfe01e72fe5cfa6196a3c77bdf3ba2c",
-      "date": "24 JUN",
-      "match": "S. Travaglia – Y. Zhou",
-      "pick": "Gana S. Travaglia",
-      "odd": 1.96,
-      "book": "betfair_ex_eu",
-      "result": "L"
-    },
-    {
-      "id": "7b30bb704335fe5ee28d6c593fa0e3fa",
-      "date": "24 JUN",
-      "match": "Q. Zheng – C. Tauson",
-      "pick": "Gana C. Tauson",
-      "odd": 2.32,
-      "book": "pinnacle",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -3104,21 +3104,6 @@
       "book": "betfair_ex_eu",
       "homeName": "J. Pegula",
       "awayName": "I. Jović"
-    },
-    {
-      "id": "3523e4c754ebf06f358ebf59979692cf",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1783159200000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "L. Samsonova – M. Bouzkova",
-      "pickKey": "home",
-      "pickLabel": "Gana L. Samsonova",
-      "odd": 2.38,
-      "book": "betfair_ex_eu",
-      "homeName": "L. Samsonova",
-      "awayName": "M. Bouzkova"
     },
     {
       "id": "1aac34916e90f6ba479b3debf3a8f4b9",
@@ -3239,21 +3224,6 @@
       "book": "betfair_ex_eu",
       "homeName": "R. Safiullin",
       "awayName": "N. Djokovic"
-    },
-    {
-      "id": "d7798a47d7d52d1bb0923fc9d3ad2220",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1783164600000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "D. Snigur – A. Krueger",
-      "pickKey": "home",
-      "pickLabel": "Gana D. Snigur",
-      "odd": 1.98,
-      "book": "matchbook",
-      "homeName": "D. Snigur",
-      "awayName": "A. Krueger"
     },
     {
       "id": "6dc8c06e342c397dfa3fa2076f31bfc9",
@@ -5458,6 +5428,41 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "04 JUL",
+      "match": "E. Mertens – E. Rybakina",
+      "predName": "E. Rybakina",
+      "prob": 71,
+      "ok": false
+    },
+    {
+      "date": "04 JUL",
+      "match": "D. Snigur – A. Krueger",
+      "predName": "D. Snigur",
+      "prob": 54,
+      "ok": false
+    },
+    {
+      "date": "04 JUL",
+      "match": "M. Kasnikowski – Z. Piros",
+      "predName": "Z. Piros",
+      "prob": 60,
+      "ok": true
+    },
+    {
+      "date": "04 JUL",
+      "match": "L. Samsonova – M. Bouzkova",
+      "predName": "L. Samsonova",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "04 JUL",
+      "match": "A. de Minaur – Z. Svajda",
+      "predName": "A. de Minaur",
+      "prob": 73,
+      "ok": true
+    },
     {
       "date": "04 JUL",
       "match": "E. Navarro – M. Kostyuk",
@@ -8668,17 +8673,6 @@
     {
       "date": "04 JUL",
       "ts": 1783155600000,
-      "match": "A. de Minaur – Z. Svajda",
-      "predHome": true,
-      "prob": 73,
-      "predName": "A. de Minaur",
-      "sofa": null,
-      "homeName": "A. de Minaur",
-      "awayName": "Z. Svajda"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783155600000,
       "match": "F. Tiafoe – A. Bublik",
       "predHome": false,
       "prob": 60,
@@ -8766,39 +8760,6 @@
     },
     {
       "date": "04 JUL",
-      "ts": 1783159200000,
-      "match": "L. Samsonova – M. Bouzkova",
-      "predHome": true,
-      "prob": 53,
-      "predName": "L. Samsonova",
-      "sofa": null,
-      "homeName": "L. Samsonova",
-      "awayName": "M. Bouzkova"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783160400000,
-      "match": "M. Kasnikowski – Z. Piros",
-      "predHome": false,
-      "prob": 60,
-      "predName": "Z. Piros",
-      "sofa": null,
-      "homeName": "M. Kasnikowski",
-      "awayName": "Z. Piros"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783164600000,
-      "match": "D. Snigur – A. Krueger",
-      "predHome": true,
-      "prob": 54,
-      "predName": "D. Snigur",
-      "sofa": null,
-      "homeName": "D. Snigur",
-      "awayName": "A. Krueger"
-    },
-    {
-      "date": "04 JUL",
       "ts": 1783164600000,
       "match": "D. Rincon – F. Diaz Acosta",
       "predHome": true,
@@ -8807,17 +8768,6 @@
       "sofa": null,
       "homeName": "D. Rincon",
       "awayName": "F. Diaz Acosta"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783166400000,
-      "match": "E. Mertens – E. Rybakina",
-      "predHome": false,
-      "prob": 71,
-      "predName": "E. Rybakina",
-      "sofa": null,
-      "homeName": "E. Mertens",
-      "awayName": "E. Rybakina"
     },
     {
       "date": "04 JUL",
@@ -8957,9 +8907,9 @@
     "start": 10,
     "target": 250,
     "steps": 10,
-    "current": 2,
+    "current": 3,
     "status": "live",
-    "bank": 14.42,
+    "bank": 17.3,
     "rungs": [
       {
         "n": 1,
@@ -8990,7 +8940,7 @@
         "odd": 1.2,
         "book": "matchbook",
         "bank": 17.3,
-        "result": "today",
+        "result": "W",
         "date": "03 JUL",
         "sofa": null
       },
