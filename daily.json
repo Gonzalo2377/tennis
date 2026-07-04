@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-04T10:00:28.626Z",
+    "updatedAt": "2026-07-04T12:00:34.636Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2468,6 +2468,25 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200379572311474",
+      "date": "04 JUL",
+      "match": "M. Kasnikowski – Z. Piros",
+      "pick": "Gana M. Kasnikowski",
+      "oddOrig": 2.88,
+      "odd": 1,
+      "book": "betfair-ex",
+      "result": "V"
+    },
+    {
+      "id": "f41b2c0783234f586463ba7246e7c6f6",
+      "date": "04 JUL",
+      "match": "E. Navarro – M. Kostyuk",
+      "pick": "Gana E. Navarro",
+      "odd": 2.32,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "fd09cf3c860ea9a59a315a30c7dd6edf",
       "date": "02 JUL",
       "match": "J. Mensik – G. Dimitrov",
@@ -2993,24 +3012,6 @@
       "odd": 2.32,
       "book": "pinnacle",
       "result": "W"
-    },
-    {
-      "id": "opid1200255972303812",
-      "date": "24 JUN",
-      "match": "M. Sawangkaew – M. Stoiana",
-      "pick": "Gana M. Sawangkaew",
-      "odd": 2.42,
-      "book": "betfair-ex",
-      "result": "W"
-    },
-    {
-      "id": "f5941005267d346c2cf617fe9a7cfc4d",
-      "date": "24 JUN",
-      "match": "Z. Piros – B. Harris",
-      "pick": "Gana Z. Piros",
-      "odd": 2.72,
-      "book": "betfair_ex_eu",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -3090,21 +3091,6 @@
       "awayName": "M. Keys"
     },
     {
-      "id": "f41b2c0783234f586463ba7246e7c6f6",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1783159200000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "E. Navarro – M. Kostyuk",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Navarro",
-      "odd": 2.32,
-      "book": "betfair_ex_eu",
-      "homeName": "E. Navarro",
-      "awayName": "M. Kostyuk"
-    },
-    {
       "id": "b3d71ef368ca8a3172673e081f7fdee3",
       "sport": "tennis_wta_wimbledon",
       "ts": 1783242000000,
@@ -3178,21 +3164,6 @@
       "book": "onexbet",
       "homeName": "J. Paolini",
       "awayName": "M. Sakkari"
-    },
-    {
-      "id": "opid1200379572311474",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1783160400000,
-      "date": "04 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "M. Kasnikowski – Z. Piros",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Kasnikowski",
-      "odd": 2.88,
-      "book": "betfair-ex",
-      "homeName": "M. Kasnikowski",
-      "awayName": "Z. Piros"
     },
     {
       "id": "0dde211a4505e155ef36e15f1bf05a55",
@@ -5487,6 +5458,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "04 JUL",
+      "match": "E. Navarro – M. Kostyuk",
+      "predName": "E. Navarro",
+      "prob": 61,
+      "ok": false
+    },
     {
       "date": "03 JUL",
       "match": "F. Auger-Aliassime – M. Zheng",
@@ -8785,17 +8763,6 @@
       "sofa": null,
       "homeName": "I. Justo Guido",
       "awayName": "K. Smith"
-    },
-    {
-      "date": "04 JUL",
-      "ts": 1783159200000,
-      "match": "E. Navarro – M. Kostyuk",
-      "predHome": true,
-      "prob": 61,
-      "predName": "E. Navarro",
-      "sofa": null,
-      "homeName": "E. Navarro",
-      "awayName": "M. Kostyuk"
     },
     {
       "date": "04 JUL",
