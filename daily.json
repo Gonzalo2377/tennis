@@ -1,376 +1,23 @@
 {
   "meta": {
-    "updatedAt": "2026-07-04T22:00:46.392Z",
+    "updatedAt": "2026-07-05T07:00:48.297Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 27,
-    "valuePicks": 18,
-    "books": 19,
+    "matches": 17,
+    "valuePicks": 10,
+    "books": 15,
     "stale": false,
     "model": {
       "players": 3477
     },
     "credits": {
-      "remaining": 495,
-      "used": 5
+      "remaining": 493,
+      "used": 7
     }
   },
   "PLAYERS": {
-    "alexdeminaur": {
-      "id": "alexdeminaur",
-      "name": "A. de Minaur",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
-    },
-    "zacharysvajda": {
-      "id": "zacharysvajda",
-      "name": "Z. Svajda",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
-    },
-    "karenkhachanov": {
-      "id": "karenkhachanov",
-      "name": "K. Khachanov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/435_k-khachanov.jpg"
-    },
-    "flaviocobolli": {
-      "id": "flaviocobolli",
-      "name": "F. Cobolli",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
-    },
-    "jirilehecka": {
-      "id": "jirilehecka",
-      "name": "J. Lehecka",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
-    },
-    "jaumemunar": {
-      "id": "jaumemunar",
-      "name": "J. Munar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2083_j-munar.jpg"
-    },
-    "zizoubergs": {
-      "id": "zizoubergs",
-      "name": "Z. Bergs",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg"
-    },
-    "arthurfery": {
-      "id": "arthurfery",
-      "name": "A. Fery",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
-    },
-    "marcosgiron": {
-      "id": "marcosgiron",
-      "name": "M. Giron",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.sofascore.app/api/v1/team/106140/image"
-    },
-    "alexanderzverev": {
-      "id": "alexanderzverev",
-      "name": "A. Zverev",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
-    },
-    "taylorfritz": {
-      "id": "taylorfritz",
-      "name": "T. Fritz",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg"
-    },
-    "lorenzosonego": {
-      "id": "lorenzosonego",
-      "name": "L. Sonego",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
-    },
-    "francestiafoe": {
-      "id": "francestiafoe",
-      "name": "F. Tiafoe",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2846_f-tiafoe.jpg"
-    },
-    "alexanderbublik": {
-      "id": "alexanderbublik",
-      "name": "A. Bublik",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg"
-    },
-    "grigordimitrov": {
-      "id": "grigordimitrov",
-      "name": "G. Dimitrov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2384_g-dimitrov.jpg"
-    },
-    "matteoberrettini": {
-      "id": "matteoberrettini",
-      "name": "M. Berrettini",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2844_m-berrettini.jpg"
-    },
-    "huberthurkacz": {
-      "id": "huberthurkacz",
-      "name": "H. Hurkacz",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2841_h-hurkacz.jpg"
-    },
-    "janlennardstruff": {
-      "id": "janlennardstruff",
-      "name": "J. Struff",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2831_j-struff.jpg"
-    },
-    "felixaugeraliass": {
-      "id": "felixaugeraliass",
-      "name": "F. Auger-Aliassime",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2073_f-auger-aliassime.jpg"
-    },
-    "alejandrodavidov": {
-      "id": "alejandrodavidov",
-      "name": "A. Davidovich Fokina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
-    },
-    "janniksinner": {
-      "id": "janniksinner",
-      "name": "J. Sinner",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2072_j-sinner.jpg"
-    },
-    "shintaromochizuk": {
-      "id": "shintaromochizuk",
-      "name": "S. Mochizuki",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1880_s-mochizuki.jpg"
-    },
     "romansafiullin": {
       "id": "romansafiullin",
       "name": "R. Safiullin",
@@ -399,17 +46,101 @@
       "form": [
         "W",
         "W",
+        "W",
         "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1905_n-djokovic.jpg"
     },
-    "emmanavarro": {
-      "id": "emmanavarro",
-      "name": "E. Navarro",
+    "felixaugeraliass": {
+      "id": "felixaugeraliass",
+      "name": "F. Auger-Aliassime",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2073_f-auger-aliassime.jpg"
+    },
+    "alejandrodavidov": {
+      "id": "alejandrodavidov",
+      "name": "A. Davidovich Fokina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
+    },
+    "huberthurkacz": {
+      "id": "huberthurkacz",
+      "name": "H. Hurkacz",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2841_h-hurkacz.jpg"
+    },
+    "janlennardstruff": {
+      "id": "janlennardstruff",
+      "name": "J. Struff",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2831_j-struff.jpg"
+    },
+    "janniksinner": {
+      "id": "janniksinner",
+      "name": "J. Sinner",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2072_j-sinner.jpg"
+    },
+    "shintaromochizuk": {
+      "id": "shintaromochizuk",
+      "name": "S. Mochizuki",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -418,62 +149,45 @@
         "W",
         "W"
       ],
-      "photo": "https://img.sofascore.com/api/v1/team/207979/image"
+      "photo": "https://api.api-tennis.com/logo-tennis/1880_s-mochizuki.jpg"
     },
-    "martakostyuk": {
-      "id": "martakostyuk",
-      "name": "M. Kostyuk",
+    "alexdeminaur": {
+      "id": "alexdeminaur",
+      "name": "A. de Minaur",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1828_m-kostyuk.jpg"
-    },
-    "liudmilasamsonov": {
-      "id": "liudmilasamsonov",
-      "name": "L. Samsonova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
         "L",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/68376_l-samsonova.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
     },
-    "mariebouzkova": {
-      "id": "mariebouzkova",
-      "name": "M. Bouzkova",
+    "flaviocobolli": {
+      "id": "flaviocobolli",
+      "name": "F. Cobolli",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
-        "W",
+        "L",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2820_m-bouzkova.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/372_f-cobolli.jpg"
     },
-    "dariasnigur": {
-      "id": "dariasnigur",
-      "name": "D. Snigur",
+    "taylorfritz": {
+      "id": "taylorfritz",
+      "name": "T. Fritz",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -482,15 +196,45 @@
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1131_d-snigur.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg"
     },
-    "ashlynkrueger": {
-      "id": "ashlynkrueger",
-      "name": "A. Krueger",
+    "alexanderbublik": {
+      "id": "alexanderbublik",
+      "name": "A. Bublik",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg"
+    },
+    "jirilehecka": {
+      "id": "jirilehecka",
+      "name": "J. Lehecka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -499,123 +243,15 @@
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1751_m-krueger.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
     },
-    "elisemertens": {
-      "id": "elisemertens",
-      "name": "E. Mertens",
+    "grigordimitrov": {
+      "id": "grigordimitrov",
+      "name": "G. Dimitrov",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/521_e-mertens.jpg"
-    },
-    "elenarybakina": {
-      "id": "elenarybakina",
-      "name": "E. Rybakina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2172_e-rybakina.jpg"
-    },
-    "jasminepaolini": {
-      "id": "jasminepaolini",
-      "name": "J. Paolini",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/68143_a-paolini.jpg"
-    },
-    "mariasakkari": {
-      "id": "mariasakkari",
-      "name": "M. Sakkari",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2076_m-sakkari.jpg"
-    },
-    "alexandraeala": {
-      "id": "alexandraeala",
-      "name": "A. Eala",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/3490_a-eala.jpg"
-    },
-    "igaswiatek": {
-      "id": "igaswiatek",
-      "name": "I. Swiatek",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1910_i-swiatek.jpg"
-    },
-    "soranacirstea": {
-      "id": "soranacirstea",
-      "name": "S. Cirstea",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1150_s-cirstea.jpg"
-    },
-    "lindanoskova": {
-      "id": "lindanoskova",
-      "name": "L. Noskova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -624,71 +260,23 @@
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/447_l-noskova.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2384_g-dimitrov.jpg"
     },
-    "amandaanisimova": {
-      "id": "amandaanisimova",
-      "name": "A. Anisimova",
+    "arthurfery": {
+      "id": "arthurfery",
+      "name": "A. Fery",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2074_a-anisimova.jpg"
-    },
-    "madisonkeys": {
-      "id": "madisonkeys",
-      "name": "M. Keys",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2692_m-keys.jpg"
-    },
-    "arynasabalenka": {
-      "id": "arynasabalenka",
-      "name": "A. Sabalenka",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
         "L",
         "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1989_a-sabalenka.jpg"
-    },
-    "naomiosaka": {
-      "id": "naomiosaka",
-      "name": "N. Osaka",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2685_n-osaka.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
     },
     "karolinamuchova": {
       "id": "karolinamuchova",
@@ -718,9 +306,78 @@
       "form": [
         "L",
         "W",
+        "W",
         "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2801_b-krejcikova.jpg"
+    },
+    "jessicapegula": {
+      "id": "jessicapegula",
+      "name": "J. Pegula",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2171_j-pegula.jpg"
+    },
+    "ivajovic": {
+      "id": "ivajovic",
+      "name": "I. Jović",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/56794_n-jovic.jpg"
+    },
+    "arynasabalenka": {
+      "id": "arynasabalenka",
+      "name": "A. Sabalenka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1989_a-sabalenka.jpg"
+    },
+    "naomiosaka": {
+      "id": "naomiosaka",
+      "name": "N. Osaka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2685_n-osaka.jpg"
     },
     "belindabencic": {
       "id": "belindabencic",
@@ -731,6 +388,7 @@
       "tour": "wta",
       "elo": null,
       "form": [
+        "W",
         "W",
         "W"
       ],
@@ -746,13 +404,48 @@
       "elo": null,
       "form": [
         "W",
+        "W",
         "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2176_c-gauff.jpg"
     },
-    "jessicapegula": {
-      "id": "jessicapegula",
-      "name": "J. Pegula",
+    "jasminepaolini": {
+      "id": "jasminepaolini",
+      "name": "J. Paolini",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/68143_a-paolini.jpg"
+    },
+    "alexandraeala": {
+      "id": "alexandraeala",
+      "name": "A. Eala",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/3490_a-eala.jpg"
+    },
+    "ashlynkrueger": {
+      "id": "ashlynkrueger",
+      "name": "A. Krueger",
       "country": "",
       "flag": "",
       "seed": "",
@@ -765,189 +458,193 @@
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2171_j-pegula.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1751_m-krueger.jpg"
     },
-    "ivajovic": {
-      "id": "ivajovic",
-      "name": "I. Jović",
+    "martakostyuk": {
+      "id": "martakostyuk",
+      "name": "M. Kostyuk",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1828_m-kostyuk.jpg"
+    },
+    "mariebouzkova": {
+      "id": "mariebouzkova",
+      "name": "M. Bouzkova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2820_m-bouzkova.jpg"
+    },
+    "elisemertens": {
+      "id": "elisemertens",
+      "name": "E. Mertens",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
         "L",
         "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/521_e-mertens.jpg"
+    },
+    "madisonkeys": {
+      "id": "madisonkeys",
+      "name": "M. Keys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2692_m-keys.jpg"
+    },
+    "lindanoskova": {
+      "id": "lindanoskova",
+      "name": "L. Noskova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/447_l-noskova.jpg"
+    },
+    "lorenzoberto": {
+      "id": "lorenzoberto",
+      "name": "L. Berto",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/72487_l-berto.jpg"
+    },
+    "lorenzobocchi": {
+      "id": "lorenzobocchi",
+      "name": "L. Bocchi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
         "W",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/56794_n-jovic.jpg"
-    },
-    "ivanjustoguido": {
-      "id": "ivanjustoguido",
-      "name": "I. Justo Guido",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/7249_i-guido.jpg"
-    },
-    "keegansmith": {
-      "id": "keegansmith",
-      "name": "K. Smith",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/54466_c-smith.jpg"
-    },
-    "makskasnikowski": {
-      "id": "makskasnikowski",
-      "name": "M. Kasnikowski",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1242_m-kasnikowski.jpg"
-    },
-    "zsomborpiros": {
-      "id": "zsomborpiros",
-      "name": "Z. Piros",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/367_z-piros.jpg"
-    },
-    "danielrincon": {
-      "id": "danielrincon",
-      "name": "D. Rincon",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/657_d-rincon.jpg"
-    },
-    "facundodiazacost": {
-      "id": "facundodiazacost",
-      "name": "F. Diaz Acosta",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2002_f-acosta.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/682_l-bocchi.jpg"
     }
   },
   "BOOKS": {
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
       "color": "#e23b2e"
-    },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
-      "color": "#0a7d3c"
-    },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
-      "color": "#0a2d6e"
     },
     "betfair": {
       "id": "betfair",
       "name": "Betfair",
       "abbr": "BET",
+      "color": "#0a7d3c"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (NL)",
+      "abbr": "UNI",
+      "color": "#0a2d6e"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
       "color": "#14805e"
     },
     "888sport": {
       "id": "888sport",
       "name": "888sport",
       "abbr": "888",
-      "color": "#ffb000"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
       "color": "#d11a2a"
     },
-    "betclic": {
-      "id": "betclic",
-      "name": "Betclic (FR)",
-      "abbr": "BET",
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
       "color": "#0a6cff"
     },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (FR)",
-      "abbr": "UNI",
-      "color": "#1c1c1c"
-    },
-    "mybookieag": {
-      "id": "mybookieag",
-      "name": "MyBookie.ag",
-      "abbr": "MYB",
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
       "color": "#7a4ddb"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#d9730d"
     },
     "codere": {
       "id": "codere",
       "name": "Codere (IT)",
       "abbr": "COD",
-      "color": "#d9730d"
+      "color": "#0a7d3c"
     },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (FR)",
-      "abbr": "WIN",
-      "color": "#e23b2e"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas (SE)",
-      "abbr": "LEO",
+    "betclic": {
+      "id": "betclic",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
       "color": "#0a2d6e"
+    },
+    "mybookieag": {
+      "id": "mybookieag",
+      "name": "MyBookie.ag",
+      "abbr": "MYB",
+      "color": "#14805e"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#ffb000"
     },
     "pinnacle": {
       "id": "pinnacle",
@@ -966,1119 +663,48 @@
       "name": "bet365",
       "abbr": "BET",
       "color": "#7a4ddb"
-    },
-    "betano": {
-      "id": "betano",
-      "name": "betano",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
-      "color": "#e23b2e"
-    },
-    "oddset": {
-      "id": "oddset",
-      "name": "oddset",
-      "abbr": "ODD",
-      "color": "#0a7d3c"
-    },
-    "betfred": {
-      "id": "betfred",
-      "name": "betfred",
-      "abbr": "BET",
-      "color": "#14805e"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1200379572311476",
+      "id": "opid1203305172579808",
       "tour": "atp",
-      "event": "ATP Challenger Brasov, Romania Men Singles",
+      "event": "ATP Challenger Trieste, Italy Men Singles",
       "round": "",
       "surface": "Hierba",
-      "time": "11:10",
-      "day": "04 JUL",
-      "home": "ivanjustoguido",
-      "away": "keegansmith",
-      "odds": {
-        "home": {
-          "bwin": 1.55,
-          "1xbet": 1.58,
-          "bet365": 1.57,
-          "betano": 1.6,
-          "betway": 1.6,
-          "oddset": 1.55,
-          "unibet": 1.62,
-          "betfred": 1.615,
-          "betsson": 1.58,
-          "leovegas": 1.62,
-          "pinnacle": 1.684,
-          "betfair": 1.69,
-          "williamhill": 1.588
-        },
-        "away": {
-          "bwin": 2.4,
-          "1xbet": 2.234,
-          "bet365": 2.25,
-          "betano": 2.22,
-          "betway": 2.2,
-          "oddset": 2.3,
-          "unibet": 2.23,
-          "betfred": 2.2,
-          "betsson": 2.24,
-          "leovegas": 2.23,
-          "pinnacle": 2.25,
-          "betfair": 2.4,
-          "williamhill": 2.3
-        }
-      },
-      "noModel": true,
-      "ts": 1783156200000,
-      "sofa": null
-    },
-    {
-      "id": "1799a6bae91d8976d456143df5b616df",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "04 JUL",
-      "home": "alexdeminaur",
-      "away": "zacharysvajda",
-      "odds": {
-        "home": {
-          "betsson": 1.15,
-          "williamhill": 1.17,
-          "matchbook": 1.18,
-          "betfair": 1.17,
-          "888sport": 1.17,
-          "1xbet": 1.17,
-          "betclic": 1.12,
-          "unibet": 1.16,
-          "mybookieag": 1.17,
-          "codere": 1.18,
-          "winamax": 1.17,
-          "leovegas": 1.15,
-          "pinnacle": 1.18
-        },
-        "away": {
-          "betsson": 5.06,
-          "williamhill": 5,
-          "matchbook": 6.4,
-          "betfair": 6.4,
-          "888sport": 5,
-          "1xbet": 5.99,
-          "betclic": 5.4,
-          "unibet": 5.4,
-          "mybookieag": 5.1,
-          "codere": 5.2,
-          "winamax": 5.5,
-          "leovegas": 5.4,
-          "pinnacle": 5.78
-        }
-      },
-      "model": {
-        "home": 0.7369947605406894,
-        "away": 0.26300523945931065,
-        "fromModel": true,
-        "eloH": 1942,
-        "eloA": 1763,
-        "surface": "grass"
-      },
-      "ts": 1783159200000,
-      "sofa": null
-    },
-    {
-      "id": "f41b2c0783234f586463ba7246e7c6f6",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "04 JUL",
-      "home": "emmanavarro",
-      "away": "martakostyuk",
-      "odds": {
-        "home": {
-          "betclic": 2.15,
-          "888sport": 2.2,
-          "betfair": 2.32,
-          "betsson": 2.06,
-          "1xbet": 2.2,
-          "winamax": 2.15,
-          "mybookieag": 2.09,
-          "williamhill": 2.1,
-          "matchbook": 2.32,
-          "unibet": 2.17,
-          "leovegas": 2.17,
-          "pinnacle": 2.24
-        },
-        "away": {
-          "betclic": 1.74,
-          "888sport": 1.67,
-          "betfair": 1.75,
-          "betsson": 1.73,
-          "1xbet": 1.77,
-          "winamax": 1.76,
-          "mybookieag": 1.72,
-          "williamhill": 1.73,
-          "matchbook": 1.75,
-          "unibet": 1.68,
-          "leovegas": 1.68,
-          "pinnacle": 1.73
-        }
-      },
-      "model": {
-        "home": 0.6117705007810643,
-        "away": 0.3882294992189357,
-        "fromModel": true,
-        "eloH": 1914,
-        "eloA": 1835,
-        "surface": "grass"
-      },
-      "ts": 1783159200000,
-      "sofa": null
-    },
-    {
-      "id": "3523e4c754ebf06f358ebf59979692cf",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:00",
-      "day": "04 JUL",
-      "home": "liudmilasamsonov",
-      "away": "mariebouzkova",
-      "odds": {
-        "home": {
-          "winamax": 2.2,
-          "betfair": 2.38,
-          "matchbook": 2.36,
-          "betsson": 2.16,
-          "1xbet": 2.29,
-          "unibet": 2.23,
-          "leovegas": 2.23,
-          "mybookieag": 2.16,
-          "betclic": 2.21,
-          "888sport": 2.2,
-          "pinnacle": 2.26,
-          "williamhill": 2.2
-        },
-        "away": {
-          "winamax": 1.7,
-          "betfair": 1.72,
-          "matchbook": 1.72,
-          "betsson": 1.67,
-          "1xbet": 1.72,
-          "unibet": 1.68,
-          "leovegas": 1.66,
-          "mybookieag": 1.67,
-          "betclic": 1.7,
-          "888sport": 1.67,
-          "pinnacle": 1.71,
-          "williamhill": 1.67
-        }
-      },
-      "model": {
-        "home": 0.5330513938844411,
-        "away": 0.4669486061155589,
-        "fromModel": true,
-        "eloH": 1915,
-        "eloA": 1892,
-        "surface": "grass"
-      },
-      "ts": 1783159200000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200379572311474",
-      "tour": "atp",
-      "event": "ATP Challenger Brasov, Romania Men Singles",
-      "round": "",
-      "surface": "Hierba",
-      "time": "12:20",
-      "day": "04 JUL",
-      "home": "makskasnikowski",
-      "away": "zsomborpiros",
-      "odds": {
-        "home": {
-          "bwin": 2.5,
-          "1xbet": 2.564,
-          "bet365": 2.37,
-          "betano": 2.52,
-          "betway": 2.6,
-          "oddset": 2.5,
-          "unibet": 2.6,
-          "betfred": 2.625,
-          "betsson": 2.5,
-          "leovegas": 2.6,
-          "pinnacle": 2.74,
-          "codere": 2.3,
-          "betfair": 2.88,
-          "williamhill": 2.65
-        },
-        "away": {
-          "bwin": 1.5,
-          "1xbet": 1.45,
-          "bet365": 1.53,
-          "betano": 1.47,
-          "betway": 1.444,
-          "oddset": 1.48,
-          "unibet": 1.48,
-          "betfred": 1.444,
-          "betsson": 1.46,
-          "leovegas": 1.48,
-          "pinnacle": 1.495,
-          "codere": 1.5,
-          "betfair": 1.51,
-          "williamhill": 1.455
-        }
-      },
-      "model": {
-        "home": 0.4047569603484281,
-        "away": 0.5952430396515719,
-        "fromModel": true,
-        "eloH": 1632,
-        "eloA": 1699,
-        "surface": "grass"
-      },
-      "ts": 1783160400000,
-      "sofa": null
-    },
-    {
-      "id": "d7798a47d7d52d1bb0923fc9d3ad2220",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "13:30",
-      "day": "04 JUL",
-      "home": "dariasnigur",
-      "away": "ashlynkrueger",
-      "odds": {
-        "home": {
-          "betfair": 1.97,
-          "matchbook": 1.98,
-          "unibet": 1.94,
-          "1xbet": 1.94,
-          "betsson": 1.88,
-          "winamax": 1.9,
-          "mybookieag": 1.88,
-          "betclic": 1.92,
-          "leovegas": 1.87,
-          "888sport": 1.91,
-          "williamhill": 1.85,
-          "pinnacle": 1.95
-        },
-        "away": {
-          "betfair": 2,
-          "matchbook": 2,
-          "unibet": 1.93,
-          "1xbet": 1.98,
-          "betsson": 1.88,
-          "winamax": 1.96,
-          "mybookieag": 1.88,
-          "betclic": 1.92,
-          "leovegas": 1.93,
-          "888sport": 1.91,
-          "williamhill": 1.95,
-          "pinnacle": 1.95
-        }
-      },
-      "model": {
-        "home": 0.5359159269451023,
-        "away": 0.46408407305489774,
-        "fromModel": true,
-        "eloH": 1768,
-        "eloA": 1743,
-        "surface": "grass"
-      },
-      "ts": 1783164600000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200361572311580",
-      "tour": "atp",
-      "event": "ATP Challenger Milan, Italy Men Singles",
-      "round": "",
-      "surface": "Hierba",
-      "time": "13:30",
-      "day": "04 JUL",
-      "home": "danielrincon",
-      "away": "facundodiazacost",
-      "odds": {
-        "home": {
-          "bwin": 4.25,
-          "1xbet": 4.045,
-          "bet365": 3.5,
-          "betano": 3.75,
-          "betway": 4.25,
-          "oddset": 4.25,
-          "unibet": 4.1,
-          "betfred": 4,
-          "betsson": 3.9,
-          "leovegas": 4.1,
-          "pinnacle": 4.53,
-          "codere": 3.35,
-          "betfair": 4.6,
-          "williamhill": 4
-        },
-        "away": {
-          "bwin": 1.21,
-          "1xbet": 1.203,
-          "bet365": 1.28,
-          "betano": 1.23,
-          "betway": 1.182,
-          "oddset": 1.19,
-          "unibet": 1.22,
-          "betfred": 1.222,
-          "betsson": 1.22,
-          "leovegas": 1.22,
-          "pinnacle": 1.223,
-          "codere": 1.25,
-          "betfair": 1.26,
-          "williamhill": 1.222
-        }
-      },
-      "model": {
-        "home": 0.6813218351663937,
-        "away": 0.31867816483360634,
-        "fromModel": true,
-        "eloH": 1646,
-        "eloA": 1514,
-        "surface": "grass"
-      },
-      "ts": 1783164600000,
-      "sofa": null
-    },
-    {
-      "id": "7524184c36ede122c2c1cc353af1b2d3",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:00",
-      "day": "04 JUL",
-      "home": "karenkhachanov",
-      "away": "flaviocobolli",
-      "odds": {
-        "home": {
-          "betfair": 1.72,
-          "unibet": 1.65,
-          "888sport": 1.67,
-          "betsson": 1.64,
-          "1xbet": 1.71,
-          "betclic": 1.67,
-          "codere": 1.67,
-          "mybookieag": 1.66,
-          "williamhill": 1.67,
-          "matchbook": 1.71,
-          "winamax": 1.66,
-          "leovegas": 1.65,
-          "pinnacle": 1.68
-        },
-        "away": {
-          "betfair": 2.36,
-          "unibet": 2.23,
-          "888sport": 2.2,
-          "betsson": 2.2,
-          "1xbet": 2.3,
-          "betclic": 2.26,
-          "codere": 2.26,
-          "mybookieag": 2.23,
-          "williamhill": 2.2,
-          "matchbook": 2.38,
-          "winamax": 2.3,
-          "leovegas": 2.23,
-          "pinnacle": 2.34
-        }
-      },
-      "model": {
-        "home": 0.7081663882812006,
-        "away": 0.2918336117187994,
-        "fromModel": true,
-        "eloH": 1941,
-        "eloA": 1787,
-        "surface": "grass"
-      },
-      "ts": 1783166400000,
-      "sofa": null
-    },
-    {
-      "id": "dd93a7888832b140093619ea10177409",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:00",
-      "day": "04 JUL",
-      "home": "jirilehecka",
-      "away": "jaumemunar",
-      "odds": {
-        "home": {
-          "betfair": 1.32,
-          "betsson": 1.29,
-          "1xbet": 1.32,
-          "unibet": 1.29,
-          "betclic": 1.31,
-          "matchbook": 1.32,
-          "mybookieag": 1.3,
-          "codere": 1.31,
-          "winamax": 1.31,
-          "leovegas": 1.28,
-          "888sport": 1.3,
-          "williamhill": 1.3,
-          "pinnacle": 1.32
-        },
-        "away": {
-          "betfair": 4,
-          "betsson": 3.49,
-          "1xbet": 3.81,
-          "unibet": 3.65,
-          "betclic": 3.6,
-          "matchbook": 4,
-          "mybookieag": 3.55,
-          "codere": 3.6,
-          "winamax": 3.65,
-          "leovegas": 3.65,
-          "888sport": 3.5,
-          "williamhill": 3.5,
-          "pinnacle": 3.74
-        }
-      },
-      "model": {
-        "home": 0.7057813597120025,
-        "away": 0.2942186402879975,
-        "fromModel": true,
-        "eloH": 1981,
-        "eloA": 1829,
-        "surface": "grass"
-      },
-      "ts": 1783166400000,
-      "sofa": null
-    },
-    {
-      "id": "a6be73f9c614cdd329c05f63f69ab528",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:00",
-      "day": "04 JUL",
-      "home": "elisemertens",
-      "away": "elenarybakina",
-      "odds": {
-        "home": {
-          "betfair": 4.9,
-          "unibet": 4.5,
-          "matchbook": 5,
-          "betclic": 4.6,
-          "1xbet": 4.64,
-          "888sport": 4.2,
-          "betsson": 4.4,
-          "mybookieag": 4.4,
-          "winamax": 4.7,
-          "williamhill": 4.2,
-          "leovegas": 4.3,
-          "pinnacle": 4.76
-        },
-        "away": {
-          "betfair": 1.24,
-          "unibet": 1.22,
-          "matchbook": 1.24,
-          "betclic": 1.21,
-          "1xbet": 1.24,
-          "888sport": 1.22,
-          "betsson": 1.2,
-          "mybookieag": 1.2,
-          "winamax": 1.22,
-          "williamhill": 1.22,
-          "leovegas": 1.22,
-          "pinnacle": 1.23
-        }
-      },
-      "model": {
-        "home": 0.2942186402879975,
-        "away": 0.7057813597120025,
-        "fromModel": true,
-        "eloH": 1910,
-        "eloA": 2062,
-        "surface": "grass"
-      },
-      "ts": 1783166400000,
-      "sofa": null
-    },
-    {
-      "id": "d7d65cec6590ae691bf6dafc68b0bd01",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:00",
-      "day": "04 JUL",
-      "home": "jasminepaolini",
-      "away": "mariasakkari",
-      "odds": {
-        "home": {
-          "betclic": 1.77,
-          "unibet": 1.74,
-          "betfair": 1.78,
-          "888sport": 1.73,
-          "1xbet": 1.8,
-          "leovegas": 1.73,
-          "betsson": 1.74,
-          "mybookieag": 1.74,
-          "winamax": 1.78,
-          "matchbook": 1.78,
-          "williamhill": 1.73,
-          "pinnacle": 1.79
-        },
-        "away": {
-          "betclic": 2.1,
-          "unibet": 2.1,
-          "betfair": 2.26,
-          "888sport": 2.1,
-          "1xbet": 2.16,
-          "leovegas": 2.1,
-          "betsson": 2.05,
-          "mybookieag": 2.06,
-          "winamax": 2.1,
-          "matchbook": 2.26,
-          "williamhill": 2.1,
-          "pinnacle": 2.15
-        }
-      },
-      "model": {
-        "home": 0.667418421873223,
-        "away": 0.332581578126777,
-        "fromModel": true,
-        "eloH": 1932,
-        "eloA": 1811,
-        "surface": "grass"
-      },
-      "ts": 1783166400000,
-      "sofa": null
-    },
-    {
-      "id": "e4dfd4a4fd2af98966de592fca9ad450",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:30",
-      "day": "04 JUL",
-      "home": "alexandraeala",
-      "away": "igaswiatek",
-      "odds": {
-        "home": {
-          "matchbook": 3.85,
-          "unibet": 3.8,
-          "betfair": 3.8,
-          "888sport": 3.5,
-          "1xbet": 3.69,
-          "betsson": 3.64,
-          "leovegas": 3.8,
-          "winamax": 3.85,
-          "betclic": 3.8,
-          "mybookieag": 3.65,
-          "williamhill": 3.5,
-          "pinnacle": 3.82
-        },
-        "away": {
-          "matchbook": 1.34,
-          "unibet": 1.29,
-          "betfair": 1.34,
-          "888sport": 1.3,
-          "1xbet": 1.33,
-          "betsson": 1.27,
-          "leovegas": 1.27,
-          "winamax": 1.29,
-          "betclic": 1.29,
-          "mybookieag": 1.28,
-          "williamhill": 1.3,
-          "pinnacle": 1.31
-        }
-      },
-      "model": {
-        "home": 0.15470618938200043,
-        "away": 0.8452938106179996,
-        "fromModel": true,
-        "eloH": 1832,
-        "eloA": 2127,
-        "surface": "grass"
-      },
-      "ts": 1783168200000,
-      "sofa": null
-    },
-    {
-      "id": "f96720ebe957199507985213c07f5afb",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "14:40",
-      "day": "04 JUL",
-      "home": "zizoubergs",
-      "away": "arthurfery",
-      "odds": {
-        "home": {
-          "betfair": 1.81,
-          "matchbook": 1.8,
-          "leovegas": 1.74,
-          "1xbet": 1.71,
-          "888sport": 1.73,
-          "unibet": 1.74,
-          "betsson": 1.7,
-          "winamax": 1.76,
-          "williamhill": 1.73,
-          "codere": 1.74,
-          "betclic": 1.74,
-          "mybookieag": 1.72,
-          "pinnacle": 1.79
-        },
-        "away": {
-          "betfair": 2.22,
-          "matchbook": 2.24,
-          "leovegas": 2.08,
-          "1xbet": 2.3,
-          "888sport": 2.1,
-          "unibet": 2.1,
-          "betsson": 2.1,
-          "winamax": 2.1,
-          "williamhill": 2.1,
-          "codere": 2.15,
-          "betclic": 2.15,
-          "mybookieag": 2.13,
-          "pinnacle": 2.14
-        }
-      },
-      "model": {
-        "home": 0.698558626418023,
-        "away": 0.301441373581977,
-        "fromModel": true,
-        "eloH": 1857,
-        "eloA": 1711,
-        "surface": "grass"
-      },
-      "ts": 1783168800000,
-      "sofa": null
-    },
-    {
-      "id": "12df758952eccf871f7ebc3ebc5e4f7d",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "15:10",
-      "day": "04 JUL",
-      "home": "marcosgiron",
-      "away": "alexanderzverev",
-      "odds": {
-        "home": {
-          "unibet": 9.5,
-          "leovegas": 9,
-          "888sport": 9,
-          "1xbet": 13.6,
-          "betfair": 13.5,
-          "betclic": 10,
-          "betsson": 9.2,
-          "mybookieag": 9.6,
-          "codere": 10,
-          "matchbook": 13.5,
-          "williamhill": 10,
-          "pinnacle": 9.79,
-          "winamax": 10.5
-        },
-        "away": {
-          "unibet": 1.07,
-          "leovegas": 1.07,
-          "888sport": 1.06,
-          "1xbet": 1.06,
-          "betfair": 1.07,
-          "betclic": 1.06,
-          "betsson": 1.05,
-          "mybookieag": 1.06,
-          "codere": 1.06,
-          "matchbook": 1.07,
-          "williamhill": 1.05,
-          "pinnacle": 1.07,
-          "winamax": 1.06
-        }
-      },
-      "model": {
-        "home": 0.17697537107826786,
-        "away": 0.8230246289217321,
-        "fromModel": true,
-        "eloH": 1764,
-        "eloA": 2031,
-        "surface": "grass"
-      },
-      "ts": 1783170600000,
-      "sofa": null
-    },
-    {
-      "id": "40f075c68595d809bd4835c234817431",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "16:00",
-      "day": "04 JUL",
-      "home": "taylorfritz",
-      "away": "lorenzosonego",
-      "odds": {
-        "home": {
-          "betsson": 1.11,
-          "betfair": 1.14,
-          "888sport": 1.12,
-          "unibet": 1.14,
-          "1xbet": 1.14,
-          "williamhill": 1.12,
-          "codere": 1.13,
-          "mybookieag": 1.12,
-          "betclic": 1.13,
-          "winamax": 1.13,
-          "leovegas": 1.14,
-          "matchbook": 1.14,
-          "pinnacle": 1.13
-        },
-        "away": {
-          "betsson": 6,
-          "betfair": 7.6,
-          "888sport": 6,
-          "unibet": 6.5,
-          "1xbet": 6.95,
-          "williamhill": 6,
-          "codere": 6.4,
-          "mybookieag": 6.1,
-          "betclic": 6.4,
-          "winamax": 6.5,
-          "leovegas": 5.8,
-          "matchbook": 7.6,
-          "pinnacle": 6.85
-        }
-      },
-      "model": {
-        "home": 0.750163481828642,
-        "away": 0.249836518171358,
-        "fromModel": true,
-        "eloH": 1981,
-        "eloA": 1790,
-        "surface": "grass"
-      },
-      "ts": 1783173600000,
-      "sofa": null
-    },
-    {
-      "id": "1aac34916e90f6ba479b3debf3a8f4b9",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "16:00",
-      "day": "04 JUL",
-      "home": "soranacirstea",
-      "away": "lindanoskova",
-      "odds": {
-        "home": {
-          "winamax": 2.85,
-          "betsson": 2.72,
-          "betfair": 2.96,
-          "1xbet": 2.83,
-          "unibet": 2.75,
-          "betclic": 2.8,
-          "mybookieag": 2.72,
-          "888sport": 2.75,
-          "williamhill": 2.75,
-          "matchbook": 2.96,
-          "leovegas": 2.75,
-          "pinnacle": 2.87
-        },
-        "away": {
-          "winamax": 1.46,
-          "betsson": 1.44,
-          "betfair": 1.5,
-          "1xbet": 1.5,
-          "unibet": 1.45,
-          "betclic": 1.46,
-          "mybookieag": 1.44,
-          "888sport": 1.44,
-          "williamhill": 1.44,
-          "matchbook": 1.5,
-          "leovegas": 1.44,
-          "pinnacle": 1.48
-        }
-      },
-      "model": {
-        "home": 0.41171002813683716,
-        "away": 0.5882899718631629,
-        "fromModel": true,
-        "eloH": 1911,
-        "eloA": 1973,
-        "surface": "grass"
-      },
-      "ts": 1783173600000,
-      "sofa": null
-    },
-    {
-      "id": "cf9f064a20efb89ab079e08c6ce24215",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "16:30",
-      "day": "04 JUL",
-      "home": "amandaanisimova",
-      "away": "madisonkeys",
-      "odds": {
-        "home": {
-          "1xbet": 2.47,
-          "betfair": 2.62,
-          "888sport": 2.38,
-          "betsson": 2.38,
-          "unibet": 2.38,
-          "betclic": 2.45,
-          "mybookieag": 2.38,
-          "matchbook": 2.62,
-          "williamhill": 2.38,
-          "winamax": 2.45,
-          "leovegas": 2.38,
-          "pinnacle": 2.56
-        },
-        "away": {
-          "1xbet": 1.62,
-          "betfair": 1.6,
-          "888sport": 1.57,
-          "betsson": 1.55,
-          "unibet": 1.59,
-          "betclic": 1.58,
-          "mybookieag": 1.56,
-          "matchbook": 1.6,
-          "williamhill": 1.57,
-          "winamax": 1.58,
-          "leovegas": 1.57,
-          "pinnacle": 1.58
-        }
-      },
-      "model": {
-        "home": 0.5714631174083814,
-        "away": 0.4285368825916186,
-        "fromModel": true,
-        "eloH": 2021,
-        "eloA": 1971,
-        "surface": "grass"
-      },
-      "ts": 1783175400000,
-      "sofa": null
-    },
-    {
-      "id": "0dcdb7b775c9c9802fb54feb8b1f1593",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "18:00",
-      "day": "04 JUL",
-      "home": "francestiafoe",
-      "away": "alexanderbublik",
-      "odds": {
-        "home": {
-          "unibet": 1.86,
-          "winamax": 1.86,
-          "betfair": 1.89,
-          "betsson": 1.79,
-          "888sport": 1.8,
-          "mybookieag": 1.81,
-          "codere": 1.83,
-          "betclic": 1.83,
-          "1xbet": 1.87,
-          "matchbook": 1.9,
-          "williamhill": 1.8,
-          "leovegas": 1.81,
-          "pinnacle": 1.88
-        },
-        "away": {
-          "unibet": 2,
-          "winamax": 2,
-          "betfair": 2.1,
-          "betsson": 1.98,
-          "888sport": 2,
-          "mybookieag": 2.01,
-          "codere": 2.03,
-          "betclic": 2.03,
-          "1xbet": 2.06,
-          "matchbook": 2.1,
-          "williamhill": 2,
-          "leovegas": 2,
-          "pinnacle": 2.03
-        }
-      },
-      "model": {
-        "home": 0.4019862342306564,
-        "away": 0.5980137657693436,
-        "fromModel": true,
-        "eloH": 1941,
-        "eloA": 2010,
-        "surface": "grass"
-      },
-      "ts": 1783180800000,
-      "sofa": null
-    },
-    {
-      "id": "cfc02240ad5be9509d5cb936e79e02ed",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "18:30",
-      "day": "04 JUL",
-      "home": "grigordimitrov",
-      "away": "matteoberrettini",
-      "odds": {
-        "home": {
-          "mybookieag": 2.12,
-          "betfair": 2.24,
-          "betsson": 2.09,
-          "1xbet": 2.18,
-          "unibet": 2.12,
-          "888sport": 2.1,
-          "betclic": 2.14,
-          "codere": 2.14,
-          "matchbook": 2.24,
-          "winamax": 2.15,
-          "williamhill": 2.1,
-          "leovegas": 2.12,
-          "pinnacle": 2.21
-        },
-        "away": {
-          "mybookieag": 1.73,
-          "betfair": 1.79,
-          "betsson": 1.71,
-          "1xbet": 1.78,
-          "unibet": 1.72,
-          "888sport": 1.73,
-          "betclic": 1.74,
-          "codere": 1.74,
-          "matchbook": 1.79,
-          "winamax": 1.74,
-          "williamhill": 1.73,
-          "leovegas": 1.72,
-          "pinnacle": 1.75
-        }
-      },
-      "model": {
-        "home": 0.544494573083008,
-        "away": 0.45550542691699203,
-        "fromModel": true,
-        "eloH": 1906,
-        "eloA": 1875,
-        "surface": "grass"
-      },
-      "ts": 1783182600000,
-      "sofa": null
-    },
-    {
-      "id": "6dc8c06e342c397dfa3fa2076f31bfc9",
-      "tour": "atp",
-      "event": "Atp Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "11:00",
+      "time": "10:00",
       "day": "05 JUL",
-      "home": "huberthurkacz",
-      "away": "janlennardstruff",
+      "home": "lorenzoberto",
+      "away": "lorenzobocchi",
       "odds": {
         "home": {
-          "betfair": 1.39,
-          "betclic": 1.38,
-          "1xbet": 1.44,
-          "888sport": 1.4,
-          "unibet": 1.38,
-          "betsson": 1.39,
-          "codere": 1.39,
-          "mybookieag": 1.39,
-          "williamhill": 1.4,
-          "winamax": 1.4,
-          "leovegas": 1.38,
-          "matchbook": 1.39
+          "bwin": 3.5,
+          "1xbet": 3.345,
+          "bet365": 3,
+          "unibet": 3.05,
+          "betsson": 3.35,
+          "leovegas": 3.05,
+          "pinnacle": 3.85
         },
         "away": {
-          "betfair": 3.45,
-          "betclic": 2.85,
-          "1xbet": 3.04,
-          "888sport": 2.9,
-          "unibet": 2.85,
-          "betsson": 2.91,
-          "codere": 2.9,
-          "mybookieag": 2.92,
-          "williamhill": 2.9,
-          "winamax": 2.95,
-          "leovegas": 2.85,
-          "matchbook": 3.1
+          "bwin": 1.24,
+          "1xbet": 1.28,
+          "bet365": 1.36,
+          "unibet": 1.33,
+          "betsson": 1.28,
+          "leovegas": 1.33,
+          "pinnacle": 1.253
         }
       },
       "model": {
-        "home": 0.7336337024138074,
-        "away": 0.26636629758619257,
+        "home": 0.3923389358731802,
+        "away": 0.6076610641268199,
         "fromModel": true,
-        "eloH": 1952,
-        "eloA": 1776,
+        "eloH": 1477,
+        "eloA": 1553,
         "surface": "grass"
       },
-      "ts": 1783242000000,
-      "sofa": null
-    },
-    {
-      "id": "5fca44be8e4f4be20860b8cd4695fd42",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "11:00",
-      "day": "05 JUL",
-      "home": "arynasabalenka",
-      "away": "naomiosaka",
-      "odds": {
-        "home": {
-          "winamax": 1.43,
-          "betfair": 1.48,
-          "unibet": 1.41,
-          "betsson": 1.42,
-          "888sport": 1.44,
-          "betclic": 1.4,
-          "mybookieag": 1.41,
-          "1xbet": 1.47,
-          "matchbook": 1.48,
-          "williamhill": 1.44,
-          "leovegas": 1.36
-        },
-        "away": {
-          "winamax": 2.8,
-          "betfair": 3,
-          "unibet": 2.88,
-          "betsson": 2.79,
-          "888sport": 2.75,
-          "betclic": 2.65,
-          "mybookieag": 2.71,
-          "1xbet": 2.95,
-          "matchbook": 3,
-          "williamhill": 2.75,
-          "leovegas": 2.88
-        }
-      },
-      "model": {
-        "home": 0.7607960909891424,
-        "away": 0.23920390901085764,
-        "fromModel": true,
-        "eloH": 2149,
-        "eloA": 1948,
-        "surface": "grass"
-      },
-      "ts": 1783242000000,
+      "ts": 1783238400000,
       "sofa": null
     },
     {
@@ -2087,96 +713,49 @@
       "event": "Wta Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "11:00",
+      "time": "13:30",
       "day": "05 JUL",
       "home": "karolinamuchova",
       "away": "barborakrejcikov",
       "odds": {
         "home": {
-          "winamax": 1.5,
-          "betfair": 1.61,
-          "unibet": 1.53,
-          "betsson": 1.5,
-          "888sport": 1.53,
-          "betclic": 1.48,
-          "mybookieag": 1.49,
-          "1xbet": 1.56,
-          "matchbook": 1.59,
-          "williamhill": 1.53,
-          "leovegas": 1.53
+          "winamax": 1.6,
+          "betfair": 1.6,
+          "unibet": 1.6,
+          "betsson": 1.56,
+          "888sport": 1.57,
+          "betclic": 1.58,
+          "mybookieag": 1.58,
+          "1xbet": 1.63,
+          "matchbook": 1.6,
+          "williamhill": 1.57,
+          "leovegas": 1.6,
+          "pinnacle": 1.61
         },
         "away": {
-          "winamax": 2.55,
-          "betfair": 2.58,
-          "unibet": 2.5,
-          "betsson": 2.51,
-          "888sport": 2.5,
-          "betclic": 2.46,
-          "mybookieag": 2.46,
-          "1xbet": 2.63,
-          "matchbook": 2.56,
-          "williamhill": 2.5,
-          "leovegas": 2.5
+          "winamax": 2.45,
+          "betfair": 2.62,
+          "unibet": 2.45,
+          "betsson": 2.36,
+          "888sport": 2.38,
+          "betclic": 2.47,
+          "mybookieag": 2.33,
+          "1xbet": 2.45,
+          "matchbook": 2.64,
+          "williamhill": 2.38,
+          "leovegas": 2.33,
+          "pinnacle": 2.49
         }
       },
       "model": {
-        "home": 0.6961287704295998,
-        "away": 0.30387122957040025,
+        "home": 0.6875382482123418,
+        "away": 0.3124617517876582,
         "fromModel": true,
         "eloH": 2020,
-        "eloA": 1876,
+        "eloA": 1883,
         "surface": "grass"
       },
-      "ts": 1783242000000,
-      "sofa": null
-    },
-    {
-      "id": "0dde211a4505e155ef36e15f1bf05a55",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "11:00",
-      "day": "05 JUL",
-      "home": "belindabencic",
-      "away": "cocogauff",
-      "odds": {
-        "home": {
-          "unibet": 2.1,
-          "1xbet": 2.22,
-          "betsson": 2.14,
-          "betclic": 2.1,
-          "betfair": 2.06,
-          "mybookieag": 2.1,
-          "winamax": 2.2,
-          "matchbook": 2.08,
-          "leovegas": 2.1,
-          "888sport": 2.1,
-          "williamhill": 2.1
-        },
-        "away": {
-          "unibet": 1.67,
-          "1xbet": 1.75,
-          "betsson": 1.68,
-          "betclic": 1.66,
-          "betfair": 1.92,
-          "mybookieag": 1.66,
-          "winamax": 1.72,
-          "matchbook": 1.9,
-          "leovegas": 1.67,
-          "888sport": 1.73,
-          "williamhill": 1.73
-        }
-      },
-      "model": {
-        "home": 0.4075337694156682,
-        "away": 0.5924662305843318,
-        "fromModel": true,
-        "eloH": 1960,
-        "eloA": 2025,
-        "surface": "grass"
-      },
-      "ts": 1783242000000,
+      "ts": 1783251000000,
       "sofa": null
     },
     {
@@ -2185,49 +764,102 @@
       "event": "Wta Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "11:00",
+      "time": "14:00",
       "day": "05 JUL",
       "home": "jessicapegula",
       "away": "ivajovic",
       "odds": {
         "home": {
-          "betfair": 1.53,
+          "betfair": 1.5,
           "unibet": 1.47,
-          "betsson": 1.47,
+          "betsson": 1.45,
           "leovegas": 1.47,
-          "1xbet": 1.52,
-          "betclic": 1.44,
+          "1xbet": 1.5,
+          "betclic": 1.48,
           "mybookieag": 1.45,
-          "matchbook": 1.52,
-          "winamax": 1.5,
+          "matchbook": 1.5,
+          "winamax": 1.48,
           "888sport": 1.44,
           "williamhill": 1.44,
           "pinnacle": 1.49
         },
         "away": {
-          "betfair": 2.88,
-          "unibet": 2.7,
-          "betsson": 2.62,
-          "leovegas": 2.7,
-          "1xbet": 2.76,
-          "betclic": 2.55,
-          "mybookieag": 2.57,
-          "matchbook": 2.86,
-          "winamax": 2.7,
+          "betfair": 2.96,
+          "unibet": 2.8,
+          "betsson": 2.66,
+          "leovegas": 2.65,
+          "1xbet": 2.83,
+          "betclic": 2.75,
+          "mybookieag": 2.68,
+          "matchbook": 2.96,
+          "winamax": 2.75,
           "888sport": 2.75,
           "williamhill": 2.75,
-          "pinnacle": 2.78
+          "pinnacle": 2.84
         }
       },
       "model": {
-        "home": 0.5459219227804837,
-        "away": 0.4540780772195163,
+        "home": 0.525880930891169,
+        "away": 0.47411906910883095,
         "fromModel": true,
         "eloH": 1956,
-        "eloA": 1924,
+        "eloA": 1938,
         "surface": "grass"
       },
-      "ts": 1783242000000,
+      "ts": 1783252800000,
+      "sofa": null
+    },
+    {
+      "id": "44a55068b95674016667af4bf1a49145",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:30",
+      "day": "05 JUL",
+      "home": "romansafiullin",
+      "away": "novakdjokovic",
+      "odds": {
+        "home": {
+          "leovegas": 5.2,
+          "betfair": 6.4,
+          "unibet": 5.5,
+          "1xbet": 5.74,
+          "888sport": 5.5,
+          "williamhill": 5.5,
+          "winamax": 5.5,
+          "betsson": 5.06,
+          "codere": 5.4,
+          "betclic": 5.75,
+          "mybookieag": 5.2,
+          "matchbook": 6.4,
+          "pinnacle": 5.82
+        },
+        "away": {
+          "leovegas": 1.17,
+          "betfair": 1.18,
+          "unibet": 1.17,
+          "1xbet": 1.18,
+          "888sport": 1.14,
+          "williamhill": 1.14,
+          "winamax": 1.17,
+          "betsson": 1.15,
+          "codere": 1.17,
+          "betclic": 1.16,
+          "mybookieag": 1.17,
+          "matchbook": 1.18,
+          "pinnacle": 1.17
+        }
+      },
+      "model": {
+        "home": 0.08902396853465472,
+        "away": 0.9109760314653452,
+        "fromModel": true,
+        "eloH": 1731,
+        "eloA": 2135,
+        "surface": "grass"
+      },
+      "ts": 1783254600000,
       "sofa": null
     },
     {
@@ -2236,49 +868,155 @@
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "15:10",
       "day": "05 JUL",
       "home": "felixaugeraliass",
       "away": "alejandrodavidov",
       "odds": {
         "home": {
-          "unibet": 1.49,
-          "leovegas": 1.43,
-          "1xbet": 1.56,
-          "betfair": 1.45,
-          "matchbook": 1.46,
-          "888sport": 1.53,
-          "betsson": 1.51,
-          "winamax": 1.54,
-          "betclic": 1.49,
-          "mybookieag": 1.52,
-          "williamhill": 1.53,
-          "codere": 1.52
+          "unibet": 1.51,
+          "leovegas": 1.47,
+          "1xbet": 1.53,
+          "betfair": 1.56,
+          "matchbook": 1.56,
+          "888sport": 1.5,
+          "betsson": 1.47,
+          "winamax": 1.5,
+          "betclic": 1.51,
+          "mybookieag": 1.49,
+          "williamhill": 1.5,
+          "codere": 1.5,
+          "pinnacle": 1.53
         },
         "away": {
-          "unibet": 2.65,
-          "leovegas": 2.65,
-          "1xbet": 2.63,
-          "betfair": 2.68,
-          "matchbook": 2.68,
-          "888sport": 2.5,
-          "betsson": 2.5,
-          "winamax": 2.55,
-          "betclic": 2.43,
-          "mybookieag": 2.5,
-          "williamhill": 2.5,
-          "codere": 2.5
+          "unibet": 2.75,
+          "leovegas": 2.75,
+          "1xbet": 2.73,
+          "betfair": 2.76,
+          "matchbook": 2.76,
+          "888sport": 2.6,
+          "betsson": 2.61,
+          "winamax": 2.7,
+          "betclic": 2.65,
+          "mybookieag": 2.64,
+          "williamhill": 2.6,
+          "codere": 2.7,
+          "pinnacle": 2.69
         }
       },
       "model": {
-        "home": 0.38277496909505365,
-        "away": 0.6172250309049463,
+        "home": 0.3923389358731802,
+        "away": 0.6076610641268199,
         "fromModel": true,
-        "eloH": 1862,
+        "eloH": 1869,
         "eloA": 1945,
         "surface": "grass"
       },
-      "ts": 1783245600000,
+      "ts": 1783257000000,
+      "sofa": null
+    },
+    {
+      "id": "6dc8c06e342c397dfa3fa2076f31bfc9",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "15:30",
+      "day": "05 JUL",
+      "home": "huberthurkacz",
+      "away": "janlennardstruff",
+      "odds": {
+        "home": {
+          "betfair": 1.37,
+          "betclic": 1.34,
+          "1xbet": 1.34,
+          "888sport": 1.33,
+          "unibet": 1.31,
+          "betsson": 1.3,
+          "codere": 1.32,
+          "mybookieag": 1.31,
+          "williamhill": 1.33,
+          "winamax": 1.33,
+          "leovegas": 1.3,
+          "matchbook": 1.37,
+          "pinnacle": 1.35
+        },
+        "away": {
+          "betfair": 3.65,
+          "betclic": 3.4,
+          "1xbet": 3.64,
+          "888sport": 3.3,
+          "unibet": 3.45,
+          "betsson": 3.4,
+          "codere": 3.5,
+          "mybookieag": 3.46,
+          "williamhill": 3.3,
+          "winamax": 3.55,
+          "leovegas": 3.45,
+          "matchbook": 3.65,
+          "pinnacle": 3.51
+        }
+      },
+      "model": {
+        "home": 0.7414335229692995,
+        "away": 0.25856647703070046,
+        "fromModel": true,
+        "eloH": 1966,
+        "eloA": 1783,
+        "surface": "grass"
+      },
+      "ts": 1783258200000,
+      "sofa": null
+    },
+    {
+      "id": "5fca44be8e4f4be20860b8cd4695fd42",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:30",
+      "day": "05 JUL",
+      "home": "arynasabalenka",
+      "away": "naomiosaka",
+      "odds": {
+        "home": {
+          "winamax": 1.45,
+          "betfair": 1.45,
+          "unibet": 1.43,
+          "betsson": 1.42,
+          "888sport": 1.44,
+          "betclic": 1.43,
+          "mybookieag": 1.43,
+          "1xbet": 1.47,
+          "matchbook": 1.45,
+          "williamhill": 1.44,
+          "leovegas": 1.43,
+          "pinnacle": 1.44
+        },
+        "away": {
+          "winamax": 2.9,
+          "betfair": 3.15,
+          "unibet": 2.95,
+          "betsson": 2.79,
+          "888sport": 2.75,
+          "betclic": 2.95,
+          "mybookieag": 2.79,
+          "1xbet": 2.95,
+          "matchbook": 3.15,
+          "williamhill": 2.75,
+          "leovegas": 2.85,
+          "pinnacle": 3.02
+        }
+      },
+      "model": {
+        "home": 0.7680520031675839,
+        "away": 0.23194799683241607,
+        "fromModel": true,
+        "eloH": 2156,
+        "eloA": 1948,
+        "surface": "grass"
+      },
+      "ts": 1783261800000,
       "sofa": null
     },
     {
@@ -2287,7 +1025,7 @@
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
+      "time": "17:20",
       "day": "05 JUL",
       "home": "janniksinner",
       "away": "shintaromochizuk",
@@ -2297,88 +1035,496 @@
           "leovegas": 1.02,
           "unibet": 1.02,
           "betfair": 1.03,
-          "williamhill": 1.01,
+          "williamhill": 1.02,
           "winamax": 1.01,
           "betsson": 1.01,
           "codere": 1.01,
           "betclic": 1.01,
-          "matchbook": 1.03
+          "888sport": 1.01,
+          "matchbook": 1.03,
+          "pinnacle": 1.03
         },
         "away": {
           "1xbet": 31,
-          "leovegas": 18,
-          "unibet": 18,
-          "betfair": 27,
-          "williamhill": 29,
-          "winamax": 15,
+          "leovegas": 17,
+          "unibet": 17,
+          "betfair": 30,
+          "williamhill": 17,
+          "winamax": 21,
           "betsson": 16,
-          "codere": 14,
-          "betclic": 11,
-          "matchbook": 27
+          "codere": 18,
+          "betclic": 18,
+          "888sport": 17,
+          "matchbook": 30,
+          "pinnacle": 19.77
         }
       },
       "model": {
-        "home": 0.9409696170394709,
-        "away": 0.05903038296052909,
+        "home": 0.9422356949632469,
+        "away": 0.057764305036753116,
         "fromModel": true,
-        "eloH": 2216,
+        "eloH": 2220,
         "eloA": 1735,
         "surface": "grass"
       },
-      "ts": 1783245600000,
+      "ts": 1783264800000,
       "sofa": null
     },
     {
-      "id": "44a55068b95674016667af4bf1a49145",
+      "id": "0dde211a4505e155ef36e15f1bf05a55",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "18:00",
+      "day": "05 JUL",
+      "home": "belindabencic",
+      "away": "cocogauff",
+      "odds": {
+        "home": {
+          "unibet": 2,
+          "1xbet": 2.02,
+          "betsson": 1.91,
+          "betclic": 1.96,
+          "betfair": 2.08,
+          "mybookieag": 1.92,
+          "winamax": 1.96,
+          "matchbook": 2.08,
+          "leovegas": 2,
+          "888sport": 1.95,
+          "williamhill": 1.95,
+          "pinnacle": 1.98
+        },
+        "away": {
+          "unibet": 1.89,
+          "1xbet": 1.9,
+          "betsson": 1.85,
+          "betclic": 1.89,
+          "betfair": 1.92,
+          "mybookieag": 1.85,
+          "winamax": 1.9,
+          "matchbook": 1.92,
+          "leovegas": 1.81,
+          "888sport": 1.85,
+          "williamhill": 1.85,
+          "pinnacle": 1.93
+        }
+      },
+      "model": {
+        "home": 0.4075337694156682,
+        "away": 0.5924662305843318,
+        "fromModel": true,
+        "eloH": 1981,
+        "eloA": 2046,
+        "surface": "grass"
+      },
+      "ts": 1783267200000,
+      "sofa": null
+    },
+    {
+      "id": "5aadb0dbbad4128c3faf3df033ae5878",
       "tour": "atp",
       "event": "Atp Wimbledon",
       "round": "",
       "surface": "Hierba",
-      "time": "12:00",
-      "day": "05 JUL",
-      "home": "romansafiullin",
-      "away": "novakdjokovic",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "alexdeminaur",
+      "away": "flaviocobolli",
       "odds": {
         "home": {
-          "leovegas": 5.25,
-          "betfair": 5.6,
-          "unibet": 5.25,
-          "1xbet": 5.47,
-          "888sport": 4.5,
-          "williamhill": 5,
-          "winamax": 5.2,
-          "betsson": 4.87,
-          "codere": 4.8,
-          "betclic": 4.6,
-          "mybookieag": 4.8,
-          "matchbook": 5.6,
-          "pinnacle": 5.03
+          "unibet": 1.29,
+          "1xbet": 1.29,
+          "betfair": 1.29,
+          "matchbook": 1.28,
+          "888sport": 1.25,
+          "codere": 1.25,
+          "betsson": 1.24,
+          "betclic": 1.22,
+          "mybookieag": 1.25,
+          "winamax": 1.25,
+          "williamhill": 1.25,
+          "leovegas": 1.29
         },
         "away": {
-          "leovegas": 1.16,
-          "betfair": 1.21,
-          "unibet": 1.16,
-          "1xbet": 1.19,
-          "888sport": 1.2,
-          "williamhill": 1.17,
-          "winamax": 1.19,
-          "betsson": 1.16,
-          "codere": 1.17,
-          "betclic": 1.16,
-          "mybookieag": 1.17,
-          "matchbook": 1.21,
-          "pinnacle": 1.2
+          "unibet": 3.7,
+          "1xbet": 4.12,
+          "betfair": 4.3,
+          "matchbook": 4.3,
+          "888sport": 4,
+          "codere": 3.85,
+          "betsson": 3.86,
+          "betclic": 3.55,
+          "mybookieag": 3.85,
+          "winamax": 3.9,
+          "williamhill": 4,
+          "leovegas": 3.65
         }
       },
       "model": {
-        "home": 0.09090909090909091,
-        "away": 0.9090909090909091,
+        "home": 0.7093546305987634,
+        "away": 0.29064536940123664,
         "fromModel": true,
-        "eloH": 1731,
-        "eloA": 2131,
+        "eloH": 1942,
+        "eloA": 1787,
         "surface": "grass"
       },
-      "ts": 1783245600000,
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "a66a7b940b5acab677add3367c1bef0e",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "taylorfritz",
+      "away": "alexanderbublik",
+      "odds": {
+        "home": {
+          "unibet": 1.55,
+          "matchbook": 1.49,
+          "1xbet": 1.61,
+          "betsson": 1.56,
+          "betfair": 1.48,
+          "888sport": 1.57,
+          "williamhill": 1.57,
+          "winamax": 1.58,
+          "betclic": 1.52,
+          "mybookieag": 1.57,
+          "codere": 1.57,
+          "leovegas": 1.51
+        },
+        "away": {
+          "unibet": 2.4,
+          "matchbook": 2.6,
+          "1xbet": 2.5,
+          "betsson": 2.36,
+          "betfair": 2.58,
+          "888sport": 2.38,
+          "williamhill": 2.38,
+          "winamax": 2.35,
+          "betclic": 2.25,
+          "mybookieag": 2.36,
+          "codere": 2.36,
+          "leovegas": 2.4
+        }
+      },
+      "model": {
+        "home": 0.45836229728523653,
+        "away": 0.5416377027147634,
+        "fromModel": true,
+        "eloH": 1981,
+        "eloA": 2010,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "f0620d5ff3f64875ff71939d62f51d91",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "jirilehecka",
+      "away": "alexanderzverev",
+      "odds": {
+        "home": {
+          "betfair": 3.9,
+          "betsson": 3.52,
+          "unibet": 3.4,
+          "888sport": 3.5,
+          "1xbet": 3.64,
+          "codere": 3.5,
+          "betclic": 3.25,
+          "mybookieag": 3.5,
+          "winamax": 3.55,
+          "leovegas": 3.35,
+          "williamhill": 3.5,
+          "matchbook": 3.9
+        },
+        "away": {
+          "betfair": 1.33,
+          "betsson": 1.28,
+          "unibet": 1.32,
+          "888sport": 1.3,
+          "1xbet": 1.34,
+          "codere": 1.29,
+          "betclic": 1.26,
+          "mybookieag": 1.29,
+          "winamax": 1.29,
+          "leovegas": 1.32,
+          "williamhill": 1.3,
+          "matchbook": 1.33
+        }
+      },
+      "model": {
+        "home": 0.4285368825916186,
+        "away": 0.5714631174083814,
+        "fromModel": true,
+        "eloH": 1981,
+        "eloA": 2031,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "deb46b10eff833cb32c724e825c99114",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "grigordimitrov",
+      "away": "arthurfery",
+      "odds": {
+        "home": {
+          "winamax": 1.45,
+          "1xbet": 1.5,
+          "matchbook": 1.48,
+          "betsson": 1.44,
+          "betfair": 1.48,
+          "888sport": 1.44,
+          "unibet": 1.44,
+          "williamhill": 1.44,
+          "betclic": 1.41,
+          "codere": 1.45,
+          "mybookieag": 1.45,
+          "leovegas": 1.44
+        },
+        "away": {
+          "winamax": 2.75,
+          "1xbet": 2.83,
+          "matchbook": 2.88,
+          "betsson": 2.7,
+          "betfair": 2.76,
+          "888sport": 2.75,
+          "unibet": 2.65,
+          "williamhill": 2.75,
+          "betclic": 2.55,
+          "codere": 2.7,
+          "mybookieag": 2.71,
+          "leovegas": 2.55
+        }
+      },
+      "model": {
+        "home": 0.7544540419421866,
+        "away": 0.24554595805781343,
+        "fromModel": true,
+        "eloH": 1906,
+        "eloA": 1711,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "d8b6d9e196b22bb6a224ec404730c671",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "jasminepaolini",
+      "away": "alexandraeala",
+      "odds": {
+        "home": {
+          "betsson": 2.28,
+          "1xbet": 2.41,
+          "888sport": 2.3,
+          "unibet": 2.38,
+          "betfair": 2.44,
+          "betclic": 2.21,
+          "mybookieag": 2.24,
+          "leovegas": 2.38,
+          "williamhill": 2.3,
+          "winamax": 2.35,
+          "matchbook": 2.44,
+          "pinnacle": 2.37
+        },
+        "away": {
+          "betsson": 1.6,
+          "1xbet": 1.65,
+          "888sport": 1.61,
+          "unibet": 1.58,
+          "betfair": 1.68,
+          "betclic": 1.57,
+          "mybookieag": 1.58,
+          "leovegas": 1.57,
+          "williamhill": 1.62,
+          "winamax": 1.64,
+          "matchbook": 1.68,
+          "pinnacle": 1.65
+        }
+      },
+      "model": {
+        "home": 0.6400649998028851,
+        "away": 0.3599350001971149,
+        "fromModel": true,
+        "eloH": 1932,
+        "eloA": 1832,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "971037c4456589deb8b3c49b8c4c57ec",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "ashlynkrueger",
+      "away": "martakostyuk",
+      "odds": {
+        "home": {
+          "betfair": 3,
+          "winamax": 2.85,
+          "1xbet": 2.95,
+          "888sport": 2.75,
+          "betsson": 2.76,
+          "unibet": 2.8,
+          "betclic": 2.65,
+          "mybookieag": 2.68,
+          "matchbook": 3,
+          "leovegas": 2.8,
+          "williamhill": 2.75,
+          "pinnacle": 2.93
+        },
+        "away": {
+          "betfair": 1.48,
+          "winamax": 1.46,
+          "1xbet": 1.47,
+          "888sport": 1.44,
+          "betsson": 1.43,
+          "unibet": 1.43,
+          "betclic": 1.41,
+          "mybookieag": 1.42,
+          "matchbook": 1.48,
+          "leovegas": 1.43,
+          "williamhill": 1.44,
+          "pinnacle": 1.45
+        }
+      },
+      "model": {
+        "home": 0.37061145278249774,
+        "away": 0.6293885472175023,
+        "fromModel": true,
+        "eloH": 1743,
+        "eloA": 1835,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "b71326c6ab94b85aeced23088bd99df2",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "mariebouzkova",
+      "away": "elisemertens",
+      "odds": {
+        "home": {
+          "unibet": 2.02,
+          "betfair": 2.12,
+          "888sport": 2,
+          "betsson": 1.99,
+          "1xbet": 2.09,
+          "leovegas": 2.02,
+          "winamax": 2.05,
+          "betclic": 1.94,
+          "mybookieag": 1.96,
+          "pinnacle": 2.06,
+          "matchbook": 2.12,
+          "williamhill": 2
+        },
+        "away": {
+          "unibet": 1.79,
+          "betfair": 1.86,
+          "888sport": 1.8,
+          "betsson": 1.78,
+          "1xbet": 1.85,
+          "leovegas": 1.79,
+          "winamax": 1.82,
+          "betclic": 1.74,
+          "mybookieag": 1.75,
+          "pinnacle": 1.84,
+          "matchbook": 1.86,
+          "williamhill": 1.8
+        }
+      },
+      "model": {
+        "home": 0.4741190691088309,
+        "away": 0.5258809308911692,
+        "fromModel": true,
+        "eloH": 1892,
+        "eloA": 1910,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
+      "sofa": null
+    },
+    {
+      "id": "b6bcec433c38e3e38d3dd446569d2812",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "06 JUL",
+      "home": "madisonkeys",
+      "away": "lindanoskova",
+      "odds": {
+        "home": {
+          "unibet": 1.61,
+          "betsson": 1.61,
+          "betfair": 1.7,
+          "betclic": 1.57,
+          "mybookieag": 1.59,
+          "1xbet": 1.66,
+          "888sport": 1.61,
+          "williamhill": 1.62,
+          "winamax": 1.62,
+          "leovegas": 1.61,
+          "matchbook": 1.7
+        },
+        "away": {
+          "unibet": 2.3,
+          "betsson": 2.26,
+          "betfair": 2.38,
+          "betclic": 2.17,
+          "mybookieag": 2.22,
+          "1xbet": 2.39,
+          "888sport": 2.3,
+          "williamhill": 2.3,
+          "winamax": 2.25,
+          "leovegas": 2.3,
+          "matchbook": 2.38
+        }
+      },
+      "model": {
+        "home": 0.4971218004251891,
+        "away": 0.5028781995748108,
+        "fromModel": true,
+        "eloH": 1971,
+        "eloA": 1973,
+        "surface": "grass"
+      },
+      "ts": 1783328400000,
       "sofa": null
     }
   ],
@@ -2386,82 +1532,82 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 58,
-      "book": "betfair_ex_eu",
+      "conf": 53,
+      "book": "onexbet",
       "legs": [
         {
           "id": "44a55068b95674016667af4bf1a49145",
           "sport": "tennis_atp_wimbledon",
-          "ts": 1783245600000,
+          "ts": 1783254600000,
           "side": "away",
           "sofa": null,
           "match": "R. Safiullin – N. Djokovic",
           "pick": "Gana N. Djokovic",
-          "odd": 1.21,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "id": "e4dfd4a4fd2af98966de592fca9ad450",
-          "sport": "tennis_wta_wimbledon",
-          "ts": 1783168200000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Eala – I. Swiatek",
-          "pick": "Gana I. Swiatek",
-          "odd": 1.34,
-          "book": "betfair_ex_eu"
+          "odd": 1.18,
+          "book": "onexbet"
         },
         {
           "id": "5fca44be8e4f4be20860b8cd4695fd42",
           "sport": "tennis_wta_wimbledon",
-          "ts": 1783242000000,
+          "ts": 1783261800000,
           "side": "home",
           "sofa": null,
           "match": "A. Sabalenka – N. Osaka",
           "pick": "Gana A. Sabalenka",
-          "odd": 1.48,
-          "book": "betfair_ex_eu"
+          "odd": 1.47,
+          "book": "onexbet"
+        },
+        {
+          "id": "deb46b10eff833cb32c724e825c99114",
+          "sport": "tennis_atp_wimbledon",
+          "ts": 1783328400000,
+          "side": "home",
+          "sofa": null,
+          "match": "G. Dimitrov – A. Fery",
+          "pick": "Gana G. Dimitrov",
+          "odd": 1.5,
+          "book": "onexbet"
         }
       ]
     },
     {
       "id": "c2",
       "name": "Combinada Valor",
-      "conf": 23,
-      "book": "betfair_ex_eu",
+      "conf": 22,
+      "book": "onexbet",
       "legs": [
         {
-          "id": "f41b2c0783234f586463ba7246e7c6f6",
+          "id": "b6bcec433c38e3e38d3dd446569d2812",
           "sport": "tennis_wta_wimbledon",
-          "ts": 1783159200000,
-          "side": "home",
+          "ts": 1783328400000,
+          "side": "away",
           "sofa": null,
-          "match": "E. Navarro – M. Kostyuk",
-          "pick": "Gana E. Navarro",
-          "odd": 2.32,
-          "book": "betfair_ex_eu"
+          "match": "M. Keys – L. Noskova",
+          "pick": "Gana L. Noskova",
+          "odd": 2.39,
+          "book": "onexbet"
         },
         {
-          "id": "3523e4c754ebf06f358ebf59979692cf",
+          "id": "0dde211a4505e155ef36e15f1bf05a55",
           "sport": "tennis_wta_wimbledon",
-          "ts": 1783159200000,
-          "side": "home",
+          "ts": 1783267200000,
+          "side": "away",
           "sofa": null,
-          "match": "L. Samsonova – M. Bouzkova",
-          "pick": "Gana L. Samsonova",
-          "odd": 2.38,
-          "book": "betfair_ex_eu"
+          "match": "B. Bencic – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 1.9,
+          "book": "onexbet"
         },
         {
-          "id": "f96720ebe957199507985213c07f5afb",
+          "id": "deb46b10eff833cb32c724e825c99114",
           "sport": "tennis_atp_wimbledon",
-          "ts": 1783168800000,
+          "ts": 1783328400000,
           "side": "home",
           "sofa": null,
-          "match": "Z. Bergs – A. Fery",
-          "pick": "Gana Z. Bergs",
-          "odd": 1.81,
-          "book": "betfair_ex_eu"
+          "match": "G. Dimitrov – A. Fery",
+          "pick": "Gana G. Dimitrov",
+          "odd": 1.5,
+          "book": "onexbet"
         }
       ]
     }
@@ -3118,6 +2264,81 @@
       "book": "onexbet",
       "homeName": "H. Hurkacz",
       "awayName": "J. Struff"
+    },
+    {
+      "id": "f0620d5ff3f64875ff71939d62f51d91",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1783328400000,
+      "date": "06 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "J. Lehecka – A. Zverev",
+      "pickKey": "home",
+      "pickLabel": "Gana J. Lehecka",
+      "odd": 3.9,
+      "book": "betfair_ex_eu",
+      "homeName": "J. Lehecka",
+      "awayName": "A. Zverev"
+    },
+    {
+      "id": "opid1203305172579808",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1783238400000,
+      "date": "05 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "L. Berto – L. Bocchi",
+      "pickKey": "home",
+      "pickLabel": "Gana L. Berto",
+      "odd": 3.85,
+      "book": "pinnacle",
+      "homeName": "L. Berto",
+      "awayName": "L. Bocchi"
+    },
+    {
+      "id": "a66a7b940b5acab677add3367c1bef0e",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1783328400000,
+      "date": "06 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "T. Fritz – A. Bublik",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Bublik",
+      "odd": 2.6,
+      "book": "matchbook",
+      "homeName": "T. Fritz",
+      "awayName": "A. Bublik"
+    },
+    {
+      "id": "b6bcec433c38e3e38d3dd446569d2812",
+      "sport": "tennis_wta_wimbledon",
+      "ts": 1783328400000,
+      "date": "06 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Keys – L. Noskova",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Noskova",
+      "odd": 2.39,
+      "book": "onexbet",
+      "homeName": "M. Keys",
+      "awayName": "L. Noskova"
+    },
+    {
+      "id": "deb46b10eff833cb32c724e825c99114",
+      "sport": "tennis_atp_wimbledon",
+      "ts": 1783328400000,
+      "date": "06 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "G. Dimitrov – A. Fery",
+      "pickKey": "home",
+      "pickLabel": "Gana G. Dimitrov",
+      "odd": 1.5,
+      "book": "onexbet",
+      "homeName": "G. Dimitrov",
+      "awayName": "A. Fery"
     }
   ],
   "COMBO_RECORD": [
@@ -4301,9 +3522,155 @@
           "awayName": "N. Osaka"
         }
       ]
+    },
+    {
+      "dayId": "05 JUL·c1",
+      "date": "05 JUL",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "44a55068b95674016667af4bf1a49145",
+          "sport": "tennis_atp_wimbledon",
+          "side": "away",
+          "sofa": null,
+          "match": "R. Safiullin – N. Djokovic",
+          "pick": "Gana N. Djokovic",
+          "odd": 1.18,
+          "homeName": "R. Safiullin",
+          "awayName": "N. Djokovic"
+        },
+        {
+          "id": "5fca44be8e4f4be20860b8cd4695fd42",
+          "sport": "tennis_wta_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Sabalenka – N. Osaka",
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.47,
+          "homeName": "A. Sabalenka",
+          "awayName": "N. Osaka"
+        },
+        {
+          "id": "deb46b10eff833cb32c724e825c99114",
+          "sport": "tennis_atp_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "G. Dimitrov – A. Fery",
+          "pick": "Gana G. Dimitrov",
+          "odd": 1.5,
+          "homeName": "G. Dimitrov",
+          "awayName": "A. Fery"
+        }
+      ]
+    },
+    {
+      "dayId": "05 JUL·c2",
+      "date": "05 JUL",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "b6bcec433c38e3e38d3dd446569d2812",
+          "sport": "tennis_wta_wimbledon",
+          "side": "away",
+          "sofa": null,
+          "match": "M. Keys – L. Noskova",
+          "pick": "Gana L. Noskova",
+          "odd": 2.39,
+          "homeName": "M. Keys",
+          "awayName": "L. Noskova"
+        },
+        {
+          "id": "0dde211a4505e155ef36e15f1bf05a55",
+          "sport": "tennis_wta_wimbledon",
+          "side": "away",
+          "sofa": null,
+          "match": "B. Bencic – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 1.9,
+          "homeName": "B. Bencic",
+          "awayName": "C. Gauff"
+        },
+        {
+          "id": "deb46b10eff833cb32c724e825c99114",
+          "sport": "tennis_atp_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "G. Dimitrov – A. Fery",
+          "pick": "Gana G. Dimitrov",
+          "odd": 1.5,
+          "homeName": "G. Dimitrov",
+          "awayName": "A. Fery"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "05 JUL",
+      "match": "A. Sabalenka – N. Osaka",
+      "marginPct": 0.23,
+      "profit": 0.23,
+      "ts": 1783261800000,
+      "homeName": "A. Sabalenka",
+      "awayName": "N. Osaka",
+      "sport": "tennis_wta_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.47,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana N. Osaka",
+          "odd": 3.15,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
+      "date": "05 JUL",
+      "match": "K. Muchova – B. Krejcikova",
+      "marginPct": 0.77,
+      "profit": 0.78,
+      "ts": 1783251000000,
+      "homeName": "K. Muchova",
+      "awayName": "B. Krejcikova",
+      "sport": "tennis_wta_wimbledon",
+      "legs": [
+        {
+          "pick": "Gana K. Muchova",
+          "odd": 1.63,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana B. Krejcikova",
+          "odd": 2.64,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "05 JUL",
+      "match": "L. Berto – L. Bocchi",
+      "marginPct": 0.5,
+      "profit": 0.5,
+      "ts": 1783238400000,
+      "homeName": "L. Berto",
+      "awayName": "L. Bocchi",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        {
+          "pick": "Gana L. Berto",
+          "odd": 3.85,
+          "book": "pinnacle"
+        },
+        {
+          "pick": "Gana L. Bocchi",
+          "odd": 1.36,
+          "book": "bet365"
+        }
+      ]
+    },
     {
       "date": "04 JUL",
       "match": "B. Bencic – C. Gauff",
@@ -5115,72 +4482,6 @@
           "pick": "Gana D. Prizmic",
           "odd": 1.8,
           "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "29 JUN",
-      "match": "H. Medjedovic – S. Ofner",
-      "marginPct": 0.43,
-      "profit": 0.43,
-      "ts": 1782733200000,
-      "homeName": "H. Medjedovic",
-      "awayName": "S. Ofner",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana H. Medjedovic",
-          "odd": 1.52,
-          "book": "onexbet"
-        },
-        {
-          "pick": "Gana S. Ofner",
-          "odd": 2.96,
-          "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "29 JUN",
-      "match": "C. Ruud – H. Hurkacz",
-      "marginPct": 0.31,
-      "profit": 0.31,
-      "ts": 1782733200000,
-      "homeName": "C. Ruud",
-      "awayName": "H. Hurkacz",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana C. Ruud",
-          "odd": 2.95,
-          "book": "onexbet"
-        },
-        {
-          "pick": "Gana H. Hurkacz",
-          "odd": 1.52,
-          "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "29 JUN",
-      "match": "R. Jodar – F. Gill",
-      "marginPct": 0.34,
-      "profit": 0.34,
-      "ts": 1782727200000,
-      "homeName": "R. Jodar",
-      "awayName": "F. Gill",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana R. Jodar",
-          "odd": 1.19,
-          "book": "unibet_se"
-        },
-        {
-          "pick": "Gana F. Gill",
-          "odd": 6.4,
-          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -8527,6 +7828,105 @@
       "sofa": null,
       "homeName": "R. Safiullin",
       "awayName": "N. Djokovic"
+    },
+    {
+      "date": "05 JUL",
+      "ts": 1783238400000,
+      "match": "L. Berto – L. Bocchi",
+      "predHome": false,
+      "prob": 61,
+      "predName": "L. Bocchi",
+      "sofa": null,
+      "homeName": "L. Berto",
+      "awayName": "L. Bocchi"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "A. de Minaur – F. Cobolli",
+      "predHome": true,
+      "prob": 71,
+      "predName": "A. de Minaur",
+      "sofa": null,
+      "homeName": "A. de Minaur",
+      "awayName": "F. Cobolli"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "T. Fritz – A. Bublik",
+      "predHome": false,
+      "prob": 54,
+      "predName": "A. Bublik",
+      "sofa": null,
+      "homeName": "T. Fritz",
+      "awayName": "A. Bublik"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "J. Lehecka – A. Zverev",
+      "predHome": false,
+      "prob": 57,
+      "predName": "A. Zverev",
+      "sofa": null,
+      "homeName": "J. Lehecka",
+      "awayName": "A. Zverev"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "G. Dimitrov – A. Fery",
+      "predHome": true,
+      "prob": 75,
+      "predName": "G. Dimitrov",
+      "sofa": null,
+      "homeName": "G. Dimitrov",
+      "awayName": "A. Fery"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "J. Paolini – A. Eala",
+      "predHome": true,
+      "prob": 64,
+      "predName": "J. Paolini",
+      "sofa": null,
+      "homeName": "J. Paolini",
+      "awayName": "A. Eala"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "A. Krueger – M. Kostyuk",
+      "predHome": false,
+      "prob": 63,
+      "predName": "M. Kostyuk",
+      "sofa": null,
+      "homeName": "A. Krueger",
+      "awayName": "M. Kostyuk"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "M. Bouzkova – E. Mertens",
+      "predHome": false,
+      "prob": 53,
+      "predName": "E. Mertens",
+      "sofa": null,
+      "homeName": "M. Bouzkova",
+      "awayName": "E. Mertens"
+    },
+    {
+      "date": "06 JUL",
+      "ts": 1783328400000,
+      "match": "M. Keys – L. Noskova",
+      "predHome": false,
+      "prob": 50,
+      "predName": "L. Noskova",
+      "sofa": null,
+      "homeName": "M. Keys",
+      "awayName": "L. Noskova"
     }
   ],
   "LADDER": {
@@ -8572,7 +7972,15 @@
         "sofa": null
       },
       {
-        "n": 4
+        "n": 4,
+        "match": "R. Safiullin – N. Djokovic",
+        "pick": "Gana N. Djokovic",
+        "odd": 1.18,
+        "book": "betfair_ex_eu",
+        "bank": 20.41,
+        "result": "today",
+        "date": "05 JUL",
+        "sofa": null
       },
       {
         "n": 5
@@ -8654,7 +8062,8 @@
       "form": [
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8666,8 +8075,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -8682,7 +8091,8 @@
       "form": [
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8754,6 +8164,7 @@
       "form": [
         "L",
         "W",
+        "W",
         "W"
       ]
     },
@@ -8766,7 +8177,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2074_a-anisimova.jpg",
       "form": [
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8778,8 +8190,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -8864,6 +8276,7 @@
       "form": [
         "L",
         "W",
+        "W",
         "W"
       ]
     },
@@ -8884,6 +8297,7 @@
       "country": "Kazakhstan",
       "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg",
       "form": [
+        "W",
         "W",
         "W"
       ]
@@ -8922,8 +8336,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/447_l-noskova.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -8950,6 +8364,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1828_m-kostyuk.jpg",
       "form": [
         "W",
+        "W",
         "W"
       ]
     },
@@ -8962,6 +8377,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg",
       "form": [
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -9058,10 +8474,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/68143_a-paolini.jpg",
       "form": [
         "W",
-        "W",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -9087,7 +8503,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1150_s-cirstea.jpg",
       "form": [
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9102,7 +8519,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -9180,7 +8597,8 @@
       "form": [
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9251,10 +8669,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/15921_m-fernandez.jpg",
       "form": [
         "L",
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
-        "L"
+        "W"
       ]
     },
     {
@@ -9308,10 +8726,10 @@
       "photo": "https://img.sofascore.com/api/v1/team/207979/image",
       "form": [
         "W",
-        "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9339,6 +8757,7 @@
       "form": [
         "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -9429,8 +8848,8 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9444,7 +8863,7 @@
       "form": [
         "W",
         "W",
-        "W",
+        "L",
         "W",
         "L"
       ]
@@ -9467,9 +8886,9 @@
       "photo": "https://api.api-tennis.com/logo-tennis/3490_a-eala.jpg",
       "form": [
         "L",
-        "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9579,7 +8998,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -9641,11 +9060,11 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -9694,7 +9113,8 @@
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9714,11 +9134,11 @@
       "country": "Indonesia",
       "photo": "https://api.api-tennis.com/logo-tennis/28551_j-tjen.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9744,7 +9164,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2076_m-sakkari.jpg",
       "form": [
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9758,7 +9179,8 @@
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9929,10 +9351,10 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/1127_c-mcnally.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9945,7 +9367,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2844_m-berrettini.jpg",
       "form": [
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10093,10 +9516,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/40432_t-sierra.jpg",
       "form": [
         "W",
-        "W",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -10300,10 +9723,10 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/590_z-zhang.jpg",
       "form": [
-        "L",
-        "L",
         "W",
         "L",
+        "W",
+        "W",
         "W"
       ]
     },
@@ -10338,11 +9761,11 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg",
       "form": [
-        "L",
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10381,7 +9804,8 @@
       "form": [
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10422,7 +9846,8 @@
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10447,10 +9872,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2978_a-kovacevic.jpg",
       "form": [
         "L",
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
-        "L"
+        "W"
       ]
     },
     {
@@ -10636,10 +10061,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1131_d-snigur.jpg",
       "form": [
         "W",
-        "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10687,6 +10112,7 @@
         "W",
         "L",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10742,7 +10168,8 @@
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10867,11 +10294,11 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -10900,6 +10327,7 @@
         "L",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -11012,11 +10440,11 @@
       "country": "USA",
       "photo": "https://api.sofascore.app/api/v1/team/106140/image",
       "form": [
-        "W",
         "L",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -11227,6 +10655,7 @@
       "form": [
         "L",
         "W",
+        "L",
         "L"
       ]
     },
@@ -11308,8 +10737,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1751_m-krueger.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -11561,11 +10990,11 @@
       "country": "New Zealand",
       "photo": "https://api.api-tennis.com/logo-tennis/876_f-sun.jpg",
       "form": [
-        "W",
         "L",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -11603,6 +11032,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg",
       "form": [
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -11755,7 +11185,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2002_f-acosta.jpg",
       "form": [
         "L",
-        "L",
+        "W",
         "W",
         "W",
         "W"
@@ -11795,7 +11225,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -12099,7 +11529,8 @@
         "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -12292,11 +11723,11 @@
       "country": "Brazil",
       "photo": "https://api.api-tennis.com/logo-tennis/2410_g-heide.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -12427,8 +11858,8 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2384_g-dimitrov.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -12530,11 +11961,11 @@
       "country": "Japan",
       "photo": "https://api.api-tennis.com/logo-tennis/37897_r-sakamoto.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -12650,19 +12081,20 @@
       "W",
       "L",
       "L",
+      "L",
       "L"
     ],
     "yang": [
       "L",
-      "L",
-      "L",
       "W",
       "L",
       "W",
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "mujie": [
       "L",
@@ -12758,7 +12190,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "loutit": [
       "L"
@@ -12873,14 +12306,14 @@
     "nagy": [
       "W",
       "W",
-      "W",
       "L",
       "L",
       "W",
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "manescu": [
       "L",
@@ -12906,10 +12339,10 @@
     ],
     "shi": [
       "W",
+      "W",
       "L",
       "W",
       "W",
-      "L",
       "W",
       "W",
       "W",
@@ -12919,14 +12352,14 @@
     "wang": [
       "W",
       "W",
-      "W",
       "L",
       "L",
       "L",
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "kulambayeva": [
       "W",
@@ -12973,6 +12406,7 @@
     "keys": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -13034,6 +12468,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "hanfmann": [
@@ -13065,6 +12500,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "klugman": [
@@ -13089,6 +12525,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "pegula": [
@@ -13118,8 +12555,8 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -13189,7 +12626,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sherif": [
       "W",
@@ -13309,14 +12747,14 @@
     ],
     "zhang": [
       "W",
-      "L",
-      "W",
       "W",
       "L",
       "L",
       "L",
       "W",
       "L",
+      "W",
+      "W",
       "W"
     ],
     "senic": [
@@ -13341,10 +12779,10 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -13373,6 +12811,7 @@
     ],
     "lehecka": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -13413,6 +12852,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "fonseca": [
@@ -13612,14 +13052,14 @@
     "zamora": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "exsted": [
       "L",
@@ -13750,6 +13190,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "marozsan": [
@@ -13768,12 +13209,14 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "rybakina": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "peers": [
       "W",
@@ -13791,12 +13234,14 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "tracy": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pavic": [
       "W",
@@ -13821,6 +13266,7 @@
       "L"
     ],
     "winegar": [
+      "W",
       "W",
       "W",
       "W",
@@ -13851,7 +13297,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "serdarusic": [
       "L"
@@ -13924,8 +13371,8 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -13960,7 +13407,6 @@
       "L"
     ],
     "nakagawa": [
-      "W",
       "L",
       "W",
       "L",
@@ -13969,6 +13415,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "sinclair": [
@@ -13990,12 +13437,12 @@
     "kim": [
       "W",
       "W",
-      "W",
       "L",
       "L",
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -14209,6 +13656,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "paszun": [
@@ -14304,7 +13752,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "lombardini": [
       "W",
@@ -14321,7 +13770,8 @@
     "frodin": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "zanolini": [
       "L",
@@ -14499,7 +13949,9 @@
     "krawczyk": [
       "L",
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "sorger": [
       "W",
@@ -14573,7 +14025,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "skoch": [
       "L",
@@ -14588,7 +14041,8 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "heide": [
       "W",
@@ -14598,7 +14052,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "choinski": [
       "L",
@@ -14635,6 +14090,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -14676,6 +14132,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "verbeek": [
@@ -14683,6 +14140,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "vanassche": [
@@ -14693,6 +14151,7 @@
     "cecchinato": [
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -14723,7 +14182,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "zormanndasilva": [
       "L",
@@ -14732,7 +14192,6 @@
     ],
     "wehnelt": [
       "W",
-      "W",
       "L",
       "L",
       "W",
@@ -14740,7 +14199,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kumstat": [
       "L",
@@ -14755,7 +14215,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "genier": [
       "W",
@@ -14773,7 +14234,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "karma": [
       "W",
@@ -14970,6 +14432,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "filip": [
@@ -14991,7 +14454,6 @@
       "L"
     ],
     "delange": [
-      "L",
       "W",
       "W",
       "L",
@@ -14999,6 +14461,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -15159,7 +14622,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "varsa": [
       "L"
@@ -15319,6 +14783,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "ciocan": [
@@ -15379,6 +14844,7 @@
     "feldbausch": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -15451,7 +14917,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "steiner": [
       "W",
@@ -15475,6 +14942,7 @@
       "L"
     ],
     "denbroekvanemst": [
+      "W",
       "W",
       "W",
       "W",
@@ -15516,7 +14984,6 @@
       "L"
     ],
     "riera": [
-      "L",
       "W",
       "L",
       "W",
@@ -15524,6 +14991,8 @@
       "W",
       "W",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "ibragimova": [
@@ -15582,13 +15051,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "L",
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rachapudi": [
       "L",
@@ -15707,7 +15176,8 @@
     "hilderbrand": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "droguet": [
       "W",
@@ -15753,6 +15223,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -15826,7 +15297,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ricca": [
       "W",
@@ -15945,7 +15417,6 @@
     ],
     "torres": [
       "W",
-      "W",
       "L",
       "W",
       "W",
@@ -15953,7 +15424,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "herea": [
       "L"
@@ -15986,12 +15458,14 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "schoen": [
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -16026,11 +15500,12 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "eoverbeck": [
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -16106,6 +15581,7 @@
     ],
     "castagnola": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -16237,7 +15713,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "bertimon": [
       "L",
@@ -16316,7 +15793,6 @@
       "L"
     ],
     "petkovic": [
-      "W",
       "L",
       "W",
       "W",
@@ -16324,6 +15800,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -16358,7 +15835,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sultanov": [
       "L",
@@ -16633,6 +16111,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "butulija": [
@@ -16660,13 +16139,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "scaglia": [
       "L",
@@ -16752,6 +16231,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "kirkin": [
@@ -16783,6 +16263,7 @@
     ],
     "jgutierrez": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -16869,7 +16350,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kucukhuseyin": [
       "L",
@@ -16880,6 +16362,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -16977,7 +16460,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "eambrogi": [
       "L",
@@ -16987,7 +16471,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "gadamauri": [
       "L",
@@ -17072,7 +16557,6 @@
       "L"
     ],
     "radovanovic": [
-      "W",
       "L",
       "W",
       "W",
@@ -17081,7 +16565,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "stevic": [
       "L"
@@ -17290,6 +16775,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "herazogonzalez": [
@@ -17349,14 +16835,14 @@
     ],
     "zeballos": [
       "L",
-      "W",
-      "L",
       "L",
       "W",
       "L",
       "W",
       "W",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "garnevska": [
@@ -17447,6 +16933,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "daughters": [
@@ -17475,7 +16962,6 @@
     ],
     "nakashima": [
       "W",
-      "W",
       "L",
       "W",
       "L",
@@ -17483,6 +16969,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "klaassen": [
@@ -17513,10 +17000,10 @@
       "L"
     ],
     "konduri": [
-      "L"
+      "L",
+      "W"
     ],
     "johnson": [
-      "W",
       "W",
       "L",
       "W",
@@ -17525,7 +17012,8 @@
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "satterfield": [
       "L",
@@ -17570,6 +17058,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -17731,9 +17220,11 @@
     "melicharmartinez": [
       "W",
       "W",
+      "L",
       "L"
     ],
     "routliffe": [
+      "L",
       "L",
       "L",
       "L"
@@ -17752,6 +17243,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "takahata": [
@@ -17784,7 +17276,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "augeraliassime": [
       "L",
@@ -17802,10 +17295,12 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "deminaur": [
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -17817,7 +17312,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "bouzasmaneiro": [
       "L",
@@ -17841,7 +17337,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sabalenka": [
       "W",
@@ -17886,16 +17383,17 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "smith": [
       "W",
-      "W",
-      "W",
       "L",
       "L",
       "W",
       "W",
+      "W",
+      "L",
       "W",
       "L",
       "W"
@@ -17919,7 +17417,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "papamichail": [
       "L",
@@ -17964,6 +17463,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "conway": [
@@ -17982,8 +17482,8 @@
       "L"
     ],
     "sobolieva": [
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -18084,7 +17584,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "poritskyi": [
       "W",
@@ -18207,7 +17708,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "broom": [
       "L"
@@ -18238,6 +17740,7 @@
     "romano": [
       "L",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -18280,7 +17783,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "huesler": [
       "L"
@@ -18305,7 +17809,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "seidel": [
       "L",
@@ -18316,6 +17821,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "trevisan": [
@@ -18342,6 +17848,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "oliynykova": [
@@ -18381,6 +17888,7 @@
     "tararudee": [
       "L",
       "W",
+      "L",
       "L"
     ],
     "jacquemot": [
@@ -18389,10 +17897,10 @@
       "L"
     ],
     "xu": [
-      "L",
-      "L",
       "W",
       "W",
+      "W",
+      "L",
       "W",
       "L",
       "W",
@@ -18411,14 +17919,16 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "snigur": [
       "W",
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kenin": [
       "L",
@@ -18508,7 +18018,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "boulter": [
       "L",
@@ -18518,7 +18029,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "siniakova": [
       "L",
@@ -18529,7 +18041,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "navone": [
       "L",
@@ -18588,7 +18101,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "borisov": [
       "L",
@@ -18604,7 +18118,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "rejchtmanvinciguerra": [
       "L",
@@ -18767,7 +18282,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "braga": [
       "L",
@@ -18821,6 +18337,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "osaka": [
@@ -18871,13 +18388,15 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "munar": [
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mcerundolo": [
       "W",
@@ -18899,6 +18418,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "oberleitner": [
@@ -18910,7 +18430,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "matos": [
       "L",
@@ -18935,6 +18456,8 @@
       "W",
       "W",
       "W",
+      "W",
+      "L",
       "W",
       "L"
     ],
@@ -19007,7 +18530,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "agamenone": [
       "W",
@@ -19056,21 +18580,23 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "khromacheva": [
       "L",
+      "W",
       "W"
     ],
     "pucinellidealmeida": [
       "W",
       "W",
       "W",
-      "W",
       "L",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -19091,6 +18617,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -19185,6 +18712,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "chidekh": [
@@ -19261,6 +18789,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "mccabe": [
@@ -19276,6 +18805,7 @@
       "L"
     ],
     "wong": [
+      "L",
       "L",
       "L"
     ],
@@ -19327,7 +18857,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "guerrieri": [
       "W",
@@ -19481,6 +19012,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "nardi": [
@@ -19569,7 +19101,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "lajovic": [
       "W",
@@ -19608,6 +19141,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "ruzic": [
@@ -19692,7 +19226,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "stephens": [
       "L",
@@ -19793,7 +19328,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "aburruchaga": [
       "L",
@@ -19826,7 +19362,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "htauson": [
       "L",
@@ -19836,6 +19373,8 @@
       "W",
       "W",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "paolini": [
@@ -19846,7 +19385,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "bejlek": [
       "W",
@@ -19982,7 +19522,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "silva": [
       "L",
@@ -19993,11 +19534,13 @@
       "L",
       "W",
       "L",
+      "L",
       "L"
     ],
     "casanova": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -20052,6 +19595,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "weightman": [
@@ -20073,6 +19617,7 @@
     "granwehr": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -20232,6 +19777,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "basile": [
@@ -20351,7 +19897,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dodin": [
       "W",
@@ -20374,7 +19921,8 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "klimovicova": [
       "L"
@@ -20428,6 +19976,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "galfi": [
@@ -20436,6 +19985,7 @@
     "stefanini": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -20478,6 +20028,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "mikulskyte": [
@@ -20552,7 +20103,8 @@
     ],
     "hunter": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "costoulas": [
       "L"
@@ -20570,6 +20122,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -20669,7 +20222,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "podrez": [
       "W",
@@ -20711,7 +20265,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "guo": [
       "L",
@@ -20775,6 +20330,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -20854,7 +20410,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "moise": [
       "L"
@@ -20885,7 +20442,6 @@
     ],
     "shin": [
       "W",
-      "W",
       "L",
       "W",
       "W",
@@ -20893,7 +20449,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "osminkin": [
       "W",
@@ -20914,7 +20471,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "vishenchukvishenko": [
       "L",
@@ -20967,7 +20525,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "gloeckler": [
       "L",
@@ -21082,7 +20641,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kuparev": [
       "L",
@@ -21146,7 +20706,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hermanns": [
       "W",
@@ -21216,6 +20777,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "donnell": [
@@ -21246,6 +20808,8 @@
     ],
     "tomase": [
       "L",
+      "W",
+      "W",
       "W",
       "W",
       "W",
@@ -21562,6 +21126,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "siftar": [
@@ -21593,7 +21158,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "urankar": [
       "L",
@@ -21631,7 +21197,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "pratamorais": [
       "L",
@@ -21662,8 +21229,8 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -21695,7 +21262,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "roesch": [
       "L"
@@ -21715,6 +21283,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "kaynak": [
@@ -21829,6 +21398,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "perezsocas": [
@@ -21869,7 +21439,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "orgilesgarciaretamero": [
       "L"
@@ -21983,7 +21554,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sharma": [
       "L",
@@ -22038,7 +21610,8 @@
     "thompson": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "massardobrain": [
       "W",
@@ -22058,6 +21631,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -22228,7 +21802,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "chung": [
       "L",
@@ -22265,7 +21840,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kockinis": [
       "L"
@@ -22387,6 +21963,7 @@
     ],
     "rifqifitriadi": [
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -22535,6 +22112,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -22745,7 +22323,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "collins": [
       "L",
@@ -22790,7 +22369,8 @@
     "swiatek": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kunitsyn": [
       "L",
@@ -23030,6 +22610,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "lapalu": [
@@ -23111,6 +22692,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "tahiri": [
@@ -23136,7 +22718,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "neilsongatenby": [
       "L"
@@ -23207,6 +22790,7 @@
     "obradovic": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -23330,6 +22914,7 @@
     "korpanecdavies": [
       "W",
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -23472,6 +23057,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "deflandre": [
@@ -23480,6 +23066,7 @@
     "wiskandt": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -23616,6 +23203,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "shabanpour": [
@@ -23652,7 +23240,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ksandinov": [
       "L",
@@ -23699,6 +23288,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "azoidis": [
@@ -23706,7 +23296,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "abibsi": [
       "L"
@@ -23729,7 +23320,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sengul": [
       "W",
@@ -23756,6 +23348,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "seleznev": [
@@ -23778,6 +23371,7 @@
     "jeong": [
       "L",
       "W",
+      "L",
       "L"
     ],
     "palicova": [
@@ -23888,6 +23482,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "ryden": [
@@ -23972,7 +23567,6 @@
       "L"
     ],
     "bennani": [
-      "L",
       "W",
       "W",
       "L",
@@ -23981,7 +23575,8 @@
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "petit": [
       "L"
@@ -24002,7 +23597,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "haddouch": [
       "L"
@@ -24146,6 +23742,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "miton": [
@@ -24243,6 +23840,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "driscoll": [
@@ -24328,7 +23926,8 @@
     "khachanov": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dayal": [
       "L",
@@ -24375,7 +23974,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "peck": [
       "W",
@@ -24552,6 +24152,7 @@
     ],
     "cobolli": [
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -24791,7 +24392,8 @@
     "yastremska": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "marcondes": [
       "W",
@@ -24799,6 +24401,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "faurel": [
@@ -24835,7 +24438,8 @@
     "zeeuwstoyanov": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "pedone": [
       "W",
@@ -24850,10 +24454,12 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "zantedeschi": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -24909,7 +24515,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "blockx": [
       "L"
@@ -24922,6 +24529,7 @@
       "L"
     ],
     "bublik": [
+      "W",
       "W",
       "W"
     ],
@@ -24941,14 +24549,16 @@
     ],
     "berrettini": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "wawrinka": [
       "L"
     ],
     "anisimova": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "swan": [
       "W",
@@ -24960,7 +24570,8 @@
     ],
     "cirstea": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "haddadmaia": [
       "L"
@@ -24970,11 +24581,13 @@
     ],
     "kostyuk": [
       "W",
+      "W",
       "W"
     ],
     "sakkari": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "mackinlay": [
       "W",
@@ -24995,7 +24608,8 @@
     ],
     "hemery": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "agalarraga": [
       "L"
@@ -25102,12 +24716,14 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "cchen": [
       "L"
     ],
     "meri": [
+      "W",
       "W",
       "W",
       "W"
@@ -25127,6 +24743,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -25163,6 +24780,7 @@
       "L"
     ],
     "ozdemir": [
+      "W",
       "W",
       "W",
       "W"
@@ -25267,7 +24885,8 @@
     "lam": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "palbertomd": [
       "L"
@@ -25311,7 +24930,8 @@
     "kabbaj": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "zaar": [
       "W",
@@ -25370,7 +24990,8 @@
     "inoue": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "odorizzi": [
       "L",
@@ -25398,7 +25019,8 @@
     "noce": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sarmientogarcia": [
       "W",
@@ -25479,6 +25101,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "premzl": [
@@ -25508,7 +25131,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kopilevich": [
       "W",
@@ -25555,6 +25179,8 @@
       "L"
     ],
     "siniakov": [
+      "W",
+      "W",
       "W",
       "W",
       "W",
@@ -25637,7 +25263,8 @@
       "W",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "mian": [
       "L"
@@ -25697,6 +25324,7 @@
     "montsi": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "peliwo": [
@@ -25713,12 +25341,14 @@
     "shimanov": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "duhan": [
       "L"
     ],
     "badenhorst": [
+      "W",
       "W",
       "W",
       "W"
@@ -25762,6 +25392,8 @@
       "W",
       "W",
       "W",
+      "L",
+      "W",
       "L"
     ],
     "youri": [
@@ -25782,12 +25414,16 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jestin": [
       "L"
     ],
     "duerst": [
+      "W",
+      "W",
+      "W",
       "W",
       "W",
       "W",
@@ -25817,7 +25453,8 @@
     "fomba": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "buldorini": [
       "L"
@@ -25826,6 +25463,7 @@
       "L"
     ],
     "lokoli": [
+      "W",
       "W",
       "W",
       "W"
@@ -25846,6 +25484,7 @@
     ],
     "johnston": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -25907,6 +25546,7 @@
     "legout": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "bicknell": [
@@ -25918,7 +25558,8 @@
     "heredia": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hohmann": [
       "W",
@@ -25961,7 +25602,8 @@
     "tikhonova": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "elee": [
       "W",
@@ -25981,11 +25623,13 @@
       "L"
     ],
     "vavassori": [
+      "W",
       "W"
     ],
     "kadhe": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "gomez": [
       "L"
@@ -26054,18 +25698,22 @@
     ],
     "dermerwevoelzke": [
       "W",
+      "W",
+      "W",
       "W"
     ],
     "dominko": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "izquierdoluque": [
       "L"
     ],
     "poulsenbrostrom": [
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -26084,7 +25732,8 @@
     "stepanov": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dalmasso": [
       "W",
@@ -26178,6 +25827,7 @@
     "wiedenmann": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "tazabekov": [
@@ -26191,6 +25841,7 @@
       "L"
     ],
     "baroni": [
+      "W",
       "W",
       "W",
       "W"
@@ -26244,7 +25895,8 @@
     "ezzat": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "houas": [
       "W",
@@ -26287,12 +25939,14 @@
     "saritas": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sayedfouad": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "russo": [
       "W",
@@ -26436,6 +26090,7 @@
     "tornersensano": [
       "W",
       "W",
+      "W",
       "W"
     ],
     "ferrerperez": [
@@ -26458,6 +26113,7 @@
       "L"
     ],
     "ercan": [
+      "W",
       "W",
       "W",
       "W"
@@ -26529,7 +26185,9 @@
     "velcz": [
       "L",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "beaven": [
       "W",
@@ -26582,7 +26240,8 @@
     ],
     "juhas": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "perezmellado": [
       "L"
@@ -26670,7 +26329,8 @@
     ],
     "klerkvorwerk": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sotikovs": [
       "L"
@@ -26678,7 +26338,8 @@
     "vaja": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "nlogastosovic": [
       "L"
@@ -26724,7 +26385,8 @@
     "kruger": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "cirotte": [
       "W",
@@ -26745,7 +26407,8 @@
     ],
     "zylvanzyl": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "bernales": [
       "L"
@@ -26833,11 +26496,13 @@
     ],
     "jiniklassalminen": [
       "W",
+      "W",
       "W"
     ],
     "zamarripa": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ovcharenko": [
       "W",
@@ -26847,12 +26512,15 @@
       "L"
     ],
     "jebens": [
+      "W",
       "W"
     ],
     "reboul": [
+      "W",
       "W"
     ],
     "krunic": [
+      "W",
       "W"
     ],
     "liang": [
@@ -26881,7 +26549,8 @@
     ],
     "simeonov": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kolevski": [
       "L"
@@ -26889,7 +26558,8 @@
     "cerny": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "angeloni": [
       "L"
@@ -26922,11 +26592,14 @@
     "srbljak": [
       "L",
       "W",
+      "W",
+      "W",
       "W"
     ],
     "bhosale": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hou": [
       "L"
@@ -27022,6 +26695,7 @@
       "L"
     ],
     "bush": [
+      "L",
       "L"
     ],
     "marinkovic": [
@@ -27129,7 +26803,8 @@
     ],
     "hamilton": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "rencheli": [
       "W",
@@ -27144,10 +26819,12 @@
     ],
     "raina": [
       "W",
+      "W",
       "W"
     ],
     "jongroyer": [
-      "W"
+      "W",
+      "L"
     ],
     "nedovyesov": [
       "L"
@@ -27192,10 +26869,126 @@
       "W"
     ],
     "geschwind": [
-      "W"
+      "W",
+      "L"
     ],
     "hewitt": [
+      "W",
       "W"
+    ],
+    "christie": [
+      "L"
+    ],
+    "errani": [
+      "W"
+    ],
+    "burrage": [
+      "L"
+    ],
+    "alvarez": [
+      "L"
+    ],
+    "brand": [
+      "W"
+    ],
+    "cozad": [
+      "L"
+    ],
+    "hchabalgoity": [
+      "L"
+    ],
+    "hance": [
+      "W"
+    ],
+    "massellani": [
+      "L"
+    ],
+    "todoran": [
+      "L"
+    ],
+    "jovanovski": [
+      "W"
+    ],
+    "sallu": [
+      "L"
+    ],
+    "jade": [
+      "W"
+    ],
+    "kawanishi": [
+      "L"
+    ],
+    "amiguel": [
+      "W"
+    ],
+    "fletcher": [
+      "L"
+    ],
+    "chavez": [
+      "W"
+    ],
+    "mirrington": [
+      "L"
+    ],
+    "pagani": [
+      "W"
+    ],
+    "moxon": [
+      "L"
+    ],
+    "paparkar": [
+      "W"
+    ],
+    "craze": [
+      "L"
+    ],
+    "baena": [
+      "W"
+    ],
+    "dorofeevarybas": [
+      "W"
+    ],
+    "bekker": [
+      "L"
+    ],
+    "iburcescu": [
+      "W"
+    ],
+    "tu": [
+      "L"
+    ],
+    "lbarros": [
+      "W"
+    ],
+    "qu": [
+      "W"
+    ],
+    "cvetkovic": [
+      "L"
+    ],
+    "veigelsbach": [
+      "W"
+    ],
+    "rajeshwaranrevathi": [
+      "L"
+    ],
+    "hermanova": [
+      "W"
+    ],
+    "james": [
+      "W"
+    ],
+    "skliar": [
+      "W"
+    ],
+    "dotsenko": [
+      "L"
+    ],
+    "zingg": [
+      "L"
+    ],
+    "pieczonka": [
+      "L"
     ]
   },
   "FORM_DONE": {
@@ -31771,7 +31564,168 @@
     "shin|samrej|shin": 1,
     "yuan|wang|yuan": 1,
     "guo|snigireva|snigireva": 1,
-    "harazaki|nasridinov|nasridinov": 1
+    "harazaki|nasridinov|nasridinov": 1,
+    "christie|krawczyk|krawczyk": 1,
+    "errani|burrage|errani": 1,
+    "gleason|stollar|stollar": 1,
+    "hunter|melichar-martinez|hunter": 1,
+    "lumsden|silva|lumsden": 1,
+    "routliffe|zhang|zhang": 1,
+    "schuurs|fernandez|fernandez": 1,
+    "zvonareva|ostapenko|ostapenko": 1,
+    "olivetti|jebens|jebens": 1,
+    "verbeek|zeballos|verbeek": 1,
+    "samsonova|bouzkova|bouzkova": 1,
+    "snigur|krueger|krueger": 1,
+    "navarro|kostyuk|kostyuk": 1,
+    "eala|swiatek|eala": 1,
+    "anisimova|keys|keys": 1,
+    "winegar|roger-vasselin|winegar": 1,
+    "tracy|kovacevic|kovacevic": 1,
+    "townsend|tormo|townsend": 1,
+    "tikhonova|zvonareva|zvonareva": 1,
+    "mladenovic|joint|mladenovic": 1,
+    "khachanov|cobolli|cobolli": 1,
+    "giron|zverev|zverev": 1,
+    "fritz|sonego|fritz": 1,
+    "minaur|svajda|minaur": 1,
+    "bergs|fery|fery": 1,
+    "lehecka|munar|lehecka": 1,
+    "mertens|rybakina|mertens": 1,
+    "paolini|sakkari|paolini": 1,
+    "alvarez|konduri|konduri": 1,
+    "brand|cozad|brand": 1,
+    "chabalgoity|boogaard|boogaard": 1,
+    "hance|massellani|hance": 1,
+    "johnson|todoran|johnson": 1,
+    "jovanovski|sallu|jovanovski": 1,
+    "kawanishi|jade|jade": 1,
+    "miguel|fletcher|miguel": 1,
+    "mirrington|chavez|chavez": 1,
+    "moxon|pagani|pagani": 1,
+    "paparkar|craze|paparkar": 1,
+    "thompson|baena|baena": 1,
+    "bekker|dorofeeva-rybas|dorofeeva-rybas": 1,
+    "burcescu|tu|burcescu": 1,
+    "bush|barros|barros": 1,
+    "cvetkovic|qu|qu": 1,
+    "eigelsbach|revathi|eigelsbach": 1,
+    "hermanova|wong|hermanova": 1,
+    "jeong|frodin|frodin": 1,
+    "davies|james|james": 1,
+    "skliar|dotsenko|skliar": 1,
+    "sun|lin|sun": 1,
+    "zhang|zingg|zhang": 1,
+    "tiafoe|bublik|bublik": 1,
+    "cirstea|noskova|noskova": 1,
+    "smith|guinard|guinard": 1,
+    "dimitrov|berrettini|dimitrov": 1,
+    "kasnikowski|piros|piros": 1,
+    "justo|smith|smith": 1,
+    "heide|cecchinato|cecchinato": 1,
+    "bennani|ahouda|bennani": 1,
+    "ivanovski|milev|ivanovski": 1,
+    "orlov|popovic|orlov": 1,
+    "nakagawa|ogura|nakagawa": 1,
+    "yuan|wang|wang": 1,
+    "geschwind|srbljak|srbljak": 1,
+    "vavassori|royer|vavassori": 1,
+    "ruse|tjen|ruse": 1,
+    "parks|stefani|stefani": 1,
+    "khromacheva|ostapenko|khromacheva": 1,
+    "rincon|acosta|acosta": 1,
+    "kadhe|romano|romano": 1,
+    "planinsek|wiskandt|wiskandt": 1,
+    "dougaz|duran|dougaz": 1,
+    "bouchelaghem|ouakaa|bouchelaghem": 1,
+    "maloney|ezzat|maloney": 1,
+    "andrienko|sartz-lunde|sartz-lunde": 1,
+    "hemery|moeller|moeller": 1,
+    "giustino|feldbausch|feldbausch": 1,
+    "marcondes|wehnelt|marcondes": 1,
+    "saritas|frusina|frusina": 1,
+    "villet|fouad|villet": 1,
+    "molchanov|vrbensky|vrbensky": 1,
+    "stankovic|radovanovic|stankovic": 1,
+    "petkovic|tomase|tomase": 1,
+    "tomase|vaja|tomase": 1,
+    "kumar|petak|kumar": 1,
+    "dagostino|wiedenmann|wiedenmann": 1,
+    "baroni|tortora|baroni": 1,
+    "pankin|derepasko|derepasko": 1,
+    "juhas|obradovic|obradovic": 1,
+    "qabazard|villoslada|qabazard": 1,
+    "falkowska|herea|falkowska": 1,
+    "mortensen|nagy|nagy": 1,
+    "bojica|meri|meri": 1,
+    "mihalka|mettraux|mihalka": 1,
+    "stoyanov|emst|emst": 1,
+    "forger|lange|lange": 1,
+    "noce|khoeblal|khoeblal": 1,
+    "schoen|torres|schoen": 1,
+    "overbeck|dominko|overbeck": 1,
+    "summers|brostrom|brostrom": 1,
+    "claeys|lam|claeys": 1,
+    "impe|sensano|sensano": 1,
+    "ercan|kurt|ercan": 1,
+    "soke|farzami|soke": 1,
+    "turkmen|mi|turkmen": 1,
+    "bittoun|turker|bittoun": 1,
+    "azoidis|reyniak|reyniak": 1,
+    "ozdemir|blazka|ozdemir": 1,
+    "opitz|kelm|kelm": 1,
+    "siniakov|morillo|siniakov": 1,
+    "reboul|pieczonka|reboul": 1,
+    "krawczyk|xu|xu": 1,
+    "mcnally|panova|mcnally": 1,
+    "krunic|yastremska|krunic": 1,
+    "alves|casanova|casanova": 1,
+    "gutierrez|garcia|gutierrez": 1,
+    "montsi|jefferson|montsi": 1,
+    "shimanov|badenhorst|badenhorst": 1,
+    "siniakov|hopp|siniakov": 1,
+    "kabbaj|granwehr|granwehr": 1,
+    "riera|sobolieva|sobolieva": 1,
+    "pigato|tubello|tubello": 1,
+    "voelzke|vorwerk|voelzke": 1,
+    "faucon|velcz|velcz": 1,
+    "strombachs|schell|strombachs": 1,
+    "zaparyniuk|riera|riera": 1,
+    "kruger|duerst|duerst": 1,
+    "poullain|stepanov|poullain": 1,
+    "duerst|danilova|duerst": 1,
+    "roux|zyl|roux": 1,
+    "heredia|almeida|almeida": 1,
+    "castagnola|cerny|castagnola": 1,
+    "zantedeschi|sieg|zantedeschi": 1,
+    "sakellaridi|tan|sakellaridi": 1,
+    "zeballos|sakamoto|zeballos": 1,
+    "hernandez|parisca|hernandez": 1,
+    "zamora|nakashima|nakashima": 1,
+    "lokoli|bobichon|lokoli": 1,
+    "fomba|added|added": 1,
+    "lee|shi|shi": 1,
+    "jorge|inoue|jorge": 1,
+    "kim|krall|kim": 1,
+    "johnston|shearer|johnston": 1,
+    "ewing|shcherbinina|shcherbinina": 1,
+    "fakih|xu|fakih": 1,
+    "sahdiieva|vagramov|sahdiieva": 1,
+    "yang|yang|yang": 1,
+    "simeonov|srbljak|srbljak": 1,
+    "duerst|roux|duerst": 1,
+    "sierra|tararudee|sierra": 1,
+    "voelzke|velcz|voelzke": 1,
+    "shi|bhosale|shi": 1,
+    "broadus|koike|broadus": 1,
+    "legout|winter|legout": 1,
+    "watt|hilderbrand|watt": 1,
+    "ma|stefanini|stefanini": 1,
+    "hamilton|raina|raina": 1,
+    "zamarripa|hewitt|hewitt": 1,
+    "niklas-salminen|poonacha|niklas-salminen": 1,
+    "dellavedova|shin|dellavedova": 1,
+    "nasridinov|fitriadi|fitriadi": 1
   },
   "ELO": {
     "sinner": 2180,
