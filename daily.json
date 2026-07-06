@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T14:00:52.699Z",
+    "updatedAt": "2026-07-06T16:00:53.733Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -4205,6 +4205,20 @@
   "MODEL_RECORD": [
     {
       "date": "06 JUL",
+      "match": "J. Paolini – A. Eala",
+      "predName": "J. Paolini",
+      "prob": 64,
+      "ok": true
+    },
+    {
+      "date": "06 JUL",
+      "match": "A. de Minaur – F. Cobolli",
+      "predName": "A. de Minaur",
+      "prob": 71,
+      "ok": false
+    },
+    {
+      "date": "06 JUL",
       "match": "M. Bouzkova – E. Mertens",
       "predName": "E. Mertens",
       "prob": 53,
@@ -6988,20 +7002,6 @@
       "predName": "U. Humbert",
       "prob": 65,
       "ok": false
-    },
-    {
-      "date": "11 JUN",
-      "match": "R. Montgomery – G. Minnen",
-      "predName": "G. Minnen",
-      "prob": 60,
-      "ok": false
-    },
-    {
-      "date": "10 JUN",
-      "match": "P. Udvardy – D. Snigur",
-      "predName": "P. Udvardy",
-      "prob": 57,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -7470,17 +7470,6 @@
     {
       "date": "06 JUL",
       "ts": 1783328400000,
-      "match": "A. de Minaur – F. Cobolli",
-      "predHome": true,
-      "prob": 71,
-      "predName": "A. de Minaur",
-      "sofa": null,
-      "homeName": "A. de Minaur",
-      "awayName": "F. Cobolli"
-    },
-    {
-      "date": "06 JUL",
-      "ts": 1783328400000,
       "match": "T. Fritz – A. Bublik",
       "predHome": false,
       "prob": 54,
@@ -7510,17 +7499,6 @@
       "sofa": null,
       "homeName": "G. Dimitrov",
       "awayName": "A. Fery"
-    },
-    {
-      "date": "06 JUL",
-      "ts": 1783328400000,
-      "match": "J. Paolini – A. Eala",
-      "predHome": true,
-      "prob": 64,
-      "predName": "J. Paolini",
-      "sofa": null,
-      "homeName": "J. Paolini",
-      "awayName": "A. Eala"
     },
     {
       "date": "06 JUL",
@@ -7578,88 +7556,17 @@
       "awayName": "K. Muchova"
     }
   ],
-  "LADDER": {
-    "id": "Lmr1q8d0x",
-    "start": 10,
-    "target": 250,
-    "steps": 10,
-    "current": 4,
-    "status": "live",
-    "bank": 20.41,
-    "rungs": [
-      {
-        "n": 1,
-        "match": "J. De Jong – J. Fonseca",
-        "pick": "Gana J. Fonseca",
-        "odd": 1.2,
-        "book": "matchbook",
-        "bank": 12,
-        "result": "W",
-        "date": "01 JUL",
-        "sofa": null
-      },
-      {
-        "n": 2,
-        "match": "E. Navarro – O. Selekhmeteva",
-        "pick": "Gana E. Navarro",
-        "odd": 1.2,
-        "book": "1xbet",
-        "bank": 14.42,
-        "result": "W",
-        "date": "02 JUL",
-        "sofa": null
-      },
-      {
-        "n": 3,
-        "match": "A. de Minaur – Z. Svajda",
-        "pick": "Gana A. de Minaur",
-        "odd": 1.2,
-        "book": "matchbook",
-        "bank": 17.3,
-        "result": "W",
-        "date": "03 JUL",
-        "sofa": null
-      },
-      {
-        "n": 4,
-        "match": "R. Safiullin – N. Djokovic",
-        "pick": "Gana N. Djokovic",
-        "odd": 1.18,
-        "book": "betfair_ex_eu",
-        "bank": 20.41,
-        "result": "W",
-        "date": "05 JUL",
-        "sofa": null
-      },
-      {
-        "n": 5,
-        "match": "A. de Minaur – F. Cobolli",
-        "pick": "Gana A. de Minaur",
-        "odd": 1.31,
-        "book": "onexbet",
-        "bank": 26.74,
-        "result": "today",
-        "date": "06 JUL",
-        "sofa": null
-      },
-      {
-        "n": 6
-      },
-      {
-        "n": 7
-      },
-      {
-        "n": 8
-      },
-      {
-        "n": 9
-      },
-      {
-        "n": 10
-      }
-    ]
-  },
+  "LADDER": null,
   "LADDER_HISTORY": [
+    {
+      "id": "Lmr1q8d0x",
+      "start": 10,
+      "target": 250,
+      "brokeAt": 5,
+      "reached": 20.41,
+      "result": "broken",
+      "date": "06 JUL"
+    },
     {
       "id": "Lreset0615",
       "start": 10,
