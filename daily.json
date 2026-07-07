@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T16:00:29.879Z",
+    "updatedAt": "2026-07-07T18:00:34.802Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1039,6 +1039,24 @@
   ],
   "RECORD": [
     {
+      "id": "747770c36738cee8a1c7b74838f0d9a4",
+      "date": "07 JUL",
+      "match": "N. Osaka – K. Muchova",
+      "pick": "Gana K. Muchova",
+      "odd": 2.16,
+      "book": "matchbook",
+      "result": "W"
+    },
+    {
+      "id": "f0620d5ff3f64875ff71939d62f51d91",
+      "date": "06 JUL",
+      "match": "J. Lehecka – A. Zverev",
+      "pick": "Gana J. Lehecka",
+      "odd": 3.9,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "deb46b10eff833cb32c724e825c99114",
       "date": "06 JUL",
       "match": "G. Dimitrov – A. Fery",
@@ -1563,24 +1581,6 @@
       "odd": 1.55,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "358d9f8f061afe1f32bc74d63fd80a18",
-      "date": "29 JUN",
-      "match": "A. Kovacevic – B. van de Zandschulp",
-      "pick": "Gana A. Kovacevic",
-      "odd": 2.66,
-      "book": "betfair_ex_eu",
-      "result": "L"
-    },
-    {
-      "id": "35090f59026ece4c7ffb98c0066d7ad8",
-      "date": "29 JUN",
-      "match": "M. Zheng – C. Norrie",
-      "pick": "Gana M. Zheng",
-      "odd": 2.45,
-      "book": "onexbet",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1598,36 +1598,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "f0620d5ff3f64875ff71939d62f51d91",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1783328400000,
-      "date": "06 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Lehecka – A. Zverev",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 3.9,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Lehecka",
-      "awayName": "A. Zverev"
-    },
-    {
-      "id": "747770c36738cee8a1c7b74838f0d9a4",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1783414800000,
-      "date": "07 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "N. Osaka – K. Muchova",
-      "pickKey": "away",
-      "pickLabel": "Gana K. Muchova",
-      "odd": 2.16,
-      "book": "matchbook",
-      "homeName": "N. Osaka",
-      "awayName": "K. Muchova"
     },
     {
       "id": "dddbd0f0e0bfc925a35cef4b17f733a8",
@@ -1661,6 +1631,35 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "06 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 7.66,
+      "result": "L",
+      "legs": [
+        {
+          "match": "N. Osaka – K. Muchova",
+          "pick": "Gana K. Muchova",
+          "odd": 2.16,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "M. Keys – L. Noskova",
+          "pick": "Gana L. Noskova",
+          "odd": 2.38,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "G. Dimitrov – A. Fery",
+          "pick": "Gana G. Dimitrov",
+          "odd": 1.49,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "05 JUL",
       "name": "Combinada Valor",
@@ -2084,8 +2083,8 @@
           "match": "K. Muchova – N. Osaka",
           "pick": "Gana K. Muchova",
           "odd": 1,
-          "win": null,
-          "voided": true
+          "win": true,
+          "voided": false
         }
       ]
     },
@@ -2770,35 +2769,6 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "11 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 3,
-      "result": "L",
-      "legs": [
-        {
-          "match": "E. Rybakina – T. Maria",
-          "pick": "Gana E. Rybakina",
-          "odd": 1.22,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "R. Hijikata – F. Tiafoe",
-          "pick": "Gana F. Tiafoe",
-          "odd": 1.42,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "I. Jović – A. Anisimova",
-          "pick": "Gana A. Anisimova",
-          "odd": 1.73,
-          "win": false,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
@@ -2839,46 +2809,6 @@
           "odd": 2.16,
           "homeName": "N. Osaka",
           "awayName": "K. Muchova"
-        }
-      ]
-    },
-    {
-      "dayId": "06 JUL·c2",
-      "date": "06 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "747770c36738cee8a1c7b74838f0d9a4",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "N. Osaka – K. Muchova",
-          "pick": "Gana K. Muchova",
-          "odd": 2.16,
-          "homeName": "N. Osaka",
-          "awayName": "K. Muchova"
-        },
-        {
-          "id": "b6bcec433c38e3e38d3dd446569d2812",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "M. Keys – L. Noskova",
-          "pick": "Gana L. Noskova",
-          "odd": 2.38,
-          "homeName": "M. Keys",
-          "awayName": "L. Noskova"
-        },
-        {
-          "id": "deb46b10eff833cb32c724e825c99114",
-          "sport": "tennis_atp_wimbledon",
-          "side": "home",
-          "sofa": null,
-          "match": "G. Dimitrov – A. Fery",
-          "pick": "Gana G. Dimitrov",
-          "odd": 1.49,
-          "homeName": "G. Dimitrov",
-          "awayName": "A. Fery"
         }
       ]
     },
@@ -3836,6 +3766,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "07 JUL",
+      "match": "N. Osaka – K. Muchova",
+      "predName": "K. Muchova",
+      "prob": 60,
+      "ok": true
+    },
+    {
+      "date": "06 JUL",
+      "match": "J. Lehecka – A. Zverev",
+      "predName": "A. Zverev",
+      "prob": 57,
+      "ok": true
+    },
+    {
+      "date": "27 JUN",
+      "match": "K. Muchova – N. Osaka",
+      "predName": "K. Muchova",
+      "prob": 58,
+      "ok": true
+    },
     {
       "date": "07 JUL",
       "match": "J. Pegula – C. Gauff",
@@ -6614,27 +6565,6 @@
       "predName": "K. Rakhimova",
       "prob": 59,
       "ok": true
-    },
-    {
-      "date": "11 JUN",
-      "match": "S. Cirstea – E. Raducanu",
-      "predName": "S. Cirstea",
-      "prob": 61,
-      "ok": false
-    },
-    {
-      "date": "11 JUN",
-      "match": "E. Rybakina – T. Maria",
-      "predName": "E. Rybakina",
-      "prob": 81,
-      "ok": true
-    },
-    {
-      "date": "12 JUN",
-      "match": "C. McNally – S. Sierra",
-      "predName": "C. McNally",
-      "prob": 51,
-      "ok": true
     }
   ],
   "MODEL_PENDING": [
@@ -6947,17 +6877,6 @@
       "awayName": "M. Keys"
     },
     {
-      "date": "27 JUN",
-      "ts": 1782559800000,
-      "match": "K. Muchova – N. Osaka",
-      "predHome": true,
-      "prob": 58,
-      "predName": "K. Muchova",
-      "sofa": null,
-      "homeName": "K. Muchova",
-      "awayName": "N. Osaka"
-    },
-    {
       "date": "29 JUN",
       "ts": 1782727200000,
       "match": "D. Shapovalov – P. Carreno Busta",
@@ -7101,17 +7020,6 @@
       "awayName": "J. Struff"
     },
     {
-      "date": "06 JUL",
-      "ts": 1783328400000,
-      "match": "J. Lehecka – A. Zverev",
-      "predHome": false,
-      "prob": 57,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "J. Lehecka",
-      "awayName": "A. Zverev"
-    },
-    {
       "date": "07 JUL",
       "ts": 1783414800000,
       "match": "F. Auger-Aliassime – N. Djokovic",
@@ -7121,17 +7029,6 @@
       "sofa": null,
       "homeName": "F. Auger-Aliassime",
       "awayName": "N. Djokovic"
-    },
-    {
-      "date": "07 JUL",
-      "ts": 1783414800000,
-      "match": "N. Osaka – K. Muchova",
-      "predHome": false,
-      "prob": 60,
-      "predName": "K. Muchova",
-      "sofa": null,
-      "homeName": "N. Osaka",
-      "awayName": "K. Muchova"
     },
     {
       "date": "07 JUL",
