@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-08T10:01:03.930Z",
+    "updatedAt": "2026-07-08T12:01:00.823Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -861,6 +861,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1203640172506196",
+      "date": "08 JUL",
+      "match": "R. Masarova – F. Curmi",
+      "pick": "Gana F. Curmi",
+      "odd": 3.4,
+      "book": "bet365",
+      "result": "W"
+    },
+    {
       "id": "747770c36738cee8a1c7b74838f0d9a4",
       "date": "07 JUL",
       "match": "N. Osaka – K. Muchova",
@@ -1394,15 +1403,6 @@
       "odd": 2.82,
       "book": "matchbook",
       "result": "W"
-    },
-    {
-      "id": "2118e17ef47c533ba58f35e27d165359",
-      "date": "29 JUN",
-      "match": "A. Rublev – R. Safiullin",
-      "pick": "Gana A. Rublev",
-      "odd": 1.55,
-      "book": "betfair_ex_eu",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -1450,21 +1450,6 @@
       "book": "bwin",
       "homeName": "D. Dedura-Palomero",
       "awayName": "C. Tabur"
-    },
-    {
-      "id": "opid1203640172506196",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1783501200000,
-      "date": "08 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "R. Masarova – F. Curmi",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Curmi",
-      "odd": 3.4,
-      "book": "bet365",
-      "homeName": "R. Masarova",
-      "awayName": "F. Curmi"
     },
     {
       "id": "b0b9cf08523f2d1226ac4bf525ae0439",
@@ -3622,6 +3607,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "08 JUL",
+      "match": "R. Masarova – F. Curmi",
+      "predName": "R. Masarova",
+      "prob": 60,
+      "ok": false
+    },
     {
       "date": "07 JUL",
       "match": "F. Auger-Aliassime – N. Djokovic",
@@ -6414,13 +6406,6 @@
       "predName": "B. Krejcikova",
       "prob": 64,
       "ok": true
-    },
-    {
-      "date": "12 JUN",
-      "match": "I. Jović – A. Anisimova",
-      "predName": "A. Anisimova",
-      "prob": 65,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -6929,17 +6914,6 @@
       "sofa": null,
       "homeName": "F. Cobolli",
       "awayName": "A. Fery"
-    },
-    {
-      "date": "08 JUL",
-      "ts": 1783501200000,
-      "match": "R. Masarova – F. Curmi",
-      "predHome": true,
-      "prob": 60,
-      "predName": "R. Masarova",
-      "sofa": null,
-      "homeName": "R. Masarova",
-      "awayName": "F. Curmi"
     },
     {
       "date": "08 JUL",
