@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-08T16:01:04.051Z",
+    "updatedAt": "2026-07-08T18:01:01.544Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -861,6 +861,24 @@
   ],
   "RECORD": [
     {
+      "id": "b0b9cf08523f2d1226ac4bf525ae0439",
+      "date": "08 JUL",
+      "match": "T. Fritz – A. Zverev",
+      "pick": "Gana A. Zverev",
+      "odd": 2.18,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
+      "id": "dddbd0f0e0bfc925a35cef4b17f733a8",
+      "date": "08 JUL",
+      "match": "F. Cobolli – A. Fery",
+      "pick": "Gana A. Fery",
+      "odd": 3.55,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
+    {
       "id": "opid1203640172506196",
       "date": "08 JUL",
       "match": "R. Masarova – F. Curmi",
@@ -1385,24 +1403,6 @@
       "odd": 1.4,
       "book": "onexbet",
       "result": "W"
-    },
-    {
-      "id": "bccd57db28819aad77c423add704c9bc",
-      "date": "29 JUN",
-      "match": "A. Walton – D. Prizmic",
-      "pick": "Gana A. Walton",
-      "odd": 2.3,
-      "book": "unibet_fr",
-      "result": "L"
-    },
-    {
-      "id": "1e236c7f0ccd5b912738250955aa804f",
-      "date": "29 JUN",
-      "match": "H. Medjedovic – S. Ofner",
-      "pick": "Gana S. Ofner",
-      "odd": 2.82,
-      "book": "matchbook",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1422,21 +1422,6 @@
       "awayName": "P. Carreno Busta"
     },
     {
-      "id": "dddbd0f0e0bfc925a35cef4b17f733a8",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1783504800000,
-      "date": "08 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Cobolli – A. Fery",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Fery",
-      "odd": 3.55,
-      "book": "betfair_ex_eu",
-      "homeName": "F. Cobolli",
-      "awayName": "A. Fery"
-    },
-    {
       "id": "opid1200357172579978",
       "sport": "tennis_oddspapi_atp",
       "ts": 1783411200000,
@@ -1450,21 +1435,6 @@
       "book": "bwin",
       "homeName": "D. Dedura-Palomero",
       "awayName": "C. Tabur"
-    },
-    {
-      "id": "b0b9cf08523f2d1226ac4bf525ae0439",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1783516200000,
-      "date": "08 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Fritz – A. Zverev",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Zverev",
-      "odd": 2.18,
-      "book": "betfair_ex_eu",
-      "homeName": "T. Fritz",
-      "awayName": "A. Zverev"
     },
     {
       "id": "c16a9052499cf37cf12fb2b5c275b62c",
@@ -3607,6 +3577,20 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "08 JUL",
+      "match": "T. Fritz – A. Zverev",
+      "predName": "A. Zverev",
+      "prob": 57,
+      "ok": true
+    },
+    {
+      "date": "08 JUL",
+      "match": "F. Cobolli – A. Fery",
+      "predName": "F. Cobolli",
+      "prob": 61,
+      "ok": false
+    },
     {
       "date": "08 JUL",
       "match": "M. Kostyuk – J. Paolini",
@@ -6392,20 +6376,6 @@
       "predName": "E. Raducanu",
       "prob": 59,
       "ok": false
-    },
-    {
-      "date": "14 JUN",
-      "match": "L. Sonego – N. Basilashvili",
-      "predName": "L. Sonego",
-      "prob": 57,
-      "ok": false
-    },
-    {
-      "date": "13 JUN",
-      "match": "K. Boulter – D. Vekic",
-      "predName": "K. Boulter",
-      "prob": 50,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -6884,17 +6854,6 @@
     },
     {
       "date": "08 JUL",
-      "ts": 1783504800000,
-      "match": "F. Cobolli – A. Fery",
-      "predHome": true,
-      "prob": 61,
-      "predName": "F. Cobolli",
-      "sofa": null,
-      "homeName": "F. Cobolli",
-      "awayName": "A. Fery"
-    },
-    {
-      "date": "08 JUL",
       "ts": 1783501200000,
       "match": "J. Vandromme – O. Selekhmeteva",
       "predHome": false,
@@ -6903,17 +6862,6 @@
       "sofa": null,
       "homeName": "J. Vandromme",
       "awayName": "O. Selekhmeteva"
-    },
-    {
-      "date": "08 JUL",
-      "ts": 1783516200000,
-      "match": "T. Fritz – A. Zverev",
-      "predHome": false,
-      "prob": 57,
-      "predName": "A. Zverev",
-      "sofa": null,
-      "homeName": "T. Fritz",
-      "awayName": "A. Zverev"
     },
     {
       "date": "09 JUL",
