@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-09T10:00:54.703Z",
+    "updatedAt": "2026-07-09T12:01:00.014Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -730,6 +730,15 @@
   ],
   "RECORD": [
     {
+      "id": "opid1202822772506138",
+      "date": "09 JUL",
+      "match": "S. Waltert – L. Romero Gormaz",
+      "pick": "Gana S. Waltert",
+      "odd": 1.57,
+      "book": "betfair-ex",
+      "result": "W"
+    },
+    {
       "id": "b0b9cf08523f2d1226ac4bf525ae0439",
       "date": "08 JUL",
       "match": "T. Fritz – A. Zverev",
@@ -1263,15 +1272,6 @@
       "odd": 4.4,
       "book": "matchbook",
       "result": "L"
-    },
-    {
-      "id": "68ba4da7fda72170ec9204bd16e38485",
-      "date": "29 JUN",
-      "match": "M. Cilic – D. Medvedev",
-      "pick": "Gana D. Medvedev",
-      "odd": 1.4,
-      "book": "onexbet",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1319,21 +1319,6 @@
       "book": "betfair_ex_eu",
       "homeName": "K. Muchova",
       "awayName": "C. Gauff"
-    },
-    {
-      "id": "opid1202822772506138",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1783587600000,
-      "date": "09 JUL",
-      "sofa": null,
-      "pickHome": true,
-      "match": "S. Waltert – L. Romero Gormaz",
-      "pickKey": "home",
-      "pickLabel": "Gana S. Waltert",
-      "odd": 1.57,
-      "book": "betfair-ex",
-      "homeName": "S. Waltert",
-      "awayName": "L. Romero Gormaz"
     }
   ],
   "COMBO_RECORD": [
@@ -3530,6 +3515,27 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "09 JUL",
+      "match": "S. Waltert – L. Romero Gormaz",
+      "predName": "S. Waltert",
+      "prob": 68,
+      "ok": true
+    },
+    {
+      "date": "09 JUL",
+      "match": "V. Gaubas – F. Diaz Acosta",
+      "predName": "V. Gaubas",
+      "prob": 76,
+      "ok": false
+    },
+    {
+      "date": "08 JUL",
+      "match": "J. Vandromme – O. Selekhmeteva",
+      "predName": "O. Selekhmeteva",
+      "prob": 59,
+      "ok": false
+    },
     {
       "date": "08 JUL",
       "match": "T. Fritz – A. Zverev",
@@ -6308,27 +6314,6 @@
       "predName": "S. Kraus",
       "prob": 55,
       "ok": false
-    },
-    {
-      "date": "15 JUN",
-      "match": "M. Schoenhaus – L. Tien",
-      "predName": "L. Tien",
-      "prob": 85,
-      "ok": true
-    },
-    {
-      "date": "14 JUN",
-      "match": "L. Sun – A. Kalinina",
-      "predName": "A. Kalinina",
-      "prob": 59,
-      "ok": true
-    },
-    {
-      "date": "14 JUN",
-      "match": "D. Vekic – E. Raducanu",
-      "predName": "E. Raducanu",
-      "prob": 59,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -6806,17 +6791,6 @@
       "awayName": "C. Tabur"
     },
     {
-      "date": "08 JUL",
-      "ts": 1783501200000,
-      "match": "J. Vandromme – O. Selekhmeteva",
-      "predHome": false,
-      "prob": 59,
-      "predName": "O. Selekhmeteva",
-      "sofa": null,
-      "homeName": "J. Vandromme",
-      "awayName": "O. Selekhmeteva"
-    },
-    {
       "date": "09 JUL",
       "ts": 1783587600000,
       "match": "J. Sinner – N. Djokovic",
@@ -6837,28 +6811,6 @@
       "sofa": null,
       "homeName": "K. Muchova",
       "awayName": "C. Gauff"
-    },
-    {
-      "date": "09 JUL",
-      "ts": 1783587600000,
-      "match": "V. Gaubas – F. Diaz Acosta",
-      "predHome": true,
-      "prob": 76,
-      "predName": "V. Gaubas",
-      "sofa": null,
-      "homeName": "V. Gaubas",
-      "awayName": "F. Diaz Acosta"
-    },
-    {
-      "date": "09 JUL",
-      "ts": 1783587600000,
-      "match": "S. Waltert – L. Romero Gormaz",
-      "predHome": true,
-      "prob": 68,
-      "predName": "S. Waltert",
-      "sofa": null,
-      "homeName": "S. Waltert",
-      "awayName": "L. Romero Gormaz"
     },
     {
       "date": "09 JUL",
