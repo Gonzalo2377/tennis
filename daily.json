@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-09T14:00:52.276Z",
+    "updatedAt": "2026-07-09T16:00:56.867Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -730,6 +730,15 @@
   ],
   "RECORD": [
     {
+      "id": "c16a9052499cf37cf12fb2b5c275b62c",
+      "date": "09 JUL",
+      "match": "K. Muchova – C. Gauff",
+      "pick": "Gana C. Gauff",
+      "odd": 2.06,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "opid1202822772506138",
       "date": "09 JUL",
       "match": "S. Waltert – L. Romero Gormaz",
@@ -1263,15 +1272,6 @@
       "odd": 3.25,
       "book": "matchbook",
       "result": "W"
-    },
-    {
-      "id": "e9f9c481cc21d1a81bc66eb5a280e6ba",
-      "date": "29 JUN",
-      "match": "B. Nakashima – J. Pinnington Jones",
-      "pick": "Gana J. Pinnington Jones",
-      "odd": 4.4,
-      "book": "matchbook",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -1304,24 +1304,82 @@
       "book": "bwin",
       "homeName": "D. Dedura-Palomero",
       "awayName": "C. Tabur"
-    },
-    {
-      "id": "c16a9052499cf37cf12fb2b5c275b62c",
-      "sport": "tennis_wta_wimbledon",
-      "ts": 1783587600000,
-      "date": "09 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Muchova – C. Gauff",
-      "pickKey": "away",
-      "pickLabel": "Gana C. Gauff",
-      "odd": 2.06,
-      "book": "betfair_ex_eu",
-      "homeName": "K. Muchova",
-      "awayName": "C. Gauff"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "09 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 3.08,
+      "result": "L",
+      "legs": [
+        {
+          "match": "K. Muchova – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 2.04,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "S. Waltert – L. Romero Gormaz",
+          "pick": "Gana S. Waltert",
+          "odd": 1.51,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "08 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 4.49,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Fritz – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 2.18,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Muchova – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 2.06,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
+    {
+      "date": "08 JUL",
+      "name": "Combinada del Día",
+      "totalOdd": 11.41,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Fritz – A. Zverev",
+          "pick": "Gana A. Zverev",
+          "odd": 2.18,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "K. Muchova – C. Gauff",
+          "pick": "Gana C. Gauff",
+          "odd": 2.06,
+          "win": false,
+          "voided": false
+        },
+        {
+          "match": "L. Noskova – E. Mertens",
+          "pick": "Gana E. Mertens",
+          "odd": 2.54,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "07 JUL",
       "name": "Combinada del Día",
@@ -2373,93 +2431,6 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "16 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 6.4,
-      "result": "L",
-      "legs": [
-        {
-          "match": "D. Vekic – A. Eala",
-          "pick": "Gana A. Eala",
-          "odd": 2.09,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "T. Griekspoor – S. Shimabukuro",
-          "pick": "Gana T. Griekspoor",
-          "odd": 1.75,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "M. Kessler – K. Volynets",
-          "pick": "Gana M. Kessler",
-          "odd": 1.75,
-          "win": false,
-          "voided": false
-        }
-      ]
-    },
-    {
-      "date": "15 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 3.87,
-      "result": "W",
-      "legs": [
-        {
-          "match": "E. Alexandrova – A. Potapova",
-          "pick": "Gana E. Alexandrova",
-          "odd": 1,
-          "win": null,
-          "voided": true
-        },
-        {
-          "match": "D. Vekic – A. Eala",
-          "pick": "Gana A. Eala",
-          "odd": 2.14,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "F. Cobolli – F. Tiafoe",
-          "pick": "Gana F. Tiafoe",
-          "odd": 1.81,
-          "win": true,
-          "voided": false
-        }
-      ]
-    },
-    {
-      "date": "14 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 10.16,
-      "result": "L",
-      "legs": [
-        {
-          "match": "D. Vekic – E. Raducanu",
-          "pick": "Gana E. Raducanu",
-          "odd": 1.73,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "L. Sonego – N. Basilashvili",
-          "pick": "Gana N. Basilashvili",
-          "odd": 2.35,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "L. Sun – A. Kalinina",
-          "pick": "Gana L. Sun",
-          "odd": 2.5,
-          "win": false,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
@@ -2489,75 +2460,6 @@
           "odd": 1.93,
           "homeName": "D. Dedura-Palomero",
           "awayName": "C. Tabur"
-        }
-      ]
-    },
-    {
-      "dayId": "08 JUL·c1",
-      "date": "08 JUL",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "b0b9cf08523f2d1226ac4bf525ae0439",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "T. Fritz – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 2.18,
-          "homeName": "T. Fritz",
-          "awayName": "A. Zverev"
-        },
-        {
-          "id": "c16a9052499cf37cf12fb2b5c275b62c",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Muchova – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 2.06,
-          "homeName": "K. Muchova",
-          "awayName": "C. Gauff"
-        },
-        {
-          "id": "ce12ab4d3d0aa390920234e6b1b8401d",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "L. Noskova – E. Mertens",
-          "pick": "Gana E. Mertens",
-          "odd": 2.54,
-          "homeName": "L. Noskova",
-          "awayName": "E. Mertens"
-        }
-      ]
-    },
-    {
-      "dayId": "08 JUL·c2",
-      "date": "08 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "b0b9cf08523f2d1226ac4bf525ae0439",
-          "sport": "tennis_atp_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "T. Fritz – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 2.18,
-          "homeName": "T. Fritz",
-          "awayName": "A. Zverev"
-        },
-        {
-          "id": "c16a9052499cf37cf12fb2b5c275b62c",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Muchova – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 2.06,
-          "homeName": "K. Muchova",
-          "awayName": "C. Gauff"
         }
       ]
     },
@@ -2598,35 +2500,6 @@
           "odd": 2.04,
           "homeName": "K. Muchova",
           "awayName": "C. Gauff"
-        }
-      ]
-    },
-    {
-      "dayId": "09 JUL·c2",
-      "date": "09 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "c16a9052499cf37cf12fb2b5c275b62c",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "K. Muchova – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 2.04,
-          "homeName": "K. Muchova",
-          "awayName": "C. Gauff"
-        },
-        {
-          "id": "opid1202822772506138",
-          "sport": "tennis_oddspapi_wta",
-          "side": "home",
-          "sofa": null,
-          "match": "S. Waltert – L. Romero Gormaz",
-          "pick": "Gana S. Waltert",
-          "odd": 1.51,
-          "homeName": "S. Waltert",
-          "awayName": "L. Romero Gormaz"
         }
       ]
     }
@@ -3515,6 +3388,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "09 JUL",
+      "match": "K. Muchova – C. Gauff",
+      "predName": "C. Gauff",
+      "prob": 54,
+      "ok": false
+    },
     {
       "date": "09 JUL",
       "match": "S. Waltert – L. Romero Gormaz",
@@ -6307,13 +6187,6 @@
       "predName": "M. Frech",
       "prob": 54,
       "ok": false
-    },
-    {
-      "date": "15 JUN",
-      "match": "L. Zhu – S. Kraus",
-      "predName": "S. Kraus",
-      "prob": 55,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -6800,17 +6673,6 @@
       "sofa": null,
       "homeName": "J. Sinner",
       "awayName": "N. Djokovic"
-    },
-    {
-      "date": "09 JUL",
-      "ts": 1783587600000,
-      "match": "K. Muchova – C. Gauff",
-      "predHome": false,
-      "prob": 54,
-      "predName": "C. Gauff",
-      "sofa": null,
-      "homeName": "K. Muchova",
-      "awayName": "C. Gauff"
     },
     {
       "date": "09 JUL",
