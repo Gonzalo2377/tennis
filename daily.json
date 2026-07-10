@@ -1,23 +1,57 @@
 {
   "meta": {
-    "updatedAt": "2026-07-09T22:00:49.562Z",
+    "updatedAt": "2026-07-10T07:00:46.705Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 6,
-    "valuePicks": 2,
+    "matches": 7,
+    "valuePicks": 1,
     "books": 19,
     "stale": false,
     "model": {
-      "players": 3481
+      "players": 3487
     },
     "credits": {
-      "remaining": 485,
-      "used": 15
+      "remaining": 483,
+      "used": 17
     }
   },
   "PLAYERS": {
+    "arthurfery": {
+      "id": "arthurfery",
+      "name": "A. Fery",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
+    },
     "janniksinner": {
       "id": "janniksinner",
       "name": "J. Sinner",
@@ -52,40 +86,6 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1905_n-djokovic.jpg"
     },
-    "arthurfery": {
-      "id": "arthurfery",
-      "name": "A. Fery",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
-    },
-    "alexanderzverev": {
-      "id": "alexanderzverev",
-      "name": "A. Zverev",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
-    },
     "karolinamuchova": {
       "id": "karolinamuchova",
       "name": "K. Muchova",
@@ -103,39 +103,6 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2807_k-muchova.jpg"
     },
-    "cocogauff": {
-      "id": "cocogauff",
-      "name": "C. Gauff",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2176_c-gauff.jpg"
-    },
-    "martakostyuk": {
-      "id": "martakostyuk",
-      "name": "M. Kostyuk",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1828_m-kostyuk.jpg"
-    },
     "lindanoskova": {
       "id": "lindanoskova",
       "name": "L. Noskova",
@@ -145,7 +112,7 @@
       "tour": "wta",
       "elo": null,
       "form": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
@@ -153,149 +120,144 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/447_l-noskova.jpg"
     },
-    "viliusgaubas": {
-      "id": "viliusgaubas",
-      "name": "V. Gaubas",
+    "wsf1": {
+      "id": "wsf1",
+      "name": "WSF1",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9385_v-gaubas.jpg"
+      "form": []
     },
-    "facundodiazacost": {
-      "id": "facundodiazacost",
-      "name": "F. Diaz Acosta",
+    "wsf2": {
+      "id": "wsf2",
+      "name": "WSF2",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2002_f-acosta.jpg"
+      "form": []
     },
-    "simonawaltert": {
-      "id": "simonawaltert",
-      "name": "S. Waltert",
+    "qf7": {
+      "id": "qf7",
+      "name": "Qf7",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/493_s-waltert.jpg"
+      "form": []
     },
-    "leyreromerogorma": {
-      "id": "leyreromerogorma",
-      "name": "L. Romero Gormaz",
+    "qf8": {
+      "id": "qf8",
+      "name": "Qf8",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
-      "form": [
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/141_l-gormaz.jpg"
+      "form": []
+    },
+    "qf1": {
+      "id": "qf1",
+      "name": "Qf1",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
+    },
+    "qf2": {
+      "id": "qf2",
+      "name": "Qf2",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": []
     }
   },
   "BOOKS": {
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (SE)",
+      "abbr": "UNI",
+      "color": "#e23b2e"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#0a2d6e"
+    },
     "betfair": {
       "id": "betfair",
       "name": "Betfair",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#14805e"
+    },
+    "betclic": {
+      "id": "betclic",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#d11a2a"
     },
     "888sport": {
       "id": "888sport",
       "name": "888sport",
       "abbr": "888",
+      "color": "#1c1c1c"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#7a4ddb"
+    },
+    "mybookieag": {
+      "id": "mybookieag",
+      "name": "MyBookie.ag",
+      "abbr": "MYB",
+      "color": "#d9730d"
+    },
+    "codere": {
+      "id": "codere",
+      "name": "Codere (IT)",
+      "abbr": "COD",
+      "color": "#e23b2e"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
       "color": "#0a7d3c"
     },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "Pinnacle",
-      "abbr": "PIN",
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (DE)",
+      "abbr": "WIN",
       "color": "#0a2d6e"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "William Hill",
       "abbr": "WIL",
-      "color": "#14805e"
-    },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
       "color": "#ffb000"
     },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (FR)",
-      "abbr": "UNI",
-      "color": "#d11a2a"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#0a6cff"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas (SE)",
-      "abbr": "LEO",
-      "color": "#1c1c1c"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (FR)",
-      "abbr": "WIN",
-      "color": "#7a4ddb"
-    },
-    "codere": {
-      "id": "codere",
-      "name": "Codere (IT)",
-      "abbr": "COD",
-      "color": "#0a7d3c"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "mybookieag": {
-      "id": "mybookieag",
-      "name": "MyBookie.ag",
-      "abbr": "MYB",
-      "color": "#ffb000"
-    },
-    "betclic": {
-      "id": "betclic",
-      "name": "Betclic (FR)",
-      "abbr": "BET",
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
       "color": "#d11a2a"
     },
     "bwin": {
@@ -308,12 +270,18 @@
       "id": "bet365",
       "name": "bet365",
       "abbr": "BET",
-      "color": "#7a4ddb"
+      "color": "#1c1c1c"
     },
     "betano": {
       "id": "betano",
       "name": "betano",
       "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "oddset": {
+      "id": "oddset",
+      "name": "oddset",
+      "abbr": "ODD",
       "color": "#d9730d"
     },
     "betway": {
@@ -321,12 +289,6 @@
       "name": "betway",
       "abbr": "BET",
       "color": "#e23b2e"
-    },
-    "oddset": {
-      "id": "oddset",
-      "name": "oddset",
-      "abbr": "ODD",
-      "color": "#0a7d3c"
     },
     "betfred": {
       "id": "betfred",
@@ -337,215 +299,75 @@
   },
   "MATCHES": [
     {
-      "id": "opid1200357172504668",
+      "id": "opid1200357172504686",
       "tour": "atp",
       "event": "ATP Challenger Braunschweig, Germany Men Singles",
       "round": "",
       "surface": "Hierba",
-      "time": "11:00",
-      "day": "09 JUL",
-      "home": "viliusgaubas",
-      "away": "facundodiazacost",
+      "time": "10:00",
+      "day": "10 JUL",
+      "home": "qf7",
+      "away": "qf8",
       "odds": {
         "home": {
-          "bwin": 2.35,
-          "1xbet": 2.39,
-          "bet365": 2.37,
-          "betano": 2.37,
-          "betway": 2.4,
-          "oddset": 2.35,
-          "unibet": 2.38,
-          "betfred": 2.5,
-          "betsson": 2.37,
-          "leovegas": 2.38,
-          "pinnacle": 2.47,
-          "codere": 2.3,
-          "betfair": 2.66,
-          "winamax": 2.4
+          "bwin": 1.35,
+          "bet365": 1.33,
+          "betano": 1.34,
+          "oddset": 1.35,
+          "unibet": 1.3,
+          "codere": 1.3,
+          "winamax": 1.32
         },
         "away": {
-          "bwin": 1.53,
-          "1xbet": 1.51,
-          "bet365": 1.53,
-          "betano": 1.52,
-          "betway": 1.5,
-          "oddset": 1.53,
-          "unibet": 1.56,
-          "betfred": 1.533,
-          "betsson": 1.52,
-          "leovegas": 1.56,
-          "pinnacle": 1.588,
-          "codere": 1.5,
-          "betfair": 1.59,
-          "winamax": 1.52
+          "bwin": 3.1,
+          "bet365": 3.25,
+          "betano": 3,
+          "oddset": 2.95,
+          "unibet": 3.4,
+          "codere": 3.05,
+          "winamax": 3.15
         }
       },
-      "model": {
-        "home": 0.7607960909891424,
-        "away": 0.23920390901085764,
-        "fromModel": true,
-        "eloH": 1733,
-        "eloA": 1532,
-        "surface": "grass"
-      },
-      "ts": 1783587600000,
+      "noModel": true,
+      "ts": 1783670400000,
       "sofa": null
     },
     {
-      "id": "opid1202822772506138",
-      "tour": "wta",
-      "event": "WTA 125K Bastad, Sweden Women Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "11:00",
-      "day": "09 JUL",
-      "home": "simonawaltert",
-      "away": "leyreromerogorma",
-      "odds": {
-        "home": {
-          "bwin": 1.5,
-          "1xbet": 1.47,
-          "bet365": 1.5,
-          "betano": 1.47,
-          "betway": 1.5,
-          "unibet": 1.5,
-          "betfred": 1.5,
-          "betsson": 1.48,
-          "leovegas": 1.5,
-          "pinnacle": 1.51,
-          "codere": 1.45,
-          "betfair": 1.57,
-          "winamax": 1.49,
-          "888sport": 1.49
-        },
-        "away": {
-          "bwin": 2.55,
-          "1xbet": 2.504,
-          "bet365": 2.5,
-          "betano": 2.62,
-          "betway": 2.4,
-          "unibet": 2.55,
-          "betfred": 2.5,
-          "betsson": 2.47,
-          "leovegas": 2.55,
-          "pinnacle": 2.63,
-          "codere": 2.4,
-          "betfair": 2.72,
-          "winamax": 2.5,
-          "888sport": 2.5
-        }
-      },
-      "model": {
-        "home": 0.6825703854747719,
-        "away": 0.3174296145252281,
-        "fromModel": true,
-        "eloH": 1742,
-        "eloA": 1609,
-        "surface": "clay"
-      },
-      "ts": 1783587600000,
-      "sofa": null
-    },
-    {
-      "id": "c16a9052499cf37cf12fb2b5c275b62c",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
+      "id": "opid1205057872504734",
+      "tour": "atp",
+      "event": "ATP Challenger Liege, Belgium Men Singles",
       "round": "",
       "surface": "Hierba",
-      "time": "14:30",
-      "day": "09 JUL",
-      "home": "karolinamuchova",
-      "away": "cocogauff",
+      "time": "10:00",
+      "day": "10 JUL",
+      "home": "qf1",
+      "away": "qf2",
       "odds": {
         "home": {
-          "betsson": 1.8,
-          "betfair": 1.91,
-          "betclic": 1.85,
-          "1xbet": 1.89,
-          "mybookieag": 1.81,
-          "unibet": 1.85,
-          "leovegas": 1.85,
-          "888sport": 1.73,
-          "winamax": 1.88,
-          "pinnacle": 1.87,
-          "matchbook": 1.91,
-          "williamhill": 1.73
+          "bwin": 3.6,
+          "bet365": 3.4,
+          "betano": 3.45,
+          "oddset": 3.6,
+          "unibet": 3.7,
+          "pinnacle": 3.94,
+          "codere": 3.15,
+          "betfair": 4,
+          "winamax": 3.6
         },
         "away": {
-          "betsson": 1.96,
-          "betfair": 2.06,
-          "betclic": 2,
-          "1xbet": 2.04,
-          "mybookieag": 1.97,
-          "unibet": 2,
-          "leovegas": 2,
-          "888sport": 2.1,
-          "winamax": 1.98,
-          "pinnacle": 2.04,
-          "matchbook": 2.06,
-          "williamhill": 2.1
+          "bwin": 1.25,
+          "bet365": 1.3,
+          "betano": 1.27,
+          "oddset": 1.25,
+          "unibet": 1.26,
+          "pinnacle": 1.274,
+          "codere": 1.28,
+          "betfair": 1.29,
+          "winamax": 1.26
         }
       },
-      "model": {
-        "home": 0.4569335079777882,
-        "away": 0.5430664920222118,
-        "fromModel": true,
-        "eloH": 2020,
-        "eloA": 2050,
-        "surface": "grass"
-      },
-      "ts": 1783600200000,
-      "sofa": null
-    },
-    {
-      "id": "ab9d16fa81cd2f31c93aa3982810bf3a",
-      "tour": "wta",
-      "event": "Wta Wimbledon",
-      "round": "",
-      "surface": "Hierba",
-      "time": "16:30",
-      "day": "09 JUL",
-      "home": "martakostyuk",
-      "away": "lindanoskova",
-      "odds": {
-        "home": {
-          "888sport": 1.67,
-          "betfair": 1.81,
-          "unibet": 1.77,
-          "leovegas": 1.75,
-          "betsson": 1.73,
-          "betclic": 1.76,
-          "1xbet": 1.78,
-          "mybookieag": 1.74,
-          "winamax": 1.78,
-          "matchbook": 1.81,
-          "pinnacle": 1.79,
-          "williamhill": 1.67
-        },
-        "away": {
-          "888sport": 2.2,
-          "betfair": 2.22,
-          "unibet": 2.12,
-          "leovegas": 2.12,
-          "betsson": 2.06,
-          "betclic": 2.1,
-          "1xbet": 2.18,
-          "mybookieag": 2.07,
-          "winamax": 2.1,
-          "matchbook": 2.22,
-          "pinnacle": 2.13,
-          "williamhill": 2.2
-        }
-      },
-      "model": {
-        "home": 0.34288131351292145,
-        "away": 0.6571186864870786,
-        "fromModel": true,
-        "eloH": 1860,
-        "eloA": 1973,
-        "surface": "grass"
-      },
-      "ts": 1783607400000,
+      "noModel": true,
+      "ts": 1783670400000,
       "sofa": null
     },
     {
@@ -599,7 +421,8 @@
         "surface": "grass"
       },
       "ts": 1783674000000,
-      "sofa": null
+      "sofa": null,
+      "live": false
     },
     {
       "id": "0c561997e491baec8cc3303e8a1000c1",
@@ -613,45 +436,189 @@
       "away": "alexanderzverev",
       "odds": {
         "home": {
-          "unibet": 6.25,
+          "unibet": 6.5,
           "leovegas": 6.25,
-          "betfair": 6.4,
-          "betclic": 6.25,
+          "betfair": 7.2,
+          "betclic": 6.4,
           "betsson": 5.87,
           "888sport": 6,
-          "matchbook": 6.6,
-          "mybookieag": 5.8,
-          "codere": 5.8,
-          "1xbet": 6.43,
-          "winamax": 6.25,
+          "matchbook": 7.2,
+          "mybookieag": 5.77,
+          "codere": 6.2,
+          "1xbet": 6.23,
+          "winamax": 6.5,
           "williamhill": 6,
-          "pinnacle": 6.25
+          "pinnacle": 6.47
         },
         "away": {
-          "unibet": 1.14,
-          "leovegas": 1.14,
-          "betfair": 1.17,
-          "betclic": 1.12,
+          "unibet": 1.13,
+          "leovegas": 1.13,
+          "betfair": 1.16,
+          "betclic": 1.13,
           "betsson": 1.12,
           "888sport": 1.12,
-          "matchbook": 1.17,
-          "mybookieag": 1.12,
-          "codere": 1.13,
+          "matchbook": 1.16,
+          "mybookieag": 1.14,
+          "codere": 1.14,
           "1xbet": 1.16,
-          "winamax": 1.14,
+          "winamax": 1.13,
           "williamhill": 1.12,
           "pinnacle": 1.15
         }
       },
       "model": {
-        "home": 0.14445792510730254,
-        "away": 0.8555420748926974,
+        "home": 0.14163539582610227,
+        "away": 0.8583646041738977,
         "fromModel": true,
         "eloH": 1722,
-        "eloA": 2031,
+        "eloA": 2035,
         "surface": "grass"
       },
       "ts": 1783686600000,
+      "sofa": null
+    },
+    {
+      "id": "71e7d45a06e1290d83ce9ce92e864f24",
+      "tour": "atp",
+      "event": "Atp Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "16:10",
+      "day": "10 JUL",
+      "home": "janniksinner",
+      "away": "novakdjokovic",
+      "odds": {
+        "home": {
+          "unibet": 1.22,
+          "leovegas": 1.22,
+          "1xbet": 1.25,
+          "betclic": 1.22,
+          "betsson": 1.2,
+          "winamax": 1.21,
+          "codere": 1.22,
+          "mybookieag": 1.21,
+          "888sport": 1.2,
+          "pinnacle": 1.23,
+          "williamhill": 1.2,
+          "matchbook": 1.25,
+          "betfair": 1.25
+        },
+        "away": {
+          "unibet": 4.5,
+          "leovegas": 4.5,
+          "1xbet": 4.5,
+          "betclic": 4.5,
+          "betsson": 4.34,
+          "winamax": 4.8,
+          "codere": 4.5,
+          "mybookieag": 4.4,
+          "888sport": 4.5,
+          "pinnacle": 4.81,
+          "williamhill": 4.5,
+          "matchbook": 4.8,
+          "betfair": 4.8
+        }
+      },
+      "model": {
+        "home": 0.6199413590445233,
+        "away": 0.3800586409554767,
+        "fromModel": true,
+        "eloH": 2220,
+        "eloA": 2135,
+        "surface": "grass"
+      },
+      "ts": 1783692600000,
+      "sofa": null
+    },
+    {
+      "id": "365676735c02ee96cba5ddf28a76573c",
+      "tour": "wta",
+      "event": "Wta Wimbledon",
+      "round": "",
+      "surface": "Hierba",
+      "time": "11:00",
+      "day": "11 JUL",
+      "home": "karolinamuchova",
+      "away": "lindanoskova",
+      "odds": {
+        "home": {
+          "betfair": 1.91,
+          "unibet": 1.85,
+          "leovegas": 1.85,
+          "betsson": 1.8,
+          "betclic": 1.86,
+          "mybookieag": 1.78,
+          "winamax": 1.84,
+          "1xbet": 1.85,
+          "pinnacle": 1.88,
+          "888sport": 1.83,
+          "williamhill": 1.83,
+          "matchbook": 1.91
+        },
+        "away": {
+          "betfair": 2.06,
+          "unibet": 2,
+          "leovegas": 1.97,
+          "betsson": 1.97,
+          "betclic": 1.96,
+          "mybookieag": 1.93,
+          "winamax": 2,
+          "1xbet": 2.08,
+          "pinnacle": 2.01,
+          "888sport": 2,
+          "williamhill": 2,
+          "matchbook": 2.06
+        }
+      },
+      "model": {
+        "home": 0.5615679389736461,
+        "away": 0.4384320610263539,
+        "fromModel": true,
+        "eloH": 2020,
+        "eloA": 1977,
+        "surface": "grass"
+      },
+      "ts": 1783760400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200255772320608",
+      "tour": "atp",
+      "event": "Wimbledon Men Doubles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "14:00",
+      "day": "11 JUL",
+      "home": "wsf1",
+      "away": "wsf2",
+      "odds": {
+        "home": {
+          "bwin": 1.65,
+          "bet365": 1.66,
+          "betano": 1.67,
+          "oddset": 1.65,
+          "unibet": 1.67,
+          "leovegas": 1.67,
+          "codere": 1.62,
+          "betfair": 1.56,
+          "winamax": 1.8,
+          "888sport": 1.65
+        },
+        "away": {
+          "bwin": 2.15,
+          "bet365": 2.2,
+          "betano": 2.12,
+          "oddset": 2.15,
+          "unibet": 2.15,
+          "leovegas": 2.15,
+          "codere": 2.05,
+          "betfair": 1.79,
+          "winamax": 2.05,
+          "888sport": 2.12
+        }
+      },
+      "noModel": true,
+      "ts": 1783771200000,
       "sofa": null
     }
   ],
@@ -659,71 +626,30 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 32,
-      "book": "pinnacle",
+      "conf": 31,
+      "book": null,
       "legs": [
         {
-          "id": "0c561997e491baec8cc3303e8a1000c1",
-          "sport": "tennis_atp_wimbledon",
-          "ts": 1783686600000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Fery – A. Zverev",
-          "pick": "Gana A. Zverev",
-          "odd": 1.15,
-          "book": "pinnacle"
-        },
-        {
-          "id": "opid1202822772506138",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1783587600000,
+          "id": "365676735c02ee96cba5ddf28a76573c",
+          "sport": "tennis_wta_wimbledon",
+          "ts": 1783760400000,
           "side": "home",
           "sofa": null,
-          "match": "S. Waltert – L. Romero Gormaz",
-          "pick": "Gana S. Waltert",
-          "odd": 1.51,
-          "book": "pinnacle"
+          "match": "K. Muchova – L. Noskova",
+          "pick": "Gana K. Muchova",
+          "odd": 1.91,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "c16a9052499cf37cf12fb2b5c275b62c",
-          "sport": "tennis_wta_wimbledon",
-          "ts": 1783600200000,
-          "side": "away",
-          "sofa": null,
-          "match": "K. Muchova – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 2.04,
-          "book": "pinnacle"
-        }
-      ]
-    },
-    {
-      "id": "c2",
-      "name": "Combinada Valor",
-      "conf": 37,
-      "book": "pinnacle",
-      "legs": [
-        {
-          "id": "c16a9052499cf37cf12fb2b5c275b62c",
-          "sport": "tennis_wta_wimbledon",
-          "ts": 1783600200000,
-          "side": "away",
-          "sofa": null,
-          "match": "K. Muchova – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 2.04,
-          "book": "pinnacle"
-        },
-        {
-          "id": "opid1202822772506138",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1783587600000,
+          "id": "opid1200255772320608",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1783771200000,
           "side": "home",
           "sofa": null,
-          "match": "S. Waltert – L. Romero Gormaz",
-          "pick": "Gana S. Waltert",
-          "odd": 1.51,
-          "book": "pinnacle"
+          "match": "WSF1 – WSF2",
+          "pick": "Gana WSF1",
+          "odd": 1.8,
+          "book": "winamax.fr"
         }
       ]
     }
@@ -1304,6 +1230,21 @@
       "book": "bwin",
       "homeName": "D. Dedura-Palomero",
       "awayName": "C. Tabur"
+    },
+    {
+      "id": "365676735c02ee96cba5ddf28a76573c",
+      "sport": "tennis_wta_wimbledon",
+      "ts": 1783760400000,
+      "date": "11 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "K. Muchova – L. Noskova",
+      "pickKey": "home",
+      "pickLabel": "Gana K. Muchova",
+      "odd": 1.91,
+      "book": "betfair_ex_eu",
+      "homeName": "K. Muchova",
+      "awayName": "L. Noskova"
     }
   ],
   "COMBO_RECORD": [
@@ -2500,6 +2441,35 @@
           "odd": 2.04,
           "homeName": "K. Muchova",
           "awayName": "C. Gauff"
+        }
+      ]
+    },
+    {
+      "dayId": "10 JUL·c1",
+      "date": "10 JUL",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "365676735c02ee96cba5ddf28a76573c",
+          "sport": "tennis_wta_wimbledon",
+          "side": "home",
+          "sofa": null,
+          "match": "K. Muchova – L. Noskova",
+          "pick": "Gana K. Muchova",
+          "odd": 1.91,
+          "homeName": "K. Muchova",
+          "awayName": "L. Noskova"
+        },
+        {
+          "id": "opid1200255772320608",
+          "sport": "tennis_oddspapi_atp",
+          "side": "home",
+          "sofa": null,
+          "match": "WSF1 – WSF2",
+          "pick": "Gana WSF1",
+          "odd": 1.8,
+          "homeName": "WSF1",
+          "awayName": "WSF2"
         }
       ]
     }
@@ -6684,6 +6654,50 @@
       "sofa": null,
       "homeName": "A. Fery",
       "awayName": "A. Zverev"
+    },
+    {
+      "date": "10 JUL",
+      "ts": 1783670400000,
+      "match": "Qf7 – Qf8",
+      "predHome": true,
+      "prob": 70,
+      "predName": "Qf7",
+      "sofa": null,
+      "homeName": "Qf7",
+      "awayName": "Qf8"
+    },
+    {
+      "date": "10 JUL",
+      "ts": 1783670400000,
+      "match": "Qf1 – Qf2",
+      "predHome": false,
+      "prob": 74,
+      "predName": "Qf2",
+      "sofa": null,
+      "homeName": "Qf1",
+      "awayName": "Qf2"
+    },
+    {
+      "date": "11 JUL",
+      "ts": 1783760400000,
+      "match": "K. Muchova – L. Noskova",
+      "predHome": true,
+      "prob": 56,
+      "predName": "K. Muchova",
+      "sofa": null,
+      "homeName": "K. Muchova",
+      "awayName": "L. Noskova"
+    },
+    {
+      "date": "11 JUL",
+      "ts": 1783771200000,
+      "match": "WSF1 – WSF2",
+      "predHome": true,
+      "prob": 56,
+      "predName": "WSF1",
+      "sofa": null,
+      "homeName": "WSF1",
+      "awayName": "WSF2"
     }
   ],
   "LADDER": {
@@ -6953,7 +6967,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -7118,7 +7132,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -7614,8 +7628,8 @@
       "country": "Latvia",
       "photo": "https://api.api-tennis.com/logo-tennis/2802_j-ostapenko.jpg",
       "form": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -7814,11 +7828,11 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -7832,7 +7846,8 @@
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -7989,6 +8004,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/10884_a-michelsen.jpg",
       "form": [
         "L",
+        "W",
         "W"
       ]
     },
@@ -8522,10 +8538,10 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -8632,11 +8648,11 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/2978_a-kovacevic.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8762,6 +8778,7 @@
         "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -8874,10 +8891,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/3214_t-townsend.jpg",
       "form": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9008,6 +9025,7 @@
         "L",
         "L",
         "W",
+        "W",
         "W"
       ]
     },
@@ -9020,9 +9038,9 @@
       "photo": "https://api.api-tennis.com/logo-tennis/10070_a-walton.jpg",
       "form": [
         "W",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
         "W"
       ]
     },
@@ -9061,11 +9079,11 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9076,11 +9094,11 @@
       "country": "Greece",
       "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -9166,8 +9184,8 @@
       "country": "Switzerland",
       "photo": "https://api.api-tennis.com/logo-tennis/493_s-waltert.jpg",
       "form": [
-        "L",
-        "L",
+        "W",
+        "W",
         "W",
         "W",
         "W"
@@ -9227,7 +9245,7 @@
       "form": [
         "W",
         "W",
-        "W",
+        "L",
         "W",
         "L"
       ]
@@ -9251,11 +9269,11 @@
       "country": "Austria",
       "photo": "https://api.api-tennis.com/logo-tennis/1424_s-kraus.jpg",
       "form": [
-        "W",
         "L",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9341,10 +9359,10 @@
       "country": "Germany",
       "photo": "https://api.api-tennis.com/logo-tennis/2414_t-maria.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9483,8 +9501,9 @@
       "photo": "https://api.api-tennis.com/logo-tennis/2826_k-volynets.jpg",
       "form": [
         "W",
-        "W",
         "L",
+        "W",
+        "W",
         "W"
       ]
     },
@@ -9496,6 +9515,7 @@
       "country": "China",
       "photo": "https://api.api-tennis.com/logo-tennis/1849_y-wu.jpg",
       "form": [
+        "L",
         "L",
         "L",
         "L",
@@ -9512,8 +9532,8 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9539,6 +9559,7 @@
       "form": [
         "L",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9622,7 +9643,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1858_j-jones.jpg",
       "form": [
         "W",
-        "W",
+        "L",
         "W",
         "L",
         "W"
@@ -9638,7 +9659,8 @@
       "form": [
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9651,6 +9673,7 @@
       "form": [
         "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -9777,8 +9800,8 @@
       "country": "New Zealand",
       "photo": "https://api.api-tennis.com/logo-tennis/876_f-sun.jpg",
       "form": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -9876,6 +9899,7 @@
         "W",
         "L",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9908,10 +9932,10 @@
       "country": "Australia",
       "photo": "https://api.api-tennis.com/logo-tennis/3324_t-preston.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -9925,8 +9949,8 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10127,7 +10151,8 @@
         "W",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10138,11 +10163,11 @@
       "country": "France",
       "photo": "https://api.api-tennis.com/logo-tennis/374_a-muller.jpg",
       "form": [
-        "L",
         "W",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10210,9 +10235,9 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10250,6 +10275,7 @@
       "form": [
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10304,8 +10330,8 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10382,7 +10408,7 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1858_j-jones.jpg",
       "form": [
         "W",
-        "W",
+        "L",
         "W",
         "L",
         "W"
@@ -10398,6 +10424,7 @@
       "form": [
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10465,9 +10492,9 @@
       "form": [
         "L",
         "W",
-        "L",
         "W",
-        "W"
+        "L",
+        "L"
       ]
     },
     {
@@ -10494,9 +10521,9 @@
       "photo": "https://api.api-tennis.com/logo-tennis/449_r-sramkova.jpg",
       "form": [
         "W",
-        "W",
         "L",
         "W",
+        "L",
         "L"
       ]
     },
@@ -10534,8 +10561,8 @@
       "form": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -10549,6 +10576,7 @@
       "form": [
         "L",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -10579,8 +10607,8 @@
         "W",
         "L",
         "W",
-        "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10606,7 +10634,8 @@
       "form": [
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -10619,9 +10648,9 @@
       "form": [
         "L",
         "W",
-        "L",
         "W",
-        "W"
+        "L",
+        "L"
       ]
     },
     {
@@ -10641,11 +10670,11 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/2839_m-mcdonald.jpg",
       "form": [
+        "W",
         "L",
         "L",
         "W",
-        "L",
-        "L"
+        "W"
       ]
     },
     {
@@ -10656,11 +10685,11 @@
       "country": "Ukraine",
       "photo": "https://api.api-tennis.com/logo-tennis/40100_v-podrez.jpg",
       "form": [
+        "L",
         "W",
         "W",
         "L",
-        "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -10686,11 +10715,11 @@
       "country": "USA",
       "photo": "https://api.api-tennis.com/logo-tennis/101801_h-liu.jpg",
       "form": [
-        "W",
         "L",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -10754,9 +10783,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/1183_t-schoolkate.jpg",
       "form": [
         "W",
+        "L",
         "W",
         "L",
-        "W"
+        "L"
       ]
     },
     {
@@ -10803,14 +10833,16 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "rodriguez": [
       "L",
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "delpinohuertasdelpinocordova": [
       "W",
@@ -10885,14 +10917,14 @@
     ],
     "marino": [
       "L",
-      "L",
-      "L",
       "W",
       "W",
       "L",
       "W",
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "yoshioka": [
@@ -10914,15 +10946,15 @@
     ],
     "yang": [
       "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
       "L",
       "W",
       "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "L",
-      "W"
+      "L"
     ],
     "mujie": [
       "L",
@@ -11004,7 +11036,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "young": [
       "W",
@@ -11014,6 +11047,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "papa": [
@@ -11034,7 +11068,6 @@
       "L"
     ],
     "arseneault": [
-      "W",
       "L",
       "W",
       "W",
@@ -11043,7 +11076,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "trotter": [
       "L"
@@ -11065,15 +11099,15 @@
     ],
     "zhu": [
       "W",
-      "W",
-      "W",
       "L",
       "L",
       "W",
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "lu": [
       "L",
@@ -11082,7 +11116,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kitahara": [
       "W",
@@ -11179,13 +11214,14 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mikhailova": [
       "L"
     ],
     "shi": [
-      "L",
+      "W",
       "W",
       "W",
       "W",
@@ -11197,7 +11233,6 @@
       "W"
     ],
     "wang": [
-      "W",
       "L",
       "L",
       "W",
@@ -11206,7 +11241,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kulambayeva": [
       "W",
@@ -11216,7 +11252,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "artemeva": [
       "L",
@@ -11239,6 +11276,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "samardzic": [
@@ -11276,6 +11314,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "li": [
@@ -11296,6 +11335,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "kuzmova": [
@@ -11316,6 +11356,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "voloshchuk": [
@@ -11325,7 +11366,9 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "zverev": [
       "W",
@@ -11425,8 +11468,8 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -11456,7 +11499,6 @@
       "L"
     ],
     "vargova": [
-      "W",
       "L",
       "W",
       "L",
@@ -11465,6 +11507,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "ronde": [
@@ -11477,7 +11520,8 @@
     ],
     "desai": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jardikuhl": [
       "L"
@@ -11539,6 +11583,8 @@
       "W",
       "W",
       "W",
+      "L",
+      "W",
       "L"
     ],
     "micic": [
@@ -11558,7 +11604,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "straszewska": [
       "L",
@@ -11658,14 +11705,15 @@
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "stankovic": [
-      "W",
-      "W",
       "L",
       "W",
       "L",
+      "W",
+      "W",
       "W",
       "W",
       "W",
@@ -11772,13 +11820,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "safiullin": [
       "L",
@@ -11829,6 +11877,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "gruenig": [
@@ -11896,10 +11945,12 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "ryser": [
       "L",
+      "W",
       "W"
     ],
     "giese": [
@@ -11942,6 +11993,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "karki": [
@@ -11953,13 +12005,13 @@
     ],
     "zamora": [
       "L",
-      "W",
-      "L",
       "L",
       "W",
       "L",
       "W",
       "L",
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -12019,11 +12071,10 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "lee": [
-      "W",
-      "W",
       "L",
       "W",
       "W",
@@ -12031,7 +12082,9 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "naklo": [
       "W",
@@ -12046,13 +12099,13 @@
       "W",
       "L",
       "W",
+      "W",
+      "W",
+      "W",
+      "W",
       "L",
       "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "L"
+      "W"
     ],
     "abe": [
       "W",
@@ -12070,6 +12123,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "ye": [
@@ -12163,6 +12217,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "venus": [
@@ -12192,6 +12247,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "withrow": [
@@ -12219,7 +12275,8 @@
       "L"
     ],
     "serdarusic": [
-      "L"
+      "L",
+      "W"
     ],
     "karamoko": [
       "W",
@@ -12266,6 +12323,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "charlton": [
@@ -12277,13 +12335,14 @@
     "roh": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "yamanaka": [
       "L",
@@ -12293,12 +12352,14 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "dellavedova": [
       "W",
-      "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -12342,14 +12403,14 @@
     ],
     "nakagawa": [
       "L",
-      "L",
       "W",
       "L",
       "W",
+      "W",
+      "W",
+      "W",
+      "W",
       "L",
-      "W",
-      "W",
-      "W",
       "W"
     ],
     "sinclair": [
@@ -12370,14 +12431,14 @@
       "L"
     ],
     "kim": [
-      "W",
-      "L",
       "L",
       "W",
       "W",
       "W",
       "L",
       "W",
+      "W",
+      "L",
       "W",
       "L"
     ],
@@ -12418,7 +12479,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kumasaka": [
       "L",
@@ -12479,6 +12541,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "negishi": [
@@ -12495,6 +12558,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "uemura": [
@@ -12576,7 +12640,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hurkacz": [
       "L",
@@ -12587,7 +12652,6 @@
       "W"
     ],
     "kovackova": [
-      "W",
       "L",
       "W",
       "W",
@@ -12596,13 +12660,13 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "kmiecik": [
       "L"
     ],
     "falkowska": [
-      "W",
       "L",
       "W",
       "L",
@@ -12611,7 +12675,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "paszun": [
       "L",
@@ -12645,6 +12710,7 @@
     ],
     "luescher": [
       "L",
+      "L",
       "L"
     ],
     "stusek": [
@@ -12656,6 +12722,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "passola": [
@@ -12785,6 +12852,7 @@
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "panshina": [
@@ -12801,6 +12869,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "korokozidi": [
@@ -12814,6 +12883,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "damariei": [
@@ -12834,12 +12904,15 @@
     "buyukakcay": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "karatancheva": [
       "L",
       "L",
       "W",
+      "W",
+      "L",
       "W",
       "L",
       "W"
@@ -12868,8 +12941,6 @@
       "L"
     ],
     "zheng": [
-      "L",
-      "W",
       "W",
       "L",
       "L",
@@ -12877,7 +12948,9 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "tange": [
       "L",
@@ -12906,7 +12979,8 @@
     "nishimoto": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "varaksina": [
       "L",
@@ -12920,7 +12994,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "wi": [
       "L"
@@ -13034,12 +13109,12 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "choinski": [
@@ -13082,9 +13157,9 @@
     ],
     "diazacosta": [
       "W",
+      "L",
+      "L",
       "W",
-      "L",
-      "L",
       "W",
       "W",
       "W",
@@ -13100,6 +13175,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "paulson": [
@@ -13142,7 +13218,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vanassche": [
       "W",
@@ -13189,7 +13266,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "zormanndasilva": [
       "L",
@@ -13217,7 +13295,6 @@
       "L"
     ],
     "schell": [
-      "W",
       "L",
       "W",
       "L",
@@ -13226,7 +13303,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "genier": [
       "W",
@@ -13271,6 +13349,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -13333,13 +13412,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pow": [
       "L",
@@ -13365,7 +13444,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "garcialongo": [
       "L",
@@ -13376,6 +13456,7 @@
     "gpapoe": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "mazdrashki": [
@@ -13395,7 +13476,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "eichenseher": [
       "L",
@@ -13445,7 +13527,8 @@
     "rmarinescu": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "turcanu": [
       "W",
@@ -13474,13 +13557,15 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "filip": [
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "olien": [
       "W",
@@ -13498,7 +13583,6 @@
       "W"
     ],
     "delange": [
-      "L",
       "W",
       "W",
       "W",
@@ -13507,6 +13591,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "ratiu": [
@@ -13516,6 +13601,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "vankan": [
@@ -13551,7 +13637,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "balciunas": [
       "L",
@@ -13568,7 +13655,9 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "ehrenschneider": [
       "L",
@@ -13576,7 +13665,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "safta": [
       "W",
@@ -13689,11 +13779,11 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "simionescu": [
       "W",
-      "W",
       "L",
       "L",
       "W",
@@ -13701,6 +13791,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "urbanova": [
@@ -13747,14 +13838,15 @@
     ],
     "teixidogarcia": [
       "L",
-      "L",
       "W",
       "L",
       "W",
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "colmegna": [
       "W",
@@ -13767,6 +13859,7 @@
     "eljardi": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "blomqvist": [
@@ -13792,7 +13885,8 @@
     "ulrich": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "slama": [
       "W",
@@ -13801,12 +13895,14 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "noel": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sziedat": [
       "W",
@@ -13846,6 +13942,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "alarrayaguidi": [
@@ -13920,7 +14017,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "feldbausch": [
       "W",
@@ -13958,6 +14056,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "perot": [
@@ -14018,7 +14117,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "burylo": [
       "L"
@@ -14085,11 +14185,11 @@
       "W",
       "W",
       "W",
-      "W",
-      "W",
       "L",
       "W",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "ibragimova": [
@@ -14142,11 +14242,11 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "shubina": [
@@ -14155,7 +14255,6 @@
       "L"
     ],
     "mi": [
-      "W",
       "L",
       "L",
       "W",
@@ -14164,6 +14263,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "rachapudi": [
@@ -14214,6 +14314,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "aksu": [
@@ -14298,6 +14399,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "sakellaridis": [
@@ -14319,12 +14421,14 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "galarneau": [
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "jacquet": [
@@ -14369,7 +14473,6 @@
       "L"
     ],
     "tabacco": [
-      "L",
       "W",
       "W",
       "W",
@@ -14378,6 +14481,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "nesterov": [
@@ -14446,6 +14550,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "sebestova": [
@@ -14494,11 +14599,11 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "perezalarcon": [
@@ -14514,6 +14619,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "paganetti": [
@@ -14566,6 +14672,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "strakhova": [
@@ -14588,6 +14695,7 @@
       "L"
     ],
     "boogaard": [
+      "W",
       "W",
       "W",
       "W",
@@ -14732,7 +14840,6 @@
       "L"
     ],
     "tsitsipas": [
-      "W",
       "L",
       "W",
       "L",
@@ -14741,7 +14848,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "jutresa": [
       "W",
@@ -14817,6 +14925,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "maginley": [
@@ -14831,8 +14940,6 @@
       "L"
     ],
     "mcdonald": [
-      "L",
-      "W",
       "W",
       "L",
       "W",
@@ -14840,13 +14947,16 @@
       "L",
       "W",
       "L",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "matuszewski": [
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "santillan": [
       "L",
@@ -14957,13 +15067,13 @@
     "petkovic": [
       "W",
       "W",
-      "W",
       "L",
       "L",
       "L",
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "car": [
@@ -14980,7 +15090,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "batin": [
       "L"
@@ -15002,6 +15113,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "sultanov": [
@@ -15183,7 +15295,8 @@
     "iakubenko": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vasiliauskas": [
       "L",
@@ -15219,6 +15332,7 @@
     "bekeni": [
       "L",
       "W",
+      "L",
       "L"
     ],
     "radjenovic": [
@@ -15259,7 +15373,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "lazarov": [
       "W",
@@ -15279,6 +15394,7 @@
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "popovic": [
@@ -15314,7 +15430,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ouakaa": [
       "W",
@@ -15359,7 +15476,8 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "rodenas": [
       "W",
@@ -15374,7 +15492,9 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "blaydes": [
       "W",
@@ -15432,7 +15552,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "panarin": [
       "L"
@@ -15447,6 +15568,7 @@
     ],
     "juanmano": [
       "L",
+      "W",
       "W"
     ],
     "nijboer": [
@@ -15457,6 +15579,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "jgutierrez": [
@@ -15485,18 +15608,20 @@
       "L"
     ],
     "chan": [
-      "L",
       "W",
       "W",
       "L",
       "L",
       "W",
+      "W",
+      "L",
       "W",
       "L",
       "W"
     ],
     "kuzuhara": [
       "L",
+      "W",
       "W"
     ],
     "szabo": [
@@ -15576,6 +15701,7 @@
     ],
     "zgirovsky": [
       "L",
+      "W",
       "W"
     ],
     "guadagno": [
@@ -15603,7 +15729,8 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "marchinoce": [
       "L"
@@ -15664,7 +15791,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "turini": [
       "L",
@@ -15684,7 +15812,8 @@
     "eambrogi": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rincon": [
       "W",
@@ -15721,6 +15850,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "zozayamenendez": [
@@ -15765,7 +15895,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "zaytseva": [
       "W",
@@ -15780,8 +15911,6 @@
       "L"
     ],
     "radovanovic": [
-      "L",
-      "W",
       "W",
       "L",
       "L",
@@ -15789,11 +15918,15 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "stevic": [
       "L",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "wolf": [
       "W",
@@ -15863,7 +15996,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "soto": [
       "L",
@@ -15877,14 +16011,14 @@
     "estevez": [
       "W",
       "W",
-      "W",
       "L",
       "L",
       "W",
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "vozniak": [
       "L"
@@ -15903,6 +16037,7 @@
     "lagerbohm": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "dussault": [
@@ -15958,7 +16093,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "zornada": [
       "L",
@@ -15967,7 +16103,8 @@
     "ctorresmurcia": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mgonzalezdaniele": [
       "W",
@@ -15989,6 +16126,7 @@
     "barreraaguirre": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "moyano": [
@@ -16020,12 +16158,14 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "herazogonzalez": [
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "estrella": [
@@ -16045,6 +16185,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "konishisilva": [
@@ -16056,7 +16197,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "torresmurcia": [
       "L",
@@ -16082,7 +16224,6 @@
       "L"
     ],
     "zeballos": [
-      "L",
       "W",
       "W",
       "W",
@@ -16091,6 +16232,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "garnevska": [
@@ -16098,7 +16240,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "radulova": [
       "L"
@@ -16144,6 +16287,7 @@
     "miroshnichenko": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "chen": [
@@ -16154,20 +16298,21 @@
     ],
     "nguyen": [
       "W",
-      "L",
-      "W",
       "W",
       "W",
       "W",
       "W",
       "W",
       "L",
+      "L",
+      "W",
       "L"
     ],
     "webster": [
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "castillomeza": [
       "W",
@@ -16221,7 +16366,8 @@
     ],
     "kha": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "nakashima": [
       "W",
@@ -16241,6 +16387,8 @@
       "L",
       "W",
       "L",
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -16274,8 +16422,6 @@
       "L"
     ],
     "johnson": [
-      "W",
-      "W",
       "L",
       "W",
       "W",
@@ -16283,7 +16429,9 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "satterfield": [
       "L",
@@ -16299,11 +16447,13 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "klee": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "lieberman": [
       "W",
@@ -16327,6 +16477,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "sakellaridi": [
@@ -16348,13 +16499,13 @@
     "mariani": [
       "W",
       "W",
-      "W",
-      "W",
       "L",
       "W",
       "W",
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "wildgruber": [
@@ -16372,7 +16523,6 @@
       "L"
     ],
     "bartel": [
-      "L",
       "W",
       "L",
       "W",
@@ -16381,6 +16531,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "podhajecka": [
@@ -16466,6 +16617,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "tamhankar": [
@@ -16519,7 +16671,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "panova": [
       "L",
@@ -16545,6 +16698,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -16656,6 +16810,7 @@
     "bandecchi": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "radisic": [
@@ -16673,7 +16828,8 @@
     "silvafickmcgiffin": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "mladenovic": [
       "W",
@@ -16682,11 +16838,11 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "smith": [
       "W",
-      "W",
       "L",
       "W",
       "L",
@@ -16694,7 +16850,8 @@
       "L",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "altmaier": [
       "W",
@@ -16734,6 +16891,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "rodrigues": [
@@ -16784,11 +16942,13 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "badosa": [
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -16800,8 +16960,8 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
+      "W",
       "W"
     ],
     "gorgodze": [
@@ -16811,6 +16971,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "heck": [
@@ -16822,6 +16983,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "wobker": [
@@ -16842,6 +17004,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "seggerman": [
@@ -17023,9 +17186,11 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "wu": [
+      "L",
       "L",
       "L",
       "L",
@@ -17063,6 +17228,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "cassone": [
@@ -17110,11 +17276,13 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "bondioli": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "svajda": [
@@ -17125,6 +17293,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "huesler": [
@@ -17168,14 +17337,16 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "trevisan": [
       "L",
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "zarazua": [
       "W",
@@ -17232,7 +17403,8 @@
     ],
     "spink": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "erjavec": [
       "W",
@@ -17257,9 +17429,9 @@
       "W",
       "L",
       "W",
+      "W",
+      "W",
       "L",
-      "W",
-      "W",
       "W",
       "L"
     ],
@@ -17295,6 +17467,7 @@
     "vandewinkel": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "stearns": [
@@ -17336,9 +17509,13 @@
       "L",
       "W",
       "W",
+      "W",
+      "W",
       "W"
     ],
     "selekhmeteva": [
+      "W",
+      "L",
       "W",
       "L",
       "W",
@@ -17377,7 +17554,8 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "martincova": [
       "L"
@@ -17440,7 +17618,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "webleysmith": [
       "W",
@@ -17475,6 +17654,8 @@
       "W",
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "lopezmorillo": [
@@ -17485,6 +17666,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "borisov": [
@@ -17504,6 +17686,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "rejchtmanvinciguerra": [
@@ -17537,7 +17720,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "jfancutt": [
       "W",
@@ -17601,6 +17785,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "cigarran": [
@@ -17622,7 +17807,8 @@
     "camargolima": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "zanellato": [
       "W",
@@ -17659,7 +17845,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "andradedasilva": [
       "W",
@@ -17802,6 +17989,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "bergs": [
@@ -17862,6 +18050,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "paris": [
@@ -17880,21 +18069,22 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
     ],
     "jones": [
-      "L",
       "W",
       "L",
       "L",
       "W",
       "W",
+      "W",
+      "L",
       "W",
       "L",
       "W"
@@ -17928,7 +18118,8 @@
     ],
     "mrva": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "martineau": [
       "W",
@@ -17941,13 +18132,15 @@
     "radulov": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "michalski": [
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "brouwer": [
       "L"
@@ -17957,7 +18150,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "milev": [
       "L",
@@ -17974,7 +18168,8 @@
     "castelnuovo": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "cretu": [
       "W",
@@ -17982,7 +18177,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "gueymardwayenburg": [
       "W",
@@ -18004,7 +18200,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "tobon": [
       "L",
@@ -18117,6 +18314,7 @@
     "fontenel": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "solardonoso": [
@@ -18124,6 +18322,7 @@
       "L"
     ],
     "vedder": [
+      "W",
       "W",
       "W",
       "W",
@@ -18151,11 +18350,13 @@
     "bu": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "dellien": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "cina": [
@@ -18170,6 +18371,7 @@
     "dougaz": [
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -18203,6 +18405,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "midon": [
@@ -18219,6 +18422,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "glinka": [
@@ -18236,7 +18440,8 @@
     "agomez": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pavlovic": [
       "W",
@@ -18244,14 +18449,17 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "lajal": [
+      "L",
       "L"
     ],
     "matusevich": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "napolitano": [
@@ -18289,7 +18497,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "ymer": [
       "W",
@@ -18307,6 +18516,7 @@
     "gea": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "brancaccio": [
@@ -18340,7 +18550,8 @@
     "onclin": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "giustino": [
       "L",
@@ -18354,7 +18565,8 @@
     "guerrieri": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "goffin": [
       "L"
@@ -18366,10 +18578,13 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "monday": [
       "L",
+      "W",
       "W"
     ],
     "mayot": [
@@ -18411,6 +18626,7 @@
     ],
     "sanchezizquierdo": [
       "L",
+      "W",
       "W"
     ],
     "skatov": [
@@ -18423,7 +18639,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pficovich": [
       "L",
@@ -18468,6 +18685,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "budkovkjaer": [
@@ -18486,10 +18704,12 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "coria": [
       "W",
+      "L",
       "L"
     ],
     "bonding": [
@@ -18498,6 +18718,7 @@
     ],
     "denouden": [
       "L",
+      "W",
       "W"
     ],
     "dodig": [
@@ -18533,6 +18754,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "nardi": [
@@ -18564,6 +18786,7 @@
     ],
     "bax": [
       "L",
+      "W",
       "W"
     ],
     "ceban": [
@@ -18581,11 +18804,13 @@
     "crawford": [
       "L",
       "W",
+      "W",
       "W"
     ],
     "draxl": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "gaubas": [
@@ -18593,7 +18818,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mmoh": [
       "L",
@@ -18606,7 +18832,8 @@
     ],
     "kolar": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jubb": [
       "W",
@@ -18623,6 +18850,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "maestrelli": [
@@ -18658,6 +18886,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "jschwaerzler": [
@@ -18667,7 +18896,8 @@
     "tomic": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "uchida": [
       "L",
@@ -18730,7 +18960,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "careaga": [
       "L"
@@ -18846,6 +19077,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "cjianu": [
@@ -18886,7 +19118,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "aburruchaga": [
       "L",
@@ -18910,6 +19143,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "tirante": [
@@ -18982,12 +19216,14 @@
     "henning": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sels": [
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "vasa": [
@@ -18997,7 +19233,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "dhamne": [
       "L",
@@ -19077,7 +19314,8 @@
     ],
     "vivesmarcos": [
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "rikl": [
       "W",
@@ -19090,14 +19328,17 @@
     "ninomiya": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "olmos": [
       "W",
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "piter": [
       "L"
@@ -19130,7 +19371,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "ribeiro": [
       "L",
@@ -19181,7 +19423,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "poullain": [
       "L",
@@ -19222,7 +19465,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "ruoxi": [
       "W",
@@ -19261,6 +19505,7 @@
     "thamchaiwat": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "oh": [
@@ -19390,7 +19635,6 @@
       "L"
     ],
     "strombachs": [
-      "L",
       "W",
       "W",
       "L",
@@ -19399,7 +19643,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "basile": [
       "L",
@@ -19440,11 +19685,13 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "alujas": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "masabayashi": [
@@ -19466,6 +19713,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "jaisinghani": [
@@ -19499,6 +19747,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "koevermans": [
@@ -19509,7 +19758,9 @@
     ],
     "minnen": [
       "W",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "ferro": [
       "L"
@@ -19557,13 +19808,13 @@
       "L"
     ],
     "sun": [
-      "W",
       "L",
       "L",
       "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W"
@@ -19621,7 +19872,6 @@
       "L"
     ],
     "jorge": [
-      "W",
       "L",
       "L",
       "W",
@@ -19630,7 +19880,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "galfi": [
       "L",
@@ -19644,13 +19895,15 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "bronzetti": [
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "inglis": [
       "L"
@@ -19671,7 +19924,8 @@
     "lepchenko": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "andreeva": [
       "W",
@@ -19686,11 +19940,11 @@
       "W",
       "W",
       "W",
-      "W",
-      "W",
       "L",
       "L",
       "W",
+      "L",
+      "L",
       "L"
     ],
     "mikulskyte": [
@@ -19701,18 +19955,19 @@
     "liu": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "quevedo": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -19781,7 +20036,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "costoulas": [
       "L"
@@ -19794,7 +20050,8 @@
     "romerogormaz": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "krueger": [
       "W",
@@ -19805,6 +20062,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "knutson": [
@@ -19820,6 +20078,7 @@
     ],
     "mandlik": [
       "L",
+      "W",
       "W"
     ],
     "masarova": [
@@ -19842,6 +20101,8 @@
       "W",
       "W",
       "L",
+      "W",
+      "W",
       "W"
     ],
     "samson": [
@@ -19853,6 +20114,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "you": [
@@ -19894,6 +20156,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "kalieva": [
@@ -19921,6 +20184,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "podrez": [
@@ -19930,11 +20194,14 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "rus": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "sramkova": [
@@ -19944,10 +20211,12 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "hruncakova": [
       "L",
+      "W",
       "W"
     ],
     "timofeeva": [
@@ -20013,6 +20282,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "paardekooper": [
@@ -20020,6 +20290,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "visser": [
@@ -20036,6 +20307,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "khoeblal": [
@@ -20054,6 +20326,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "guinau": [
@@ -20076,6 +20349,7 @@
     ],
     "mirarchi": [
       "L",
+      "W",
       "W"
     ],
     "serafini": [
@@ -20088,6 +20362,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "grandinetti": [
@@ -20127,7 +20402,8 @@
     ],
     "agwi": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "hopp": [
       "W",
@@ -20156,6 +20432,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "jansen": [
@@ -20223,18 +20500,21 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "allen": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "guttau": [
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "hrazdil": [
       "L",
@@ -20258,13 +20538,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "gloeckler": [
       "L",
@@ -20282,7 +20562,6 @@
       "W"
     ],
     "zeng": [
-      "W",
       "L",
       "L",
       "W",
@@ -20291,17 +20570,20 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "tomida": [
       "L",
       "W",
       "L",
+      "L",
       "L"
     ],
     "nordquist": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -20488,7 +20770,8 @@
     "jialin": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "yruan": [
       "L",
@@ -20528,7 +20811,8 @@
     ],
     "kawanocho": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "villet": [
       "L",
@@ -20538,6 +20822,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "donnell": [
@@ -20567,18 +20852,19 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "tomase": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
       "L",
       "W",
       "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "L",
       "W"
     ],
     "gniewkowska": [
@@ -20617,7 +20903,9 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "wagenaar": [
       "L",
@@ -20625,6 +20913,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "longotabata": [
@@ -20655,6 +20944,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "vitarubicondo": [
@@ -20663,6 +20953,7 @@
     "taddia": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -20688,7 +20979,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sonesson": [
       "W",
@@ -20705,7 +20997,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pel": [
       "L",
@@ -20714,6 +21007,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "ruland": [
@@ -20730,7 +21024,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "greschner": [
       "L",
@@ -20765,7 +21060,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "decarvalho": [
       "L"
@@ -20794,7 +21090,8 @@
       "W",
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "villard": [
       "L",
@@ -20846,6 +21143,8 @@
       "L",
       "L",
       "L",
+      "W",
+      "W",
       "W"
     ],
     "majchrzak": [
@@ -20865,7 +21164,8 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "sterniczuk": [
       "L",
@@ -20900,7 +21200,8 @@
     "zgola": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pabisiak": [
       "L"
@@ -20995,6 +21296,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "pratamorais": [
@@ -21012,6 +21314,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "biletic": [
@@ -21143,11 +21446,13 @@
     "stoiana": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "cross": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "montgomery": [
       "W",
@@ -21233,7 +21538,8 @@
     ],
     "arcila": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "scallejon": [
       "W",
@@ -21262,7 +21568,8 @@
     ],
     "cherubini": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mikaca": [
       "L"
@@ -21279,7 +21586,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "aounisalaheddine": [
       "L"
@@ -21347,6 +21655,7 @@
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "castillomolino": [
@@ -21376,7 +21685,8 @@
     "sharma": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "meabe": [
       "W",
@@ -21421,6 +21731,7 @@
       "W",
       "W",
       "L",
+      "L",
       "L"
     ],
     "gay": [
@@ -21447,10 +21758,12 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "bohrermartins": [
       "L",
+      "W",
       "W"
     ],
     "broadus": [
@@ -21477,7 +21790,8 @@
     "mcneil": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "yamalapalli": [
       "W",
@@ -21486,12 +21800,14 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rapolu": [
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "espositocogan": [
@@ -21517,12 +21833,14 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mulville": [
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "fairclough": [
       "W",
@@ -21537,11 +21855,13 @@
     "digenova": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vmediorreal": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sotoneira": [
       "L",
@@ -21557,6 +21877,7 @@
       "L"
     ],
     "candiotto": [
+      "W",
       "W",
       "W",
       "W",
@@ -21634,7 +21955,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rebai": [
       "L"
@@ -21718,7 +22040,9 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "tran": [
       "W",
@@ -21728,7 +22052,9 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "ozerova": [
       "L"
@@ -21765,6 +22091,7 @@
     ],
     "weber": [
       "L",
+      "W",
       "W"
     ],
     "goto": [
@@ -21817,6 +22144,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "han": [
@@ -21844,7 +22172,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "oigawa": [
       "L",
@@ -21855,7 +22184,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "an": [
       "L"
@@ -21920,10 +22250,12 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "thayne": [
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -21951,13 +22283,16 @@
     "haita": [
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "pavel": [
       "W",
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "perez": [
@@ -21982,9 +22317,9 @@
     "vrbensky": [
       "W",
       "W",
+      "L",
+      "L",
       "W",
-      "L",
-      "L",
       "W",
       "W",
       "W",
@@ -22021,6 +22356,8 @@
     "urgesi": [
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "aikawa": [
@@ -22054,7 +22391,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "pieri": [
       "W",
@@ -22131,7 +22469,8 @@
     "burilloescorihuela": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "tumosa": [
       "W",
@@ -22155,7 +22494,9 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "singh": [
       "L",
@@ -22164,6 +22505,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "wright": [
@@ -22173,6 +22515,7 @@
     ],
     "boskovic": [
       "L",
+      "W",
       "W"
     ],
     "basiletti": [
@@ -22183,15 +22526,18 @@
     ],
     "maines": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "lovric": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "thombare": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "rozhkova": [
       "L"
@@ -22235,7 +22581,9 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "martinsjauffret": [
       "W",
@@ -22246,7 +22594,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "eisch": [
       "L"
@@ -22349,6 +22698,7 @@
       "W",
       "W",
       "L",
+      "L",
       "L"
     ],
     "iwang": [
@@ -22403,7 +22753,8 @@
     "rosparres": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "gettwart": [
       "W",
@@ -22430,6 +22781,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "jaeger": [
@@ -22495,11 +22847,13 @@
     "zapp": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "hermassi": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "bennourditsahli": [
       "L",
@@ -22525,10 +22879,10 @@
     "makhlouf": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "frusina": [
-      "W",
       "L",
       "W",
       "W",
@@ -22537,7 +22891,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "lapalu": [
       "L",
@@ -22554,13 +22909,15 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "erikssonziverts": [
       "W",
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "trifi": [
@@ -22568,6 +22925,7 @@
       "L",
       "L",
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -22637,6 +22995,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "reguer": [
@@ -22684,6 +23043,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "mhaus": [
@@ -22691,7 +23051,8 @@
     ],
     "fix": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sheyngezikht": [
       "L"
@@ -22706,7 +23067,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sickenberger": [
       "L",
@@ -22741,6 +23103,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "tepic": [
@@ -22766,6 +23129,7 @@
     ],
     "popescu": [
       "W",
+      "L",
       "L"
     ],
     "bojovic": [
@@ -22931,7 +23295,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jbrockmann": [
       "L",
@@ -22958,7 +23323,9 @@
       "L"
     ],
     "vandepeer": [
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "rodero": [
       "L"
@@ -22967,7 +23334,6 @@
       "L"
     ],
     "wallin": [
-      "W",
       "L",
       "W",
       "W",
@@ -22976,7 +23342,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "trainauskas": [
       "L"
@@ -22986,6 +23353,7 @@
       "L"
     ],
     "torcq": [
+      "L",
       "L",
       "L"
     ],
@@ -23037,6 +23405,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "inui": [
@@ -23062,7 +23431,8 @@
     "gschwendtner": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "schifris": [
       "L",
@@ -23106,7 +23476,6 @@
       "L"
     ],
     "slavic": [
-      "W",
       "L",
       "W",
       "W",
@@ -23115,7 +23484,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "baum": [
       "L",
@@ -23144,7 +23514,8 @@
       "L",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "figl": [
       "L",
@@ -23156,6 +23527,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "gundacker": [
@@ -23205,7 +23577,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "lokotkova": [
       "L",
@@ -23257,7 +23630,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "piskun": [
       "L"
@@ -23306,6 +23680,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "sengul": [
@@ -23380,7 +23755,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "iannaccone": [
       "W",
@@ -23405,7 +23781,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "perego": [
       "L",
@@ -23424,6 +23801,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "borrelli": [
@@ -23443,6 +23821,7 @@
       "L"
     ],
     "gilgarcia": [
+      "L",
       "L",
       "L"
     ],
@@ -23480,6 +23859,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "ryden": [
@@ -23494,6 +23874,8 @@
     "trongcharoenchaikul": [
       "W",
       "L",
+      "L",
+      "W",
       "L",
       "W"
     ],
@@ -23524,6 +23906,7 @@
     "zivkovic": [
       "L",
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -23590,7 +23973,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "perfetti": [
       "L"
@@ -23758,6 +24142,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "miton": [
@@ -23771,10 +24156,12 @@
     ],
     "malkin": [
       "L",
+      "W",
       "W"
     ],
     "daniel": [
       "L",
+      "W",
       "W"
     ],
     "brengle": [
@@ -23782,6 +24169,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "valdez": [
@@ -23849,20 +24237,23 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "gowda": [
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "sahdiieva": [
-      "L",
       "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -23889,6 +24280,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "fulgenzi": [
@@ -23915,7 +24307,9 @@
       "L",
       "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "hosoki": [
       "W",
@@ -23973,7 +24367,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "grumet": [
       "L"
@@ -24007,6 +24402,7 @@
       "L",
       "W",
       "W",
+      "W",
       "W"
     ],
     "krall": [
@@ -24035,7 +24431,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "santhosh": [
       "L",
@@ -24074,6 +24471,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "badon": [
@@ -24090,7 +24488,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kohlmann": [
       "L",
@@ -24302,7 +24701,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "chazal": [
       "W",
@@ -24334,6 +24734,8 @@
       "W",
       "L",
       "W",
+      "W",
+      "W",
       "W"
     ],
     "lagutin": [
@@ -24355,6 +24757,7 @@
     ],
     "poling": [
       "L",
+      "W",
       "W"
     ],
     "vandecasteele": [
@@ -24366,7 +24769,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "dharafriend": [
       "W",
@@ -24395,6 +24799,8 @@
       "L",
       "W",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "ruiz": [
@@ -24436,6 +24842,7 @@
     ],
     "dedios": [
       "L",
+      "W",
       "W"
     ],
     "prashanth": [
@@ -24455,7 +24862,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rinderknech": [
       "W",
@@ -24486,11 +24894,13 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "putintseva": [
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -24623,6 +25033,8 @@
       "L",
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "kennedy": [
@@ -24640,7 +25052,8 @@
       "L",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "ichikawa": [
       "W",
@@ -24678,10 +25091,12 @@
     ],
     "fearnley": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "michelsen": [
       "L",
+      "W",
       "W"
     ],
     "shimabukuro": [
@@ -24724,7 +25139,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "sakkari": [
       "W",
@@ -24735,7 +25151,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jordasanchis": [
       "W",
@@ -24750,6 +25167,7 @@
     "xilas": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "hemery": [
@@ -24765,7 +25183,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "sgomez": [
       "L",
@@ -24778,6 +25197,8 @@
     ],
     "mena": [
       "L",
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -24903,6 +25324,7 @@
       "L",
       "L",
       "W",
+      "W",
       "W"
     ],
     "cembranos": [
@@ -24939,6 +25361,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "yakusheva": [
@@ -24956,6 +25379,7 @@
       "L"
     ],
     "ozdemir": [
+      "W",
       "W",
       "W",
       "W",
@@ -24983,6 +25407,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "mgaray": [
@@ -24995,6 +25420,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "makarski": [
@@ -25028,7 +25454,8 @@
     "mehra": [
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "cacao": [
       "W",
@@ -25066,6 +25493,7 @@
     ],
     "balducci": [
       "L",
+      "W",
       "W"
     ],
     "vanderstappen": [
@@ -25102,11 +25530,14 @@
     ],
     "pavlou": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "inisan": [
       "L",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "ismail": [
       "W",
@@ -25141,6 +25572,7 @@
     ],
     "bertacchi": [
       "L",
+      "W",
       "W"
     ],
     "gennaro": [
@@ -25177,6 +25609,7 @@
       "L"
     ],
     "brooks": [
+      "L",
       "L"
     ],
     "savinykh": [
@@ -25189,7 +25622,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "inoue": [
       "W",
@@ -25208,6 +25642,7 @@
     "kulikova": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "leonard": [
@@ -25258,7 +25693,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "olmodiazhernando": [
       "L"
@@ -25312,7 +25748,9 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W",
+      "W"
     ],
     "premzl": [
       "W",
@@ -25360,6 +25798,7 @@
     "yunis": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "liusso": [
@@ -25391,7 +25830,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "siniakov": [
       "W",
@@ -25400,9 +25840,9 @@
       "W",
       "W",
       "W",
-      "W",
-      "W",
       "L",
+      "W",
+      "W",
       "W"
     ],
     "dasset": [
@@ -25411,7 +25851,8 @@
     "visserdevisser": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vanderborght": [
       "L"
@@ -25452,6 +25893,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "boludapalazon": [
@@ -25471,7 +25913,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vilasalles": [
       "L"
@@ -25484,13 +25927,13 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mian": [
       "L"
@@ -25507,10 +25950,12 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "ivantsiv": [
       "L",
+      "W",
       "W"
     ],
     "morderger": [
@@ -25552,7 +25997,8 @@
       "W",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "voelzke": [
       "L"
@@ -25573,11 +26019,13 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "robertson": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "shimanov": [
@@ -25585,11 +26033,13 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "duhan": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "badenhorst": [
       "W",
@@ -25603,6 +26053,7 @@
       "L",
       "L",
       "W",
+      "L",
       "L"
     ],
     "peet": [
@@ -25627,6 +26078,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "khrebtova": [
@@ -25637,23 +26089,25 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "leroux": [
       "W",
-      "L",
       "W",
-      "W",
-      "W",
-      "L",
       "W",
       "L",
       "W",
+      "L",
+      "W",
+      "W",
+      "L",
       "W"
     ],
     "youri": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "vanzyl": [
       "W",
@@ -25674,6 +26128,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "jestin": [
@@ -25685,9 +26140,9 @@
       "W",
       "W",
       "W",
-      "W",
-      "W",
       "L",
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -25706,6 +26161,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -25730,6 +26186,7 @@
       "L"
     ],
     "lokoli": [
+      "W",
       "W",
       "W",
       "W",
@@ -25760,6 +26217,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "blando": [
@@ -25775,7 +26233,8 @@
     ],
     "brantmeier": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kobori": [
       "W",
@@ -25785,6 +26244,7 @@
     ],
     "yamaguchi": [
       "W",
+      "L",
       "L"
     ],
     "ssanchez": [
@@ -25833,6 +26293,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "bicknell": [
@@ -25853,7 +26314,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dealba": [
       "L",
@@ -25869,6 +26331,7 @@
     "nahum": [
       "L",
       "L",
+      "W",
       "W"
     ],
     "pascualmontalvo": [
@@ -25879,6 +26342,7 @@
     "quadre": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "fukuda": [
@@ -25924,6 +26388,7 @@
     ],
     "kestelboim": [
       "L",
+      "W",
       "W"
     ],
     "vavassori": [
@@ -25938,7 +26403,8 @@
     ],
     "gomez": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "martinmanzano": [
       "W",
@@ -25984,11 +26450,13 @@
     ],
     "bassemsobhy": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "rossi": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "barbic": [
@@ -26015,7 +26483,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dominko": [
       "W",
@@ -26042,7 +26511,8 @@
     "brumm": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kleege": [
       "L",
@@ -26053,7 +26523,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "dalmasso": [
       "W",
@@ -26071,12 +26542,14 @@
     ],
     "salvestre": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "atailleu": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kriznik": [
       "W",
@@ -26116,12 +26589,14 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "ochi": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "tanaka": [
       "L"
@@ -26136,7 +26611,8 @@
     "koizumi": [
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "harazaki": [
       "W",
@@ -26153,7 +26629,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "nakamura": [
       "L",
@@ -26163,6 +26640,7 @@
       "W",
       "L",
       "W",
+      "L",
       "L"
     ],
     "wiedenmann": [
@@ -26198,10 +26676,12 @@
     ],
     "friberg": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "recek": [
       "L",
+      "W",
       "W"
     ],
     "bastiaansen": [
@@ -26222,6 +26702,7 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "daryabeigi": [
@@ -26251,6 +26732,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "houas": [
@@ -26266,7 +26748,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "abouelsaad": [
       "L",
@@ -26274,6 +26757,7 @@
     ],
     "elsayed": [
       "L",
+      "W",
       "W"
     ],
     "kaztugan": [
@@ -26282,6 +26766,7 @@
     "fouad": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "wanvickery": [
@@ -26307,6 +26792,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "russo": [
@@ -26377,12 +26863,14 @@
       "L",
       "W",
       "L",
+      "L",
       "L"
     ],
     "chrisstoffels": [
       "L"
     ],
     "nicod": [
+      "W",
       "W",
       "W",
       "W",
@@ -26411,6 +26899,7 @@
       "L"
     ],
     "arcefernandez": [
+      "L",
       "L"
     ],
     "garciamestre": [
@@ -26424,7 +26913,8 @@
     "garcian": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "cordoba": [
       "L"
@@ -26469,7 +26959,8 @@
     ],
     "natal": [
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "yuldasheva": [
       "W",
@@ -26510,7 +27001,8 @@
     ],
     "strode": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "abedinzadeh": [
       "L"
@@ -26530,7 +27022,8 @@
     ],
     "azkara": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "mozdemir": [
       "W",
@@ -26568,11 +27061,13 @@
       "W",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "beaven": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "salton": [
@@ -26601,7 +27096,9 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "deklerk": [
       "L"
@@ -26618,6 +27115,7 @@
     ],
     "mujakic": [
       "W",
+      "L",
       "L"
     ],
     "odobasic": [
@@ -26629,7 +27127,8 @@
     "juhas": [
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "perezmellado": [
       "L"
@@ -26640,7 +27139,8 @@
       "L"
     ],
     "arzhankin": [
-      "L"
+      "L",
+      "W"
     ],
     "wieland": [
       "L"
@@ -26661,7 +27161,8 @@
     ],
     "bladelius": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jovanovic": [
       "W",
@@ -26676,10 +27177,12 @@
       "L"
     ],
     "garciaalonso": [
+      "L",
       "L"
     ],
     "veleva": [
       "W",
+      "L",
       "L",
       "L"
     ],
@@ -26699,6 +27202,7 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
     "mcinalli": [
@@ -26711,9 +27215,11 @@
     "jakupovic": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "scott": [
+      "L",
       "L",
       "L",
       "L",
@@ -26795,6 +27301,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "cirotte": [
@@ -26820,7 +27327,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "bernales": [
       "L",
@@ -26855,7 +27363,8 @@
     ],
     "kadirihassani": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "almeida": [
       "W",
@@ -26868,6 +27377,8 @@
       "L"
     ],
     "srogers": [
+      "L",
+      "W",
       "L"
     ],
     "liutova": [
@@ -26879,7 +27390,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "dzjachangirova": [
       "W",
@@ -26896,11 +27408,14 @@
       "L",
       "L",
       "W",
+      "W",
+      "L",
       "W"
     ],
     "zagars": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "pelzer": [
       "L"
@@ -26920,6 +27435,7 @@
     "sheehy": [
       "L",
       "W",
+      "L",
       "L"
     ],
     "jiniklassalminen": [
@@ -26931,10 +27447,12 @@
     "zamarripa": [
       "W",
       "W",
+      "L",
       "L"
     ],
     "ovcharenko": [
       "W",
+      "L",
       "L",
       "L",
       "L"
@@ -27013,6 +27531,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "huseinovic": [
@@ -27047,7 +27566,8 @@
     "ingildsen": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "comino": [
       "L"
@@ -27078,6 +27598,7 @@
     ],
     "raguin": [
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -27165,7 +27686,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "angel": [
       "L"
@@ -27232,7 +27754,8 @@
     "reyesvarela": [
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "romios": [
       "L",
@@ -27288,6 +27811,7 @@
     "reascogonzalez": [
       "W",
       "L",
+      "W",
       "W"
     ],
     "raina": [
@@ -27313,7 +27837,8 @@
     ],
     "maes": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "meinertz": [
       "L"
@@ -27363,6 +27888,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "christie": [
@@ -27400,7 +27926,8 @@
     "todoran": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "jovanovski": [
       "W",
@@ -27414,7 +27941,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "kawanishi": [
       "L"
@@ -27450,7 +27978,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "craze": [
       "L"
@@ -27484,21 +28013,25 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "cvetkovic": [
       "L",
+      "W",
       "W"
     ],
     "veigelsbach": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "rajeshwaranrevathi": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "hermanova": [
       "W",
@@ -27512,6 +28045,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "dotsenko": [
@@ -27567,7 +28101,8 @@
     "secord": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "gribaldo": [
       "L"
@@ -27575,6 +28110,7 @@
     "reisach": [
       "W",
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -27588,6 +28124,7 @@
     ],
     "sloboda": [
       "L",
+      "W",
       "W",
       "W"
     ],
@@ -27608,6 +28145,7 @@
     "zajickova": [
       "L",
       "W",
+      "W",
       "W"
     ],
     "hazelitt": [
@@ -27621,7 +28159,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "griffiths": [
       "L",
@@ -27637,7 +28176,9 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "jlin": [
       "L"
@@ -27657,7 +28198,8 @@
     "newman": [
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "suljic": [
       "W",
@@ -27668,7 +28210,8 @@
       "W",
       "L",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "talexandrescou": [
       "L"
@@ -27800,21 +28343,26 @@
     ],
     "johns": [
       "W",
+      "L",
+      "W",
       "L"
     ],
     "zink": [
       "W",
       "W",
+      "L",
       "L"
     ],
     "kozlov": [
+      "W",
       "W",
       "W"
     ],
     "jung": [
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "farzam": [
       "L"
@@ -27841,6 +28389,7 @@
     ],
     "lemedasilva": [
       "W",
+      "W",
       "W"
     ],
     "dejonge": [
@@ -27864,12 +28413,14 @@
     ],
     "kuhl": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "topalova": [
       "L"
     ],
     "juncadellaurribarrensramirez": [
+      "W",
       "W",
       "W"
     ],
@@ -27878,12 +28429,14 @@
     ],
     "braunovell": [
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "rating": [
       "L"
     ],
     "kravtsovradulov": [
+      "W",
       "W",
       "W"
     ],
@@ -27946,16 +28499,19 @@
       "L"
     ],
     "cornea": [
-      "W"
+      "W",
+      "L"
     ],
     "diezwinterlopez": [
-      "W"
+      "W",
+      "L"
     ],
     "mezaroncadelli": [
       "L"
     ],
     "burel": [
-      "W"
+      "W",
+      "L"
     ],
     "marginean": [
       "W",
@@ -27990,6 +28546,7 @@
     ],
     "lechemia": [
       "W",
+      "W",
       "W"
     ],
     "escorihuelaromerogormaz": [
@@ -28002,6 +28559,7 @@
       "L"
     ],
     "dencheva": [
+      "W",
       "W",
       "W"
     ],
@@ -28017,7 +28575,8 @@
       "L"
     ],
     "hcho": [
-      "W"
+      "W",
+      "L"
     ],
     "lchen": [
       "L"
@@ -28032,9 +28591,11 @@
       "L"
     ],
     "storch": [
-      "W"
+      "W",
+      "L"
     ],
     "kroitor": [
+      "W",
       "W"
     ],
     "arystanbekova": [
@@ -28042,9 +28603,12 @@
     ],
     "maklakova": [
       "W",
+      "W",
+      "L",
       "W"
     ],
     "patil": [
+      "L",
       "L",
       "L"
     ],
@@ -28052,6 +28616,7 @@
       "L"
     ],
     "dyussebay": [
+      "W",
       "W",
       "W"
     ],
@@ -28063,6 +28628,7 @@
     ],
     "tupitsyna": [
       "W",
+      "W",
       "W"
     ],
     "nupbay": [
@@ -28070,7 +28636,8 @@
       "W"
     ],
     "sadiq": [
-      "W"
+      "W",
+      "L"
     ],
     "suslova": [
       "L"
@@ -28082,6 +28649,7 @@
       "L"
     ],
     "perezrosparres": [
+      "W",
       "W"
     ],
     "mayemartinez": [
@@ -28094,7 +28662,8 @@
       "L"
     ],
     "mecarelli": [
-      "W"
+      "W",
+      "L"
     ],
     "tpieleanu": [
       "L"
@@ -28103,13 +28672,16 @@
       "L"
     ],
     "hasson": [
-      "W"
+      "W",
+      "L"
     ],
     "mihic": [
       "L"
     ],
     "cocola": [
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "azais": [
       "L"
@@ -28124,16 +28696,19 @@
       "L"
     ],
     "cbaragiolamordini": [
-      "W"
+      "W",
+      "L"
     ],
     "podczaszy": [
       "L"
     ],
     "alam": [
-      "W"
+      "W",
+      "L"
     ],
     "pleshivtsev": [
-      "W"
+      "W",
+      "L"
     ],
     "marterer": [
       "L"
@@ -28154,7 +28729,8 @@
       "W"
     ],
     "astakhova": [
-      "W"
+      "W",
+      "L"
     ],
     "yao": [
       "L",
@@ -28171,20 +28747,24 @@
     ],
     "perapekhina": [
       "W",
+      "W",
+      "W",
       "W"
     ],
     "faustini": [
       "L"
     ],
     "berecoechea": [
-      "L"
+      "L",
+      "W"
     ],
     "ibrahim": [
       "L"
     ],
     "grammatikopoulou": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "joseph": [
       "L"
@@ -28193,15 +28773,19 @@
       "W"
     ],
     "saigo": [
-      "W"
+      "W",
+      "L"
     ],
     "ristic": [
       "W",
+      "L",
       "L"
     ],
     "catini": [
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "mondazzi": [
       "L"
@@ -28211,6 +28795,7 @@
       "L"
     ],
     "marinescu": [
+      "W",
       "W"
     ],
     "manolache": [
@@ -28218,25 +28803,31 @@
     ],
     "pierre": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "garciamilosavljevic": [
+      "W",
       "W"
     ],
     "fernandezbeltranrubio": [
-      "W"
+      "W",
+      "L"
     ],
     "vukovic": [
+      "W",
       "W"
     ],
     "macchione": [
       "L"
     ],
     "carraro": [
-      "W"
+      "W",
+      "L"
     ],
     "rocens": [
       "W",
+      "L",
       "L"
     ],
     "kasperski": [
@@ -28245,13 +28836,15 @@
     ],
     "bojarski": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "stanczyk": [
       "L"
     ],
     "dhokia": [
-      "W"
+      "W",
+      "L"
     ],
     "scheinert": [
       "L"
@@ -28269,10 +28862,12 @@
       "L"
     ],
     "vanschalkwyk": [
-      "W"
+      "W",
+      "L"
     ],
     "weldamverbeek": [
-      "W"
+      "W",
+      "L"
     ],
     "schrier": [
       "L"
@@ -28281,12 +28876,16 @@
       "L"
     ],
     "novak": [
+      "W",
       "W"
     ],
     "okutoyi": [
+      "W",
       "W"
     ],
     "miskovic": [
+      "W",
+      "W",
       "W"
     ],
     "xibilia": [
@@ -28300,15 +28899,18 @@
       "L"
     ],
     "monteskhaghani": [
-      "W"
+      "W",
+      "L"
     ],
     "sandemurphy": [
       "L"
     ],
     "preevanemst": [
+      "W",
       "W"
     ],
     "baybars": [
+      "W",
       "W",
       "W"
     ],
@@ -28316,6 +28918,7 @@
       "L"
     ],
     "erel": [
+      "W",
       "W",
       "W"
     ],
@@ -28333,12 +28936,15 @@
     ],
     "delpino": [
       "W",
+      "W",
+      "L",
       "W"
     ],
     "fernandezbadia": [
       "L"
     ],
     "mzarate": [
+      "W",
       "W"
     ],
     "lora": [
@@ -28351,6 +28957,7 @@
       "L"
     ],
     "gagliardo": [
+      "W",
       "W"
     ],
     "medus": [
@@ -28377,25 +28984,29 @@
       "L"
     ],
     "grippo": [
-      "W"
+      "W",
+      "L"
     ],
     "jleston": [
       "L"
     ],
     "tischner": [
-      "W"
+      "W",
+      "L"
     ],
     "napolidasilveira": [
       "L"
     ],
     "forbes": [
+      "W",
       "W"
     ],
     "mesarovic": [
       "L"
     ],
     "okonkwo": [
-      "W"
+      "W",
+      "L"
     ],
     "ferreirabanietti": [
       "L"
@@ -28405,11 +29016,13 @@
     ],
     "perry": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "vulpitta": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "theate": [
       "L"
@@ -28423,21 +29036,26 @@
     ],
     "santos": [
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "martinsherazogonzalez": [
-      "W"
+      "W",
+      "L"
     ],
     "kalimullina": [
       "L"
     ],
     "gonzaleztorresmurcia": [
-      "W"
+      "W",
+      "L"
     ],
     "cohenperovani": [
       "L"
     ],
     "fullana": [
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -28446,9 +29064,11 @@
       "L"
     ],
     "delatorrebarbosaxavierlaydner": [
-      "W"
+      "W",
+      "L"
     ],
     "perezgarcia": [
+      "W",
       "W"
     ],
     "baniettishibata": [
@@ -28456,9 +29076,11 @@
     ],
     "spencer": [
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "tattini": [
+      "W",
       "W"
     ],
     "singeorzan": [
@@ -28468,6 +29090,7 @@
       "L"
     ],
     "gonzalezfitzmaurice": [
+      "W",
       "W"
     ],
     "vaughan": [
@@ -28475,7 +29098,9 @@
     ],
     "rottgering": [
       "W",
-      "W"
+      "W",
+      "W",
+      "L"
     ],
     "hamill": [
       "L"
@@ -28534,30 +29159,37 @@
       "L"
     ],
     "hidalgo": [
-      "W"
+      "W",
+      "L"
     ],
     "scheppersanchezquilez": [
       "L"
     ],
     "kittay": [
-      "W"
+      "W",
+      "L"
     ],
     "heinonen": [
+      "W",
       "W"
     ],
     "hsu": [
+      "W",
       "W"
     ],
     "pedretti": [
       "L"
     ],
     "vliegen": [
+      "W",
       "W"
     ],
     "camposcastelnuovo": [
-      "W"
+      "W",
+      "L"
     ],
     "jongevisker": [
+      "W",
       "W"
     ],
     "ziegannseggerman": [
@@ -28570,6 +29202,7 @@
       "L"
     ],
     "lincer": [
+      "L",
       "L"
     ],
     "lindepalacios": [
@@ -28591,12 +29224,14 @@
       "L"
     ],
     "niemeier": [
-      "W"
+      "W",
+      "L"
     ],
     "bennemann": [
       "L"
     ],
     "pawlikowska": [
+      "W",
       "W"
     ],
     "parresazcoitia": [
@@ -28618,7 +29253,8 @@
       "L"
     ],
     "mischker": [
-      "W"
+      "W",
+      "L"
     ],
     "zaytsev": [
       "L"
@@ -28627,9 +29263,11 @@
       "L"
     ],
     "salahibrahim": [
-      "W"
+      "W",
+      "L"
     ],
     "faticantilee": [
+      "W",
       "W"
     ],
     "lima": [
@@ -28639,7 +29277,8 @@
       "L"
     ],
     "bagaricmoratelli": [
-      "W"
+      "W",
+      "L"
     ],
     "zeeuwrus": [
       "L"
@@ -28648,7 +29287,8 @@
       "L"
     ],
     "primucci": [
-      "W"
+      "W",
+      "L"
     ],
     "haupt": [
       "L"
@@ -28657,6 +29297,7 @@
       "L"
     ],
     "ardila": [
+      "W",
       "W"
     ],
     "georgiev": [
@@ -28664,14 +29305,18 @@
       "L"
     ],
     "gorzny": [
-      "W"
+      "W",
+      "L"
     ],
     "koch": [
+      "W",
       "W"
     ],
     "roddick": [
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ],
     "vega": [
       "L"
@@ -28683,21 +29328,27 @@
       "L"
     ],
     "vanherzeele": [
+      "W",
       "W"
     ],
     "otsuka": [
-      "W"
+      "W",
+      "L"
     ],
     "fitriadilee": [
+      "W",
       "W"
     ],
     "mamedova": [
-      "W"
+      "W",
+      "L"
     ],
     "belkova": [
       "L"
     ],
     "sholokhova": [
+      "W",
+      "W",
       "W",
       "W"
     ],
@@ -28708,7 +29359,8 @@
       "L"
     ],
     "ahlawat": [
-      "W"
+      "W",
+      "L"
     ],
     "khomitskaya": [
       "L"
@@ -28718,6 +29370,7 @@
     ],
     "korysheva": [
       "W",
+      "L",
       "L"
     ],
     "belyaeva": [
@@ -28727,28 +29380,34 @@
       "L"
     ],
     "jedrzejczak": [
+      "W",
       "W"
     ],
     "vrtilka": [
       "L"
     ],
     "michnev": [
-      "W"
+      "W",
+      "L"
     ],
     "kamrowski": [
-      "W"
+      "W",
+      "L"
     ],
     "chlodnicki": [
-      "W"
+      "W",
+      "L"
     ],
     "cislo": [
-      "W"
+      "W",
+      "L"
     ],
     "strauch": [
       "L"
     ],
     "lis": [
-      "W"
+      "W",
+      "L"
     ],
     "agolescu": [
       "L"
@@ -28760,33 +29419,39 @@
       "L"
     ],
     "murray": [
-      "W"
+      "W",
+      "L"
     ],
     "vanta": [
       "L"
     ],
     "fbreazu": [
+      "W",
       "W"
     ],
     "cbreazu": [
       "L"
     ],
     "schinteie": [
+      "W",
       "W"
     ],
     "pieleanu": [
+      "W",
       "W"
     ],
     "prunescunita": [
       "L"
     ],
     "petre": [
-      "W"
+      "W",
+      "L"
     ],
     "hebhangbalan": [
       "L"
     ],
     "perin": [
+      "W",
       "W"
     ],
     "breazu": [
@@ -28829,6 +29494,7 @@
       "L"
     ],
     "barbiergazeu": [
+      "W",
       "W"
     ],
     "bradshaw": [
@@ -28838,7 +29504,8 @@
       "L"
     ],
     "photiadis": [
-      "W"
+      "W",
+      "L"
     ],
     "ukask": [
       "L"
@@ -28861,19 +29528,22 @@
       "L"
     ],
     "ebelingkoning": [
-      "W"
+      "W",
+      "L"
     ],
     "oueslati": [
       "L"
     ],
     "aceuca": [
-      "W"
+      "W",
+      "L"
     ],
     "harvey": [
       "L"
     ],
     "hays": [
-      "W"
+      "W",
+      "L"
     ],
     "giordano": [
       "L"
@@ -28903,7 +29573,8 @@
       "L"
     ],
     "deppner": [
-      "W"
+      "W",
+      "L"
     ],
     "garakani": [
       "L"
@@ -28921,13 +29592,15 @@
       "L"
     ],
     "ggeraldgonzalez": [
+      "W",
       "W"
     ],
     "xavierlaydner": [
       "L"
     ],
     "badia": [
-      "W"
+      "W",
+      "L"
     ],
     "melato": [
       "L"
@@ -28936,15 +29609,18 @@
       "L"
     ],
     "loliveira": [
-      "W"
+      "W",
+      "L"
     ],
     "mshibata": [
       "L"
     ],
     "pperezgarcia": [
-      "W"
+      "W",
+      "L"
     ],
     "babel": [
+      "W",
       "W"
     ],
     "guerra": [
@@ -28954,6 +29630,7 @@
       "L"
     ],
     "silvapereira": [
+      "W",
       "W"
     ],
     "carvalhofariaslimapedrotti": [
@@ -28963,82 +29640,99 @@
       "L"
     ],
     "diosmouilleronsalvo": [
+      "W",
       "W"
     ],
     "messa": [
       "L"
     ],
     "cardozoaguilarcardozo": [
+      "W",
       "W"
     ],
     "nakamine": [
       "L"
     ],
     "zarate": [
+      "W",
       "W"
     ],
     "balsekarsuresh": [
       "L"
     ],
     "longomonferrer": [
-      "W"
+      "W",
+      "L"
     ],
     "gascatunas": [
       "L"
     ],
     "vertberger": [
-      "W"
+      "W",
+      "L"
     ],
     "lapenameneo": [
       "L"
     ],
     "gallego": [
-      "W"
+      "W",
+      "L"
     ],
     "badiaorgaz": [
       "L"
     ],
     "aruba": [
+      "W",
       "W"
     ],
     "suriname": [
-      "L"
+      "L",
+      "W"
     ],
     "cuba": [
       "W"
     ],
     "honduras": [
+      "L",
       "L"
     ],
     "statesvirginislands": [
-      "W"
+      "W",
+      "L"
     ],
     "andbarbuda": [
+      "L",
       "L"
     ],
     "gjinaj": [
-      "W"
+      "W",
+      "L"
     ],
     "qquadre": [
-      "W"
+      "W",
+      "L"
     ],
     "smartinezsolis": [
       "L"
     ],
     "foshee": [
-      "W"
+      "W",
+      "L"
     ],
     "falck": [
+      "W",
       "W"
     ],
     "anthrop": [
+      "W",
       "W"
     ],
     "lagecastelan": [
       "L"
     ],
     "savkin": [
-      "W"
+      "W",
+      "L"
     ],
     "ciocca": [
       "L"
@@ -29047,25 +29741,30 @@
       "L"
     ],
     "grubor": [
+      "W",
       "W"
     ],
     "matushkina": [
       "L"
     ],
     "daavettila": [
+      "W",
       "W"
     ],
     "abanda": [
-      "W"
+      "W",
+      "L"
     ],
     "gailis": [
       "L"
     ],
     "pareja": [
+      "W",
       "W"
     ],
     "ereascogonzalez": [
-      "W"
+      "W",
+      "L"
     ],
     "thurgur": [
       "W"
@@ -29089,12 +29788,14 @@
       "L"
     ],
     "starkova": [
-      "W"
+      "W",
+      "L"
     ],
     "senties": [
       "L"
     ],
     "kharlanova": [
+      "W",
       "W"
     ],
     "sama": [
@@ -29104,12 +29805,68 @@
       "L"
     ],
     "sthilaire": [
-      "W"
+      "W",
+      "L"
     ],
     "bergeron": [
       "L"
     ],
     "valdeswong": [
+      "W",
+      "L"
+    ],
+    "diabate": [
+      "L"
+    ],
+    "milutinovic": [
+      "L"
+    ],
+    "bracci": [
+      "L"
+    ],
+    "amelero": [
+      "W"
+    ],
+    "bellifemine": [
+      "W"
+    ],
+    "plans": [
+      "L"
+    ],
+    "lulic": [
+      "L"
+    ],
+    "verwerft": [
+      "L"
+    ],
+    "tabordalabrana": [
+      "L"
+    ],
+    "mccormick": [
+      "L"
+    ],
+    "tobago": [
+      "W"
+    ],
+    "linanaosborne": [
+      "W"
+    ],
+    "feng": [
+      "L"
+    ],
+    "hu": [
+      "L"
+    ],
+    "ishikawa": [
+      "L"
+    ],
+    "pereznaranjo": [
+      "L"
+    ],
+    "sedysheva": [
+      "L"
+    ],
+    "myneni": [
       "W"
     ]
   },
@@ -35115,7 +35872,397 @@
     "tikhonova|zhang|tikhonova": 1,
     "naklo|malova|naklo": 1,
     "choi|yamazaki|yamazaki": 1,
-    "tenti|wong|wong": 1
+    "tenti|wong|wong": 1,
+    "fearnley|lajal|fearnley": 1,
+    "yamaguchi|minnen|minnen": 1,
+    "vidmanova|ansari|vidmanova": 1,
+    "milavsky|poonacha|poonacha": 1,
+    "smith|watanabe|smith": 1,
+    "zink|mcdonald|mcdonald": 1,
+    "collins|zamarripa|collins": 1,
+    "sebov|ovcharenko|sebov": 1,
+    "thombare|scott|thombare": 1,
+    "volynets|lincer|volynets": 1,
+    "yamalapalli|rogers|rogers": 1,
+    "olmos|xu|xu": 1,
+    "daniel|kolar|daniel": 1,
+    "arcila|alujas|alujas": 1,
+    "danilova|salah|salah": 1,
+    "roux|grammatikopoulou|grammatikopoulou": 1,
+    "karatancheva|vogt|vogt": 1,
+    "basing|castelnuovo|basing": 1,
+    "jones|jeanjean|jeanjean": 1,
+    "poertner|shah|shah": 1,
+    "muchova|gauff|muchova": 1,
+    "patten|kovacevic|patten": 1,
+    "townsend|mladenovic|mladenovic": 1,
+    "mcdonald|krumich|mcdonald": 1,
+    "gaubas|acosta|acosta": 1,
+    "izquierdo|barrena|izquierdo": 1,
+    "guerrieri|dellien|dellien": 1,
+    "gomez|bernet|bernet": 1,
+    "cretu|heide|heide": 1,
+    "mehra|verbeek|mehra": 1,
+    "vandromme|selekhmeteva|vandromme": 1,
+    "tabacco|ehrenschneider|tabacco": 1,
+    "stevic|jialin|jialin": 1,
+    "diabate|pavlou|pavlou": 1,
+    "milutinovic|miskovic|miskovic": 1,
+    "luescher|natal|natal": 1,
+    "alonso|tomase|tomase": 1,
+    "vlajic|stankovic|stankovic": 1,
+    "peer|popescu|peer": 1,
+    "inisan|veleva|inisan": 1,
+    "zivkovic|mikovic|mikovic": 1,
+    "marcos|bracci|marcos": 1,
+    "torcq|melero|melero": 1,
+    "juhas|klok|juhas": 1,
+    "jankanj|funk|jankanj": 1,
+    "garcia|obradovic|obradovic": 1,
+    "derepasko|milosavljevic|milosavljevic": 1,
+    "mujakic|bellifemine|bellifemine": 1,
+    "milic|plans|milic": 1,
+    "bekeni|pankin|pankin": 1,
+    "arzhankin|fernandez|arzhankin": 1,
+    "lulic|radovanovic|radovanovic": 1,
+    "cocola|verwerft|cocola": 1,
+    "duerst|zyl|duerst": 1,
+    "smirnova|mi|smirnova": 1,
+    "stevens|zhiyenbayeva|stevens": 1,
+    "ivantsiv|khaghani|ivantsiv": 1,
+    "vales|searle|searle": 1,
+    "monday|azkara|monday": 1,
+    "coria|ouden|ouden": 1,
+    "coppejans|michalski|coppejans": 1,
+    "balshaw|henning|balshaw": 1,
+    "jakupovic|astakhova|jakupovic": 1,
+    "stusek|hodzic|stusek": 1,
+    "novak|riera|novak": 1,
+    "labrana|okutoyi|okutoyi": 1,
+    "hunter|ostapenko|ostapenko": 1,
+    "gaston|petkovic|gaston": 1,
+    "royer|wallin|royer": 1,
+    "onclin|broska|broska": 1,
+    "planinsek|gill|gill": 1,
+    "burel|linana|linana": 1,
+    "jong|vasa|jong": 1,
+    "visser|sambeek|sambeek": 1,
+    "wagenaar|rapagnetta|wagenaar": 1,
+    "patil|berecoechea|berecoechea": 1,
+    "parres|lazarenko|parres": 1,
+    "claverie|hardt|claverie": 1,
+    "mejia|taverna|mejia": 1,
+    "mrva|bondioli|bondioli": 1,
+    "droguet|pavlovic|droguet": 1,
+    "forbes|bynoe|forbes": 1,
+    "casanova|ambrogi|casanova": 1,
+    "mena|mccormick|mena": 1,
+    "tattini|slama|tattini": 1,
+    "kozlov|wu|kozlov": 1,
+    "islands|aruba|aruba": 1,
+    "tobago|honduras|tobago": 1,
+    "barbuda|suriname|suriname": 1,
+    "sheehy|rottgering|rottgering": 1,
+    "miyoshi|boulais|miyoshi": 1,
+    "kraus|putintseva|putintseva": 1,
+    "waltert|gormaz|waltert": 1,
+    "kittay|vocel|vocel": 1,
+    "sharma|hsu|hsu": 1,
+    "brooks|selekhmeteva|selekhmeteva": 1,
+    "feng|osborne|osborne": 1,
+    "honda|nakagawa|nakagawa": 1,
+    "cho|fitriadi|fitriadi": 1,
+    "meng|roh|roh": 1,
+    "trongcharoenchaikul|koizumi|koizumi": 1,
+    "hu|liu|liu": 1,
+    "ishikawa|herzeele|herzeele": 1,
+    "tomida|nordquist|nordquist": 1,
+    "durand|garcian|durand": 1,
+    "agwi|matusevich|matusevich": 1,
+    "xilas|poertner|xilas": 1,
+    "taborda|cengiz|cengiz": 1,
+    "ceuca|bertacchi|bertacchi": 1,
+    "kubka|hays|kubka": 1,
+    "maines|allen|allen": 1,
+    "pawlikowska|garcia|pawlikowska": 1,
+    "parres|hruncakova|hruncakova": 1,
+    "ryser|ruiz|ryser": 1,
+    "duerst|youri|duerst": 1,
+    "kruger|buchnik|kruger": 1,
+    "pavlova|jorge|jorge": 1,
+    "podrez|voloshchuk|voloshchuk": 1,
+    "saigo|lee|lee": 1,
+    "shi|dilek|shi": 1,
+    "kovackova|ristic|kovackova": 1,
+    "paquet|karatancheva|karatancheva": 1,
+    "yamanaka|tajima|yamanaka": 1,
+    "matsuda|nakagawa|matsuda": 1,
+    "nakagawa|otsuka|nakagawa": 1,
+    "wang|yang|yang": 1,
+    "roh|lee|lee": 1,
+    "yang|trongcharoenchaikul|trongcharoenchaikul": 1,
+    "zeng|storch|zeng": 1,
+    "bertrand|crawford|crawford": 1,
+    "radulov|erel|erel": 1,
+    "dencheva|kazionova|dencheva": 1,
+    "lovric|struplova|struplova": 1,
+    "matos|strombachs|matos": 1,
+    "haita|heinonen|heinonen": 1,
+    "lopez|vliegen|vliegen": 1,
+    "spiridon|tailleu|spiridon": 1,
+    "clarke|paardekooper|paardekooper": 1,
+    "bronzetti|sobolieva|sobolieva": 1,
+    "kosaka|cao|kosaka": 1,
+    "yui|thamchaiwat|thamchaiwat": 1,
+    "zheng|lee|lee": 1,
+    "kisimov|hewitt|hewitt": 1,
+    "paparkar|lee|lee": 1,
+    "siniakov|fix|siniakov": 1,
+    "oetzbach|sobhy|oetzbach": 1,
+    "miletich|recek|recek": 1,
+    "siniakov|mischker|siniakov": 1,
+    "johns|maloney|johns": 1,
+    "brengle|cross|brengle": 1,
+    "sebov|maria|maria": 1,
+    "kostyuk|noskova|noskova": 1,
+    "pavic|puetz|pavic": 1,
+    "secord|reisach|reisach": 1,
+    "boogaard|page|boogaard": 1,
+    "eigelsbach|preston|preston": 1,
+    "qu|pushkareva|pushkareva": 1,
+    "sun|pircher|sun": 1,
+    "makarova|skliar|skliar": 1,
+    "watanabe|johnson|johnson": 1,
+    "raguin|tabata|raguin": 1,
+    "reyes-varela|sanchez|sanchez": 1,
+    "hidalgo|vrbensky|vrbensky": 1,
+    "badosa|lepchenko|badosa": 1,
+    "escorihuela|quevedo|quevedo": 1,
+    "ninomiya|waltert|waltert": 1,
+    "mcgiffin|lechemia|lechemia": 1,
+    "sciahbasi|serdarusic|serdarusic": 1,
+    "sels|forger|forger": 1,
+    "marino|wessels|wessels": 1,
+    "pel|muller|pel": 1,
+    "frusina|zhu|zhu": 1,
+    "barsukov|donald|donald": 1,
+    "yunis|schalkwyk|yunis": 1,
+    "vaccari|baybars|baybars": 1,
+    "becroft|added|added": 1,
+    "vaccari|radulov|radulov": 1,
+    "ramirez|novell|ramirez": 1,
+    "mazzola|murray|mazzola": 1,
+    "kirkin|mirarchi|mirarchi": 1,
+    "breazu|mecarelli|breazu": 1,
+    "bladelius|lopatic|lopatic": 1,
+    "thies|jeran|jeran": 1,
+    "snitari|andreescu|snitari": 1,
+    "catini|marinescu|catini": 1,
+    "boros|papoe|papoe": 1,
+    "perin|petre|perin": 1,
+    "haita|pieleanu|pieleanu": 1,
+    "conte|schinteie|schinteie": 1,
+    "catini|marinescu|marinescu": 1,
+    "miskovic|garnevska|miskovic": 1,
+    "pankin|rubio|pankin": 1,
+    "carraro|milosavljevic|milosavljevic": 1,
+    "wong|roux|roux": 1,
+    "ibrahim|ozeki|ozeki": 1,
+    "kuhl|gandolfi|gandolfi": 1,
+    "bosio|golovina|golovina": 1,
+    "sacco|todoni|todoni": 1,
+    "ivanova|simionescu|ivanova": 1,
+    "tran|naranjo|tran": 1,
+    "yardley|mckenzie|yardley": 1,
+    "spink|vandewinkel|vandewinkel": 1,
+    "kulikova|noel|kulikova": 1,
+    "buyukakcay|bandecchi|bandecchi": 1,
+    "voloshchuk|tse|tse": 1,
+    "podrez|lee|lee": 1,
+    "urgesi|rus|rus": 1,
+    "kulambayeva|j|j": 1,
+    "boskovic|peeters|boskovic": 1,
+    "walters|visker|visker": 1,
+    "castelnuovo|ozdemir|ozdemir": 1,
+    "slavic|summers|summers": 1,
+    "mackinlay|zahraj|zahraj": 1,
+    "dyussebay|starkova|dyussebay": 1,
+    "tupitsyna|sadiq|tupitsyna": 1,
+    "sholokhova|maklakova|sholokhova": 1,
+    "kharlanova|suvirdjonkova|kharlanova": 1,
+    "korysheva|sagandikova|sagandikova": 1,
+    "desai|yodpetch|yodpetch": 1,
+    "sholokhova|nishimoto|sholokhova": 1,
+    "sedysheva|kroitor|kroitor": 1,
+    "mamedova|jang|jang": 1,
+    "ahlawat|maklakova|maklakova": 1,
+    "loge|stanke|stanke": 1,
+    "schell|ratiu|ratiu": 1,
+    "nijboer|zheng|nijboer": 1,
+    "trevisan|riera|riera": 1,
+    "gorgodze|steiner|gorgodze": 1,
+    "salvestre|weis|weis": 1,
+    "lokoli|martin|lokoli": 1,
+    "bax|pietri|bax": 1,
+    "gowda|hosogi|hosogi": 1,
+    "tomic|walton|walton": 1,
+    "volynets|collins|volynets": 1,
+    "sabanov|matuszewski|sabanov": 1,
+    "ingildsen|whitehouse|whitehouse": 1,
+    "thayne|kestelboim|kestelboim": 1,
+    "beaven|wyk|beaven": 1,
+    "timini|deckers|deckers": 1,
+    "duhan|tyagi|tyagi": 1,
+    "zgirovsky|koenig|zgirovsky": 1,
+    "pierre|robertson|robertson": 1,
+    "shimanov|brown|shimanov": 1,
+    "velcz|hasson|velcz": 1,
+    "balducci|gschwendtner|balducci": 1,
+    "braynin|lagerbohm|lagerbohm": 1,
+    "morillo|kamrowski|morillo": 1,
+    "michnev|rivera|rivera": 1,
+    "mordini|tsitsipas|tsitsipas": 1,
+    "filip|jedrzejczak|jedrzejczak": 1,
+    "guttau|rossi|rossi": 1,
+    "dougaz|stepanov|dougaz": 1,
+    "makhlouf|robert|robert": 1,
+    "markov|duran|duran": 1,
+    "alam|gazeu|gazeu": 1,
+    "ziverts|photiadis|ziverts": 1,
+    "iakubenko|zapp|zapp": 1,
+    "pleshivtsev|jones|jones": 1,
+    "primucci|jadoun|jadoun": 1,
+    "ravel|vulpitta|ravel": 1,
+    "krueger|okonkwo|krueger": 1,
+    "wiskandt|krutykh|wiskandt": 1,
+    "friberg|mano|mano": 1,
+    "nicod|azmeh|nicod": 1,
+    "kostovic|niemeier|kostovic": 1,
+    "fontenel|coulibaly|fontenel": 1,
+    "komano|perapekhina|perapekhina": 1,
+    "shaw|ezzat|ezzat": 1,
+    "sramkova|bartel|bartel": 1,
+    "ulrich|sayed|sayed": 1,
+    "deppner|fouad|fouad": 1,
+    "mariani|wiersholm|wiersholm": 1,
+    "abanda|grubor|grubor": 1,
+    "marino|spencer|marino": 1,
+    "vedder|falkowska|vedder": 1,
+    "cherubini|lim|lim": 1,
+    "faucon|zeuch|faucon": 1,
+    "koenig|voelzke|koenig": 1,
+    "tyagi|piatti|piatti": 1,
+    "zagars|jefferson|jefferson": 1,
+    "rivera|rocens|rivera": 1,
+    "wygona|lis|wygona": 1,
+    "zgola|bojarski|bojarski": 1,
+    "singh|hermassi|singh": 1,
+    "dhokia|markov|markov": 1,
+    "trifi|mabrouk|mabrouk": 1,
+    "zaremba|tahiri|tahiri": 1,
+    "fouad|coulibaly|fouad": 1,
+    "rojas|perapekhina|perapekhina": 1,
+    "villet|mariani|mariani": 1,
+    "tran|urgesi|urgesi": 1,
+    "jade|sloboda|sloboda": 1,
+    "sesko|todoran|sesko": 1,
+    "silva|revathi|silva": 1,
+    "newman|cvetkovic|cvetkovic": 1,
+    "zajickova|pushkareva|zajickova": 1,
+    "broady|ilagan|broady": 1,
+    "petrovic|svajda|svajda": 1,
+    "lange|sambeek|lange": 1,
+    "koning|feistel|feistel": 1,
+    "hoedt|vargova|hoedt": 1,
+    "emst|moratelli|emst": 1,
+    "donski|cornea|donski": 1,
+    "verbeek|kelm|kelm": 1,
+    "orlov|chlodnicki|orlov": 1,
+    "rottgering|kim|kim": 1,
+    "gea|schoolkate|gea": 1,
+    "shymanovich|stoiana|stoiana": 1,
+    "gonzalez|perry|perry": 1,
+    "rapolu|kuramochi|rapolu": 1,
+    "mcneil|kaji|kaji": 1,
+    "chang|pareja|pareja": 1,
+    "durand|branger|durand": 1,
+    "brantmeier|mandlik|mandlik": 1,
+    "mena|gomez|mena": 1,
+    "mendez|rodriguez|mendez": 1,
+    "palosi|pavel|pavel": 1,
+    "pino|zarate|zarate": 1,
+    "estevez|cardozo|estevez": 1,
+    "grippo|dios|dios": 1,
+    "gagliardo|tischner|gagliardo": 1,
+    "gorzny|ardila|ardila": 1,
+    "manning|young|young": 1,
+    "roddick|kuzuhara|kuzuhara": 1,
+    "daavettila|lu|daavettila": 1,
+    "cislo|lakshmanan|lakshmanan": 1,
+    "pino|gallego|pino": 1,
+    "monferrer|cardozo|cardozo": 1,
+    "zarate|lima|zarate": 1,
+    "jardi|zampardo|jardi": 1,
+    "ma|gonzalez|gonzalez": 1,
+    "mulville|naito|mulville": 1,
+    "nikles|taddia|taddia": 1,
+    "chan|legout|legout": 1,
+    "jung|michelsen|michelsen": 1,
+    "mannarino|galarneau|galarneau": 1,
+    "milavsky|bu|milavsky": 1,
+    "sawangkaew|ma|sawangkaew": 1,
+    "wong|zeballos|zeballos": 1,
+    "gonzalez|garcia|gonzalez": 1,
+    "mediorreal|candiotto|candiotto": 1,
+    "murcia|babel|babel": 1,
+    "ccuno|martins|martins": 1,
+    "fullana|badia|fullana": 1,
+    "oliveira|aguirre|aguirre": 1,
+    "silva|souza|souza": 1,
+    "zhu|fitzmaurice|fitzmaurice": 1,
+    "laydner|santos|santos": 1,
+    "fullana|gonzalez|fullana": 1,
+    "garcia|murcia|garcia": 1,
+    "vertberger|salvo|salvo": 1,
+    "poling|hilaire|poling": 1,
+    "chan|xu|chan": 1,
+    "nguyen|allegre|nguyen": 1,
+    "olmos|miroshnichenko|miroshnichenko": 1,
+    "ahn|foshee|ahn": 1,
+    "nahum|kha|nahum": 1,
+    "quadre|malkin|malkin": 1,
+    "gjinaj|shcherbinina|shcherbinina": 1,
+    "gonzalez|genova|gonzalez": 1,
+    "sahdiieva|nguyen|sahdiieva": 1,
+    "webster|allegre|webster": 1,
+    "cho|pereira|pereira": 1,
+    "anthrop|lee|anthrop": 1,
+    "klaassen|dean|klaassen": 1,
+    "brumm|johnston|johnston": 1,
+    "hayen|falck|falck": 1,
+    "quan|zamora|zamora": 1,
+    "johnson|hassani|johnson": 1,
+    "sakagawa|sels|sels": 1,
+    "hashimoto|savkin|hashimoto": 1,
+    "klaassen|tripathi|klaassen": 1,
+    "inisan|tomase|tomase": 1,
+    "cocola|vukovic|vukovic": 1,
+    "maes|radovanovic|radovanovic": 1,
+    "johns|blanch|blanch": 1,
+    "cagnina|peer|peer": 1,
+    "stevic|stankovic|stankovic": 1,
+    "stefanini|rogers|stefanini": 1,
+    "vidmanova|minnen|minnen": 1,
+    "draxl|arseneault|draxl": 1,
+    "manning|roddick|manning": 1,
+    "kim|koch|koch": 1,
+    "hohmann|weber|weber": 1,
+    "strode|zamora|zamora": 1,
+    "garcia|quadre|quadre": 1,
+    "dellavedova|yamanaka|dellavedova": 1,
+    "mochizuki|jasika|jasika": 1,
+    "matsuda|ochi|matsuda": 1,
+    "myneni|schoolkate|myneni": 1
   },
   "ELO": {
     "sinner": 2180,
@@ -38598,7 +39745,13 @@
     "herrerolinana": 1654,
     "nguyentan": 1700,
     "dallavalle": 1728,
-    "dedurapalomero": 1700
+    "dedurapalomero": 1700,
+    "wsf1": 1741,
+    "wsf2": 1700,
+    "qf7": 1845,
+    "qf8": 1700,
+    "qf1": 1519,
+    "qf2": 1700
   },
   "ELO_DONE": {},
   "RANK_ELO": {
