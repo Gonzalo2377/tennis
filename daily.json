@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-11T12:00:30.620Z",
+    "updatedAt": "2026-07-11T14:00:27.280Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -640,13 +640,22 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200295972733448",
+      "date": "11 JUL",
+      "match": "T. Monteiro – P. Herbert",
+      "pick": "Gana P. Herbert",
+      "odd": 2.42,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
       "id": "opid1200295972733440",
       "date": "11 JUL",
       "match": "D. Michalski – C. Hemery",
       "pick": "Gana C. Hemery",
       "odd": 2.04,
       "book": "betfair-ex",
-      "result": "L"
+      "result": "W"
     },
     {
       "id": "opid1200357172579978",
@@ -1172,16 +1181,6 @@
       "odd": 2.16,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "2953d0eade4d5062d058efbc9e7b1458",
-      "date": "30 JUN",
-      "match": "T. Fritz – J. Draper",
-      "pick": "Gana T. Fritz",
-      "oddOrig": 1.68,
-      "odd": 1,
-      "book": "unibet_nl",
-      "result": "V"
     }
   ],
   "PENDING": [
@@ -1214,21 +1213,6 @@
       "book": "betfair_ex_eu",
       "homeName": "K. Muchova",
       "awayName": "L. Noskova"
-    },
-    {
-      "id": "opid1200295972733448",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1783761000000,
-      "date": "11 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Monteiro – P. Herbert",
-      "pickKey": "away",
-      "pickLabel": "Gana P. Herbert",
-      "odd": 2.42,
-      "book": "betfair-ex",
-      "homeName": "T. Monteiro",
-      "awayName": "P. Herbert"
     }
   ],
   "COMBO_RECORD": [
@@ -3306,6 +3290,20 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "11 JUL",
+      "match": "D. Michalski – C. Hemery",
+      "predName": "C. Hemery",
+      "prob": 53,
+      "ok": true
+    },
+    {
+      "date": "11 JUL",
+      "match": "T. Monteiro – P. Herbert",
+      "predName": "P. Herbert",
+      "prob": 53,
+      "ok": false
+    },
     {
       "date": "11 JUL",
       "match": "C. Tabur – H. Jebens",
@@ -6091,20 +6089,6 @@
       "predName": "T. Atmane",
       "prob": 54,
       "ok": true
-    },
-    {
-      "date": "15 JUN",
-      "match": "N. Basilashvili – D. Altmaier",
-      "predName": "D. Altmaier",
-      "prob": 59,
-      "ok": true
-    },
-    {
-      "date": "15 JUN",
-      "match": "B. van de Zandschulp – H. Wendelken",
-      "predName": "B. van de Zandschulp",
-      "prob": 66,
-      "ok": true
     }
   ],
   "MODEL_PENDING": [
@@ -6624,28 +6608,6 @@
       "sofa": null,
       "homeName": "WSF1",
       "awayName": "WSF2"
-    },
-    {
-      "date": "11 JUL",
-      "ts": 1783761000000,
-      "match": "T. Monteiro – P. Herbert",
-      "predHome": false,
-      "prob": 53,
-      "predName": "P. Herbert",
-      "sofa": null,
-      "homeName": "T. Monteiro",
-      "awayName": "P. Herbert"
-    },
-    {
-      "date": "11 JUL",
-      "ts": 1783764000000,
-      "match": "D. Michalski – C. Hemery",
-      "predHome": false,
-      "prob": 53,
-      "predName": "C. Hemery",
-      "sofa": null,
-      "homeName": "D. Michalski",
-      "awayName": "C. Hemery"
     },
     {
       "date": "12 JUL",
