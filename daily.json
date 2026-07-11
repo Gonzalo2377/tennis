@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-11T08:00:29.252Z",
+    "updatedAt": "2026-07-11T10:00:29.796Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -640,6 +640,24 @@
   ],
   "RECORD": [
     {
+      "id": "opid1200295972733440",
+      "date": "11 JUL",
+      "match": "D. Michalski – C. Hemery",
+      "pick": "Gana C. Hemery",
+      "odd": 2.04,
+      "book": "betfair-ex",
+      "result": "L"
+    },
+    {
+      "id": "opid1200357172579978",
+      "date": "07 JUL",
+      "match": "D. Dedura-Palomero – C. Tabur",
+      "pick": "Gana C. Tabur",
+      "odd": 2.35,
+      "book": "bwin",
+      "result": "W"
+    },
+    {
       "id": "c16a9052499cf37cf12fb2b5c275b62c",
       "date": "09 JUL",
       "match": "K. Muchova – C. Gauff",
@@ -1164,24 +1182,6 @@
       "odd": 1,
       "book": "unibet_nl",
       "result": "V"
-    },
-    {
-      "id": "2ba367a0a2de0261300b51574f55dde7",
-      "date": "30 JUN",
-      "match": "Y. Hanfmann – G. Mpetshi Perricard",
-      "pick": "Gana Y. Hanfmann",
-      "odd": 2.25,
-      "book": "unibet_nl",
-      "result": "W"
-    },
-    {
-      "id": "804a341f757c8a347d3f786fd8870aa5",
-      "date": "30 JUN",
-      "match": "U. Humbert – Z. Bergs",
-      "pick": "Gana Z. Bergs",
-      "odd": 3.25,
-      "book": "matchbook",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1199,21 +1199,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "opid1200357172579978",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1783411200000,
-      "date": "07 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "D. Dedura-Palomero – C. Tabur",
-      "pickKey": "away",
-      "pickLabel": "Gana C. Tabur",
-      "odd": 2.35,
-      "book": "bwin",
-      "homeName": "D. Dedura-Palomero",
-      "awayName": "C. Tabur"
     },
     {
       "id": "365676735c02ee96cba5ddf28a76573c",
@@ -1244,24 +1229,31 @@
       "book": "betfair-ex",
       "homeName": "T. Monteiro",
       "awayName": "P. Herbert"
-    },
-    {
-      "id": "opid1200295972733440",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1783764000000,
-      "date": "11 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "D. Michalski – C. Hemery",
-      "pickKey": "away",
-      "pickLabel": "Gana C. Hemery",
-      "odd": 2.04,
-      "book": "betfair-ex",
-      "homeName": "D. Michalski",
-      "awayName": "C. Hemery"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "07 JUL",
+      "name": "Combinada Valor",
+      "totalOdd": 4.13,
+      "result": "W",
+      "legs": [
+        {
+          "match": "N. Osaka – K. Muchova",
+          "pick": "Gana K. Muchova",
+          "odd": 2.14,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "D. Dedura-Palomero – C. Tabur",
+          "pick": "Gana C. Tabur",
+          "odd": 1.93,
+          "win": true,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "09 JUL",
       "name": "Combinada del Día",
@@ -2357,67 +2349,9 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "16 JUN",
-      "name": "Combinada del Día",
-      "totalOdd": 2.84,
-      "result": "L",
-      "legs": [
-        {
-          "match": "M. Bellucci – A. Bublik",
-          "pick": "Gana A. Bublik",
-          "odd": 1.36,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "S. Zhang – K. Muchova",
-          "pick": "Gana K. Muchova",
-          "odd": 1.4,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "K. Majchrzak – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.49,
-          "win": true,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
-    {
-      "dayId": "07 JUL·c2",
-      "date": "07 JUL",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "747770c36738cee8a1c7b74838f0d9a4",
-          "sport": "tennis_wta_wimbledon",
-          "side": "away",
-          "sofa": null,
-          "match": "N. Osaka – K. Muchova",
-          "pick": "Gana K. Muchova",
-          "odd": 2.14,
-          "homeName": "N. Osaka",
-          "awayName": "K. Muchova"
-        },
-        {
-          "id": "opid1200357172579978",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": null,
-          "match": "D. Dedura-Palomero – C. Tabur",
-          "pick": "Gana C. Tabur",
-          "odd": 1.93,
-          "homeName": "D. Dedura-Palomero",
-          "awayName": "C. Tabur"
-        }
-      ]
-    },
     {
       "dayId": "10 JUL·c1",
       "date": "10 JUL",
@@ -3372,6 +3306,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "11 JUL",
+      "match": "C. Tabur – H. Jebens",
+      "predName": "C. Tabur",
+      "prob": 91,
+      "ok": true
+    },
     {
       "date": "09 JUL",
       "match": "J. Sinner – N. Djokovic",
@@ -6164,13 +6105,6 @@
       "predName": "B. van de Zandschulp",
       "prob": 66,
       "ok": true
-    },
-    {
-      "date": "15 JUN",
-      "match": "M. Timofeeva – R. Zarazua",
-      "predName": "R. Zarazua",
-      "prob": 57,
-      "ok": true
     }
   ],
   "MODEL_PENDING": [
@@ -6690,17 +6624,6 @@
       "sofa": null,
       "homeName": "WSF1",
       "awayName": "WSF2"
-    },
-    {
-      "date": "11 JUL",
-      "ts": 1783756800000,
-      "match": "C. Tabur – H. Jebens",
-      "predHome": true,
-      "prob": 91,
-      "predName": "C. Tabur",
-      "sofa": null,
-      "homeName": "C. Tabur",
-      "awayName": "H. Jebens"
     },
     {
       "date": "11 JUL",
