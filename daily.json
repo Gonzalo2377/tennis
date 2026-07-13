@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-13T10:01:22.266Z",
+    "updatedAt": "2026-07-13T12:01:20.327Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -461,6 +461,15 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "opid1200288972773112",
+      "date": "13 JUL",
+      "match": "F. Passaro – M. Krumich",
+      "pick": "Gana M. Krumich",
+      "odd": 2.72,
+      "book": "betfair-ex",
+      "result": "W"
+    },
     {
       "id": "365676735c02ee96cba5ddf28a76573c",
       "date": "11 JUL",
@@ -994,15 +1003,6 @@
       "odd": 1,
       "book": "betfair_ex_eu",
       "result": "V"
-    },
-    {
-      "id": "6f5afd8b1147cc48f757ed20f14464d3",
-      "date": "30 JUN",
-      "match": "L. Sonego – T. Martin Etcheverry",
-      "pick": "Gana T. Martin Etcheverry",
-      "odd": 2.13,
-      "book": "onexbet",
-      "result": "L"
     }
   ],
   "PENDING": [
@@ -1020,21 +1020,6 @@
       "book": "betfair_ex_eu",
       "homeName": "D. Shapovalov",
       "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "opid1200288972773112",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1783933200000,
-      "date": "13 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Passaro – M. Krumich",
-      "pickKey": "away",
-      "pickLabel": "Gana M. Krumich",
-      "odd": 2.72,
-      "book": "betfair-ex",
-      "homeName": "F. Passaro",
-      "awayName": "M. Krumich"
     }
   ],
   "COMBO_RECORD": [
@@ -3141,6 +3126,20 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "13 JUL",
+      "match": "F. Passaro – M. Krumich",
+      "predName": "F. Passaro",
+      "prob": 55,
+      "ok": false
+    },
+    {
+      "date": "13 JUL",
+      "match": "L. Sonego – J. Schwaerzler",
+      "predName": "L. Sonego",
+      "prob": 67,
+      "ok": true
+    },
     {
       "date": "12 JUL",
       "match": "J. Sinner – A. Zverev",
@@ -5926,20 +5925,6 @@
       "predName": "F. Tiafoe",
       "prob": 69,
       "ok": true
-    },
-    {
-      "date": "15 JUN",
-      "match": "N. Bartunkova – D. Shnaider",
-      "predName": "D. Shnaider",
-      "prob": 58,
-      "ok": false
-    },
-    {
-      "date": "15 JUN",
-      "match": "R. Masarova – M. Pohánková",
-      "predName": "R. Masarova",
-      "prob": 60,
-      "ok": true
     }
   ],
   "MODEL_PENDING": [
@@ -6481,28 +6466,6 @@
       "sofa": null,
       "homeName": "E. Pridankina",
       "awayName": "G. Garcia Perez"
-    },
-    {
-      "date": "13 JUL",
-      "ts": 1783931400000,
-      "match": "L. Sonego – J. Schwaerzler",
-      "predHome": true,
-      "prob": 67,
-      "predName": "L. Sonego",
-      "sofa": null,
-      "homeName": "L. Sonego",
-      "awayName": "J. Schwaerzler"
-    },
-    {
-      "date": "13 JUL",
-      "ts": 1783933200000,
-      "match": "F. Passaro – M. Krumich",
-      "predHome": true,
-      "prob": 55,
-      "predName": "F. Passaro",
-      "sofa": null,
-      "homeName": "F. Passaro",
-      "awayName": "M. Krumich"
     }
   ],
   "LADDER": {
