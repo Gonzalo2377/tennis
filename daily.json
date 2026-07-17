@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-17T12:00:46.490Z",
+    "updatedAt": "2026-07-17T14:00:49.206Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -476,6 +476,15 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "opid1200288972661906",
+      "date": "17 JUL",
+      "match": "N. Borges – L. Darderi",
+      "pick": "Gana L. Darderi",
+      "odd": 1.9,
+      "book": "bwin",
+      "result": "W"
+    },
     {
       "id": "opid1200295972665088",
       "date": "16 JUL",
@@ -1008,15 +1017,6 @@
       "odd": 1.85,
       "book": "betfair_ex_eu",
       "result": "L"
-    },
-    {
-      "id": "e9717b439a749ca3371aff2a287da57b",
-      "date": "30 JUN",
-      "match": "V. Royer – H. Wendelken",
-      "pick": "Gana V. Royer",
-      "odd": 1.78,
-      "book": "matchbook",
-      "result": "W"
     }
   ],
   "PENDING": [
@@ -1064,24 +1064,31 @@
       "book": "betfair-ex",
       "homeName": "M. Cerundolo Juan",
       "awayName": "C. Ruud"
-    },
-    {
-      "id": "opid1200288972661906",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1784283000000,
-      "date": "17 JUL",
-      "sofa": null,
-      "pickHome": false,
-      "match": "N. Borges – L. Darderi",
-      "pickKey": "away",
-      "pickLabel": "Gana L. Darderi",
-      "odd": 1.9,
-      "book": "bwin",
-      "homeName": "N. Borges",
-      "awayName": "L. Darderi"
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "17 JUL",
+      "name": "Combinada del Día",
+      "totalOdd": 4.46,
+      "result": "L",
+      "legs": [
+        {
+          "match": "N. Borges – L. Darderi",
+          "pick": "Gana L. Darderi",
+          "odd": 1.9,
+          "win": true,
+          "voided": false
+        },
+        {
+          "match": "R. Collignon – V. Vacherot",
+          "pick": "Gana V. Vacherot",
+          "odd": 2.35,
+          "win": false,
+          "voided": false
+        }
+      ]
+    },
     {
       "date": "07 JUL",
       "name": "Combinada Valor",
@@ -2170,35 +2177,6 @@
           "voided": false
         }
       ]
-    },
-    {
-      "date": "17 JUN",
-      "name": "Combinada Valor",
-      "totalOdd": 5.08,
-      "result": "L",
-      "legs": [
-        {
-          "match": "D. Vekic – A. Eala",
-          "pick": "Gana A. Eala",
-          "odd": 2.14,
-          "win": true,
-          "voided": false
-        },
-        {
-          "match": "A. Mannarino – A. Fery",
-          "pick": "Gana A. Mannarino",
-          "odd": 1.77,
-          "win": false,
-          "voided": false
-        },
-        {
-          "match": "P. Badosa – C. Gauff",
-          "pick": "Gana C. Gauff",
-          "odd": 1.34,
-          "win": false,
-          "voided": false
-        }
-      ]
     }
   ],
   "COMBO_PENDING": [
@@ -2435,35 +2413,6 @@
           "odd": 1.23,
           "homeName": "J. Faria",
           "awayName": "C. Ruud"
-        }
-      ]
-    },
-    {
-      "dayId": "17 JUL·c1",
-      "date": "17 JUL",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1200288972661906",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": null,
-          "match": "N. Borges – L. Darderi",
-          "pick": "Gana L. Darderi",
-          "odd": 1.9,
-          "homeName": "N. Borges",
-          "awayName": "L. Darderi"
-        },
-        {
-          "id": "opid1200295972665132",
-          "sport": "tennis_oddspapi_atp",
-          "side": "away",
-          "sofa": null,
-          "match": "R. Collignon – V. Vacherot",
-          "pick": "Gana V. Vacherot",
-          "odd": 2.35,
-          "homeName": "R. Collignon",
-          "awayName": "V. Vacherot"
         }
       ]
     }
@@ -3352,6 +3301,13 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "17 JUL",
+      "match": "N. Borges – L. Darderi",
+      "predName": "L. Darderi",
+      "prob": 62,
+      "ok": true
+    },
     {
       "date": "17 JUL",
       "match": "R. Collignon – V. Vacherot",
@@ -6144,13 +6100,6 @@
       "predName": "M. Frech",
       "prob": 58,
       "ok": false
-    },
-    {
-      "date": "16 JUN",
-      "match": "K. Khachanov – E. Quinn",
-      "predName": "K. Khachanov",
-      "prob": 67,
-      "ok": false
     }
   ],
   "MODEL_PENDING": [
@@ -6758,17 +6707,6 @@
       "sofa": null,
       "homeName": "D. Vallejo Adolfo",
       "awayName": "S. Travaglia"
-    },
-    {
-      "date": "17 JUL",
-      "ts": 1784283000000,
-      "match": "N. Borges – L. Darderi",
-      "predHome": false,
-      "prob": 62,
-      "predName": "L. Darderi",
-      "sofa": null,
-      "homeName": "N. Borges",
-      "awayName": "L. Darderi"
     },
     {
       "date": "17 JUL",
