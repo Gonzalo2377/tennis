@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-07-18T22:00:40.869Z",
+    "updatedAt": "2026-07-19T07:00:40.982Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
     "matches": 2,
     "valuePicks": 1,
-    "books": 15,
+    "books": 13,
     "stale": false,
     "model": {
       "players": 3535
@@ -18,9 +18,26 @@
     }
   },
   "PLAYERS": {
-    "elenamicic": {
-      "id": "elenamicic",
-      "name": "E. Micic",
+    "varvaralepchenko": {
+      "id": "varvaralepchenko",
+      "name": "V. Lepchenko",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2765_v-lepchenko.jpg"
+    },
+    "annapetkovic": {
+      "id": "annapetkovic",
+      "name": "A. Petkovic",
       "country": "",
       "flag": "",
       "seed": "",
@@ -28,54 +45,45 @@
       "elo": null,
       "form": [
         "L",
-        "W",
+        "L",
         "W",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/10904_e-micic.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/63396_m-petkovic.jpg"
     },
-    "lindafruhvirtova": {
-      "id": "lindafruhvirtova",
-      "name": "L. Fruhvirtova",
+    "valentinaryser": {
+      "id": "valentinaryser",
+      "name": "V. Ryser",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "L",
+        "W",
+        "W",
+        "W",
+        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/446_l-fruhvirtova.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/101_v-ryser.jpg"
     },
-    "raphaelcollignon": {
-      "id": "raphaelcollignon",
-      "name": "R. Collignon",
+    "maihontama": {
+      "id": "maihontama",
+      "name": "M. Hontama",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "atp",
+      "tour": "wta",
       "elo": null,
       "form": [
-        "L",
-        "L",
+        "W",
         "L",
         "W",
-        "W"
+        "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/825_r-collignon.jpg"
-    },
-    "manuelcerundoloj": {
-      "id": "manuelcerundoloj",
-      "name": "M. Cerundolo Juan",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/21704_c-juan.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1787_m-hontama.jpg"
     }
   },
   "BOOKS": {
@@ -97,186 +105,168 @@
       "abbr": "BET",
       "color": "#0a2d6e"
     },
+    "betway": {
+      "id": "betway",
+      "name": "betway",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
     "unibet": {
       "id": "unibet",
       "name": "unibet",
       "abbr": "UNI",
-      "color": "#14805e"
+      "color": "#ffb000"
     },
     "betfred": {
       "id": "betfred",
       "name": "betfred",
       "abbr": "BET",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "betsson": {
       "id": "betsson",
       "name": "betsson",
       "abbr": "BET",
-      "color": "#d11a2a"
+      "color": "#0a6cff"
     },
     "leovegas": {
       "id": "leovegas",
       "name": "leovegas",
       "abbr": "LEO",
-      "color": "#7a4ddb"
+      "color": "#d9730d"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#d9730d"
+      "color": "#e23b2e"
     },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#0a7d3c"
-    },
-    "betfair": {
-      "id": "betfair",
-      "name": "betfair-ex",
-      "abbr": "BET",
-      "color": "#0a6cff"
+      "color": "#ffb000"
     },
     "winamax": {
       "id": "winamax",
       "name": "winamax.es",
       "abbr": "WIN",
-      "color": "#1c1c1c"
+      "color": "#d9730d"
+    },
+    "betfair": {
+      "id": "betfair",
+      "name": "betfair-ex",
+      "abbr": "BET",
+      "color": "#0a2d6e"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#d9730d"
-    },
-    "betano": {
-      "id": "betano",
-      "name": "betano",
-      "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
-      "color": "#0a2d6e"
-    },
-    "oddset": {
-      "id": "oddset",
-      "name": "oddset",
-      "abbr": "ODD",
       "color": "#14805e"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1200290772940750",
+      "id": "opid1203427272969600",
+      "tour": "wta",
+      "event": "WTA Hamburg, Germany Women Singles",
+      "round": "",
+      "surface": "Tierra",
+      "time": "10:00",
+      "day": "19 JUL",
+      "home": "varvaralepchenko",
+      "away": "annapetkovic",
+      "odds": {
+        "home": {
+          "bwin": 1.07,
+          "1xbet": 1.055,
+          "bet365": 1.06,
+          "betway": 1.083,
+          "unibet": 1.07,
+          "betfred": 1.071,
+          "betsson": 1.06,
+          "leovegas": 1.07,
+          "pinnacle": 1.09,
+          "codere": 1.07,
+          "winamax": 1.06
+        },
+        "away": {
+          "bwin": 7,
+          "1xbet": 7.2,
+          "bet365": 10,
+          "betway": 8,
+          "unibet": 7.5,
+          "betfred": 7.5,
+          "betsson": 7.4,
+          "leovegas": 7.5,
+          "pinnacle": 7.7,
+          "codere": 7,
+          "winamax": 8.5
+        }
+      },
+      "model": {
+        "home": 0.6635740980412955,
+        "away": 0.3364259019587045,
+        "fromModel": true,
+        "eloH": 1681,
+        "eloA": 1563,
+        "surface": "clay"
+      },
+      "ts": 1784448000000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200290772965438",
       "tour": "wta",
       "event": "WTA Prague, Czech Republic Women Singles",
       "round": "",
       "surface": "Dura",
       "time": "11:00",
-      "day": "18 JUL",
-      "home": "elenamicic",
-      "away": "lindafruhvirtova",
+      "day": "19 JUL",
+      "home": "valentinaryser",
+      "away": "maihontama",
       "odds": {
         "home": {
-          "bwin": 3.2,
-          "1xbet": 3.485,
-          "bet365": 3.25,
-          "unibet": 3.6,
-          "betfred": 3.5,
-          "betsson": 3.35,
-          "leovegas": 3.6,
-          "pinnacle": 3.62,
-          "codere": 3.2,
-          "betfair": 3.95,
-          "winamax": 3.15,
-          "williamhill": 3.8
+          "bwin": 2.4,
+          "1xbet": 2.302,
+          "bet365": 2.2,
+          "betway": 2.5,
+          "unibet": 2.25,
+          "betfred": 2.375,
+          "betsson": 2.31,
+          "leovegas": 2.25,
+          "pinnacle": 2.58,
+          "codere": 2.25,
+          "betfair": 2.6,
+          "winamax": 2.35,
+          "williamhill": 2.5
         },
         "away": {
-          "bwin": 1.36,
-          "1xbet": 1.26,
-          "bet365": 1.33,
-          "unibet": 1.27,
-          "betfred": 1.286,
-          "betsson": 1.28,
-          "leovegas": 1.27,
-          "pinnacle": 1.311,
-          "codere": 1.3,
-          "betfair": 1.33,
-          "winamax": 1.36,
-          "williamhill": 1.25
+          "bwin": 1.55,
+          "1xbet": 1.55,
+          "bet365": 1.61,
+          "betway": 1.55,
+          "unibet": 1.61,
+          "betfred": 1.571,
+          "betsson": 1.55,
+          "leovegas": 1.61,
+          "pinnacle": 1.537,
+          "codere": 1.53,
+          "betfair": 1.6,
+          "winamax": 1.58,
+          "williamhill": 1.5
         }
       },
       "model": {
-        "home": 0.39096739659576046,
-        "away": 0.6090326034042395,
+        "home": 0.49280491829094863,
+        "away": 0.5071950817090514,
         "fromModel": true,
-        "eloH": 1623,
-        "eloA": 1700,
+        "eloH": 1656,
+        "eloA": 1661,
         "surface": "hard"
       },
-      "ts": 1784365200000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200295972665092",
-      "tour": "atp",
-      "event": "ATP Gstaad, Switzerland Men Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "11:00",
-      "day": "18 JUL",
-      "home": "raphaelcollignon",
-      "away": "manuelcerundoloj",
-      "odds": {
-        "home": {
-          "bwin": 1.7,
-          "1xbet": 1.71,
-          "bet365": 1.61,
-          "betano": 1.72,
-          "betway": 1.65,
-          "oddset": 1.62,
-          "unibet": 1.7,
-          "betfred": 1.667,
-          "betsson": 1.68,
-          "leovegas": 1.68,
-          "pinnacle": 1.775,
-          "codere": 1.65,
-          "betfair": 1.8,
-          "winamax": 1.74,
-          "williamhill": 1.625
-        },
-        "away": {
-          "bwin": 2.25,
-          "1xbet": 2.141,
-          "bet365": 2.3,
-          "betano": 2.12,
-          "betway": 2.2,
-          "oddset": 2.25,
-          "unibet": 2.17,
-          "betfred": 2.2,
-          "betsson": 2.16,
-          "leovegas": 2.17,
-          "pinnacle": 2.17,
-          "codere": 2.2,
-          "betfair": 2.22,
-          "winamax": 2.3,
-          "williamhill": 2.25
-        }
-      },
-      "model": {
-        "home": 0.3236983305072631,
-        "away": 0.6763016694927368,
-        "fromModel": true,
-        "eloH": 1781,
-        "eloA": 1909,
-        "surface": "clay"
-      },
-      "ts": 1784365200000,
+      "ts": 1784451600000,
       "sofa": null
     }
   ],
@@ -870,6 +860,21 @@
       "book": "betfair-ex",
       "homeName": "M. Cerundolo Juan",
       "awayName": "C. Ruud"
+    },
+    {
+      "id": "opid1200290772965438",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1784451600000,
+      "date": "19 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "V. Ryser – M. Hontama",
+      "pickKey": "home",
+      "pickLabel": "Gana V. Ryser",
+      "odd": 2.6,
+      "book": "betfair-ex",
+      "homeName": "V. Ryser",
+      "awayName": "M. Hontama"
     }
   ],
   "COMBO_RECORD": [
@@ -6535,6 +6540,28 @@
       "sofa": null,
       "homeName": "R. Collignon",
       "awayName": "M. Cerundolo Juan"
+    },
+    {
+      "date": "19 JUL",
+      "ts": 1784448000000,
+      "match": "V. Lepchenko – A. Petkovic",
+      "predHome": true,
+      "prob": 66,
+      "predName": "V. Lepchenko",
+      "sofa": null,
+      "homeName": "V. Lepchenko",
+      "awayName": "A. Petkovic"
+    },
+    {
+      "date": "19 JUL",
+      "ts": 1784451600000,
+      "match": "V. Ryser – M. Hontama",
+      "predHome": false,
+      "prob": 51,
+      "predName": "M. Hontama",
+      "sofa": null,
+      "homeName": "V. Ryser",
+      "awayName": "M. Hontama"
     }
   ],
   "LADDER": {
