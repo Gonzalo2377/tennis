@@ -1,12 +1,12 @@
 {
   "meta": {
-    "updatedAt": "2026-07-20T22:01:01.892Z",
+    "updatedAt": "2026-07-21T07:01:07.524Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 4,
-    "valuePicks": 1,
+    "matches": 3,
+    "valuePicks": 3,
     "books": 14,
     "stale": false,
     "model": {
@@ -18,19 +18,26 @@
     }
   },
   "PLAYERS": {
-    "sherifahmedabdel": {
-      "id": "sherifahmedabdel",
-      "name": "S. Ahmed Abdelaziz Maiar",
+    "elenapridankina": {
+      "id": "elenapridankina",
+      "name": "E. Pridankina",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": []
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9399_e-pridankina.jpg"
     },
-    "paulabadosa": {
-      "id": "paulabadosa",
-      "name": "P. Badosa",
+    "pannaudvardy": {
+      "id": "pannaudvardy",
+      "name": "P. Udvardy",
       "country": "",
       "flag": "",
       "seed": "",
@@ -41,99 +48,76 @@
         "W",
         "W",
         "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1141_p-udvardy.jpg"
+    },
+    "nikolabartunkova": {
+      "id": "nikolabartunkova",
+      "name": "N. Bartunkova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9196_n-bartunkova.jpg"
+    },
+    "yueyuan": {
+      "id": "yueyuan",
+      "name": "Y. Yuan",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/101758_y-yuan.jpg"
+    },
+    "darjasemenistaja": {
+      "id": "darjasemenistaja",
+      "name": "D. Semenistaja",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/157_d-semenistaja.jpg"
+    },
+    "sinjakraus": {
+      "id": "sinjakraus",
+      "name": "S. Kraus",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2178_p-badosa.jpg"
-    },
-    "jessicapieri": {
-      "id": "jessicapieri",
-      "name": "J. Pieri",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/20697_s-pieri.jpg"
-    },
-    "mariacarle": {
-      "id": "mariacarle",
-      "name": "M. Carle",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/187_l-carle.jpg"
-    },
-    "juleniemeier": {
-      "id": "juleniemeier",
-      "name": "J. Niemeier",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/471_j-niemeier.jpg"
-    },
-    "elenamalygina": {
-      "id": "elenamalygina",
-      "name": "E. Malygina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1994_e-malygina.jpg"
-    },
-    "alexandremuller": {
-      "id": "alexandremuller",
-      "name": "A. Muller",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/374_a-muller.jpg"
-    },
-    "marianonavone": {
-      "id": "marianonavone",
-      "name": "M. Navone",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/949_m-navone.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1424_s-kraus.jpg"
     }
   },
   "BOOKS": {
@@ -155,306 +139,241 @@
       "abbr": "BET",
       "color": "#0a2d6e"
     },
+    "betano": {
+      "id": "betano",
+      "name": "betano",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
     "betway": {
       "id": "betway",
       "name": "betway",
       "abbr": "BET",
-      "color": "#14805e"
+      "color": "#ffb000"
     },
     "oddset": {
       "id": "oddset",
       "name": "oddset",
       "abbr": "ODD",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "unibet": {
       "id": "unibet",
       "name": "unibet",
       "abbr": "UNI",
-      "color": "#d11a2a"
+      "color": "#0a6cff"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "betsson",
+      "abbr": "BET",
+      "color": "#1c1c1c"
     },
     "leovegas": {
       "id": "leovegas",
       "name": "leovegas",
       "abbr": "LEO",
-      "color": "#d9730d"
+      "color": "#0a7d3c"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#e23b2e"
+      "color": "#0a2d6e"
     },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#ffb000"
+      "color": "#0a6cff"
     },
     "betfair": {
       "id": "betfair",
       "name": "betfair-ex",
       "abbr": "BET",
-      "color": "#d9730d"
+      "color": "#0a2d6e"
     },
     "winamax": {
       "id": "winamax",
       "name": "winamax.de",
       "abbr": "WIN",
-      "color": "#e23b2e"
+      "color": "#14805e"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#14805e"
-    },
-    "betfred": {
-      "id": "betfred",
-      "name": "betfred",
-      "abbr": "BET",
-      "color": "#d11a2a"
-    },
-    "betano": {
-      "id": "betano",
-      "name": "betano",
-      "abbr": "BET",
-      "color": "#0a6cff"
+      "color": "#1c1c1c"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1204336772668626",
-      "tour": "wta",
-      "event": "WTA Iasi, Romania Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "10:00",
-      "day": "20 JUL",
-      "home": "sherifahmedabdel",
-      "away": "paulabadosa",
-      "odds": {
-        "home": {
-          "bwin": 2.65,
-          "1xbet": 2.512,
-          "bet365": 2.62,
-          "betway": 2.6,
-          "oddset": 2.6,
-          "unibet": 2.48,
-          "leovegas": 2.48,
-          "pinnacle": 2.68,
-          "codere": 2.55,
-          "betfair": 2.8,
-          "winamax": 2.75,
-          "williamhill": 2.65
-        },
-        "away": {
-          "bwin": 1.5,
-          "1xbet": 1.53,
-          "bet365": 1.5,
-          "betway": 1.5,
-          "oddset": 1.5,
-          "unibet": 1.54,
-          "leovegas": 1.54,
-          "pinnacle": 1.537,
-          "codere": 1.5,
-          "betfair": 1.54,
-          "winamax": 1.52,
-          "williamhill": 1.455
-        }
-      },
-      "model": {
-        "home": 0.5629847281035958,
-        "away": 0.4370152718964042,
-        "fromModel": true,
-        "eloH": 1792,
-        "eloA": 1748,
-        "surface": "hard"
-      },
-      "ts": 1784534400000,
-      "sofa": null
-    },
-    {
-      "id": "opid1203427272985602",
+      "id": "opid1203427273010398",
       "tour": "wta",
       "event": "WTA Hamburg, Germany Women Singles",
       "round": "",
       "surface": "Tierra",
       "time": "10:00",
-      "day": "20 JUL",
-      "home": "jessicapieri",
-      "away": "mariacarle",
+      "day": "21 JUL",
+      "home": "elenapridankina",
+      "away": "pannaudvardy",
       "odds": {
         "home": {
-          "bwin": 4.75,
-          "1xbet": 5.05,
-          "bet365": 4.33,
-          "betway": 5.5,
-          "unibet": 5.5,
-          "leovegas": 5.5,
-          "pinnacle": 5.69,
-          "codere": 4.4,
-          "betfair": 6.4,
-          "winamax": 4.7,
-          "williamhill": 5
-        },
-        "away": {
-          "bwin": 1.18,
-          "1xbet": 1.125,
-          "bet365": 1.2,
-          "betway": 1.154,
-          "unibet": 1.13,
-          "leovegas": 1.13,
-          "pinnacle": 1.154,
-          "codere": 1.14,
-          "betfair": 1.17,
-          "winamax": 1.18,
-          "williamhill": 1.143
-        }
-      },
-      "noModel": true,
-      "ts": 1784534400000,
-      "sofa": null
-    },
-    {
-      "id": "opid1203427272985576",
-      "tour": "wta",
-      "event": "WTA Hamburg, Germany Women Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "10:00",
-      "day": "20 JUL",
-      "home": "juleniemeier",
-      "away": "elenamalygina",
-      "odds": {
-        "home": {
-          "bwin": 1.62,
-          "1xbet": 1.63,
-          "bet365": 1.61,
-          "betway": 1.7,
-          "unibet": 1.68,
-          "betfred": 1.667,
-          "leovegas": 1.68,
-          "pinnacle": 1.699,
-          "codere": 1.65,
-          "betfair": 1.72,
-          "winamax": 1.64,
-          "williamhill": 1.667
-        },
-        "away": {
-          "bwin": 2.2,
-          "1xbet": 2.146,
-          "bet365": 2.2,
-          "betway": 2.2,
-          "unibet": 2.12,
-          "betfred": 2.2,
-          "leovegas": 2.12,
-          "pinnacle": 2.23,
-          "codere": 2.1,
-          "betfair": 2.36,
+          "bwin": 2.18,
+          "1xbet": 2.227,
+          "bet365": 2.1,
+          "betano": 2.25,
+          "betway": 2.3,
+          "oddset": 2.18,
+          "unibet": 2.25,
+          "betsson": 2.18,
+          "leovegas": 2.25,
+          "pinnacle": 2.39,
+          "codere": 2.2,
+          "betfair": 2.42,
           "winamax": 2.2,
-          "williamhill": 2.2
+          "williamhill": 2.25
+        },
+        "away": {
+          "bwin": 1.78,
+          "1xbet": 1.66,
+          "bet365": 1.72,
+          "betano": 1.65,
+          "betway": 1.65,
+          "oddset": 1.65,
+          "unibet": 1.66,
+          "betsson": 1.66,
+          "leovegas": 1.64,
+          "pinnacle": 1.641,
+          "codere": 1.65,
+          "betfair": 1.68,
+          "winamax": 1.74,
+          "williamhill": 1.625
         }
       },
       "model": {
-        "home": 0.4285368825916186,
-        "away": 0.5714631174083814,
+        "home": 0.30265492141014677,
+        "away": 0.6973450785898532,
         "fromModel": true,
-        "eloH": 1568,
-        "eloA": 1618,
+        "eloH": 1669,
+        "eloA": 1814,
         "surface": "clay"
       },
-      "ts": 1784534400000,
+      "ts": 1784620800000,
       "sofa": null
     },
     {
-      "id": "opid1200315172960890",
-      "tour": "atp",
-      "event": "ATP Kitzbuhel, Austria Men Singles",
+      "id": "opid1200290772969400",
+      "tour": "wta",
+      "event": "WTA Prague, Czech Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "21 JUL",
+      "home": "nikolabartunkova",
+      "away": "yueyuan",
+      "odds": {
+        "home": {
+          "bwin": 1.42,
+          "1xbet": 1.32,
+          "bet365": 1.33,
+          "betano": 1.32,
+          "betway": 1.3,
+          "oddset": 1.3,
+          "unibet": 1.32,
+          "betsson": 1.32,
+          "leovegas": 1.3,
+          "pinnacle": 1.322,
+          "codere": 1.35,
+          "betfair": 1.33,
+          "winamax": 1.36,
+          "williamhill": 1.333
+        },
+        "away": {
+          "bwin": 3.4,
+          "1xbet": 3.405,
+          "bet365": 3.4,
+          "betano": 3.45,
+          "betway": 3.5,
+          "oddset": 3.4,
+          "unibet": 3.45,
+          "betsson": 3.3,
+          "leovegas": 3.45,
+          "pinnacle": 3.66,
+          "codere": 3.2,
+          "betfair": 3.9,
+          "winamax": 3.5,
+          "williamhill": 3.1
+        }
+      },
+      "model": {
+        "home": 0.6035363185261781,
+        "away": 0.39646368147382194,
+        "fromModel": true,
+        "eloH": 1777,
+        "eloA": 1704,
+        "surface": "hard"
+      },
+      "ts": 1784624400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1203427272982470",
+      "tour": "wta",
+      "event": "WTA Hamburg, Germany Women Singles",
       "round": "",
       "surface": "Tierra",
       "time": "11:00",
-      "day": "20 JUL",
-      "home": "alexandremuller",
-      "away": "marianonavone",
+      "day": "21 JUL",
+      "home": "darjasemenistaja",
+      "away": "sinjakraus",
       "odds": {
         "home": {
-          "bwin": 5,
-          "1xbet": 5.22,
-          "bet365": 5,
-          "betano": 4.8,
-          "betway": 4.75,
-          "oddset": 5,
-          "unibet": 5.2,
-          "betfred": 5,
-          "leovegas": 4.8,
-          "pinnacle": 5.44,
-          "codere": 4.8,
-          "betfair": 6,
-          "winamax": 5.3,
-          "williamhill": 4.8
+          "bwin": 3.4,
+          "1xbet": 3.28,
+          "bet365": 3.5,
+          "betano": 3.45,
+          "betway": 3.5,
+          "oddset": 3.4,
+          "unibet": 3.35,
+          "betsson": 3.35,
+          "leovegas": 3.3,
+          "pinnacle": 3.83,
+          "codere": 3.45,
+          "betfair": 3.95,
+          "winamax": 3.65,
+          "williamhill": 3.4
         },
         "away": {
-          "bwin": 1.19,
-          "1xbet": 1.191,
-          "bet365": 1.16,
-          "betano": 1.19,
-          "betway": 1.182,
-          "oddset": 1.16,
-          "unibet": 1.18,
-          "betfred": 1.167,
-          "leovegas": 1.18,
-          "pinnacle": 1.183,
-          "codere": 1.17,
-          "betfair": 1.19,
-          "winamax": 1.18,
-          "williamhill": 1.167
+          "bwin": 1.35,
+          "1xbet": 1.34,
+          "bet365": 1.3,
+          "betano": 1.31,
+          "betway": 1.3,
+          "oddset": 1.3,
+          "unibet": 1.34,
+          "betsson": 1.31,
+          "leovegas": 1.34,
+          "pinnacle": 1.301,
+          "codere": 1.3,
+          "betfair": 1.33,
+          "winamax": 1.35,
+          "williamhill": 1.294
         }
       },
       "model": {
-        "home": 0.33258157812677697,
-        "away": 0.6674184218732231,
+        "home": 0.422907524174671,
+        "away": 0.5770924758253291,
         "fromModel": true,
-        "eloH": 1695,
-        "eloA": 1816,
+        "eloH": 1709,
+        "eloA": 1763,
         "surface": "clay"
       },
-      "ts": 1784538000000,
+      "ts": 1784624400000,
       "sofa": null
     }
   ],
-  "COMBOS": [
-    {
-      "id": "c1",
-      "name": "Combinada del Día",
-      "conf": 32,
-      "book": "betfair-ex",
-      "legs": [
-        {
-          "id": "opid1203427272985576",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1784534400000,
-          "side": "away",
-          "sofa": null,
-          "match": "J. Niemeier – E. Malygina",
-          "pick": "Gana E. Malygina",
-          "odd": 2.36,
-          "book": "betfair-ex"
-        },
-        {
-          "id": "opid1204336772668626",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1784534400000,
-          "side": "home",
-          "sofa": null,
-          "match": "S. Ahmed Abdelaziz Maiar – P. Badosa",
-          "pick": "Gana S. Ahmed Abdelaziz Maiar",
-          "odd": 2.8,
-          "book": "betfair-ex"
-        }
-      ]
-    }
-  ],
+  "COMBOS": [],
   "RECORD": [
     {
       "id": "opid1200290772940750",
@@ -1001,21 +920,6 @@
   ],
   "PENDING": [
     {
-      "id": "2af6193491a1eaeeba23d9b48c069d29",
-      "sport": "tennis_atp_wimbledon",
-      "ts": 1782727200000,
-      "date": "29 JUN",
-      "sofa": null,
-      "pickHome": true,
-      "match": "D. Shapovalov – P. Carreno Busta",
-      "pickKey": "home",
-      "pickLabel": "Gana D. Shapovalov",
-      "odd": 1.41,
-      "book": "betfair_ex_eu",
-      "homeName": "D. Shapovalov",
-      "awayName": "P. Carreno Busta"
-    },
-    {
       "id": "opid1200295972665090",
       "sport": "tennis_oddspapi_atp",
       "ts": 1784190600000,
@@ -1074,6 +978,51 @@
       "book": "betfair-ex",
       "homeName": "J. Niemeier",
       "awayName": "E. Malygina"
+    },
+    {
+      "id": "opid1203427272982470",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1784624400000,
+      "date": "21 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "D. Semenistaja – S. Kraus",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Semenistaja",
+      "odd": 3.95,
+      "book": "betfair-ex",
+      "homeName": "D. Semenistaja",
+      "awayName": "S. Kraus"
+    },
+    {
+      "id": "opid1200290772969400",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1784624400000,
+      "date": "21 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "N. Bartunkova – Y. Yuan",
+      "pickKey": "away",
+      "pickLabel": "Gana Y. Yuan",
+      "odd": 3.9,
+      "book": "betfair-ex",
+      "homeName": "N. Bartunkova",
+      "awayName": "Y. Yuan"
+    },
+    {
+      "id": "opid1203427273010398",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1784620800000,
+      "date": "21 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "E. Pridankina – P. Udvardy",
+      "pickKey": "away",
+      "pickLabel": "Gana P. Udvardy",
+      "odd": 1.78,
+      "book": "bwin.dk",
+      "homeName": "E. Pridankina",
+      "awayName": "P. Udvardy"
     }
   ],
   "COMBO_RECORD": [
@@ -2458,6 +2407,72 @@
   ],
   "ARB_RECORD": [
     {
+      "date": "21 JUL",
+      "match": "D. Semenistaja – S. Kraus",
+      "marginPct": 0.61,
+      "profit": 0.61,
+      "ts": 1784624400000,
+      "homeName": "D. Semenistaja",
+      "awayName": "S. Kraus",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana D. Semenistaja",
+          "odd": 3.95,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana S. Kraus",
+          "odd": 1.35,
+          "book": "bwin"
+        }
+      ]
+    },
+    {
+      "date": "21 JUL",
+      "match": "N. Bartunkova – Y. Yuan",
+      "marginPct": 3.94,
+      "profit": 4.1,
+      "ts": 1784624400000,
+      "homeName": "N. Bartunkova",
+      "awayName": "Y. Yuan",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana N. Bartunkova",
+          "odd": 1.42,
+          "book": "bwin.dk"
+        },
+        {
+          "pick": "Gana Y. Yuan",
+          "odd": 3.9,
+          "book": "betfair-ex"
+        }
+      ]
+    },
+    {
+      "date": "21 JUL",
+      "match": "E. Pridankina – P. Udvardy",
+      "marginPct": 2.5,
+      "profit": 2.56,
+      "ts": 1784620800000,
+      "homeName": "E. Pridankina",
+      "awayName": "P. Udvardy",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana E. Pridankina",
+          "odd": 2.42,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana P. Udvardy",
+          "odd": 1.78,
+          "book": "bwin.dk"
+        }
+      ]
+    },
+    {
       "date": "20 JUL",
       "match": "J. Pieri – M. Carle",
       "marginPct": 1.04,
@@ -3268,72 +3283,6 @@
           "pick": "Gana J. Faria",
           "odd": 2.82,
           "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "02 JUL",
-      "match": "T. Fritz – P. Kypson",
-      "marginPct": 0.83,
-      "profit": 0.83,
-      "ts": 1782986400000,
-      "homeName": "T. Fritz",
-      "awayName": "P. Kypson",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana T. Fritz",
-          "odd": 1.07,
-          "book": "matchbook"
-        },
-        {
-          "pick": "Gana P. Kypson",
-          "odd": 17.5,
-          "book": "onexbet"
-        }
-      ]
-    },
-    {
-      "date": "02 JUL",
-      "match": "G. Diallo – L. Sonego",
-      "marginPct": 0.02,
-      "profit": 0.02,
-      "ts": 1782986400000,
-      "homeName": "G. Diallo",
-      "awayName": "L. Sonego",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana G. Diallo",
-          "odd": 1.91,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "pick": "Gana L. Sonego",
-          "odd": 2.1,
-          "book": "williamhill"
-        }
-      ]
-    },
-    {
-      "date": "01 JUL",
-      "match": "K. Khachanov – Y. Hanfmann",
-      "marginPct": 0.33,
-      "profit": 0.33,
-      "ts": 1782982800000,
-      "homeName": "K. Khachanov",
-      "awayName": "Y. Hanfmann",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana K. Khachanov",
-          "odd": 1.51,
-          "book": "matchbook"
-        },
-        {
-          "pick": "Gana Y. Hanfmann",
-          "odd": 2.99,
-          "book": "onexbet"
         }
       ]
     }
@@ -6834,6 +6783,39 @@
       "sofa": null,
       "homeName": "A. Muller",
       "awayName": "M. Navone"
+    },
+    {
+      "date": "21 JUL",
+      "ts": 1784620800000,
+      "match": "E. Pridankina – P. Udvardy",
+      "predHome": false,
+      "prob": 70,
+      "predName": "P. Udvardy",
+      "sofa": null,
+      "homeName": "E. Pridankina",
+      "awayName": "P. Udvardy"
+    },
+    {
+      "date": "21 JUL",
+      "ts": 1784624400000,
+      "match": "N. Bartunkova – Y. Yuan",
+      "predHome": true,
+      "prob": 60,
+      "predName": "N. Bartunkova",
+      "sofa": null,
+      "homeName": "N. Bartunkova",
+      "awayName": "Y. Yuan"
+    },
+    {
+      "date": "21 JUL",
+      "ts": 1784624400000,
+      "match": "D. Semenistaja – S. Kraus",
+      "predHome": false,
+      "prob": 58,
+      "predName": "S. Kraus",
+      "sofa": null,
+      "homeName": "D. Semenistaja",
+      "awayName": "S. Kraus"
     }
   ],
   "LADDER": {
