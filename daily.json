@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-07-21T22:01:02.149Z",
+    "updatedAt": "2026-07-22T07:01:02.446Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 3,
-    "valuePicks": 3,
-    "books": 14,
+    "matches": 2,
+    "valuePicks": 1,
+    "books": 15,
     "stale": false,
     "model": {
       "players": 3536
@@ -18,106 +18,66 @@
     }
   },
   "PLAYERS": {
-    "elenapridankina": {
-      "id": "elenapridankina",
-      "name": "E. Pridankina",
+    "mariacarle": {
+      "id": "mariacarle",
+      "name": "M. Carle",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9399_e-pridankina.jpg"
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/187_l-carle.jpg"
     },
-    "pannaudvardy": {
-      "id": "pannaudvardy",
-      "name": "P. Udvardy",
+    "anhelinakalinina": {
+      "id": "anhelinakalinina",
+      "name": "A. Kalinina",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1141_p-udvardy.jpg"
-    },
-    "nikolabartunkova": {
-      "id": "nikolabartunkova",
-      "name": "N. Bartunkova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9196_n-bartunkova.jpg"
-    },
-    "yueyuan": {
-      "id": "yueyuan",
-      "name": "Y. Yuan",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
         "W",
         "L",
         "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101758_y-yuan.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2393_a-kalinina.jpg"
     },
-    "darjasemenistaja": {
-      "id": "darjasemenistaja",
-      "name": "D. Semenistaja",
+    "sebastianbaez": {
+      "id": "sebastianbaez",
+      "name": "S. Baez",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
-        "L",
         "W",
         "L",
-        "L",
+        "W",
+        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/157_d-semenistaja.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg"
     },
-    "sinjakraus": {
-      "id": "sinjakraus",
-      "name": "S. Kraus",
+    "arthurrinderknec": {
+      "id": "arthurrinderknec",
+      "name": "A. Rinderknech",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
-        "W",
-        "W",
         "L",
-        "W"
+        "L",
+        "W",
+        "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1424_s-kraus.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1902_a-rinderknech.jpg"
     }
   },
   "BOOKS": {
@@ -163,23 +123,29 @@
       "abbr": "UNI",
       "color": "#0a6cff"
     },
+    "betfred": {
+      "id": "betfred",
+      "name": "betfred",
+      "abbr": "BET",
+      "color": "#1c1c1c"
+    },
     "betsson": {
       "id": "betsson",
       "name": "betsson",
       "abbr": "BET",
-      "color": "#1c1c1c"
+      "color": "#7a4ddb"
     },
     "leovegas": {
       "id": "leovegas",
       "name": "leovegas",
       "abbr": "LEO",
-      "color": "#0a7d3c"
+      "color": "#0a2d6e"
     },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#0a2d6e"
+      "color": "#14805e"
     },
     "codere": {
       "id": "codere",
@@ -203,173 +169,122 @@
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#1c1c1c"
+      "color": "#0a6cff"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1203427273010398",
+      "id": "opid1203427272829936",
       "tour": "wta",
       "event": "WTA Hamburg, Germany Women Singles",
       "round": "",
       "surface": "Tierra",
       "time": "10:00",
-      "day": "21 JUL",
-      "home": "elenapridankina",
-      "away": "pannaudvardy",
+      "day": "22 JUL",
+      "home": "mariacarle",
+      "away": "anhelinakalinina",
       "odds": {
         "home": {
-          "bwin": 2.18,
-          "1xbet": 2.227,
-          "bet365": 2.1,
-          "betano": 2.25,
-          "betway": 2.3,
-          "oddset": 2.18,
-          "unibet": 2.25,
-          "betsson": 2.18,
-          "leovegas": 2.25,
-          "pinnacle": 2.39,
-          "codere": 2.2,
-          "betfair": 2.42,
-          "winamax": 2.2,
-          "williamhill": 2.25
+          "bwin": 4.75,
+          "1xbet": 4.465,
+          "bet365": 5,
+          "betano": 5,
+          "betway": 5,
+          "oddset": 4.75,
+          "unibet": 4.8,
+          "betfred": 4.5,
+          "betsson": 4.8,
+          "leovegas": 4.8,
+          "pinnacle": 5.51,
+          "codere": 4.5,
+          "betfair": 5.6,
+          "winamax": 5.2,
+          "williamhill": 4.8
         },
         "away": {
-          "bwin": 1.78,
-          "1xbet": 1.66,
-          "bet365": 1.72,
-          "betano": 1.65,
-          "betway": 1.65,
-          "oddset": 1.65,
-          "unibet": 1.66,
-          "betsson": 1.66,
-          "leovegas": 1.64,
-          "pinnacle": 1.641,
-          "codere": 1.65,
-          "betfair": 1.68,
-          "winamax": 1.74,
-          "williamhill": 1.625
+          "bwin": 1.18,
+          "1xbet": 1.207,
+          "bet365": 1.16,
+          "betano": 1.18,
+          "betway": 1.182,
+          "oddset": 1.18,
+          "unibet": 1.18,
+          "betfred": 1.182,
+          "betsson": 1.17,
+          "leovegas": 1.18,
+          "pinnacle": 1.18,
+          "codere": 1.2,
+          "betfair": 1.21,
+          "winamax": 1.23,
+          "williamhill": 1.167
         }
       },
       "model": {
-        "home": 0.30265492141014677,
-        "away": 0.6973450785898532,
+        "home": 0.6750402010402987,
+        "away": 0.3249597989597013,
         "fromModel": true,
-        "eloH": 1669,
-        "eloA": 1814,
+        "eloH": 1904,
+        "eloA": 1777,
         "surface": "clay"
       },
-      "ts": 1784620800000,
+      "ts": 1784707200000,
       "sofa": null
     },
     {
-      "id": "opid1200290772969400",
-      "tour": "wta",
-      "event": "WTA Prague, Czech Republic Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "21 JUL",
-      "home": "nikolabartunkova",
-      "away": "yueyuan",
-      "odds": {
-        "home": {
-          "bwin": 1.42,
-          "1xbet": 1.32,
-          "bet365": 1.33,
-          "betano": 1.32,
-          "betway": 1.3,
-          "oddset": 1.3,
-          "unibet": 1.32,
-          "betsson": 1.32,
-          "leovegas": 1.3,
-          "pinnacle": 1.322,
-          "codere": 1.35,
-          "betfair": 1.33,
-          "winamax": 1.36,
-          "williamhill": 1.333
-        },
-        "away": {
-          "bwin": 3.4,
-          "1xbet": 3.405,
-          "bet365": 3.4,
-          "betano": 3.45,
-          "betway": 3.5,
-          "oddset": 3.4,
-          "unibet": 3.45,
-          "betsson": 3.3,
-          "leovegas": 3.45,
-          "pinnacle": 3.66,
-          "codere": 3.2,
-          "betfair": 3.9,
-          "winamax": 3.5,
-          "williamhill": 3.1
-        }
-      },
-      "model": {
-        "home": 0.6035363185261781,
-        "away": 0.39646368147382194,
-        "fromModel": true,
-        "eloH": 1777,
-        "eloA": 1704,
-        "surface": "hard"
-      },
-      "ts": 1784624400000,
-      "sofa": null
-    },
-    {
-      "id": "opid1203427272982470",
-      "tour": "wta",
-      "event": "WTA Hamburg, Germany Women Singles",
+      "id": "opid1200315172827318",
+      "tour": "atp",
+      "event": "ATP Kitzbuhel, Austria Men Singles",
       "round": "",
       "surface": "Tierra",
       "time": "11:00",
-      "day": "21 JUL",
-      "home": "darjasemenistaja",
-      "away": "sinjakraus",
+      "day": "22 JUL",
+      "home": "sebastianbaez",
+      "away": "arthurrinderknec",
       "odds": {
         "home": {
-          "bwin": 3.4,
-          "1xbet": 3.28,
-          "bet365": 3.5,
-          "betano": 3.45,
-          "betway": 3.5,
-          "oddset": 3.4,
-          "unibet": 3.35,
-          "betsson": 3.35,
-          "leovegas": 3.3,
-          "pinnacle": 3.83,
-          "codere": 3.45,
-          "betfair": 3.95,
-          "winamax": 3.65,
-          "williamhill": 3.4
+          "bwin": 1.9,
+          "1xbet": 1.811,
+          "bet365": 1.8,
+          "betano": 1.87,
+          "betway": 1.85,
+          "oddset": 1.9,
+          "unibet": 1.87,
+          "betfred": 1.909,
+          "betsson": 1.84,
+          "leovegas": 1.87,
+          "pinnacle": 1.917,
+          "codere": 1.85,
+          "betfair": 1.95,
+          "winamax": 1.88,
+          "williamhill": 1.8
         },
         "away": {
-          "bwin": 1.35,
-          "1xbet": 1.34,
-          "bet365": 1.3,
-          "betano": 1.31,
-          "betway": 1.3,
-          "oddset": 1.3,
-          "unibet": 1.34,
-          "betsson": 1.31,
-          "leovegas": 1.34,
-          "pinnacle": 1.301,
-          "codere": 1.3,
-          "betfair": 1.33,
-          "winamax": 1.35,
-          "williamhill": 1.294
+          "bwin": 1.91,
+          "1xbet": 2.089,
+          "bet365": 2,
+          "betano": 1.95,
+          "betway": 1.95,
+          "oddset": 1.9,
+          "unibet": 1.93,
+          "betfred": 1.909,
+          "betsson": 1.93,
+          "leovegas": 1.93,
+          "pinnacle": 1.97,
+          "codere": 1.9,
+          "betfair": 2.04,
+          "winamax": 1.98,
+          "williamhill": 1.952
         }
       },
       "model": {
-        "home": 0.422907524174671,
-        "away": 0.5770924758253291,
+        "home": 0.3882294992189357,
+        "away": 0.6117705007810643,
         "fromModel": true,
-        "eloH": 1709,
-        "eloA": 1763,
+        "eloH": 1792,
+        "eloA": 1871,
         "surface": "clay"
       },
-      "ts": 1784624400000,
+      "ts": 1784710800000,
       "sofa": null
     }
   ],
@@ -1023,6 +938,21 @@
       "book": "bwin.dk",
       "homeName": "E. Pridankina",
       "awayName": "P. Udvardy"
+    },
+    {
+      "id": "opid1200315172827318",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1784710800000,
+      "date": "22 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "S. Baez – A. Rinderknech",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Rinderknech",
+      "odd": 2.09,
+      "book": "1xbet",
+      "homeName": "S. Baez",
+      "awayName": "A. Rinderknech"
     }
   ],
   "COMBO_RECORD": [
@@ -2407,6 +2337,50 @@
   ],
   "ARB_RECORD": [
     {
+      "date": "22 JUL",
+      "match": "S. Baez – A. Rinderknech",
+      "marginPct": 0.85,
+      "profit": 0.86,
+      "ts": 1784710800000,
+      "homeName": "S. Baez",
+      "awayName": "A. Rinderknech",
+      "sport": "tennis_oddspapi_atp",
+      "legs": [
+        {
+          "pick": "Gana S. Baez",
+          "odd": 1.95,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana A. Rinderknech",
+          "odd": 2.09,
+          "book": "1xbet"
+        }
+      ]
+    },
+    {
+      "date": "22 JUL",
+      "match": "M. Carle – A. Kalinina",
+      "marginPct": 0.84,
+      "profit": 0.85,
+      "ts": 1784707200000,
+      "homeName": "M. Carle",
+      "awayName": "A. Kalinina",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana M. Carle",
+          "odd": 5.6,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana A. Kalinina",
+          "odd": 1.23,
+          "book": "winamax.de"
+        }
+      ]
+    },
+    {
       "date": "21 JUL",
       "match": "D. Semenistaja – S. Kraus",
       "marginPct": 0.61,
@@ -3239,50 +3213,6 @@
           "pick": "Gana A. Bublik",
           "odd": 1.31,
           "book": "onexbet"
-        }
-      ]
-    },
-    {
-      "date": "02 JUL",
-      "match": "F. Tiafoe – J. Choinski",
-      "marginPct": 0.08,
-      "profit": 0.08,
-      "ts": 1782999000000,
-      "homeName": "F. Tiafoe",
-      "awayName": "J. Choinski",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana F. Tiafoe",
-          "odd": 1.16,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "pick": "Gana J. Choinski",
-          "odd": 7.29,
-          "book": "onexbet"
-        }
-      ]
-    },
-    {
-      "date": "02 JUL",
-      "match": "Z. Bergs – J. Faria",
-      "marginPct": 1.65,
-      "profit": 1.67,
-      "ts": 1782993600000,
-      "homeName": "Z. Bergs",
-      "awayName": "J. Faria",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana Z. Bergs",
-          "odd": 1.59,
-          "book": "pinnacle"
-        },
-        {
-          "pick": "Gana J. Faria",
-          "odd": 2.82,
-          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -6816,6 +6746,28 @@
       "sofa": null,
       "homeName": "D. Semenistaja",
       "awayName": "S. Kraus"
+    },
+    {
+      "date": "22 JUL",
+      "ts": 1784707200000,
+      "match": "M. Carle – A. Kalinina",
+      "predHome": true,
+      "prob": 68,
+      "predName": "M. Carle",
+      "sofa": null,
+      "homeName": "M. Carle",
+      "awayName": "A. Kalinina"
+    },
+    {
+      "date": "22 JUL",
+      "ts": 1784710800000,
+      "match": "S. Baez – A. Rinderknech",
+      "predHome": false,
+      "prob": 61,
+      "predName": "A. Rinderknech",
+      "sofa": null,
+      "homeName": "S. Baez",
+      "awayName": "A. Rinderknech"
     }
   ],
   "LADDER": {
