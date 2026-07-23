@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-07-22T22:01:00.677Z",
+    "updatedAt": "2026-07-23T07:01:05.427Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 2,
-    "valuePicks": 1,
-    "books": 15,
+    "matches": 3,
+    "valuePicks": 3,
+    "books": 14,
     "stale": false,
     "model": {
       "players": 3536
@@ -18,32 +18,81 @@
     }
   },
   "PLAYERS": {
-    "mariacarle": {
-      "id": "mariacarle",
-      "name": "M. Carle",
+    "marianonavone": {
+      "id": "marianonavone",
+      "name": "M. Navone",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/949_m-navone.jpg"
+    },
+    "quentinhalys": {
+      "id": "quentinhalys",
+      "name": "Q. Halys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
+    },
+    "sherifahmedabdel": {
+      "id": "sherifahmedabdel",
+      "name": "S. Ahmed Abdelaziz Maiar",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/187_l-carle.jpg"
+      "form": []
     },
-    "anhelinakalinina": {
-      "id": "anhelinakalinina",
-      "name": "A. Kalinina",
+    "elsajacquemot": {
+      "id": "elsajacquemot",
+      "name": "E. Jacquemot",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
+        "L",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2393_a-kalinina.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1823_e-jacquemot.jpg"
+    },
+    "yannickhanfmann": {
+      "id": "yannickhanfmann",
+      "name": "Y. Hanfmann",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
     },
     "sebastianbaez": {
       "id": "sebastianbaez",
@@ -61,23 +110,6 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg"
-    },
-    "arthurrinderknec": {
-      "id": "arthurrinderknec",
-      "name": "A. Rinderknech",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1902_a-rinderknech.jpg"
     }
   },
   "BOOKS": {
@@ -105,190 +137,258 @@
       "abbr": "BET",
       "color": "#14805e"
     },
+    "oddset": {
+      "id": "oddset",
+      "name": "oddset",
+      "abbr": "ODD",
+      "color": "#ffb000"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "unibet",
+      "abbr": "UNI",
+      "color": "#d11a2a"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "betsson",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "leovegas",
+      "abbr": "LEO",
+      "color": "#e23b2e"
+    },
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "pinnacle",
+      "abbr": "PIN",
+      "color": "#0a7d3c"
+    },
+    "betfair": {
+      "id": "betfair",
+      "name": "betfair-ex",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "winamax": {
+      "id": "winamax",
+      "name": "winamax.de",
+      "abbr": "WIN",
+      "color": "#d9730d"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "williamhill",
+      "abbr": "WIL",
+      "color": "#0a2d6e"
+    },
     "betway": {
       "id": "betway",
       "name": "betway",
       "abbr": "BET",
       "color": "#ffb000"
     },
-    "oddset": {
-      "id": "oddset",
-      "name": "oddset",
-      "abbr": "ODD",
-      "color": "#d11a2a"
-    },
-    "unibet": {
-      "id": "unibet",
-      "name": "unibet",
-      "abbr": "UNI",
-      "color": "#0a6cff"
-    },
-    "betfred": {
-      "id": "betfred",
-      "name": "betfred",
-      "abbr": "BET",
-      "color": "#1c1c1c"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "betsson",
-      "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "leovegas",
-      "abbr": "LEO",
-      "color": "#0a2d6e"
-    },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "pinnacle",
-      "abbr": "PIN",
-      "color": "#14805e"
-    },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#0a6cff"
-    },
-    "betfair": {
-      "id": "betfair",
-      "name": "betfair-ex",
-      "abbr": "BET",
-      "color": "#0a2d6e"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "winamax.de",
-      "abbr": "WIN",
-      "color": "#14805e"
-    },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "williamhill",
-      "abbr": "WIL",
-      "color": "#0a6cff"
+      "color": "#1c1c1c"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1203427272829936",
-      "tour": "wta",
-      "event": "WTA Hamburg, Germany Women Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "10:00",
-      "day": "22 JUL",
-      "home": "mariacarle",
-      "away": "anhelinakalinina",
-      "odds": {
-        "home": {
-          "bwin": 4.75,
-          "1xbet": 4.465,
-          "bet365": 5,
-          "betano": 5,
-          "betway": 5,
-          "oddset": 4.75,
-          "unibet": 4.8,
-          "betfred": 4.5,
-          "betsson": 4.8,
-          "leovegas": 4.8,
-          "pinnacle": 5.51,
-          "codere": 4.5,
-          "betfair": 5.6,
-          "winamax": 5.2,
-          "williamhill": 4.8
-        },
-        "away": {
-          "bwin": 1.18,
-          "1xbet": 1.207,
-          "bet365": 1.16,
-          "betano": 1.18,
-          "betway": 1.182,
-          "oddset": 1.18,
-          "unibet": 1.18,
-          "betfred": 1.182,
-          "betsson": 1.17,
-          "leovegas": 1.18,
-          "pinnacle": 1.18,
-          "codere": 1.2,
-          "betfair": 1.21,
-          "winamax": 1.23,
-          "williamhill": 1.167
-        }
-      },
-      "model": {
-        "home": 0.6750402010402987,
-        "away": 0.3249597989597013,
-        "fromModel": true,
-        "eloH": 1904,
-        "eloA": 1777,
-        "surface": "clay"
-      },
-      "ts": 1784707200000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200315172827318",
+      "id": "opid1200315172827322",
       "tour": "atp",
       "event": "ATP Kitzbuhel, Austria Men Singles",
       "round": "",
       "surface": "Tierra",
       "time": "11:00",
-      "day": "22 JUL",
-      "home": "sebastianbaez",
-      "away": "arthurrinderknec",
+      "day": "23 JUL",
+      "home": "marianonavone",
+      "away": "quentinhalys",
       "odds": {
         "home": {
-          "bwin": 1.9,
-          "1xbet": 1.811,
-          "bet365": 1.8,
-          "betano": 1.87,
-          "betway": 1.85,
-          "oddset": 1.9,
-          "unibet": 1.87,
-          "betfred": 1.909,
-          "betsson": 1.84,
-          "leovegas": 1.87,
-          "pinnacle": 1.917,
-          "codere": 1.85,
-          "betfair": 1.95,
-          "winamax": 1.88,
-          "williamhill": 1.8
+          "bwin": 1.44,
+          "1xbet": 1.477,
+          "bet365": 1.44,
+          "betano": 1.44,
+          "oddset": 1.42,
+          "unibet": 1.47,
+          "betsson": 1.43,
+          "leovegas": 1.47,
+          "pinnacle": 1.476,
+          "betfair": 1.48,
+          "winamax": 1.46,
+          "williamhill": 1.455
         },
         "away": {
-          "bwin": 1.91,
-          "1xbet": 2.089,
-          "bet365": 2,
-          "betano": 1.95,
-          "betway": 1.95,
-          "oddset": 1.9,
-          "unibet": 1.93,
-          "betfred": 1.909,
-          "betsson": 1.93,
-          "leovegas": 1.93,
-          "pinnacle": 1.97,
-          "codere": 1.9,
-          "betfair": 2.04,
-          "winamax": 1.98,
-          "williamhill": 1.952
+          "bwin": 2.85,
+          "1xbet": 2.824,
+          "bet365": 2.75,
+          "betano": 2.85,
+          "oddset": 2.85,
+          "unibet": 2.85,
+          "betsson": 2.75,
+          "leovegas": 2.7,
+          "pinnacle": 2.88,
+          "betfair": 3,
+          "winamax": 2.85,
+          "williamhill": 2.65
         }
       },
       "model": {
-        "home": 0.3882294992189357,
-        "away": 0.6117705007810643,
+        "home": 0.5827018849642301,
+        "away": 0.41729811503576986,
         "fromModel": true,
-        "eloH": 1792,
-        "eloA": 1871,
+        "eloH": 1816,
+        "eloA": 1758,
         "surface": "clay"
       },
-      "ts": 1784710800000,
+      "ts": 1784797200000,
+      "sofa": null
+    },
+    {
+      "id": "opid1203427272829942",
+      "tour": "wta",
+      "event": "WTA Hamburg, Germany Women Singles",
+      "round": "",
+      "surface": "Tierra",
+      "time": "11:00",
+      "day": "23 JUL",
+      "home": "sherifahmedabdel",
+      "away": "elsajacquemot",
+      "odds": {
+        "home": {
+          "bwin": 1.42,
+          "1xbet": 1.43,
+          "bet365": 1.36,
+          "betano": 1.37,
+          "betway": 1.4,
+          "oddset": 1.42,
+          "unibet": 1.44,
+          "betsson": 1.39,
+          "leovegas": 1.44,
+          "pinnacle": 1.458,
+          "codere": 1.4,
+          "betfair": 1.46,
+          "winamax": 1.44,
+          "williamhill": 1.357
+        },
+        "away": {
+          "bwin": 2.9,
+          "1xbet": 2.833,
+          "bet365": 3.2,
+          "betano": 3.15,
+          "betway": 3,
+          "oddset": 2.8,
+          "unibet": 2.85,
+          "betsson": 2.95,
+          "leovegas": 2.8,
+          "pinnacle": 2.91,
+          "codere": 2.9,
+          "betfair": 3.1,
+          "winamax": 2.9,
+          "williamhill": 3
+        }
+      },
+      "model": {
+        "home": 0.5473485180458647,
+        "away": 0.4526514819541353,
+        "fromModel": true,
+        "eloH": 1792,
+        "eloA": 1759,
+        "surface": "clay"
+      },
+      "ts": 1784797200000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200315172827324",
+      "tour": "atp",
+      "event": "ATP Kitzbuhel, Austria Men Singles",
+      "round": "",
+      "surface": "Tierra",
+      "time": "12:10",
+      "day": "23 JUL",
+      "home": "yannickhanfmann",
+      "away": "sebastianbaez",
+      "odds": {
+        "home": {
+          "bwin": 1.7,
+          "1xbet": 1.768,
+          "bet365": 1.72,
+          "betano": 1.75,
+          "oddset": 1.7,
+          "unibet": 1.78,
+          "betsson": 1.73,
+          "leovegas": 1.78,
+          "pinnacle": 1.763,
+          "betfair": 1.82,
+          "winamax": 1.72,
+          "williamhill": 1.714
+        },
+        "away": {
+          "bwin": 2.1,
+          "1xbet": 2.149,
+          "bet365": 2.1,
+          "betano": 2.1,
+          "oddset": 2.1,
+          "unibet": 2.1,
+          "betsson": 2.08,
+          "leovegas": 2.04,
+          "pinnacle": 2.16,
+          "betfair": 2.2,
+          "winamax": 2.1,
+          "williamhill": 2.1
+        }
+      },
+      "model": {
+        "home": 0.5057562084111449,
+        "away": 0.4942437915888551,
+        "fromModel": true,
+        "eloH": 1796,
+        "eloA": 1792,
+        "surface": "clay"
+      },
+      "ts": 1784801400000,
       "sofa": null
     }
   ],
-  "COMBOS": [],
+  "COMBOS": [
+    {
+      "id": "c1",
+      "name": "Combinada del Día",
+      "conf": 21,
+      "book": "betfair-ex",
+      "legs": [
+        {
+          "id": "opid1200315172827324",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1784801400000,
+          "side": "away",
+          "sofa": null,
+          "match": "Y. Hanfmann – S. Baez",
+          "pick": "Gana S. Baez",
+          "odd": 2.2,
+          "book": "betfair-ex"
+        },
+        {
+          "id": "opid1200315172827322",
+          "sport": "tennis_oddspapi_atp",
+          "ts": 1784797200000,
+          "side": "away",
+          "sofa": null,
+          "match": "M. Navone – Q. Halys",
+          "pick": "Gana Q. Halys",
+          "odd": 3,
+          "book": "betfair-ex"
+        }
+      ]
+    }
+  ],
   "RECORD": [
     {
       "id": "opid1200290772940750",
@@ -953,6 +1053,51 @@
       "book": "1xbet",
       "homeName": "S. Baez",
       "awayName": "A. Rinderknech"
+    },
+    {
+      "id": "opid1203427272829942",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1784797200000,
+      "date": "23 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "S. Ahmed Abdelaziz Maiar – E. Jacquemot",
+      "pickKey": "away",
+      "pickLabel": "Gana E. Jacquemot",
+      "odd": 3.2,
+      "book": "bet365",
+      "homeName": "S. Ahmed Abdelaziz Maiar",
+      "awayName": "E. Jacquemot"
+    },
+    {
+      "id": "opid1200315172827322",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1784797200000,
+      "date": "23 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Navone – Q. Halys",
+      "pickKey": "away",
+      "pickLabel": "Gana Q. Halys",
+      "odd": 3,
+      "book": "betfair-ex",
+      "homeName": "M. Navone",
+      "awayName": "Q. Halys"
+    },
+    {
+      "id": "opid1200315172827324",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1784801400000,
+      "date": "23 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "Y. Hanfmann – S. Baez",
+      "pickKey": "away",
+      "pickLabel": "Gana S. Baez",
+      "odd": 2.2,
+      "book": "betfair-ex",
+      "homeName": "Y. Hanfmann",
+      "awayName": "S. Baez"
     }
   ],
   "COMBO_RECORD": [
@@ -2333,9 +2478,60 @@
           "awayName": "P. Badosa"
         }
       ]
+    },
+    {
+      "dayId": "23 JUL·c1",
+      "date": "23 JUL",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "opid1200315172827324",
+          "sport": "tennis_oddspapi_atp",
+          "side": "away",
+          "sofa": null,
+          "match": "Y. Hanfmann – S. Baez",
+          "pick": "Gana S. Baez",
+          "odd": 2.2,
+          "homeName": "Y. Hanfmann",
+          "awayName": "S. Baez"
+        },
+        {
+          "id": "opid1200315172827322",
+          "sport": "tennis_oddspapi_atp",
+          "side": "away",
+          "sofa": null,
+          "match": "M. Navone – Q. Halys",
+          "pick": "Gana Q. Halys",
+          "odd": 3,
+          "homeName": "M. Navone",
+          "awayName": "Q. Halys"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "23 JUL",
+      "match": "S. Ahmed Abdelaziz Maiar – E. Jacquemot",
+      "marginPct": 0.26,
+      "profit": 0.26,
+      "ts": 1784797200000,
+      "homeName": "S. Ahmed Abdelaziz Maiar",
+      "awayName": "E. Jacquemot",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana S. Ahmed Abdelaziz Maiar",
+          "odd": 1.46,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana E. Jacquemot",
+          "odd": 3.2,
+          "book": "bet365"
+        }
+      ]
+    },
     {
       "date": "22 JUL",
       "match": "S. Baez – A. Rinderknech",
@@ -3190,28 +3386,6 @@
         {
           "pick": "Gana T. Paul",
           "odd": 1.58,
-          "book": "onexbet"
-        }
-      ]
-    },
-    {
-      "date": "02 JUL",
-      "match": "K. Jacquet – A. Bublik",
-      "marginPct": 0.94,
-      "profit": 0.95,
-      "ts": 1783013400000,
-      "homeName": "K. Jacquet",
-      "awayName": "A. Bublik",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana K. Jacquet",
-          "odd": 4.4,
-          "book": "matchbook"
-        },
-        {
-          "pick": "Gana A. Bublik",
-          "odd": 1.31,
           "book": "onexbet"
         }
       ]
@@ -6768,6 +6942,39 @@
       "sofa": null,
       "homeName": "S. Baez",
       "awayName": "A. Rinderknech"
+    },
+    {
+      "date": "23 JUL",
+      "ts": 1784797200000,
+      "match": "M. Navone – Q. Halys",
+      "predHome": true,
+      "prob": 58,
+      "predName": "M. Navone",
+      "sofa": null,
+      "homeName": "M. Navone",
+      "awayName": "Q. Halys"
+    },
+    {
+      "date": "23 JUL",
+      "ts": 1784797200000,
+      "match": "S. Ahmed Abdelaziz Maiar – E. Jacquemot",
+      "predHome": true,
+      "prob": 55,
+      "predName": "S. Ahmed Abdelaziz Maiar",
+      "sofa": null,
+      "homeName": "S. Ahmed Abdelaziz Maiar",
+      "awayName": "E. Jacquemot"
+    },
+    {
+      "date": "23 JUL",
+      "ts": 1784801400000,
+      "match": "Y. Hanfmann – S. Baez",
+      "predHome": true,
+      "prob": 51,
+      "predName": "Y. Hanfmann",
+      "sofa": null,
+      "homeName": "Y. Hanfmann",
+      "awayName": "S. Baez"
     }
   ],
   "LADDER": {
