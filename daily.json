@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-07-24T22:01:04.795Z",
+    "updatedAt": "2026-07-25T07:01:01.578Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 3,
+    "matches": 2,
     "valuePicks": 1,
-    "books": 14,
+    "books": 13,
     "stale": false,
     "model": {
       "players": 3536
@@ -18,88 +18,22 @@
     }
   },
   "PLAYERS": {
-    "annabondar": {
-      "id": "annabondar",
-      "name": "A. Bondar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/505_a-bondar.jpg"
-    },
-    "alinacharaeva": {
-      "id": "alinacharaeva",
-      "name": "A. Charaeva",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/13421_a-charaeva.jpg"
-    },
-    "lanlanatararudee": {
-      "id": "lanlanatararudee",
-      "name": "L. Tararudee",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/25728_l-tararudee.jpg"
-    },
-    "dariasnigur": {
-      "id": "dariasnigur",
-      "name": "D. Snigur",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1131_d-snigur.jpg"
-    },
-    "yannickhanfmann": {
-      "id": "yannickhanfmann",
-      "name": "Y. Hanfmann",
+    "alexanderbublik": {
+      "id": "alexanderbublik",
+      "name": "A. Bublik",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "L",
+        "W",
+        "W",
         "W",
         "L",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg"
     },
     "quentinhalys": {
       "id": "quentinhalys",
@@ -117,6 +51,40 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
+    },
+    "lillitagger": {
+      "id": "lillitagger",
+      "name": "L. Tagger",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/53046_l-tagger.jpg"
+    },
+    "barborakrejcikov": {
+      "id": "barborakrejcikov",
+      "name": "B. Krejcikova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2801_b-krejcikova.jpg"
     }
   },
   "BOOKS": {
@@ -168,251 +136,146 @@
       "abbr": "BET",
       "color": "#1c1c1c"
     },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "leovegas",
-      "abbr": "LEO",
-      "color": "#0a7d3c"
-    },
     "pinnacle": {
       "id": "pinnacle",
       "name": "pinnacle",
       "abbr": "PIN",
-      "color": "#0a2d6e"
+      "color": "#e23b2e"
     },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#0a6cff"
+      "color": "#ffb000"
     },
     "betfair": {
       "id": "betfair",
       "name": "betfair-ex",
       "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#0a6cff"
     },
     "winamax": {
       "id": "winamax",
       "name": "winamax.de",
       "abbr": "WIN",
-      "color": "#14805e"
+      "color": "#1c1c1c"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#0a6cff"
+      "color": "#e23b2e"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1203427272829948",
-      "tour": "wta",
-      "event": "WTA Hamburg, Germany Women Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "11:00",
-      "day": "24 JUL",
-      "home": "annabondar",
-      "away": "alinacharaeva",
-      "odds": {
-        "home": {
-          "bwin": 1.62,
-          "1xbet": 1.55,
-          "bet365": 1.53,
-          "betano": 1.53,
-          "betway": 1.55,
-          "oddset": 1.55,
-          "unibet": 1.54,
-          "betsson": 1.53,
-          "leovegas": 1.54,
-          "pinnacle": 1.571,
-          "codere": 1.53,
-          "betfair": 1.59,
-          "winamax": 1.62,
-          "williamhill": 1.556
-        },
-        "away": {
-          "bwin": 2.4,
-          "1xbet": 2.456,
-          "bet365": 2.5,
-          "betano": 2.52,
-          "betway": 2.5,
-          "oddset": 2.4,
-          "unibet": 2.48,
-          "betsson": 2.45,
-          "leovegas": 2.48,
-          "pinnacle": 2.55,
-          "codere": 2.45,
-          "betfair": 2.64,
-          "winamax": 2.5,
-          "williamhill": 2.35
-        }
-      },
-      "model": {
-        "home": 0.596629173305774,
-        "away": 0.40337082669422597,
-        "fromModel": true,
-        "eloH": 1789,
-        "eloA": 1721,
-        "surface": "clay"
-      },
-      "ts": 1784883600000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200290772830088",
-      "tour": "wta",
-      "event": "WTA Prague, Czech Republic Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "24 JUL",
-      "home": "lanlanatararudee",
-      "away": "dariasnigur",
-      "odds": {
-        "home": {
-          "bwin": 2.6,
-          "1xbet": 2.628,
-          "bet365": 2.62,
-          "betano": 2.62,
-          "betway": 2.6,
-          "oddset": 2.6,
-          "unibet": 2.65,
-          "betsson": 2.65,
-          "leovegas": 2.5,
-          "pinnacle": 2.83,
-          "codere": 2.55,
-          "betfair": 2.92,
-          "winamax": 2.65,
-          "williamhill": 2.65
-        },
-        "away": {
-          "bwin": 1.6,
-          "1xbet": 1.49,
-          "bet365": 1.5,
-          "betano": 1.5,
-          "betway": 1.45,
-          "oddset": 1.48,
-          "unibet": 1.53,
-          "betsson": 1.47,
-          "leovegas": 1.53,
-          "pinnacle": 1.48,
-          "codere": 1.5,
-          "betfair": 1.51,
-          "winamax": 1.52,
-          "williamhill": 1.455
-        }
-      },
-      "model": {
-        "home": 0.49424379158885506,
-        "away": 0.5057562084111449,
-        "fromModel": true,
-        "eloH": 1750,
-        "eloA": 1754,
-        "surface": "hard"
-      },
-      "ts": 1784883600000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200315172827332",
+      "id": "opid1200315172827330",
       "tour": "atp",
       "event": "ATP Kitzbuhel, Austria Men Singles",
       "round": "",
       "surface": "Tierra",
-      "time": "12:30",
-      "day": "24 JUL",
-      "home": "yannickhanfmann",
+      "time": "13:00",
+      "day": "25 JUL",
+      "home": "alexanderbublik",
       "away": "quentinhalys",
       "odds": {
         "home": {
-          "bwin": 1.62,
-          "1xbet": 1.626,
-          "bet365": 1.57,
-          "betano": 1.57,
-          "betway": 1.6,
-          "oddset": 1.62,
-          "unibet": 1.65,
-          "betsson": 1.58,
-          "leovegas": 1.64,
-          "pinnacle": 1.653,
-          "betfair": 1.67,
-          "winamax": 1.6,
-          "williamhill": 1.625
+          "bwin": 1.48,
+          "1xbet": 1.453,
+          "bet365": 1.4,
+          "betano": 1.45,
+          "betway": 1.45,
+          "oddset": 1.44,
+          "unibet": 1.44,
+          "betsson": 1.43,
+          "pinnacle": 1.462,
+          "codere": 1.45,
+          "betfair": 1.47,
+          "winamax": 1.44,
+          "williamhill": 1.417
         },
         "away": {
-          "bwin": 2.45,
-          "1xbet": 2.404,
-          "bet365": 2.37,
-          "betano": 2.4,
-          "betway": 2.375,
-          "oddset": 2.25,
-          "unibet": 2.3,
-          "betsson": 2.34,
-          "leovegas": 2.25,
-          "pinnacle": 2.35,
-          "betfair": 2.44,
-          "winamax": 2.45,
-          "williamhill": 2.25
+          "bwin": 2.8,
+          "1xbet": 2.917,
+          "bet365": 3,
+          "betano": 2.8,
+          "betway": 2.75,
+          "oddset": 2.8,
+          "unibet": 2.9,
+          "betsson": 2.75,
+          "pinnacle": 2.89,
+          "codere": 2.7,
+          "betfair": 3.05,
+          "winamax": 2.9,
+          "williamhill": 2.75
         }
       },
       "model": {
-        "home": 0.554469374021676,
-        "away": 0.44553062597832405,
+        "home": 0.7690759234333929,
+        "away": 0.23092407656660707,
         "fromModel": true,
-        "eloH": 1796,
+        "eloH": 1967,
         "eloA": 1758,
         "surface": "clay"
       },
-      "ts": 1784889000000,
+      "ts": 1784977200000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200290772830096",
+      "tour": "wta",
+      "event": "WTA Prague, Czech Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:40",
+      "day": "25 JUL",
+      "home": "lillitagger",
+      "away": "barborakrejcikov",
+      "odds": {
+        "home": {
+          "1xbet": 5.25,
+          "bet365": 5,
+          "betano": 5.3,
+          "betway": 5.5,
+          "oddset": 5.25,
+          "unibet": 5.7,
+          "betsson": 5.4,
+          "bwin": 5.25,
+          "pinnacle": 6.01,
+          "codere": 5,
+          "betfair": 6,
+          "winamax": 6,
+          "williamhill": 5
+        },
+        "away": {
+          "1xbet": 1.163,
+          "bet365": 1.16,
+          "betano": 1.16,
+          "betway": 1.154,
+          "oddset": 1.15,
+          "unibet": 1.15,
+          "betsson": 1.14,
+          "bwin": 1.15,
+          "pinnacle": 1.154,
+          "codere": 1.16,
+          "betfair": 1.19,
+          "winamax": 1.15,
+          "williamhill": 1.143
+        }
+      },
+      "model": {
+        "home": 0.33258157812677697,
+        "away": 0.6674184218732231,
+        "fromModel": true,
+        "eloH": 1744,
+        "eloA": 1865,
+        "surface": "hard"
+      },
+      "ts": 1784983200000,
       "sofa": null
     }
   ],
-  "COMBOS": [
-    {
-      "id": "c1",
-      "name": "Combinada del Día",
-      "conf": 9,
-      "book": "betfair-ex",
-      "legs": [
-        {
-          "id": "opid1200290772830088",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1784883600000,
-          "side": "home",
-          "sofa": null,
-          "match": "L. Tararudee – D. Snigur",
-          "pick": "Gana L. Tararudee",
-          "odd": 2.92,
-          "book": "betfair-ex"
-        },
-        {
-          "id": "opid1200315172827332",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1784889000000,
-          "side": "away",
-          "sofa": null,
-          "match": "Y. Hanfmann – Q. Halys",
-          "pick": "Gana Q. Halys",
-          "odd": 2.44,
-          "book": "betfair-ex"
-        },
-        {
-          "id": "opid1203427272829948",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1784883600000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Bondar – A. Charaeva",
-          "pick": "Gana A. Charaeva",
-          "odd": 2.64,
-          "book": "betfair-ex"
-        }
-      ]
-    }
-  ],
+  "COMBOS": [],
   "RECORD": [
     {
       "id": "opid1200290772940750",
@@ -1137,6 +1000,21 @@
       "book": "betfair-ex",
       "homeName": "L. Tararudee",
       "awayName": "D. Snigur"
+    },
+    {
+      "id": "opid1200315172827330",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1784977200000,
+      "date": "25 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Bublik – Q. Halys",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Bublik",
+      "odd": 1.48,
+      "book": "bwin",
+      "homeName": "A. Bublik",
+      "awayName": "Q. Halys"
     }
   ],
   "COMBO_RECORD": [
@@ -7087,6 +6965,28 @@
       "sofa": null,
       "homeName": "Y. Hanfmann",
       "awayName": "Q. Halys"
+    },
+    {
+      "date": "25 JUL",
+      "ts": 1784977200000,
+      "match": "A. Bublik – Q. Halys",
+      "predHome": true,
+      "prob": 77,
+      "predName": "A. Bublik",
+      "sofa": null,
+      "homeName": "A. Bublik",
+      "awayName": "Q. Halys"
+    },
+    {
+      "date": "25 JUL",
+      "ts": 1784983200000,
+      "match": "L. Tagger – B. Krejcikova",
+      "predHome": false,
+      "prob": 67,
+      "predName": "B. Krejcikova",
+      "sofa": null,
+      "homeName": "L. Tagger",
+      "awayName": "B. Krejcikova"
     }
   ],
   "LADDER": {
