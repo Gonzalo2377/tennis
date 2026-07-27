@@ -1,96 +1,62 @@
 {
   "meta": {
-    "updatedAt": "2026-07-26T22:01:12.884Z",
+    "updatedAt": "2026-07-27T07:01:21.618Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 3,
-    "valuePicks": 2,
-    "books": 14,
+    "matches": 27,
+    "valuePicks": 13,
+    "books": 16,
     "stale": false,
     "model": {
       "players": 3536
     },
     "credits": {
-      "remaining": 480,
-      "used": 20
+      "remaining": 478,
+      "used": 22
     }
   },
   "PLAYERS": {
-    "annabondar": {
-      "id": "annabondar",
-      "name": "A. Bondar",
+    "alejandrotabilo": {
+      "id": "alejandrotabilo",
+      "name": "A. Tabilo",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2982_a-tabilo.jpg"
+    },
+    "tallongriekspoor": {
+      "id": "tallongriekspoor",
+      "name": "T. Griekspoor",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
       "elo": null,
       "form": [
         "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/505_a-bondar.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/427_t-griekspoor.jpg"
     },
-    "tamarakorpatsch": {
-      "id": "tamarakorpatsch",
-      "name": "T. Korpatsch",
+    "matteoarnaldi": {
+      "id": "matteoarnaldi",
+      "name": "M. Arnaldi",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/501_t-korpatsch.jpg"
-    },
-    "dariasnigur": {
-      "id": "dariasnigur",
-      "name": "D. Snigur",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1131_d-snigur.jpg"
-    },
-    "lillitagger": {
-      "id": "lillitagger",
-      "name": "L. Tagger",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/53046_l-tagger.jpg"
-    },
-    "heatherwatson": {
-      "id": "heatherwatson",
-      "name": "H. Watson",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -99,27 +65,859 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1155_h-watson.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
     },
-    "julietapareja": {
-      "id": "julietapareja",
-      "name": "J. Pareja",
+    "lorenzomusetti": {
+      "id": "lorenzomusetti",
+      "name": "L. Musetti",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2849_l-musetti.jpg"
+    },
+    "aleksandarvukic": {
+      "id": "aleksandarvukic",
+      "name": "A. Vukic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
+        "L",
+        "L",
         "W",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/32553_j-pareja.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/360_a-vukic.jpg"
+    },
+    "zacharysvajda": {
+      "id": "zacharysvajda",
+      "name": "Z. Svajda",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
+    },
+    "taylorfritz": {
+      "id": "taylorfritz",
+      "name": "T. Fritz",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg"
+    },
+    "zizoubergs": {
+      "id": "zizoubergs",
+      "name": "Z. Bergs",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg"
+    },
+    "keinishikori": {
+      "id": "keinishikori",
+      "name": "K. Nishikori",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/2985_k-nishikori.jpg"
+    },
+    "junchengshang": {
+      "id": "junchengshang",
+      "name": "J. Shang",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2413_j-shang.jpg"
+    },
+    "francestiafoe": {
+      "id": "francestiafoe",
+      "name": "F. Tiafoe",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2846_f-tiafoe.jpg"
+    },
+    "terenceatmane": {
+      "id": "terenceatmane",
+      "name": "T. Atmane",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
+    },
+    "adrianmannarino": {
+      "id": "adrianmannarino",
+      "name": "A. Mannarino",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/438_a-mannarino.jpg"
+    },
+    "learnertien": {
+      "id": "learnertien",
+      "name": "L. Tien",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10520_l-tien.jpg"
+    },
+    "alexmichelsen": {
+      "id": "alexmichelsen",
+      "name": "A. Michelsen",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10884_a-michelsen.jpg"
+    },
+    "jackdraper": {
+      "id": "jackdraper",
+      "name": "J. Draper",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/7011_j-draper.jpg"
+    },
+    "alexdeminaur": {
+      "id": "alexdeminaur",
+      "name": "A. de Minaur",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
+    },
+    "stefanostsitsipa": {
+      "id": "stefanostsitsipa",
+      "name": "S. Tsitsipas",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg"
+    },
+    "arthurfils": {
+      "id": "arthurfils",
+      "name": "A. Fils",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1759_a-fils.jpg"
+    },
+    "rafaeljodar": {
+      "id": "rafaeljodar",
+      "name": "R. Jodar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
+    },
+    "brandonnakashima": {
+      "id": "brandonnakashima",
+      "name": "B. Nakashima",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2838_b-nakashima.jpg"
+    },
+    "tomasmartinetche": {
+      "id": "tomasmartinetche",
+      "name": "T. Martin Etcheverry",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1777_m-etcheverry.jpg"
+    },
+    "kamilmajchrzak": {
+      "id": "kamilmajchrzak",
+      "name": "K. Majchrzak",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1096_k-majchrzak.jpg"
+    },
+    "tommypaul": {
+      "id": "tommypaul",
+      "name": "T. Paul",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1894_t-paul.jpg"
+    },
+    "ugohumbert": {
+      "id": "ugohumbert",
+      "name": "U. Humbert",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1105_u-humbert.jpg"
+    },
+    "andrejmartin": {
+      "id": "andrejmartin",
+      "name": "A. Martin",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1056_a-martin.jpg"
+    },
+    "martindammjr": {
+      "id": "martindammjr",
+      "name": "M. Damm Jr",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1317_m-damm.jpg"
+    },
+    "benshelton": {
+      "id": "benshelton",
+      "name": "B. Shelton",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2973_b-shelton.jpg"
+    },
+    "marcosgiron": {
+      "id": "marcosgiron",
+      "name": "M. Giron",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.sofascore.app/api/v1/team/106140/image"
+    },
+    "cruzhewitt": {
+      "id": "cruzhewitt",
+      "name": "C. Hewitt",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/76018_c-hewitt.jpg"
+    },
+    "elisabettacoccia": {
+      "id": "elisabettacoccia",
+      "name": "E. Cocciaretto",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/477_e-cocciaretto.jpg"
+    },
+    "claratauson": {
+      "id": "claratauson",
+      "name": "C. Tauson",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/3007_c-tauson.jpg"
+    },
+    "leylahfernandez": {
+      "id": "leylahfernandez",
+      "name": "L. Fernandez",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/15921_m-fernandez.jpg"
+    },
+    "magdalinette": {
+      "id": "magdalinette",
+      "name": "M. Linette",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1154_m-linette.jpg"
+    },
+    "emmanavarro": {
+      "id": "emmanavarro",
+      "name": "E. Navarro",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/207979/image"
+    },
+    "sofiakenin": {
+      "id": "sofiakenin",
+      "name": "S. Kenin",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2904_s-kenin.jpg"
+    },
+    "janicetjen": {
+      "id": "janicetjen",
+      "name": "J. Tjen",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/28551_j-tjen.jpg"
+    },
+    "rebeccasramkova": {
+      "id": "rebeccasramkova",
+      "name": "R. Sramkova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/449_r-sramkova.jpg"
+    },
+    "liudmilasamsonov": {
+      "id": "liudmilasamsonov",
+      "name": "L. Samsonova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/68376_l-samsonova.jpg"
+    },
+    "madisonkeys": {
+      "id": "madisonkeys",
+      "name": "M. Keys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2692_m-keys.jpg"
+    },
+    "ashlynkrueger": {
+      "id": "ashlynkrueger",
+      "name": "A. Krueger",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1751_m-krueger.jpg"
+    },
+    "katieboulter": {
+      "id": "katieboulter",
+      "name": "K. Boulter",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2993_k-boulter.jpg"
+    },
+    "alexandraeala": {
+      "id": "alexandraeala",
+      "name": "A. Eala",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/3490_a-eala.jpg"
+    },
+    "qinwenzheng": {
+      "id": "qinwenzheng",
+      "name": "Q. Zheng",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9515_m-zheng.jpg"
+    },
+    "anastasiapotapov": {
+      "id": "anastasiapotapov",
+      "name": "A. Potapova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/457_a-potapova.jpg"
+    },
+    "venuswilliams": {
+      "id": "venuswilliams",
+      "name": "V. Williams",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/101795_c-williams.jpg"
+    },
+    "magdalenafrech": {
+      "id": "magdalenafrech",
+      "name": "M. Frech",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2089_m-frech.jpg"
+    },
+    "annli": {
+      "id": "annli",
+      "name": "A. Li",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/40225_c-li.jpg"
+    },
+    "yexinma": {
+      "id": "yexinma",
+      "name": "Y. Ma",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/126_y-ma.jpg"
+    },
+    "kimberlybirrell": {
+      "id": "kimberlybirrell",
+      "name": "K. Birrell",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/92_k-birrell.jpg"
+    },
+    "anastasiazakharo": {
+      "id": "anastasiazakharo",
+      "name": "A. Zakharova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1794_a-zakharova.jpg"
+    },
+    "lindafruhvirtova": {
+      "id": "lindafruhvirtova",
+      "name": "L. Fruhvirtova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/446_l-fruhvirtova.jpg"
+    },
+    "mayajoint": {
+      "id": "mayajoint",
+      "name": "M. Joint",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/52689_m-joint.jpg"
+    },
+    "whitneyosuigwe": {
+      "id": "whitneyosuigwe",
+      "name": "W. Osuigwe",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1431_w-osuigwe.jpg"
     }
   },
   "BOOKS": {
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
+      "color": "#e23b2e"
+    },
+    "betfair": {
+      "id": "betfair",
+      "name": "Betfair",
+      "abbr": "BET",
+      "color": "#0a7d3c"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#0a2d6e"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (NL)",
+      "abbr": "UNI",
+      "color": "#14805e"
+    },
+    "888sport": {
+      "id": "888sport",
+      "name": "888sport",
+      "abbr": "888",
+      "color": "#d11a2a"
+    },
+    "betway": {
+      "id": "betway",
+      "name": "betway",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
     "bwin": {
       "id": "bwin",
       "name": "bwin",
@@ -144,209 +942,1043 @@
       "abbr": "BET",
       "color": "#14805e"
     },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
     "oddset": {
       "id": "oddset",
       "name": "oddset",
       "abbr": "ODD",
-      "color": "#d11a2a"
-    },
-    "unibet": {
-      "id": "unibet",
-      "name": "unibet",
-      "abbr": "UNI",
-      "color": "#0a6cff"
+      "color": "#ffb000"
     },
     "betsson": {
       "id": "betsson",
       "name": "betsson",
       "abbr": "BET",
-      "color": "#1c1c1c"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "leovegas",
-      "abbr": "LEO",
-      "color": "#0a7d3c"
-    },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "pinnacle",
-      "abbr": "PIN",
-      "color": "#0a2d6e"
+      "color": "#0a6cff"
     },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#0a6cff"
-    },
-    "betfair": {
-      "id": "betfair",
-      "name": "betfair-ex",
-      "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#0a7d3c"
     },
     "winamax": {
       "id": "winamax",
       "name": "winamax.de",
       "abbr": "WIN",
-      "color": "#14805e"
+      "color": "#1c1c1c"
     },
     "williamhill": {
       "id": "williamhill",
       "name": "williamhill",
       "abbr": "WIL",
-      "color": "#1c1c1c"
+      "color": "#d9730d"
+    },
+    "betfred": {
+      "id": "betfred",
+      "name": "betfred",
+      "abbr": "BET",
+      "color": "#0a7d3c"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1203427272829952",
-      "tour": "wta",
-      "event": "WTA Hamburg, Germany Women Singles",
-      "round": "",
-      "surface": "Tierra",
-      "time": "14:00",
-      "day": "26 JUL",
-      "home": "annabondar",
-      "away": "tamarakorpatsch",
-      "odds": {
-        "home": {
-          "bwin": 1.75,
-          "1xbet": 1.8,
-          "bet365": 1.8,
-          "betano": 1.82,
-          "betway": 1.8,
-          "oddset": 1.75,
-          "unibet": 1.79,
-          "betsson": 1.79,
-          "leovegas": 1.79,
-          "pinnacle": 1.757,
-          "codere": 1.8,
-          "betfair": 1.8,
-          "winamax": 1.82,
-          "williamhill": 1.769
-        },
-        "away": {
-          "bwin": 2.1,
-          "1xbet": 2.01,
-          "bet365": 2,
-          "betano": 2,
-          "betway": 2,
-          "oddset": 2.1,
-          "unibet": 2.02,
-          "betsson": 1.99,
-          "leovegas": 2.02,
-          "pinnacle": 2.17,
-          "codere": 2,
-          "betfair": 2.22,
-          "winamax": 2.05,
-          "williamhill": 2
-        }
-      },
-      "model": {
-        "home": 0.5924662305843318,
-        "away": 0.4075337694156682,
-        "fromModel": true,
-        "eloH": 1789,
-        "eloA": 1724,
-        "surface": "clay"
-      },
-      "ts": 1785067200000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200290772830108",
-      "tour": "wta",
-      "event": "WTA Prague, Czech Republic Women Singles",
+      "id": "e81136d8af2867898952ce896f71662f",
+      "tour": "atp",
+      "event": "Atp Washington Open",
       "round": "",
       "surface": "Dura",
-      "time": "14:00",
-      "day": "26 JUL",
-      "home": "dariasnigur",
-      "away": "lillitagger",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "alejandrotabilo",
+      "away": "tallongriekspoor",
       "odds": {
         "home": {
-          "bwin": 1.67,
-          "1xbet": 1.68,
-          "bet365": 1.66,
-          "betano": 1.75,
-          "betway": 1.7,
-          "oddset": 1.67,
-          "unibet": 1.68,
-          "betsson": 1.68,
-          "leovegas": 1.66,
-          "pinnacle": 1.709,
-          "codere": 1.7,
-          "betfair": 1.75,
-          "winamax": 1.7,
-          "williamhill": 1.69
+          "pinnacle": 2.31,
+          "betfair": 2.38,
+          "leovegas": 2.25,
+          "unibet": 2.25,
+          "888sport": 2.2
         },
         "away": {
-          "bwin": 2.2,
-          "1xbet": 2.189,
-          "bet365": 2.2,
-          "betano": 2.1,
-          "betway": 2.1,
-          "oddset": 2.2,
-          "unibet": 2.23,
-          "betsson": 2.15,
-          "leovegas": 2.23,
-          "pinnacle": 2.25,
-          "codere": 2.15,
-          "betfair": 2.3,
-          "winamax": 2.2,
-          "williamhill": 2.15
+          "pinnacle": 1.66,
+          "betfair": 1.7,
+          "leovegas": 1.64,
+          "unibet": 1.64,
+          "888sport": 1.67
         }
       },
       "model": {
-        "home": 0.5143871841659987,
-        "away": 0.4856128158340013,
+        "home": 0.43843206102635396,
+        "away": 0.5615679389736461,
         "fromModel": true,
-        "eloH": 1754,
-        "eloA": 1744,
+        "eloH": 1821,
+        "eloA": 1864,
         "surface": "hard"
       },
-      "ts": 1785067200000,
+      "ts": 1785164400000,
       "sofa": null
     },
     {
-      "id": "opid1200817773162484",
+      "id": "3972c76a68aa281210f99b8b13141843",
       "tour": "wta",
-      "event": "WTA Washington, USA Women Singles",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "elisabettacoccia",
+      "away": "claratauson",
+      "odds": {
+        "home": {
+          "pinnacle": 3.22,
+          "betfair": 3.3,
+          "leovegas": 3.15,
+          "unibet": 3.15,
+          "888sport": 2.9
+        },
+        "away": {
+          "pinnacle": 1.38,
+          "betfair": 1.41,
+          "leovegas": 1.36,
+          "unibet": 1.36,
+          "888sport": 1.4
+        }
+      },
+      "model": {
+        "home": 0.399221754109989,
+        "away": 0.600778245890011,
+        "fromModel": true,
+        "eloH": 1837,
+        "eloA": 1908,
+        "surface": "hard"
+      },
+      "ts": 1785164400000,
+      "sofa": null
+    },
+    {
+      "id": "59a8e2dd6ff753a4f3c45ae431382500",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "leylahfernandez",
+      "away": "magdalinette",
+      "odds": {
+        "home": {
+          "pinnacle": 1.55,
+          "betfair": 1.57,
+          "leovegas": 1.53,
+          "unibet": 1.53,
+          "888sport": 1.53
+        },
+        "away": {
+          "pinnacle": 2.57,
+          "betfair": 2.68,
+          "leovegas": 2.5,
+          "unibet": 2.5,
+          "888sport": 2.5
+        }
+      },
+      "model": {
+        "home": 0.6997694032620582,
+        "away": 0.30023059673794183,
+        "fromModel": true,
+        "eloH": 1904,
+        "eloA": 1757,
+        "surface": "hard"
+      },
+      "ts": 1785164400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200448373189752",
+      "tour": "wta",
+      "event": "WTA Memphis, USA Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "yexinma",
+      "away": "kimberlybirrell",
+      "odds": {
+        "home": {
+          "betway": 4.5,
+          "betfair": 1.04
+        },
+        "away": {
+          "betway": 1.2,
+          "betfair": 1.04
+        }
+      },
+      "model": {
+        "home": 0.3882294992189357,
+        "away": 0.6117705007810643,
+        "fromModel": true,
+        "eloH": 1687,
+        "eloA": 1766,
+        "surface": "hard"
+      },
+      "ts": 1785164400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200448373148796",
+      "tour": "wta",
+      "event": "WTA Memphis, USA Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "anastasiazakharo",
+      "away": "lindafruhvirtova",
+      "odds": {
+        "home": {
+          "bwin": 1.57,
+          "1xbet": 1.57,
+          "bet365": 1.5,
+          "betano": 1.55,
+          "betway": 1.55,
+          "oddset": 1.57,
+          "unibet": 1.54,
+          "betsson": 1.53,
+          "leovegas": 1.54,
+          "pinnacle": 1.578,
+          "codere": 1.53,
+          "betfair": 1.57,
+          "winamax": 1.54,
+          "williamhill": 1.556
+        },
+        "away": {
+          "bwin": 2.35,
+          "1xbet": 2.408,
+          "bet365": 2.62,
+          "betano": 2.5,
+          "betway": 2.5,
+          "oddset": 2.35,
+          "unibet": 2.48,
+          "betsson": 2.47,
+          "leovegas": 2.48,
+          "pinnacle": 2.5,
+          "codere": 2.35,
+          "betfair": 2.6,
+          "winamax": 2.55,
+          "williamhill": 2.35
+        }
+      },
+      "model": {
+        "home": 0.5980137657693436,
+        "away": 0.4019862342306564,
+        "fromModel": true,
+        "eloH": 1769,
+        "eloA": 1700,
+        "surface": "hard"
+      },
+      "ts": 1785164400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200448373148810",
+      "tour": "wta",
+      "event": "WTA Memphis, USA Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "27 JUL",
+      "home": "mayajoint",
+      "away": "whitneyosuigwe",
+      "odds": {
+        "home": {
+          "bwin": 1.22,
+          "1xbet": 1.26,
+          "bet365": 1.22,
+          "betano": 1.24,
+          "betway": 1.222,
+          "oddset": 1.22,
+          "unibet": 1.23,
+          "betfred": 1.222,
+          "betsson": 1.22,
+          "leovegas": 1.23,
+          "pinnacle": 1.239,
+          "codere": 1.22,
+          "betfair": 1.25,
+          "winamax": 1.22,
+          "williamhill": 1.25
+        },
+        "away": {
+          "bwin": 4.2,
+          "1xbet": 3.865,
+          "bet365": 4.33,
+          "betano": 4.1,
+          "betway": 4,
+          "oddset": 4.2,
+          "unibet": 4.25,
+          "betfred": 4,
+          "betsson": 4.1,
+          "leovegas": 4.25,
+          "pinnacle": 4.41,
+          "codere": 4.2,
+          "betfair": 4.7,
+          "winamax": 4.2,
+          "williamhill": 3.8
+        }
+      },
+      "model": {
+        "home": 0.7033850034718286,
+        "away": 0.29661499652817136,
+        "fromModel": true,
+        "eloH": 1798,
+        "eloA": 1648,
+        "surface": "hard"
+      },
+      "ts": 1785164400000,
+      "sofa": null
+    },
+    {
+      "id": "4c5845a68ef60155168b11c6c5e86b97",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:00",
+      "day": "27 JUL",
+      "home": "matteoarnaldi",
+      "away": "lorenzomusetti",
+      "odds": {
+        "home": {
+          "pinnacle": 2.28,
+          "betfair": 2.44,
+          "leovegas": 2.38,
+          "unibet": 2.38,
+          "888sport": 2.2
+        },
+        "away": {
+          "pinnacle": 1.68,
+          "betfair": 1.68,
+          "leovegas": 1.57,
+          "unibet": 1.57,
+          "888sport": 1.67
+        }
+      },
+      "model": {
+        "home": 0.3507050528890364,
+        "away": 0.6492949471109636,
+        "fromModel": true,
+        "eloH": 1763,
+        "eloA": 1870,
+        "surface": "hard"
+      },
+      "ts": 1785171600000,
+      "sofa": null
+    },
+    {
+      "id": "f39752941c8adb884673ce6a222feacc",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:00",
+      "day": "27 JUL",
+      "home": "emmanavarro",
+      "away": "sofiakenin",
+      "odds": {
+        "home": {
+          "pinnacle": 1.38,
+          "betfair": 1.39,
+          "leovegas": 1.36,
+          "unibet": 1.36,
+          "888sport": 1.36
+        },
+        "away": {
+          "pinnacle": 3.21,
+          "betfair": 3.4,
+          "leovegas": 3.15,
+          "unibet": 3.15,
+          "888sport": 3.1
+        }
+      },
+      "model": {
+        "home": 0.7245382428425361,
+        "away": 0.2754617571574639,
+        "fromModel": true,
+        "eloH": 1915,
+        "eloA": 1747,
+        "surface": "hard"
+      },
+      "ts": 1785171600000,
+      "sofa": null
+    },
+    {
+      "id": "f379d3b3b65df0df31caf9f446beb974",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:50",
+      "day": "27 JUL",
+      "home": "aleksandarvukic",
+      "away": "zacharysvajda",
+      "odds": {
+        "home": {
+          "betfair": 2.1,
+          "888sport": 2.1,
+          "unibet": 2.14,
+          "leovegas": 2.14
+        },
+        "away": {
+          "betfair": 1.7,
+          "888sport": 1.73,
+          "unibet": 1.71,
+          "leovegas": 1.71
+        }
+      },
+      "model": {
+        "home": 0.4626526828335072,
+        "away": 0.5373473171664929,
+        "fromModel": true,
+        "eloH": 1751,
+        "eloA": 1777,
+        "surface": "hard"
+      },
+      "ts": 1785178200000,
+      "sofa": null
+    },
+    {
+      "id": "a7d3eae7eac3a96a924111872bbf0cc2",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:00",
+      "day": "27 JUL",
+      "home": "taylorfritz",
+      "away": "zizoubergs",
+      "odds": {
+        "home": {
+          "pinnacle": 1.24,
+          "betfair": 1.23,
+          "leovegas": 1.21,
+          "unibet": 1.21,
+          "888sport": 1.22
+        },
+        "away": {
+          "pinnacle": 4.43,
+          "betfair": 5,
+          "leovegas": 4.4,
+          "unibet": 4.4,
+          "888sport": 4.2
+        }
+      },
+      "model": {
+        "home": 0.6825703854747719,
+        "away": 0.3174296145252281,
+        "fromModel": true,
+        "eloH": 1986,
+        "eloA": 1853,
+        "surface": "hard"
+      },
+      "ts": 1785178800000,
+      "sofa": null
+    },
+    {
+      "id": "8e606c4de09ca9966c654338e2570f77",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "22:00",
+      "day": "27 JUL",
+      "home": "janicetjen",
+      "away": "rebeccasramkova",
+      "odds": {
+        "home": {
+          "betfair": 1.52,
+          "unibet": 1.43,
+          "leovegas": 1.43,
+          "888sport": 1.44
+        },
+        "away": {
+          "betfair": 2.44,
+          "unibet": 2.8,
+          "leovegas": 2.8,
+          "888sport": 2.75
+        }
+      },
+      "model": {
+        "home": 0.676301669492737,
+        "away": 0.32369833050726304,
+        "fromModel": true,
+        "eloH": 1839,
+        "eloA": 1711,
+        "surface": "hard"
+      },
+      "ts": 1785182400000,
+      "sofa": null
+    },
+    {
+      "id": "8c72b0ebf1cece7509614e7551b084f9",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "23:00",
+      "day": "27 JUL",
+      "home": "keinishikori",
+      "away": "junchengshang",
+      "odds": {
+        "home": {
+          "pinnacle": 2.88,
+          "betfair": 3,
+          "leovegas": 2.75,
+          "unibet": 2.75,
+          "888sport": 2.75
+        },
+        "away": {
+          "pinnacle": 1.46,
+          "betfair": 1.49,
+          "leovegas": 1.44,
+          "unibet": 1.44,
+          "888sport": 1.44
+        }
+      },
+      "model": {
+        "home": 0.36259162325551547,
+        "away": 0.6374083767444845,
+        "fromModel": true,
+        "eloH": 1545,
+        "eloA": 1643,
+        "surface": "hard"
+      },
+      "ts": 1785186000000,
+      "sofa": null
+    },
+    {
+      "id": "875d935c671fe9535bc53d5c64e28030",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "00:00",
+      "day": "27 JUL",
+      "home": "liudmilasamsonov",
+      "away": "madisonkeys",
+      "odds": {
+        "home": {
+          "pinnacle": 3.85,
+          "betfair": 4,
+          "leovegas": 3.7,
+          "unibet": 3.7,
+          "888sport": 3.6
+        },
+        "away": {
+          "pinnacle": 1.29,
+          "betfair": 1.29,
+          "leovegas": 1.28,
+          "unibet": 1.28,
+          "888sport": 1.29
+        }
+      },
+      "model": {
+        "home": 0.41589904118632204,
+        "away": 0.584100958813678,
+        "fromModel": true,
+        "eloH": 1908,
+        "eloA": 1967,
+        "surface": "hard"
+      },
+      "ts": 1785189600000,
+      "sofa": null
+    },
+    {
+      "id": "b7dac692d1e7e6a9b6ab6f64d8435633",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "01:00",
+      "day": "27 JUL",
+      "home": "ashlynkrueger",
+      "away": "katieboulter",
+      "odds": {
+        "home": {
+          "pinnacle": 1.69,
+          "betfair": 1.71,
+          "leovegas": 1.66,
+          "unibet": 1.66,
+          "888sport": 1.67
+        },
+        "away": {
+          "pinnacle": 2.26,
+          "betfair": 2.32,
+          "leovegas": 2.23,
+          "unibet": 2.23,
+          "888sport": 2.2
+        }
+      },
+      "model": {
+        "home": 0.4355995097595788,
+        "away": 0.5644004902404212,
+        "fromModel": true,
+        "eloH": 1729,
+        "eloA": 1774,
+        "surface": "hard"
+      },
+      "ts": 1785193200000,
+      "sofa": null
+    },
+    {
+      "id": "02f0b6673ba022fb9765afc9f8a50e9c",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "02:00",
+      "day": "28 JUL",
+      "home": "francestiafoe",
+      "away": "terenceatmane",
+      "odds": {
+        "home": {
+          "pinnacle": 1.38,
+          "betfair": 1.39,
+          "leovegas": 1.34,
+          "unibet": 1.34,
+          "888sport": 1.36
+        },
+        "away": {
+          "pinnacle": 3.25,
+          "betfair": 3.4,
+          "leovegas": 3.3,
+          "unibet": 3.3,
+          "888sport": 3.1
+        }
+      },
+      "model": {
+        "home": 0.6875382482123418,
+        "away": 0.3124617517876582,
+        "fromModel": true,
+        "eloH": 1942,
+        "eloA": 1805,
+        "surface": "hard"
+      },
+      "ts": 1785196800000,
+      "sofa": null
+    },
+    {
+      "id": "30f0320d3a420d0f2c62b61b0e359c01",
+      "tour": "atp",
+      "event": "Atp Washington Open",
       "round": "",
       "surface": "Dura",
       "time": "16:00",
-      "day": "26 JUL",
-      "home": "heatherwatson",
-      "away": "julietapareja",
+      "day": "28 JUL",
+      "home": "adrianmannarino",
+      "away": "learnertien",
       "odds": {
         "home": {
-          "betway": 1.833,
-          "codere": 1.75,
-          "betfair": 1.74
+          "pinnacle": 4,
+          "betfair": 4.2,
+          "leovegas": 3.8,
+          "unibet": 3.8,
+          "888sport": 3.3
         },
         "away": {
-          "betway": 1.95,
-          "codere": 1.95,
-          "betfair": 2
+          "pinnacle": 1.28,
+          "betfair": 1.28,
+          "leovegas": 1.27,
+          "unibet": 1.27,
+          "888sport": 1.33
         }
       },
       "model": {
-        "home": 0.47986327796418354,
-        "away": 0.5201367220358164,
+        "home": 0.36259162325551547,
+        "away": 0.6374083767444845,
         "fromModel": true,
-        "eloH": 1615,
+        "eloH": 1813,
+        "eloA": 1911,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "af6a0b794885d32c2ab42f4906ba2e45",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "alexmichelsen",
+      "away": "jackdraper",
+      "odds": {
+        "home": {
+          "pinnacle": 2.2,
+          "betfair": 2.3,
+          "leovegas": 2.18,
+          "unibet": 2.18,
+          "888sport": 2.1
+        },
+        "away": {
+          "pinnacle": 1.73,
+          "betfair": 1.64,
+          "leovegas": 1.68,
+          "unibet": 1.68,
+          "888sport": 1.73
+        }
+      },
+      "model": {
+        "home": 0.5728722513945045,
+        "away": 0.4271277486054955,
+        "fromModel": true,
+        "eloH": 1834,
+        "eloA": 1783,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "cc2bdc2041cd08f06f6ea0a6f20b0b9b",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "alexdeminaur",
+      "away": "stefanostsitsipa",
+      "odds": {
+        "home": {
+          "pinnacle": 1.75,
+          "betfair": 1.77,
+          "leovegas": 1.67,
+          "unibet": 1.67,
+          "888sport": 1.73
+        },
+        "away": {
+          "pinnacle": 2.16,
+          "betfair": 2.26,
+          "leovegas": 2.2,
+          "unibet": 2.2,
+          "888sport": 2.1
+        }
+      },
+      "model": {
+        "home": 0.5573116337622928,
+        "away": 0.44268836623770724,
+        "fromModel": true,
+        "eloH": 1937,
+        "eloA": 1897,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "b09766dc03534a3e77f2ee6137e33f95",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "arthurfils",
+      "away": "rafaeljodar",
+      "odds": {
+        "home": {
+          "pinnacle": 1.64,
+          "betfair": 1.69,
+          "leovegas": 1.65,
+          "unibet": 1.65,
+          "888sport": 1.61
+        },
+        "away": {
+          "pinnacle": 2.37,
+          "betfair": 2.4,
+          "leovegas": 2.25,
+          "unibet": 2.25,
+          "888sport": 2.3
+        }
+      },
+      "model": {
+        "home": 0.5430664920222119,
+        "away": 0.4569335079777881,
+        "fromModel": true,
+        "eloH": 1901,
+        "eloA": 1871,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "ac4d7fbd351591b71a42ee82337d4c1d",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "brandonnakashima",
+      "away": "tomasmartinetche",
+      "odds": {
+        "home": {
+          "pinnacle": 1.41,
+          "betfair": 1.46,
+          "leovegas": 1.4,
+          "unibet": 1.4,
+          "888sport": 1.4
+        },
+        "away": {
+          "pinnacle": 3.07,
+          "betfair": 3.1,
+          "leovegas": 2.95,
+          "unibet": 2.95,
+          "888sport": 2.9
+        }
+      },
+      "model": {
+        "home": 0.5784967523447427,
+        "away": 0.42150324765525726,
+        "fromModel": true,
+        "eloH": 1852,
+        "eloA": 1797,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "296715636308be675eb4fd454f74cd7f",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "kamilmajchrzak",
+      "away": "tommypaul",
+      "odds": {
+        "home": {
+          "pinnacle": 3.63,
+          "betfair": 3.7,
+          "leovegas": 3.35,
+          "unibet": 3.35,
+          "888sport": 3.3
+        },
+        "away": {
+          "pinnacle": 1.32,
+          "betfair": 1.32,
+          "leovegas": 1.33,
+          "unibet": 1.33,
+          "888sport": 1.33
+        }
+      },
+      "model": {
+        "home": 0.32243941991489944,
+        "away": 0.6775605800851006,
+        "fromModel": true,
+        "eloH": 1758,
+        "eloA": 1887,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "5f281fb7e6cfb531800d19569b0168e6",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "alexandraeala",
+      "away": "qinwenzheng",
+      "odds": {
+        "home": {
+          "pinnacle": 2.33,
+          "betfair": 2.4,
+          "leovegas": 2.33,
+          "unibet": 2.33,
+          "888sport": 2.2
+        },
+        "away": {
+          "pinnacle": 1.65,
+          "betfair": 1.61,
+          "leovegas": 1.61,
+          "unibet": 1.61,
+          "888sport": 1.67
+        }
+      },
+      "model": {
+        "home": 0.3773498042127379,
+        "away": 0.6226501957872621,
+        "fromModel": true,
+        "eloH": 1846,
+        "eloA": 1933,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "1b1bea1e6a06c54cd6e3ee7b828f4750",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "anastasiapotapov",
+      "away": "venuswilliams",
+      "odds": {
+        "home": {
+          "pinnacle": 1.14,
+          "betfair": 1.14,
+          "888sport": 1.14
+        },
+        "away": {
+          "pinnacle": 6.14,
+          "betfair": 6,
+          "888sport": 5.5
+        }
+      },
+      "model": {
+        "home": 0.8467934030726806,
+        "away": 0.15320659692731942,
+        "fromModel": true,
+        "eloH": 1860,
+        "eloA": 1563,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "a1ee84a1e7426c2f0a22850180bd8e44",
+      "tour": "wta",
+      "event": "Wta Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "28 JUL",
+      "home": "magdalenafrech",
+      "away": "annli",
+      "odds": {
+        "home": {
+          "pinnacle": 2.66,
+          "betfair": 2.88,
+          "888sport": 2.6
+        },
+        "away": {
+          "pinnacle": 1.52,
+          "betfair": 1.51,
+          "888sport": 1.5
+        }
+      },
+      "model": {
+        "home": 0.4145013213281905,
+        "away": 0.5854986786718095,
+        "fromModel": true,
+        "eloH": 1797,
+        "eloA": 1857,
+        "surface": "hard"
+      },
+      "ts": 1785247200000,
+      "sofa": null
+    },
+    {
+      "id": "8a728897f2c89d140362ad0b2b8f9228",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "28 JUL",
+      "home": "ugohumbert",
+      "away": "andrejmartin",
+      "odds": {
+        "home": {
+          "betfair": 1.04,
+          "888sport": 1.11
+        },
+        "away": {
+          "betfair": 4,
+          "888sport": 6.5
+        }
+      },
+      "model": {
+        "home": 0.7830774434096761,
+        "away": 0.2169225565903239,
+        "fromModel": true,
+        "eloH": 1852,
         "eloA": 1629,
         "surface": "hard"
       },
-      "ts": 1785074400000,
+      "ts": 1785250800000,
+      "sofa": null
+    },
+    {
+      "id": "552aed3ad49ab701bd2fdffaa7fb6b5b",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "28 JUL",
+      "home": "martindammjr",
+      "away": "benshelton",
+      "odds": {
+        "home": {
+          "betfair": 1.03,
+          "888sport": 3.6
+        },
+        "away": {
+          "betfair": 1.03,
+          "888sport": 1.29
+        }
+      },
+      "model": {
+        "home": 0.469815319996098,
+        "away": 0.5301846800039021,
+        "fromModel": true,
+        "eloH": 1847,
+        "eloA": 1868,
+        "surface": "hard"
+      },
+      "ts": 1785250800000,
+      "sofa": null
+    },
+    {
+      "id": "b0a015fdd15f9ed459d8f09a5fcb3f35",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "28 JUL",
+      "home": "marcosgiron",
+      "away": "cruzhewitt",
+      "odds": {
+        "home": {
+          "betfair": 1.05,
+          "888sport": 1.05
+        },
+        "away": {
+          "betfair": 9.2,
+          "888sport": 10
+        }
+      },
+      "model": {
+        "home": 0.718756829898782,
+        "away": 0.281243170101218,
+        "fromModel": true,
+        "eloH": 1750,
+        "eloA": 1587,
+        "surface": "hard"
+      },
+      "ts": 1785250800000,
       "sofa": null
     }
   ],
@@ -354,71 +1986,82 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 15,
-      "book": "betfair-ex",
+      "conf": 43,
+      "book": "betfair_ex_eu",
       "legs": [
         {
-          "id": "opid1203427272829952",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785067200000,
+          "id": "1b1bea1e6a06c54cd6e3ee7b828f4750",
+          "sport": "tennis_wta_washington_open",
+          "ts": 1785247200000,
           "side": "home",
           "sofa": null,
-          "match": "A. Bondar – T. Korpatsch",
-          "pick": "Gana A. Bondar",
-          "odd": 1.8,
-          "book": "betfair-ex"
+          "match": "A. Potapova – V. Williams",
+          "pick": "Gana A. Potapova",
+          "odd": 1.14,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "opid1200817773162484",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785074400000,
-          "side": "away",
+          "id": "f39752941c8adb884673ce6a222feacc",
+          "sport": "tennis_wta_washington_open",
+          "ts": 1785171600000,
+          "side": "home",
           "sofa": null,
-          "match": "H. Watson – J. Pareja",
-          "pick": "Gana J. Pareja",
-          "odd": 2,
-          "book": "betfair-ex"
+          "match": "E. Navarro – S. Kenin",
+          "pick": "Gana E. Navarro",
+          "odd": 1.39,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "opid1200290772830108",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785067200000,
-          "side": "away",
+          "id": "59a8e2dd6ff753a4f3c45ae431382500",
+          "sport": "tennis_wta_washington_open",
+          "ts": 1785164400000,
+          "side": "home",
           "sofa": null,
-          "match": "D. Snigur – L. Tagger",
-          "pick": "Gana L. Tagger",
-          "odd": 2.3,
-          "book": "betfair-ex"
+          "match": "L. Fernandez – M. Linette",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.57,
+          "book": "betfair_ex_eu"
         }
       ]
     },
     {
       "id": "c2",
       "name": "Combinada Valor",
-      "conf": 29,
-      "book": "betfair-ex",
+      "conf": 23,
+      "book": "betfair_ex_eu",
       "legs": [
         {
-          "id": "opid1200290772830108",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785067200000,
-          "side": "away",
-          "sofa": null,
-          "match": "D. Snigur – L. Tagger",
-          "pick": "Gana L. Tagger",
-          "odd": 2.3,
-          "book": "betfair-ex"
-        },
-        {
-          "id": "opid1203427272829952",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785067200000,
+          "id": "af6a0b794885d32c2ab42f4906ba2e45",
+          "sport": "tennis_atp_washington_open",
+          "ts": 1785247200000,
           "side": "home",
           "sofa": null,
-          "match": "A. Bondar – T. Korpatsch",
-          "pick": "Gana A. Bondar",
-          "odd": 1.8,
-          "book": "betfair-ex"
+          "match": "A. Michelsen – J. Draper",
+          "pick": "Gana A. Michelsen",
+          "odd": 2.3,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "b7dac692d1e7e6a9b6ab6f64d8435633",
+          "sport": "tennis_wta_washington_open",
+          "ts": 1785193200000,
+          "side": "away",
+          "sofa": null,
+          "match": "A. Krueger – K. Boulter",
+          "pick": "Gana K. Boulter",
+          "odd": 2.32,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "59a8e2dd6ff753a4f3c45ae431382500",
+          "sport": "tennis_wta_washington_open",
+          "ts": 1785164400000,
+          "side": "home",
+          "sofa": null,
+          "match": "L. Fernandez – M. Linette",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.57,
+          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -1192,6 +2835,201 @@
       "book": "betano",
       "homeName": "A. Bondar",
       "awayName": "T. Korpatsch"
+    },
+    {
+      "id": "opid1200448373189752",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1785164400000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "Y. Ma – K. Birrell",
+      "pickKey": "home",
+      "pickLabel": "Gana Y. Ma",
+      "odd": 4.5,
+      "book": "betway",
+      "homeName": "Y. Ma",
+      "awayName": "K. Birrell"
+    },
+    {
+      "id": "552aed3ad49ab701bd2fdffaa7fb6b5b",
+      "sport": "tennis_atp_washington_open",
+      "ts": 1785250800000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "M. Damm Jr – B. Shelton",
+      "pickKey": "home",
+      "pickLabel": "Gana M. Damm Jr",
+      "odd": 3.6,
+      "book": "sport888",
+      "homeName": "M. Damm Jr",
+      "awayName": "B. Shelton"
+    },
+    {
+      "id": "875d935c671fe9535bc53d5c64e28030",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785189600000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "L. Samsonova – M. Keys",
+      "pickKey": "home",
+      "pickLabel": "Gana L. Samsonova",
+      "odd": 4,
+      "book": "betfair_ex_eu",
+      "homeName": "L. Samsonova",
+      "awayName": "M. Keys"
+    },
+    {
+      "id": "af6a0b794885d32c2ab42f4906ba2e45",
+      "sport": "tennis_atp_washington_open",
+      "ts": 1785247200000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Michelsen – J. Draper",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Michelsen",
+      "odd": 2.3,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Michelsen",
+      "awayName": "J. Draper"
+    },
+    {
+      "id": "3972c76a68aa281210f99b8b13141843",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785164400000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "E. Cocciaretto – C. Tauson",
+      "pickKey": "home",
+      "pickLabel": "Gana E. Cocciaretto",
+      "odd": 3.3,
+      "book": "betfair_ex_eu",
+      "homeName": "E. Cocciaretto",
+      "awayName": "C. Tauson"
+    },
+    {
+      "id": "b7dac692d1e7e6a9b6ab6f64d8435633",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785193200000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Krueger – K. Boulter",
+      "pickKey": "away",
+      "pickLabel": "Gana K. Boulter",
+      "odd": 2.32,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Krueger",
+      "awayName": "K. Boulter"
+    },
+    {
+      "id": "ac4d7fbd351591b71a42ee82337d4c1d",
+      "sport": "tennis_atp_washington_open",
+      "ts": 1785247200000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "B. Nakashima – T. Martin Etcheverry",
+      "pickKey": "away",
+      "pickLabel": "Gana T. Martin Etcheverry",
+      "odd": 3.1,
+      "book": "betfair_ex_eu",
+      "homeName": "B. Nakashima",
+      "awayName": "T. Martin Etcheverry"
+    },
+    {
+      "id": "a1ee84a1e7426c2f0a22850180bd8e44",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785247200000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "M. Frech – A. Li",
+      "pickKey": "home",
+      "pickLabel": "Gana M. Frech",
+      "odd": 2.88,
+      "book": "betfair_ex_eu",
+      "homeName": "M. Frech",
+      "awayName": "A. Li"
+    },
+    {
+      "id": "59a8e2dd6ff753a4f3c45ae431382500",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785164400000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "L. Fernandez – M. Linette",
+      "pickKey": "home",
+      "pickLabel": "Gana L. Fernandez",
+      "odd": 1.57,
+      "book": "betfair_ex_eu",
+      "homeName": "L. Fernandez",
+      "awayName": "M. Linette"
+    },
+    {
+      "id": "b09766dc03534a3e77f2ee6137e33f95",
+      "sport": "tennis_atp_washington_open",
+      "ts": 1785247200000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Fils – R. Jodar",
+      "pickKey": "away",
+      "pickLabel": "Gana R. Jodar",
+      "odd": 2.4,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Fils",
+      "awayName": "R. Jodar"
+    },
+    {
+      "id": "4c5845a68ef60155168b11c6c5e86b97",
+      "sport": "tennis_atp_washington_open",
+      "ts": 1785171600000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Arnaldi – L. Musetti",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Musetti",
+      "odd": 1.68,
+      "book": "pinnacle",
+      "homeName": "M. Arnaldi",
+      "awayName": "L. Musetti"
+    },
+    {
+      "id": "5f281fb7e6cfb531800d19569b0168e6",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785247200000,
+      "date": "28 JUL",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Eala – Q. Zheng",
+      "pickKey": "away",
+      "pickLabel": "Gana Q. Zheng",
+      "odd": 1.67,
+      "book": "sport888",
+      "homeName": "A. Eala",
+      "awayName": "Q. Zheng"
+    },
+    {
+      "id": "8e606c4de09ca9966c654338e2570f77",
+      "sport": "tennis_wta_washington_open",
+      "ts": 1785182400000,
+      "date": "27 JUL",
+      "sofa": null,
+      "pickHome": true,
+      "match": "J. Tjen – R. Sramkova",
+      "pickKey": "home",
+      "pickLabel": "Gana J. Tjen",
+      "odd": 1.52,
+      "book": "betfair_ex_eu",
+      "homeName": "J. Tjen",
+      "awayName": "R. Sramkova"
     }
   ],
   "COMBO_RECORD": [
@@ -2710,9 +4548,111 @@
           "awayName": "T. Korpatsch"
         }
       ]
+    },
+    {
+      "dayId": "27 JUL·c1",
+      "date": "27 JUL",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "1b1bea1e6a06c54cd6e3ee7b828f4750",
+          "sport": "tennis_wta_washington_open",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Potapova – V. Williams",
+          "pick": "Gana A. Potapova",
+          "odd": 1.14,
+          "homeName": "A. Potapova",
+          "awayName": "V. Williams"
+        },
+        {
+          "id": "f39752941c8adb884673ce6a222feacc",
+          "sport": "tennis_wta_washington_open",
+          "side": "home",
+          "sofa": null,
+          "match": "E. Navarro – S. Kenin",
+          "pick": "Gana E. Navarro",
+          "odd": 1.39,
+          "homeName": "E. Navarro",
+          "awayName": "S. Kenin"
+        },
+        {
+          "id": "59a8e2dd6ff753a4f3c45ae431382500",
+          "sport": "tennis_wta_washington_open",
+          "side": "home",
+          "sofa": null,
+          "match": "L. Fernandez – M. Linette",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.57,
+          "homeName": "L. Fernandez",
+          "awayName": "M. Linette"
+        }
+      ]
+    },
+    {
+      "dayId": "27 JUL·c2",
+      "date": "27 JUL",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "af6a0b794885d32c2ab42f4906ba2e45",
+          "sport": "tennis_atp_washington_open",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Michelsen – J. Draper",
+          "pick": "Gana A. Michelsen",
+          "odd": 2.3,
+          "homeName": "A. Michelsen",
+          "awayName": "J. Draper"
+        },
+        {
+          "id": "b7dac692d1e7e6a9b6ab6f64d8435633",
+          "sport": "tennis_wta_washington_open",
+          "side": "away",
+          "sofa": null,
+          "match": "A. Krueger – K. Boulter",
+          "pick": "Gana K. Boulter",
+          "odd": 2.32,
+          "homeName": "A. Krueger",
+          "awayName": "K. Boulter"
+        },
+        {
+          "id": "59a8e2dd6ff753a4f3c45ae431382500",
+          "sport": "tennis_wta_washington_open",
+          "side": "home",
+          "sofa": null,
+          "match": "L. Fernandez – M. Linette",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.57,
+          "homeName": "L. Fernandez",
+          "awayName": "M. Linette"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "27 JUL",
+      "match": "A. Mannarino – L. Tien",
+      "marginPct": 1,
+      "profit": 1.01,
+      "ts": 1785247200000,
+      "homeName": "A. Mannarino",
+      "awayName": "L. Tien",
+      "sport": "tennis_atp_washington_open",
+      "legs": [
+        {
+          "pick": "Gana A. Mannarino",
+          "odd": 4.2,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "pick": "Gana L. Tien",
+          "odd": 1.33,
+          "book": "sport888"
+        }
+      ]
+    },
     {
       "date": "24 JUL",
       "match": "L. Tararudee – D. Snigur",
@@ -3567,28 +5507,6 @@
         {
           "pick": "Gana A. Zverev",
           "odd": 1.08,
-          "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "03 JUL",
-      "match": "K. Khachanov – F. Cobolli",
-      "marginPct": 0.51,
-      "profit": 0.51,
-      "ts": 1783155600000,
-      "homeName": "K. Khachanov",
-      "awayName": "F. Cobolli",
-      "sport": "tennis_atp_wimbledon",
-      "legs": [
-        {
-          "pick": "Gana K. Khachanov",
-          "odd": 1.88,
-          "book": "onexbet"
-        },
-        {
-          "pick": "Gana F. Cobolli",
-          "odd": 2.16,
           "book": "betfair_ex_eu"
         }
       ]
@@ -7266,6 +9184,292 @@
       "sofa": null,
       "homeName": "H. Watson",
       "awayName": "J. Pareja"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "A. Tabilo – T. Griekspoor",
+      "predHome": false,
+      "prob": 56,
+      "predName": "T. Griekspoor",
+      "sofa": null,
+      "homeName": "A. Tabilo",
+      "awayName": "T. Griekspoor"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "E. Cocciaretto – C. Tauson",
+      "predHome": false,
+      "prob": 60,
+      "predName": "C. Tauson",
+      "sofa": null,
+      "homeName": "E. Cocciaretto",
+      "awayName": "C. Tauson"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "L. Fernandez – M. Linette",
+      "predHome": true,
+      "prob": 70,
+      "predName": "L. Fernandez",
+      "sofa": null,
+      "homeName": "L. Fernandez",
+      "awayName": "M. Linette"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "Y. Ma – K. Birrell",
+      "predHome": false,
+      "prob": 61,
+      "predName": "K. Birrell",
+      "sofa": null,
+      "homeName": "Y. Ma",
+      "awayName": "K. Birrell"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "A. Zakharova – L. Fruhvirtova",
+      "predHome": true,
+      "prob": 60,
+      "predName": "A. Zakharova",
+      "sofa": null,
+      "homeName": "A. Zakharova",
+      "awayName": "L. Fruhvirtova"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785164400000,
+      "match": "M. Joint – W. Osuigwe",
+      "predHome": true,
+      "prob": 70,
+      "predName": "M. Joint",
+      "sofa": null,
+      "homeName": "M. Joint",
+      "awayName": "W. Osuigwe"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785171600000,
+      "match": "M. Arnaldi – L. Musetti",
+      "predHome": false,
+      "prob": 65,
+      "predName": "L. Musetti",
+      "sofa": null,
+      "homeName": "M. Arnaldi",
+      "awayName": "L. Musetti"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785171600000,
+      "match": "E. Navarro – S. Kenin",
+      "predHome": true,
+      "prob": 72,
+      "predName": "E. Navarro",
+      "sofa": null,
+      "homeName": "E. Navarro",
+      "awayName": "S. Kenin"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785178200000,
+      "match": "A. Vukic – Z. Svajda",
+      "predHome": false,
+      "prob": 54,
+      "predName": "Z. Svajda",
+      "sofa": null,
+      "homeName": "A. Vukic",
+      "awayName": "Z. Svajda"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785178800000,
+      "match": "T. Fritz – Z. Bergs",
+      "predHome": true,
+      "prob": 68,
+      "predName": "T. Fritz",
+      "sofa": null,
+      "homeName": "T. Fritz",
+      "awayName": "Z. Bergs"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785182400000,
+      "match": "J. Tjen – R. Sramkova",
+      "predHome": true,
+      "prob": 68,
+      "predName": "J. Tjen",
+      "sofa": null,
+      "homeName": "J. Tjen",
+      "awayName": "R. Sramkova"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785186000000,
+      "match": "K. Nishikori – J. Shang",
+      "predHome": false,
+      "prob": 64,
+      "predName": "J. Shang",
+      "sofa": null,
+      "homeName": "K. Nishikori",
+      "awayName": "J. Shang"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785189600000,
+      "match": "L. Samsonova – M. Keys",
+      "predHome": false,
+      "prob": 58,
+      "predName": "M. Keys",
+      "sofa": null,
+      "homeName": "L. Samsonova",
+      "awayName": "M. Keys"
+    },
+    {
+      "date": "27 JUL",
+      "ts": 1785193200000,
+      "match": "A. Krueger – K. Boulter",
+      "predHome": false,
+      "prob": 56,
+      "predName": "K. Boulter",
+      "sofa": null,
+      "homeName": "A. Krueger",
+      "awayName": "K. Boulter"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. Mannarino – L. Tien",
+      "predHome": false,
+      "prob": 64,
+      "predName": "L. Tien",
+      "sofa": null,
+      "homeName": "A. Mannarino",
+      "awayName": "L. Tien"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. Michelsen – J. Draper",
+      "predHome": true,
+      "prob": 57,
+      "predName": "A. Michelsen",
+      "sofa": null,
+      "homeName": "A. Michelsen",
+      "awayName": "J. Draper"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. de Minaur – S. Tsitsipas",
+      "predHome": true,
+      "prob": 56,
+      "predName": "A. de Minaur",
+      "sofa": null,
+      "homeName": "A. de Minaur",
+      "awayName": "S. Tsitsipas"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. Fils – R. Jodar",
+      "predHome": true,
+      "prob": 54,
+      "predName": "A. Fils",
+      "sofa": null,
+      "homeName": "A. Fils",
+      "awayName": "R. Jodar"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "B. Nakashima – T. Martin Etcheverry",
+      "predHome": true,
+      "prob": 58,
+      "predName": "B. Nakashima",
+      "sofa": null,
+      "homeName": "B. Nakashima",
+      "awayName": "T. Martin Etcheverry"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "K. Majchrzak – T. Paul",
+      "predHome": false,
+      "prob": 68,
+      "predName": "T. Paul",
+      "sofa": null,
+      "homeName": "K. Majchrzak",
+      "awayName": "T. Paul"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. Eala – Q. Zheng",
+      "predHome": false,
+      "prob": 62,
+      "predName": "Q. Zheng",
+      "sofa": null,
+      "homeName": "A. Eala",
+      "awayName": "Q. Zheng"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "A. Potapova – V. Williams",
+      "predHome": true,
+      "prob": 85,
+      "predName": "A. Potapova",
+      "sofa": null,
+      "homeName": "A. Potapova",
+      "awayName": "V. Williams"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785247200000,
+      "match": "M. Frech – A. Li",
+      "predHome": false,
+      "prob": 59,
+      "predName": "A. Li",
+      "sofa": null,
+      "homeName": "M. Frech",
+      "awayName": "A. Li"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785250800000,
+      "match": "U. Humbert – A. Martin",
+      "predHome": true,
+      "prob": 78,
+      "predName": "U. Humbert",
+      "sofa": null,
+      "homeName": "U. Humbert",
+      "awayName": "A. Martin"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785250800000,
+      "match": "M. Damm Jr – B. Shelton",
+      "predHome": false,
+      "prob": 53,
+      "predName": "B. Shelton",
+      "sofa": null,
+      "homeName": "M. Damm Jr",
+      "awayName": "B. Shelton"
+    },
+    {
+      "date": "28 JUL",
+      "ts": 1785250800000,
+      "match": "M. Giron – C. Hewitt",
+      "predHome": true,
+      "prob": 72,
+      "predName": "M. Giron",
+      "sofa": null,
+      "homeName": "M. Giron",
+      "awayName": "C. Hewitt"
     }
   ],
   "LADDER": {
