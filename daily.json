@@ -1,84 +1,43 @@
 {
   "meta": {
-    "updatedAt": "2026-08-02T22:00:52.228Z",
+    "updatedAt": "2026-08-03T07:00:59.576Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 56,
-    "valuePicks": 27,
+    "matches": 54,
+    "valuePicks": 31,
     "books": 19,
     "stale": false,
     "model": {
-      "players": 3537
+      "players": 3539
     },
     "credits": {
-      "remaining": 494,
-      "used": 6
+      "remaining": 490,
+      "used": 10
     }
   },
   "PLAYERS": {
-    "adolfodanielvall": {
-      "id": "adolfodanielvall",
-      "name": "A. Daniel Vallejo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/9217_d-vallejo.jpg"
-    },
-    "junchengshang": {
-      "id": "junchengshang",
-      "name": "J. Shang",
+    "alexisgalarneau": {
+      "id": "alexisgalarneau",
+      "name": "A. Galarneau",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2413_j-shang.jpg"
-    },
-    "aleksandarkovace": {
-      "id": "aleksandarkovace",
-      "name": "A. Kovacevic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
         "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2978_a-kovacevic.jpg"
-    },
-    "nunoborges": {
-      "id": "nunoborges",
-      "name": "N. Borges",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
         "L",
         "W",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/358_n-borges.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/557_a-galarneau.jpg"
     },
-    "jaumemunar": {
-      "id": "jaumemunar",
-      "name": "J. Munar",
+    "vitkopriva": {
+      "id": "vitkopriva",
+      "name": "V. Kopriva",
       "country": "",
       "flag": "",
       "seed": "",
@@ -86,16 +45,16 @@
       "elo": null,
       "form": [
         "W",
-        "L",
         "W",
+        "L",
         "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2083_j-munar.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1083_v-kopriva.jpg"
     },
-    "rinkyhijikata": {
-      "id": "rinkyhijikata",
-      "name": "R. Hijikata",
+    "lucavanassche": {
+      "id": "lucavanassche",
+      "name": "L. Van Assche",
       "country": "",
       "flag": "",
       "seed": "",
@@ -103,110 +62,29 @@
       "elo": null,
       "form": [
         "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/3317_r-hijikata.jpg"
-    },
-    "michaelzheng": {
-      "id": "michaelzheng",
-      "name": "M. Zheng",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9515_m-zheng.jpg"
-    },
-    "miomirkecmanovic": {
-      "id": "miomirkecmanovic",
-      "name": "M. Kecmanovic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2848_m-kecmanovic.jpg"
-    },
-    "aleksandarvukic": {
-      "id": "aleksandarvukic",
-      "name": "A. Vukic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/360_a-vukic.jpg"
-    },
-    "danielaltmaier": {
-      "id": "danielaltmaier",
-      "name": "D. Altmaier",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1099_d-altmaier.jpg"
-    },
-    "jamesduckworth": {
-      "id": "jamesduckworth",
-      "name": "J. Duckworth",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1900_j-duckworth.jpg"
-    },
-    "christopheroconn": {
-      "id": "christopheroconn",
-      "name": "C. O'Connell",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
         "W",
         "W",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/421_c-oconnell.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1066_l-assche.jpg"
+    },
+    "titouandroguet": {
+      "id": "titouandroguet",
+      "name": "T. Droguet",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/8926_t-droguet.jpg"
     },
     "matteoberrettini": {
       "id": "matteoberrettini",
@@ -269,6 +147,96 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/39864_m-landaluce.jpg"
     },
+    "aleksandarvukic": {
+      "id": "aleksandarvukic",
+      "name": "A. Vukic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/360_a-vukic.jpg"
+    },
+    "danielaltmaier": {
+      "id": "danielaltmaier",
+      "name": "D. Altmaier",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1099_d-altmaier.jpg"
+    },
+    "benjaminbonzi": {
+      "id": "benjaminbonzi",
+      "name": "B. Bonzi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
+    },
+    "yannickhanfmann": {
+      "id": "yannickhanfmann",
+      "name": "Y. Hanfmann",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
+    },
+    "shoshimabukuro": {
+      "id": "shoshimabukuro",
+      "name": "S. Shimabukuro",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9608_s-shimabukuro.jpg"
+    },
+    "marincilic": {
+      "id": "marincilic",
+      "name": "M. Cilic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2167_m-cilic.jpg"
+    },
     "martonfucsovics": {
       "id": "martonfucsovics",
       "name": "M. Fucsovics",
@@ -299,66 +267,6 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2674_c-moutet.jpg"
-    },
-    "lucavanassche": {
-      "id": "lucavanassche",
-      "name": "L. Van Assche",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1066_l-assche.jpg"
-    },
-    "titouandroguet": {
-      "id": "titouandroguet",
-      "name": "T. Droguet",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/8926_t-droguet.jpg"
-    },
-    "shoshimabukuro": {
-      "id": "shoshimabukuro",
-      "name": "S. Shimabukuro",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9608_s-shimabukuro.jpg"
-    },
-    "marincilic": {
-      "id": "marincilic",
-      "name": "M. Cilic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2167_m-cilic.jpg"
     },
     "gabrieldiallo": {
       "id": "gabrieldiallo",
@@ -393,22 +301,26 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1335_k-jacquet.jpg"
     },
-    "benjaminbonzi": {
-      "id": "benjaminbonzi",
-      "name": "B. Bonzi",
+    "jacobfearnley": {
+      "id": "jacobfearnley",
+      "name": "J. Fearnley",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "L"
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/12951_j-fearnley.jpg"
     },
-    "yannickhanfmann": {
-      "id": "yannickhanfmann",
-      "name": "Y. Hanfmann",
+    "adrianmannarino": {
+      "id": "adrianmannarino",
+      "name": "A. Mannarino",
       "country": "",
       "flag": "",
       "seed": "",
@@ -421,69 +333,7 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
-    },
-    "alexisgalarneau": {
-      "id": "alexisgalarneau",
-      "name": "A. Galarneau",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/557_a-galarneau.jpg"
-    },
-    "vitkopriva": {
-      "id": "vitkopriva",
-      "name": "V. Kopriva",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1083_v-kopriva.jpg"
-    },
-    "zacharysvajda": {
-      "id": "zacharysvajda",
-      "name": "Z. Svajda",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
-    },
-    "denisshapovalov": {
-      "id": "denisshapovalov",
-      "name": "D. Shapovalov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/431_d-shapovalov.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/438_a-mannarino.jpg"
     },
     "alexmichelsen": {
       "id": "alexmichelsen",
@@ -519,6 +369,170 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2831_j-struff.jpg"
     },
+    "camilougocarabel": {
+      "id": "camilougocarabel",
+      "name": "C. Ugo Carabelli",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/401_c-carabelli.jpg"
+    },
+    "cameronnorrie": {
+      "id": "cameronnorrie",
+      "name": "C. Norrie",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1103_c-norrie.jpg"
+    },
+    "huberthurkacz": {
+      "id": "huberthurkacz",
+      "name": "H. Hurkacz",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2841_h-hurkacz.jpg"
+    },
+    "marcosgiron": {
+      "id": "marcosgiron",
+      "name": "M. Giron",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.sofascore.app/api/v1/team/106140/image"
+    },
+    "terenceatmane": {
+      "id": "terenceatmane",
+      "name": "T. Atmane",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
+    },
+    "jackdraper": {
+      "id": "jackdraper",
+      "name": "J. Draper",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/7011_j-draper.jpg"
+    },
+    "adamwalton": {
+      "id": "adamwalton",
+      "name": "A. Walton",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10070_a-walton.jpg"
+    },
+    "jensonbrooksby": {
+      "id": "jensonbrooksby",
+      "name": "J. Brooksby",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2169_j-brooksby.jpg"
+    },
+    "sebastianbaez": {
+      "id": "sebastianbaez",
+      "name": "S. Baez",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg"
+    },
+    "mattiabellucci": {
+      "id": "mattiabellucci",
+      "name": "M. Bellucci",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
+    },
     "giovannimpetship": {
       "id": "giovannimpetship",
       "name": "G. Mpetshi Perricard",
@@ -553,9 +567,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2972_b-vandezandschulp.jpg"
     },
-    "camilougocarabel": {
-      "id": "camilougocarabel",
-      "name": "C. Ugo Carabelli",
+    "shintaromochizuk": {
+      "id": "shintaromochizuk",
+      "name": "S. Mochizuki",
       "country": "",
       "flag": "",
       "seed": "",
@@ -564,15 +578,43 @@
       "form": [
         "W",
         "L",
-        "W",
+        "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/401_c-carabelli.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1880_s-mochizuki.jpg"
     },
-    "cameronnorrie": {
-      "id": "cameronnorrie",
-      "name": "C. Norrie",
+    "fabianmarozsan": {
+      "id": "fabianmarozsan",
+      "name": "F. Marozsan",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10148_f-marozsan.jpg"
+    },
+    "juanmanuelcerund": {
+      "id": "juanmanuelcerund",
+      "name": "J. Manuel Cerundolo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
+    },
+    "hamadmedjedovic": {
+      "id": "hamadmedjedovic",
+      "name": "H. Medjedovic",
       "country": "",
       "flag": "",
       "seed": "",
@@ -580,12 +622,41 @@
       "elo": null,
       "form": [
         "L",
-        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2677_h-medjedovic.jpg"
+    },
+    "lorenzosonego": {
+      "id": "lorenzosonego",
+      "name": "L. Sonego",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
         "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1103_c-norrie.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
+    },
+    "tallongriekspoor": {
+      "id": "tallongriekspoor",
+      "name": "T. Griekspoor",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/427_t-griekspoor.jpg"
     },
     "danielmeridaagui": {
       "id": "danielmeridaagui",
@@ -649,125 +720,6 @@
       "form": [],
       "photo": "https://api.api-tennis.com/logo-tennis/2845_g-monfils.jpg"
     },
-    "juanmanuelcerund": {
-      "id": "juanmanuelcerund",
-      "name": "J. Manuel Cerundolo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
-    },
-    "hamadmedjedovic": {
-      "id": "hamadmedjedovic",
-      "name": "H. Medjedovic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2677_h-medjedovic.jpg"
-    },
-    "terenceatmane": {
-      "id": "terenceatmane",
-      "name": "T. Atmane",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/13091_t-atmane.jpg"
-    },
-    "jackdraper": {
-      "id": "jackdraper",
-      "name": "J. Draper",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/7011_j-draper.jpg"
-    },
-    "lorenzosonego": {
-      "id": "lorenzosonego",
-      "name": "L. Sonego",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
-    },
-    "tallongriekspoor": {
-      "id": "tallongriekspoor",
-      "name": "T. Griekspoor",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/427_t-griekspoor.jpg"
-    },
-    "sebastianbaez": {
-      "id": "sebastianbaez",
-      "name": "S. Baez",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg"
-    },
-    "mattiabellucci": {
-      "id": "mattiabellucci",
-      "name": "M. Bellucci",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
-    },
     "pablocarrenobust": {
       "id": "pablocarrenobust",
       "name": "P. Carreno Busta",
@@ -798,6 +750,176 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/954_v-royer.jpg"
+    },
+    "martindammjr": {
+      "id": "martindammjr",
+      "name": "M. Damm Jr",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/1317_m-damm.jpg"
+    },
+    "stefanostsitsipa": {
+      "id": "stefanostsitsipa",
+      "name": "S. Tsitsipas",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg"
+    },
+    "jaumemunar": {
+      "id": "jaumemunar",
+      "name": "J. Munar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2083_j-munar.jpg"
+    },
+    "alexanderblockx": {
+      "id": "alexanderblockx",
+      "name": "A. Blockx",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/39913_a-blockx.jpg"
+    },
+    "alexeipopyrin": {
+      "id": "alexeipopyrin",
+      "name": "A. Popyrin",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/128552/image"
+    },
+    "romanandresburru": {
+      "id": "romanandresburru",
+      "name": "R. Andres Burruchaga",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/9596_a-burruchaga.jpg"
+    },
+    "junchengshang": {
+      "id": "junchengshang",
+      "name": "J. Shang",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2413_j-shang.jpg"
+    },
+    "andreyrublev": {
+      "id": "andreyrublev",
+      "name": "A. Rublev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2847_a-rublev.jpg"
+    },
+    "zacharysvajda": {
+      "id": "zacharysvajda",
+      "name": "Z. Svajda",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2986_z-svajda.jpg"
+    },
+    "denisshapovalov": {
+      "id": "denisshapovalov",
+      "name": "D. Shapovalov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/431_d-shapovalov.jpg"
+    },
+    "duncanchan": {
+      "id": "duncanchan",
+      "name": "D. Chan",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/38792_d-chan.jpg"
+    },
+    "thiagoagustintir": {
+      "id": "thiagoagustintir",
+      "name": "T. Agustin Tirante",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/366_a-tirante.jpg"
     },
     "taylorfritz": {
       "id": "taylorfritz",
@@ -831,139 +953,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
     },
-    "jessicabouzasman": {
-      "id": "jessicabouzasman",
-      "name": "J. Bouzas Maneiro",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/275105/image"
-    },
-    "arianaarseneault": {
-      "id": "arianaarseneault",
-      "name": "A. Arseneault",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/71261_n-arseneault.jpg"
-    },
-    "moyukauchijima": {
-      "id": "moyukauchijima",
-      "name": "M. Uchijima",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101757_m-uchijima.jpg"
-    },
-    "cristinabucsa": {
-      "id": "cristinabucsa",
-      "name": "C. Bucsa",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/454_c-bucsa.jpg"
-    },
-    "kamillarakhimova": {
-      "id": "kamillarakhimova",
-      "name": "K. Rakhimova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1140_k-rakhimova.jpg"
-    },
-    "venuswilliams": {
-      "id": "venuswilliams",
-      "name": "V. Williams",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101795_c-williams.jpg"
-    },
-    "kimberlybirrell": {
-      "id": "kimberlybirrell",
-      "name": "K. Birrell",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/92_k-birrell.jpg"
-    },
-    "viktorijagolubic": {
-      "id": "viktorijagolubic",
-      "name": "V. Golubic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/525_v-golubic.jpg"
-    },
-    "xiyuwang": {
-      "id": "xiyuwang",
-      "name": "X. Wang",
+    "alinakorneeva": {
+      "id": "alinakorneeva",
+      "name": "A. Korneeva",
       "country": "",
       "flag": "",
       "seed": "",
@@ -974,30 +966,13 @@
         "L",
         "W",
         "W",
-        "L"
+        "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/101759_a-korneeva.jpg"
     },
-    "sarabejlek": {
-      "id": "sarabejlek",
-      "name": "S. Bejlek",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9393_s-bejlek.jpg"
-    },
-    "magdalenafrech": {
-      "id": "magdalenafrech",
-      "name": "M. Frech",
+    "polinakudermetov": {
+      "id": "polinakudermetov",
+      "name": "P. Kudermetova",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1006,43 +981,31 @@
       "form": [
         "L",
         "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2089_m-frech.jpg"
-    },
-    "leoliajeanjean": {
-      "id": "leoliajeanjean",
-      "name": "L. Jeanjean",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
         "L",
         "W",
-        "W",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9118_l-jeanjean.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2810_v-kudermetova.jpg"
     },
-    "loisboisson": {
-      "id": "loisboisson",
-      "name": "L. Boisson",
+    "anhelinakalinina": {
+      "id": "anhelinakalinina",
+      "name": "A. Kalinina",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
+        "W",
+        "L",
+        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/8802_l-boisson.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2393_a-kalinina.jpg"
     },
-    "antoniaruzic": {
-      "id": "antoniaruzic",
-      "name": "A. Ruzic",
+    "annabondar": {
+      "id": "annabondar",
+      "name": "A. Bondár",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1053,44 +1016,28 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/168_a-ruzic.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/505_a-bondar.jpg"
     },
-    "aoiito": {
-      "id": "aoiito",
-      "name": "A. Ito",
+    "dianeparry": {
+      "id": "dianeparry",
+      "name": "D. Parry",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "L",
-        "L",
         "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/13618_a-ito.jpg"
-    },
-    "katherinesebov": {
-      "id": "katherinesebov",
-      "name": "K. Sebov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
         "L",
-        "W",
         "W",
         "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/6701_k-sebov.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1833_d-parry.jpg"
     },
-    "lucreziastefanin": {
-      "id": "lucreziastefanin",
-      "name": "L. Stefanini",
+    "kayladay": {
+      "id": "kayladay",
+      "name": "K. Day",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1100,21 +1047,43 @@
         "W",
         "W",
         "W",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1113_l-stefanini.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/132_k-day.jpg"
     },
-    "mariacamilaosori": {
-      "id": "mariacamilaosori",
-      "name": "M. Camila Osorio Serrano",
+    "oleksandraoliyny": {
+      "id": "oleksandraoliyny",
+      "name": "O. Oliynykova",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/68640_m-serrano.jpg"
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/12876_o-oliynykova.jpg"
+    },
+    "karolinapliskova": {
+      "id": "karolinapliskova",
+      "name": "K. Pliskova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/20732/image"
     },
     "rebeccasramkova": {
       "id": "rebeccasramkova",
@@ -1150,40 +1119,6 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1779_a-blinkova.jpg"
     },
-    "emersonjones": {
-      "id": "emersonjones",
-      "name": "E. Jones",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1858_j-jones.jpg"
-    },
-    "lanlanatararudee": {
-      "id": "lanlanatararudee",
-      "name": "L. Tararudee",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/25728_l-tararudee.jpg"
-    },
     "mccartneykessler": {
       "id": "mccartneykessler",
       "name": "M. Kessler",
@@ -1218,6 +1153,33 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/204_c-brace.jpg"
     },
+    "elenagabrielarus": {
+      "id": "elenagabrielarus",
+      "name": "E. Gabriela Ruse",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "peytonstearns": {
+      "id": "peytonstearns",
+      "name": "P. Stearns",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9646_p-stearns.jpg"
+    },
     "taliagibson": {
       "id": "taliagibson",
       "name": "T. Gibson",
@@ -1249,19 +1211,23 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/477_e-cocciaretto.jpg"
     },
-    "elenagabrielarus": {
-      "id": "elenagabrielarus",
-      "name": "E. Gabriela Ruse",
+    "katieboulter": {
+      "id": "katieboulter",
+      "name": "K. Boulter",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
-      "form": []
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2993_k-boulter.jpg"
     },
-    "peytonstearns": {
-      "id": "peytonstearns",
-      "name": "P. Stearns",
+    "kaylacross": {
+      "id": "kaylacross",
+      "name": "K. Cross",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1270,11 +1236,11 @@
       "form": [
         "W",
         "L",
-        "L",
         "W",
-        "L"
+        "W",
+        "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9646_p-stearns.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/6700_k-cross.jpg"
     },
     "nikolabartunkova": {
       "id": "nikolabartunkova",
@@ -1343,25 +1309,24 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/590_z-zhang.jpg"
     },
-    "anhelinakalinina": {
-      "id": "anhelinakalinina",
-      "name": "A. Kalinina",
+    "yuliiastarodubts": {
+      "id": "yuliiastarodubts",
+      "name": "Y. Starodubtseva",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "W",
         "L",
         "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2393_a-kalinina.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/50398_y-starodubtseva.jpg"
     },
-    "annabondar": {
-      "id": "annabondar",
-      "name": "A. Bondár",
+    "mayajoint": {
+      "id": "mayajoint",
+      "name": "M. Joint",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1370,9 +1335,11 @@
       "form": [
         "L",
         "W",
+        "W",
+        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/505_a-bondar.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/52689_m-joint.jpg"
     },
     "carolzhao": {
       "id": "carolzhao",
@@ -1407,37 +1374,36 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1154_m-linette.jpg"
     },
-    "pannaudvardy": {
-      "id": "pannaudvardy",
-      "name": "P. Udvardy",
+    "victoriajimenezk": {
+      "id": "victoriajimenezk",
+      "name": "V. Jimenez Kasintseva",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "W",
-        "W",
-        "W",
-        "W",
+        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1141_p-udvardy.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1137_v-jimenezkasintseva.jpg"
     },
-    "evalys": {
-      "id": "evalys",
-      "name": "E. Lys",
+    "alyciaparks": {
+      "id": "alyciaparks",
+      "name": "A. Parks",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
+        "W",
         "L",
-        "L",
+        "W",
+        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2088_e-lys.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1792_a-parks.jpg"
     },
     "janicetjen": {
       "id": "janicetjen",
@@ -1473,57 +1439,26 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/68376_l-samsonova.jpg"
     },
-    "oleksandraoliyny": {
-      "id": "oleksandraoliyny",
-      "name": "O. Oliynykova",
+    "tatjanamaria": {
+      "id": "tatjanamaria",
+      "name": "T. Maria",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "L",
-        "L",
+        "W",
+        "W",
         "W",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/12876_o-oliynykova.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2414_t-maria.jpg"
     },
-    "karolinapliskova": {
-      "id": "karolinapliskova",
-      "name": "K. Pliskova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/20732/image"
-    },
-    "katieboulter": {
-      "id": "katieboulter",
-      "name": "K. Boulter",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2993_k-boulter.jpg"
-    },
-    "kaylacross": {
-      "id": "kaylacross",
-      "name": "K. Cross",
+    "catymcnally": {
+      "id": "catymcnally",
+      "name": "C. McNally",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1534,43 +1469,9 @@
         "L",
         "W",
         "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/6700_k-cross.jpg"
-    },
-    "rebeccamarino": {
-      "id": "rebeccamarino",
-      "name": "R. Marino",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/13087_p-marino.jpg"
-    },
-    "zeynepsonmez": {
-      "id": "zeynepsonmez",
-      "name": "Z. Sonmez",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/4062_z-sonmez.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1127_c-mcnally.jpg"
     },
     "terezavalentova": {
       "id": "terezavalentova",
@@ -1606,6 +1507,140 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/3214_t-townsend.jpg"
     },
+    "pannaudvardy": {
+      "id": "pannaudvardy",
+      "name": "P. Udvardy",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1141_p-udvardy.jpg"
+    },
+    "evalys": {
+      "id": "evalys",
+      "name": "E. Lys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2088_e-lys.jpg"
+    },
+    "renatazarazua": {
+      "id": "renatazarazua",
+      "name": "R. Zarazua",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1805_r-zarazua.jpg"
+    },
+    "tamarakorpatsch": {
+      "id": "tamarakorpatsch",
+      "name": "T. Korpatsch",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/501_t-korpatsch.jpg"
+    },
+    "solanasierra": {
+      "id": "solanasierra",
+      "name": "S. Sierra",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/40432_t-sierra.jpg"
+    },
+    "sloanestephens": {
+      "id": "sloanestephens",
+      "name": "S. Stephens",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/28598_z-stephens.jpg"
+    },
+    "rebeccamarino": {
+      "id": "rebeccamarino",
+      "name": "R. Marino",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/13087_p-marino.jpg"
+    },
+    "zeynepsonmez": {
+      "id": "zeynepsonmez",
+      "name": "Z. Sonmez",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/4062_z-sonmez.jpg"
+    },
     "xinyuwang": {
       "id": "xinyuwang",
       "name": "X. Wang",
@@ -1639,43 +1674,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1990_d-kasatkina.jpg"
     },
-    "jessicapegula": {
-      "id": "jessicapegula",
-      "name": "J. Pegula",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2171_j-pegula.jpg"
-    },
-    "alexandraeala": {
-      "id": "alexandraeala",
-      "name": "A. Eala",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/3490_a-eala.jpg"
-    },
-    "danielvallejoado": {
-      "id": "danielvallejoado",
-      "name": "D. Vallejo Adolfo",
+    "vandezandschulpb": {
+      "id": "vandezandschulpb",
+      "name": "V. de Zandschulp Botic",
       "country": "",
       "flag": "",
       "seed": "",
@@ -1683,71 +1684,15 @@
       "elo": null,
       "form": []
     },
-    "kristinaliutova": {
-      "id": "kristinaliutova",
-      "name": "K. Liutova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/76966_k-liutova.jpg"
-    },
-    "darjavidmanova": {
-      "id": "darjavidmanova",
-      "name": "D. Vidmanova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9260_d-vidmanova.jpg"
-    },
-    "camilaosorio": {
-      "id": "camilaosorio",
-      "name": "C. Osorio",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2390_c-osorio.jpg"
-    },
-    "alejandrotabilo": {
-      "id": "alejandrotabilo",
-      "name": "A. Tabilo",
+    "danielmerida": {
+      "id": "danielmerida",
+      "name": "D. Merida",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2982_a-tabilo.jpg"
+      "form": []
     }
   },
   "BOOKS": {
@@ -1775,47 +1720,47 @@
       "abbr": "888",
       "color": "#ffb000"
     },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
+    "betclic": {
+      "id": "betclic",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
       "color": "#d11a2a"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#0a6cff"
     },
     "betfair": {
       "id": "betfair",
       "name": "Betfair",
       "abbr": "BET",
-      "color": "#1c1c1c"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
-    "betclic": {
-      "id": "betclic",
-      "name": "Betclic (FR)",
-      "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#0a6cff"
     },
     "matchbook": {
       "id": "matchbook",
       "name": "Matchbook",
       "abbr": "MAT",
-      "color": "#0a7d3c"
+      "color": "#1c1c1c"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#7a4ddb"
     },
     "winamax": {
       "id": "winamax",
       "name": "Winamax (FR)",
       "abbr": "WIN",
+      "color": "#e23b2e"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
       "color": "#0a2d6e"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#14805e"
     },
     "bwin": {
       "id": "bwin",
@@ -1851,1270 +1796,56 @@
       "id": "betfred",
       "name": "betfred",
       "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "codere": {
-      "id": "codere",
-      "name": "codere.es",
-      "abbr": "COD",
-      "color": "#d9730d"
+      "color": "#e23b2e"
     },
     "888sportro": {
       "id": "888sportro",
       "name": "888sport.ro",
       "abbr": "888",
-      "color": "#0a7d3c"
+      "color": "#0a2d6e"
+    },
+    "codere": {
+      "id": "codere",
+      "name": "codere.es",
+      "abbr": "COD",
+      "color": "#14805e"
     }
   },
   "MATCHES": [
-    {
-      "id": "4c80ce38653307c0d3827d1edb2d09c7",
-      "tour": "atp",
-      "event": "Atp Washington Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "01:40",
-      "day": "01 AGO",
-      "home": "rafaeljodar",
-      "away": "alejandrotabilo",
-      "odds": {
-        "home": {
-          "pinnacle": 1.4,
-          "betfair": 1.42,
-          "1xbet": 1.4,
-          "unibet": 1.38,
-          "betsson": 1.38,
-          "betclic": 1.4,
-          "matchbook": 1.42,
-          "winamax": 1.39,
-          "williamhill": 1.4,
-          "888sport": 1.4,
-          "leovegas": 1.35
-        },
-        "away": {
-          "pinnacle": 3.15,
-          "betfair": 3.15,
-          "1xbet": 3.08,
-          "unibet": 3.2,
-          "betsson": 3,
-          "betclic": 3.1,
-          "matchbook": 3.15,
-          "winamax": 3.15,
-          "williamhill": 2.9,
-          "888sport": 2.9,
-          "leovegas": 3.2
-        }
-      },
-      "model": {
-        "home": 0.5714631174083814,
-        "away": 0.4285368825916186,
-        "fromModel": true,
-        "eloH": 1871,
-        "eloA": 1821,
-        "surface": "hard"
-      },
-      "ts": 1785627600000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "89000ae58cd0b4f88f03639dcf8e3baa",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "adolfodanielvall",
-      "away": "junchengshang",
-      "odds": {
-        "home": {
-          "pinnacle": 2.24,
-          "unibet": 2.18,
-          "leovegas": 2.18,
-          "888sport": 2.2
-        },
-        "away": {
-          "pinnacle": 1.7,
-          "unibet": 1.68,
-          "leovegas": 1.68,
-          "888sport": 1.67
-        }
-      },
-      "model": {
-        "home": 0.6492949471109635,
-        "away": 0.35070505288903653,
-        "fromModel": true,
-        "eloH": 1750,
-        "eloA": 1643,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "702197d604aee39050a66d572b226eee",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "aleksandarkovace",
-      "away": "nunoborges",
-      "odds": {
-        "home": {
-          "leovegas": 2.7,
-          "unibet": 2.7,
-          "pinnacle": 2.79,
-          "888sport": 2.6
-        },
-        "away": {
-          "leovegas": 1.47,
-          "unibet": 1.47,
-          "pinnacle": 1.48,
-          "888sport": 1.5
-        }
-      },
-      "model": {
-        "home": 0.46122190794282847,
-        "away": 0.5387780920571715,
-        "fromModel": true,
-        "eloH": 1773,
-        "eloA": 1800,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "3302c08d3c2c0b1fb840c8863280aa3f",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "jaumemunar",
-      "away": "rinkyhijikata",
-      "odds": {
-        "home": {
-          "pinnacle": 1.77,
-          "unibet": 1.74,
-          "leovegas": 1.74,
-          "888sport": 1.73
-        },
-        "away": {
-          "pinnacle": 2.14,
-          "unibet": 2.1,
-          "leovegas": 2.1,
-          "888sport": 2.1
-        }
-      },
-      "model": {
-        "home": 0.6226501957872621,
-        "away": 0.3773498042127379,
-        "fromModel": true,
-        "eloH": 1822,
-        "eloA": 1735,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "80d0f22c6bbb11363e8bf8cc51e172f5",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "michaelzheng",
-      "away": "miomirkecmanovic",
-      "odds": {
-        "home": {
-          "888sport": 1.73,
-          "unibet": 1.73,
-          "leovegas": 1.73
-        },
-        "away": {
-          "888sport": 2.1,
-          "unibet": 2.1,
-          "leovegas": 2.1
-        }
-      },
-      "model": {
-        "home": 0.6750402010402987,
-        "away": 0.3249597989597013,
-        "fromModel": true,
-        "eloH": 1933,
-        "eloA": 1806,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "bc7bb07c0a3766a24431bb7c0aee1f86",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "jessicabouzasman",
-      "away": "arianaarseneault",
-      "odds": {
-        "home": {
-          "unibet": 1.1,
-          "888sport": 1.11,
-          "leovegas": 1.1
-        },
-        "away": {
-          "unibet": 7,
-          "888sport": 6.5,
-          "leovegas": 7
-        }
-      },
-      "model": {
-        "home": 0.7199190059471519,
-        "away": 0.28008099405284814,
-        "fromModel": true,
-        "eloH": 1747,
-        "eloA": 1583,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200828573325008",
-      "tour": "atp",
-      "event": "ATP Montreal, Canada Men Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "02 AGO",
-      "home": "danielvallejoado",
-      "away": "junchengshang",
-      "odds": {
-        "home": {
-          "bwin": 2.18,
-          "1xbet": 2.16,
-          "bet365": 2.2,
-          "betano": 2.2,
-          "betway": 2.2,
-          "oddset": 2.18,
-          "unibet": 2.18,
-          "betfred": 2.2,
-          "betsson": 2.2,
-          "888sport": 2.2,
-          "leovegas": 2.18,
-          "pinnacle": 2.24,
-          "codere": 2.05,
-          "betfair": 2.32,
-          "winamax": 2.15,
-          "888sportro": 2.2,
-          "williamhill": 2.2
-        },
-        "away": {
-          "bwin": 1.67,
-          "1xbet": 1.7,
-          "bet365": 1.66,
-          "betano": 1.65,
-          "betway": 1.65,
-          "oddset": 1.67,
-          "unibet": 1.68,
-          "betfred": 1.667,
-          "betsson": 1.68,
-          "888sport": 1.667,
-          "leovegas": 1.68,
-          "pinnacle": 1.704,
-          "codere": 1.67,
-          "betfair": 1.71,
-          "winamax": 1.68,
-          "888sportro": 1.667,
-          "williamhill": 1.667
-        }
-      },
-      "model": {
-        "home": 0.581301478368915,
-        "away": 0.418698521631085,
-        "fromModel": true,
-        "eloH": 1700,
-        "eloA": 1643,
-        "surface": "hard"
-      },
-      "ts": 1785682800000,
-      "sofa": null
-    },
-    {
-      "id": "b50eee6f2fb9e665aefa47859444a238",
-      "tour": "wta",
-      "event": "Wta Washington Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:00",
-      "day": "02 AGO",
-      "home": "jessicapegula",
-      "away": "alexandraeala",
-      "odds": {
-        "home": {
-          "pinnacle": 1.68,
-          "unibet": 1.6,
-          "williamhill": 1.62,
-          "winamax": 1.62,
-          "betclic": 1.61,
-          "matchbook": 1.69,
-          "betsson": 1.58,
-          "888sport": 1.61,
-          "betfair": 1.69,
-          "leovegas": 1.6,
-          "1xbet": 1.62
-        },
-        "away": {
-          "pinnacle": 2.32,
-          "unibet": 2.35,
-          "williamhill": 2.3,
-          "winamax": 2.4,
-          "betclic": 2.33,
-          "matchbook": 2.42,
-          "betsson": 2.34,
-          "888sport": 2.3,
-          "betfair": 2.42,
-          "leovegas": 2.33,
-          "1xbet": 2.3
-        }
-      },
-      "model": {
-        "home": 0.6788169197947567,
-        "away": 0.32118308020524333,
-        "fromModel": true,
-        "eloH": 1976,
-        "eloA": 1846,
-        "surface": "hard"
-      },
-      "ts": 1785686400000,
-      "sofa": null
-    },
-    {
-      "id": "1b43ef0a26cd2d053abf7677cdbda305",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:10",
-      "day": "02 AGO",
-      "home": "aleksandarvukic",
-      "away": "danielaltmaier",
-      "odds": {
-        "home": {
-          "888sport": 1.67,
-          "unibet": 1.75,
-          "leovegas": 1.75
-        },
-        "away": {
-          "888sport": 2.2,
-          "unibet": 2.08,
-          "leovegas": 2.08
-        }
-      },
-      "model": {
-        "home": 0.44553062597832394,
-        "away": 0.5544693740216761,
-        "fromModel": true,
-        "eloH": 1751,
-        "eloA": 1789,
-        "surface": "hard"
-      },
-      "ts": 1785687000000,
-      "sofa": null
-    },
-    {
-      "id": "f709354ee8468a68f8cd8a020e75b699",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:10",
-      "day": "02 AGO",
-      "home": "jamesduckworth",
-      "away": "christopheroconn",
-      "odds": {
-        "home": {
-          "888sport": 2.5,
-          "unibet": 2.45,
-          "leovegas": 2.45
-        },
-        "away": {
-          "888sport": 1.53,
-          "unibet": 1.55,
-          "leovegas": 1.55
-        }
-      },
-      "model": {
-        "home": 0.5714631174083814,
-        "away": 0.4285368825916186,
-        "fromModel": true,
-        "eloH": 1753,
-        "eloA": 1703,
-        "surface": "hard"
-      },
-      "ts": 1785687000000,
-      "sofa": null
-    },
-    {
-      "id": "ac67d3a7c8aea695d06a175c5df32e69",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:10",
-      "day": "02 AGO",
-      "home": "matteoberrettini",
-      "away": "marianonavone",
-      "odds": {
-        "home": {
-          "pinnacle": 1.56,
-          "unibet": 1.56,
-          "leovegas": 1.56,
-          "888sport": 1.53
-        },
-        "away": {
-          "pinnacle": 2.56,
-          "unibet": 2.43,
-          "leovegas": 2.43,
-          "888sport": 2.5
-        }
-      },
-      "model": {
-        "home": 0.5301846800039021,
-        "away": 0.46981531999609794,
-        "fromModel": true,
-        "eloH": 1837,
-        "eloA": 1816,
-        "surface": "hard"
-      },
-      "ts": 1785687000000,
-      "sofa": null
-    },
-    {
-      "id": "ebf84115a5515cbf9115f35102d69d3d",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:10",
-      "day": "02 AGO",
-      "home": "nicolasmejia",
-      "away": "martinlandaluce",
-      "odds": {
-        "home": {
-          "888sport": 3.6,
-          "unibet": 3.65,
-          "leovegas": 3.65
-        },
-        "away": {
-          "888sport": 1.29,
-          "unibet": 1.28,
-          "leovegas": 1.28
-        }
-      },
-      "model": {
-        "home": 0.4089244036850566,
-        "away": 0.5910755963149434,
-        "fromModel": true,
-        "eloH": 1713,
-        "eloA": 1777,
-        "surface": "hard"
-      },
-      "ts": 1785687000000,
-      "sofa": null
-    },
-    {
-      "id": "dcc6d530a1d9327a64eca6053fb9912c",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:10",
-      "day": "02 AGO",
-      "home": "moyukauchijima",
-      "away": "cristinabucsa",
-      "odds": {
-        "home": {
-          "leovegas": 2.23,
-          "unibet": 2.23,
-          "888sport": 2.2
-        },
-        "away": {
-          "leovegas": 1.66,
-          "unibet": 1.66,
-          "888sport": 1.67
-        }
-      },
-      "model": {
-        "home": 0.30999379271968613,
-        "away": 0.6900062072803139,
-        "fromModel": true,
-        "eloH": 1712,
-        "eloA": 1851,
-        "surface": "hard"
-      },
-      "ts": 1785687000000,
-      "sofa": null
-    },
-    {
-      "id": "af26f33538bb4db199e8313d693ebf5c",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:30",
-      "day": "02 AGO",
-      "home": "kamillarakhimova",
-      "away": "venuswilliams",
-      "odds": {
-        "home": {
-          "unibet": 1.29,
-          "888sport": 1.29,
-          "leovegas": 1.29
-        },
-        "away": {
-          "unibet": 3.6,
-          "888sport": 3.6,
-          "leovegas": 3.6
-        }
-      },
-      "model": {
-        "home": 0.7403284195148304,
-        "away": 0.2596715804851696,
-        "fromModel": true,
-        "eloH": 1745,
-        "eloA": 1563,
-        "surface": "hard"
-      },
-      "ts": 1785688200000,
-      "sofa": null
-    },
-    {
-      "id": "d500c1ba1443284123ee2968aa5f1092",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:30",
-      "day": "02 AGO",
-      "home": "kimberlybirrell",
-      "away": "viktorijagolubic",
-      "odds": {
-        "home": {
-          "unibet": 1.79,
-          "888sport": 1.85,
-          "leovegas": 1.79
-        },
-        "away": {
-          "unibet": 2.02,
-          "888sport": 1.95,
-          "leovegas": 2.02
-        }
-      },
-      "model": {
-        "home": 0.4985608882908471,
-        "away": 0.5014391117091529,
-        "fromModel": true,
-        "eloH": 1766,
-        "eloA": 1767,
-        "surface": "hard"
-      },
-      "ts": 1785688200000,
-      "sofa": null
-    },
-    {
-      "id": "6585384b02bb9b14129e65f83ec29bc0",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "18:30",
-      "day": "02 AGO",
-      "home": "xiyuwang",
-      "away": "sarabejlek",
-      "odds": {
-        "home": {
-          "unibet": 2.32,
-          "888sport": 2.2,
-          "leovegas": 2.32
-        },
-        "away": {
-          "unibet": 1.61,
-          "888sport": 1.67,
-          "leovegas": 1.61
-        }
-      },
-      "model": {
-        "home": 0.5043172397550598,
-        "away": 0.4956827602449402,
-        "fromModel": true,
-        "eloH": 1855,
-        "eloA": 1852,
-        "surface": "hard"
-      },
-      "ts": 1785688200000,
-      "sofa": null
-    },
-    {
-      "id": "308af4d9a1ee36ced544dc307e3a0967",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:20",
-      "day": "02 AGO",
-      "home": "martonfucsovics",
-      "away": "corentinmoutet",
-      "odds": {
-        "home": {
-          "pinnacle": 2.01,
-          "unibet": 1.97,
-          "leovegas": 1.97,
-          "888sport": 1.95
-        },
-        "away": {
-          "pinnacle": 1.87,
-          "unibet": 1.81,
-          "leovegas": 1.81,
-          "888sport": 1.85
-        }
-      },
-      "model": {
-        "home": 0.44268836623770724,
-        "away": 0.5573116337622928,
-        "fromModel": true,
-        "eloH": 1783,
-        "eloA": 1823,
-        "surface": "hard"
-      },
-      "ts": 1785691200000,
-      "sofa": null
-    },
-    {
-      "id": "e9ee4abeb226d92133c912d5b1d2eefe",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:20",
-      "day": "02 AGO",
-      "home": "lucavanassche",
-      "away": "titouandroguet",
-      "odds": {
-        "home": {
-          "888sport": 1.8,
-          "unibet": 1.82,
-          "leovegas": 1.82
-        },
-        "away": {
-          "888sport": 2,
-          "unibet": 1.97,
-          "leovegas": 1.97
-        }
-      },
-      "model": {
-        "home": 0.4131049766208999,
-        "away": 0.5868950233791002,
-        "fromModel": true,
-        "eloH": 1679,
-        "eloA": 1740,
-        "surface": "hard"
-      },
-      "ts": 1785691200000,
-      "sofa": null
-    },
-    {
-      "id": "c4e046e63b82b1450bd4db1b5792daef",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:20",
-      "day": "02 AGO",
-      "home": "magdalenafrech",
-      "away": "leoliajeanjean",
-      "odds": {
-        "home": {
-          "unibet": 1.6,
-          "leovegas": 1.6,
-          "888sport": 1.61
-        },
-        "away": {
-          "unibet": 2.33,
-          "leovegas": 2.33,
-          "888sport": 2.3
-        }
-      },
-      "model": {
-        "home": 0.5993967967092568,
-        "away": 0.40060320329074317,
-        "fromModel": true,
-        "eloH": 1797,
-        "eloA": 1727,
-        "surface": "hard"
-      },
-      "ts": 1785691200000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200448373063952",
-      "tour": "wta",
-      "event": "WTA Memphis, USA Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:30",
-      "day": "02 AGO",
-      "home": "kristinaliutova",
-      "away": "darjavidmanova",
-      "odds": {
-        "home": {
-          "bwin": 2,
-          "1xbet": 2.02,
-          "bet365": 2.1,
-          "betano": 2,
-          "betway": 2,
-          "oddset": 2,
-          "unibet": 2.06,
-          "betfred": 2,
-          "betsson": 2.01,
-          "888sport": 2,
-          "leovegas": 2.06,
-          "pinnacle": 2.1,
-          "betfair": 2.08,
-          "888sportro": 2,
-          "williamhill": 2.1
-        },
-        "away": {
-          "bwin": 1.78,
-          "1xbet": 1.79,
-          "bet365": 1.72,
-          "betano": 1.78,
-          "betway": 1.8,
-          "oddset": 1.78,
-          "unibet": 1.81,
-          "betfred": 1.8,
-          "betsson": 1.78,
-          "888sport": 1.8,
-          "leovegas": 1.77,
-          "pinnacle": 1.813,
-          "betfair": 1.9,
-          "888sportro": 1.8,
-          "williamhill": 1.714
-        }
-      },
-      "model": {
-        "home": 0.34288131351292145,
-        "away": 0.6571186864870786,
-        "fromModel": true,
-        "eloH": 1633,
-        "eloA": 1746,
-        "surface": "hard"
-      },
-      "ts": 1785691800000,
-      "sofa": null
-    },
-    {
-      "id": "fbabbf2e61890f93617995f58a982e8b",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:40",
-      "day": "02 AGO",
-      "home": "loisboisson",
-      "away": "antoniaruzic",
-      "odds": {
-        "home": {
-          "unibet": 2.17,
-          "leovegas": 2.17,
-          "888sport": 2.1
-        },
-        "away": {
-          "unibet": 1.68,
-          "leovegas": 1.68,
-          "888sport": 1.73
-        }
-      },
-      "model": {
-        "home": 0.5658152030692333,
-        "away": 0.4341847969307667,
-        "fromModel": true,
-        "eloH": 1824,
-        "eloA": 1778,
-        "surface": "hard"
-      },
-      "ts": 1785692400000,
-      "sofa": null
-    },
-    {
-      "id": "2f58b17ec5230ff43e61bb49cd8e4fac",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:40",
-      "day": "02 AGO",
-      "home": "aoiito",
-      "away": "katherinesebov",
-      "odds": {
-        "home": {
-          "unibet": 1.57,
-          "leovegas": 1.57,
-          "888sport": 1.61
-        },
-        "away": {
-          "unibet": 2.38,
-          "leovegas": 2.38,
-          "888sport": 2.3
-        }
-      },
-      "model": {
-        "home": 0.4884891087822083,
-        "away": 0.5115108912177917,
-        "fromModel": true,
-        "eloH": 1641,
-        "eloA": 1649,
-        "surface": "hard"
-      },
-      "ts": 1785692400000,
-      "sofa": null
-    },
-    {
-      "id": "bfba087d11e2b11bc7a99d7e1caced8a",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:40",
-      "day": "02 AGO",
-      "home": "lucreziastefanin",
-      "away": "mariacamilaosori",
-      "odds": {
-        "home": {
-          "unibet": 2.63,
-          "leovegas": 2.63,
-          "888sport": 2.6
-        },
-        "away": {
-          "unibet": 1.49,
-          "leovegas": 1.49,
-          "888sport": 1.5
-        }
-      },
-      "noModel": true,
-      "ts": 1785692400000,
-      "sofa": null
-    },
-    {
-      "id": "opid1200827973356504",
-      "tour": "wta",
-      "event": "WTA Toronto, Canada Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "19:40",
-      "day": "02 AGO",
-      "home": "lucreziastefanin",
-      "away": "camilaosorio",
-      "odds": {
-        "home": {
-          "betway": 2.6,
-          "unibet": 2.63,
-          "leovegas": 2.63,
-          "betfair": 1.05
-        },
-        "away": {
-          "betway": 1.5,
-          "unibet": 1.49,
-          "leovegas": 1.49,
-          "betfair": 1.41
-        }
-      },
-      "model": {
-        "home": 0.45836229728523653,
-        "away": 0.5416377027147634,
-        "fromModel": true,
-        "eloH": 1719,
-        "eloA": 1748,
-        "surface": "hard"
-      },
-      "ts": 1785692400000,
-      "sofa": null
-    },
-    {
-      "id": "b84705609fe51f48fa0406f2661aec1e",
-      "tour": "atp",
-      "event": "Atp Washington Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "20:30",
-      "day": "02 AGO",
-      "home": "taylorfritz",
-      "away": "rafaeljodar",
-      "odds": {
-        "home": {
-          "williamhill": 1.73,
-          "1xbet": 1.77,
-          "888sport": 1.73,
-          "betfair": 1.78,
-          "leovegas": 1.76,
-          "unibet": 1.77,
-          "betsson": 1.74,
-          "betclic": 1.77,
-          "matchbook": 1.78,
-          "winamax": 1.78
-        },
-        "away": {
-          "williamhill": 2.1,
-          "1xbet": 2.1,
-          "888sport": 2.1,
-          "betfair": 2.24,
-          "leovegas": 2.06,
-          "unibet": 2.1,
-          "betsson": 2.06,
-          "betclic": 2.1,
-          "matchbook": 2.24,
-          "winamax": 2.1
-        }
-      },
-      "model": {
-        "home": 0.6597079941447481,
-        "away": 0.3402920058552519,
-        "fromModel": true,
-        "eloH": 1986,
-        "eloA": 1871,
-        "surface": "hard"
-      },
-      "ts": 1785695400000,
-      "sofa": null
-    },
-    {
-      "id": "2c159774efb7ea879ad6200c876f9057",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "20:50",
-      "day": "02 AGO",
-      "home": "rebeccasramkova",
-      "away": "annablinkova",
-      "odds": {
-        "home": {
-          "unibet": 1.88,
-          "leovegas": 1.88,
-          "888sport": 1.85
-        },
-        "away": {
-          "unibet": 1.91,
-          "leovegas": 1.91,
-          "888sport": 1.95
-        }
-      },
-      "model": {
-        "home": 0.4726840269935071,
-        "away": 0.5273159730064929,
-        "fromModel": true,
-        "eloH": 1711,
-        "eloA": 1730,
-        "surface": "hard"
-      },
-      "ts": 1785696600000,
-      "sofa": null
-    },
-    {
-      "id": "0ee76c6879bc5351f7bac42717ed8f4c",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "22:00",
-      "day": "02 AGO",
-      "home": "emersonjones",
-      "away": "lanlanatararudee",
-      "odds": {
-        "home": {
-          "unibet": 2.35,
-          "leovegas": 2.35,
-          "888sport": 2.3
-        },
-        "away": {
-          "unibet": 1.57,
-          "leovegas": 1.57,
-          "888sport": 1.61
-        }
-      },
-      "model": {
-        "home": 0.49280491829094863,
-        "away": 0.5071950817090514,
-        "fromModel": true,
-        "eloH": 1745,
-        "eloA": 1750,
-        "surface": "hard"
-      },
-      "ts": 1785700800000,
-      "sofa": null
-    },
-    {
-      "id": "f070dea0cdc8b8e534342405c62e90a8",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "23:00",
-      "day": "02 AGO",
-      "home": "mccartneykessler",
-      "away": "cadencebrace",
-      "odds": {
-        "home": {
-          "unibet": 1.1,
-          "888sport": 1.11,
-          "leovegas": 1.1
-        },
-        "away": {
-          "unibet": 7,
-          "888sport": 6.5,
-          "leovegas": 7
-        }
-      },
-      "model": {
-        "home": 0.7117225243427552,
-        "away": 0.2882774756572448,
-        "fromModel": true,
-        "eloH": 1820,
-        "eloA": 1663,
-        "surface": "hard"
-      },
-      "ts": 1785704400000,
-      "sofa": null
-    },
-    {
-      "id": "e8cb18f923a77e14e62003790c223614",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "23:10",
-      "day": "02 AGO",
-      "home": "taliagibson",
-      "away": "elisabettacoccia",
-      "odds": {
-        "home": {
-          "unibet": 2.2,
-          "888sport": 2.2,
-          "leovegas": 2.2
-        },
-        "away": {
-          "unibet": 1.67,
-          "888sport": 1.67,
-          "leovegas": 1.67
-        }
-      },
-      "model": {
-        "home": 0.4089244036850566,
-        "away": 0.5910755963149434,
-        "fromModel": true,
-        "eloH": 1773,
-        "eloA": 1837,
-        "surface": "hard"
-      },
-      "ts": 1785705000000,
-      "sofa": null
-    },
-    {
-      "id": "99f056f73df7df8250dc68a78321b005",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "00:00",
-      "day": "02 AGO",
-      "home": "shoshimabukuro",
-      "away": "marincilic",
-      "odds": {
-        "home": {
-          "888sport": 2.6,
-          "unibet": 2.6,
-          "leovegas": 2.6
-        },
-        "away": {
-          "888sport": 1.5,
-          "unibet": 1.49,
-          "leovegas": 1.49
-        }
-      },
-      "model": {
-        "home": 0.3854986389914422,
-        "away": 0.6145013610085578,
-        "fromModel": true,
-        "eloH": 1737,
-        "eloA": 1818,
-        "surface": "hard"
-      },
-      "ts": 1785708000000,
-      "sofa": null
-    },
-    {
-      "id": "8ddf352d7eddaaf779eb74c8d7a30808",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "00:10",
-      "day": "02 AGO",
-      "home": "elenagabrielarus",
-      "away": "peytonstearns",
-      "odds": {
-        "home": {
-          "unibet": 2.02,
-          "888sport": 2,
-          "leovegas": 2.02
-        },
-        "away": {
-          "unibet": 1.78,
-          "888sport": 1.8,
-          "leovegas": 1.78
-        }
-      },
-      "model": {
-        "home": 0.610402422094689,
-        "away": 0.389597577905311,
-        "fromModel": true,
-        "eloH": 1836,
-        "eloA": 1758,
-        "surface": "hard"
-      },
-      "ts": 1785708600000,
-      "sofa": null
-    },
-    {
-      "id": "32fd756d34f7d41943763c9994e5fee9",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "01:00",
-      "day": "02 AGO",
-      "home": "gabrieldiallo",
-      "away": "kyrianjacquet",
-      "odds": {
-        "home": {
-          "leovegas": 1.57,
-          "888sport": 1.57,
-          "unibet": 1.57
-        },
-        "away": {
-          "leovegas": 2.38,
-          "888sport": 2.38,
-          "unibet": 2.38
-        }
-      },
-      "model": {
-        "home": 0.6427130688326204,
-        "away": 0.35728693116737964,
-        "fromModel": true,
-        "eloH": 1811,
-        "eloA": 1709,
-        "surface": "hard"
-      },
-      "ts": 1785711600000,
-      "sofa": null
-    },
-    {
-      "id": "ba0674d7fb52fbe8c95df0a9d4716548",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "01:00",
-      "day": "02 AGO",
-      "home": "nikolabartunkova",
-      "away": "biancaandreescu",
-      "odds": {
-        "home": {
-          "unibet": 1.61,
-          "888sport": 1.61,
-          "leovegas": 1.61
-        },
-        "away": {
-          "unibet": 2.32,
-          "888sport": 2.3,
-          "leovegas": 2.32
-        }
-      },
-      "model": {
-        "home": 0.6076610641268197,
-        "away": 0.39233893587318025,
-        "fromModel": true,
-        "eloH": 1777,
-        "eloA": 1701,
-        "surface": "hard"
-      },
-      "ts": 1785711600000,
-      "sofa": null
-    },
-    {
-      "id": "4507bf7e74c2470db574de51cd05fa0f",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "01:10",
-      "day": "02 AGO",
-      "home": "benjaminbonzi",
-      "away": "yannickhanfmann",
-      "odds": {
-        "home": {
-          "888sport": 2.3,
-          "unibet": 2.33,
-          "leovegas": 2.33
-        },
-        "away": {
-          "888sport": 1.61,
-          "unibet": 1.6,
-          "leovegas": 1.6
-        }
-      },
-      "model": {
-        "home": 0.4271277486054956,
-        "away": 0.5728722513945044,
-        "fromModel": true,
-        "eloH": 1745,
-        "eloA": 1796,
-        "surface": "hard"
-      },
-      "ts": 1785712200000,
-      "sofa": null
-    },
     {
       "id": "74dd3f46547ada7019ee9f424ddc8df0",
       "tour": "atp",
       "event": "Atp Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "02:10",
+      "time": "17:00",
       "day": "03 AGO",
       "home": "alexisgalarneau",
       "away": "vitkopriva",
       "odds": {
         "home": {
-          "pinnacle": 1.88,
-          "unibet": 1.81,
+          "pinnacle": 1.89,
+          "unibet": 1.86,
           "leovegas": 1.81,
-          "888sport": 1.85
+          "888sport": 1.85,
+          "betclic": 1.86,
+          "betfair": 1.89,
+          "matchbook": 1.89,
+          "1xbet": 1.81,
+          "winamax": 1.9,
+          "williamhill": 1.85
         },
         "away": {
-          "pinnacle": 1.99,
-          "unibet": 1.97,
-          "leovegas": 1.97,
-          "888sport": 1.95
+          "pinnacle": 2,
+          "unibet": 2,
+          "leovegas": 2,
+          "888sport": 1.95,
+          "betclic": 1.98,
+          "betfair": 2.1,
+          "matchbook": 2.04,
+          "1xbet": 1.99,
+          "winamax": 1.96,
+          "williamhill": 1.95
         }
       },
       "model": {
@@ -3125,418 +1856,194 @@
         "eloA": 1775,
         "surface": "hard"
       },
-      "ts": 1785715800000,
+      "ts": 1785769200000,
       "sofa": null
     },
     {
-      "id": "65d8d144e3b1603c614875631ee21362",
+      "id": "e9ee4abeb226d92133c912d5b1d2eefe",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "03 AGO",
+      "home": "lucavanassche",
+      "away": "titouandroguet",
+      "odds": {
+        "home": {
+          "888sport": 1.8,
+          "unibet": 1.88,
+          "leovegas": 1.88,
+          "pinnacle": 1.88,
+          "betclic": 1.85,
+          "betfair": 1.91,
+          "matchbook": 1.89,
+          "1xbet": 1.89,
+          "winamax": 1.88,
+          "williamhill": 1.8
+        },
+        "away": {
+          "888sport": 2,
+          "unibet": 1.92,
+          "leovegas": 1.92,
+          "pinnacle": 2.01,
+          "betclic": 2,
+          "betfair": 2.06,
+          "matchbook": 2.02,
+          "1xbet": 1.91,
+          "winamax": 1.98,
+          "williamhill": 2
+        }
+      },
+      "model": {
+        "home": 0.4131049766208999,
+        "away": 0.5868950233791002,
+        "fromModel": true,
+        "eloH": 1679,
+        "eloA": 1740,
+        "surface": "hard"
+      },
+      "ts": 1785769200000,
+      "sofa": null
+    },
+    {
+      "id": "ac67d3a7c8aea695d06a175c5df32e69",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "03 AGO",
+      "home": "matteoberrettini",
+      "away": "marianonavone",
+      "odds": {
+        "home": {
+          "pinnacle": 1.54,
+          "unibet": 1.54,
+          "leovegas": 1.54,
+          "888sport": 1.53,
+          "betclic": 1.53,
+          "betfair": 1.57,
+          "matchbook": 1.56,
+          "1xbet": 1.54,
+          "winamax": 1.56,
+          "williamhill": 1.53
+        },
+        "away": {
+          "pinnacle": 2.64,
+          "unibet": 2.48,
+          "leovegas": 2.48,
+          "888sport": 2.5,
+          "betclic": 2.6,
+          "betfair": 2.72,
+          "matchbook": 2.72,
+          "1xbet": 2.48,
+          "winamax": 2.55,
+          "williamhill": 2.5
+        }
+      },
+      "model": {
+        "home": 0.5301846800039021,
+        "away": 0.46981531999609794,
+        "fromModel": true,
+        "eloH": 1837,
+        "eloA": 1816,
+        "surface": "hard"
+      },
+      "ts": 1785769200000,
+      "sofa": null
+    },
+    {
+      "id": "ebf84115a5515cbf9115f35102d69d3d",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "03 AGO",
+      "home": "nicolasmejia",
+      "away": "martinlandaluce",
+      "odds": {
+        "home": {
+          "888sport": 2.9,
+          "unibet": 3,
+          "leovegas": 3,
+          "pinnacle": 3.12,
+          "betclic": 3.08,
+          "betfair": 3.2,
+          "matchbook": 3.15,
+          "1xbet": 2.92,
+          "winamax": 2.8,
+          "williamhill": 2.9
+        },
+        "away": {
+          "888sport": 1.4,
+          "unibet": 1.38,
+          "leovegas": 1.38,
+          "pinnacle": 1.41,
+          "betclic": 1.39,
+          "betfair": 1.44,
+          "matchbook": 1.41,
+          "1xbet": 1.41,
+          "winamax": 1.43,
+          "williamhill": 1.4
+        }
+      },
+      "model": {
+        "home": 0.4089244036850566,
+        "away": 0.5910755963149434,
+        "fromModel": true,
+        "eloH": 1713,
+        "eloA": 1777,
+        "surface": "hard"
+      },
+      "ts": 1785769200000,
+      "sofa": null
+    },
+    {
+      "id": "a63b46b92a38e1d69b2a14b1ffb032e6",
       "tour": "wta",
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "02:10",
-      "day": "03 AGO",
-      "home": "yuliaputintseva",
-      "away": "shuaizhang",
-      "odds": {
-        "home": {
-          "unibet": 1.51,
-          "888sport": 1.5,
-          "leovegas": 1.51
-        },
-        "away": {
-          "unibet": 2.55,
-          "888sport": 2.6,
-          "leovegas": 2.55
-        }
-      },
-      "model": {
-        "home": 0.5086338358210827,
-        "away": 0.4913661641789173,
-        "fromModel": true,
-        "eloH": 1774,
-        "eloA": 1768,
-        "surface": "hard"
-      },
-      "ts": 1785715800000,
-      "sofa": null
-    },
-    {
-      "id": "015fd7847f4733822f68790fc1d3c88d",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "15:00",
-      "day": "03 AGO",
-      "home": "zacharysvajda",
-      "away": "denisshapovalov",
-      "odds": {
-        "home": {
-          "pinnacle": 2.19,
-          "888sport": 2.1
-        },
-        "away": {
-          "pinnacle": 1.74,
-          "888sport": 1.73
-        }
-      },
-      "model": {
-        "home": 0.41869852163108506,
-        "away": 0.581301478368915,
-        "fromModel": true,
-        "eloH": 1777,
-        "eloA": 1834,
-        "surface": "hard"
-      },
-      "ts": 1785762000000,
-      "sofa": null
-    },
-    {
-      "id": "b9569e7d3389a0805c9c89a6a6430c35",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
       "time": "17:00",
       "day": "03 AGO",
-      "home": "alexmichelsen",
-      "away": "janlennardstruff",
-      "odds": {
-        "home": {
-          "pinnacle": 1.35,
-          "unibet": 1.34,
-          "leovegas": 1.34,
-          "888sport": 1.33
-        },
-        "away": {
-          "pinnacle": 3.43,
-          "unibet": 3.25,
-          "leovegas": 3.25,
-          "888sport": 3.3
-        }
-      },
-      "model": {
-        "home": 0.5924662305843318,
-        "away": 0.4075337694156682,
-        "fromModel": true,
-        "eloH": 1834,
-        "eloA": 1769,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "cd66fe742d007761806ac2730aa19b65",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "giovannimpetship",
-      "away": "boticvandezandsc",
-      "odds": {
-        "home": {
-          "pinnacle": 2.07,
-          "unibet": 2.08,
-          "leovegas": 2.08,
-          "888sport": 2
-        },
-        "away": {
-          "pinnacle": 1.82,
-          "unibet": 1.75,
-          "leovegas": 1.75,
-          "888sport": 1.8
-        }
-      },
-      "model": {
-        "home": 0.4327711556570478,
-        "away": 0.5672288443429522,
-        "fromModel": true,
-        "eloH": 1722,
-        "eloA": 1769,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "624478acf668fd27465d600ee671a0ad",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "camilougocarabel",
-      "away": "cameronnorrie",
-      "odds": {
-        "home": {
-          "pinnacle": 4.07,
-          "unibet": 4,
-          "leovegas": 4,
-          "888sport": 4
-        },
-        "away": {
-          "pinnacle": 1.27,
-          "unibet": 1.24,
-          "leovegas": 1.24,
-          "888sport": 1.25
-        }
-      },
-      "model": {
-        "home": 0.27431435372821295,
-        "away": 0.7256856462717871,
-        "fromModel": true,
-        "eloH": 1703,
-        "eloA": 1872,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "7a609fe9cdfc82ed6d9c93e42f5cd6b5",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "danielmeridaagui",
-      "away": "liamdraxl",
-      "odds": {
-        "home": {
-          "pinnacle": 1.75,
-          "unibet": 1.71,
-          "leovegas": 1.71,
-          "888sport": 1.73
-        },
-        "away": {
-          "pinnacle": 2.16,
-          "unibet": 2.14,
-          "leovegas": 2.14,
-          "888sport": 2.1
-        }
-      },
-      "model": {
-        "home": 0.5330513938844411,
-        "away": 0.4669486061155589,
-        "fromModel": true,
-        "eloH": 1721,
-        "eloA": 1698,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "f0a2c84a147c9366379080657103938f",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "kamilmajchrzak",
-      "away": "gaelmonfils",
-      "odds": {
-        "home": {
-          "pinnacle": 1.33,
-          "unibet": 1.32,
-          "leovegas": 1.32,
-          "888sport": 1.33
-        },
-        "away": {
-          "pinnacle": 3.52,
-          "unibet": 3.4,
-          "leovegas": 3.4,
-          "888sport": 3.3
-        }
-      },
-      "model": {
-        "home": 0.6347433350523167,
-        "away": 0.3652566649476833,
-        "fromModel": true,
-        "eloH": 1758,
-        "eloA": 1662,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "6fd6d72f6a69fd57d3bf719f6c8ed28f",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "juanmanuelcerund",
-      "away": "hamadmedjedovic",
-      "odds": {
-        "home": {
-          "pinnacle": 2.41,
-          "unibet": 2.38,
-          "leovegas": 2.38,
-          "888sport": 2.3
-        },
-        "away": {
-          "pinnacle": 1.62,
-          "unibet": 1.57,
-          "leovegas": 1.57,
-          "888sport": 1.61
-        }
-      },
-      "model": {
-        "home": 0.39096739659576046,
-        "away": 0.6090326034042395,
-        "fromModel": true,
-        "eloH": 1717,
-        "eloA": 1794,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "2620af8a13e0bd459f6cddf8217812ff",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "terenceatmane",
-      "away": "jackdraper",
-      "odds": {
-        "home": {
-          "pinnacle": 2.98,
-          "unibet": 2.9,
-          "leovegas": 2.9,
-          "888sport": 2.9
-        },
-        "away": {
-          "pinnacle": 1.43,
-          "unibet": 1.41,
-          "leovegas": 1.41,
-          "888sport": 1.4
-        }
-      },
-      "model": {
-        "home": 0.5316182978281073,
-        "away": 0.4683817021718927,
-        "fromModel": true,
-        "eloH": 1805,
-        "eloA": 1783,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "7e6445f5e0eab32b42d5e402d005a6de",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "lorenzosonego",
-      "away": "tallongriekspoor",
-      "odds": {
-        "home": {
-          "pinnacle": 1.97,
-          "unibet": 1.93,
-          "leovegas": 1.93,
-          "888sport": 1.95
-        },
-        "away": {
-          "pinnacle": 1.9,
-          "unibet": 1.87,
-          "leovegas": 1.87,
-          "888sport": 1.85
-        }
-      },
-      "model": {
-        "home": 0.3854986389914422,
-        "away": 0.6145013610085578,
-        "fromModel": true,
-        "eloH": 1783,
-        "eloA": 1864,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "ad669d330176ac5796a9ec60f8ec1aa8",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "sebastianbaez",
-      "away": "mattiabellucci",
-      "odds": {
-        "home": {
-          "pinnacle": 1.85,
-          "unibet": 1.8,
-          "leovegas": 1.8,
-          "888sport": 1.8
-        },
-        "away": {
-          "pinnacle": 2.03,
-          "unibet": 2,
-          "leovegas": 2,
-          "888sport": 2
-        }
-      },
-      "model": {
-        "home": 0.5402082283237456,
-        "away": 0.4597917716762544,
-        "fromModel": true,
-        "eloH": 1792,
-        "eloA": 1764,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "fe34e2f631f79d4a636ca69302fb3497",
-      "tour": "atp",
-      "event": "Atp Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "pablocarrenobust",
-      "away": "valentinroyer",
+      "home": "alinakorneeva",
+      "away": "polinakudermetov",
       "odds": {
         "home": {
           "pinnacle": 1.47,
-          "unibet": 1.48,
-          "leovegas": 1.48,
-          "888sport": 1.44
+          "888sport": 1.44,
+          "betclic": 1.46,
+          "betfair": 1.52,
+          "matchbook": 1.49,
+          "unibet": 1.51,
+          "leovegas": 1.51,
+          "1xbet": 1.48,
+          "winamax": 1.5,
+          "williamhill": 1.44,
+          "betsson": 1.47
         },
         "away": {
-          "pinnacle": 2.82,
-          "unibet": 2.65,
-          "leovegas": 2.65,
-          "888sport": 2.75
+          "pinnacle": 2.87,
+          "888sport": 2.75,
+          "betclic": 2.8,
+          "betfair": 2.84,
+          "matchbook": 2.84,
+          "unibet": 2.55,
+          "leovegas": 2.5,
+          "1xbet": 2.66,
+          "winamax": 2.7,
+          "williamhill": 2.75,
+          "betsson": 2.61
         }
       },
       "model": {
-        "home": 0.33130504369266833,
-        "away": 0.6686949563073317,
+        "home": 0.5143871841659987,
+        "away": 0.4856128158340013,
         "fromModel": true,
-        "eloH": 1655,
-        "eloA": 1777,
+        "eloH": 1745,
+        "eloA": 1735,
         "surface": "hard"
       },
       "ts": 1785769200000,
@@ -3556,12 +2063,28 @@
         "home": {
           "unibet": 1.5,
           "888sport": 1.5,
-          "leovegas": 1.5
+          "leovegas": 1.5,
+          "pinnacle": 1.52,
+          "betclic": 1.52,
+          "matchbook": 1.51,
+          "betfair": 1.56,
+          "1xbet": 1.51,
+          "winamax": 1.52,
+          "williamhill": 1.5,
+          "betsson": 1.49
         },
         "away": {
           "unibet": 2.55,
           "888sport": 2.6,
-          "leovegas": 2.55
+          "leovegas": 2.55,
+          "pinnacle": 2.68,
+          "betclic": 2.6,
+          "matchbook": 2.68,
+          "betfair": 2.7,
+          "1xbet": 2.57,
+          "winamax": 2.6,
+          "williamhill": 2.6,
+          "betsson": 2.55
         }
       },
       "model": {
@@ -3576,99 +2099,47 @@
       "sofa": null
     },
     {
-      "id": "90097db01aa7e785f2d1cce306f4c531",
+      "id": "3eb86965aabbd68bed2e3912bd59f077",
       "tour": "wta",
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
       "time": "17:00",
       "day": "03 AGO",
-      "home": "carolzhao",
-      "away": "magdalinette",
+      "home": "dianeparry",
+      "away": "kayladay",
       "odds": {
         "home": {
-          "unibet": 8.5,
-          "888sport": 8,
-          "leovegas": 8.5
+          "betclic": 2.11,
+          "betfair": 2.26,
+          "unibet": 2.08,
+          "leovegas": 2.08,
+          "1xbet": 2.11,
+          "winamax": 2.1,
+          "matchbook": 2.18,
+          "888sport": 2.1,
+          "williamhill": 2.1,
+          "betsson": 2.06
         },
         "away": {
-          "unibet": 1.07,
-          "888sport": 1.06,
-          "leovegas": 1.07
+          "betclic": 1.76,
+          "betfair": 1.76,
+          "unibet": 1.74,
+          "leovegas": 1.74,
+          "1xbet": 1.72,
+          "winamax": 1.76,
+          "matchbook": 1.75,
+          "888sport": 1.73,
+          "williamhill": 1.73,
+          "betsson": 1.73
         }
       },
       "model": {
-        "home": 0.2641225558985236,
-        "away": 0.7358774441014764,
+        "home": 0.5344839447268315,
+        "away": 0.4655160552731685,
         "fromModel": true,
-        "eloH": 1579,
-        "eloA": 1757,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "6274c443b8cceb8cc197b45d12eb15f1",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "pannaudvardy",
-      "away": "evalys",
-      "odds": {
-        "home": {
-          "unibet": 2.43,
-          "888sport": 2.6,
-          "leovegas": 2.43
-        },
-        "away": {
-          "unibet": 1.55,
-          "888sport": 1.5,
-          "leovegas": 1.55
-        }
-      },
-      "model": {
-        "home": 0.6049129020079568,
-        "away": 0.3950870979920432,
-        "fromModel": true,
-        "eloH": 1814,
-        "eloA": 1740,
-        "surface": "hard"
-      },
-      "ts": 1785769200000,
-      "sofa": null
-    },
-    {
-      "id": "780765848b446be251ce09f33dd3adff",
-      "tour": "wta",
-      "event": "Wta Canadian Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "17:00",
-      "day": "03 AGO",
-      "home": "janicetjen",
-      "away": "liudmilasamsonov",
-      "odds": {
-        "home": {
-          "unibet": 2.5,
-          "888sport": 2.5,
-          "leovegas": 2.5
-        },
-        "away": {
-          "unibet": 1.53,
-          "888sport": 1.53,
-          "leovegas": 1.53
-        }
-      },
-      "model": {
-        "home": 0.4019862342306564,
-        "away": 0.5980137657693436,
-        "fromModel": true,
-        "eloH": 1839,
-        "eloA": 1908,
+        "eloH": 1741,
+        "eloA": 1717,
         "surface": "hard"
       },
       "ts": 1785769200000,
@@ -3688,12 +2159,28 @@
         "home": {
           "unibet": 3.55,
           "888sport": 3.6,
-          "leovegas": 3.55
+          "leovegas": 3.55,
+          "pinnacle": 3.9,
+          "betclic": 3.75,
+          "matchbook": 3.9,
+          "betfair": 3.85,
+          "1xbet": 3.46,
+          "winamax": 3.8,
+          "williamhill": 3.6,
+          "betsson": 3.58
         },
         "away": {
           "unibet": 1.3,
           "888sport": 1.29,
-          "leovegas": 1.3
+          "leovegas": 1.3,
+          "pinnacle": 1.29,
+          "betclic": 1.29,
+          "matchbook": 1.28,
+          "betfair": 1.31,
+          "1xbet": 1.31,
+          "winamax": 1.3,
+          "williamhill": 1.29,
+          "betsson": 1.27
         }
       },
       "model": {
@@ -3708,25 +2195,378 @@
       "sofa": null
     },
     {
+      "id": "1b43ef0a26cd2d053abf7677cdbda305",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:10",
+      "day": "03 AGO",
+      "home": "aleksandarvukic",
+      "away": "danielaltmaier",
+      "odds": {
+        "home": {
+          "888sport": 1.61,
+          "unibet": 1.65,
+          "leovegas": 1.65,
+          "pinnacle": 1.63,
+          "betclic": 1.63,
+          "betfair": 1.65,
+          "matchbook": 1.64,
+          "1xbet": 1.62,
+          "winamax": 1.62,
+          "williamhill": 1.62
+        },
+        "away": {
+          "888sport": 2.3,
+          "unibet": 2.3,
+          "leovegas": 2.23,
+          "pinnacle": 2.4,
+          "betclic": 2.34,
+          "betfair": 2.48,
+          "matchbook": 2.42,
+          "1xbet": 2.3,
+          "winamax": 2.4,
+          "williamhill": 2.3
+        }
+      },
+      "model": {
+        "home": 0.44553062597832394,
+        "away": 0.5544693740216761,
+        "fromModel": true,
+        "eloH": 1751,
+        "eloA": 1789,
+        "surface": "hard"
+      },
+      "ts": 1785773400000,
+      "sofa": null
+    },
+    {
+      "id": "4507bf7e74c2470db574de51cd05fa0f",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:10",
+      "day": "03 AGO",
+      "home": "benjaminbonzi",
+      "away": "yannickhanfmann",
+      "odds": {
+        "home": {
+          "888sport": 2,
+          "unibet": 2.08,
+          "leovegas": 2.08,
+          "pinnacle": 2.08,
+          "betclic": 2.05,
+          "betfair": 2.16,
+          "matchbook": 2.12,
+          "1xbet": 2.06,
+          "winamax": 2.05,
+          "williamhill": 2
+        },
+        "away": {
+          "888sport": 1.8,
+          "unibet": 1.77,
+          "leovegas": 1.75,
+          "pinnacle": 1.83,
+          "betclic": 1.8,
+          "betfair": 1.84,
+          "matchbook": 1.82,
+          "1xbet": 1.76,
+          "winamax": 1.82,
+          "williamhill": 1.8
+        }
+      },
+      "model": {
+        "home": 0.4271277486054956,
+        "away": 0.5728722513945044,
+        "fromModel": true,
+        "eloH": 1745,
+        "eloA": 1796,
+        "surface": "hard"
+      },
+      "ts": 1785773400000,
+      "sofa": null
+    },
+    {
+      "id": "99f056f73df7df8250dc68a78321b005",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:10",
+      "day": "03 AGO",
+      "home": "shoshimabukuro",
+      "away": "marincilic",
+      "odds": {
+        "home": {
+          "888sport": 2,
+          "unibet": 2.12,
+          "leovegas": 2.12,
+          "pinnacle": 2.11,
+          "betclic": 2.1,
+          "betfair": 2.18,
+          "matchbook": 2.1,
+          "1xbet": 2.13,
+          "winamax": 2.2,
+          "williamhill": 2
+        },
+        "away": {
+          "888sport": 1.8,
+          "unibet": 1.71,
+          "leovegas": 1.71,
+          "pinnacle": 1.8,
+          "betclic": 1.76,
+          "betfair": 1.82,
+          "matchbook": 1.8,
+          "1xbet": 1.72,
+          "winamax": 1.7,
+          "williamhill": 1.8
+        }
+      },
+      "model": {
+        "home": 0.3854986389914422,
+        "away": 0.6145013610085578,
+        "fromModel": true,
+        "eloH": 1737,
+        "eloA": 1818,
+        "surface": "hard"
+      },
+      "ts": 1785773400000,
+      "sofa": null
+    },
+    {
+      "id": "2c159774efb7ea879ad6200c876f9057",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:30",
+      "day": "03 AGO",
+      "home": "rebeccasramkova",
+      "away": "annablinkova",
+      "odds": {
+        "home": {
+          "unibet": 2.1,
+          "leovegas": 2.1,
+          "888sport": 2.1,
+          "pinnacle": 2.23,
+          "betclic": 2.2,
+          "matchbook": 2.28,
+          "betfair": 2.34,
+          "1xbet": 2.11,
+          "winamax": 2.2,
+          "williamhill": 2.1,
+          "betsson": 2.09
+        },
+        "away": {
+          "unibet": 1.73,
+          "leovegas": 1.73,
+          "888sport": 1.73,
+          "pinnacle": 1.72,
+          "betclic": 1.7,
+          "matchbook": 1.71,
+          "betfair": 1.73,
+          "1xbet": 1.73,
+          "winamax": 1.7,
+          "williamhill": 1.73,
+          "betsson": 1.71
+        }
+      },
+      "model": {
+        "home": 0.4726840269935071,
+        "away": 0.5273159730064929,
+        "fromModel": true,
+        "eloH": 1711,
+        "eloA": 1730,
+        "surface": "hard"
+      },
+      "ts": 1785774600000,
+      "sofa": null
+    },
+    {
+      "id": "f070dea0cdc8b8e534342405c62e90a8",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:30",
+      "day": "03 AGO",
+      "home": "mccartneykessler",
+      "away": "cadencebrace",
+      "odds": {
+        "home": {
+          "unibet": 1.16,
+          "888sport": 1.14,
+          "leovegas": 1.15,
+          "pinnacle": 1.15,
+          "betclic": 1.15,
+          "matchbook": 1.18,
+          "betfair": 1.18,
+          "1xbet": 1.16,
+          "winamax": 1.16,
+          "williamhill": 1.14,
+          "betsson": 1.15
+        },
+        "away": {
+          "unibet": 5.4,
+          "888sport": 5.5,
+          "leovegas": 5.4,
+          "pinnacle": 6.11,
+          "betclic": 5.75,
+          "matchbook": 6,
+          "betfair": 6.2,
+          "1xbet": 5.25,
+          "winamax": 5.9,
+          "williamhill": 5.5,
+          "betsson": 5.12
+        }
+      },
+      "model": {
+        "home": 0.7117225243427552,
+        "away": 0.2882774756572448,
+        "fromModel": true,
+        "eloH": 1820,
+        "eloA": 1663,
+        "surface": "hard"
+      },
+      "ts": 1785774600000,
+      "sofa": null
+    },
+    {
+      "id": "8ddf352d7eddaaf779eb74c8d7a30808",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:30",
+      "day": "03 AGO",
+      "home": "elenagabrielarus",
+      "away": "peytonstearns",
+      "odds": {
+        "home": {
+          "unibet": 2.1,
+          "888sport": 2.1,
+          "leovegas": 2.02,
+          "pinnacle": 2.15,
+          "betclic": 2.12,
+          "matchbook": 2.18,
+          "betfair": 2.2,
+          "1xbet": 2.07,
+          "winamax": 2.1,
+          "williamhill": 2.1,
+          "betsson": 2.07
+        },
+        "away": {
+          "unibet": 1.78,
+          "888sport": 1.73,
+          "leovegas": 1.78,
+          "pinnacle": 1.77,
+          "betclic": 1.75,
+          "matchbook": 1.77,
+          "betfair": 1.81,
+          "1xbet": 1.75,
+          "winamax": 1.76,
+          "williamhill": 1.73,
+          "betsson": 1.72
+        }
+      },
+      "model": {
+        "home": 0.610402422094689,
+        "away": 0.389597577905311,
+        "fromModel": true,
+        "eloH": 1836,
+        "eloA": 1758,
+        "surface": "hard"
+      },
+      "ts": 1785774600000,
+      "sofa": null
+    },
+    {
+      "id": "e8cb18f923a77e14e62003790c223614",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:30",
+      "day": "03 AGO",
+      "home": "taliagibson",
+      "away": "elisabettacoccia",
+      "odds": {
+        "home": {
+          "unibet": 2.2,
+          "888sport": 2.2,
+          "leovegas": 2.2,
+          "pinnacle": 2.32,
+          "betclic": 2.28,
+          "matchbook": 2.34,
+          "betfair": 2.42,
+          "1xbet": 2.23,
+          "winamax": 2.3,
+          "williamhill": 2.2,
+          "betsson": 2.22
+        },
+        "away": {
+          "unibet": 1.67,
+          "888sport": 1.67,
+          "leovegas": 1.67,
+          "pinnacle": 1.67,
+          "betclic": 1.66,
+          "matchbook": 1.69,
+          "betfair": 1.69,
+          "1xbet": 1.66,
+          "winamax": 1.66,
+          "williamhill": 1.67,
+          "betsson": 1.63
+        }
+      },
+      "model": {
+        "home": 0.4089244036850566,
+        "away": 0.5910755963149434,
+        "fromModel": true,
+        "eloH": 1773,
+        "eloA": 1837,
+        "surface": "hard"
+      },
+      "ts": 1785774600000,
+      "sofa": null
+    },
+    {
       "id": "cd385f542f2ddc006dde54cd81fb40f8",
       "tour": "wta",
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "17:00",
+      "time": "18:30",
       "day": "03 AGO",
       "home": "katieboulter",
       "away": "kaylacross",
       "odds": {
         "home": {
-          "unibet": 1.2,
-          "888sport": 1.22,
-          "leovegas": 1.2
+          "unibet": 1.3,
+          "888sport": 1.33,
+          "leovegas": 1.3,
+          "pinnacle": 1.34,
+          "betclic": 1.33,
+          "matchbook": 1.33,
+          "betfair": 1.33,
+          "1xbet": 1.33,
+          "winamax": 1.33,
+          "williamhill": 1.33,
+          "betsson": 1.31
         },
         "away": {
-          "unibet": 4.5,
-          "888sport": 4.2,
-          "leovegas": 4.5
+          "unibet": 3.5,
+          "888sport": 3.3,
+          "leovegas": 3.5,
+          "pinnacle": 3.51,
+          "betclic": 3.5,
+          "matchbook": 3.55,
+          "betfair": 3.85,
+          "1xbet": 3.35,
+          "winamax": 3.55,
+          "williamhill": 3.3,
+          "betsson": 3.35
         }
       },
       "model": {
@@ -3737,40 +2577,1003 @@
         "eloA": 1692,
         "surface": "hard"
       },
-      "ts": 1785769200000,
+      "ts": 1785774600000,
       "sofa": null
     },
     {
-      "id": "b88ea9fe5429a28be47d3a3bcf38e6af",
+      "id": "308af4d9a1ee36ced544dc307e3a0967",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:50",
+      "day": "03 AGO",
+      "home": "martonfucsovics",
+      "away": "corentinmoutet",
+      "odds": {
+        "home": {
+          "pinnacle": 1.98,
+          "unibet": 1.97,
+          "leovegas": 1.97,
+          "888sport": 1.95,
+          "betclic": 1.95,
+          "betfair": 2,
+          "matchbook": 1.99,
+          "1xbet": 1.97,
+          "winamax": 1.98,
+          "williamhill": 1.95
+        },
+        "away": {
+          "pinnacle": 1.91,
+          "unibet": 1.84,
+          "leovegas": 1.81,
+          "888sport": 1.85,
+          "betclic": 1.88,
+          "betfair": 1.98,
+          "matchbook": 1.97,
+          "1xbet": 1.83,
+          "winamax": 1.88,
+          "williamhill": 1.85
+        }
+      },
+      "model": {
+        "home": 0.44268836623770724,
+        "away": 0.5573116337622928,
+        "fromModel": true,
+        "eloH": 1783,
+        "eloA": 1823,
+        "surface": "hard"
+      },
+      "ts": 1785775800000,
+      "sofa": null
+    },
+    {
+      "id": "32fd756d34f7d41943763c9994e5fee9",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "18:50",
+      "day": "03 AGO",
+      "home": "gabrieldiallo",
+      "away": "kyrianjacquet",
+      "odds": {
+        "home": {
+          "888sport": 1.8,
+          "pinnacle": 1.85,
+          "betclic": 1.82,
+          "betfair": 1.88,
+          "matchbook": 1.87,
+          "1xbet": 1.79,
+          "unibet": 1.83,
+          "winamax": 1.8,
+          "williamhill": 1.8
+        },
+        "away": {
+          "888sport": 2,
+          "pinnacle": 2.04,
+          "betclic": 2.05,
+          "betfair": 2.12,
+          "matchbook": 2.06,
+          "1xbet": 2.02,
+          "unibet": 1.95,
+          "winamax": 2.05,
+          "williamhill": 2
+        }
+      },
+      "model": {
+        "home": 0.6427130688326204,
+        "away": 0.35728693116737964,
+        "fromModel": true,
+        "eloH": 1811,
+        "eloA": 1709,
+        "surface": "hard"
+      },
+      "ts": 1785775800000,
+      "sofa": null
+    },
+    {
+      "id": "b84705609fe51f48fa0406f2661aec1e",
+      "tour": "atp",
+      "event": "Atp Washington Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:00",
+      "day": "03 AGO",
+      "home": "taylorfritz",
+      "away": "rafaeljodar",
+      "odds": {
+        "home": {
+          "pinnacle": 1.57,
+          "williamhill": 1.57,
+          "1xbet": 1.55,
+          "888sport": 1.57,
+          "betfair": 1.6,
+          "leovegas": 1.53,
+          "unibet": 1.57,
+          "betsson": 1.53,
+          "betclic": 1.56,
+          "matchbook": 1.57,
+          "winamax": 1.56
+        },
+        "away": {
+          "pinnacle": 2.58,
+          "williamhill": 2.38,
+          "1xbet": 2.52,
+          "888sport": 2.38,
+          "betfair": 2.66,
+          "leovegas": 2.5,
+          "unibet": 2.5,
+          "betsson": 2.46,
+          "betclic": 2.5,
+          "matchbook": 2.6,
+          "winamax": 2.5
+        }
+      },
+      "model": {
+        "home": 0.6597079941447481,
+        "away": 0.3402920058552519,
+        "fromModel": true,
+        "eloH": 1986,
+        "eloA": 1871,
+        "surface": "hard"
+      },
+      "ts": 1785776400000,
+      "sofa": null
+    },
+    {
+      "id": "9000d5a71073fa0e6b5e8ec2ef33c4db",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:20",
+      "day": "03 AGO",
+      "home": "jacobfearnley",
+      "away": "adrianmannarino",
+      "odds": {
+        "home": {
+          "pinnacle": 1.58,
+          "888sport": 1.57,
+          "betclic": 1.58,
+          "betfair": 1.62,
+          "matchbook": 1.6,
+          "unibet": 1.56,
+          "leovegas": 1.54,
+          "1xbet": 1.57,
+          "winamax": 1.58,
+          "williamhill": 1.57
+        },
+        "away": {
+          "pinnacle": 2.51,
+          "888sport": 2.38,
+          "betclic": 2.45,
+          "betfair": 2.5,
+          "matchbook": 2.52,
+          "unibet": 2.48,
+          "leovegas": 2.48,
+          "1xbet": 2.41,
+          "winamax": 2.45,
+          "williamhill": 2.38
+        }
+      },
+      "model": {
+        "home": 0.40060320329074317,
+        "away": 0.5993967967092568,
+        "fromModel": true,
+        "eloH": 1743,
+        "eloA": 1813,
+        "surface": "hard"
+      },
+      "ts": 1785777600000,
+      "sofa": null
+    },
+    {
+      "id": "b9569e7d3389a0805c9c89a6a6430c35",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:20",
+      "day": "03 AGO",
+      "home": "alexmichelsen",
+      "away": "janlennardstruff",
+      "odds": {
+        "home": {
+          "pinnacle": 1.35,
+          "unibet": 1.34,
+          "leovegas": 1.34,
+          "888sport": 1.33,
+          "betclic": 1.34,
+          "betfair": 1.37,
+          "matchbook": 1.34,
+          "1xbet": 1.35,
+          "winamax": 1.34,
+          "williamhill": 1.33
+        },
+        "away": {
+          "pinnacle": 3.46,
+          "unibet": 3.25,
+          "leovegas": 3.25,
+          "888sport": 3.3,
+          "betclic": 3.4,
+          "betfair": 3.45,
+          "matchbook": 3.45,
+          "1xbet": 3.22,
+          "winamax": 3.45,
+          "williamhill": 3.3
+        }
+      },
+      "model": {
+        "home": 0.5924662305843318,
+        "away": 0.4075337694156682,
+        "fromModel": true,
+        "eloH": 1834,
+        "eloA": 1769,
+        "surface": "hard"
+      },
+      "ts": 1785777600000,
+      "sofa": null
+    },
+    {
+      "id": "624478acf668fd27465d600ee671a0ad",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:20",
+      "day": "03 AGO",
+      "home": "camilougocarabel",
+      "away": "cameronnorrie",
+      "odds": {
+        "home": {
+          "pinnacle": 4.32,
+          "unibet": 4,
+          "leovegas": 4,
+          "888sport": 4,
+          "betclic": 4.1,
+          "betfair": 4.4,
+          "matchbook": 4.4,
+          "1xbet": 4,
+          "winamax": 4.2,
+          "williamhill": 4
+        },
+        "away": {
+          "pinnacle": 1.25,
+          "unibet": 1.24,
+          "leovegas": 1.24,
+          "888sport": 1.25,
+          "betclic": 1.25,
+          "betfair": 1.27,
+          "matchbook": 1.24,
+          "1xbet": 1.25,
+          "winamax": 1.26,
+          "williamhill": 1.25
+        }
+      },
+      "model": {
+        "home": 0.27431435372821295,
+        "away": 0.7256856462717871,
+        "fromModel": true,
+        "eloH": 1703,
+        "eloA": 1872,
+        "surface": "hard"
+      },
+      "ts": 1785777600000,
+      "sofa": null
+    },
+    {
+      "id": "ba0674d7fb52fbe8c95df0a9d4716548",
       "tour": "wta",
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "17:00",
+      "time": "19:40",
       "day": "03 AGO",
-      "home": "rebeccamarino",
-      "away": "zeynepsonmez",
+      "home": "nikolabartunkova",
+      "away": "biancaandreescu",
       "odds": {
         "home": {
-          "unibet": 3.4,
-          "888sport": 3.3,
-          "leovegas": 3.4
+          "unibet": 1.61,
+          "888sport": 1.6,
+          "leovegas": 1.61,
+          "pinnacle": 1.67,
+          "betclic": 1.57,
+          "matchbook": 1.66,
+          "betfair": 1.69,
+          "1xbet": 1.63,
+          "winamax": 1.66,
+          "williamhill": 1.6
         },
         "away": {
-          "unibet": 1.32,
-          "888sport": 1.33,
-          "leovegas": 1.32
+          "unibet": 2.32,
+          "888sport": 2.25,
+          "leovegas": 2.32,
+          "pinnacle": 2.32,
+          "betclic": 2.2,
+          "matchbook": 2.34,
+          "betfair": 2.42,
+          "1xbet": 2.28,
+          "winamax": 2.3,
+          "williamhill": 2.25
         }
       },
       "model": {
-        "home": 0.3174296145252281,
-        "away": 0.6825703854747719,
+        "home": 0.6076610641268197,
+        "away": 0.39233893587318025,
         "fromModel": true,
-        "eloH": 1656,
-        "eloA": 1789,
+        "eloH": 1777,
+        "eloA": 1701,
         "surface": "hard"
       },
-      "ts": 1785769200000,
+      "ts": 1785778800000,
+      "sofa": null
+    },
+    {
+      "id": "65d8d144e3b1603c614875631ee21362",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:40",
+      "day": "03 AGO",
+      "home": "yuliaputintseva",
+      "away": "shuaizhang",
+      "odds": {
+        "home": {
+          "unibet": 1.48,
+          "888sport": 1.44,
+          "leovegas": 1.48,
+          "pinnacle": 1.48,
+          "betclic": 1.47,
+          "matchbook": 1.5,
+          "betfair": 1.52,
+          "1xbet": 1.47,
+          "winamax": 1.46,
+          "williamhill": 1.44,
+          "betsson": 1.43
+        },
+        "away": {
+          "unibet": 2.75,
+          "888sport": 2.75,
+          "leovegas": 2.65,
+          "pinnacle": 2.83,
+          "betclic": 2.8,
+          "matchbook": 2.78,
+          "betfair": 2.88,
+          "1xbet": 2.69,
+          "winamax": 2.85,
+          "williamhill": 2.75,
+          "betsson": 2.75
+        }
+      },
+      "model": {
+        "home": 0.5086338358210827,
+        "away": 0.4913661641789173,
+        "fromModel": true,
+        "eloH": 1774,
+        "eloA": 1768,
+        "surface": "hard"
+      },
+      "ts": 1785778800000,
+      "sofa": null
+    },
+    {
+      "id": "f83b748a46e5e0b6a8a6598d4e0e2736",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:00",
+      "day": "03 AGO",
+      "home": "huberthurkacz",
+      "away": "marcosgiron",
+      "odds": {
+        "home": {
+          "pinnacle": 1.57,
+          "888sport": 1.53,
+          "betclic": 1.54,
+          "betfair": 1.57,
+          "matchbook": 1.55,
+          "unibet": 1.55,
+          "leovegas": 1.55,
+          "1xbet": 1.55,
+          "winamax": 1.54,
+          "williamhill": 1.53
+        },
+        "away": {
+          "pinnacle": 2.56,
+          "888sport": 2.5,
+          "betclic": 2.55,
+          "betfair": 2.7,
+          "matchbook": 2.58,
+          "unibet": 2.5,
+          "leovegas": 2.45,
+          "1xbet": 2.46,
+          "winamax": 2.6,
+          "williamhill": 2.5
+        }
+      },
+      "model": {
+        "home": 0.7607960909891424,
+        "away": 0.23920390901085764,
+        "fromModel": true,
+        "eloH": 1951,
+        "eloA": 1750,
+        "surface": "hard"
+      },
+      "ts": 1785780000000,
+      "sofa": null
+    },
+    {
+      "id": "2620af8a13e0bd459f6cddf8217812ff",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:00",
+      "day": "03 AGO",
+      "home": "terenceatmane",
+      "away": "jackdraper",
+      "odds": {
+        "home": {
+          "pinnacle": 3,
+          "unibet": 2.9,
+          "leovegas": 2.9,
+          "888sport": 2.9,
+          "betclic": 2.95,
+          "betfair": 3.05,
+          "matchbook": 2.98,
+          "1xbet": 2.92,
+          "winamax": 3,
+          "williamhill": 2.9
+        },
+        "away": {
+          "pinnacle": 1.44,
+          "unibet": 1.42,
+          "leovegas": 1.42,
+          "888sport": 1.4,
+          "betclic": 1.43,
+          "betfair": 1.47,
+          "matchbook": 1.43,
+          "1xbet": 1.41,
+          "winamax": 1.43,
+          "williamhill": 1.4
+        }
+      },
+      "model": {
+        "home": 0.5316182978281073,
+        "away": 0.4683817021718927,
+        "fromModel": true,
+        "eloH": 1805,
+        "eloA": 1783,
+        "surface": "hard"
+      },
+      "ts": 1785780000000,
+      "sofa": null
+    },
+    {
+      "id": "341f3e5250be46d4bb3f0a9ac077f54f",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:30",
+      "day": "03 AGO",
+      "home": "adamwalton",
+      "away": "jensonbrooksby",
+      "odds": {
+        "home": {
+          "pinnacle": 2.18,
+          "888sport": 2.1,
+          "betclic": 2.15,
+          "betfair": 2.18,
+          "matchbook": 2.18,
+          "unibet": 2.15,
+          "leovegas": 2.12,
+          "1xbet": 2.11,
+          "winamax": 2.2,
+          "williamhill": 2.1
+        },
+        "away": {
+          "pinnacle": 1.75,
+          "888sport": 1.73,
+          "betclic": 1.73,
+          "betfair": 1.77,
+          "matchbook": 1.76,
+          "unibet": 1.72,
+          "leovegas": 1.72,
+          "1xbet": 1.73,
+          "winamax": 1.72,
+          "williamhill": 1.73
+        }
+      },
+      "model": {
+        "home": 0.45836229728523653,
+        "away": 0.5416377027147634,
+        "fromModel": true,
+        "eloH": 1764,
+        "eloA": 1793,
+        "surface": "hard"
+      },
+      "ts": 1785781800000,
+      "sofa": null
+    },
+    {
+      "id": "ad669d330176ac5796a9ec60f8ec1aa8",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:30",
+      "day": "03 AGO",
+      "home": "sebastianbaez",
+      "away": "mattiabellucci",
+      "odds": {
+        "home": {
+          "pinnacle": 1.83,
+          "unibet": 1.8,
+          "leovegas": 1.8,
+          "888sport": 1.8,
+          "betclic": 1.82,
+          "betfair": 1.89,
+          "matchbook": 1.84,
+          "1xbet": 1.8,
+          "winamax": 1.82,
+          "williamhill": 1.8
+        },
+        "away": {
+          "pinnacle": 2.07,
+          "unibet": 2.05,
+          "leovegas": 2,
+          "888sport": 2,
+          "betclic": 2.04,
+          "betfair": 2.1,
+          "matchbook": 2.04,
+          "1xbet": 2.01,
+          "winamax": 2.05,
+          "williamhill": 2
+        }
+      },
+      "model": {
+        "home": 0.5402082283237456,
+        "away": 0.4597917716762544,
+        "fromModel": true,
+        "eloH": 1792,
+        "eloA": 1764,
+        "surface": "hard"
+      },
+      "ts": 1785781800000,
+      "sofa": null
+    },
+    {
+      "id": "799fb3615417a42649cbe48399330c06",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:35",
+      "day": "03 AGO",
+      "home": "yuliiastarodubts",
+      "away": "mayajoint",
+      "odds": {
+        "home": {
+          "unibet": 1.66,
+          "leovegas": 1.66,
+          "888sport": 1.67,
+          "pinnacle": 1.7,
+          "betclic": 1.69,
+          "betfair": 1.73,
+          "matchbook": 1.71,
+          "1xbet": 1.69,
+          "winamax": 1.68,
+          "williamhill": 1.67,
+          "betsson": 1.65
+        },
+        "away": {
+          "unibet": 2.2,
+          "leovegas": 2.2,
+          "888sport": 2.2,
+          "pinnacle": 2.26,
+          "betclic": 2.24,
+          "betfair": 2.3,
+          "matchbook": 2.26,
+          "1xbet": 2.18,
+          "winamax": 2.25,
+          "williamhill": 2.2,
+          "betsson": 2.18
+        }
+      },
+      "model": {
+        "home": 0.4726840269935071,
+        "away": 0.5273159730064929,
+        "fromModel": true,
+        "eloH": 1779,
+        "eloA": 1798,
+        "surface": "hard"
+      },
+      "ts": 1785782100000,
+      "sofa": null
+    },
+    {
+      "id": "90097db01aa7e785f2d1cce306f4c531",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:40",
+      "day": "03 AGO",
+      "home": "carolzhao",
+      "away": "magdalinette",
+      "odds": {
+        "home": {
+          "unibet": 8.5,
+          "888sport": 8,
+          "leovegas": 8.5,
+          "pinnacle": 8.88,
+          "betclic": 9,
+          "matchbook": 8.8,
+          "betfair": 9.2,
+          "1xbet": 8.3,
+          "winamax": 9.5,
+          "williamhill": 8,
+          "betsson": 8.34
+        },
+        "away": {
+          "unibet": 1.07,
+          "888sport": 1.06,
+          "leovegas": 1.07,
+          "pinnacle": 1.08,
+          "betclic": 1.08,
+          "matchbook": 1.07,
+          "betfair": 1.1,
+          "1xbet": 1.07,
+          "winamax": 1.08,
+          "williamhill": 1.07,
+          "betsson": 1.06
+        }
+      },
+      "model": {
+        "home": 0.2641225558985236,
+        "away": 0.7358774441014764,
+        "fromModel": true,
+        "eloH": 1579,
+        "eloA": 1757,
+        "surface": "hard"
+      },
+      "ts": 1785782400000,
+      "sofa": null
+    },
+    {
+      "id": "bc5bcf1c91d329fa124330232ae1f6e0",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:50",
+      "day": "03 AGO",
+      "home": "victoriajimenezk",
+      "away": "alyciaparks",
+      "odds": {
+        "home": {
+          "unibet": 2.25,
+          "leovegas": 2.25,
+          "888sport": 2.2,
+          "pinnacle": 2.3,
+          "betclic": 2.28,
+          "betfair": 2.32,
+          "matchbook": 2.3,
+          "1xbet": 2.23,
+          "winamax": 2.3,
+          "williamhill": 2.2,
+          "betsson": 2.26
+        },
+        "away": {
+          "unibet": 1.65,
+          "leovegas": 1.65,
+          "888sport": 1.67,
+          "pinnacle": 1.68,
+          "betclic": 1.65,
+          "betfair": 1.68,
+          "matchbook": 1.68,
+          "1xbet": 1.66,
+          "winamax": 1.64,
+          "williamhill": 1.67,
+          "betsson": 1.61
+        }
+      },
+      "noModel": true,
+      "ts": 1785783000000,
+      "sofa": null
+    },
+    {
+      "id": "780765848b446be251ce09f33dd3adff",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:50",
+      "day": "03 AGO",
+      "home": "janicetjen",
+      "away": "liudmilasamsonov",
+      "odds": {
+        "home": {
+          "unibet": 2.5,
+          "888sport": 2.5,
+          "leovegas": 2.5,
+          "pinnacle": 2.55,
+          "betclic": 2.5,
+          "matchbook": 2.56,
+          "betfair": 2.56,
+          "1xbet": 2.48,
+          "winamax": 2.5,
+          "williamhill": 2.5,
+          "betsson": 2.44
+        },
+        "away": {
+          "unibet": 1.53,
+          "888sport": 1.53,
+          "leovegas": 1.53,
+          "pinnacle": 1.57,
+          "betclic": 1.56,
+          "matchbook": 1.56,
+          "betfair": 1.61,
+          "1xbet": 1.54,
+          "winamax": 1.56,
+          "williamhill": 1.53,
+          "betsson": 1.53
+        }
+      },
+      "model": {
+        "home": 0.4019862342306564,
+        "away": 0.5980137657693436,
+        "fromModel": true,
+        "eloH": 1839,
+        "eloA": 1908,
+        "surface": "hard"
+      },
+      "ts": 1785783000000,
+      "sofa": null
+    },
+    {
+      "id": "cd66fe742d007761806ac2730aa19b65",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:10",
+      "day": "03 AGO",
+      "home": "giovannimpetship",
+      "away": "boticvandezandsc",
+      "odds": {
+        "home": {
+          "pinnacle": 2.08,
+          "unibet": 2.08,
+          "leovegas": 2.08,
+          "888sport": 2,
+          "betclic": 2.07,
+          "betfair": 2.14,
+          "matchbook": 2.14,
+          "1xbet": 2.06,
+          "winamax": 2.05,
+          "williamhill": 2
+        },
+        "away": {
+          "pinnacle": 1.83,
+          "unibet": 1.76,
+          "leovegas": 1.75,
+          "888sport": 1.8,
+          "betclic": 1.8,
+          "betfair": 1.85,
+          "matchbook": 1.83,
+          "1xbet": 1.76,
+          "winamax": 1.8,
+          "williamhill": 1.8
+        }
+      },
+      "model": {
+        "home": 0.4327711556570478,
+        "away": 0.5672288443429522,
+        "fromModel": true,
+        "eloH": 1722,
+        "eloA": 1769,
+        "surface": "hard"
+      },
+      "ts": 1785784200000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200828573325030",
+      "tour": "atp",
+      "event": "ATP Montreal, Canada Men Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:10",
+      "day": "03 AGO",
+      "home": "giovannimpetship",
+      "away": "vandezandschulpb",
+      "odds": {
+        "home": {
+          "bwin": 2,
+          "1xbet": 2.06,
+          "bet365": 2.1,
+          "betano": 2.02,
+          "betway": 2.05,
+          "oddset": 2,
+          "betfred": 2,
+          "betsson": 2.05,
+          "888sport": 2,
+          "pinnacle": 2.08,
+          "unibet": 2.05,
+          "betfair": 2.14,
+          "winamax": 2.05,
+          "888sportro": 2,
+          "williamhill": 2.05
+        },
+        "away": {
+          "bwin": 1.78,
+          "1xbet": 1.76,
+          "bet365": 1.72,
+          "betano": 1.78,
+          "betway": 1.75,
+          "oddset": 1.78,
+          "betfred": 1.8,
+          "betsson": 1.78,
+          "888sport": 1.8,
+          "pinnacle": 1.826,
+          "unibet": 1.76,
+          "betfair": 1.86,
+          "winamax": 1.8,
+          "888sportro": 1.8,
+          "williamhill": 1.741
+        }
+      },
+      "model": {
+        "home": 0.5516235473109605,
+        "away": 0.4483764526890395,
+        "fromModel": true,
+        "eloH": 1722,
+        "eloA": 1686,
+        "surface": "hard"
+      },
+      "ts": 1785784200000,
+      "sofa": null
+    },
+    {
+      "id": "90a91956d61f7018e429f2530ee910a7",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:40",
+      "day": "03 AGO",
+      "home": "shintaromochizuk",
+      "away": "fabianmarozsan",
+      "odds": {
+        "home": {
+          "pinnacle": 2.63,
+          "888sport": 2.5,
+          "betclic": 2.6,
+          "betfair": 2.66,
+          "matchbook": 2.64,
+          "leovegas": 2.6,
+          "unibet": 2.6,
+          "1xbet": 2.6,
+          "winamax": 2.65
+        },
+        "away": {
+          "pinnacle": 1.54,
+          "888sport": 1.53,
+          "betclic": 1.52,
+          "betfair": 1.58,
+          "matchbook": 1.55,
+          "leovegas": 1.5,
+          "unibet": 1.5,
+          "1xbet": 1.5,
+          "winamax": 1.52
+        }
+      },
+      "model": {
+        "home": 0.3572869311673796,
+        "away": 0.6427130688326204,
+        "fromModel": true,
+        "eloH": 1707,
+        "eloA": 1809,
+        "surface": "hard"
+      },
+      "ts": 1785786000000,
+      "sofa": null
+    },
+    {
+      "id": "6fd6d72f6a69fd57d3bf719f6c8ed28f",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:40",
+      "day": "03 AGO",
+      "home": "juanmanuelcerund",
+      "away": "hamadmedjedovic",
+      "odds": {
+        "home": {
+          "pinnacle": 2.41,
+          "unibet": 2.38,
+          "leovegas": 2.38,
+          "888sport": 2.3,
+          "betclic": 2.38,
+          "betfair": 2.44,
+          "matchbook": 2.42,
+          "1xbet": 2.36,
+          "winamax": 2.35
+        },
+        "away": {
+          "pinnacle": 1.63,
+          "unibet": 1.6,
+          "leovegas": 1.57,
+          "888sport": 1.61,
+          "betclic": 1.62,
+          "betfair": 1.65,
+          "matchbook": 1.61,
+          "1xbet": 1.59,
+          "winamax": 1.64
+        }
+      },
+      "model": {
+        "home": 0.39096739659576046,
+        "away": 0.6090326034042395,
+        "fromModel": true,
+        "eloH": 1717,
+        "eloA": 1794,
+        "surface": "hard"
+      },
+      "ts": 1785786000000,
+      "sofa": null
+    },
+    {
+      "id": "2ab8fa6200502986deaf8d8e3b2af049",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "21:45",
+      "day": "03 AGO",
+      "home": "tatjanamaria",
+      "away": "catymcnally",
+      "odds": {
+        "home": {
+          "unibet": 2.28,
+          "leovegas": 2.28,
+          "888sport": 2.3,
+          "pinnacle": 2.38,
+          "betclic": 2.32,
+          "betfair": 2.4,
+          "matchbook": 2.36,
+          "1xbet": 2.23,
+          "winamax": 2.3,
+          "betsson": 2.26
+        },
+        "away": {
+          "unibet": 1.63,
+          "leovegas": 1.63,
+          "888sport": 1.61,
+          "pinnacle": 1.64,
+          "betclic": 1.64,
+          "betfair": 1.67,
+          "matchbook": 1.66,
+          "1xbet": 1.66,
+          "winamax": 1.64,
+          "betsson": 1.61
+        }
+      },
+      "model": {
+        "home": 0.5487743358597418,
+        "away": 0.4512256641402582,
+        "fromModel": true,
+        "eloH": 1827,
+        "eloA": 1793,
+        "surface": "hard"
+      },
+      "ts": 1785786300000,
       "sofa": null
     },
     {
@@ -3779,20 +3582,34 @@
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "17:00",
+      "time": "22:00",
       "day": "03 AGO",
       "home": "terezavalentova",
       "away": "taylortownsend",
       "odds": {
         "home": {
-          "unibet": 1.54,
+          "unibet": 1.5,
           "888sport": 1.44,
-          "leovegas": 1.54
+          "leovegas": 1.5,
+          "pinnacle": 1.49,
+          "betclic": 1.48,
+          "matchbook": 1.48,
+          "betfair": 1.51,
+          "1xbet": 1.48,
+          "winamax": 1.48,
+          "betsson": 1.44
         },
         "away": {
-          "unibet": 2.48,
+          "unibet": 2.65,
           "888sport": 2.75,
-          "leovegas": 2.48
+          "leovegas": 2.6,
+          "pinnacle": 2.79,
+          "betclic": 2.75,
+          "matchbook": 2.8,
+          "betfair": 2.82,
+          "1xbet": 2.66,
+          "winamax": 2.8,
+          "betsson": 2.7
         }
       },
       "model": {
@@ -3803,7 +3620,425 @@
         "eloA": 1776,
         "surface": "hard"
       },
-      "ts": 1785769200000,
+      "ts": 1785787200000,
+      "sofa": null
+    },
+    {
+      "id": "7e6445f5e0eab32b42d5e402d005a6de",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "22:20",
+      "day": "03 AGO",
+      "home": "lorenzosonego",
+      "away": "tallongriekspoor",
+      "odds": {
+        "home": {
+          "pinnacle": 1.98,
+          "unibet": 1.93,
+          "leovegas": 1.93,
+          "888sport": 1.95,
+          "betclic": 1.95,
+          "betfair": 2,
+          "matchbook": 1.97,
+          "1xbet": 1.93,
+          "winamax": 1.96
+        },
+        "away": {
+          "pinnacle": 1.91,
+          "unibet": 1.87,
+          "leovegas": 1.87,
+          "888sport": 1.85,
+          "betclic": 1.9,
+          "betfair": 1.93,
+          "matchbook": 1.91,
+          "1xbet": 1.87,
+          "winamax": 1.9
+        }
+      },
+      "model": {
+        "home": 0.3854986389914422,
+        "away": 0.6145013610085578,
+        "fromModel": true,
+        "eloH": 1783,
+        "eloA": 1864,
+        "surface": "hard"
+      },
+      "ts": 1785788400000,
+      "sofa": null
+    },
+    {
+      "id": "6274c443b8cceb8cc197b45d12eb15f1",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "23:00",
+      "day": "03 AGO",
+      "home": "pannaudvardy",
+      "away": "evalys",
+      "odds": {
+        "home": {
+          "unibet": 2.5,
+          "888sport": 2.6,
+          "leovegas": 2.43,
+          "pinnacle": 2.69,
+          "betclic": 2.68,
+          "matchbook": 2.68,
+          "betfair": 2.7,
+          "1xbet": 2.48,
+          "winamax": 2.65,
+          "williamhill": 2.6,
+          "betsson": 2.55
+        },
+        "away": {
+          "unibet": 1.55,
+          "888sport": 1.5,
+          "leovegas": 1.55,
+          "pinnacle": 1.52,
+          "betclic": 1.51,
+          "matchbook": 1.51,
+          "betfair": 1.55,
+          "1xbet": 1.54,
+          "winamax": 1.52,
+          "williamhill": 1.5,
+          "betsson": 1.49
+        }
+      },
+      "model": {
+        "home": 0.6049129020079568,
+        "away": 0.3950870979920432,
+        "fromModel": true,
+        "eloH": 1814,
+        "eloA": 1740,
+        "surface": "hard"
+      },
+      "ts": 1785790800000,
+      "sofa": null
+    },
+    {
+      "id": "bdb72940dfe5eeb2d504afe6034dcac3",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "23:00",
+      "day": "03 AGO",
+      "home": "renatazarazua",
+      "away": "tamarakorpatsch",
+      "odds": {
+        "home": {
+          "pinnacle": 1.64,
+          "888sport": 1.61,
+          "betclic": 1.62,
+          "matchbook": 1.63,
+          "betfair": 1.67,
+          "1xbet": 1.61,
+          "unibet": 1.56,
+          "winamax": 1.62,
+          "williamhill": 1.62,
+          "betsson": 1.58
+        },
+        "away": {
+          "pinnacle": 2.39,
+          "888sport": 2.3,
+          "betclic": 2.35,
+          "matchbook": 2.4,
+          "betfair": 2.44,
+          "1xbet": 2.32,
+          "unibet": 2.3,
+          "winamax": 2.4,
+          "williamhill": 2.3,
+          "betsson": 2.32
+        }
+      },
+      "model": {
+        "home": 0.5359159269451023,
+        "away": 0.46408407305489774,
+        "fromModel": true,
+        "eloH": 1749,
+        "eloA": 1724,
+        "surface": "hard"
+      },
+      "ts": 1785790800000,
+      "sofa": null
+    },
+    {
+      "id": "7a609fe9cdfc82ed6d9c93e42f5cd6b5",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "00:00",
+      "day": "03 AGO",
+      "home": "danielmeridaagui",
+      "away": "liamdraxl",
+      "odds": {
+        "home": {
+          "pinnacle": 1.68,
+          "unibet": 1.71,
+          "leovegas": 1.71,
+          "888sport": 1.67,
+          "betclic": 1.67,
+          "betfair": 1.7,
+          "matchbook": 1.69,
+          "1xbet": 1.71,
+          "winamax": 1.72
+        },
+        "away": {
+          "pinnacle": 2.3,
+          "unibet": 2.15,
+          "leovegas": 2.14,
+          "888sport": 2.2,
+          "betclic": 2.25,
+          "betfair": 2.36,
+          "matchbook": 2.28,
+          "1xbet": 2.14,
+          "winamax": 2.2
+        }
+      },
+      "model": {
+        "home": 0.5330513938844411,
+        "away": 0.4669486061155589,
+        "fromModel": true,
+        "eloH": 1721,
+        "eloA": 1698,
+        "surface": "hard"
+      },
+      "ts": 1785794400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200828573325038",
+      "tour": "atp",
+      "event": "ATP Montreal, Canada Men Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "00:00",
+      "day": "03 AGO",
+      "home": "danielmerida",
+      "away": "liamdraxl",
+      "odds": {
+        "home": {
+          "bwin": 1.67,
+          "1xbet": 1.71,
+          "bet365": 1.72,
+          "betano": 1.7,
+          "betway": 1.7,
+          "oddset": 1.67,
+          "betfred": 1.667,
+          "betsson": 1.71,
+          "888sport": 1.667,
+          "pinnacle": 1.684,
+          "codere": 1.65,
+          "unibet": 1.69,
+          "betfair": 1.7,
+          "winamax": 1.72,
+          "888sportro": 1.667,
+          "williamhill": 1.714
+        },
+        "away": {
+          "bwin": 2.15,
+          "1xbet": 2.141,
+          "bet365": 2.1,
+          "betano": 2.12,
+          "betway": 2.1,
+          "oddset": 2.15,
+          "betfred": 2.2,
+          "betsson": 2.16,
+          "888sport": 2.2,
+          "pinnacle": 2.3,
+          "codere": 2.1,
+          "unibet": 2.15,
+          "betfair": 2.36,
+          "winamax": 2.2,
+          "888sportro": 2.2,
+          "williamhill": 2.1
+        }
+      },
+      "noModel": true,
+      "ts": 1785794400000,
+      "sofa": null
+    },
+    {
+      "id": "0a54dcf49d2e18e8769f3db96c0bf611",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "00:10",
+      "day": "03 AGO",
+      "home": "solanasierra",
+      "away": "sloanestephens",
+      "odds": {
+        "home": {
+          "betfair": 2.02,
+          "unibet": 2.02,
+          "leovegas": 2.02,
+          "betclic": 2.04,
+          "1xbet": 2.02,
+          "winamax": 1.98,
+          "matchbook": 2.02,
+          "888sport": 2,
+          "betsson": 1.99
+        },
+        "away": {
+          "betfair": 1.86,
+          "unibet": 1.78,
+          "leovegas": 1.78,
+          "betclic": 1.82,
+          "1xbet": 1.79,
+          "winamax": 1.82,
+          "matchbook": 1.82,
+          "888sport": 1.8,
+          "betsson": 1.78
+        }
+      },
+      "model": {
+        "home": 0.7403284195148304,
+        "away": 0.2596715804851696,
+        "fromModel": true,
+        "eloH": 1772,
+        "eloA": 1590,
+        "surface": "hard"
+      },
+      "ts": 1785795000000,
+      "sofa": null
+    },
+    {
+      "id": "f0a2c84a147c9366379080657103938f",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "01:00",
+      "day": "03 AGO",
+      "home": "kamilmajchrzak",
+      "away": "gaelmonfils",
+      "odds": {
+        "home": {
+          "pinnacle": 1.32,
+          "unibet": 1.3,
+          "leovegas": 1.29,
+          "888sport": 1.3,
+          "betclic": 1.31,
+          "betfair": 1.33,
+          "matchbook": 1.3,
+          "1xbet": 1.29,
+          "winamax": 1.32
+        },
+        "away": {
+          "pinnacle": 3.7,
+          "unibet": 3.55,
+          "leovegas": 3.55,
+          "888sport": 3.5,
+          "betclic": 3.6,
+          "betfair": 3.75,
+          "matchbook": 3.75,
+          "1xbet": 3.58,
+          "winamax": 3.6
+        }
+      },
+      "model": {
+        "home": 0.6347433350523167,
+        "away": 0.3652566649476833,
+        "fromModel": true,
+        "eloH": 1758,
+        "eloA": 1662,
+        "surface": "hard"
+      },
+      "ts": 1785798000000,
+      "sofa": null
+    },
+    {
+      "id": "b88ea9fe5429a28be47d3a3bcf38e6af",
+      "tour": "wta",
+      "event": "Wta Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "01:00",
+      "day": "03 AGO",
+      "home": "rebeccamarino",
+      "away": "zeynepsonmez",
+      "odds": {
+        "home": {
+          "unibet": 3.4,
+          "888sport": 3.5,
+          "leovegas": 3.4,
+          "pinnacle": 3.72,
+          "betclic": 3.65,
+          "matchbook": 3.75,
+          "betfair": 3.75,
+          "1xbet": 3.28,
+          "winamax": 3.65
+        },
+        "away": {
+          "unibet": 1.32,
+          "888sport": 1.3,
+          "leovegas": 1.32,
+          "pinnacle": 1.31,
+          "betclic": 1.3,
+          "matchbook": 1.3,
+          "betfair": 1.33,
+          "1xbet": 1.34,
+          "winamax": 1.31
+        }
+      },
+      "model": {
+        "home": 0.3174296145252281,
+        "away": 0.6825703854747719,
+        "fromModel": true,
+        "eloH": 1656,
+        "eloA": 1789,
+        "surface": "hard"
+      },
+      "ts": 1785798000000,
+      "sofa": null
+    },
+    {
+      "id": "fe34e2f631f79d4a636ca69302fb3497",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "01:10",
+      "day": "03 AGO",
+      "home": "pablocarrenobust",
+      "away": "valentinroyer",
+      "odds": {
+        "home": {
+          "pinnacle": 1.5,
+          "unibet": 1.48,
+          "leovegas": 1.48,
+          "888sport": 1.5,
+          "betclic": 1.48,
+          "betfair": 1.51,
+          "matchbook": 1.49,
+          "1xbet": 1.48,
+          "winamax": 1.48
+        },
+        "away": {
+          "pinnacle": 2.76,
+          "unibet": 2.7,
+          "leovegas": 2.65,
+          "888sport": 2.6,
+          "betclic": 2.75,
+          "betfair": 2.86,
+          "matchbook": 2.76,
+          "1xbet": 2.66,
+          "winamax": 2.8
+        }
+      },
+      "model": {
+        "home": 0.33130504369266833,
+        "away": 0.6686949563073317,
+        "fromModel": true,
+        "eloH": 1655,
+        "eloA": 1777,
+        "surface": "hard"
+      },
+      "ts": 1785798600000,
       "sofa": null
     },
     {
@@ -3812,20 +4047,32 @@
       "event": "Wta Canadian Open",
       "round": "",
       "surface": "Dura",
-      "time": "18:30",
-      "day": "03 AGO",
+      "time": "02:10",
+      "day": "04 AGO",
       "home": "xinyuwang",
       "away": "dariakasatkina",
       "odds": {
         "home": {
-          "leovegas": 1.91,
-          "unibet": 1.91,
-          "888sport": 1.91
+          "leovegas": 1.95,
+          "unibet": 1.95,
+          "888sport": 1.85,
+          "pinnacle": 1.92,
+          "betclic": 1.92,
+          "matchbook": 1.91,
+          "betfair": 1.92,
+          "1xbet": 1.93,
+          "winamax": 2
         },
         "away": {
-          "leovegas": 1.89,
-          "unibet": 1.89,
-          "888sport": 1.91
+          "leovegas": 1.85,
+          "unibet": 1.85,
+          "888sport": 1.95,
+          "pinnacle": 1.97,
+          "betclic": 1.92,
+          "matchbook": 1.97,
+          "betfair": 1.98,
+          "1xbet": 1.87,
+          "winamax": 1.86
         }
       },
       "model": {
@@ -3836,7 +4083,267 @@
         "eloA": 1823,
         "surface": "hard"
       },
-      "ts": 1785774600000,
+      "ts": 1785802200000,
+      "sofa": null
+    },
+    {
+      "id": "d872deb964ec915a944e2b1707c0d0ab",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "03:20",
+      "day": "04 AGO",
+      "home": "martindammjr",
+      "away": "stefanostsitsipa",
+      "odds": {
+        "home": {
+          "pinnacle": 2.78,
+          "888sport": 2.6,
+          "betclic": 2.7,
+          "betfair": 2.82,
+          "matchbook": 2.8,
+          "unibet": 2.65,
+          "leovegas": 2.63,
+          "1xbet": 2.63,
+          "winamax": 2.7
+        },
+        "away": {
+          "pinnacle": 1.5,
+          "888sport": 1.5,
+          "betclic": 1.49,
+          "betfair": 1.52,
+          "matchbook": 1.5,
+          "unibet": 1.49,
+          "leovegas": 1.49,
+          "1xbet": 1.49,
+          "winamax": 1.5
+        }
+      },
+      "model": {
+        "home": 0.4285368825916186,
+        "away": 0.5714631174083814,
+        "fromModel": true,
+        "eloH": 1847,
+        "eloA": 1897,
+        "surface": "hard"
+      },
+      "ts": 1785806400000,
+      "sofa": null
+    },
+    {
+      "id": "1b2aecb733f29e16b5982e7da22bb3ef",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "04 AGO",
+      "home": "jaumemunar",
+      "away": "alexanderblockx",
+      "odds": {
+        "home": {
+          "betfair": 1.02,
+          "unibet": 2.25,
+          "betclic": 2.21,
+          "1xbet": 2.25,
+          "winamax": 2.2,
+          "888sport": 2.3,
+          "leovegas": 2.25
+        },
+        "away": {
+          "betfair": 1.04,
+          "unibet": 1.64,
+          "betclic": 1.64,
+          "1xbet": 1.65,
+          "winamax": 1.64,
+          "888sport": 1.61,
+          "leovegas": 1.64
+        }
+      },
+      "model": {
+        "home": 0.47555453887933863,
+        "away": 0.5244454611206614,
+        "fromModel": true,
+        "eloH": 1822,
+        "eloA": 1839,
+        "surface": "hard"
+      },
+      "ts": 1785855600000,
+      "sofa": null
+    },
+    {
+      "id": "0c212d85147c2b742bbfb0cdaaceaad6",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "04 AGO",
+      "home": "alexeipopyrin",
+      "away": "romanandresburru",
+      "odds": {
+        "home": {
+          "pinnacle": 1.66,
+          "888sport": 1.61,
+          "betclic": 1.63,
+          "betfair": 1.66,
+          "matchbook": 1.66,
+          "leovegas": 1.63,
+          "unibet": 1.63,
+          "1xbet": 1.64,
+          "winamax": 1.66
+        },
+        "away": {
+          "pinnacle": 2.34,
+          "888sport": 2.3,
+          "betclic": 2.25,
+          "betfair": 2.36,
+          "matchbook": 2.32,
+          "leovegas": 2.28,
+          "unibet": 2.28,
+          "1xbet": 2.27,
+          "winamax": 2.3
+        }
+      },
+      "model": {
+        "home": 0.8548291775317596,
+        "away": 0.14517082246824042,
+        "fromModel": true,
+        "eloH": 1789,
+        "eloA": 1481,
+        "surface": "hard"
+      },
+      "ts": 1785855600000,
+      "sofa": null
+    },
+    {
+      "id": "3aa5a82fb7841b1e71bae0f012c8fc74",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "04 AGO",
+      "home": "junchengshang",
+      "away": "andreyrublev",
+      "odds": {
+        "home": {
+          "betfair": 1.1,
+          "unibet": 4.3,
+          "betclic": 4.3,
+          "1xbet": 4.52,
+          "winamax": 4.4,
+          "888sport": 4.2,
+          "leovegas": 4.3
+        },
+        "away": {
+          "betfair": 1.14,
+          "unibet": 1.21,
+          "betclic": 1.21,
+          "1xbet": 1.21,
+          "winamax": 1.21,
+          "888sport": 1.22,
+          "leovegas": 1.21
+        }
+      },
+      "model": {
+        "home": 0.12756539636424022,
+        "away": 0.8724346036357598,
+        "fromModel": true,
+        "eloH": 1643,
+        "eloA": 1977,
+        "surface": "hard"
+      },
+      "ts": 1785855600000,
+      "sofa": null
+    },
+    {
+      "id": "015fd7847f4733822f68790fc1d3c88d",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "04 AGO",
+      "home": "zacharysvajda",
+      "away": "denisshapovalov",
+      "odds": {
+        "home": {
+          "pinnacle": 2.2,
+          "888sport": 2.1,
+          "betclic": 2.14,
+          "betfair": 2.28,
+          "matchbook": 2.2,
+          "1xbet": 2.11,
+          "unibet": 2.1,
+          "leovegas": 2.1
+        },
+        "away": {
+          "pinnacle": 1.74,
+          "888sport": 1.73,
+          "betclic": 1.69,
+          "betfair": 1.74,
+          "matchbook": 1.72,
+          "1xbet": 1.73,
+          "unibet": 1.73,
+          "leovegas": 1.73
+        }
+      },
+      "model": {
+        "home": 0.41869852163108506,
+        "away": 0.581301478368915,
+        "fromModel": true,
+        "eloH": 1777,
+        "eloA": 1834,
+        "surface": "hard"
+      },
+      "ts": 1785855600000,
+      "sofa": null
+    },
+    {
+      "id": "9b744a7d1d2550a868acbbba9eaad46f",
+      "tour": "atp",
+      "event": "Atp Canadian Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "17:00",
+      "day": "04 AGO",
+      "home": "duncanchan",
+      "away": "thiagoagustintir",
+      "odds": {
+        "home": {
+          "pinnacle": 3.54,
+          "betfair": 3.6,
+          "888sport": 3.3,
+          "betclic": 3.3,
+          "matchbook": 3.55,
+          "unibet": 3.3,
+          "leovegas": 3.3,
+          "1xbet": 3.28,
+          "winamax": 3.45
+        },
+        "away": {
+          "pinnacle": 1.34,
+          "betfair": 1.34,
+          "888sport": 1.33,
+          "betclic": 1.33,
+          "matchbook": 1.33,
+          "unibet": 1.33,
+          "leovegas": 1.33,
+          "1xbet": 1.34,
+          "winamax": 1.34
+        }
+      },
+      "model": {
+        "home": 0.32875941918416823,
+        "away": 0.6712405808158317,
+        "fromModel": true,
+        "eloH": 1543,
+        "eloA": 1667,
+        "surface": "hard"
+      },
+      "ts": 1785855600000,
       "sofa": null
     }
   ],
@@ -3844,82 +4351,82 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 35,
-      "book": "sport888",
+      "conf": 57,
+      "book": "winamax_de",
       "legs": [
         {
-          "id": "af26f33538bb4db199e8313d693ebf5c",
-          "sport": "tennis_wta_canadian_open",
-          "ts": 1785688200000,
-          "side": "home",
-          "sofa": null,
-          "match": "K. Rakhimova – V. Williams",
-          "pick": "Gana K. Rakhimova",
-          "odd": 1.29,
-          "book": "sport888"
-        },
-        {
-          "id": "dcc6d530a1d9327a64eca6053fb9912c",
-          "sport": "tennis_wta_canadian_open",
-          "ts": 1785687000000,
+          "id": "3aa5a82fb7841b1e71bae0f012c8fc74",
+          "sport": "tennis_atp_canadian_open",
+          "ts": 1785855600000,
           "side": "away",
           "sofa": null,
-          "match": "M. Uchijima – C. Bucsa",
-          "pick": "Gana C. Bucsa",
-          "odd": 1.67,
-          "book": "sport888"
+          "match": "J. Shang – A. Rublev",
+          "pick": "Gana A. Rublev",
+          "odd": 1.21,
+          "book": "winamax_de"
         },
         {
-          "id": "b50eee6f2fb9e665aefa47859444a238",
-          "sport": "tennis_wta_washington_open",
-          "ts": 1785686400000,
+          "id": "0c212d85147c2b742bbfb0cdaaceaad6",
+          "sport": "tennis_atp_canadian_open",
+          "ts": 1785855600000,
           "side": "home",
           "sofa": null,
-          "match": "J. Pegula – A. Eala",
-          "pick": "Gana J. Pegula",
-          "odd": 1.61,
-          "book": "sport888"
+          "match": "A. Popyrin – R. Andres Burruchaga",
+          "pick": "Gana A. Popyrin",
+          "odd": 1.66,
+          "book": "winamax_de"
+        },
+        {
+          "id": "f83b748a46e5e0b6a8a6598d4e0e2736",
+          "sport": "tennis_atp_canadian_open",
+          "ts": 1785780000000,
+          "side": "home",
+          "sofa": null,
+          "match": "H. Hurkacz – M. Giron",
+          "pick": "Gana H. Hurkacz",
+          "odd": 1.54,
+          "book": "winamax_de"
         }
       ]
     },
     {
       "id": "c2",
       "name": "Combinada Valor",
-      "conf": 24,
-      "book": "pinnacle",
+      "conf": 21,
+      "book": "betfair_ex_eu",
       "legs": [
         {
-          "id": "opid1200828573325008",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1785682800000,
+          "id": "8ddf352d7eddaaf779eb74c8d7a30808",
+          "sport": "tennis_wta_canadian_open",
+          "ts": 1785774600000,
           "side": "home",
           "sofa": null,
-          "match": "D. Vallejo Adolfo – J. Shang",
-          "pick": "Gana D. Vallejo Adolfo",
-          "odd": 2.24,
-          "book": "pinnacle"
+          "match": "E. Gabriela Ruse – P. Stearns",
+          "pick": "Gana E. Gabriela Ruse",
+          "odd": 2.2,
+          "book": "betfair_ex_eu"
         },
         {
           "id": "74dd3f46547ada7019ee9f424ddc8df0",
           "sport": "tennis_atp_canadian_open",
-          "ts": 1785715800000,
+          "ts": 1785769200000,
           "side": "away",
           "sofa": null,
           "match": "A. Galarneau – V. Kopriva",
           "pick": "Gana V. Kopriva",
-          "odd": 1.99,
-          "book": "pinnacle"
+          "odd": 2.1,
+          "book": "betfair_ex_eu"
         },
         {
-          "id": "opid1200448373063952",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1785691800000,
-          "side": "away",
+          "id": "2ab8fa6200502986deaf8d8e3b2af049",
+          "sport": "tennis_wta_canadian_open",
+          "ts": 1785786300000,
+          "side": "home",
           "sofa": null,
-          "match": "K. Liutova – D. Vidmanova",
-          "pick": "Gana D. Vidmanova",
-          "odd": 1.81,
-          "book": "pinnacle"
+          "match": "T. Maria – C. McNally",
+          "pick": "Gana T. Maria",
+          "odd": 2.4,
+          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -5668,6 +6175,261 @@
       "book": "pinnacle",
       "homeName": "M. Fucsovics",
       "awayName": "C. Moutet"
+    },
+    {
+      "id": "a63b46b92a38e1d69b2a14b1ffb032e6",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785769200000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Korneeva – P. Kudermetova",
+      "pickKey": "away",
+      "pickLabel": "Gana P. Kudermetova",
+      "odd": 2.87,
+      "book": "pinnacle",
+      "homeName": "A. Korneeva",
+      "awayName": "P. Kudermetova"
+    },
+    {
+      "id": "2ab8fa6200502986deaf8d8e3b2af049",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785786300000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "T. Maria – C. McNally",
+      "pickKey": "home",
+      "pickLabel": "Gana T. Maria",
+      "odd": 2.4,
+      "book": "betfair_ex_eu",
+      "homeName": "T. Maria",
+      "awayName": "C. McNally"
+    },
+    {
+      "id": "799fb3615417a42649cbe48399330c06",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785782100000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "Y. Starodubtseva – M. Joint",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Joint",
+      "odd": 2.3,
+      "book": "betfair_ex_eu",
+      "homeName": "Y. Starodubtseva",
+      "awayName": "M. Joint"
+    },
+    {
+      "id": "d872deb964ec915a944e2b1707c0d0ab",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785806400000,
+      "date": "04 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "M. Damm Jr – S. Tsitsipas",
+      "pickKey": "home",
+      "pickLabel": "Gana M. Damm Jr",
+      "odd": 2.82,
+      "book": "betfair_ex_eu",
+      "homeName": "M. Damm Jr",
+      "awayName": "S. Tsitsipas"
+    },
+    {
+      "id": "32fd756d34f7d41943763c9994e5fee9",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785775800000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "G. Diallo – K. Jacquet",
+      "pickKey": "home",
+      "pickLabel": "Gana G. Diallo",
+      "odd": 1.88,
+      "book": "betfair_ex_eu",
+      "homeName": "G. Diallo",
+      "awayName": "K. Jacquet"
+    },
+    {
+      "id": "3eb86965aabbd68bed2e3912bd59f077",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785769200000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "D. Parry – K. Day",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Parry",
+      "odd": 2.26,
+      "book": "betfair_ex_eu",
+      "homeName": "D. Parry",
+      "awayName": "K. Day"
+    },
+    {
+      "id": "f83b748a46e5e0b6a8a6598d4e0e2736",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785780000000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "H. Hurkacz – M. Giron",
+      "pickKey": "home",
+      "pickLabel": "Gana H. Hurkacz",
+      "odd": 1.57,
+      "book": "pinnacle",
+      "homeName": "H. Hurkacz",
+      "awayName": "M. Giron"
+    },
+    {
+      "id": "opid1200828573325030",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1785784200000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "G. Mpetshi Perricard – V. de Zandschulp Botic",
+      "pickKey": "home",
+      "pickLabel": "Gana G. Mpetshi Perricard",
+      "odd": 2.14,
+      "book": "betfair-ex",
+      "homeName": "G. Mpetshi Perricard",
+      "awayName": "V. de Zandschulp Botic"
+    },
+    {
+      "id": "bdb72940dfe5eeb2d504afe6034dcac3",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785790800000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "R. Zarazua – T. Korpatsch",
+      "pickKey": "away",
+      "pickLabel": "Gana T. Korpatsch",
+      "odd": 2.44,
+      "book": "betfair_ex_eu",
+      "homeName": "R. Zarazua",
+      "awayName": "T. Korpatsch"
+    },
+    {
+      "id": "99f056f73df7df8250dc68a78321b005",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785773400000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "S. Shimabukuro – M. Cilic",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Cilic",
+      "odd": 1.82,
+      "book": "betfair_ex_eu",
+      "homeName": "S. Shimabukuro",
+      "awayName": "M. Cilic"
+    },
+    {
+      "id": "2c159774efb7ea879ad6200c876f9057",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785774600000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "R. Sramkova – A. Blinkova",
+      "pickKey": "home",
+      "pickLabel": "Gana R. Sramkova",
+      "odd": 2.34,
+      "book": "betfair_ex_eu",
+      "homeName": "R. Sramkova",
+      "awayName": "A. Blinkova"
+    },
+    {
+      "id": "7a609fe9cdfc82ed6d9c93e42f5cd6b5",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785794400000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "D. Merida Aguilar – L. Draxl",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Draxl",
+      "odd": 2.36,
+      "book": "betfair_ex_eu",
+      "homeName": "D. Merida Aguilar",
+      "awayName": "L. Draxl"
+    },
+    {
+      "id": "1b2aecb733f29e16b5982e7da22bb3ef",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785855600000,
+      "date": "04 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "J. Munar – A. Blockx",
+      "pickKey": "home",
+      "pickLabel": "Gana J. Munar",
+      "odd": 2.3,
+      "book": "sport888",
+      "homeName": "J. Munar",
+      "awayName": "A. Blockx"
+    },
+    {
+      "id": "a95fb41b4f8ab394a74395509bc5bdaa",
+      "sport": "tennis_wta_canadian_open",
+      "ts": 1785802200000,
+      "date": "04 AGO",
+      "sofa": null,
+      "pickHome": true,
+      "match": "X. Wang – D. Kasatkina",
+      "pickKey": "home",
+      "pickLabel": "Gana X. Wang",
+      "odd": 2,
+      "book": "winamax_de",
+      "homeName": "X. Wang",
+      "awayName": "D. Kasatkina"
+    },
+    {
+      "id": "3aa5a82fb7841b1e71bae0f012c8fc74",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785855600000,
+      "date": "04 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "J. Shang – A. Rublev",
+      "pickKey": "away",
+      "pickLabel": "Gana A. Rublev",
+      "odd": 1.22,
+      "book": "sport888",
+      "homeName": "J. Shang",
+      "awayName": "A. Rublev"
+    },
+    {
+      "id": "4507bf7e74c2470db574de51cd05fa0f",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785773400000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "B. Bonzi – Y. Hanfmann",
+      "pickKey": "away",
+      "pickLabel": "Gana Y. Hanfmann",
+      "odd": 1.84,
+      "book": "betfair_ex_eu",
+      "homeName": "B. Bonzi",
+      "awayName": "Y. Hanfmann"
+    },
+    {
+      "id": "cd66fe742d007761806ac2730aa19b65",
+      "sport": "tennis_atp_canadian_open",
+      "ts": 1785784200000,
+      "date": "03 AGO",
+      "sofa": null,
+      "pickHome": false,
+      "match": "G. Mpetshi Perricard – B. van de Zandschulp",
+      "pickKey": "away",
+      "pickLabel": "Gana B. van de Zandschulp",
+      "odd": 1.85,
+      "book": "betfair_ex_eu",
+      "homeName": "G. Mpetshi Perricard",
+      "awayName": "B. van de Zandschulp"
     }
   ],
   "COMBO_RECORD": [
@@ -7693,6 +8455,86 @@
           "odd": 1.81,
           "homeName": "K. Liutova",
           "awayName": "D. Vidmanova"
+        }
+      ]
+    },
+    {
+      "dayId": "03 AGO·c1",
+      "date": "03 AGO",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "3aa5a82fb7841b1e71bae0f012c8fc74",
+          "sport": "tennis_atp_canadian_open",
+          "side": "away",
+          "sofa": null,
+          "match": "J. Shang – A. Rublev",
+          "pick": "Gana A. Rublev",
+          "odd": 1.21,
+          "homeName": "J. Shang",
+          "awayName": "A. Rublev"
+        },
+        {
+          "id": "0c212d85147c2b742bbfb0cdaaceaad6",
+          "sport": "tennis_atp_canadian_open",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Popyrin – R. Andres Burruchaga",
+          "pick": "Gana A. Popyrin",
+          "odd": 1.66,
+          "homeName": "A. Popyrin",
+          "awayName": "R. Andres Burruchaga"
+        },
+        {
+          "id": "f83b748a46e5e0b6a8a6598d4e0e2736",
+          "sport": "tennis_atp_canadian_open",
+          "side": "home",
+          "sofa": null,
+          "match": "H. Hurkacz – M. Giron",
+          "pick": "Gana H. Hurkacz",
+          "odd": 1.54,
+          "homeName": "H. Hurkacz",
+          "awayName": "M. Giron"
+        }
+      ]
+    },
+    {
+      "dayId": "03 AGO·c2",
+      "date": "03 AGO",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "8ddf352d7eddaaf779eb74c8d7a30808",
+          "sport": "tennis_wta_canadian_open",
+          "side": "home",
+          "sofa": null,
+          "match": "E. Gabriela Ruse – P. Stearns",
+          "pick": "Gana E. Gabriela Ruse",
+          "odd": 2.2,
+          "homeName": "E. Gabriela Ruse",
+          "awayName": "P. Stearns"
+        },
+        {
+          "id": "74dd3f46547ada7019ee9f424ddc8df0",
+          "sport": "tennis_atp_canadian_open",
+          "side": "away",
+          "sofa": null,
+          "match": "A. Galarneau – V. Kopriva",
+          "pick": "Gana V. Kopriva",
+          "odd": 2.1,
+          "homeName": "A. Galarneau",
+          "awayName": "V. Kopriva"
+        },
+        {
+          "id": "2ab8fa6200502986deaf8d8e3b2af049",
+          "sport": "tennis_wta_canadian_open",
+          "side": "home",
+          "sofa": null,
+          "match": "T. Maria – C. McNally",
+          "pick": "Gana T. Maria",
+          "odd": 2.4,
+          "homeName": "T. Maria",
+          "awayName": "C. McNally"
         }
       ]
     }
@@ -13637,6 +14479,204 @@
       "sofa": null,
       "homeName": "X. Wang",
       "awayName": "D. Kasatkina"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785769200000,
+      "match": "A. Korneeva – P. Kudermetova",
+      "predHome": true,
+      "prob": 51,
+      "predName": "A. Korneeva",
+      "sofa": null,
+      "homeName": "A. Korneeva",
+      "awayName": "P. Kudermetova"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785769200000,
+      "match": "D. Parry – K. Day",
+      "predHome": true,
+      "prob": 53,
+      "predName": "D. Parry",
+      "sofa": null,
+      "homeName": "D. Parry",
+      "awayName": "K. Day"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785777600000,
+      "match": "J. Fearnley – A. Mannarino",
+      "predHome": false,
+      "prob": 60,
+      "predName": "A. Mannarino",
+      "sofa": null,
+      "homeName": "J. Fearnley",
+      "awayName": "A. Mannarino"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785780000000,
+      "match": "H. Hurkacz – M. Giron",
+      "predHome": true,
+      "prob": 76,
+      "predName": "H. Hurkacz",
+      "sofa": null,
+      "homeName": "H. Hurkacz",
+      "awayName": "M. Giron"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785781800000,
+      "match": "A. Walton – J. Brooksby",
+      "predHome": false,
+      "prob": 54,
+      "predName": "J. Brooksby",
+      "sofa": null,
+      "homeName": "A. Walton",
+      "awayName": "J. Brooksby"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785782100000,
+      "match": "Y. Starodubtseva – M. Joint",
+      "predHome": false,
+      "prob": 53,
+      "predName": "M. Joint",
+      "sofa": null,
+      "homeName": "Y. Starodubtseva",
+      "awayName": "M. Joint"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785783000000,
+      "match": "V. Jimenez Kasintseva – A. Parks",
+      "predHome": false,
+      "prob": 58,
+      "predName": "A. Parks",
+      "sofa": null,
+      "homeName": "V. Jimenez Kasintseva",
+      "awayName": "A. Parks"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785784200000,
+      "match": "G. Mpetshi Perricard – V. de Zandschulp Botic",
+      "predHome": true,
+      "prob": 55,
+      "predName": "G. Mpetshi Perricard",
+      "sofa": null,
+      "homeName": "G. Mpetshi Perricard",
+      "awayName": "V. de Zandschulp Botic"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785786000000,
+      "match": "S. Mochizuki – F. Marozsan",
+      "predHome": false,
+      "prob": 64,
+      "predName": "F. Marozsan",
+      "sofa": null,
+      "homeName": "S. Mochizuki",
+      "awayName": "F. Marozsan"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785786300000,
+      "match": "T. Maria – C. McNally",
+      "predHome": true,
+      "prob": 55,
+      "predName": "T. Maria",
+      "sofa": null,
+      "homeName": "T. Maria",
+      "awayName": "C. McNally"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785790800000,
+      "match": "R. Zarazua – T. Korpatsch",
+      "predHome": true,
+      "prob": 54,
+      "predName": "R. Zarazua",
+      "sofa": null,
+      "homeName": "R. Zarazua",
+      "awayName": "T. Korpatsch"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785794400000,
+      "match": "D. Merida – L. Draxl",
+      "predHome": true,
+      "prob": 56,
+      "predName": "D. Merida",
+      "sofa": null,
+      "homeName": "D. Merida",
+      "awayName": "L. Draxl"
+    },
+    {
+      "date": "03 AGO",
+      "ts": 1785795000000,
+      "match": "S. Sierra – S. Stephens",
+      "predHome": true,
+      "prob": 74,
+      "predName": "S. Sierra",
+      "sofa": null,
+      "homeName": "S. Sierra",
+      "awayName": "S. Stephens"
+    },
+    {
+      "date": "04 AGO",
+      "ts": 1785806400000,
+      "match": "M. Damm Jr – S. Tsitsipas",
+      "predHome": false,
+      "prob": 57,
+      "predName": "S. Tsitsipas",
+      "sofa": null,
+      "homeName": "M. Damm Jr",
+      "awayName": "S. Tsitsipas"
+    },
+    {
+      "date": "04 AGO",
+      "ts": 1785855600000,
+      "match": "J. Munar – A. Blockx",
+      "predHome": false,
+      "prob": 52,
+      "predName": "A. Blockx",
+      "sofa": null,
+      "homeName": "J. Munar",
+      "awayName": "A. Blockx"
+    },
+    {
+      "date": "04 AGO",
+      "ts": 1785855600000,
+      "match": "A. Popyrin – R. Andres Burruchaga",
+      "predHome": true,
+      "prob": 85,
+      "predName": "A. Popyrin",
+      "sofa": null,
+      "homeName": "A. Popyrin",
+      "awayName": "R. Andres Burruchaga"
+    },
+    {
+      "date": "04 AGO",
+      "ts": 1785855600000,
+      "match": "J. Shang – A. Rublev",
+      "predHome": false,
+      "prob": 87,
+      "predName": "A. Rublev",
+      "sofa": null,
+      "homeName": "J. Shang",
+      "awayName": "A. Rublev"
+    },
+    {
+      "date": "04 AGO",
+      "ts": 1785855600000,
+      "match": "D. Chan – T. Agustin Tirante",
+      "predHome": false,
+      "prob": 67,
+      "predName": "T. Agustin Tirante",
+      "sofa": null,
+      "homeName": "D. Chan",
+      "awayName": "T. Agustin Tirante"
     }
   ],
   "LADDER": {
@@ -16882,7 +17922,7 @@
       "name": "Victoria Jimenez Kasintseva",
       "tour": "wta",
       "rank": 114,
-      "elo": 1727,
+      "elo": 1709,
       "country": "Andorra",
       "photo": "https://api.api-tennis.com/logo-tennis/1137_v-jimenezkasintseva.jpg",
       "form": [
@@ -53699,7 +54739,9 @@
     "catanzarite": 1469,
     "ahmedabdelazizmaiar": 1792,
     "carle": 1904,
-    "camilaosorioserrano": 1796
+    "camilaosorioserrano": 1796,
+    "jimenezkasintseva": 1709,
+    "merida": 1734
   },
   "ELO_DONE": {},
   "RANK_ELO": {
