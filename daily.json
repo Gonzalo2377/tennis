@@ -1,20 +1,20 @@
 {
   "meta": {
-    "updatedAt": "2026-09-12T22:00:34.394Z",
+    "updatedAt": "2026-09-13T07:00:49.901Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 2,
-    "valuePicks": 2,
+    "matches": 1,
+    "valuePicks": 1,
     "books": 12,
     "stale": false,
     "model": {
       "players": 3555
     },
     "credits": {
-      "remaining": 476,
-      "used": 24
+      "remaining": 475,
+      "used": 25
     }
   },
   "PLAYERS": {
@@ -51,39 +51,6 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2973_b-shelton.jpg"
-    },
-    "arynasabalenka": {
-      "id": "arynasabalenka",
-      "name": "A. Sabalenka",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1989_a-sabalenka.jpg"
-    },
-    "elenarybakina": {
-      "id": "elenarybakina",
-      "name": "E. Rybakina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2172_e-rybakina.jpg"
     }
   },
   "BOOKS": {
@@ -162,57 +129,6 @@
   },
   "MATCHES": [
     {
-      "id": "ae27d60e039955331961cbb317314ab9",
-      "tour": "wta",
-      "event": "Wta Us Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "22:00",
-      "day": "12 SEPT",
-      "home": "arynasabalenka",
-      "away": "elenarybakina",
-      "odds": {
-        "home": {
-          "mybookieag": 1.7,
-          "betsson": 1.68,
-          "1xbet": 1.76,
-          "unibet": 1.71,
-          "betclic": 1.7,
-          "winamax": 1.7,
-          "pinnacle": 1.7,
-          "betfair": 1.72,
-          "888sport": 1.67,
-          "williamhill": 1.67,
-          "leovegas": 1.71,
-          "matchbook": 1.72
-        },
-        "away": {
-          "mybookieag": 2.17,
-          "betsson": 2.14,
-          "1xbet": 2.24,
-          "unibet": 2.2,
-          "betclic": 2.2,
-          "winamax": 2.25,
-          "pinnacle": 2.28,
-          "betfair": 2.36,
-          "888sport": 2.2,
-          "williamhill": 2.2,
-          "leovegas": 2.18,
-          "matchbook": 2.38
-        }
-      },
-      "model": {
-        "home": 0.6813218351663937,
-        "away": 0.31867816483360634,
-        "fromModel": true,
-        "eloH": 2172,
-        "eloA": 2040,
-        "surface": "hard"
-      },
-      "ts": 1789243200000,
-      "sofa": null
-    },
-    {
       "id": "f3cdf500b7ae26bf7f70f24ac0f74d50",
       "tour": "atp",
       "event": "Atp Us Open",
@@ -224,32 +140,32 @@
       "away": "benshelton",
       "odds": {
         "home": {
-          "1xbet": 1.7,
+          "1xbet": 1.74,
           "pinnacle": 1.68,
           "unibet": 1.68,
-          "betclic": 1.67,
+          "betclic": 1.68,
           "betsson": 1.65,
-          "mybookieag": 1.65,
-          "leovegas": 1.67,
-          "betfair": 1.73,
-          "matchbook": 1.73,
-          "winamax": 1.68,
-          "888sport": 1.67,
-          "williamhill": 1.67
+          "mybookieag": 1.67,
+          "leovegas": 1.68,
+          "betfair": 1.72,
+          "matchbook": 1.72,
+          "winamax": 1.66,
+          "888sport": 1.61,
+          "williamhill": 1.62
         },
         "away": {
-          "1xbet": 2.33,
-          "pinnacle": 2.29,
+          "1xbet": 2.28,
+          "pinnacle": 2.34,
           "unibet": 2.25,
-          "betclic": 2.22,
+          "betclic": 2.25,
           "betsson": 2.19,
-          "mybookieag": 2.2,
-          "leovegas": 2.25,
-          "betfair": 2.34,
-          "matchbook": 2.34,
-          "winamax": 2.25,
-          "888sport": 2.2,
-          "williamhill": 2.2
+          "mybookieag": 2.22,
+          "leovegas": 2.23,
+          "betfair": 2.36,
+          "matchbook": 2.36,
+          "winamax": 2.3,
+          "888sport": 2.3,
+          "williamhill": 2.3
         }
       },
       "model": {
@@ -264,38 +180,7 @@
       "sofa": null
     }
   ],
-  "COMBOS": [
-    {
-      "id": "c1",
-      "name": "Combinada del Día",
-      "conf": 51,
-      "book": "onexbet",
-      "legs": [
-        {
-          "id": "f3cdf500b7ae26bf7f70f24ac0f74d50",
-          "sport": "tennis_atp_us_open",
-          "ts": 1789322400000,
-          "side": "home",
-          "sofa": null,
-          "match": "A. Zverev – B. Shelton",
-          "pick": "Gana A. Zverev",
-          "odd": 1.7,
-          "book": "onexbet"
-        },
-        {
-          "id": "ae27d60e039955331961cbb317314ab9",
-          "sport": "tennis_wta_us_open",
-          "ts": 1789243200000,
-          "side": "home",
-          "sofa": null,
-          "match": "A. Sabalenka – E. Rybakina",
-          "pick": "Gana A. Sabalenka",
-          "odd": 1.76,
-          "book": "onexbet"
-        }
-      ]
-    }
-  ],
+  "COMBOS": [],
   "RECORD": [
     {
       "id": "opid1200290772940750",
@@ -841,36 +726,6 @@
     }
   ],
   "PENDING": [
-    {
-      "id": "bd6afffed6b65fe0d05a95ad67d70c32",
-      "sport": "tennis_wta_cincinnati_open",
-      "ts": 1787400000000,
-      "date": "22 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Pegula – I. Swiatek",
-      "pickKey": "away",
-      "pickLabel": "Gana I. Swiatek",
-      "odd": 1.44,
-      "book": "onexbet",
-      "homeName": "J. Pegula",
-      "awayName": "I. Swiatek"
-    },
-    {
-      "id": "1b5336a02768d1e5cde4920216c2f197",
-      "sport": "tennis_atp_cincinnati_open",
-      "ts": 1787436000000,
-      "date": "22 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "B. Nakashima – F. Tiafoe",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Tiafoe",
-      "odd": 2.05,
-      "book": "onexbet",
-      "homeName": "B. Nakashima",
-      "awayName": "F. Tiafoe"
-    },
     {
       "id": "f8849a5211d26e2bbba706ba857c8a50",
       "sport": "tennis_wta_cincinnati_open",
@@ -8021,6 +7876,28 @@
   ],
   "ARB_RECORD": [
     {
+      "date": "13 SEPT",
+      "match": "A. Zverev – B. Shelton",
+      "marginPct": 0.16,
+      "profit": 0.16,
+      "ts": 1789322400000,
+      "homeName": "A. Zverev",
+      "awayName": "B. Shelton",
+      "sport": "tennis_atp_us_open",
+      "legs": [
+        {
+          "pick": "Gana A. Zverev",
+          "odd": 1.74,
+          "book": "onexbet"
+        },
+        {
+          "pick": "Gana B. Shelton",
+          "odd": 2.36,
+          "book": "betfair_ex_eu"
+        }
+      ]
+    },
+    {
       "date": "12 SEPT",
       "match": "A. Sabalenka – E. Rybakina",
       "marginPct": 1.17,
@@ -8874,28 +8751,6 @@
         {
           "pick": "Gana R. Hijikata",
           "odd": 9.65,
-          "book": "onexbet"
-        }
-      ]
-    },
-    {
-      "date": "30 AGO",
-      "match": "J. Mensik – S. Mochizuki",
-      "marginPct": 0.92,
-      "profit": 0.93,
-      "ts": 1788202800000,
-      "homeName": "J. Mensik",
-      "awayName": "S. Mochizuki",
-      "sport": "tennis_atp_us_open",
-      "legs": [
-        {
-          "pick": "Gana J. Mensik",
-          "odd": 1.13,
-          "book": "matchbook"
-        },
-        {
-          "pick": "Gana S. Mochizuki",
-          "odd": 9.45,
           "book": "onexbet"
         }
       ]
