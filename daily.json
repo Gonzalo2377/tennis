@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-09-19T22:00:58.232Z",
+    "updatedAt": "2026-09-20T07:01:12.131Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 4,
+    "matches": 3,
     "valuePicks": 1,
-    "books": 28,
+    "books": 24,
     "stale": false,
     "model": {
       "players": 3557
@@ -18,9 +18,9 @@
     }
   },
   "PLAYERS": {
-    "peytonstearns": {
-      "id": "peytonstearns",
-      "name": "P. Stearns",
+    "kaitlinquevedo": {
+      "id": "kaitlinquevedo",
+      "name": "K. Quevedo",
       "country": "",
       "flag": "",
       "seed": "",
@@ -28,44 +28,16 @@
       "elo": null,
       "form": [
         "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9646_p-stearns.jpg"
-    },
-    "ivajovic": {
-      "id": "ivajovic",
-      "name": "I. Jović",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
         "W",
         "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/56794_n-jovic.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/13647_k-quevedo.jpg"
     },
-    "mariedesvignesev": {
-      "id": "mariedesvignesev",
-      "name": "M. Desvignes Eva",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/58571_m-eva.jpg"
-    },
-    "kyokaokamura": {
-      "id": "kyokaokamura",
-      "name": "K. Okamura",
+    "nadiapodoroska": {
+      "id": "nadiapodoroska",
+      "name": "N. Podoroska",
       "country": "",
       "flag": "",
       "seed": "",
@@ -74,13 +46,32 @@
       "form": [
         "L",
         "L",
+        "L",
+        "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1396_k-okamura.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2805_n-podoroska.jpg"
     },
-    "meiyamaguchi": {
-      "id": "meiyamaguchi",
-      "name": "M. Yamaguchi",
+    "katievolynets": {
+      "id": "katievolynets",
+      "name": "K. Volynets",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2826_k-volynets.jpg"
+    },
+    "elvinakalieva": {
+      "id": "elvinakalieva",
+      "name": "E. Kalieva",
       "country": "",
       "flag": "",
       "seed": "",
@@ -89,24 +80,13 @@
       "form": [
         "W",
         "L",
-        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/98_m-yamaguchi.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/198_e-kalieva.jpg"
     },
-    "ulrikkeeikeri": {
-      "id": "ulrikkeeikeri",
-      "name": "U. Eikeri",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": []
-    },
-    "liudmilasamsonov": {
-      "id": "liudmilasamsonov",
-      "name": "L. Samsonova",
+    "kamillarakhimova": {
+      "id": "kamillarakhimova",
+      "name": "K. Rakhimova",
       "country": "",
       "flag": "",
       "seed": "",
@@ -116,406 +96,420 @@
         "W",
         "L",
         "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1140_k-rakhimova.jpg"
+    },
+    "polinakudermetov": {
+      "id": "polinakudermetov",
+      "name": "P. Kudermetova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/68376_l-samsonova.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2810_v-kudermetova.jpg"
     }
   },
   "BOOKS": {
-    "betfair": {
-      "id": "betfair",
-      "name": "Betfair",
-      "abbr": "BET",
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xbet",
+      "abbr": "1XB",
       "color": "#e23b2e"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (FR)",
-      "abbr": "UNI",
-      "color": "#0a2d6e"
-    },
-    "betclic": {
-      "id": "betclic",
-      "name": "Betclic (FR)",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
-      "color": "#ffb000"
     },
     "888sport": {
       "id": "888sport",
       "name": "888sport",
       "abbr": "888",
-      "color": "#d11a2a"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (DE)",
-      "abbr": "WIN",
-      "color": "#0a6cff"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#7a4ddb"
-    },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "Pinnacle",
-      "abbr": "PIN",
-      "color": "#d9730d"
-    },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
-      "color": "#e23b2e"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas (SE)",
-      "abbr": "LEO",
       "color": "#0a7d3c"
     },
     "888sportca": {
       "id": "888sportca",
       "name": "888sport.ca",
       "abbr": "888",
-      "color": "#0a6cff"
+      "color": "#0a2d6e"
     },
     "888sportro": {
       "id": "888sportro",
       "name": "888sport.ro",
       "abbr": "888",
-      "color": "#d9730d"
+      "color": "#d11a2a"
     },
     "bet365": {
       "id": "bet365",
       "name": "bet365",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#0a6cff"
     },
     "bet365nj": {
       "id": "bet365nj",
       "name": "bet365-nj",
       "abbr": "BET",
-      "color": "#0a7d3c"
+      "color": "#1c1c1c"
     },
     "betano": {
       "id": "betano",
       "name": "betano",
       "abbr": "BET",
-      "color": "#14805e"
+      "color": "#d9730d"
     },
     "betanobg": {
       "id": "betanobg",
       "name": "betano.bg",
       "abbr": "BET",
-      "color": "#ffb000"
+      "color": "#e23b2e"
     },
     "betanoca": {
       "id": "betanoca",
       "name": "betano.ca",
       "abbr": "BET",
-      "color": "#d11a2a"
-    },
-    "betanomx": {
-      "id": "betanomx",
-      "name": "betano.mx",
-      "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "betanope": {
-      "id": "betanope",
-      "name": "betano.pe",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
-    "betanopt": {
-      "id": "betanopt",
-      "name": "betano.pt",
-      "abbr": "BET",
-      "color": "#e23b2e"
-    },
-    "betanoro": {
-      "id": "betanoro",
-      "name": "betano.ro",
-      "abbr": "BET",
       "color": "#0a7d3c"
-    },
-    "betfred": {
-      "id": "betfred",
-      "name": "betfred",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "betway": {
-      "id": "betway",
-      "name": "betway",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
-    "bwin": {
-      "id": "bwin",
-      "name": "bwin",
-      "abbr": "BWI",
-      "color": "#0a6cff"
-    },
-    "codere": {
-      "id": "codere",
-      "name": "codere.es",
-      "abbr": "COD",
-      "color": "#d9730d"
     },
     "betanocz": {
       "id": "betanocz",
       "name": "betano.cz",
       "abbr": "BET",
-      "color": "#14805e"
+      "color": "#0a2d6e"
+    },
+    "betanomx": {
+      "id": "betanomx",
+      "name": "betano.mx",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "betanope": {
+      "id": "betanope",
+      "name": "betano.pe",
+      "abbr": "BET",
+      "color": "#0a6cff"
+    },
+    "betanopt": {
+      "id": "betanopt",
+      "name": "betano.pt",
+      "abbr": "BET",
+      "color": "#1c1c1c"
+    },
+    "betanoro": {
+      "id": "betanoro",
+      "name": "betano.ro",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "betfair": {
+      "id": "betfair",
+      "name": "betfair-ex",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betfred": {
+      "id": "betfred",
+      "name": "betfred",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "betway": {
+      "id": "betway",
+      "name": "betway",
+      "abbr": "BET",
+      "color": "#0a7d3c"
+    },
+    "bwin": {
+      "id": "bwin",
+      "name": "bwin.de",
+      "abbr": "BWI",
+      "color": "#ffb000"
+    },
+    "codere": {
+      "id": "codere",
+      "name": "codere.es",
+      "abbr": "COD",
+      "color": "#1c1c1c"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "leovegas",
+      "abbr": "LEO",
+      "color": "#7a4ddb"
     },
     "oddset": {
       "id": "oddset",
       "name": "oddset",
       "abbr": "ODD",
+      "color": "#0a7d3c"
+    },
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "pinnacle",
+      "abbr": "PIN",
       "color": "#0a2d6e"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "unibet",
+      "abbr": "UNI",
+      "color": "#14805e"
+    },
+    "winamax": {
+      "id": "winamax",
+      "name": "winamax.de",
+      "abbr": "WIN",
+      "color": "#e23b2e"
     }
   },
   "MATCHES": [
     {
-      "id": "2db727e751af296d00f68e578aa58e02",
+      "id": "opid1204695374573914",
       "tour": "wta",
-      "event": "Wta Guadalajara Open",
+      "event": "WTA Sao Paulo, Brazil Women, Singles",
       "round": "",
       "surface": "Dura",
-      "time": "02:30",
-      "day": "19 SEPT",
-      "home": "liudmilasamsonov",
-      "away": "peytonstearns",
+      "time": "20:30",
+      "day": "20 SEPT",
+      "home": "kaitlinquevedo",
+      "away": "nadiapodoroska",
       "odds": {
         "home": {
-          "betfair": 1.67,
-          "unibet": 1.67,
-          "betclic": 1.61,
-          "betsson": 1.66,
-          "williamhill": 1.62,
-          "888sport": 1.61,
-          "winamax": 1.66,
-          "1xbet": 1.67,
-          "leovegas": 1.67,
-          "matchbook": 1.67,
-          "pinnacle": 1.66
+          "1xbet": 1.62,
+          "888sport": 1.667,
+          "888sportca": 1.667,
+          "888sportro": 1.667,
+          "bet365": 1.58,
+          "bet365nj": 1.58,
+          "betano": 1.62,
+          "betanobg": 1.62,
+          "betanoca": 1.62,
+          "betanocz": 1.62,
+          "betanomx": 1.62,
+          "betanope": 1.62,
+          "betanopt": 1.62,
+          "betanoro": 1.62,
+          "betfair": 1.73,
+          "betfred": 1.615,
+          "betway": 1.65,
+          "bwin": 1.65,
+          "codere": 1.6,
+          "leovegas": 1.61,
+          "oddset": 1.65,
+          "pinnacle": 1.699,
+          "unibet": 1.62,
+          "winamax": 1.66
         },
         "away": {
-          "betfair": 2.16,
-          "unibet": 2.2,
-          "betclic": 2.25,
-          "betsson": 2.19,
-          "williamhill": 2.3,
-          "888sport": 2.3,
-          "winamax": 2.2,
-          "1xbet": 2.25,
-          "leovegas": 2.2,
-          "matchbook": 2.16,
-          "pinnacle": 2.34
+          "1xbet": 2.295,
+          "888sport": 2.2,
+          "888sportca": 2.2,
+          "888sportro": 2.2,
+          "bet365": 2.3,
+          "bet365nj": 2.3,
+          "betano": 2.27,
+          "betanobg": 2.27,
+          "betanoca": 2.27,
+          "betanocz": 2.3,
+          "betanomx": 2.27,
+          "betanope": 2.27,
+          "betanopt": 2.27,
+          "betanoro": 2.27,
+          "betfair": 2.34,
+          "betfred": 2.25,
+          "betway": 2.25,
+          "bwin": 2.25,
+          "codere": 2.2,
+          "leovegas": 2.3,
+          "oddset": 2.25,
+          "pinnacle": 2.27,
+          "unibet": 2.3,
+          "winamax": 2.3
         }
       },
       "model": {
-        "home": 0.7033850034718286,
-        "away": 0.29661499652817136,
+        "home": 0.7869632793894692,
+        "away": 0.2130367206105308,
         "fromModel": true,
-        "eloH": 1908,
-        "eloA": 1758,
+        "eloH": 1724,
+        "eloA": 1497,
         "surface": "hard"
       },
-      "ts": 1789777800000,
-      "sofa": null,
-      "live": true
+      "ts": 1789929000000,
+      "sofa": 17066532
     },
     {
-      "id": "opid1204431774821494",
+      "id": "opid1200304374839202",
       "tour": "wta",
-      "event": "WTA Singapore, Singapore Women Singles",
+      "event": "WTA Seoul, Korea Republic Women Singles",
       "round": "",
       "surface": "Dura",
-      "time": "09:10",
-      "day": "19 SEPT",
-      "home": "mariedesvignesev",
-      "away": "kyokaokamura",
+      "time": "04:00",
+      "day": "21 SEPT",
+      "home": "katievolynets",
+      "away": "elvinakalieva",
       "odds": {
         "home": {
-          "1xbet": 3.25,
-          "888sport": 3.4,
-          "888sportca": 3.4,
-          "888sportro": 3.4,
-          "bet365": 3.5,
-          "bet365nj": 3.5,
-          "betano": 3.3,
-          "betanobg": 3.3,
-          "betanoca": 3.3,
-          "betanomx": 3.3,
-          "betanope": 3.3,
-          "betanopt": 3.2,
-          "betanoro": 3.3,
-          "betfair": 3.6,
-          "betfred": 3.5,
-          "betway": 3.5,
-          "bwin": 3.4,
-          "codere": 3.2,
-          "leovegas": 3.6,
-          "unibet": 3.6,
-          "winamax": 3.5
+          "888sport": 1.222,
+          "888sportca": 1.222,
+          "888sportro": 1.222,
+          "bet365": 1.19,
+          "bet365nj": 1.19,
+          "betano": 1.22,
+          "betanobg": 1.22,
+          "betanoca": 1.22,
+          "betanomx": 1.22,
+          "betanope": 1.22,
+          "betanoro": 1.22,
+          "betfair": 1.29,
+          "betfred": 1.222,
+          "betway": 1.222,
+          "bwin": 1.25,
+          "codere": 1.22,
+          "leovegas": 1.24,
+          "oddset": 1.25,
+          "unibet": 1.24,
+          "winamax": 1.23
         },
         "away": {
-          "1xbet": 1.295,
-          "888sport": 1.3,
-          "888sportca": 1.3,
-          "888sportro": 1.3,
-          "bet365": 1.25,
-          "bet365nj": 1.25,
-          "betano": 1.3,
-          "betanobg": 1.3,
-          "betanoca": 1.3,
-          "betanomx": 1.3,
-          "betanope": 1.3,
-          "betanopt": 1.29,
-          "betanoro": 1.3,
-          "betfair": 1.35,
-          "betfred": 1.286,
-          "betway": 1.3,
-          "bwin": 1.28,
-          "codere": 1.3,
-          "leovegas": 1.3,
-          "unibet": 1.27,
-          "winamax": 1.3
-        }
-      },
-      "noModel": true,
-      "ts": 1789801800000,
-      "sofa": null
-    },
-    {
-      "id": "opid1204431774821496",
-      "tour": "wta",
-      "event": "WTA Singapore, Singapore Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "09:50",
-      "day": "19 SEPT",
-      "home": "meiyamaguchi",
-      "away": "ulrikkeeikeri",
-      "odds": {
-        "home": {
-          "1xbet": 1.127,
-          "888sport": 1.143,
-          "888sportca": 1.143,
-          "888sportro": 1.167,
-          "betano": 1.17,
-          "betanobg": 1.17,
-          "betanoca": 1.17,
-          "betanomx": 1.17,
-          "betanope": 1.17,
-          "betanopt": 1.16,
-          "betanoro": 1.17,
-          "betfair": 1.2,
-          "betfred": 1.182,
-          "betway": 1.154,
-          "bwin": 1.17,
-          "codere": 1.14,
-          "leovegas": 1.18,
-          "pinnacle": 1.197,
-          "unibet": 1.18,
-          "winamax": 1.17
-        },
-        "away": {
-          "1xbet": 5,
-          "888sport": 5,
-          "888sportca": 5,
-          "888sportro": 4.5,
-          "betano": 4.65,
-          "betanobg": 4.65,
-          "betanoca": 4.65,
-          "betanomx": 4.65,
-          "betanope": 4.65,
-          "betanopt": 4.35,
-          "betanoro": 4.65,
-          "betfair": 5.4,
-          "betfred": 4.5,
-          "betway": 5.25,
-          "bwin": 4.6,
-          "codere": 4.4,
-          "leovegas": 5,
-          "pinnacle": 4.93,
-          "unibet": 4.5,
-          "winamax": 5
-        }
-      },
-      "noModel": true,
-      "ts": 1789804200000,
-      "sofa": null
-    },
-    {
-      "id": "141e2b900ff27f0a57351e5a9ccfd860",
-      "tour": "wta",
-      "event": "Wta Guadalajara Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "01:00",
-      "day": "19 SEPT",
-      "home": "peytonstearns",
-      "away": "ivajovic",
-      "odds": {
-        "home": {
-          "betfair": 3.85,
-          "betsson": 3.45,
-          "unibet": 3.65,
-          "betclic": 3.55,
-          "williamhill": 3.5,
-          "888sport": 3.5,
-          "winamax": 3.5,
-          "1xbet": 3.33,
-          "pinnacle": 3.74,
-          "matchbook": 3.85,
-          "leovegas": 3.65
-        },
-        "away": {
-          "betfair": 1.32,
-          "betsson": 1.3,
-          "unibet": 1.3,
-          "betclic": 1.3,
-          "williamhill": 1.3,
-          "888sport": 1.3,
-          "winamax": 1.3,
-          "1xbet": 1.35,
-          "pinnacle": 1.31,
-          "matchbook": 1.32,
-          "leovegas": 1.29
+          "888sport": 4.2,
+          "888sportca": 4.2,
+          "888sportro": 4.2,
+          "bet365": 4.33,
+          "bet365nj": 4.33,
+          "betano": 4.15,
+          "betanobg": 4.15,
+          "betanoca": 4.15,
+          "betanomx": 4.15,
+          "betanope": 4.15,
+          "betanoro": 4.15,
+          "betfair": 3.8,
+          "betfred": 4,
+          "betway": 4.25,
+          "bwin": 3.8,
+          "codere": 4,
+          "leovegas": 4.05,
+          "oddset": 3.8,
+          "unibet": 4,
+          "winamax": 4.1
         }
       },
       "model": {
-        "home": 0.2942186402879975,
-        "away": 0.7057813597120025,
+        "home": 0.5714631174083814,
+        "away": 0.4285368825916186,
         "fromModel": true,
-        "eloH": 1758,
-        "eloA": 1910,
+        "eloH": 1753,
+        "eloA": 1703,
         "surface": "hard"
       },
-      "ts": 1789858800000,
-      "sofa": null
+      "ts": 1789956000000,
+      "sofa": 17135476
+    },
+    {
+      "id": "opid1200304374839204",
+      "tour": "wta",
+      "event": "WTA Seoul, Korea Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "04:00",
+      "day": "21 SEPT",
+      "home": "kamillarakhimova",
+      "away": "polinakudermetov",
+      "odds": {
+        "home": {
+          "1xbet": 1.5,
+          "888sport": 1.5,
+          "888sportca": 1.5,
+          "888sportro": 1.5,
+          "bet365": 1.47,
+          "bet365nj": 1.47,
+          "betano": 1.5,
+          "betanobg": 1.5,
+          "betanoca": 1.5,
+          "betanomx": 1.5,
+          "betanope": 1.5,
+          "betanoro": 1.5,
+          "betfair": 1.33,
+          "betfred": 1.5,
+          "betway": 1.5,
+          "bwin": 1.5,
+          "codere": 1.45,
+          "leovegas": 1.47,
+          "oddset": 1.5,
+          "unibet": 1.45,
+          "winamax": 1.49
+        },
+        "away": {
+          "1xbet": 2.59,
+          "888sport": 2.6,
+          "888sportca": 2.6,
+          "888sportro": 2.6,
+          "bet365": 2.62,
+          "bet365nj": 2.62,
+          "betano": 2.57,
+          "betanobg": 2.57,
+          "betanoca": 2.57,
+          "betanomx": 2.57,
+          "betanope": 2.57,
+          "betanoro": 2.57,
+          "betfair": 2.56,
+          "betfred": 2.625,
+          "betway": 2.6,
+          "bwin": 2.54,
+          "codere": 2.5,
+          "leovegas": 2.75,
+          "oddset": 2.54,
+          "unibet": 2.75,
+          "winamax": 2.6
+        }
+      },
+      "model": {
+        "home": 0.5143871841659987,
+        "away": 0.4856128158340013,
+        "fromModel": true,
+        "eloH": 1745,
+        "eloA": 1735,
+        "surface": "hard"
+      },
+      "ts": 1789956000000,
+      "sofa": 17135477
     }
   ],
-  "COMBOS": [],
+  "COMBOS": [
+    {
+      "id": "c1",
+      "name": "Combinada del Día",
+      "conf": 38,
+      "book": "betfair-ex",
+      "legs": [
+        {
+          "id": "opid1204695374573914",
+          "sport": "tennis_oddspapi_wta",
+          "ts": 1789929000000,
+          "side": "home",
+          "sofa": 17066532,
+          "match": "K. Quevedo – N. Podoroska",
+          "pick": "Gana K. Quevedo",
+          "odd": 1.73,
+          "book": "betfair-ex"
+        },
+        {
+          "id": "opid1200304374839204",
+          "sport": "tennis_oddspapi_wta",
+          "ts": 1789956000000,
+          "side": "away",
+          "sofa": 17135477,
+          "match": "K. Rakhimova – P. Kudermetova",
+          "pick": "Gana P. Kudermetova",
+          "odd": 2.56,
+          "book": "betfair-ex"
+        }
+      ]
+    }
+  ],
   "RECORD": [
     {
       "id": "opid1200290772940750",
@@ -1285,21 +1279,6 @@
       "book": "sport888",
       "homeName": "L. Stefanini",
       "awayName": "D. Yastremska"
-    },
-    {
-      "id": "6d1369d79228029e88759da64c248505",
-      "sport": "tennis_wta_monterrey_open",
-      "ts": 1788046200000,
-      "date": "29 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "D. Parry – E. Mertens",
-      "pickKey": "away",
-      "pickLabel": "Gana E. Mertens",
-      "odd": 1.47,
-      "book": "winamax_de",
-      "homeName": "D. Parry",
-      "awayName": "E. Mertens"
     },
     {
       "id": "9c5017eb8c412acb96b80eccf51d6821",
@@ -3055,6 +3034,21 @@
       "book": "betfair_ex_eu",
       "homeName": "L. Samsonova",
       "awayName": "P. Stearns"
+    },
+    {
+      "id": "opid1200304374839204",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1789956000000,
+      "date": "21 SEPT",
+      "sofa": 17135477,
+      "pickHome": false,
+      "match": "K. Rakhimova – P. Kudermetova",
+      "pickKey": "away",
+      "pickLabel": "Gana P. Kudermetova",
+      "odd": 2.75,
+      "book": "leovegas",
+      "homeName": "K. Rakhimova",
+      "awayName": "P. Kudermetova"
     }
   ],
   "COMBO_RECORD": [
@@ -8443,6 +8437,35 @@
           "odd": 1.67,
           "homeName": "L. Samsonova",
           "awayName": "P. Stearns"
+        }
+      ]
+    },
+    {
+      "dayId": "20 SEPT·c1",
+      "date": "20 SEPT",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "opid1204695374573914",
+          "sport": "tennis_oddspapi_wta",
+          "side": "home",
+          "sofa": 17066532,
+          "match": "K. Quevedo – N. Podoroska",
+          "pick": "Gana K. Quevedo",
+          "odd": 1.73,
+          "homeName": "K. Quevedo",
+          "awayName": "N. Podoroska"
+        },
+        {
+          "id": "opid1200304374839204",
+          "sport": "tennis_oddspapi_wta",
+          "side": "away",
+          "sofa": 17135477,
+          "match": "K. Rakhimova – P. Kudermetova",
+          "pick": "Gana P. Kudermetova",
+          "odd": 2.56,
+          "homeName": "K. Rakhimova",
+          "awayName": "P. Kudermetova"
         }
       ]
     }
@@ -22175,6 +22198,39 @@
       "sofa": null,
       "homeName": "P. Stearns",
       "awayName": "I. Jović"
+    },
+    {
+      "date": "20 SEPT",
+      "ts": 1789929000000,
+      "match": "K. Quevedo – N. Podoroska",
+      "predHome": true,
+      "prob": 79,
+      "predName": "K. Quevedo",
+      "sofa": 17066532,
+      "homeName": "K. Quevedo",
+      "awayName": "N. Podoroska"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789956000000,
+      "match": "K. Volynets – E. Kalieva",
+      "predHome": true,
+      "prob": 57,
+      "predName": "K. Volynets",
+      "sofa": 17135476,
+      "homeName": "K. Volynets",
+      "awayName": "E. Kalieva"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789956000000,
+      "match": "K. Rakhimova – P. Kudermetova",
+      "predHome": true,
+      "prob": 51,
+      "predName": "K. Rakhimova",
+      "sofa": 17135477,
+      "homeName": "K. Rakhimova",
+      "awayName": "P. Kudermetova"
     }
   ],
   "LADDER": {
