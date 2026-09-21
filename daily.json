@@ -1,23 +1,305 @@
 {
   "meta": {
-    "updatedAt": "2026-09-20T22:01:15.663Z",
+    "updatedAt": "2026-09-21T07:01:05.661Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 3,
-    "valuePicks": 1,
-    "books": 24,
+    "matches": 14,
+    "valuePicks": 6,
+    "books": 27,
     "stale": false,
     "model": {
       "players": 3557
     },
     "credits": {
-      "remaining": 469,
-      "used": 31
+      "remaining": 468,
+      "used": 32
     }
   },
   "PLAYERS": {
+    "rebeccasramkova": {
+      "id": "rebeccasramkova",
+      "name": "R. Sramkova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/449_r-sramkova.jpg"
+    },
+    "majachwalinska": {
+      "id": "majachwalinska",
+      "name": "M. Chwalinska",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1434_m-chwalinska.jpg"
+    },
+    "kyokaokamura": {
+      "id": "kyokaokamura",
+      "name": "K. Okamura",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1396_k-okamura.jpg"
+    },
+    "leylahfernandez": {
+      "id": "leylahfernandez",
+      "name": "L. Fernandez",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/15921_m-fernandez.jpg"
+    },
+    "stormhunter": {
+      "id": "stormhunter",
+      "name": "S. Hunter",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/101760_s-hunter.jpg"
+    },
+    "joannagarland": {
+      "id": "joannagarland",
+      "name": "J. Garland",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1962_j-garland.jpg"
+    },
+    "barborakrejcikov": {
+      "id": "barborakrejcikov",
+      "name": "B. Krejcikova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2801_b-krejcikova.jpg"
+    },
+    "annalenafriedsam": {
+      "id": "annalenafriedsam",
+      "name": "A. Friedsam",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/522_a-friedsam.jpg"
+    },
+    "donnavekic": {
+      "id": "donnavekic",
+      "name": "D. Vekic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/455_d-vekic.jpg"
+    },
+    "xinyuwang": {
+      "id": "xinyuwang",
+      "name": "X. Wang",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg"
+    },
+    "mariasakkari": {
+      "id": "mariasakkari",
+      "name": "M. Sakkari",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2076_m-sakkari.jpg"
+    },
+    "lindafruhvirtova": {
+      "id": "lindafruhvirtova",
+      "name": "L. Fruhvirtova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/446_l-fruhvirtova.jpg"
+    },
+    "vivianwolff": {
+      "id": "vivianwolff",
+      "name": "V. Wolff",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/13506_v-wolff.jpg"
+    },
+    "oleksandraoliyny": {
+      "id": "oleksandraoliyny",
+      "name": "O. Oliynykova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/12876_o-oliynykova.jpg"
+    },
+    "tatianaprozorova": {
+      "id": "tatianaprozorova",
+      "name": "T. Prozorova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9253_t-prozorova.jpg"
+    },
+    "sofiacostoulas": {
+      "id": "sofiacostoulas",
+      "name": "S. Costoulas",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9248_s-costoulas.jpg"
+    },
+    "daryaastakhova": {
+      "id": "daryaastakhova",
+      "name": "D. Astakhova",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1435_d-astakhova.jpg"
+    },
+    "magdalinette": {
+      "id": "magdalinette",
+      "name": "M. Linette",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1154_m-linette.jpg"
+    },
     "kaitlinquevedo": {
       "id": "kaitlinquevedo",
       "name": "K. Quevedo",
@@ -51,6 +333,71 @@
         "L"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2805_n-podoroska.jpg"
+    },
+    "emersonjones": {
+      "id": "emersonjones",
+      "name": "E. Jones",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1858_j-jones.jpg"
+    },
+    "yexinma": {
+      "id": "yexinma",
+      "name": "Y. Ma",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/126_y-ma.jpg"
+    },
+    "evalys": {
+      "id": "evalys",
+      "name": "E. Lys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2088_e-lys.jpg"
+    },
+    "elenagabrielarus": {
+      "id": "elenagabrielarus",
+      "name": "E. Ruse",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ]
     },
     "katievolynets": {
       "id": "katievolynets",
@@ -120,10 +467,10 @@
     }
   },
   "BOOKS": {
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xbet",
-      "abbr": "1XB",
+    "betfair": {
+      "id": "betfair",
+      "name": "Betfair",
+      "abbr": "BET",
       "color": "#e23b2e"
     },
     "888sport": {
@@ -132,215 +479,158 @@
       "abbr": "888",
       "color": "#0a7d3c"
     },
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (NL)",
+      "abbr": "UNI",
+      "color": "#0a2d6e"
+    },
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (FR)",
+      "abbr": "WIN",
+      "color": "#ffb000"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#0a6cff"
+    },
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
+      "color": "#1c1c1c"
+    },
+    "betclic": {
+      "id": "betclic",
+      "name": "Betclic (FR)",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#0a7d3c"
+    },
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
+      "color": "#0a2d6e"
+    },
     "888sportca": {
       "id": "888sportca",
       "name": "888sport.ca",
       "abbr": "888",
-      "color": "#0a2d6e"
+      "color": "#d11a2a"
     },
     "888sportro": {
       "id": "888sportro",
       "name": "888sport.ro",
       "abbr": "888",
-      "color": "#d11a2a"
+      "color": "#7a4ddb"
     },
     "bet365": {
       "id": "bet365",
       "name": "bet365",
       "abbr": "BET",
-      "color": "#0a6cff"
+      "color": "#d9730d"
     },
     "bet365nj": {
       "id": "bet365nj",
       "name": "bet365-nj",
       "abbr": "BET",
-      "color": "#1c1c1c"
+      "color": "#e23b2e"
     },
     "betano": {
       "id": "betano",
       "name": "betano",
       "abbr": "BET",
-      "color": "#d9730d"
+      "color": "#0a2d6e"
     },
     "betanobg": {
       "id": "betanobg",
       "name": "betano.bg",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#14805e"
     },
     "betanoca": {
       "id": "betanoca",
       "name": "betano.ca",
       "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "betanocz": {
-      "id": "betanocz",
-      "name": "betano.cz",
-      "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#ffb000"
     },
     "betanomx": {
       "id": "betanomx",
       "name": "betano.mx",
       "abbr": "BET",
-      "color": "#d11a2a"
+      "color": "#1c1c1c"
     },
     "betanope": {
       "id": "betanope",
       "name": "betano.pe",
       "abbr": "BET",
-      "color": "#0a6cff"
+      "color": "#7a4ddb"
     },
     "betanopt": {
       "id": "betanopt",
       "name": "betano.pt",
       "abbr": "BET",
-      "color": "#1c1c1c"
+      "color": "#d9730d"
     },
     "betanoro": {
       "id": "betanoro",
       "name": "betano.ro",
       "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "betfair": {
-      "id": "betfair",
-      "name": "betfair-ex",
-      "abbr": "BET",
-      "color": "#d9730d"
+      "color": "#e23b2e"
     },
     "betfred": {
       "id": "betfred",
       "name": "betfred",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#0a2d6e"
     },
     "betway": {
       "id": "betway",
       "name": "betway",
       "abbr": "BET",
-      "color": "#0a7d3c"
+      "color": "#14805e"
     },
     "bwin": {
       "id": "bwin",
-      "name": "bwin.de",
+      "name": "bwin",
       "abbr": "BWI",
-      "color": "#ffb000"
+      "color": "#0a6cff"
     },
     "codere": {
       "id": "codere",
       "name": "codere.es",
       "abbr": "COD",
-      "color": "#1c1c1c"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "leovegas",
-      "abbr": "LEO",
-      "color": "#7a4ddb"
+      "color": "#e23b2e"
     },
     "oddset": {
       "id": "oddset",
       "name": "oddset",
       "abbr": "ODD",
-      "color": "#0a7d3c"
-    },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "pinnacle",
-      "abbr": "PIN",
       "color": "#0a2d6e"
     },
-    "unibet": {
-      "id": "unibet",
-      "name": "unibet",
-      "abbr": "UNI",
-      "color": "#14805e"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "winamax.de",
-      "abbr": "WIN",
-      "color": "#e23b2e"
+    "betanocz": {
+      "id": "betanocz",
+      "name": "betano.cz",
+      "abbr": "BET",
+      "color": "#d11a2a"
     }
   },
   "MATCHES": [
-    {
-      "id": "opid1204695374573914",
-      "tour": "wta",
-      "event": "WTA Sao Paulo, Brazil Women, Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "20:30",
-      "day": "20 SEPT",
-      "home": "kaitlinquevedo",
-      "away": "nadiapodoroska",
-      "odds": {
-        "home": {
-          "1xbet": 1.62,
-          "888sport": 1.667,
-          "888sportca": 1.667,
-          "888sportro": 1.667,
-          "bet365": 1.58,
-          "bet365nj": 1.58,
-          "betano": 1.62,
-          "betanobg": 1.62,
-          "betanoca": 1.62,
-          "betanocz": 1.62,
-          "betanomx": 1.62,
-          "betanope": 1.62,
-          "betanopt": 1.62,
-          "betanoro": 1.62,
-          "betfair": 1.73,
-          "betfred": 1.615,
-          "betway": 1.65,
-          "bwin": 1.65,
-          "codere": 1.6,
-          "leovegas": 1.61,
-          "oddset": 1.65,
-          "pinnacle": 1.699,
-          "unibet": 1.62,
-          "winamax": 1.66
-        },
-        "away": {
-          "1xbet": 2.295,
-          "888sport": 2.2,
-          "888sportca": 2.2,
-          "888sportro": 2.2,
-          "bet365": 2.3,
-          "bet365nj": 2.3,
-          "betano": 2.27,
-          "betanobg": 2.27,
-          "betanoca": 2.27,
-          "betanocz": 2.3,
-          "betanomx": 2.27,
-          "betanope": 2.27,
-          "betanopt": 2.27,
-          "betanoro": 2.27,
-          "betfair": 2.34,
-          "betfred": 2.25,
-          "betway": 2.25,
-          "bwin": 2.25,
-          "codere": 2.2,
-          "leovegas": 2.3,
-          "oddset": 2.25,
-          "pinnacle": 2.27,
-          "unibet": 2.3,
-          "winamax": 2.3
-        }
-      },
-      "model": {
-        "home": 0.7869632793894692,
-        "away": 0.2130367206105308,
-        "fromModel": true,
-        "eloH": 1724,
-        "eloA": 1497,
-        "surface": "hard"
-      },
-      "ts": 1789929000000,
-      "sofa": 17066532
-    },
     {
       "id": "opid1200304374839202",
       "tour": "wta",
@@ -406,7 +696,8 @@
         "surface": "hard"
       },
       "ts": 1789956000000,
-      "sofa": 17135476
+      "sofa": 17135476,
+      "live": true
     },
     {
       "id": "opid1200304374839204",
@@ -475,37 +766,754 @@
         "surface": "hard"
       },
       "ts": 1789956000000,
-      "sofa": 17135477
+      "sofa": 17135477,
+      "live": true
+    },
+    {
+      "id": "3489c3560aca57f0bb2ddd9ecba9b39e",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "09:15",
+      "day": "21 SEPT",
+      "home": "rebeccasramkova",
+      "away": "majachwalinska",
+      "odds": {
+        "home": {
+          "betfair": 2.8,
+          "888sport": 2.6,
+          "unibet": 2.63,
+          "winamax": 2.7,
+          "leovegas": 2.63,
+          "williamhill": 2.6,
+          "betclic": 2.65,
+          "betsson": 2.65,
+          "1xbet": 2.68
+        },
+        "away": {
+          "betfair": 1.53,
+          "888sport": 1.5,
+          "unibet": 1.48,
+          "winamax": 1.5,
+          "leovegas": 1.48,
+          "williamhill": 1.5,
+          "betclic": 1.44,
+          "betsson": 1.47,
+          "1xbet": 1.48
+        }
+      },
+      "model": {
+        "home": 0.5868950233791,
+        "away": 0.41310497662089996,
+        "fromModel": true,
+        "eloH": 1711,
+        "eloA": 1650,
+        "surface": "hard"
+      },
+      "ts": 1789974900000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200304374873126",
+      "tour": "wta",
+      "event": "WTA Seoul, Korea Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "09:15",
+      "day": "21 SEPT",
+      "home": "daryaastakhova",
+      "away": "magdalinette",
+      "odds": {
+        "home": {
+          "1xbet": 2.504,
+          "888sport": 2.6,
+          "888sportca": 2.6,
+          "888sportro": 2.6,
+          "bet365": 2.75,
+          "bet365nj": 2.75,
+          "betano": 2.5,
+          "betanobg": 2.5,
+          "betanoca": 2.5,
+          "betanomx": 2.5,
+          "betanope": 2.5,
+          "betanopt": 2.5,
+          "betanoro": 2.5,
+          "betfair": 2.76,
+          "betfred": 2.625,
+          "betsson": 2.55,
+          "betway": 2.75,
+          "bwin": 2.6,
+          "codere": 2.7,
+          "leovegas": 2.55,
+          "oddset": 2.6,
+          "pinnacle": 2.69,
+          "unibet": 2.4,
+          "winamax": 2.6
+        },
+        "away": {
+          "1xbet": 1.53,
+          "888sport": 1.5,
+          "888sportca": 1.5,
+          "888sportro": 1.5,
+          "bet365": 1.41,
+          "bet365nj": 1.41,
+          "betano": 1.52,
+          "betanobg": 1.52,
+          "betanoca": 1.52,
+          "betanomx": 1.52,
+          "betanope": 1.52,
+          "betanopt": 1.52,
+          "betanoro": 1.52,
+          "betfair": 1.55,
+          "betfred": 1.5,
+          "betsson": 1.51,
+          "betway": 1.45,
+          "bwin": 1.48,
+          "codere": 1.45,
+          "leovegas": 1.5,
+          "oddset": 1.48,
+          "pinnacle": 1.52,
+          "unibet": 1.46,
+          "winamax": 1.52
+        }
+      },
+      "model": {
+        "home": 0.3351420214452352,
+        "away": 0.6648579785547648,
+        "fromModel": true,
+        "eloH": 1638,
+        "eloA": 1757,
+        "surface": "hard"
+      },
+      "ts": 1789974900000,
+      "sofa": 17141871
+    },
+    {
+      "id": "ff148419f7d5eb25e56152d03d978141",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "12:30",
+      "day": "21 SEPT",
+      "home": "kyokaokamura",
+      "away": "leylahfernandez",
+      "odds": {
+        "home": {
+          "betfair": 22,
+          "888sport": 13,
+          "unibet": 15,
+          "winamax": 17,
+          "leovegas": 15,
+          "williamhill": 13,
+          "betclic": 14,
+          "betsson": 13,
+          "1xbet": 15,
+          "pinnacle": 15.96
+        },
+        "away": {
+          "betfair": 1.04,
+          "888sport": 1.02,
+          "unibet": 1.02,
+          "winamax": 1.02,
+          "leovegas": 1.02,
+          "williamhill": 1.02,
+          "betclic": 1.02,
+          "betsson": 1.02,
+          "1xbet": 1.02,
+          "pinnacle": 1.03
+        }
+      },
+      "model": {
+        "home": 0.17118235224572423,
+        "away": 0.8288176477542758,
+        "fromModel": true,
+        "eloH": 1630,
+        "eloA": 1904,
+        "surface": "hard"
+      },
+      "ts": 1789986600000,
+      "sofa": null
+    },
+    {
+      "id": "8758473ffbcbf274282fd5d6d333b16c",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:00",
+      "day": "21 SEPT",
+      "home": "stormhunter",
+      "away": "joannagarland",
+      "odds": {
+        "home": {
+          "betfair": 2.08,
+          "888sport": 2,
+          "unibet": 2.05,
+          "winamax": 2,
+          "leovegas": 2.05,
+          "williamhill": 2,
+          "betclic": 2,
+          "betsson": 1.96,
+          "1xbet": 1.99,
+          "pinnacle": 2.04
+        },
+        "away": {
+          "betfair": 1.88,
+          "888sport": 1.8,
+          "unibet": 1.77,
+          "winamax": 1.86,
+          "leovegas": 1.77,
+          "williamhill": 1.8,
+          "betclic": 1.83,
+          "betsson": 1.82,
+          "1xbet": 1.84,
+          "pinnacle": 1.84
+        }
+      },
+      "model": {
+        "home": 0.49424379158885506,
+        "away": 0.5057562084111449,
+        "fromModel": true,
+        "eloH": 1695,
+        "eloA": 1699,
+        "surface": "hard"
+      },
+      "ts": 1789992000000,
+      "sofa": null
+    },
+    {
+      "id": "opid1204695374573914",
+      "tour": "wta",
+      "event": "WTA Sao Paulo, Brazil Women, Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:00",
+      "day": "21 SEPT",
+      "home": "kaitlinquevedo",
+      "away": "nadiapodoroska",
+      "odds": {
+        "home": {
+          "888sport": 1.727,
+          "888sportca": 1.727,
+          "888sportro": 1.727,
+          "bet365": 1.69,
+          "bet365nj": 1.69,
+          "betano": 1.75,
+          "betanobg": 1.75,
+          "betanoca": 1.75,
+          "betanomx": 1.75,
+          "betanope": 1.75,
+          "betanoro": 1.75,
+          "betfair": 1.78,
+          "betfred": 1.727,
+          "betsson": 1.74,
+          "betway": 1.727,
+          "bwin": 1.78,
+          "codere": 1.72,
+          "leovegas": 1.73,
+          "oddset": 1.78,
+          "pinnacle": 1.787,
+          "unibet": 1.73,
+          "winamax": 1.78
+        },
+        "away": {
+          "888sport": 2.1,
+          "888sportca": 2.1,
+          "888sportro": 2.1,
+          "bet365": 2.1,
+          "bet365nj": 2.1,
+          "betano": 2.05,
+          "betanobg": 2.05,
+          "betanoca": 2.05,
+          "betanomx": 2.05,
+          "betanope": 2.05,
+          "betanoro": 2.05,
+          "betfair": 2.26,
+          "betfred": 2.1,
+          "betsson": 2.06,
+          "betway": 2.1,
+          "bwin": 2.05,
+          "codere": 2.05,
+          "leovegas": 2.1,
+          "oddset": 2.05,
+          "pinnacle": 2.15,
+          "unibet": 2.1,
+          "winamax": 2.1
+        }
+      },
+      "model": {
+        "home": 0.7869632793894692,
+        "away": 0.2130367206105308,
+        "fromModel": true,
+        "eloH": 1724,
+        "eloA": 1497,
+        "surface": "hard"
+      },
+      "ts": 1789999200000,
+      "sofa": 17066532
+    },
+    {
+      "id": "opid1200304374873120",
+      "tour": "wta",
+      "event": "WTA Seoul, Korea Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "04:35",
+      "day": "22 SEPT",
+      "home": "emersonjones",
+      "away": "yexinma",
+      "odds": {
+        "home": {
+          "1xbet": 1.4,
+          "888sport": 1.364,
+          "888sportca": 1.364,
+          "888sportro": 1.364,
+          "bet365": 1.33,
+          "bet365nj": 1.33,
+          "betano": 1.35,
+          "betanobg": 1.35,
+          "betanoca": 1.35,
+          "betanocz": 1.35,
+          "betanomx": 1.35,
+          "betanope": 1.35,
+          "betanoro": 1.35,
+          "betfair": 1.43,
+          "betfred": 1.364,
+          "betsson": 1.35,
+          "betway": 1.38,
+          "bwin": 1.35,
+          "codere": 1.33,
+          "leovegas": 1.4,
+          "oddset": 1.35,
+          "unibet": 1.4,
+          "winamax": 1.29
+        },
+        "away": {
+          "1xbet": 2.951,
+          "888sport": 3.1,
+          "888sportca": 3.1,
+          "888sportro": 3.1,
+          "bet365": 3.2,
+          "bet365nj": 3.2,
+          "betano": 3.15,
+          "betanobg": 3.15,
+          "betanoca": 3.15,
+          "betanocz": 3.2,
+          "betanomx": 3.15,
+          "betanope": 3.15,
+          "betanoro": 3.15,
+          "betfair": 2.8,
+          "betfred": 3,
+          "betsson": 3.1,
+          "betway": 3,
+          "bwin": 3.1,
+          "codere": 3.05,
+          "leovegas": 3,
+          "oddset": 3.1,
+          "unibet": 2.95,
+          "winamax": 3.6
+        }
+      },
+      "model": {
+        "home": 0.5827018849642301,
+        "away": 0.41729811503576986,
+        "fromModel": true,
+        "eloH": 1745,
+        "eloA": 1687,
+        "surface": "hard"
+      },
+      "ts": 1790044500000,
+      "sofa": 17141920
+    },
+    {
+      "id": "f7ada307b7c90a2871846bb9347d0f9c",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "barborakrejcikov",
+      "away": "annalenafriedsam",
+      "odds": {
+        "home": {
+          "888sport": 1.14,
+          "unibet": 1.13,
+          "williamhill": 1.14,
+          "betfair": 1.08,
+          "leovegas": 1.13,
+          "betsson": 1.14,
+          "winamax": 1.14,
+          "betclic": 1.13,
+          "1xbet": 1.16
+        },
+        "away": {
+          "888sport": 5.5,
+          "unibet": 6,
+          "williamhill": 5.5,
+          "betfair": 7,
+          "leovegas": 6,
+          "betsson": 5.4,
+          "winamax": 5.6,
+          "betclic": 5,
+          "1xbet": 5.44
+        }
+      },
+      "model": {
+        "home": 0.7820980161313187,
+        "away": 0.21790198386868131,
+        "fromModel": true,
+        "eloH": 1865,
+        "eloA": 1643,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": null
+    },
+    {
+      "id": "ee9008010d12daebaaabf94a91f40bae",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "donnavekic",
+      "away": "xinyuwang",
+      "odds": {
+        "home": {
+          "888sport": 1.95,
+          "unibet": 1.97,
+          "williamhill": 1.95,
+          "betfair": 2.04,
+          "leovegas": 1.97,
+          "betsson": 1.89,
+          "winamax": 1.94,
+          "betclic": 1.89,
+          "1xbet": 1.94,
+          "pinnacle": 1.96
+        },
+        "away": {
+          "888sport": 1.85,
+          "unibet": 1.82,
+          "williamhill": 1.85,
+          "betfair": 1.93,
+          "leovegas": 1.82,
+          "betsson": 1.88,
+          "winamax": 1.92,
+          "betclic": 1.88,
+          "1xbet": 1.89,
+          "pinnacle": 1.91
+        }
+      },
+      "model": {
+        "home": 0.384135895746244,
+        "away": 0.615864104253756,
+        "fromModel": true,
+        "eloH": 1773,
+        "eloA": 1855,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": null
+    },
+    {
+      "id": "fbe5690f3bb5d61e742c6172bf96afd1",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "mariasakkari",
+      "away": "lindafruhvirtova",
+      "odds": {
+        "home": {
+          "888sport": 1.29,
+          "unibet": 1.26,
+          "williamhill": 1.29,
+          "betfair": 1.28,
+          "leovegas": 1.26,
+          "betsson": 1.27,
+          "winamax": 1.25,
+          "betclic": 1.26,
+          "1xbet": 1.29,
+          "pinnacle": 1.27
+        },
+        "away": {
+          "888sport": 3.6,
+          "unibet": 3.9,
+          "williamhill": 3.6,
+          "betfair": 4.2,
+          "leovegas": 3.9,
+          "betsson": 3.7,
+          "winamax": 4.2,
+          "betclic": 3.73,
+          "1xbet": 3.67,
+          "pinnacle": 4.08
+        }
+      },
+      "model": {
+        "home": 0.6813218351663937,
+        "away": 0.31867816483360634,
+        "fromModel": true,
+        "eloH": 1832,
+        "eloA": 1700,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": null
+    },
+    {
+      "id": "80b14dcee4510e7bdc94014121046ba9",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "vivianwolff",
+      "away": "oleksandraoliyny",
+      "odds": {
+        "home": {
+          "888sport": 3.5,
+          "unibet": 3.4,
+          "williamhill": 3.5,
+          "betfair": 3.7,
+          "leovegas": 3.4,
+          "betsson": 3.55,
+          "winamax": 3.75,
+          "betclic": 3.55,
+          "1xbet": 3.51,
+          "pinnacle": 3.68
+        },
+        "away": {
+          "888sport": 1.3,
+          "unibet": 1.32,
+          "williamhill": 1.3,
+          "betfair": 1.31,
+          "leovegas": 1.32,
+          "betsson": 1.29,
+          "winamax": 1.3,
+          "betclic": 1.29,
+          "1xbet": 1.31,
+          "pinnacle": 1.31
+        }
+      },
+      "model": {
+        "home": 0.28240827680846853,
+        "away": 0.7175917231915314,
+        "fromModel": true,
+        "eloH": 1628,
+        "eloA": 1790,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": null
+    },
+    {
+      "id": "a01c68667e4694ee5e56d526041795a6",
+      "tour": "wta",
+      "event": "Wta Singapore Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "tatianaprozorova",
+      "away": "sofiacostoulas",
+      "odds": {
+        "home": {
+          "888sport": 1.61,
+          "unibet": 1.64,
+          "williamhill": 1.62,
+          "betfair": 1.69,
+          "leovegas": 1.64,
+          "betsson": 1.62,
+          "winamax": 1.64,
+          "betclic": 1.62,
+          "1xbet": 1.62,
+          "pinnacle": 1.65
+        },
+        "away": {
+          "888sport": 2.3,
+          "unibet": 2.25,
+          "williamhill": 2.3,
+          "betfair": 2.38,
+          "leovegas": 2.25,
+          "betsson": 2.26,
+          "winamax": 2.3,
+          "betclic": 2.26,
+          "1xbet": 2.32,
+          "pinnacle": 2.34
+        }
+      },
+      "model": {
+        "home": 0.47986327796418354,
+        "away": 0.5201367220358164,
+        "fromModel": true,
+        "eloH": 1690,
+        "eloA": 1704,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": null
+    },
+    {
+      "id": "opid1200304374839206",
+      "tour": "wta",
+      "event": "WTA Seoul, Korea Republic Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "22 SEPT",
+      "home": "evalys",
+      "away": "elenagabrielarus",
+      "odds": {
+        "home": {
+          "1xbet": 2.218,
+          "888sport": 2.2,
+          "888sportca": 2.2,
+          "888sportro": 2.2,
+          "bet365": 2.2,
+          "bet365nj": 2.2,
+          "betano": 2.22,
+          "betanobg": 2.22,
+          "betanoca": 2.22,
+          "betanomx": 2.22,
+          "betanope": 2.22,
+          "betanopt": 2.22,
+          "betanoro": 2.22,
+          "betfair": 2.38,
+          "betfred": 2.25,
+          "betway": 2.25,
+          "bwin": 2.18,
+          "codere": 2.15,
+          "leovegas": 2.25,
+          "oddset": 2.18,
+          "pinnacle": 2.29,
+          "unibet": 2.25,
+          "winamax": 2.3
+        },
+        "away": {
+          "1xbet": 1.66,
+          "888sport": 1.667,
+          "888sportca": 1.667,
+          "888sportro": 1.667,
+          "bet365": 1.63,
+          "bet365nj": 1.63,
+          "betano": 1.65,
+          "betanobg": 1.65,
+          "betanoca": 1.65,
+          "betanomx": 1.65,
+          "betanope": 1.65,
+          "betanopt": 1.65,
+          "betanoro": 1.65,
+          "betfair": 1.69,
+          "betfred": 1.615,
+          "betway": 1.65,
+          "bwin": 1.65,
+          "codere": 1.65,
+          "leovegas": 1.64,
+          "oddset": 1.65,
+          "pinnacle": 1.675,
+          "unibet": 1.64,
+          "winamax": 1.6
+        }
+      },
+      "model": {
+        "home": 0.2630052394593107,
+        "away": 0.7369947605406892,
+        "fromModel": true,
+        "eloH": 1740,
+        "eloA": 1919,
+        "surface": "hard"
+      },
+      "ts": 1790046000000,
+      "sofa": 17135478
     }
   ],
   "COMBOS": [
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 38,
+      "conf": 39,
       "book": "betfair-ex",
       "legs": [
         {
           "id": "opid1204695374573914",
           "sport": "tennis_oddspapi_wta",
-          "ts": 1789929000000,
+          "ts": 1789999200000,
           "side": "home",
           "sofa": 17066532,
           "match": "K. Quevedo – N. Podoroska",
           "pick": "Gana K. Quevedo",
-          "odd": 1.73,
+          "odd": 1.78,
           "book": "betfair-ex"
         },
         {
-          "id": "opid1200304374839204",
+          "id": "opid1200304374839206",
           "sport": "tennis_oddspapi_wta",
-          "ts": 1789956000000,
+          "ts": 1790046000000,
           "side": "away",
-          "sofa": 17135477,
-          "match": "K. Rakhimova – P. Kudermetova",
-          "pick": "Gana P. Kudermetova",
-          "odd": 2.56,
+          "sofa": 17135478,
+          "match": "E. Lys – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.69,
           "book": "betfair-ex"
+        },
+        {
+          "id": "opid1200304374873126",
+          "sport": "tennis_oddspapi_wta",
+          "ts": 1789974900000,
+          "side": "away",
+          "sofa": 17141871,
+          "match": "D. Astakhova – M. Linette",
+          "pick": "Gana M. Linette",
+          "odd": 1.55,
+          "book": "betfair-ex"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Combinada Valor",
+      "conf": 24,
+      "book": "pinnacle",
+      "legs": [
+        {
+          "id": "opid1200304374839206",
+          "sport": "tennis_oddspapi_wta",
+          "ts": 1790046000000,
+          "side": "away",
+          "sofa": 17135478,
+          "match": "E. Lys – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.68,
+          "book": "pinnacle"
+        },
+        {
+          "id": "a01c68667e4694ee5e56d526041795a6",
+          "sport": "tennis_wta_singapore_open",
+          "ts": 1790046000000,
+          "side": "away",
+          "sofa": null,
+          "match": "T. Prozorova – S. Costoulas",
+          "pick": "Gana S. Costoulas",
+          "odd": 2.34,
+          "book": "pinnacle"
+        },
+        {
+          "id": "ee9008010d12daebaaabf94a91f40bae",
+          "sport": "tennis_wta_singapore_open",
+          "ts": 1790046000000,
+          "side": "away",
+          "sofa": null,
+          "match": "D. Vekic – X. Wang",
+          "pick": "Gana X. Wang",
+          "odd": 1.91,
+          "book": "pinnacle"
         }
       ]
     }
@@ -1056,276 +2064,6 @@
   ],
   "PENDING": [
     {
-      "id": "aa7350af51feb2a06a42fe07cbab10df",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788112200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Vukic – R. Sakamoto",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Vukic",
-      "odd": 2.38,
-      "book": "onexbet",
-      "homeName": "A. Vukic",
-      "awayName": "R. Sakamoto"
-    },
-    {
-      "id": "fbb58c1c60dcf71195f3e8e09e49fba5",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788108000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Munar – T. Atmane",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Munar",
-      "odd": 2.52,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Munar",
-      "awayName": "T. Atmane"
-    },
-    {
-      "id": "804dee1bafd728e13c9dbde1f327d7e6",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788123600000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "E. Navarro – L. Boisson",
-      "pickKey": "away",
-      "pickLabel": "Gana L. Boisson",
-      "odd": 3.55,
-      "book": "matchbook",
-      "homeName": "E. Navarro",
-      "awayName": "L. Boisson"
-    },
-    {
-      "id": "c65ce57f72151a384b6ce9229cdc9734",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788102000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "W. Yibing – A. Walton",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Walton",
-      "odd": 1.95,
-      "book": "matchbook",
-      "homeName": "W. Yibing",
-      "awayName": "A. Walton"
-    },
-    {
-      "id": "66bcf5e7cd745336d59fe72d1491c487",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788116400000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Martin Etcheverry – V. Kopriva",
-      "pickKey": "away",
-      "pickLabel": "Gana V. Kopriva",
-      "odd": 2.68,
-      "book": "matchbook",
-      "homeName": "T. Martin Etcheverry",
-      "awayName": "V. Kopriva"
-    },
-    {
-      "id": "64e9f24ba8aba0493b39935f9daf7578",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788108000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "E. Kalieva – L. Tararudee",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Kalieva",
-      "odd": 2.86,
-      "book": "onexbet",
-      "homeName": "E. Kalieva",
-      "awayName": "L. Tararudee"
-    },
-    {
-      "id": "6aecbc081d9471058602cc04078aa805",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788102000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "R. Zarazua – P. Iatcenko",
-      "pickKey": "home",
-      "pickLabel": "Gana R. Zarazua",
-      "odd": 2.07,
-      "book": "onexbet",
-      "homeName": "R. Zarazua",
-      "awayName": "P. Iatcenko"
-    },
-    {
-      "id": "2fd3409521b64ab86b4daec14aa383a6",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788118200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Birrell – P. Marcinko",
-      "pickKey": "away",
-      "pickLabel": "Gana P. Marcinko",
-      "odd": 2.16,
-      "book": "unibet_nl",
-      "homeName": "K. Birrell",
-      "awayName": "P. Marcinko"
-    },
-    {
-      "id": "db94bf2c5ee7c2da16fa70d1e86472e1",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788102000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "K. Majchrzak – H. Medjedovic",
-      "pickKey": "away",
-      "pickLabel": "Gana H. Medjedovic",
-      "odd": 2.12,
-      "book": "betfair_ex_eu",
-      "homeName": "K. Majchrzak",
-      "awayName": "H. Medjedovic"
-    },
-    {
-      "id": "ff5ca415153216e2931683d9278c0aae",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788112200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Kessler – E. Alexandrova",
-      "pickKey": "away",
-      "pickLabel": "Gana E. Alexandrova",
-      "odd": 1.63,
-      "book": "matchbook",
-      "homeName": "M. Kessler",
-      "awayName": "E. Alexandrova"
-    },
-    {
-      "id": "4d8f19c4824f955caaaa52261475a081",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788106200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "L. Van Assche – C. Norrie",
-      "pickKey": "away",
-      "pickLabel": "Gana C. Norrie",
-      "odd": 1.53,
-      "book": "onexbet",
-      "homeName": "L. Van Assche",
-      "awayName": "C. Norrie"
-    },
-    {
-      "id": "ae3f9872839594c923acc29e4f14060f",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788116400000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "M. Landaluce – J. Fearnley",
-      "pickKey": "home",
-      "pickLabel": "Gana M. Landaluce",
-      "odd": 2.04,
-      "book": "onexbet",
-      "homeName": "M. Landaluce",
-      "awayName": "J. Fearnley"
-    },
-    {
-      "id": "4341ae5b1eef82fee277abc3c09cc6df",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788118200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Preston – A. Parks",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Parks",
-      "odd": 1.96,
-      "book": "matchbook",
-      "homeName": "T. Preston",
-      "awayName": "A. Parks"
-    },
-    {
-      "id": "ca92d4382bfbb4cab844b541ddc72f98",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788102000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Lehecka – P. Carreno Busta",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 1.26,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Lehecka",
-      "awayName": "P. Carreno Busta"
-    },
-    {
-      "id": "90af61e31c78545c86c5b64800849b9c",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788108000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "L. Stefanini – D. Yastremska",
-      "pickKey": "away",
-      "pickLabel": "Gana D. Yastremska",
-      "odd": 1.73,
-      "book": "sport888",
-      "homeName": "L. Stefanini",
-      "awayName": "D. Yastremska"
-    },
-    {
-      "id": "9c5017eb8c412acb96b80eccf51d6821",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788112200000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "C. Young Suh Lee – K. Boulter",
-      "pickKey": "away",
-      "pickLabel": "Gana K. Boulter",
-      "odd": 1.76,
-      "book": "matchbook",
-      "homeName": "C. Young Suh Lee",
-      "awayName": "K. Boulter"
-    },
-    {
-      "id": "ccec1e9522672756e21606135720d66d",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788135000000,
-      "date": "31 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "A. Bublik – J. Wolf",
-      "pickKey": "home",
-      "pickLabel": "Gana A. Bublik",
-      "odd": 1.45,
-      "book": "matchbook",
-      "homeName": "A. Bublik",
-      "awayName": "J. Wolf"
-    },
-    {
-      "id": "4c8fb0847307e7a109a57e850b660d68",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788130800000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "M. Navone – N. Djokovic",
-      "pickKey": "away",
-      "pickLabel": "Gana N. Djokovic",
-      "odd": 1.22,
-      "book": "pinnacle",
-      "homeName": "M. Navone",
-      "awayName": "N. Djokovic"
-    },
-    {
       "id": "d6239b51f0349d2f5c3a88208640908e",
       "sport": "tennis_wta_us_open",
       "ts": 1788195600000,
@@ -1551,21 +2289,6 @@
       "awayName": "O. Selekhmeteva"
     },
     {
-      "id": "opid1200259174124708",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1788102000000,
-      "date": "30 AGO",
-      "sofa": 16940104,
-      "pickHome": true,
-      "match": "Y. Wu – A. Walton",
-      "pickKey": "home",
-      "pickLabel": "Gana Y. Wu",
-      "odd": 2.2,
-      "book": "betfair-ex",
-      "homeName": "Y. Wu",
-      "awayName": "A. Walton"
-    },
-    {
       "id": "54474590ac67d3e5c69c65ffcd6fccc1",
       "sport": "tennis_atp_us_open",
       "ts": 1788192600000,
@@ -1609,36 +2332,6 @@
       "book": "matchbook",
       "homeName": "K. Volynets",
       "awayName": "L. Noskova"
-    },
-    {
-      "id": "d06bae29497b6a7b58a1f2e306cdf784",
-      "sport": "tennis_wta_us_open",
-      "ts": 1788114000000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": true,
-      "match": "H. Vandewinkel – K. Pliskova",
-      "pickKey": "home",
-      "pickLabel": "Gana H. Vandewinkel",
-      "odd": 1.98,
-      "book": "betfair_ex_eu",
-      "homeName": "H. Vandewinkel",
-      "awayName": "K. Pliskova"
-    },
-    {
-      "id": "dd05f963843b4f2fbab143e3fe9761be",
-      "sport": "tennis_atp_us_open",
-      "ts": 1788116400000,
-      "date": "30 AGO",
-      "sofa": null,
-      "pickHome": false,
-      "match": "S. Gorzny – R. Collignon",
-      "pickKey": "away",
-      "pickLabel": "Gana R. Collignon",
-      "odd": 1.15,
-      "book": "betfair_ex_eu",
-      "homeName": "S. Gorzny",
-      "awayName": "R. Collignon"
     },
     {
       "id": "a216f3e5b5e804512b4c4280b04a1ced",
@@ -3049,6 +3742,81 @@
       "book": "leovegas",
       "homeName": "K. Rakhimova",
       "awayName": "P. Kudermetova"
+    },
+    {
+      "id": "opid1200304374873120",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1790044500000,
+      "date": "22 SEPT",
+      "sofa": 17141920,
+      "pickHome": false,
+      "match": "E. Jones – Y. Ma",
+      "pickKey": "away",
+      "pickLabel": "Gana Y. Ma",
+      "odd": 3.6,
+      "book": "winamax.de",
+      "homeName": "E. Jones",
+      "awayName": "Y. Ma"
+    },
+    {
+      "id": "opid1200304374839206",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1790046000000,
+      "date": "22 SEPT",
+      "sofa": 17135478,
+      "pickHome": false,
+      "match": "E. Lys – E. Ruse",
+      "pickKey": "away",
+      "pickLabel": "Gana E. Ruse",
+      "odd": 1.69,
+      "book": "betfair-ex",
+      "homeName": "E. Lys",
+      "awayName": "E. Ruse"
+    },
+    {
+      "id": "a01c68667e4694ee5e56d526041795a6",
+      "sport": "tennis_wta_singapore_open",
+      "ts": 1790046000000,
+      "date": "22 SEPT",
+      "sofa": null,
+      "pickHome": false,
+      "match": "T. Prozorova – S. Costoulas",
+      "pickKey": "away",
+      "pickLabel": "Gana S. Costoulas",
+      "odd": 2.38,
+      "book": "betfair_ex_eu",
+      "homeName": "T. Prozorova",
+      "awayName": "S. Costoulas"
+    },
+    {
+      "id": "ee9008010d12daebaaabf94a91f40bae",
+      "sport": "tennis_wta_singapore_open",
+      "ts": 1790046000000,
+      "date": "22 SEPT",
+      "sofa": null,
+      "pickHome": false,
+      "match": "D. Vekic – X. Wang",
+      "pickKey": "away",
+      "pickLabel": "Gana X. Wang",
+      "odd": 1.93,
+      "book": "betfair_ex_eu",
+      "homeName": "D. Vekic",
+      "awayName": "X. Wang"
+    },
+    {
+      "id": "opid1200304374873126",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1789974900000,
+      "date": "21 SEPT",
+      "sofa": 17141871,
+      "pickHome": false,
+      "match": "D. Astakhova – M. Linette",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Linette",
+      "odd": 1.55,
+      "book": "betfair-ex",
+      "homeName": "D. Astakhova",
+      "awayName": "M. Linette"
     }
   ],
   "COMBO_RECORD": [
@@ -8468,9 +9236,111 @@
           "awayName": "P. Kudermetova"
         }
       ]
+    },
+    {
+      "dayId": "21 SEPT·c1",
+      "date": "21 SEPT",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "opid1204695374573914",
+          "sport": "tennis_oddspapi_wta",
+          "side": "home",
+          "sofa": 17066532,
+          "match": "K. Quevedo – N. Podoroska",
+          "pick": "Gana K. Quevedo",
+          "odd": 1.78,
+          "homeName": "K. Quevedo",
+          "awayName": "N. Podoroska"
+        },
+        {
+          "id": "opid1200304374839206",
+          "sport": "tennis_oddspapi_wta",
+          "side": "away",
+          "sofa": 17135478,
+          "match": "E. Lys – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.69,
+          "homeName": "E. Lys",
+          "awayName": "E. Ruse"
+        },
+        {
+          "id": "opid1200304374873126",
+          "sport": "tennis_oddspapi_wta",
+          "side": "away",
+          "sofa": 17141871,
+          "match": "D. Astakhova – M. Linette",
+          "pick": "Gana M. Linette",
+          "odd": 1.55,
+          "homeName": "D. Astakhova",
+          "awayName": "M. Linette"
+        }
+      ]
+    },
+    {
+      "dayId": "21 SEPT·c2",
+      "date": "21 SEPT",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "opid1200304374839206",
+          "sport": "tennis_oddspapi_wta",
+          "side": "away",
+          "sofa": 17135478,
+          "match": "E. Lys – E. Ruse",
+          "pick": "Gana E. Ruse",
+          "odd": 1.68,
+          "homeName": "E. Lys",
+          "awayName": "E. Ruse"
+        },
+        {
+          "id": "a01c68667e4694ee5e56d526041795a6",
+          "sport": "tennis_wta_singapore_open",
+          "side": "away",
+          "sofa": null,
+          "match": "T. Prozorova – S. Costoulas",
+          "pick": "Gana S. Costoulas",
+          "odd": 2.34,
+          "homeName": "T. Prozorova",
+          "awayName": "S. Costoulas"
+        },
+        {
+          "id": "ee9008010d12daebaaabf94a91f40bae",
+          "sport": "tennis_wta_singapore_open",
+          "side": "away",
+          "sofa": null,
+          "match": "D. Vekic – X. Wang",
+          "pick": "Gana X. Wang",
+          "odd": 1.91,
+          "homeName": "D. Vekic",
+          "awayName": "X. Wang"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "21 SEPT",
+      "match": "E. Jones – Y. Ma",
+      "marginPct": 2.29,
+      "profit": 2.35,
+      "ts": 1790044500000,
+      "homeName": "E. Jones",
+      "awayName": "Y. Ma",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana E. Jones",
+          "odd": 1.43,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana Y. Ma",
+          "odd": 3.6,
+          "book": "winamax.de"
+        }
+      ]
+    },
     {
       "date": "15 SEPT",
       "match": "S. Stephens – J. Tjen",
@@ -9326,28 +10196,6 @@
           "pick": "Gana M. Camila Osorio Serrano",
           "odd": 14,
           "book": "betfair_ex_eu"
-        }
-      ]
-    },
-    {
-      "date": "31 AGO",
-      "match": "S. Tsitsipas – A. Fils",
-      "marginPct": 1.13,
-      "profit": 1.15,
-      "ts": 1788188400000,
-      "homeName": "S. Tsitsipas",
-      "awayName": "A. Fils",
-      "sport": "tennis_atp_us_open",
-      "legs": [
-        {
-          "pick": "Gana S. Tsitsipas",
-          "odd": 5.3,
-          "book": "matchbook"
-        },
-        {
-          "pick": "Gana A. Fils",
-          "odd": 1.25,
-          "book": "unibet_nl"
         }
       ]
     }
@@ -22231,6 +23079,127 @@
       "sofa": 17135477,
       "homeName": "K. Rakhimova",
       "awayName": "P. Kudermetova"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789974900000,
+      "match": "R. Sramkova – M. Chwalinska",
+      "predHome": true,
+      "prob": 59,
+      "predName": "R. Sramkova",
+      "sofa": null,
+      "homeName": "R. Sramkova",
+      "awayName": "M. Chwalinska"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789974900000,
+      "match": "D. Astakhova – M. Linette",
+      "predHome": false,
+      "prob": 66,
+      "predName": "M. Linette",
+      "sofa": 17141871,
+      "homeName": "D. Astakhova",
+      "awayName": "M. Linette"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789986600000,
+      "match": "K. Okamura – L. Fernandez",
+      "predHome": false,
+      "prob": 83,
+      "predName": "L. Fernandez",
+      "sofa": null,
+      "homeName": "K. Okamura",
+      "awayName": "L. Fernandez"
+    },
+    {
+      "date": "21 SEPT",
+      "ts": 1789992000000,
+      "match": "S. Hunter – J. Garland",
+      "predHome": false,
+      "prob": 51,
+      "predName": "J. Garland",
+      "sofa": null,
+      "homeName": "S. Hunter",
+      "awayName": "J. Garland"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790044500000,
+      "match": "E. Jones – Y. Ma",
+      "predHome": true,
+      "prob": 58,
+      "predName": "E. Jones",
+      "sofa": 17141920,
+      "homeName": "E. Jones",
+      "awayName": "Y. Ma"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "B. Krejcikova – A. Friedsam",
+      "predHome": true,
+      "prob": 78,
+      "predName": "B. Krejcikova",
+      "sofa": null,
+      "homeName": "B. Krejcikova",
+      "awayName": "A. Friedsam"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "D. Vekic – X. Wang",
+      "predHome": false,
+      "prob": 62,
+      "predName": "X. Wang",
+      "sofa": null,
+      "homeName": "D. Vekic",
+      "awayName": "X. Wang"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "M. Sakkari – L. Fruhvirtova",
+      "predHome": true,
+      "prob": 68,
+      "predName": "M. Sakkari",
+      "sofa": null,
+      "homeName": "M. Sakkari",
+      "awayName": "L. Fruhvirtova"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "V. Wolff – O. Oliynykova",
+      "predHome": false,
+      "prob": 72,
+      "predName": "O. Oliynykova",
+      "sofa": null,
+      "homeName": "V. Wolff",
+      "awayName": "O. Oliynykova"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "T. Prozorova – S. Costoulas",
+      "predHome": false,
+      "prob": 52,
+      "predName": "S. Costoulas",
+      "sofa": null,
+      "homeName": "T. Prozorova",
+      "awayName": "S. Costoulas"
+    },
+    {
+      "date": "22 SEPT",
+      "ts": 1790046000000,
+      "match": "E. Lys – E. Ruse",
+      "predHome": false,
+      "prob": 74,
+      "predName": "E. Ruse",
+      "sofa": 17135478,
+      "homeName": "E. Lys",
+      "awayName": "E. Ruse"
     }
   ],
   "LADDER": {
