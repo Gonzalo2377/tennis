@@ -29,6 +29,7 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # resultados + fotos (api-tennis.com)
+          LIVETENNISAPI_KEY: ${{ secrets.LIVETENNISAPI_KEY }}   # opcional (resultados, livetennisapi.com)
           ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}     # cuotas Challenger/ITF (oddspapi.io)
           ODDSPAPI_MAX: '5'                            # bajado a 2/día → llegar a fin de mes (quedan ~26)
           RESET: ${{ github.event.inputs.reset }}       # pon 1 al lanzar a mano para vaciar historial
