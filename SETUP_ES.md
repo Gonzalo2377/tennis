@@ -16,6 +16,20 @@ Web de cuotas de tenis con **valor**, **apuestas sin riesgo** (surebets), **comb
 
 A partir de ahí se ejecuta solo cada mañana. (Si el cron de GitHub no dispara, usa el mismo truco del Worker de Cloudflare que en la web de fútbol.)
 
+## 2b. Fuentes de resultados adicionales (opcional)
+
+Los resultados se liquidan con **ESPN** (gratis) y, si están configuradas, con estas fuentes extra.
+Todas son opcionales: si no defines el secret, no se llama a esa fuente y todo sigue igual.
+
+| Secret | Fuente | Aporta |
+|---|---|---|
+| `APITENNIS_KEY` | api-tennis.com | ganadores, retiradas, partidos interrumpidos y **fotos** de jugadores |
+| `LIVETENNISAPI_KEY` | livetennisapi.com | ganadores y partidos cancelados (histórico desde 2026, plan BASIC o superior) |
+
+`LIVETENNISAPI_KEY` **no** sustituye a nada: sus ganadores se suman a los de ESPN y api-tennis
+antes de liquidar. No aporta fotos ni detecta partidos suspendidos, así que esas dos cosas
+las sigue haciendo api-tennis.
+
 ## 3. Ajustes rápidos
 - Más/menos torneos: variable `ODDS_MAX` en el workflow.
 - Ventana de días: `ODDS_WINDOW_HOURS` (96 = 4 días).
