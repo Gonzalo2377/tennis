@@ -23,6 +23,7 @@ jobs:
         env:
           ODDS_MODE: scores            # SOLO resultados → 0 créditos
           APITENNIS_KEY: ${{ secrets.APITENNIS_KEY }}   # opcional (fotos / refuerzo)
+          LIVETENNISAPI_KEY: ${{ secrets.LIVETENNISAPI_KEY }}   # opcional (resultados, livetennisapi.com)
         run: node robot/fetch-daily.js
       - name: Commit si hay cambios
         run: |
