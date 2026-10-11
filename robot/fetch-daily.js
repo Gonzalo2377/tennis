@@ -19,6 +19,11 @@ const path = require('path');
 const API_KEY = process.env.ODDS_API_KEY;
 const APITENNIS_KEY = process.env.APITENNIS_KEY || '';
 const apiTennis = require('./results-api.js');
+// Fuente de resultados OPCIONAL y adicional (livetennisapi.com). Sin la variable
+// LIVETENNISAPI_KEY no se llama a nada y la liquidación queda exactamente igual
+// que antes (ESPN + api-tennis + results.json).
+const LIVETENNISAPI_KEY = process.env.LIVETENNISAPI_KEY || '';
+const liveTennisApi = require('./livetennis-results.js');
 const fetchRankElo = require('./rankings-api.js');
 const espnResults = require('./espn-results.js');
 let LAST_FINISHED = [];   // pares terminados (api-tennis+ESPN) accesibles fuera del bloque de liquidación (reto escalera)
@@ -570,12 +575,13 @@ async function main(){
     if (need.length){
       const scores=[];   // resultados SOLO por api-tennis/ESPN (gratis); NO gastamos /scores de The Odds API
       const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], finished:[], logos:{} };
+      const ltaRes = LIVETENNISAPI_KEY ? await liveTennisApi(LIVETENNISAPI_KEY, 6) : { winners:[], finished:[], voided:[], unfinished:[], logos:{} };
       let espn = { winners:[], finished:[] };
       try { espn = await espnResults(5); console.log(`· ESPN: ${espn.winners.length} ganadores · ${espn.finished.length} partidos terminados`); }
       catch(e){ console.log('· ESPN no disponible:', e.message); }
-      espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
+      espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[]), ...(ltaRes.finished||[])];   // api-tennis + livetennisapi pares → picks/combis/surebets
       LAST_FINISHED = espn.finished;
-      const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];   // ESPN (gratis) + api-tennis + manual
+      const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...ltaRes.winners, ...espn.winners];   // ESPN (gratis) + api-tennis + livetennisapi + manual
       if (manualWinners.length) console.log(`· liquidando con ${manualWinners.length} ganadores (api-tennis + results.json)`);
       // SofaScore por ID exacto (challenger/ITF/todo, sin errores de nombres)
       const sofaIds=[...PENDING.map(p=>p.sofa), ...COMBO_PENDING.flatMap(c=>c.legs.map(l=>l.sofa)), ...ARB_PENDING.map(a=>a.sofa)].filter(Boolean);
@@ -618,7 +624,7 @@ async function main(){
       // settleable once the match has STARTED; if there's no confirmed result yet it just stays pending.
       const playedEnough = ts => !ts || ts <= Date.now();
       // settle singles: only if played; manual winners first, then API scores.
-      const voidPairs=[...(espn.voided||[]), ...(apiRes.voided||[])].map(v=>({a:surnameKey(v.home),b:surnameKey(v.away)}));
+      const voidPairs=[...(espn.voided||[]), ...(apiRes.voided||[]), ...(ltaRes.voided||[])].map(v=>({a:surnameKey(v.home),b:surnameKey(v.away)}));
       const voidNames=loadManualVoids();
       { const fixed=revoidRecords(COMBO_RECORD, RECORD, voidPairs, voidNames); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
       { const rv=reverifyRecords(RECORD, COMBO_RECORD, espn.finished, voidPairs); if(rv) console.log(`· ${rv} registros re-verificados (resultado real)`); }
@@ -914,10 +920,11 @@ async function scoresOnly(){
     // 100% FREE refresh: settle from ESPN (gratis) + manual only. NO Odds API call → 0 créditos.
     const scores=[];
     const apiRes = APITENNIS_KEY ? await apiTennis(APITENNIS_KEY, 6) : { winners:[], finished:[], logos:{} };
+    const ltaRes = LIVETENNISAPI_KEY ? await liveTennisApi(LIVETENNISAPI_KEY, 6) : { winners:[], finished:[], voided:[], unfinished:[], logos:{} };
     let espn = { winners:[], finished:[] };
     try { espn = await espnResults(5); console.log(`· scores-only ESPN: ${espn.winners.length} ganadores`); } catch(e){ console.log('· ESPN error:', e.message); }
-    espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[])];   // api-tennis pares → picks/combis/surebets
-    const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...espn.winners];
+    espn.finished = [...(espn.finished||[]), ...(apiRes.finished||[]), ...(ltaRes.finished||[])];   // api-tennis + livetennisapi pares → picks/combis/surebets
+    const manualWinners=[...loadManualWinners(), ...apiRes.winners, ...ltaRes.winners, ...espn.winners];
     if (d.PLAYERS && Object.keys(apiRes.logos).length){
       const canon=require('./name-canon.js').canonSurname;
       const simple=(n)=>(n||'').trim().split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
@@ -943,7 +950,7 @@ async function scoresOnly(){
     for (const c of COMBO_PENDING){ for (const l of c.legs){ if(!l.sofa&&l.homeName&&l.awayName) await sofaByName(l.homeName,l.awayName); } }
     for (const a of ARB_PENDING){ if(!a.sofa&&a.homeName&&a.awayName) await sofaByName(a.homeName,a.awayName); }
     const nameRes=(h,a)=> byName[surnameKey(h)+'|'+surnameKey(a)] || null;
-    const voidPairs=[...(espn.voided||[]), ...(apiRes.voided||[])].map(v=>({a:surnameKey(v.home),b:surnameKey(v.away)}));
+    const voidPairs=[...(espn.voided||[]), ...(apiRes.voided||[]), ...(ltaRes.voided||[])].map(v=>({a:surnameKey(v.home),b:surnameKey(v.away)}));
     const voidNames=loadManualVoids();
     { const fixed=revoidRecords(COMBO_RECORD, RECORD, voidPairs, voidNames); if(fixed) console.log(`· ${fixed} registros corregidos por retirada`); }
     { const rv=reverifyRecords(RECORD, COMBO_RECORD, espn.finished, voidPairs); if(rv) console.log(`· ${rv} registros re-verificados (resultado real)`); }
