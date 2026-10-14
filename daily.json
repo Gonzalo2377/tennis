@@ -1,156 +1,23 @@
 {
   "meta": {
-    "updatedAt": "2026-10-13T22:01:09.180Z",
+    "updatedAt": "2026-10-14T07:01:28.523Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 35,
-    "valuePicks": 20,
+    "matches": 21,
+    "valuePicks": 13,
     "books": 30,
     "stale": false,
     "model": {
       "players": 3567
     },
     "credits": {
-      "remaining": 466,
-      "used": 34
+      "remaining": 464,
+      "used": 36
     }
   },
   "PLAYERS": {
-    "alexanderzverev": {
-      "id": "alexanderzverev",
-      "name": "A. Zverev",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
-    },
-    "alexanderbublik": {
-      "id": "alexanderbublik",
-      "name": "A. Bublik",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1895_a-bublik.jpg"
-    },
-    "huberthurkacz": {
-      "id": "huberthurkacz",
-      "name": "H. Hurkacz",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2841_h-hurkacz.jpg"
-    },
-    "alejandrodavidov": {
-      "id": "alejandrodavidov",
-      "name": "A. Davidovich Fokina",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
-    },
-    "boticvandezandsc": {
-      "id": "boticvandezandsc",
-      "name": "B. van de Zandschulp",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2972_b-vandezandschulp.jpg"
-    },
-    "rafaeljodar": {
-      "id": "rafaeljodar",
-      "name": "R. Jodar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
-    },
-    "casperruud": {
-      "id": "casperruud",
-      "name": "C. Ruud",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/430_c-ruud.jpg"
-    },
-    "felixaugeraliass": {
-      "id": "felixaugeraliass",
-      "name": "F. Auger-Aliassime",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2073_f-auger-aliassime.jpg"
-    },
     "daniilmedvedev": {
       "id": "daniilmedvedev",
       "name": "D. Medvedev",
@@ -218,21 +85,100 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg"
     },
-    "dariakasatkina": {
-      "id": "dariakasatkina",
-      "name": "D. Kasatkina",
+    "arthurgea": {
+      "id": "arthurgea",
+      "name": "A. Gea",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/9210_a-gea.jpg"
+    },
+    "alejandrodavidov": {
+      "id": "alejandrodavidov",
+      "name": "A. Davidovich Fokina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
+    },
+    "alexanderzverev": {
+      "id": "alexanderzverev",
+      "name": "A. Zverev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1980_a-zverev.jpg"
+    },
+    "alexdeminaur": {
+      "id": "alexdeminaur",
+      "name": "A. de Minaur",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
+    },
+    "katievolynets": {
+      "id": "katievolynets",
+      "name": "K. Volynets",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "wta",
       "elo": null,
       "form": [
-        "L",
+        "W",
+        "W",
         "W",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1990_d-kasatkina.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2826_k-volynets.jpg"
+    },
+    "guohanyu": {
+      "id": "guohanyu",
+      "name": "G. Hanyu",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
     },
     "jelenaostapenko": {
       "id": "jelenaostapenko",
@@ -251,26 +197,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/2802_j-ostapenko.jpg"
     },
-    "dariasnigur": {
-      "id": "dariasnigur",
-      "name": "D. Snigur",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1131_d-snigur.jpg"
-    },
-    "elisemertens": {
-      "id": "elisemertens",
-      "name": "E. Mertens",
+    "jessicapegula": {
+      "id": "jessicapegula",
+      "name": "J. Pegula",
       "country": "",
       "flag": "",
       "seed": "",
@@ -283,35 +212,7 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/521_e-mertens.jpg"
-    },
-    "annli": {
-      "id": "annli",
-      "name": "A. Li",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/40225_c-li.jpg"
-    },
-    "mariacamilaosori": {
-      "id": "mariacamilaosori",
-      "name": "M. Camila Osorio Serrano",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/68640_m-serrano.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2171_j-pegula.jpg"
     },
     "ashlynkrueger": {
       "id": "ashlynkrueger",
@@ -330,9 +231,43 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1751_m-krueger.jpg"
     },
-    "shuaizhang": {
-      "id": "shuaizhang",
-      "name": "S. Zhang",
+    "lanlanatararudee": {
+      "id": "lanlanatararudee",
+      "name": "L. Tararudee",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/25728_l-tararudee.jpg"
+    },
+    "arynasabalenka": {
+      "id": "arynasabalenka",
+      "name": "A. Sabalenka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1989_a-sabalenka.jpg"
+    },
+    "annli": {
+      "id": "annli",
+      "name": "A. Li",
       "country": "",
       "flag": "",
       "seed": "",
@@ -340,12 +275,46 @@
       "elo": null,
       "form": [
         "W",
-        "L",
+        "W",
         "L",
         "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/590_z-zhang.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/40225_c-li.jpg"
+    },
+    "shihan": {
+      "id": "shihan",
+      "name": "S. Han",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/101774_j-han.jpg"
+    },
+    "leylahfernandez": {
+      "id": "leylahfernandez",
+      "name": "L. Fernandez",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/15921_m-fernandez.jpg"
     },
     "miapohankova": {
       "id": "miapohankova",
@@ -362,9 +331,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/61034_m-pohankova.jpg"
     },
-    "xiyuwang": {
-      "id": "xiyuwang",
-      "name": "X. Wang",
+    "mariasakkari": {
+      "id": "mariasakkari",
+      "name": "M. Sakkari",
       "country": "",
       "flag": "",
       "seed": "",
@@ -375,9 +344,104 @@
         "L",
         "W",
         "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2076_m-sakkari.jpg"
+    },
+    "hanyuguo": {
+      "id": "hanyuguo",
+      "name": "H. Guo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101798_x-wang.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/7931_h-guo.jpg"
+    },
+    "marinabassolsrib": {
+      "id": "marinabassolsrib",
+      "name": "M. Bassols Ribera",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [],
+      "photo": "https://api.api-tennis.com/logo-tennis/135_m-ribera.jpg"
+    },
+    "francescacurmi": {
+      "id": "francescacurmi",
+      "name": "F. Curmi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/145_f-curmi.jpg"
+    },
+    "dominicstricker": {
+      "id": "dominicstricker",
+      "name": "D. Stricker",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/379_d-stricker.jpg"
+    },
+    "philiphenning": {
+      "id": "philiphenning",
+      "name": "P. Henning",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/23664_p-henning.jpg"
+    },
+    "hanshi": {
+      "id": "hanshi",
+      "name": "H. Shi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/38097_h-shi.jpg"
     },
     "ivajovic": {
       "id": "ivajovic",
@@ -476,6 +540,38 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1910_i-swiatek.jpg"
     },
+    "boticvandezandsc": {
+      "id": "boticvandezandsc",
+      "name": "B. van de Zandschulp",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2972_b-vandezandschulp.jpg"
+    },
+    "rafaeljodar": {
+      "id": "rafaeljodar",
+      "name": "R. Jodar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
+    },
     "sonaykartal": {
       "id": "sonaykartal",
       "name": "S. Kartal",
@@ -537,111 +633,25 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1127_c-mcnally.jpg"
     },
-    "shihan": {
-      "id": "shihan",
-      "name": "S. Han",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/101774_j-han.jpg"
-    },
-    "leylahfernandez": {
-      "id": "leylahfernandez",
-      "name": "L. Fernandez",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/15921_m-fernandez.jpg"
-    },
-    "camilaosorio": {
-      "id": "camilaosorio",
-      "name": "C. Osorio",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2390_c-osorio.jpg"
-    },
-    "hanshi": {
-      "id": "hanshi",
-      "name": "H. Shi",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/38097_h-shi.jpg"
-    },
-    "facundodiazacost": {
-      "id": "facundodiazacost",
-      "name": "F. Diaz Acosta",
+    "casperruud": {
+      "id": "casperruud",
+      "name": "C. Ruud",
       "country": "",
       "flag": "",
       "seed": "",
       "tour": "atp",
       "elo": null,
       "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2002_f-acosta.jpg"
-    },
-    "shintaromochizuk": {
-      "id": "shintaromochizuk",
-      "name": "S. Mochizuki",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
         "L",
         "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1880_s-mochizuki.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/430_c-ruud.jpg"
     },
-    "adamwalton": {
-      "id": "adamwalton",
-      "name": "A. Walton",
+    "felixaugeraliass": {
+      "id": "felixaugeraliass",
+      "name": "F. Auger-Aliassime",
       "country": "",
       "flag": "",
       "seed": "",
@@ -654,350 +664,7 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/10070_a-walton.jpg"
-    },
-    "marincilic": {
-      "id": "marincilic",
-      "name": "M. Cilic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2167_m-cilic.jpg"
-    },
-    "qinwenzheng": {
-      "id": "qinwenzheng",
-      "name": "Q. Zheng",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9515_m-zheng.jpg"
-    },
-    "annakalinskaya": {
-      "id": "annakalinskaya",
-      "name": "A. Kalinskaya",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1820_a-kalinskaya.jpg"
-    },
-    "cristinabucsa": {
-      "id": "cristinabucsa",
-      "name": "C. Bucsa",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/454_c-bucsa.jpg"
-    },
-    "katieboulter": {
-      "id": "katieboulter",
-      "name": "K. Boulter",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2993_k-boulter.jpg"
-    },
-    "dianashnaider": {
-      "id": "dianashnaider",
-      "name": "D. Shnaider",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/7403_d-shnaider.jpg"
-    },
-    "guohanyu": {
-      "id": "guohanyu",
-      "name": "G. Hanyu",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": []
-    },
-    "soranacirstea": {
-      "id": "soranacirstea",
-      "name": "S. Cirstea",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1150_s-cirstea.jpg"
-    },
-    "katerinasiniakov": {
-      "id": "katerinasiniakov",
-      "name": "K. Siniakova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/3006_k-siniakova.jpg"
-    },
-    "kimberlybirrell": {
-      "id": "kimberlybirrell",
-      "name": "K. Birrell",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/92_k-birrell.jpg"
-    },
-    "katievolynets": {
-      "id": "katievolynets",
-      "name": "K. Volynets",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2826_k-volynets.jpg"
-    },
-    "lillitagger": {
-      "id": "lillitagger",
-      "name": "L. Tagger",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/53046_l-tagger.jpg"
-    },
-    "nikolabartunkova": {
-      "id": "nikolabartunkova",
-      "name": "N. Bartunkova",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9196_n-bartunkova.jpg"
-    },
-    "mayarsherif": {
-      "id": "mayarsherif",
-      "name": "M. Sherif",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/510_m-sherif.jpg"
-    },
-    "majachwalinska": {
-      "id": "majachwalinska",
-      "name": "M. Chwalinska",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1434_m-chwalinska.jpg"
-    },
-    "yuliaputintseva": {
-      "id": "yuliaputintseva",
-      "name": "Y. Putintseva",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2177_y-putintseva.jpg"
-    },
-    "zeynepsonmez": {
-      "id": "zeynepsonmez",
-      "name": "Z. Sonmez",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/4062_z-sonmez.jpg"
-    },
-    "hanyuguo": {
-      "id": "hanyuguo",
-      "name": "H. Guo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/7931_h-guo.jpg"
-    },
-    "alexdeminaur": {
-      "id": "alexdeminaur",
-      "name": "A. de Minaur",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
-    },
-    "karenkhachanov": {
-      "id": "karenkhachanov",
-      "name": "K. Khachanov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/435_k-khachanov.jpg"
-    },
-    "arthurgea": {
-      "id": "arthurgea",
-      "name": "A. Gea",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9210_a-gea.jpg"
-    },
-    "jakubmensik": {
-      "id": "jakubmensik",
-      "name": "J. Mensik",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/902_j-mensik.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2073_f-auger-aliassime.jpg"
     }
   },
   "BOOKS": {
@@ -1009,39 +676,39 @@
     },
     "unibet": {
       "id": "unibet",
-      "name": "Unibet (FR)",
+      "name": "Unibet (NL)",
       "abbr": "UNI",
       "color": "#0a7d3c"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#0a2d6e"
-    },
-    "winamax": {
-      "id": "winamax",
-      "name": "Winamax (FR)",
-      "abbr": "WIN",
-      "color": "#14805e"
-    },
-    "pinnacle": {
-      "id": "pinnacle",
-      "name": "Pinnacle",
-      "abbr": "PIN",
-      "color": "#d11a2a"
     },
     "leovegas": {
       "id": "leovegas",
       "name": "LeoVegas (SE)",
       "abbr": "LEO",
+      "color": "#0a2d6e"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#ffb000"
+    },
+    "matchbook": {
+      "id": "matchbook",
+      "name": "Matchbook",
+      "abbr": "MAT",
+      "color": "#0a6cff"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
       "color": "#1c1c1c"
     },
-    "williamhill": {
-      "id": "williamhill",
-      "name": "William Hill",
-      "abbr": "WIL",
-      "color": "#d9730d"
+    "winamax": {
+      "id": "winamax",
+      "name": "Winamax (FR)",
+      "abbr": "WIN",
+      "color": "#7a4ddb"
     },
     "888sport": {
       "id": "888sport",
@@ -1049,17 +716,23 @@
       "abbr": "888",
       "color": "#e23b2e"
     },
-    "matchbook": {
-      "id": "matchbook",
-      "name": "Matchbook",
-      "abbr": "MAT",
+    "williamhill": {
+      "id": "williamhill",
+      "name": "William Hill",
+      "abbr": "WIL",
       "color": "#0a7d3c"
+    },
+    "pinnacle": {
+      "id": "pinnacle",
+      "name": "Pinnacle",
+      "abbr": "PIN",
+      "color": "#0a2d6e"
     },
     "betclic": {
       "id": "betclic",
       "name": "Betclic (FR)",
       "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#14805e"
     },
     "888sportca": {
       "id": "888sportca",
@@ -1079,63 +752,15 @@
       "abbr": "BET",
       "color": "#e23b2e"
     },
-    "betano": {
-      "id": "betano",
-      "name": "betano",
-      "abbr": "BET",
-      "color": "#0a2d6e"
-    },
-    "betanobg": {
-      "id": "betanobg",
-      "name": "betano.bg",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "betanoca": {
-      "id": "betanoca",
-      "name": "betano.ca",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
     "betanocz": {
       "id": "betanocz",
       "name": "betano.cz",
       "abbr": "BET",
-      "color": "#d11a2a"
-    },
-    "betanomx": {
-      "id": "betanomx",
-      "name": "betano.mx",
-      "abbr": "BET",
-      "color": "#7a4ddb"
-    },
-    "betanope": {
-      "id": "betanope",
-      "name": "betano.pe",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
-    "betanopt": {
-      "id": "betanopt",
-      "name": "betano.pt",
-      "abbr": "BET",
-      "color": "#e23b2e"
-    },
-    "betanoro": {
-      "id": "betanoro",
-      "name": "betano.ro",
-      "abbr": "BET",
-      "color": "#0a7d3c"
+      "color": "#0a2d6e"
     },
     "betfred": {
       "id": "betfred",
       "name": "betfred",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "betsson",
       "abbr": "BET",
       "color": "#ffb000"
     },
@@ -1167,7 +792,49 @@
       "id": "williamhillnj",
       "name": "williamhill-nj",
       "abbr": "WIL",
-      "color": "#0a2d6e"
+      "color": "#ffb000"
+    },
+    "betano": {
+      "id": "betano",
+      "name": "betano",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "betanobg": {
+      "id": "betanobg",
+      "name": "betano.bg",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betanoca": {
+      "id": "betanoca",
+      "name": "betano.ca",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "betanomx": {
+      "id": "betanomx",
+      "name": "betano.mx",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
+    "betanope": {
+      "id": "betanope",
+      "name": "betano.pe",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "betanopt": {
+      "id": "betanopt",
+      "name": "betano.pt",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "betanoro": {
+      "id": "betanoro",
+      "name": "betano.ro",
+      "abbr": "BET",
+      "color": "#0a6cff"
     },
     "paddypower": {
       "id": "paddypower",
@@ -1183,1196 +850,6 @@
     }
   },
   "MATCHES": [
-    {
-      "id": "97d66b459517d34fc704b84d724d1fc9",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "annli",
-      "away": "qinwenzheng",
-      "odds": {
-        "home": {
-          "unibet": 2.9,
-          "leovegas": 2.9
-        },
-        "away": {
-          "unibet": 1.41,
-          "leovegas": 1.41
-        }
-      },
-      "model": {
-        "home": 0.3923389358731802,
-        "away": 0.6076610641268199,
-        "fromModel": true,
-        "eloH": 1857,
-        "eloA": 1933,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "9ac3c8445cd97600ad2bfeddb08ab298",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "annakalinskaya",
-      "away": "shuaizhang",
-      "odds": {
-        "home": {
-          "pinnacle": 1.42,
-          "unibet": 1.4,
-          "1xbet": 1.41,
-          "winamax": 1.39,
-          "betclic": 1.35,
-          "leovegas": 1.4,
-          "betsson": 1.4
-        },
-        "away": {
-          "pinnacle": 3.07,
-          "unibet": 2.95,
-          "1xbet": 2.9,
-          "winamax": 2.95,
-          "betclic": 2.75,
-          "leovegas": 2.95,
-          "betsson": 3
-        }
-      },
-      "model": {
-        "home": 0.6185841220890307,
-        "away": 0.3814158779109693,
-        "fromModel": true,
-        "eloH": 1852,
-        "eloA": 1768,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "07ed704dea4dc8fe57d666b30315d078",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "belindabencic",
-      "away": "shuaizhang",
-      "odds": {
-        "home": {
-          "unibet": 1.2,
-          "leovegas": 1.2
-        },
-        "away": {
-          "unibet": 4.6,
-          "leovegas": 4.6
-        }
-      },
-      "model": {
-        "home": 0.7659946707664889,
-        "away": 0.23400532923351114,
-        "fromModel": true,
-        "eloH": 1974,
-        "eloA": 1768,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "58a05f658522b6d5023cf97d25398dd0",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "dayanayastremska",
-      "away": "cristinabucsa",
-      "odds": {
-        "home": {
-          "unibet": 1.68,
-          "betsson": 1.72,
-          "1xbet": 1.73,
-          "888sport": 1.73,
-          "pinnacle": 1.79,
-          "betfair": 1.81,
-          "winamax": 1.72,
-          "betclic": 1.65,
-          "leovegas": 1.68,
-          "williamhill": 1.73
-        },
-        "away": {
-          "unibet": 2.17,
-          "betsson": 2.13,
-          "1xbet": 2.1,
-          "888sport": 2.1,
-          "pinnacle": 2.13,
-          "betfair": 2.2,
-          "winamax": 2.1,
-          "betclic": 2.02,
-          "leovegas": 2.17,
-          "williamhill": 2.1
-        }
-      },
-      "model": {
-        "home": 0.4555054269169921,
-        "away": 0.544494573083008,
-        "fromModel": true,
-        "eloH": 1820,
-        "eloA": 1851,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "edb71f781bacf9149fb99fe258f18a77",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "katieboulter",
-      "away": "dianashnaider",
-      "odds": {
-        "home": {
-          "unibet": 3.85,
-          "1xbet": 3.85,
-          "betsson": 3.9,
-          "888sport": 4,
-          "pinnacle": 4.22,
-          "betfair": 4.3,
-          "winamax": 3.85,
-          "betclic": 3.5,
-          "leovegas": 3.85,
-          "williamhill": 4
-        },
-        "away": {
-          "unibet": 1.26,
-          "1xbet": 1.26,
-          "betsson": 1.26,
-          "888sport": 1.25,
-          "pinnacle": 1.26,
-          "betfair": 1.27,
-          "winamax": 1.26,
-          "betclic": 1.23,
-          "leovegas": 1.26,
-          "williamhill": 1.25
-        }
-      },
-      "model": {
-        "home": 0.4327711556570478,
-        "away": 0.5672288443429522,
-        "fromModel": true,
-        "eloH": 1774,
-        "eloA": 1821,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "b656aa0b1d9d8a618a4fea56f0f42777",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "guohanyu",
-      "away": "soranacirstea",
-      "odds": {
-        "home": {
-          "unibet": 6.75,
-          "betsson": 6,
-          "1xbet": 6.2,
-          "888sport": 6,
-          "pinnacle": 6.8,
-          "betfair": 7.6,
-          "winamax": 6,
-          "betclic": 5.2,
-          "leovegas": 6.75,
-          "williamhill": 6
-        },
-        "away": {
-          "unibet": 1.11,
-          "betsson": 1.13,
-          "1xbet": 1.12,
-          "888sport": 1.12,
-          "pinnacle": 1.12,
-          "betfair": 1.13,
-          "winamax": 1.12,
-          "betclic": 1.1,
-          "leovegas": 1.11,
-          "williamhill": 1.12
-        }
-      },
-      "model": {
-        "home": 0.2268600869232327,
-        "away": 0.7731399130767673,
-        "fromModel": true,
-        "eloH": 1705,
-        "eloA": 1918,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "151c74daf0dab5e36cb9e4534b7ee96e",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "katerinasiniakov",
-      "away": "liudmilasamsonov",
-      "odds": {
-        "home": {
-          "unibet": 2.02,
-          "betsson": 2.02,
-          "1xbet": 2,
-          "888sport": 2,
-          "pinnacle": 2.03,
-          "betfair": 2.12,
-          "winamax": 2,
-          "betclic": 1.92,
-          "leovegas": 2.02,
-          "williamhill": 2
-        },
-        "away": {
-          "unibet": 1.8,
-          "betsson": 1.8,
-          "1xbet": 1.8,
-          "888sport": 1.8,
-          "pinnacle": 1.86,
-          "betfair": 1.88,
-          "winamax": 1.78,
-          "betclic": 1.72,
-          "leovegas": 1.8,
-          "williamhill": 1.8
-        }
-      },
-      "model": {
-        "home": 0.39646368147382194,
-        "away": 0.6035363185261781,
-        "fromModel": true,
-        "eloH": 1835,
-        "eloA": 1908,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "42aa77fdd076af7d95fbe56b34077fa9",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "kimberlybirrell",
-      "away": "katievolynets",
-      "odds": {
-        "home": {
-          "pinnacle": 2.56,
-          "unibet": 2.33,
-          "betfair": 2.64,
-          "winamax": 2.45,
-          "888sport": 2.5,
-          "1xbet": 2.4,
-          "betclic": 2.34,
-          "leovegas": 2.33,
-          "betsson": 2.5,
-          "williamhill": 2.5
-        },
-        "away": {
-          "pinnacle": 1.56,
-          "unibet": 1.6,
-          "betfair": 1.56,
-          "winamax": 1.54,
-          "888sport": 1.53,
-          "1xbet": 1.57,
-          "betclic": 1.49,
-          "leovegas": 1.6,
-          "betsson": 1.54,
-          "williamhill": 1.53
-        }
-      },
-      "model": {
-        "home": 0.5186997779295586,
-        "away": 0.48130022207044143,
-        "fromModel": true,
-        "eloH": 1766,
-        "eloA": 1753,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "ca8f67b4ba7f6878893aa698d93db921",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "lillitagger",
-      "away": "nikolabartunkova",
-      "odds": {
-        "home": {
-          "unibet": 3.05,
-          "1xbet": 3,
-          "betsson": 3.05,
-          "888sport": 2.9,
-          "pinnacle": 3.15,
-          "betfair": 3.2,
-          "winamax": 3,
-          "betclic": 2.8,
-          "leovegas": 3.05,
-          "williamhill": 2.9
-        },
-        "away": {
-          "unibet": 1.38,
-          "1xbet": 1.39,
-          "betsson": 1.39,
-          "888sport": 1.4,
-          "pinnacle": 1.4,
-          "betfair": 1.41,
-          "winamax": 1.38,
-          "betclic": 1.35,
-          "leovegas": 1.38,
-          "williamhill": 1.4
-        }
-      },
-      "model": {
-        "home": 0.45265148195413535,
-        "away": 0.5473485180458646,
-        "fromModel": true,
-        "eloH": 1744,
-        "eloA": 1777,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "b47ce561a7388026c9ba2f638d8612da",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "mayarsherif",
-      "away": "majachwalinska",
-      "odds": {
-        "home": {
-          "unibet": 4.25,
-          "betsson": 4.1,
-          "1xbet": 4.04,
-          "888sport": 4,
-          "pinnacle": 4.43,
-          "betfair": 4.7,
-          "winamax": 4,
-          "betclic": 3.7,
-          "leovegas": 4.25,
-          "williamhill": 4
-        },
-        "away": {
-          "unibet": 1.22,
-          "betsson": 1.24,
-          "1xbet": 1.24,
-          "888sport": 1.25,
-          "pinnacle": 1.25,
-          "betfair": 1.25,
-          "winamax": 1.24,
-          "betclic": 1.21,
-          "leovegas": 1.22,
-          "williamhill": 1.25
-        }
-      },
-      "model": {
-        "home": 0.626699081666732,
-        "away": 0.37330091833326795,
-        "fromModel": true,
-        "eloH": 1740,
-        "eloA": 1650,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "dad2fbbaadd0a4e15819fe57214f9aa2",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "yuliaputintseva",
-      "away": "zeynepsonmez",
-      "odds": {
-        "home": {
-          "pinnacle": 1.86,
-          "unibet": 1.72,
-          "betfair": 1.88,
-          "winamax": 1.78,
-          "888sport": 1.85,
-          "1xbet": 1.76,
-          "betclic": 1.72,
-          "leovegas": 1.72,
-          "betsson": 1.79,
-          "williamhill": 1.85
-        },
-        "away": {
-          "pinnacle": 2.01,
-          "unibet": 2.12,
-          "betfair": 2.06,
-          "winamax": 2,
-          "888sport": 1.95,
-          "1xbet": 2.05,
-          "betclic": 1.93,
-          "leovegas": 2.12,
-          "betsson": 2.03,
-          "williamhill": 1.95
-        }
-      },
-      "model": {
-        "home": 0.47842666694885455,
-        "away": 0.5215733330511454,
-        "fromModel": true,
-        "eloH": 1774,
-        "eloA": 1789,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "opid1201111775469418",
-      "tour": "wta",
-      "event": "WTA Wuhan, China Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "04:00",
-      "day": "13 OCT",
-      "home": "hanyuguo",
-      "away": "soranacirstea",
-      "odds": {
-        "home": {
-          "1xbet": 6.2,
-          "888sport": 6,
-          "888sportca": 6,
-          "bet365": 5.5,
-          "bet365nj": 5.5,
-          "betano": 5.6,
-          "betanobg": 5.6,
-          "betanoca": 5.6,
-          "betanocz": 5.8,
-          "betanomx": 5.6,
-          "betanope": 5.6,
-          "betanopt": 5.6,
-          "betanoro": 5.6,
-          "betfair": 7.6,
-          "betfred": 6,
-          "betsson": 6,
-          "betway": 7,
-          "bwin": 6.25,
-          "codere": 5.5,
-          "leovegas": 6.75,
-          "oddset": 6.25,
-          "pinnacle": 6.8,
-          "unibet": 6.75,
-          "williamhill": 5.5,
-          "williamhillnj": 5.5,
-          "winamax": 6
-        },
-        "away": {
-          "1xbet": 1.117,
-          "888sport": 1.125,
-          "888sportca": 1.125,
-          "bet365": 1.11,
-          "bet365nj": 1.11,
-          "betano": 1.14,
-          "betanobg": 1.14,
-          "betanoca": 1.14,
-          "betanocz": 1.14,
-          "betanomx": 1.14,
-          "betanope": 1.14,
-          "betanopt": 1.14,
-          "betanoro": 1.14,
-          "betfair": 1.13,
-          "betfred": 1.125,
-          "betsson": 1.13,
-          "betway": 1.1,
-          "bwin": 1.11,
-          "codere": 1.11,
-          "leovegas": 1.11,
-          "oddset": 1.11,
-          "pinnacle": 1.124,
-          "unibet": 1.11,
-          "williamhill": 1.125,
-          "williamhillnj": 1.125,
-          "winamax": 1.12
-        }
-      },
-      "model": {
-        "home": 0.2179019838686814,
-        "away": 0.7820980161313186,
-        "fromModel": true,
-        "eloH": 1696,
-        "eloA": 1918,
-        "surface": "hard"
-      },
-      "ts": 1791856800000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "caf387c8fabf2e7526a93321c6ebfb2d",
-      "tour": "atp",
-      "event": "Atp Shanghai Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "06:00",
-      "day": "13 OCT",
-      "home": "alexdeminaur",
-      "away": "karenkhachanov",
-      "odds": {
-        "home": {
-          "williamhill": 1.67,
-          "unibet": 1.66,
-          "betfair": 1.75,
-          "888sport": 1.67,
-          "1xbet": 1.67,
-          "winamax": 1.66,
-          "betsson": 1.67,
-          "pinnacle": 1.71,
-          "leovegas": 1.66,
-          "matchbook": 1.75
-        },
-        "away": {
-          "williamhill": 2.2,
-          "unibet": 2.23,
-          "betfair": 2.28,
-          "888sport": 2.2,
-          "1xbet": 2.25,
-          "winamax": 2.2,
-          "betsson": 2.21,
-          "pinnacle": 2.24,
-          "leovegas": 2.23,
-          "matchbook": 2.3
-        }
-      },
-      "model": {
-        "home": 0.47555453887933863,
-        "away": 0.5244454611206614,
-        "fromModel": true,
-        "eloH": 1937,
-        "eloA": 1954,
-        "surface": "hard"
-      },
-      "ts": 1791864000000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "f40a4027ec6234e8e3a47359c9444700",
-      "tour": "atp",
-      "event": "Atp Shanghai Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "07:10",
-      "day": "13 OCT",
-      "home": "arthurgea",
-      "away": "jakubmensik",
-      "odds": {
-        "home": {
-          "winamax": 2.45,
-          "unibet": 2.55,
-          "1xbet": 2.54,
-          "betsson": 2.48,
-          "leovegas": 2.55,
-          "betfair": 2.6,
-          "888sport": 2.5,
-          "williamhill": 2.5,
-          "pinnacle": 2.6,
-          "matchbook": 2.6
-        },
-        "away": {
-          "winamax": 1.54,
-          "unibet": 1.5,
-          "1xbet": 1.54,
-          "betsson": 1.55,
-          "leovegas": 1.5,
-          "betfair": 1.6,
-          "888sport": 1.53,
-          "williamhill": 1.53,
-          "pinnacle": 1.55,
-          "matchbook": 1.6
-        }
-      },
-      "model": {
-        "home": 0.308763847585237,
-        "away": 0.691236152414763,
-        "fromModel": true,
-        "eloH": 1731,
-        "eloA": 1871,
-        "surface": "hard"
-      },
-      "ts": 1791868200000,
-      "sofa": null,
-      "live": true
-    },
-    {
-      "id": "7e81b8fa6053163c7a3ad655a5b24a4a",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "09:10",
-      "day": "13 OCT",
-      "home": "dariakasatkina",
-      "away": "jelenaostapenko",
-      "odds": {
-        "home": {
-          "pinnacle": 2.19,
-          "unibet": 2.08,
-          "betfair": 2.24,
-          "winamax": 2.15,
-          "888sport": 2.1,
-          "1xbet": 2.15,
-          "betclic": 2.15,
-          "williamhill": 2.1,
-          "leovegas": 2.08
-        },
-        "away": {
-          "pinnacle": 1.75,
-          "unibet": 1.75,
-          "betfair": 1.79,
-          "winamax": 1.74,
-          "888sport": 1.73,
-          "1xbet": 1.73,
-          "betclic": 1.66,
-          "williamhill": 1.73,
-          "leovegas": 1.75
-        }
-      },
-      "model": {
-        "home": 0.3868631798468569,
-        "away": 0.6131368201531431,
-        "fromModel": true,
-        "eloH": 1823,
-        "eloA": 1903,
-        "surface": "hard"
-      },
-      "ts": 1791875400000,
-      "sofa": null
-    },
-    {
-      "id": "opid1201562875477966",
-      "tour": "atp",
-      "event": "ATP Challenger Jinan, China Men Singles",
-      "round": "",
-      "surface": "Hierba",
-      "time": "09:10",
-      "day": "13 OCT",
-      "home": "facundodiazacost",
-      "away": "shintaromochizuk",
-      "odds": {
-        "home": {
-          "888sport": 1.667,
-          "888sportca": 1.667,
-          "bet365": 1.58,
-          "bet365nj": 1.58,
-          "betano": 1.62,
-          "betanobg": 1.62,
-          "betanoca": 1.62,
-          "betanomx": 1.62,
-          "betanope": 1.62,
-          "betanopt": 1.57,
-          "betanoro": 1.62,
-          "betfair": 1.74,
-          "betfred": 1.615,
-          "betsson": 1.61,
-          "betway": 1.6,
-          "bwin": 1.62,
-          "codere": 1.57,
-          "leovegas": 1.62,
-          "oddset": 1.62,
-          "pinnacle": 1.714,
-          "unibet": 1.61,
-          "williamhill": 1.667,
-          "winamax": 1.62
-        },
-        "away": {
-          "888sport": 2.1,
-          "888sportca": 2.1,
-          "bet365": 2.2,
-          "bet365nj": 2.2,
-          "betano": 2.2,
-          "betanobg": 2.2,
-          "betanoca": 2.2,
-          "betanomx": 2.2,
-          "betanope": 2.2,
-          "betanopt": 2.07,
-          "betanoro": 2.2,
-          "betfair": 2.3,
-          "betfred": 2.2,
-          "betsson": 2.18,
-          "betway": 2.2,
-          "bwin": 2.15,
-          "codere": 2.15,
-          "leovegas": 2.25,
-          "oddset": 2.15,
-          "pinnacle": 2.22,
-          "unibet": 2.25,
-          "williamhill": 2.2,
-          "winamax": 2.2
-        }
-      },
-      "model": {
-        "home": 0.24768500639431762,
-        "away": 0.7523149936056823,
-        "fromModel": true,
-        "eloH": 1514,
-        "eloA": 1707,
-        "surface": "grass"
-      },
-      "ts": 1791875400000,
-      "sofa": 17302009
-    },
-    {
-      "id": "opid1201562875477962",
-      "tour": "atp",
-      "event": "ATP Challenger Jinan, China Men Singles",
-      "round": "",
-      "surface": "Hierba",
-      "time": "09:20",
-      "day": "13 OCT",
-      "home": "adamwalton",
-      "away": "marincilic",
-      "odds": {
-        "home": {
-          "888sport": 1.727,
-          "888sportca": 1.727,
-          "bet365": 1.8,
-          "bet365nj": 1.8,
-          "betanocz": 1.78,
-          "betanopt": 1.7,
-          "betfair": 1.89,
-          "betfred": 1.8,
-          "betsson": 1.82,
-          "betway": 1.75,
-          "bwin": 1.75,
-          "leovegas": 1.89,
-          "oddset": 1.75,
-          "pinnacle": 1.819,
-          "unibet": 1.89,
-          "winamax": 1.86
-        },
-        "away": {
-          "888sport": 2,
-          "888sportca": 2,
-          "bet365": 1.8,
-          "bet365nj": 1.8,
-          "betanocz": 1.93,
-          "betanopt": 1.87,
-          "betfair": 2.08,
-          "betfred": 1.909,
-          "betsson": 1.89,
-          "betway": 1.95,
-          "bwin": 1.95,
-          "leovegas": 1.92,
-          "oddset": 1.95,
-          "pinnacle": 2.07,
-          "unibet": 1.87,
-          "winamax": 1.86
-        }
-      },
-      "model": {
-        "home": 0.422907524174671,
-        "away": 0.5770924758253291,
-        "fromModel": true,
-        "eloH": 1764,
-        "eloA": 1818,
-        "surface": "grass"
-      },
-      "ts": 1791876000000,
-      "sofa": 17302007
-    },
-    {
-      "id": "6249729c3a053b2b04a71c7ebb8a5592",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "09:30",
-      "day": "13 OCT",
-      "home": "dariasnigur",
-      "away": "elisemertens",
-      "odds": {
-        "home": {
-          "unibet": 2.8,
-          "1xbet": 2.7,
-          "888sport": 2.75,
-          "pinnacle": 2.88,
-          "betfair": 2.96,
-          "winamax": 2.75,
-          "betclic": 2.75,
-          "leovegas": 2.7,
-          "williamhill": 2.75
-        },
-        "away": {
-          "unibet": 1.47,
-          "1xbet": 1.49,
-          "888sport": 1.44,
-          "pinnacle": 1.47,
-          "betfair": 1.5,
-          "winamax": 1.49,
-          "betclic": 1.46,
-          "leovegas": 1.47,
-          "williamhill": 1.44
-        }
-      },
-      "model": {
-        "home": 0.2812431701012181,
-        "away": 0.7187568298987819,
-        "fromModel": true,
-        "eloH": 1754,
-        "eloA": 1917,
-        "surface": "hard"
-      },
-      "ts": 1791876600000,
-      "sofa": null
-    },
-    {
-      "id": "33f73b748b59dda8d41b0e03704382dd",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "10:20",
-      "day": "13 OCT",
-      "home": "annli",
-      "away": "mariacamilaosori",
-      "odds": {
-        "home": {
-          "betfair": 1.69,
-          "winamax": 1.7,
-          "betclic": 1.67,
-          "888sport": 1.67,
-          "williamhill": 1.67,
-          "1xbet": 1.67,
-          "pinnacle": 1.68,
-          "leovegas": 1.63,
-          "unibet": 1.63
-        },
-        "away": {
-          "betfair": 2.42,
-          "winamax": 2.25,
-          "betclic": 2.21,
-          "888sport": 2.2,
-          "williamhill": 2.2,
-          "1xbet": 2.25,
-          "pinnacle": 2.31,
-          "leovegas": 2.28,
-          "unibet": 2.28
-        }
-      },
-      "model": {
-        "home": 0.5868950233791,
-        "away": 0.41310497662089996,
-        "fromModel": true,
-        "eloH": 1857,
-        "eloA": 1796,
-        "surface": "hard"
-      },
-      "ts": 1791879600000,
-      "sofa": null
-    },
-    {
-      "id": "opid1201111775531764",
-      "tour": "wta",
-      "event": "WTA Wuhan, China Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "10:20",
-      "day": "13 OCT",
-      "home": "annli",
-      "away": "camilaosorio",
-      "odds": {
-        "home": {
-          "1xbet": 1.703,
-          "888sport": 1.667,
-          "888sportca": 1.667,
-          "bet365": 1.63,
-          "bet365nj": 1.63,
-          "betano": 1.67,
-          "betanobg": 1.67,
-          "betanoca": 1.67,
-          "betanocz": 1.67,
-          "betanomx": 1.67,
-          "betanope": 1.67,
-          "betanopt": 1.65,
-          "betanoro": 1.67,
-          "betfair": 1.69,
-          "betfred": 1.667,
-          "betsson": 1.67,
-          "betway": 1.65,
-          "bwin": 1.67,
-          "codere": 1.65,
-          "leovegas": 1.65,
-          "oddset": 1.67,
-          "pinnacle": 1.675,
-          "unibet": 1.63,
-          "williamhill": 1.667,
-          "winamax": 1.7
-        },
-        "away": {
-          "1xbet": 2.2,
-          "888sport": 2.2,
-          "888sportca": 2.2,
-          "bet365": 2.2,
-          "bet365nj": 2.2,
-          "betano": 2.18,
-          "betanobg": 2.18,
-          "betanoca": 2.18,
-          "betanocz": 2.2,
-          "betanomx": 2.18,
-          "betanope": 2.18,
-          "betanopt": 2.18,
-          "betanoro": 2.18,
-          "betfair": 2.42,
-          "betfred": 2.2,
-          "betsson": 2.21,
-          "betway": 2.25,
-          "bwin": 2.18,
-          "codere": 2.2,
-          "leovegas": 2.28,
-          "oddset": 2.18,
-          "pinnacle": 2.31,
-          "unibet": 2.28,
-          "williamhill": 2.2,
-          "winamax": 2.25
-        }
-      },
-      "model": {
-        "home": 0.6519120398746636,
-        "away": 0.3480879601253364,
-        "fromModel": true,
-        "eloH": 1857,
-        "eloA": 1748,
-        "surface": "hard"
-      },
-      "ts": 1791879600000,
-      "sofa": 17311720
-    },
-    {
-      "id": "ac951eec8a949a45f8e37eb5cd117ac1",
-      "tour": "atp",
-      "event": "Atp Shanghai Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "12:00",
-      "day": "13 OCT",
-      "home": "alexanderzverev",
-      "away": "alexanderbublik",
-      "odds": {
-        "home": {
-          "betfair": 1.38,
-          "unibet": 1.36,
-          "1xbet": 1.38,
-          "winamax": 1.36,
-          "pinnacle": 1.39,
-          "leovegas": 1.36,
-          "williamhill": 1.36,
-          "888sport": 1.36,
-          "matchbook": 1.38
-        },
-        "away": {
-          "betfair": 3.55,
-          "unibet": 3.3,
-          "1xbet": 3.17,
-          "winamax": 3.35,
-          "pinnacle": 3.28,
-          "leovegas": 3.15,
-          "williamhill": 3.1,
-          "888sport": 3.1,
-          "matchbook": 3.55
-        }
-      },
-      "model": {
-        "home": 0.584100958813678,
-        "away": 0.41589904118632204,
-        "fromModel": true,
-        "eloH": 2061,
-        "eloA": 2002,
-        "surface": "hard"
-      },
-      "ts": 1791885600000,
-      "sofa": null
-    },
-    {
-      "id": "07cc0e9af0210195f176fbeae6ec7b9b",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "13:00",
-      "day": "13 OCT",
-      "home": "ashlynkrueger",
-      "away": "shuaizhang",
-      "odds": {
-        "home": {
-          "unibet": 1.62,
-          "betfair": 1.77,
-          "betclic": 1.66,
-          "888sport": 1.73,
-          "williamhill": 1.73,
-          "winamax": 1.68,
-          "1xbet": 1.66,
-          "pinnacle": 1.72,
-          "leovegas": 1.62
-        },
-        "away": {
-          "unibet": 2.3,
-          "betfair": 2.28,
-          "betclic": 2.24,
-          "888sport": 2.1,
-          "williamhill": 2.1,
-          "winamax": 2.25,
-          "1xbet": 2.27,
-          "pinnacle": 2.23,
-          "leovegas": 2.3
-        }
-      },
-      "model": {
-        "home": 0.4441090388831469,
-        "away": 0.5558909611168531,
-        "fromModel": true,
-        "eloH": 1729,
-        "eloA": 1768,
-        "surface": "hard"
-      },
-      "ts": 1791889200000,
-      "sofa": null
-    },
-    {
-      "id": "9115ec9d559da806d8a0829db60d9a51",
-      "tour": "atp",
-      "event": "Atp Shanghai Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "13:10",
-      "day": "13 OCT",
-      "home": "huberthurkacz",
-      "away": "alejandrodavidov",
-      "odds": {
-        "home": {
-          "unibet": 1.82,
-          "1xbet": 1.88,
-          "winamax": 1.86,
-          "betfair": 1.93,
-          "leovegas": 1.82,
-          "888sport": 1.85,
-          "williamhill": 1.85,
-          "pinnacle": 1.9,
-          "matchbook": 1.93
-        },
-        "away": {
-          "unibet": 1.97,
-          "1xbet": 1.97,
-          "winamax": 2,
-          "betfair": 2.06,
-          "leovegas": 1.97,
-          "888sport": 1.95,
-          "williamhill": 1.95,
-          "pinnacle": 2.01,
-          "matchbook": 2.06
-        }
-      },
-      "model": {
-        "home": 0.5344839447268315,
-        "away": 0.4655160552731685,
-        "fromModel": true,
-        "eloH": 1951,
-        "eloA": 1927,
-        "surface": "hard"
-      },
-      "ts": 1791889800000,
-      "sofa": null
-    },
-    {
-      "id": "d2145777e13e48242f882a542c6f29de",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "14:30",
-      "day": "13 OCT",
-      "home": "miapohankova",
-      "away": "xiyuwang",
-      "odds": {
-        "home": {
-          "unibet": 2.63,
-          "betfair": 3,
-          "betclic": 2.75,
-          "winamax": 2.7,
-          "williamhill": 2.75,
-          "888sport": 2.75,
-          "leovegas": 2.63,
-          "1xbet": 2.8,
-          "pinnacle": 2.95
-        },
-        "away": {
-          "unibet": 1.49,
-          "betfair": 1.48,
-          "betclic": 1.43,
-          "winamax": 1.46,
-          "williamhill": 1.44,
-          "888sport": 1.44,
-          "leovegas": 1.49,
-          "1xbet": 1.46,
-          "pinnacle": 1.44
-        }
-      },
-      "model": {
-        "home": 0.20261368597229626,
-        "away": 0.7973863140277038,
-        "fromModel": true,
-        "eloH": 1617,
-        "eloA": 1855,
-        "surface": "hard"
-      },
-      "ts": 1791894600000,
-      "sofa": null
-    },
     {
       "id": "opid1201111775373596",
       "tour": "wta",
@@ -2444,7 +921,8 @@
         "surface": "hard"
       },
       "ts": 1791945000000,
-      "sofa": 17275014
+      "sofa": 17275014,
+      "live": true
     },
     {
       "id": "1ae6071eaf06b6532acb5ce1ca528389",
@@ -2477,7 +955,8 @@
         "surface": "hard"
       },
       "ts": 1791946800000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "fd36c3a369709ee7a8259a56adba1ce0",
@@ -2510,7 +989,8 @@
         "surface": "hard"
       },
       "ts": 1791946800000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "84b2b76188bf23330d4c6c7ce5ed25c5",
@@ -2555,7 +1035,8 @@
         "surface": "hard"
       },
       "ts": 1791946800000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "77cd15bc0cd98c5294c57d566ed289c9",
@@ -2600,7 +1081,8 @@
         "surface": "hard"
       },
       "ts": 1791950400000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "4a22193d4d0978eac90ec6ebff702b4f",
@@ -2645,7 +1127,8 @@
         "surface": "hard"
       },
       "ts": 1791950400000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "7371e55de8d189f3b4b1c89ee467aee1",
@@ -2690,50 +1173,8 @@
         "surface": "hard"
       },
       "ts": 1791950400000,
-      "sofa": null
-    },
-    {
-      "id": "52fda1c5d2926648da76673e3b2af4d9",
-      "tour": "wta",
-      "event": "Wta Wuhan Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "06:00",
-      "day": "14 OCT",
-      "home": "shihan",
-      "away": "leylahfernandez",
-      "odds": {
-        "home": {
-          "williamhill": 3.6,
-          "unibet": 3.4,
-          "888sport": 3.6,
-          "betfair": 3.6,
-          "1xbet": 3.33,
-          "winamax": 3.55,
-          "betclic": 3.4,
-          "leovegas": 3.4
-        },
-        "away": {
-          "williamhill": 1.29,
-          "unibet": 1.32,
-          "888sport": 1.29,
-          "betfair": 1.32,
-          "1xbet": 1.35,
-          "winamax": 1.29,
-          "betclic": 1.28,
-          "leovegas": 1.32
-        }
-      },
-      "model": {
-        "home": 0.10193172098897373,
-        "away": 0.8980682790110263,
-        "fromModel": true,
-        "eloH": 1526,
-        "eloA": 1904,
-        "surface": "hard"
-      },
-      "ts": 1791950400000,
-      "sofa": null
+      "sofa": null,
+      "live": true
     },
     {
       "id": "a0fe8d4e228f3926bcb57dc37b2b23ac",
@@ -2778,7 +1219,364 @@
         "surface": "hard"
       },
       "ts": 1791954600000,
+      "sofa": null,
+      "live": true
+    },
+    {
+      "id": "opid1201111775373632",
+      "tour": "wta",
+      "event": "WTA Wuhan, China Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "09:10",
+      "day": "14 OCT",
+      "home": "katievolynets",
+      "away": "hanyuguo",
+      "odds": {
+        "home": {
+          "888sport": 1.222,
+          "888sportca": 1.222,
+          "bet365": 1.17,
+          "bet365nj": 1.17,
+          "betanocz": 1.2,
+          "betfair": 1.27,
+          "betfred": 1.2,
+          "betsson": 1.21,
+          "betway": 1.222,
+          "bwin": 1.22,
+          "codere": 1.2,
+          "leovegas": 1.22,
+          "oddset": 1.22,
+          "unibet": 1.22,
+          "williamhill": 1.2,
+          "williamhillnj": 1.2,
+          "winamax": 1.22
+        },
+        "away": {
+          "888sport": 4.2,
+          "888sportca": 4.2,
+          "bet365": 4.5,
+          "bet365nj": 4.5,
+          "betanocz": 4.65,
+          "betfair": 4.5,
+          "betfred": 4.333,
+          "betsson": 4.5,
+          "betway": 4.25,
+          "bwin": 4.2,
+          "codere": 4.4,
+          "leovegas": 4.4,
+          "oddset": 4.2,
+          "unibet": 4.4,
+          "williamhill": 4.2,
+          "williamhillnj": 4.2,
+          "winamax": 4.7
+        }
+      },
+      "model": {
+        "home": 0.581301478368915,
+        "away": 0.418698521631085,
+        "fromModel": true,
+        "eloH": 1753,
+        "eloA": 1696,
+        "surface": "hard"
+      },
+      "ts": 1791961800000,
+      "sofa": 17275003
+    },
+    {
+      "id": "77bf7eee0e24e6ab30126b1326ef4a83",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "09:20",
+      "day": "14 OCT",
+      "home": "katievolynets",
+      "away": "guohanyu",
+      "odds": {
+        "home": {
+          "betsson": 1.21,
+          "winamax": 1.22,
+          "unibet": 1.22,
+          "1xbet": 1.23,
+          "betclic": 1.17,
+          "betfair": 1.27,
+          "888sport": 1.22,
+          "williamhill": 1.22,
+          "leovegas": 1.22,
+          "pinnacle": 1.22
+        },
+        "away": {
+          "betsson": 4.5,
+          "winamax": 4.7,
+          "unibet": 4.4,
+          "1xbet": 4.41,
+          "betclic": 4.4,
+          "betfair": 4.5,
+          "888sport": 4.2,
+          "williamhill": 4.2,
+          "leovegas": 4.3,
+          "pinnacle": 4.81
+        }
+      },
+      "model": {
+        "home": 0.5686413918836677,
+        "away": 0.4313586081163323,
+        "fromModel": true,
+        "eloH": 1753,
+        "eloA": 1705,
+        "surface": "hard"
+      },
+      "ts": 1791962400000,
       "sofa": null
+    },
+    {
+      "id": "ef8e39fc9a98f42f1d2eebd22d703a10",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "09:20",
+      "day": "14 OCT",
+      "home": "jelenaostapenko",
+      "away": "jessicapegula",
+      "odds": {
+        "home": {
+          "betfair": 3.7,
+          "1xbet": 3.31,
+          "888sport": 3.3,
+          "betsson": 3.1,
+          "winamax": 3.15,
+          "betclic": 3.17,
+          "unibet": 3.2,
+          "williamhill": 3.3,
+          "leovegas": 3.2,
+          "pinnacle": 3.44
+        },
+        "away": {
+          "betfair": 1.37,
+          "1xbet": 1.35,
+          "888sport": 1.33,
+          "betsson": 1.38,
+          "winamax": 1.39,
+          "betclic": 1.34,
+          "unibet": 1.35,
+          "williamhill": 1.33,
+          "leovegas": 1.35,
+          "pinnacle": 1.35
+        }
+      },
+      "model": {
+        "home": 0.39646368147382194,
+        "away": 0.6035363185261781,
+        "fromModel": true,
+        "eloH": 1903,
+        "eloA": 1976,
+        "surface": "hard"
+      },
+      "ts": 1791962400000,
+      "sofa": null
+    },
+    {
+      "id": "opid1204628175374248",
+      "tour": "wta",
+      "event": "WTA 125K Mallorca, Spain Women Singles",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "14 OCT",
+      "home": "marinabassolsrib",
+      "away": "francescacurmi",
+      "odds": {
+        "home": {
+          "888sport": 1.571,
+          "888sportca": 1.571,
+          "bet365": 1.54,
+          "bet365nj": 1.54,
+          "betano": 1.6,
+          "betanobg": 1.6,
+          "betanoca": 1.6,
+          "betanocz": 1.6,
+          "betanomx": 1.6,
+          "betanope": 1.6,
+          "betanopt": 1.6,
+          "betanoro": 1.6,
+          "betfair": 1.67,
+          "betfred": 1.571,
+          "betsson": 1.58,
+          "betway": 1.65,
+          "bwin": 1.57,
+          "codere": 1.57,
+          "leovegas": 1.61,
+          "pinnacle": 1.598,
+          "unibet": 1.61,
+          "williamhill": 1.526,
+          "williamhillnj": 1.526,
+          "winamax": 1.58
+        },
+        "away": {
+          "888sport": 2.25,
+          "888sportca": 2.25,
+          "bet365": 2.25,
+          "bet365nj": 2.25,
+          "betano": 2.22,
+          "betanobg": 2.22,
+          "betanoca": 2.22,
+          "betanocz": 2.22,
+          "betanomx": 2.22,
+          "betanope": 2.22,
+          "betanopt": 2.22,
+          "betanoro": 2.22,
+          "betfair": 2.46,
+          "betfred": 2.25,
+          "betsson": 2.24,
+          "betway": 2.25,
+          "bwin": 2.3,
+          "codere": 2.15,
+          "leovegas": 2.25,
+          "pinnacle": 2.4,
+          "unibet": 2.25,
+          "williamhill": 2.4,
+          "williamhillnj": 2.4,
+          "winamax": 2.25
+        }
+      },
+      "model": {
+        "home": 0.6185841220890307,
+        "away": 0.3814158779109693,
+        "fromModel": true,
+        "eloH": 1720,
+        "eloA": 1636,
+        "surface": "hard"
+      },
+      "ts": 1791964800000,
+      "sofa": 17275123
+    },
+    {
+      "id": "a16736afd506ce5ab2aa4e864db773c2",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:20",
+      "day": "14 OCT",
+      "home": "ashlynkrueger",
+      "away": "lanlanatararudee",
+      "odds": {
+        "home": {
+          "betsson": 1.73,
+          "winamax": 1.74,
+          "betfair": 1.86,
+          "888sport": 1.8,
+          "unibet": 1.75,
+          "williamhill": 1.8,
+          "1xbet": 1.76,
+          "betclic": 1.71,
+          "leovegas": 1.75,
+          "pinnacle": 1.84
+        },
+        "away": {
+          "betsson": 2.13,
+          "winamax": 2.15,
+          "betfair": 2.14,
+          "888sport": 2,
+          "unibet": 2.08,
+          "williamhill": 2,
+          "1xbet": 2.11,
+          "betclic": 2.1,
+          "leovegas": 2.08,
+          "pinnacle": 2.06
+        }
+      },
+      "model": {
+        "home": 0.469815319996098,
+        "away": 0.5301846800039021,
+        "fromModel": true,
+        "eloH": 1729,
+        "eloA": 1750,
+        "surface": "hard"
+      },
+      "ts": 1791966000000,
+      "sofa": null
+    },
+    {
+      "id": "opid1203543675481454",
+      "tour": "atp",
+      "event": "ATP Challenger Roanne, France, Men Singles",
+      "round": "",
+      "surface": "Hierba",
+      "time": "10:30",
+      "day": "14 OCT",
+      "home": "dominicstricker",
+      "away": "philiphenning",
+      "odds": {
+        "home": {
+          "1xbet": 1.38,
+          "888sport": 1.444,
+          "888sportca": 1.444,
+          "bet365": 1.41,
+          "bet365nj": 1.41,
+          "betano": 1.44,
+          "betanobg": 1.44,
+          "betanoca": 1.44,
+          "betanocz": 1.42,
+          "betanomx": 1.44,
+          "betanope": 1.44,
+          "betanopt": 1.39,
+          "betanoro": 1.44,
+          "betfair": 1.47,
+          "betfred": 1.4,
+          "betsson": 1.41,
+          "betway": 1.444,
+          "bwin": 1.42,
+          "codere": 1.4,
+          "leovegas": 1.4,
+          "oddset": 1.42,
+          "pinnacle": 1.467,
+          "unibet": 1.36,
+          "williamhill": 1.455,
+          "williamhillnj": 1.455,
+          "winamax": 1.42
+        },
+        "away": {
+          "1xbet": 2.813,
+          "888sport": 2.625,
+          "888sportca": 2.625,
+          "bet365": 2.62,
+          "bet365nj": 2.62,
+          "betano": 2.67,
+          "betanobg": 2.67,
+          "betanoca": 2.67,
+          "betanocz": 2.65,
+          "betanomx": 2.67,
+          "betanope": 2.67,
+          "betanopt": 2.5,
+          "betanoro": 2.67,
+          "betfair": 3.05,
+          "betfred": 2.75,
+          "betsson": 2.7,
+          "betway": 2.6,
+          "bwin": 2.65,
+          "codere": 2.6,
+          "leovegas": 3.05,
+          "oddset": 2.65,
+          "pinnacle": 2.84,
+          "unibet": 3.05,
+          "williamhill": 2.65,
+          "williamhillnj": 2.65,
+          "winamax": 2.7
+        }
+      },
+      "model": {
+        "home": 0.5244454611206615,
+        "away": 0.4755545388793385,
+        "fromModel": true,
+        "eloH": 1627,
+        "eloA": 1610,
+        "surface": "grass"
+      },
+      "ts": 1791966600000,
+      "sofa": 17302452
     },
     {
       "id": "5107fa5e4b7c51b40fec9cd4f990a632",
@@ -2792,26 +1590,28 @@
       "away": "stefanostsitsipa",
       "odds": {
         "home": {
-          "betfair": 1.45,
+          "betfair": 1.48,
           "unibet": 1.43,
           "leovegas": 1.43,
-          "1xbet": 1.45,
-          "matchbook": 1.45,
-          "winamax": 1.44,
+          "1xbet": 1.44,
+          "matchbook": 1.48,
+          "betsson": 1.41,
+          "winamax": 1.43,
           "888sport": 1.44,
           "williamhill": 1.44,
-          "pinnacle": 1.44
+          "pinnacle": 1.45
         },
         "away": {
-          "betfair": 3.15,
-          "unibet": 2.8,
-          "leovegas": 2.8,
-          "1xbet": 2.84,
-          "matchbook": 3.15,
-          "winamax": 2.8,
+          "betfair": 3.05,
+          "unibet": 2.95,
+          "leovegas": 2.85,
+          "1xbet": 2.88,
+          "matchbook": 3.05,
+          "betsson": 2.9,
+          "winamax": 3,
           "888sport": 2.75,
           "williamhill": 2.75,
-          "pinnacle": 2.98
+          "pinnacle": 2.99
         }
       },
       "model": {
@@ -2826,6 +1626,53 @@
       "sofa": null
     },
     {
+      "id": "ba8233b0baa13926504a380cebe42a12",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "13:00",
+      "day": "14 OCT",
+      "home": "arynasabalenka",
+      "away": "annli",
+      "odds": {
+        "home": {
+          "888sport": 1.17,
+          "betfair": 1.19,
+          "unibet": 1.17,
+          "leovegas": 1.17,
+          "williamhill": 1.17,
+          "1xbet": 1.18,
+          "betclic": 1.15,
+          "betsson": 1.17,
+          "winamax": 1.16,
+          "pinnacle": 1.16
+        },
+        "away": {
+          "888sport": 5,
+          "betfair": 6.2,
+          "unibet": 5.5,
+          "leovegas": 5.1,
+          "williamhill": 5,
+          "1xbet": 5.18,
+          "betclic": 5.4,
+          "betsson": 5.2,
+          "winamax": 5.7,
+          "pinnacle": 5.62
+        }
+      },
+      "model": {
+        "home": 0.8597585194581956,
+        "away": 0.1402414805418044,
+        "fromModel": true,
+        "eloH": 2172,
+        "eloA": 1857,
+        "surface": "hard"
+      },
+      "ts": 1791975600000,
+      "sofa": null
+    },
+    {
       "id": "21bd71c108821f51f2f5c0d4494cba2c",
       "tour": "atp",
       "event": "Atp Shanghai Masters",
@@ -2837,24 +1684,26 @@
       "away": "zizoubergs",
       "odds": {
         "home": {
-          "leovegas": 1.47,
-          "unibet": 1.47,
-          "winamax": 1.46,
+          "leovegas": 1.45,
+          "unibet": 1.45,
+          "betsson": 1.45,
+          "winamax": 1.47,
           "1xbet": 1.46,
           "betfair": 1.51,
-          "matchbook": 1.5,
+          "matchbook": 1.51,
           "pinnacle": 1.47,
           "888sport": 1.44,
           "williamhill": 1.44
         },
         "away": {
-          "leovegas": 2.7,
-          "unibet": 2.7,
-          "winamax": 2.7,
+          "leovegas": 2.75,
+          "unibet": 2.75,
+          "betsson": 2.8,
+          "winamax": 2.85,
           "1xbet": 2.8,
-          "betfair": 2.9,
-          "matchbook": 2.9,
-          "pinnacle": 2.88,
+          "betfair": 2.94,
+          "matchbook": 2.94,
+          "pinnacle": 2.9,
           "888sport": 2.75,
           "williamhill": 2.75
         }
@@ -2869,29 +1718,267 @@
       },
       "ts": 1791976200000,
       "sofa": null
+    },
+    {
+      "id": "52fda1c5d2926648da76673e3b2af4d9",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:10",
+      "day": "14 OCT",
+      "home": "shihan",
+      "away": "leylahfernandez",
+      "odds": {
+        "home": {
+          "williamhill": 4,
+          "unibet": 3.9,
+          "888sport": 4,
+          "betsson": 3.95,
+          "betfair": 4.5,
+          "1xbet": 3.69,
+          "winamax": 4.1,
+          "betclic": 3.9,
+          "leovegas": 3.7,
+          "pinnacle": 4.33
+        },
+        "away": {
+          "williamhill": 1.25,
+          "unibet": 1.28,
+          "888sport": 1.25,
+          "betsson": 1.26,
+          "betfair": 1.28,
+          "1xbet": 1.3,
+          "winamax": 1.27,
+          "betclic": 1.24,
+          "leovegas": 1.28,
+          "pinnacle": 1.25
+        }
+      },
+      "model": {
+        "home": 0.10193172098897373,
+        "away": 0.8980682790110263,
+        "fromModel": true,
+        "eloH": 1526,
+        "eloA": 1904,
+        "surface": "hard"
+      },
+      "ts": 1791979800000,
+      "sofa": null
+    },
+    {
+      "id": "8987e9482df3b495c0c2d8aeda3f401d",
+      "tour": "wta",
+      "event": "Wta Wuhan Open",
+      "round": "",
+      "surface": "Dura",
+      "time": "05:00",
+      "day": "15 OCT",
+      "home": "miapohankova",
+      "away": "mariasakkari",
+      "odds": {
+        "home": {
+          "888sport": 2.75,
+          "betfair": 3.05,
+          "betsson": 2.8,
+          "unibet": 2.95,
+          "1xbet": 2.96,
+          "williamhill": 2.75,
+          "betclic": 2.8,
+          "winamax": 2.9,
+          "leovegas": 2.95
+        },
+        "away": {
+          "888sport": 1.44,
+          "betfair": 1.43,
+          "betsson": 1.44,
+          "unibet": 1.4,
+          "1xbet": 1.42,
+          "williamhill": 1.44,
+          "betclic": 1.43,
+          "winamax": 1.45,
+          "leovegas": 1.4
+        }
+      },
+      "model": {
+        "home": 0.2248471343503159,
+        "away": 0.7751528656496841,
+        "fromModel": true,
+        "eloH": 1617,
+        "eloA": 1832,
+        "surface": "hard"
+      },
+      "ts": 1792033200000,
+      "sofa": null
+    },
+    {
+      "id": "7c66ab6e5bb9bc88359d8284d1aaa1ff",
+      "tour": "atp",
+      "event": "Atp Shanghai Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "08:30",
+      "day": "15 OCT",
+      "home": "arthurgea",
+      "away": "alejandrodavidov",
+      "odds": {
+        "home": {
+          "betfair": 2.08,
+          "betsson": 2.04,
+          "unibet": 2.08,
+          "1xbet": 2.07,
+          "matchbook": 2.08,
+          "winamax": 2.05,
+          "williamhill": 2,
+          "888sport": 2,
+          "leovegas": 2.08,
+          "pinnacle": 2.06
+        },
+        "away": {
+          "betfair": 1.86,
+          "betsson": 1.79,
+          "unibet": 1.74,
+          "1xbet": 1.79,
+          "matchbook": 1.86,
+          "winamax": 1.8,
+          "williamhill": 1.8,
+          "888sport": 1.8,
+          "leovegas": 1.74,
+          "pinnacle": 1.84
+        }
+      },
+      "model": {
+        "home": 0.24448111792880314,
+        "away": 0.7555188820711969,
+        "fromModel": true,
+        "eloH": 1731,
+        "eloA": 1927,
+        "surface": "hard"
+      },
+      "ts": 1792045800000,
+      "sofa": null
+    },
+    {
+      "id": "9f79a8611b72f362103f75adae40aa9f",
+      "tour": "atp",
+      "event": "Atp Shanghai Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "12:00",
+      "day": "15 OCT",
+      "home": "alexanderzverev",
+      "away": "alexdeminaur",
+      "odds": {
+        "home": {
+          "1xbet": 1.47,
+          "betfair": 1.49,
+          "unibet": 1.43,
+          "betsson": 1.47,
+          "leovegas": 1.43,
+          "pinnacle": 1.47,
+          "matchbook": 1.49,
+          "winamax": 1.48,
+          "williamhill": 1.44,
+          "888sport": 1.44
+        },
+        "away": {
+          "1xbet": 2.77,
+          "betfair": 2.86,
+          "unibet": 2.8,
+          "betsson": 2.7,
+          "leovegas": 2.8,
+          "pinnacle": 2.87,
+          "matchbook": 2.86,
+          "winamax": 2.8,
+          "williamhill": 2.75,
+          "888sport": 2.75
+        }
+      },
+      "model": {
+        "home": 0.6712405808158318,
+        "away": 0.3287594191841682,
+        "fromModel": true,
+        "eloH": 2061,
+        "eloA": 1937,
+        "surface": "hard"
+      },
+      "ts": 1792058400000,
+      "sofa": null
     }
   ],
   "COMBOS": [
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 59,
-      "book": "williamhill",
+      "conf": 64,
+      "book": "betsson",
       "legs": [
         {
           "id": "52fda1c5d2926648da76673e3b2af4d9",
           "sport": "tennis_wta_wuhan_open",
-          "ts": 1791950400000,
+          "ts": 1791979800000,
           "side": "away",
           "sofa": null,
           "match": "S. Han – L. Fernandez",
           "pick": "Gana L. Fernandez",
-          "odd": 1.29,
+          "odd": 1.26,
+          "book": "betsson"
+        },
+        {
+          "id": "ba8233b0baa13926504a380cebe42a12",
+          "sport": "tennis_wta_wuhan_open",
+          "ts": 1791975600000,
+          "side": "home",
+          "sofa": null,
+          "match": "A. Sabalenka – A. Li",
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.17,
+          "book": "betsson"
+        },
+        {
+          "id": "opid1201111775373596",
+          "sport": "tennis_prev",
+          "ts": 1791945000000,
+          "side": "away",
+          "sofa": 17275014,
+          "match": "H. Shi – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.3,
+          "book": "betsson"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Combinada Valor",
+      "conf": 39,
+      "book": "williamhill",
+      "legs": [
+        {
+          "id": "a0fe8d4e228f3926bcb57dc37b2b23ac",
+          "sport": "tennis_prev",
+          "ts": 1791954600000,
+          "side": "home",
+          "sofa": null,
+          "match": "C. Ruud – F. Auger-Aliassime",
+          "pick": "Gana C. Ruud",
+          "odd": 2.3,
+          "book": "williamhill"
+        },
+        {
+          "id": "52fda1c5d2926648da76673e3b2af4d9",
+          "sport": "tennis_wta_wuhan_open",
+          "ts": 1791979800000,
+          "side": "away",
+          "sofa": null,
+          "match": "S. Han – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.25,
           "book": "williamhill"
         },
         {
           "id": "opid1201111775373596",
-          "sport": "tennis_oddspapi_wta",
+          "sport": "tennis_prev",
           "ts": 1791945000000,
           "side": "away",
           "sofa": 17275014,
@@ -2899,58 +1986,6 @@
           "pick": "Gana L. Fernandez",
           "odd": 1.29,
           "book": "williamhill"
-        },
-        {
-          "id": "d2145777e13e48242f882a542c6f29de",
-          "sport": "tennis_wta_wuhan_open",
-          "ts": 1791894600000,
-          "side": "away",
-          "sofa": null,
-          "match": "M. Pohánková – X. Wang",
-          "pick": "Gana X. Wang",
-          "odd": 1.44,
-          "book": "williamhill"
-        }
-      ]
-    },
-    {
-      "id": "c2",
-      "name": "Combinada Valor",
-      "conf": 26,
-      "book": "betfair_ex_eu",
-      "legs": [
-        {
-          "id": "07cc0e9af0210195f176fbeae6ec7b9b",
-          "sport": "tennis_wta_wuhan_open",
-          "ts": 1791889200000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Krueger – S. Zhang",
-          "pick": "Gana S. Zhang",
-          "odd": 2.28,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "id": "a0fe8d4e228f3926bcb57dc37b2b23ac",
-          "sport": "tennis_atp_shanghai_masters",
-          "ts": 1791954600000,
-          "side": "home",
-          "sofa": null,
-          "match": "C. Ruud – F. Auger-Aliassime",
-          "pick": "Gana C. Ruud",
-          "odd": 2.4,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "id": "52fda1c5d2926648da76673e3b2af4d9",
-          "sport": "tennis_wta_wuhan_open",
-          "ts": 1791950400000,
-          "side": "away",
-          "sofa": null,
-          "match": "S. Han – L. Fernandez",
-          "pick": "Gana L. Fernandez",
-          "odd": 1.32,
-          "book": "betfair_ex_eu"
         }
       ]
     }
@@ -3500,66 +2535,6 @@
     }
   ],
   "PENDING": [
-    {
-      "id": "opid1201413374926900",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1790061000000,
-      "date": "22 SEPT",
-      "sofa": 17149644,
-      "pickHome": true,
-      "match": "L. Castelnuovo – P. Kotov",
-      "pickKey": "home",
-      "pickLabel": "Gana L. Castelnuovo",
-      "odd": 3.8,
-      "book": "betfair-ex",
-      "homeName": "L. Castelnuovo",
-      "awayName": "P. Kotov"
-    },
-    {
-      "id": "opid1200304374839222",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1790061000000,
-      "date": "22 SEPT",
-      "sofa": 17135486,
-      "pickHome": true,
-      "match": "J. Ostapenko – A. Zakharova",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Ostapenko",
-      "odd": 1.76,
-      "book": "betfair-ex",
-      "homeName": "J. Ostapenko",
-      "awayName": "A. Zakharova"
-    },
-    {
-      "id": "opid1204297974927260",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1790061000000,
-      "date": "22 SEPT",
-      "sofa": 17149667,
-      "pickHome": true,
-      "match": "F. Sun – M. Dellavedova",
-      "pickKey": "home",
-      "pickLabel": "Gana F. Sun",
-      "odd": 1.61,
-      "book": "betfair-ex",
-      "homeName": "F. Sun",
-      "awayName": "M. Dellavedova"
-    },
-    {
-      "id": "c145750cc45b26ba7f1096b5b070a1de",
-      "sport": "tennis_wta_singapore_open",
-      "ts": 1790136000000,
-      "date": "23 SEPT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Gibson – A. Anisimova",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Anisimova",
-      "odd": 1.29,
-      "book": "sport888",
-      "homeName": "T. Gibson",
-      "awayName": "A. Anisimova"
-    },
     {
       "id": "d970c335660e8c64598b7f88e378dc76",
       "sport": "tennis_wta_singapore_open",
@@ -5839,6 +4814,111 @@
       "book": "betfair_ex_eu",
       "homeName": "S. Kartal",
       "awayName": "B. Bencic"
+    },
+    {
+      "id": "ef8e39fc9a98f42f1d2eebd22d703a10",
+      "sport": "tennis_wta_wuhan_open",
+      "ts": 1791962400000,
+      "date": "14 OCT",
+      "sofa": null,
+      "pickHome": true,
+      "match": "J. Ostapenko – J. Pegula",
+      "pickKey": "home",
+      "pickLabel": "Gana J. Ostapenko",
+      "odd": 3.7,
+      "book": "betfair_ex_eu",
+      "homeName": "J. Ostapenko",
+      "awayName": "J. Pegula"
+    },
+    {
+      "id": "opid1203543675481454",
+      "sport": "tennis_oddspapi_atp",
+      "ts": 1791966600000,
+      "date": "14 OCT",
+      "sofa": 17302452,
+      "pickHome": false,
+      "match": "D. Stricker – P. Henning",
+      "pickKey": "away",
+      "pickLabel": "Gana P. Henning",
+      "odd": 3.05,
+      "book": "betfair-ex",
+      "homeName": "D. Stricker",
+      "awayName": "P. Henning"
+    },
+    {
+      "id": "a16736afd506ce5ab2aa4e864db773c2",
+      "sport": "tennis_wta_wuhan_open",
+      "ts": 1791966000000,
+      "date": "14 OCT",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Krueger – L. Tararudee",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Tararudee",
+      "odd": 2.15,
+      "book": "winamax_de",
+      "homeName": "A. Krueger",
+      "awayName": "L. Tararudee"
+    },
+    {
+      "id": "8987e9482df3b495c0c2d8aeda3f401d",
+      "sport": "tennis_wta_wuhan_open",
+      "ts": 1792033200000,
+      "date": "15 OCT",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Pohánková – M. Sakkari",
+      "pickKey": "away",
+      "pickLabel": "Gana M. Sakkari",
+      "odd": 1.45,
+      "book": "winamax_de",
+      "homeName": "M. Pohánková",
+      "awayName": "M. Sakkari"
+    },
+    {
+      "id": "opid1204628175374248",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1791964800000,
+      "date": "14 OCT",
+      "sofa": 17275123,
+      "pickHome": true,
+      "match": "M. Bassols Ribera – F. Curmi",
+      "pickKey": "home",
+      "pickLabel": "Gana M. Bassols Ribera",
+      "odd": 1.67,
+      "book": "betfair-ex",
+      "homeName": "M. Bassols Ribera",
+      "awayName": "F. Curmi"
+    },
+    {
+      "id": "5107fa5e4b7c51b40fec9cd4f990a632",
+      "sport": "tennis_atp_shanghai_masters",
+      "ts": 1791972000000,
+      "date": "14 OCT",
+      "sofa": null,
+      "pickHome": true,
+      "match": "D. Medvedev – S. Tsitsipas",
+      "pickKey": "home",
+      "pickLabel": "Gana D. Medvedev",
+      "odd": 1.48,
+      "book": "betfair_ex_eu",
+      "homeName": "D. Medvedev",
+      "awayName": "S. Tsitsipas"
+    },
+    {
+      "id": "ba8233b0baa13926504a380cebe42a12",
+      "sport": "tennis_wta_wuhan_open",
+      "ts": 1791975600000,
+      "date": "14 OCT",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Sabalenka – A. Li",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Sabalenka",
+      "odd": 1.19,
+      "book": "betfair_ex_eu",
+      "homeName": "A. Sabalenka",
+      "awayName": "A. Li"
     }
   ],
   "COMBO_RECORD": [
@@ -12865,9 +11945,155 @@
           "awayName": "L. Fernandez"
         }
       ]
+    },
+    {
+      "dayId": "14 OCT·c1",
+      "date": "14 OCT",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "52fda1c5d2926648da76673e3b2af4d9",
+          "sport": "tennis_wta_wuhan_open",
+          "side": "away",
+          "sofa": null,
+          "match": "S. Han – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.26,
+          "homeName": "S. Han",
+          "awayName": "L. Fernandez"
+        },
+        {
+          "id": "ba8233b0baa13926504a380cebe42a12",
+          "sport": "tennis_wta_wuhan_open",
+          "side": "home",
+          "sofa": null,
+          "match": "A. Sabalenka – A. Li",
+          "pick": "Gana A. Sabalenka",
+          "odd": 1.17,
+          "homeName": "A. Sabalenka",
+          "awayName": "A. Li"
+        },
+        {
+          "id": "opid1201111775373596",
+          "sport": "tennis_prev",
+          "side": "away",
+          "sofa": 17275014,
+          "match": "H. Shi – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.3,
+          "homeName": "H. Shi",
+          "awayName": "L. Fernandez"
+        }
+      ]
+    },
+    {
+      "dayId": "14 OCT·c2",
+      "date": "14 OCT",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "a0fe8d4e228f3926bcb57dc37b2b23ac",
+          "sport": "tennis_prev",
+          "side": "home",
+          "sofa": null,
+          "match": "C. Ruud – F. Auger-Aliassime",
+          "pick": "Gana C. Ruud",
+          "odd": 2.3,
+          "homeName": "C. Ruud",
+          "awayName": "F. Auger-Aliassime"
+        },
+        {
+          "id": "52fda1c5d2926648da76673e3b2af4d9",
+          "sport": "tennis_wta_wuhan_open",
+          "side": "away",
+          "sofa": null,
+          "match": "S. Han – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.25,
+          "homeName": "S. Han",
+          "awayName": "L. Fernandez"
+        },
+        {
+          "id": "opid1201111775373596",
+          "sport": "tennis_prev",
+          "side": "away",
+          "sofa": 17275014,
+          "match": "H. Shi – L. Fernandez",
+          "pick": "Gana L. Fernandez",
+          "odd": 1.29,
+          "homeName": "H. Shi",
+          "awayName": "L. Fernandez"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "14 OCT",
+      "match": "S. Han – L. Fernandez",
+      "marginPct": 0.85,
+      "profit": 0.86,
+      "ts": 1791979800000,
+      "homeName": "S. Han",
+      "awayName": "L. Fernandez",
+      "sport": "tennis_wta_wuhan_open",
+      "legs": [
+        {
+          "pick": "Gana S. Han",
+          "odd": 4.5,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "pick": "Gana L. Fernandez",
+          "odd": 1.3,
+          "book": "onexbet"
+        }
+      ]
+    },
+    {
+      "date": "14 OCT",
+      "match": "J. Ostapenko – J. Pegula",
+      "marginPct": 1.03,
+      "profit": 1.04,
+      "ts": 1791962400000,
+      "homeName": "J. Ostapenko",
+      "awayName": "J. Pegula",
+      "sport": "tennis_wta_wuhan_open",
+      "legs": [
+        {
+          "pick": "Gana J. Ostapenko",
+          "odd": 3.7,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "pick": "Gana J. Pegula",
+          "odd": 1.39,
+          "book": "winamax_de"
+        }
+      ]
+    },
+    {
+      "date": "14 OCT",
+      "match": "K. Volynets – G. Hanyu",
+      "marginPct": 0.47,
+      "profit": 0.47,
+      "ts": 1791962400000,
+      "homeName": "K. Volynets",
+      "awayName": "G. Hanyu",
+      "sport": "tennis_wta_wuhan_open",
+      "legs": [
+        {
+          "pick": "Gana K. Volynets",
+          "odd": 1.27,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "pick": "Gana G. Hanyu",
+          "odd": 4.81,
+          "book": "pinnacle"
+        }
+      ]
+    },
     {
       "date": "13 OCT",
       "match": "B. van de Zandschulp – R. Jodar",
@@ -13679,72 +12905,6 @@
           "pick": "Gana N. Djokovic",
           "odd": 1.42,
           "book": "unibet_se"
-        }
-      ]
-    },
-    {
-      "date": "30 SEPT",
-      "match": "Z. Zhang – A. Gea",
-      "marginPct": 0.14,
-      "profit": 0.14,
-      "ts": 1790758800000,
-      "homeName": "Z. Zhang",
-      "awayName": "A. Gea",
-      "sport": "tennis_atp_china_open",
-      "legs": [
-        {
-          "pick": "Gana Z. Zhang",
-          "odd": 4.6,
-          "book": "betfair_ex_eu"
-        },
-        {
-          "pick": "Gana A. Gea",
-          "odd": 1.28,
-          "book": "winamax_de"
-        }
-      ]
-    },
-    {
-      "date": "30 SEPT",
-      "match": "O. Oliynykova – Y. Yuan",
-      "marginPct": 0.07,
-      "profit": 0.07,
-      "ts": 1790752200000,
-      "homeName": "O. Oliynykova",
-      "awayName": "Y. Yuan",
-      "sport": "tennis_wta_china_open",
-      "legs": [
-        {
-          "pick": "Gana O. Oliynykova",
-          "odd": 2.7,
-          "book": "leovegas_se"
-        },
-        {
-          "pick": "Gana Y. Yuan",
-          "odd": 1.59,
-          "book": "matchbook"
-        }
-      ]
-    },
-    {
-      "date": "30 SEPT",
-      "match": "M. Etcheverry Tomas – S. Tsitsipas",
-      "marginPct": 0.02,
-      "profit": 0.02,
-      "ts": 1790751900000,
-      "homeName": "M. Etcheverry Tomas",
-      "awayName": "S. Tsitsipas",
-      "sport": "tennis_oddspapi_atp",
-      "legs": [
-        {
-          "pick": "Gana M. Etcheverry Tomas",
-          "odd": 3.75,
-          "book": "betfair-ex"
-        },
-        {
-          "pick": "Gana S. Tsitsipas",
-          "odd": 1.36,
-          "book": "888sport"
         }
       ]
     }
@@ -30445,6 +29605,116 @@
       "sofa": null,
       "homeName": "T. Paul",
       "awayName": "Z. Bergs"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791961800000,
+      "match": "K. Volynets – H. Guo",
+      "predHome": true,
+      "prob": 58,
+      "predName": "K. Volynets",
+      "sofa": 17275003,
+      "homeName": "K. Volynets",
+      "awayName": "H. Guo"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791962400000,
+      "match": "K. Volynets – G. Hanyu",
+      "predHome": true,
+      "prob": 57,
+      "predName": "K. Volynets",
+      "sofa": null,
+      "homeName": "K. Volynets",
+      "awayName": "G. Hanyu"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791962400000,
+      "match": "J. Ostapenko – J. Pegula",
+      "predHome": false,
+      "prob": 60,
+      "predName": "J. Pegula",
+      "sofa": null,
+      "homeName": "J. Ostapenko",
+      "awayName": "J. Pegula"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791964800000,
+      "match": "M. Bassols Ribera – F. Curmi",
+      "predHome": true,
+      "prob": 62,
+      "predName": "M. Bassols Ribera",
+      "sofa": 17275123,
+      "homeName": "M. Bassols Ribera",
+      "awayName": "F. Curmi"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791966000000,
+      "match": "A. Krueger – L. Tararudee",
+      "predHome": false,
+      "prob": 53,
+      "predName": "L. Tararudee",
+      "sofa": null,
+      "homeName": "A. Krueger",
+      "awayName": "L. Tararudee"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791966600000,
+      "match": "D. Stricker – P. Henning",
+      "predHome": true,
+      "prob": 52,
+      "predName": "D. Stricker",
+      "sofa": 17302452,
+      "homeName": "D. Stricker",
+      "awayName": "P. Henning"
+    },
+    {
+      "date": "14 OCT",
+      "ts": 1791975600000,
+      "match": "A. Sabalenka – A. Li",
+      "predHome": true,
+      "prob": 86,
+      "predName": "A. Sabalenka",
+      "sofa": null,
+      "homeName": "A. Sabalenka",
+      "awayName": "A. Li"
+    },
+    {
+      "date": "15 OCT",
+      "ts": 1792033200000,
+      "match": "M. Pohánková – M. Sakkari",
+      "predHome": false,
+      "prob": 78,
+      "predName": "M. Sakkari",
+      "sofa": null,
+      "homeName": "M. Pohánková",
+      "awayName": "M. Sakkari"
+    },
+    {
+      "date": "15 OCT",
+      "ts": 1792045800000,
+      "match": "A. Gea – A. Davidovich Fokina",
+      "predHome": false,
+      "prob": 76,
+      "predName": "A. Davidovich Fokina",
+      "sofa": null,
+      "homeName": "A. Gea",
+      "awayName": "A. Davidovich Fokina"
+    },
+    {
+      "date": "15 OCT",
+      "ts": 1792058400000,
+      "match": "A. Zverev – A. de Minaur",
+      "predHome": true,
+      "prob": 67,
+      "predName": "A. Zverev",
+      "sofa": null,
+      "homeName": "A. Zverev",
+      "awayName": "A. de Minaur"
     }
   ],
   "LADDER": {
