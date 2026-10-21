@@ -1,72 +1,102 @@
 /* ============================================================
    ACEVALUE — resultados de tenis vía ESPN (gratis, sin clave)
    ------------------------------------------------------------
-   La API pública de ESPN devuelve los marcadores ATP/WTA por día.
-   Devolvemos la lista de APELLIDOS ganadores (para liquidar picks)
-   y un mapa de "partido terminado" para los surebets.
-     winners: ['andreeva','chwalinska', ...]
-     finished: [{home:'kostyuk', away:'andreeva', winner:'andreeva'}, ...]
+   El scoreboard de ESPN (?dates=AAAAMMDD) devuelve los TORNEOS
+   activos ese día. Cada torneo trae sus partidos en
+     event.groupings[].competitions[]   (NO en event.competitions)
+   Cada partido: competitors[].winner, competitors[].athlete.displayName,
+   status.type.name (STATUS_FINAL / STATUS_RETIRED / STATUS_WALKOVER /
+   STATUS_CANCELED…) y notes[0].text ("X bt Y 6-3 7-6").
+
+   espnMatches(['20261015', ...]) → [{ id, ts, tour, home, away,
+       done, void, winner:'home'|'away'|null, note }]   (solo individuales)
+   espnResults(days) → { matches, winners, finished, voided } de los
+       últimos `days` días (formato antiguo + `matches` con fecha).
    No necesita API key.
    ============================================================ */
 const TOURS = ['atp', 'wta'];
+const VOID_STATUS = /RETIRED|WALKOVER|CANCEL|ABANDON|FORFEIT|DEFAULT/;
+const VOID_NOTE = /\bret\b|retired|w\/o|walkover|\bdef\b|defaulted|abandon/i;
 
-function surname(name){
-  // "Mirra Andreeva" -> "andreeva" ; handles accents
-  return (name||'').trim().replace(/[.,;:]+$/,'').split(/\s+/).pop().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9-]/gi,'').toLowerCase();
-}
 function ymd(d){ return d.toISOString().slice(0,10).replace(/-/g,''); }
 
+const dayCache = {};       // 'atp:20261015' → events[] (una sola petición por día y circuito)
 async function fetchDay(tour, dateStr){
+  const key = tour + ':' + dateStr;
+  if (dayCache[key]) return dayCache[key];
   const url = `https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/scoreboard?dates=${dateStr}`;
-  try {
-    const r = await fetch(url, { headers: { 'User-Agent': 'acevalue-bot' } });
-    if (!r.ok) return [];
-    const j = await r.json();
-    return j.events || [];
-  } catch(e){ return []; }
+  let events = null;
+  for (let attempt = 0; attempt < 2 && !events; attempt++){
+    try {
+      // OJO: con User-Agent 'acevalue-bot' ESPN responde 403 → usamos uno de navegador
+      const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept': 'application/json' } });
+      if (r.ok) events = (await r.json()).events || [];
+    } catch(e){}
+  }
+  if (!events){ failures.push(key); events = []; }
+  dayCache[key] = events;
+  return events;
+}
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
+const failures = [];       // días que ESPN no devolvió (si hay alguno, no se caduca nada)
+
+function athleteName(c){
+  return (c.athlete && (c.athlete.displayName || c.athlete.fullName || c.athlete.shortName)) || '';
 }
 
-/* returns { winners:[surnames], finished:[{home,away,winner}] } for the last `days` days */
-module.exports = async function espnResults(days = 4){
-  const winners = new Set();
-  const finished = [];
-  const voided = [];          // walkovers / no-shows → apuesta anulada
-  const now = new Date();
-  for (let i = 0; i <= days; i++){
-    const d = new Date(now.getTime() - i*24*3600*1000);
-    const dateStr = ymd(d);
+/* convierte una competition de ESPN a nuestro formato (null si no es individual) */
+function parseCompetition(comp, tour){
+  const typeText = (comp.type && (comp.type.slug || comp.type.text)) || '';
+  if (/doubles/i.test(typeText)) return null;
+  const cs = comp.competitors || [];
+  if (cs.length !== 2 || cs.some(c => c.type && c.type !== 'athlete')) return null;
+  const byHA = k => cs.find(c => c.homeAway === k);
+  const h = byHA('home') || cs[0], a = byHA('away') || cs[1];
+  const home = athleteName(h), away = athleteName(a);
+  if (!home || !away || /^tbd$/i.test(home) || /^tbd$/i.test(away)) return null;
+  const st = (comp.status && comp.status.type) || {};
+  const note = ((comp.notes && comp.notes[0] && comp.notes[0].text) || '');
+  const isVoid = VOID_STATUS.test(st.name || '') || (st.completed && VOID_NOTE.test(note));
+  let winner = h.winner ? 'home' : a.winner ? 'away' : null;
+  const done = !!st.completed || isVoid;
+  return { id: String(comp.id), ts: new Date(comp.date || comp.startDate).getTime(), tour,
+           home, away, done, void: isVoid, winner: isVoid ? null : winner, note };
+}
+
+/* partidos individuales de los torneos activos en esas fechas (sin duplicados) */
+async function espnMatches(dateStrs){
+  const seen = new Map();
+  for (const dateStr of [...new Set(dateStrs)].sort()){
     for (const tour of TOURS){
       const events = await fetchDay(tour, dateStr);
       for (const ev of events){
-        const comp = (ev.competitions && ev.competitions[0]) || null;
-        if (!comp) continue;
-        const status = (comp.status && comp.status.type && comp.status.type.completed) ||
-                       (ev.status && ev.status.type && ev.status.type.completed);
-        if (!status) continue;                        // solo partidos TERMINADOS
-        const cs = comp.competitors || [];
-        if (cs.length < 2) continue;
-        // each competitor: { athlete:{displayName}, winner:true/false }  (singles)
-        const nameOf = c => surname((c.athlete && (c.athlete.displayName || c.athlete.shortName)) ||
-                                    (c.team && c.team.displayName) || c.displayName || '');
-        const a = cs[0], b = cs[1];
-        const an = nameOf(a), bn = nameOf(b);
-        if (!an || !bn) continue;
-        const detail = ((comp.status && comp.status.type && (comp.status.type.detail||comp.status.type.description||comp.status.type.name)) || '').toLowerCase();
-        // el texto del resultado ("X bt Y 6-3 2-1 RET" / "... walkover") es la señal más fiable
-        const noteText = ((comp.notes && comp.notes[0] && comp.notes[0].text) || (ev.notes && ev.notes[0] && ev.notes[0].text) || '').toLowerCase();
-        const blob = detail + ' ' + noteText;
-        const isWalkover = /walkover|w\/o|\bw-o\b|no[\s-]?show|cancel|\bret\b|retir|abandon|\bdef\b|defaulted|withdrew|withdrawn/.test(blob);
-        if (isWalkover){ voided.push({ home:an, away:bn }); continue; }   // anulada, no cuenta W/L
-        let wn = null;
-        if (a.winner) wn = an; else if (b.winner) wn = bn;
-        if (!wn){
-          // fallback: compare scores if winner flag missing
-          const sa = +(a.score||0), sb = +(b.score||0);
-          if (sa !== sb) wn = sa > sb ? an : bn;
+        const comps = [...(ev.competitions || []), ...(ev.groupings || []).flatMap(g => g.competitions || [])];
+        for (const comp of comps){
+          if (seen.has(String(comp.id))) continue;
+          const m = parseCompetition(comp, tour);
+          if (m && !Number.isNaN(m.ts)) seen.set(m.id, m);
         }
-        if (wn){ winners.add(wn); finished.push({ home:an, away:bn, winner:wn }); }
       }
     }
   }
-  return { winners: [...winners], finished, voided };
+  return [...seen.values()];
+}
+
+/* compatibilidad: últimos `days` días → { matches, winners, finished, voided } */
+module.exports = async function espnResults(days = 4){
+  const now = Date.now(), dates = [];
+  for (let i = 0; i <= days; i++) dates.push(ymd(new Date(now - i*24*3600*1000)));
+  const matches = await espnMatches(dates);
+  const finished = [], voided = [], winners = new Set();
+  for (const m of matches){
+    if (!m.done) continue;
+    if (m.void){ voided.push({ home:m.home, away:m.away, ts:m.ts }); continue; }
+    if (!m.winner) continue;
+    const w = m.winner === 'home' ? m.home : m.away;
+    winners.add(w); finished.push({ home:m.home, away:m.away, winner:w, ts:m.ts });
+  }
+  return { matches, winners:[...winners], finished, voided };
 };
+module.exports.espnMatches = espnMatches;
+module.exports.failures = failures;
+module.exports.ymd = ymd;

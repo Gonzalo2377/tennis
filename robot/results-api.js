@@ -19,31 +19,34 @@ async function get(method, key, params){
 
 /* returns { winners:[surnameKey,...], finished:[{home,away,winner}], logos:{...} } for the last `days` */
 module.exports = async function apiTennis(key, days){
-  if (!key) return { winners:[], finished:[], logos:{} };
+  if (!key) return { winners:[], finished:[], logos:{}, matches:[] };
   const fmt = d => d.toISOString().slice(0,10);
   const start = fmt(new Date(Date.now() - (days||5)*24*3600*1000));
   const stop  = fmt(new Date(Date.now() + 24*3600*1000));   // include today
   let j;
   try { j = await get('get_fixtures', key, { date_start:start, date_stop:stop }); }
-  catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], finished:[], logos:{} }; }
+  catch(e){ console.log('· api-tennis: error', e.message); return { winners:[], finished:[], logos:{}, matches:[] }; }
   const rows = (j && j.result) || [];
-  const winners = [], finished = [], voided = [], unfinished = [], logos = {};
+  const winners = [], finished = [], voided = [], unfinished = [], logos = {}, matches = [];
   rows.forEach(ev => {
     const p1 = ev.event_first_player, p2 = ev.event_second_player;
+    // fecha del partido (para liquidar por pareja + fecha en settle.js)
+    const ts = Date.parse((ev.event_date||'') + 'T' + ((ev.event_time||'12:00').slice(0,5)) + ':00Z');
     if (ev.event_first_player_logo)  logos[surnameKey(p1)] = ev.event_first_player_logo;
     if (ev.event_second_player_logo) logos[surnameKey(p2)] = ev.event_second_player_logo;
     const st = (ev.event_status||'').toLowerCase();
     const fr = (ev.event_final_result||'') + ' ' + (ev.event_game_result||'');
     // RETIRADA / WALKOVER → apuesta anulada (cuota 1.00)
     const isVoid = /retir|walkover|w\/o|abandon|cancel|awarded|def\b/.test(st) || /\bret\.?\b|w\/o|walkover/i.test(fr);
-    if (isVoid && p1 && p2){ voided.push({ home:p1, away:p2 }); return; }
+    if (isVoid && p1 && p2){ voided.push({ home:p1, away:p2 }); if (ts) matches.push({ id:'at'+ev.event_key, ts, home:p1, away:p2, done:true, void:true, winner:null }); return; }
     // INTERRUMPIDO / SUSPENDIDO / APLAZADO → no ha terminado, debe seguir pendiente
     const isUnfinished = /suspend|interrupt|postpon|delayed|abandoned/.test(st);
     if (isUnfinished && p1 && p2){ unfinished.push({ home:p1, away:p2 }); return; }
     if (st !== 'finished') return;
     const w = ev.event_winner === 'First Player' ? p1 : ev.event_winner === 'Second Player' ? p2 : null;
-    if (w){ winners.push(surnameKey(w)); finished.push({ home:p1, away:p2, winner:w }); }
+    if (w){ winners.push(surnameKey(w)); finished.push({ home:p1, away:p2, winner:w });
+      if (ts) matches.push({ id:'at'+ev.event_key, ts, home:p1, away:p2, done:true, void:false, winner: w===p1?'home':'away' }); }
   });
   console.log(`· api-tennis: ${rows.length} fixtures · ${winners.length} terminados · ${voided.length} retiradas · ${unfinished.length} interrumpidos · ${Object.keys(logos).length} fotos`);
-  return { winners, finished, voided, unfinished, logos };
+  return { winners, finished, voided, unfinished, logos, matches };
 };
