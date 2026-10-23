@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-23T08:01:00.954Z",
+    "updatedAt": "2026-10-23T10:01:03.983Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -830,6 +830,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "opid1200306175658360",
+      "ts": 1792741200000,
+      "date": "23 OCT",
+      "match": "K. Boulter – A. Ruzic",
+      "pick": "Gana A. Ruzic",
+      "pickHome": false,
+      "odd": 2.7,
+      "book": "betfair-ex",
+      "result": "L"
+    },
     {
       "id": "f5c4465f64797dcb67aa1b42fd45292e",
       "ts": 1792731600000,
@@ -3021,7 +3032,7 @@
       "book": "sport888",
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "1356943371df609938b43fc463f52d22",
@@ -3037,7 +3048,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "opid1201562875477962",
@@ -3053,7 +3064,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "opid1203543675481454",
@@ -3069,7 +3080,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "opid1201562875371562",
@@ -3085,7 +3096,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "opid1201562875371560",
@@ -3101,7 +3112,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 19
+      "miss": 20
     },
     {
       "id": "opid1204070975371224",
@@ -3117,22 +3128,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 19
-    },
-    {
-      "id": "opid1200306175658360",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1792741200000,
-      "date": "23 OCT",
-      "sofa": 17337215,
-      "pickHome": false,
-      "match": "K. Boulter – A. Ruzic",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Ruzic",
-      "odd": 2.7,
-      "book": "betfair-ex",
-      "homeName": "K. Boulter",
-      "awayName": "A. Ruzic"
+      "miss": 20
     },
     {
       "id": "70d2acd96d31199e701797e524beb6f4",
@@ -3166,6 +3162,76 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "22 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 7.8,
+      "result": "L",
+      "legs": [
+        {
+          "match": "B. Gojo – D. Altmaier",
+          "pick": "Gana D. Altmaier",
+          "side": "away",
+          "odd": 2,
+          "win": true,
+          "voided": false,
+          "ts": 1792668000000
+        },
+        {
+          "match": "A. Eala – D. Shnaider",
+          "pick": "Gana A. Eala",
+          "side": "home",
+          "odd": 2.24,
+          "win": false,
+          "voided": false,
+          "ts": 1792656000000
+        },
+        {
+          "match": "L. Fernandez – E. Alexandrova",
+          "pick": "Gana E. Alexandrova",
+          "side": "away",
+          "odd": 1.74,
+          "win": false,
+          "voided": false,
+          "ts": 1792728000000
+        }
+      ]
+    },
+    {
+      "date": "22 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 5.92,
+      "result": "L",
+      "legs": [
+        {
+          "match": "V. Vacherot – L. Van Assche",
+          "pick": "Gana V. Vacherot",
+          "side": "home",
+          "odd": 1.7,
+          "win": false,
+          "voided": false,
+          "ts": 1792670400000
+        },
+        {
+          "match": "B. Gojo – D. Altmaier",
+          "pick": "Gana D. Altmaier",
+          "side": "away",
+          "odd": 2,
+          "win": true,
+          "voided": false,
+          "ts": 1792668000000
+        },
+        {
+          "match": "L. Fernandez – E. Alexandrova",
+          "pick": "Gana E. Alexandrova",
+          "side": "away",
+          "odd": 1.74,
+          "win": false,
+          "voided": false,
+          "ts": 1792728000000
+        }
+      ]
+    },
     {
       "date": "21 OCT",
       "name": "Combinada Valor",
@@ -9543,7 +9609,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 19
+      "miss": 20
     },
     {
       "dayId": "12 OCT·c1",
@@ -9584,7 +9650,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 19
+      "miss": 20
     },
     {
       "dayId": "15 OCT·c2",
@@ -9625,7 +9691,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 19
+      "miss": 20
     },
     {
       "dayId": "16 OCT·c2",
@@ -9666,93 +9732,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 19
-    },
-    {
-      "dayId": "22 OCT·c1",
-      "date": "22 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1200309775620270",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792670400000,
-          "side": "home",
-          "sofa": 17331358,
-          "match": "V. Vacherot – L. Van Assche",
-          "pick": "Gana V. Vacherot",
-          "odd": 1.7,
-          "homeName": "V. Vacherot",
-          "awayName": "L. Van Assche"
-        },
-        {
-          "id": "opid1200309775620262",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792668000000,
-          "side": "away",
-          "sofa": 17331352,
-          "match": "B. Gojo – D. Altmaier",
-          "pick": "Gana D. Altmaier",
-          "odd": 2,
-          "homeName": "B. Gojo",
-          "awayName": "D. Altmaier"
-        },
-        {
-          "id": "f34a0b19a0651c9e3720cf57770d105d",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792728000000,
-          "side": "away",
-          "sofa": null,
-          "match": "L. Fernandez – E. Alexandrova",
-          "pick": "Gana E. Alexandrova",
-          "odd": 1.74,
-          "homeName": "L. Fernandez",
-          "awayName": "E. Alexandrova"
-        }
-      ]
-    },
-    {
-      "dayId": "22 OCT·c2",
-      "date": "22 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1200309775620262",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792668000000,
-          "side": "away",
-          "sofa": 17331352,
-          "match": "B. Gojo – D. Altmaier",
-          "pick": "Gana D. Altmaier",
-          "odd": 2,
-          "homeName": "B. Gojo",
-          "awayName": "D. Altmaier"
-        },
-        {
-          "id": "2790f03a39ec672cd20a0fb57c24cdab",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792656000000,
-          "side": "home",
-          "sofa": null,
-          "match": "A. Eala – D. Shnaider",
-          "pick": "Gana A. Eala",
-          "odd": 2.24,
-          "homeName": "A. Eala",
-          "awayName": "D. Shnaider"
-        },
-        {
-          "id": "f34a0b19a0651c9e3720cf57770d105d",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792728000000,
-          "side": "away",
-          "sofa": null,
-          "match": "L. Fernandez – E. Alexandrova",
-          "pick": "Gana E. Alexandrova",
-          "odd": 1.74,
-          "homeName": "L. Fernandez",
-          "awayName": "E. Alexandrova"
-        }
-      ]
+      "miss": 20
     },
     {
       "dayId": "23 OCT·c1",
@@ -10759,11 +10739,35 @@
   "MODEL_RECORD": [
     {
       "date": "23 OCT",
+      "ts": 1792742400000,
+      "match": "S. Tsitsipas – J. Duckworth",
+      "predName": "S. Tsitsipas",
+      "prob": 70,
+      "ok": true
+    },
+    {
+      "date": "23 OCT",
+      "ts": 1792741200000,
+      "match": "K. Boulter – A. Ruzic",
+      "predName": "A. Ruzic",
+      "prob": 52,
+      "ok": false
+    },
+    {
+      "date": "23 OCT",
       "ts": 1792731600000,
       "match": "S. Bejlek – M. Bouzkova",
       "predName": "M. Bouzkova",
       "prob": 55,
       "ok": true
+    },
+    {
+      "date": "23 OCT",
+      "ts": 1792728000000,
+      "match": "L. Fernandez – E. Alexandrova",
+      "predName": "E. Alexandrova",
+      "prob": 60,
+      "ok": false
     },
     {
       "date": "22 OCT",
@@ -23169,7 +23173,7 @@
       "sofa": 17248100,
       "homeName": "S. Cocola",
       "awayName": "P. Vives Marcos",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "07 OCT",
@@ -23181,7 +23185,7 @@
       "sofa": null,
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "11 OCT",
@@ -23193,7 +23197,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "12 OCT",
@@ -23205,7 +23209,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "12 OCT",
@@ -23217,7 +23221,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "12 OCT",
@@ -23229,7 +23233,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "12 OCT",
@@ -23241,7 +23245,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "12 OCT",
@@ -23253,7 +23257,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "13 OCT",
@@ -23265,7 +23269,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "13 OCT",
@@ -23277,7 +23281,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "13 OCT",
@@ -23289,7 +23293,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "14 OCT",
@@ -23301,7 +23305,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "15 OCT",
@@ -23313,7 +23317,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "15 OCT",
@@ -23325,7 +23329,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "15 OCT",
@@ -23337,7 +23341,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "16 OCT",
@@ -23349,7 +23353,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "16 OCT",
@@ -23361,7 +23365,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 19
+      "miss": 20
     },
     {
       "date": "20 OCT",
@@ -23373,29 +23377,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 11
-    },
-    {
-      "date": "23 OCT",
-      "ts": 1792728000000,
-      "match": "L. Fernandez – E. Alexandrova",
-      "predHome": false,
-      "prob": 60,
-      "predName": "E. Alexandrova",
-      "sofa": null,
-      "homeName": "L. Fernandez",
-      "awayName": "E. Alexandrova"
-    },
-    {
-      "date": "23 OCT",
-      "ts": 1792741200000,
-      "match": "K. Boulter – A. Ruzic",
-      "predHome": false,
-      "prob": 52,
-      "predName": "A. Ruzic",
-      "sofa": 17337215,
-      "homeName": "K. Boulter",
-      "awayName": "A. Ruzic"
+      "miss": 12
     },
     {
       "date": "23 OCT",
@@ -23407,17 +23389,6 @@
       "sofa": null,
       "homeName": "I. Jović",
       "awayName": "D. Shnaider"
-    },
-    {
-      "date": "23 OCT",
-      "ts": 1792742400000,
-      "match": "S. Tsitsipas – J. Duckworth",
-      "predHome": true,
-      "prob": 70,
-      "predName": "S. Tsitsipas",
-      "sofa": 17331298,
-      "homeName": "S. Tsitsipas",
-      "awayName": "J. Duckworth"
     },
     {
       "date": "23 OCT",
