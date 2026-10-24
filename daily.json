@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-24T10:00:46.709Z",
+    "updatedAt": "2026-10-24T12:00:49.510Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -848,6 +848,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "ae319b5b7c6cbef88dda71720672c0c6",
+      "ts": 1792834200000,
+      "date": "24 OCT",
+      "match": "E. Rybakina – D. Shnaider",
+      "pick": "Gana E. Rybakina",
+      "pickHome": true,
+      "odd": 1.57,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
     {
       "id": "3849e1db276f31bcb15aad1cca44184d",
       "ts": 1792825800000,
@@ -3083,7 +3094,7 @@
       "book": "sport888",
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "1356943371df609938b43fc463f52d22",
@@ -3099,7 +3110,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "opid1201562875477962",
@@ -3115,7 +3126,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "opid1203543675481454",
@@ -3131,7 +3142,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "opid1201562875371562",
@@ -3147,7 +3158,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "opid1201562875371560",
@@ -3163,7 +3174,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 29
+      "miss": 30
     },
     {
       "id": "opid1204070975371224",
@@ -3179,25 +3190,71 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 29
-    },
-    {
-      "id": "ae319b5b7c6cbef88dda71720672c0c6",
-      "sport": "tennis_wta_ningbo_open",
-      "ts": 1792834200000,
-      "date": "24 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "E. Rybakina – D. Shnaider",
-      "pickKey": "home",
-      "pickLabel": "Gana E. Rybakina",
-      "odd": 1.57,
-      "book": "betfair_ex_eu",
-      "homeName": "E. Rybakina",
-      "awayName": "D. Shnaider"
+      "miss": 30
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "24 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 3.3,
+      "result": "W",
+      "legs": [
+        {
+          "match": "E. Rybakina – D. Shnaider",
+          "pick": "Gana E. Rybakina",
+          "side": "home",
+          "odd": 1.57,
+          "win": true,
+          "voided": false,
+          "ts": 1792834200000
+        },
+        {
+          "match": "L. Fernandez – M. Bouzkova",
+          "pick": "Gana L. Fernandez",
+          "side": "home",
+          "odd": 2.1,
+          "win": true,
+          "voided": false,
+          "ts": 1792825800000
+        }
+      ]
+    },
+    {
+      "date": "24 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 7.42,
+      "result": "L",
+      "legs": [
+        {
+          "match": "E. Rybakina – D. Shnaider",
+          "pick": "Gana E. Rybakina",
+          "side": "home",
+          "odd": 1.53,
+          "win": true,
+          "voided": false,
+          "ts": 1792834200000
+        },
+        {
+          "match": "L. Fernandez – M. Bouzkova",
+          "pick": "Gana L. Fernandez",
+          "side": "home",
+          "odd": 2.03,
+          "win": true,
+          "voided": false,
+          "ts": 1792825800000
+        },
+        {
+          "match": "K. Boulter – K. Siniakova",
+          "pick": "Gana K. Boulter",
+          "side": "home",
+          "odd": 2.39,
+          "win": false,
+          "voided": false,
+          "ts": 1792825800000
+        }
+      ]
+    },
     {
       "date": "23 OCT",
       "name": "Combinada Valor",
@@ -9706,7 +9763,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 29
+      "miss": 30
     },
     {
       "dayId": "12 OCT·c1",
@@ -9747,7 +9804,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 29
+      "miss": 30
     },
     {
       "dayId": "15 OCT·c2",
@@ -9788,7 +9845,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 29
+      "miss": 30
     },
     {
       "dayId": "16 OCT·c2",
@@ -9829,81 +9886,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 29
-    },
-    {
-      "dayId": "24 OCT·c1",
-      "date": "24 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "ae319b5b7c6cbef88dda71720672c0c6",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792834200000,
-          "side": "home",
-          "sofa": null,
-          "match": "E. Rybakina – D. Shnaider",
-          "pick": "Gana E. Rybakina",
-          "odd": 1.53,
-          "homeName": "E. Rybakina",
-          "awayName": "D. Shnaider"
-        },
-        {
-          "id": "3849e1db276f31bcb15aad1cca44184d",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792825800000,
-          "side": "home",
-          "sofa": null,
-          "match": "L. Fernandez – M. Bouzkova",
-          "pick": "Gana L. Fernandez",
-          "odd": 2.03,
-          "homeName": "L. Fernandez",
-          "awayName": "M. Bouzkova"
-        },
-        {
-          "id": "opid1200306175658380",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1792825800000,
-          "side": "home",
-          "sofa": null,
-          "match": "K. Boulter – K. Siniakova",
-          "pick": "Gana K. Boulter",
-          "odd": 2.39,
-          "homeName": "K. Boulter",
-          "awayName": "K. Siniakova"
-        }
-      ]
-    },
-    {
-      "dayId": "24 OCT·c2",
-      "date": "24 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "ae319b5b7c6cbef88dda71720672c0c6",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792834200000,
-          "side": "home",
-          "sofa": null,
-          "match": "E. Rybakina – D. Shnaider",
-          "pick": "Gana E. Rybakina",
-          "odd": 1.57,
-          "homeName": "E. Rybakina",
-          "awayName": "D. Shnaider"
-        },
-        {
-          "id": "3849e1db276f31bcb15aad1cca44184d",
-          "sport": "tennis_wta_ningbo_open",
-          "ts": 1792825800000,
-          "side": "home",
-          "sofa": null,
-          "match": "L. Fernandez – M. Bouzkova",
-          "pick": "Gana L. Fernandez",
-          "odd": 2.1,
-          "homeName": "L. Fernandez",
-          "awayName": "M. Bouzkova"
-        }
-      ]
+      "miss": 30
     }
   ],
   "ARB_RECORD": [
@@ -10834,6 +10817,22 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "24 OCT",
+      "ts": 1792834200000,
+      "match": "E. Rybakina – D. Shnaider",
+      "predName": "E. Rybakina",
+      "prob": 76,
+      "ok": true
+    },
+    {
+      "date": "24 OCT",
+      "ts": 1792826100000,
+      "match": "Y. Ma – D. Kasatkina",
+      "predName": "D. Kasatkina",
+      "prob": 68,
+      "ok": true
+    },
     {
       "date": "24 OCT",
       "ts": 1792825800000,
@@ -23326,7 +23325,7 @@
       "sofa": 17248100,
       "homeName": "S. Cocola",
       "awayName": "P. Vives Marcos",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "07 OCT",
@@ -23338,7 +23337,7 @@
       "sofa": null,
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "11 OCT",
@@ -23350,7 +23349,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "12 OCT",
@@ -23362,7 +23361,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "12 OCT",
@@ -23374,7 +23373,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "12 OCT",
@@ -23386,7 +23385,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "12 OCT",
@@ -23398,7 +23397,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "12 OCT",
@@ -23410,7 +23409,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "13 OCT",
@@ -23422,7 +23421,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "13 OCT",
@@ -23434,7 +23433,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "13 OCT",
@@ -23446,7 +23445,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "14 OCT",
@@ -23458,7 +23457,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "15 OCT",
@@ -23470,7 +23469,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "15 OCT",
@@ -23482,7 +23481,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "15 OCT",
@@ -23494,7 +23493,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "16 OCT",
@@ -23506,7 +23505,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "16 OCT",
@@ -23518,7 +23517,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 29
+      "miss": 30
     },
     {
       "date": "20 OCT",
@@ -23530,29 +23529,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 21
-    },
-    {
-      "date": "24 OCT",
-      "ts": 1792826100000,
-      "match": "Y. Ma – D. Kasatkina",
-      "predHome": false,
-      "prob": 68,
-      "predName": "D. Kasatkina",
-      "sofa": null,
-      "homeName": "Y. Ma",
-      "awayName": "D. Kasatkina"
-    },
-    {
-      "date": "24 OCT",
-      "ts": 1792834200000,
-      "match": "E. Rybakina – D. Shnaider",
-      "predHome": true,
-      "prob": 76,
-      "predName": "E. Rybakina",
-      "sofa": null,
-      "homeName": "E. Rybakina",
-      "awayName": "D. Shnaider"
+      "miss": 22
     }
   ],
   "LADDER": {
