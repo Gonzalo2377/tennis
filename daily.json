@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-25T12:00:45.558Z",
+    "updatedAt": "2026-10-25T14:00:47.198Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -860,6 +860,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "opid1204195975620030",
+      "ts": 1792922400000,
+      "date": "25 OCT",
+      "match": "D. Medvedev – N. Basilashvili",
+      "pick": "Gana D. Medvedev",
+      "pickHome": true,
+      "odd": 1.27,
+      "book": "betsson",
+      "result": "W"
+    },
     {
       "id": "opid1200301375992812",
       "ts": 1792912200000,
@@ -3117,7 +3128,7 @@
       "book": "sport888",
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "1356943371df609938b43fc463f52d22",
@@ -3133,7 +3144,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "opid1201562875477962",
@@ -3149,7 +3160,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "opid1203543675481454",
@@ -3165,7 +3176,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "opid1201562875371562",
@@ -3181,7 +3192,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "opid1201562875371560",
@@ -3197,7 +3208,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 39
+      "miss": 40
     },
     {
       "id": "opid1204070975371224",
@@ -3213,25 +3224,71 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 39
-    },
-    {
-      "id": "opid1204195975620030",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1792922400000,
-      "date": "25 OCT",
-      "sofa": 17331292,
-      "pickHome": true,
-      "match": "D. Medvedev – N. Basilashvili",
-      "pickKey": "home",
-      "pickLabel": "Gana D. Medvedev",
-      "odd": 1.27,
-      "book": "betsson",
-      "homeName": "D. Medvedev",
-      "awayName": "N. Basilashvili"
+      "miss": 40
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "25 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 2.12,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Medvedev – N. Basilashvili",
+          "pick": "Gana D. Medvedev",
+          "side": "home",
+          "odd": 1.26,
+          "win": true,
+          "voided": false,
+          "ts": 1792922400000
+        },
+        {
+          "match": "A. Zakharova – T. Kostovic",
+          "pick": "Gana A. Zakharova",
+          "side": "home",
+          "odd": 1.68,
+          "win": false,
+          "voided": false,
+          "ts": 1792912200000
+        }
+      ]
+    },
+    {
+      "date": "25 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 3.58,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Medvedev – N. Basilashvili",
+          "pick": "Gana D. Medvedev",
+          "side": "home",
+          "odd": 1.26,
+          "win": true,
+          "voided": false,
+          "ts": 1792922400000
+        },
+        {
+          "match": "A. Zakharova – T. Kostovic",
+          "pick": "Gana A. Zakharova",
+          "side": "home",
+          "odd": 1.68,
+          "win": false,
+          "voided": false,
+          "ts": 1792912200000
+        },
+        {
+          "match": "R. Hijikata – Y. Hanfmann",
+          "pick": "Gana Y. Hanfmann",
+          "side": "away",
+          "odd": 1.69,
+          "win": true,
+          "voided": false,
+          "ts": 1792926000000
+        }
+      ]
+    },
     {
       "date": "24 OCT",
       "name": "Combinada Valor",
@@ -9801,7 +9858,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 39
+      "miss": 40
     },
     {
       "dayId": "12 OCT·c1",
@@ -9842,7 +9899,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 39
+      "miss": 40
     },
     {
       "dayId": "15 OCT·c2",
@@ -9883,7 +9940,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 39
+      "miss": 40
     },
     {
       "dayId": "16 OCT·c2",
@@ -9924,81 +9981,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 39
-    },
-    {
-      "dayId": "25 OCT·c1",
-      "date": "25 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1204195975620030",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792922400000,
-          "side": "home",
-          "sofa": 17331292,
-          "match": "D. Medvedev – N. Basilashvili",
-          "pick": "Gana D. Medvedev",
-          "odd": 1.26,
-          "homeName": "D. Medvedev",
-          "awayName": "N. Basilashvili"
-        },
-        {
-          "id": "opid1200301375992812",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1792912200000,
-          "side": "home",
-          "sofa": 17404615,
-          "match": "A. Zakharova – T. Kostovic",
-          "pick": "Gana A. Zakharova",
-          "odd": 1.68,
-          "homeName": "A. Zakharova",
-          "awayName": "T. Kostovic"
-        },
-        {
-          "id": "opid1200261375991552",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792926000000,
-          "side": "away",
-          "sofa": 17404032,
-          "match": "R. Hijikata – Y. Hanfmann",
-          "pick": "Gana Y. Hanfmann",
-          "odd": 1.69,
-          "homeName": "R. Hijikata",
-          "awayName": "Y. Hanfmann"
-        }
-      ]
-    },
-    {
-      "dayId": "25 OCT·c2",
-      "date": "25 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1204195975620030",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1792922400000,
-          "side": "home",
-          "sofa": 17331292,
-          "match": "D. Medvedev – N. Basilashvili",
-          "pick": "Gana D. Medvedev",
-          "odd": 1.26,
-          "homeName": "D. Medvedev",
-          "awayName": "N. Basilashvili"
-        },
-        {
-          "id": "opid1200301375992812",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1792912200000,
-          "side": "home",
-          "sofa": 17404615,
-          "match": "A. Zakharova – T. Kostovic",
-          "pick": "Gana A. Zakharova",
-          "odd": 1.68,
-          "homeName": "A. Zakharova",
-          "awayName": "T. Kostovic"
-        }
-      ]
+      "miss": 40
     }
   ],
   "ARB_RECORD": [
@@ -10951,6 +10934,22 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "25 OCT",
+      "ts": 1792926000000,
+      "match": "R. Hijikata – Y. Hanfmann",
+      "predName": "Y. Hanfmann",
+      "prob": 60,
+      "ok": true
+    },
+    {
+      "date": "25 OCT",
+      "ts": 1792922400000,
+      "match": "D. Medvedev – N. Basilashvili",
+      "predName": "D. Medvedev",
+      "prob": 84,
+      "ok": true
+    },
     {
       "date": "25 OCT",
       "ts": 1792918800000,
@@ -23483,7 +23482,7 @@
       "sofa": null,
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "11 OCT",
@@ -23495,7 +23494,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "12 OCT",
@@ -23507,7 +23506,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "12 OCT",
@@ -23519,7 +23518,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "12 OCT",
@@ -23531,7 +23530,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "12 OCT",
@@ -23543,7 +23542,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "12 OCT",
@@ -23555,7 +23554,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "13 OCT",
@@ -23567,7 +23566,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "13 OCT",
@@ -23579,7 +23578,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "13 OCT",
@@ -23591,7 +23590,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "14 OCT",
@@ -23603,7 +23602,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "15 OCT",
@@ -23615,7 +23614,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "15 OCT",
@@ -23627,7 +23626,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "15 OCT",
@@ -23639,7 +23638,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "16 OCT",
@@ -23651,7 +23650,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "16 OCT",
@@ -23663,7 +23662,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 39
+      "miss": 40
     },
     {
       "date": "20 OCT",
@@ -23675,29 +23674,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 31
-    },
-    {
-      "date": "25 OCT",
-      "ts": 1792922400000,
-      "match": "D. Medvedev – N. Basilashvili",
-      "predHome": true,
-      "prob": 84,
-      "predName": "D. Medvedev",
-      "sofa": 17331292,
-      "homeName": "D. Medvedev",
-      "awayName": "N. Basilashvili"
-    },
-    {
-      "date": "25 OCT",
-      "ts": 1792926000000,
-      "match": "R. Hijikata – Y. Hanfmann",
-      "predHome": false,
-      "prob": 60,
-      "predName": "Y. Hanfmann",
-      "sofa": 17404032,
-      "homeName": "R. Hijikata",
-      "awayName": "Y. Hanfmann"
+      "miss": 32
     },
     {
       "date": "25 OCT",
