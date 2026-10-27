@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-27T16:00:36.952Z",
+    "updatedAt": "2026-10-27T18:00:39.818Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -3329,6 +3329,17 @@
   ],
   "RECORD": [
     {
+      "id": "2121f3ad0a65fd648051aae488ff71ce",
+      "ts": 1793104200000,
+      "date": "27 OCT",
+      "match": "A. Mannarino – I. Buse",
+      "pick": "Gana I. Buse",
+      "pickHome": false,
+      "odd": 2.32,
+      "book": "betfair_ex_eu",
+      "result": "L"
+    },
+    {
       "id": "3c6239f48e3a272aa8f7bb0ae354f14a",
       "ts": 1793098800000,
       "date": "27 OCT",
@@ -5763,7 +5774,7 @@
       "book": "sport888",
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "1356943371df609938b43fc463f52d22",
@@ -5779,7 +5790,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "opid1201562875477962",
@@ -5795,7 +5806,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "opid1203543675481454",
@@ -5811,7 +5822,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "opid1201562875371562",
@@ -5827,7 +5838,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "opid1201562875371560",
@@ -5843,7 +5854,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 59
+      "miss": 60
     },
     {
       "id": "opid1204070975371224",
@@ -5859,22 +5870,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 59
-    },
-    {
-      "id": "2121f3ad0a65fd648051aae488ff71ce",
-      "sport": "tennis_atp_vienna_open",
-      "ts": 1793104200000,
-      "date": "27 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "A. Mannarino – I. Buse",
-      "pickKey": "away",
-      "pickLabel": "Gana I. Buse",
-      "odd": 2.32,
-      "book": "betfair_ex_eu",
-      "homeName": "A. Mannarino",
-      "awayName": "I. Buse"
+      "miss": 60
     },
     {
       "id": "af913a4b884253b828e9314e74cfb6b3",
@@ -6057,6 +6053,41 @@
           "pick": "Gana E. Alexandrova",
           "side": "away",
           "odd": 1.84,
+          "win": true,
+          "voided": false,
+          "ts": 1793066400000
+        }
+      ]
+    },
+    {
+      "date": "26 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 8.24,
+      "result": "L",
+      "legs": [
+        {
+          "match": "D. Parry – C. Bucsa",
+          "pick": "Gana C. Bucsa",
+          "side": "away",
+          "odd": 1.9,
+          "win": true,
+          "voided": false,
+          "ts": 1793066400000
+        },
+        {
+          "match": "A. Mannarino – I. Buse",
+          "pick": "Gana I. Buse",
+          "side": "away",
+          "odd": 2.32,
+          "win": false,
+          "voided": false,
+          "ts": 1793104200000
+        },
+        {
+          "match": "A. Li – E. Alexandrova",
+          "pick": "Gana E. Alexandrova",
+          "side": "away",
+          "odd": 1.87,
           "win": true,
           "voided": false,
           "ts": 1793066400000
@@ -12693,7 +12724,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 59
+      "miss": 60
     },
     {
       "dayId": "12 OCT·c1",
@@ -12734,7 +12765,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 59
+      "miss": 60
     },
     {
       "dayId": "15 OCT·c2",
@@ -12775,7 +12806,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 59
+      "miss": 60
     },
     {
       "dayId": "16 OCT·c2",
@@ -12816,7 +12847,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 59
+      "miss": 60
     },
     {
       "dayId": "26 OCT·c1",
@@ -12858,49 +12889,6 @@
           "odd": 1.21,
           "homeName": "S. Wawrinka",
           "awayName": "J. Lehecka"
-        }
-      ]
-    },
-    {
-      "dayId": "26 OCT·c2",
-      "date": "26 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "fc844c0fbc0fe998724ce2a5c1546c67",
-          "sport": "tennis_wta_pan_pacific_open",
-          "ts": 1793066400000,
-          "side": "away",
-          "sofa": null,
-          "match": "D. Parry – C. Bucsa",
-          "pick": "Gana C. Bucsa",
-          "odd": 1.9,
-          "homeName": "D. Parry",
-          "awayName": "C. Bucsa"
-        },
-        {
-          "id": "2121f3ad0a65fd648051aae488ff71ce",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793104200000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Mannarino – I. Buse",
-          "pick": "Gana I. Buse",
-          "odd": 2.32,
-          "homeName": "A. Mannarino",
-          "awayName": "I. Buse"
-        },
-        {
-          "id": "62f625b171f0f9b70a801dc8c0ca7cd4",
-          "sport": "tennis_wta_pan_pacific_open",
-          "ts": 1793066400000,
-          "side": "away",
-          "sofa": null,
-          "match": "A. Li – E. Alexandrova",
-          "pick": "Gana E. Alexandrova",
-          "odd": 1.87,
-          "homeName": "A. Li",
-          "awayName": "E. Alexandrova"
         }
       ]
     }
@@ -14034,10 +14022,34 @@
     {
       "date": "27 OCT",
       "ts": 1793104200000,
+      "match": "K. Khachanov – C. Alcaraz",
+      "predName": "C. Alcaraz",
+      "prob": 77,
+      "ok": true
+    },
+    {
+      "date": "27 OCT",
+      "ts": 1793104200000,
+      "match": "A. Mannarino – I. Buse",
+      "predName": "I. Buse",
+      "prob": 53,
+      "ok": false
+    },
+    {
+      "date": "27 OCT",
+      "ts": 1793104200000,
       "match": "T. Paul – A. Rublev",
       "predName": "A. Rublev",
       "prob": 63,
       "ok": false
+    },
+    {
+      "date": "27 OCT",
+      "ts": 1793098800000,
+      "match": "G. Mpetshi Perricard – A. Fils",
+      "predName": "A. Fils",
+      "prob": 74,
+      "ok": true
     },
     {
       "date": "27 OCT",
@@ -26803,7 +26815,7 @@
       "sofa": null,
       "homeName": "C. Norrie",
       "awayName": "D. Shapovalov",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "11 OCT",
@@ -26815,7 +26827,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "12 OCT",
@@ -26827,7 +26839,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "12 OCT",
@@ -26839,7 +26851,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "12 OCT",
@@ -26851,7 +26863,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "12 OCT",
@@ -26863,7 +26875,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "12 OCT",
@@ -26875,7 +26887,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "13 OCT",
@@ -26887,7 +26899,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "13 OCT",
@@ -26899,7 +26911,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "13 OCT",
@@ -26911,7 +26923,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "14 OCT",
@@ -26923,7 +26935,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "15 OCT",
@@ -26935,7 +26947,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "15 OCT",
@@ -26947,7 +26959,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "15 OCT",
@@ -26959,7 +26971,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "16 OCT",
@@ -26971,7 +26983,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "16 OCT",
@@ -26983,7 +26995,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 59
+      "miss": 60
     },
     {
       "date": "20 OCT",
@@ -26995,7 +27007,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 51
+      "miss": 52
     },
     {
       "date": "27 OCT",
@@ -27018,17 +27030,6 @@
       "sofa": null,
       "homeName": "A. Michelsen",
       "awayName": "B. van de Zandschulp"
-    },
-    {
-      "date": "27 OCT",
-      "ts": 1793098800000,
-      "match": "G. Mpetshi Perricard – A. Fils",
-      "predHome": false,
-      "prob": 74,
-      "predName": "A. Fils",
-      "sofa": null,
-      "homeName": "G. Mpetshi Perricard",
-      "awayName": "A. Fils"
     },
     {
       "date": "27 OCT",
@@ -27088,17 +27089,6 @@
     {
       "date": "27 OCT",
       "ts": 1793104200000,
-      "match": "A. Mannarino – I. Buse",
-      "predHome": false,
-      "prob": 53,
-      "predName": "I. Buse",
-      "sofa": null,
-      "homeName": "A. Mannarino",
-      "awayName": "I. Buse"
-    },
-    {
-      "date": "27 OCT",
-      "ts": 1793104200000,
       "match": "A. Zverev – M. Landaluce",
       "predHome": true,
       "prob": 84,
@@ -27128,17 +27118,6 @@
       "sofa": null,
       "homeName": "C. Norrie",
       "awayName": "F. Cerundolo"
-    },
-    {
-      "date": "27 OCT",
-      "ts": 1793104200000,
-      "match": "K. Khachanov – C. Alcaraz",
-      "predHome": false,
-      "prob": 77,
-      "predName": "C. Alcaraz",
-      "sofa": null,
-      "homeName": "K. Khachanov",
-      "awayName": "C. Alcaraz"
     },
     {
       "date": "27 OCT",
