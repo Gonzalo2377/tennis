@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-28T16:00:37.733Z",
+    "updatedAt": "2026-10-28T18:00:37.463Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2662,6 +2662,17 @@
       "result": "W"
     },
     {
+      "id": "84b3d47944a12f77e8f84c6442665671",
+      "ts": 1793104200000,
+      "date": "27 OCT",
+      "match": "L. Musetti – F. Tiafoe",
+      "pick": "Gana F. Tiafoe",
+      "pickHome": false,
+      "odd": 1.95,
+      "book": "leovegas_se",
+      "result": "L"
+    },
+    {
       "id": "ad2ec395411c7dd956e92178f00c0c8d",
       "ts": 1793104200000,
       "date": "27 OCT",
@@ -2682,6 +2693,17 @@
       "odd": 2.32,
       "book": "betfair_ex_eu",
       "result": "L"
+    },
+    {
+      "id": "af913a4b884253b828e9314e74cfb6b3",
+      "ts": 1793098800000,
+      "date": "27 OCT",
+      "match": "N. Djokovic – U. Humbert",
+      "pick": "Gana N. Djokovic",
+      "pickHome": true,
+      "odd": 1.42,
+      "book": "betfair_ex_eu",
+      "result": "W"
     },
     {
       "id": "8f999f650b2a7e10b180a15fc7f863c1",
@@ -5142,7 +5164,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 68
+      "miss": 69
     },
     {
       "id": "opid1201562875477962",
@@ -5158,7 +5180,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 68
+      "miss": 69
     },
     {
       "id": "opid1203543675481454",
@@ -5174,7 +5196,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 68
+      "miss": 69
     },
     {
       "id": "opid1201562875371562",
@@ -5190,7 +5212,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 68
+      "miss": 69
     },
     {
       "id": "opid1201562875371560",
@@ -5206,7 +5228,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 68
+      "miss": 69
     },
     {
       "id": "opid1204070975371224",
@@ -5222,37 +5244,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 68
-    },
-    {
-      "id": "af913a4b884253b828e9314e74cfb6b3",
-      "sport": "tennis_atp_swiss_indoors",
-      "ts": 1793098800000,
-      "date": "27 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Djokovic – U. Humbert",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Djokovic",
-      "odd": 1.42,
-      "book": "betfair_ex_eu",
-      "homeName": "N. Djokovic",
-      "awayName": "U. Humbert"
-    },
-    {
-      "id": "84b3d47944a12f77e8f84c6442665671",
-      "sport": "tennis_atp_vienna_open",
-      "ts": 1793104200000,
-      "date": "27 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "L. Musetti – F. Tiafoe",
-      "pickKey": "away",
-      "pickLabel": "Gana F. Tiafoe",
-      "odd": 1.95,
-      "book": "leovegas_se",
-      "homeName": "L. Musetti",
-      "awayName": "F. Tiafoe"
+      "miss": 69
     },
     {
       "id": "484a0fff5b3739c2bbc79cafff73007c",
@@ -5392,6 +5384,41 @@
   ],
   "COMBO_RECORD": [
     {
+      "date": "28 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 4.67,
+      "result": "L",
+      "legs": [
+        {
+          "match": "H. Shi – D. Yastremska",
+          "pick": "Gana D. Yastremska",
+          "side": "away",
+          "odd": 1.59,
+          "win": false,
+          "voided": false,
+          "ts": 1793185200000
+        },
+        {
+          "match": "N. Djokovic – U. Humbert",
+          "pick": "Gana N. Djokovic",
+          "side": "home",
+          "odd": 1.38,
+          "win": true,
+          "voided": false,
+          "ts": 1793196600000
+        },
+        {
+          "match": "Y. Hanfmann – J. Struff",
+          "pick": "Gana Y. Hanfmann",
+          "side": "home",
+          "odd": 2.13,
+          "win": false,
+          "voided": false,
+          "ts": 1793185800000
+        }
+      ]
+    },
+    {
       "date": "27 OCT",
       "name": "Combinada Valor",
       "totalOdd": 7.33,
@@ -5423,6 +5450,41 @@
           "win": true,
           "voided": false,
           "ts": 1793066400000
+        }
+      ]
+    },
+    {
+      "date": "26 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 2.18,
+      "result": "W",
+      "legs": [
+        {
+          "match": "D. Merida Aguilar – D. Medvedev",
+          "pick": "Gana D. Medvedev",
+          "side": "away",
+          "odd": 1.27,
+          "win": true,
+          "voided": false,
+          "ts": 1793104200000
+        },
+        {
+          "match": "N. Djokovic – U. Humbert",
+          "pick": "Gana N. Djokovic",
+          "side": "home",
+          "odd": 1.42,
+          "win": true,
+          "voided": false,
+          "ts": 1793098800000
+        },
+        {
+          "match": "S. Wawrinka – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "side": "away",
+          "odd": 1.21,
+          "win": true,
+          "voided": false,
+          "ts": 1793098800000
         }
       ]
     },
@@ -12091,7 +12153,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 68
+      "miss": 69
     },
     {
       "dayId": "12 OCT·c1",
@@ -12132,7 +12194,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 68
+      "miss": 69
     },
     {
       "dayId": "15 OCT·c2",
@@ -12173,7 +12235,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 68
+      "miss": 69
     },
     {
       "dayId": "16 OCT·c2",
@@ -12214,50 +12276,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 68
-    },
-    {
-      "dayId": "26 OCT·c1",
-      "date": "26 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "ad2ec395411c7dd956e92178f00c0c8d",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793104200000,
-          "side": "away",
-          "sofa": null,
-          "match": "D. Merida Aguilar – D. Medvedev",
-          "pick": "Gana D. Medvedev",
-          "odd": 1.27,
-          "homeName": "D. Merida Aguilar",
-          "awayName": "D. Medvedev"
-        },
-        {
-          "id": "af913a4b884253b828e9314e74cfb6b3",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793098800000,
-          "side": "home",
-          "sofa": null,
-          "match": "N. Djokovic – U. Humbert",
-          "pick": "Gana N. Djokovic",
-          "odd": 1.42,
-          "homeName": "N. Djokovic",
-          "awayName": "U. Humbert"
-        },
-        {
-          "id": "0ccce6d326e553ba75890585346be8db",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793098800000,
-          "side": "away",
-          "sofa": null,
-          "match": "S. Wawrinka – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.21,
-          "homeName": "S. Wawrinka",
-          "awayName": "J. Lehecka"
-        }
-      ]
+      "miss": 69
     },
     {
       "dayId": "28 OCT·c1",
@@ -12299,49 +12318,6 @@
           "odd": 1.31,
           "homeName": "D. Merida",
           "awayName": "D. Medvedev"
-        }
-      ]
-    },
-    {
-      "dayId": "28 OCT·c2",
-      "date": "28 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1200301375838120",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1793185200000,
-          "side": "away",
-          "sofa": 17377209,
-          "match": "H. Shi – D. Yastremska",
-          "pick": "Gana D. Yastremska",
-          "odd": 1.59,
-          "homeName": "H. Shi",
-          "awayName": "D. Yastremska"
-        },
-        {
-          "id": "af913a4b884253b828e9314e74cfb6b3",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793196600000,
-          "side": "home",
-          "sofa": null,
-          "match": "N. Djokovic – U. Humbert",
-          "pick": "Gana N. Djokovic",
-          "odd": 1.38,
-          "homeName": "N. Djokovic",
-          "awayName": "U. Humbert"
-        },
-        {
-          "id": "8f999f650b2a7e10b180a15fc7f863c1",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793185800000,
-          "side": "home",
-          "sofa": null,
-          "match": "Y. Hanfmann – J. Struff",
-          "pick": "Gana Y. Hanfmann",
-          "odd": 2.13,
-          "homeName": "Y. Hanfmann",
-          "awayName": "J. Struff"
         }
       ]
     }
@@ -13663,6 +13639,14 @@
       "predName": "A. Rublev",
       "prob": 63,
       "ok": false
+    },
+    {
+      "date": "27 OCT",
+      "ts": 1793098800000,
+      "match": "N. Djokovic – U. Humbert",
+      "predName": "N. Djokovic",
+      "prob": 84,
+      "ok": true
     },
     {
       "date": "27 OCT",
@@ -26476,7 +26460,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "12 OCT",
@@ -26488,7 +26472,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "12 OCT",
@@ -26500,7 +26484,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "12 OCT",
@@ -26512,7 +26496,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "12 OCT",
@@ -26524,7 +26508,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "12 OCT",
@@ -26536,7 +26520,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "13 OCT",
@@ -26548,7 +26532,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "13 OCT",
@@ -26560,7 +26544,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "13 OCT",
@@ -26572,7 +26556,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "14 OCT",
@@ -26584,7 +26568,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "15 OCT",
@@ -26596,7 +26580,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "15 OCT",
@@ -26608,7 +26592,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "15 OCT",
@@ -26620,7 +26604,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "16 OCT",
@@ -26632,7 +26616,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "16 OCT",
@@ -26644,7 +26628,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 68
+      "miss": 69
     },
     {
       "date": "20 OCT",
@@ -26656,18 +26640,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 60
-    },
-    {
-      "date": "27 OCT",
-      "ts": 1793098800000,
-      "match": "N. Djokovic – U. Humbert",
-      "predHome": true,
-      "prob": 84,
-      "predName": "N. Djokovic",
-      "sofa": null,
-      "homeName": "N. Djokovic",
-      "awayName": "U. Humbert"
+      "miss": 61
     },
     {
       "date": "27 OCT",
