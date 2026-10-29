@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-29T07:01:10.300Z",
+    "updatedAt": "2026-10-29T08:01:07.588Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2070,6 +2070,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "d04e7e6ce329fccbd0b365240f807cca",
+      "ts": 1793246400000,
+      "date": "29 OCT",
+      "match": "N. Osaka – M. Pohánková",
+      "pick": "Gana N. Osaka",
+      "pickHome": true,
+      "odd": 1.29,
+      "book": "unibet_se",
+      "result": "L"
+    },
     {
       "id": "0148c3d6327ac9f98ddf4b277bfc8a3e",
       "ts": 1793246400000,
@@ -4683,7 +4694,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1201562875477962",
@@ -4699,7 +4710,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1203543675481454",
@@ -4715,7 +4726,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1201562875371562",
@@ -4731,7 +4742,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1201562875371560",
@@ -4747,7 +4758,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1204070975371224",
@@ -4763,7 +4774,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 72
+      "miss": 73
     },
     {
       "id": "opid1200301375838106",
@@ -4809,21 +4820,6 @@
       "book": "betfair_ex_eu",
       "homeName": "F. Cobolli",
       "awayName": "M. Berrettini"
-    },
-    {
-      "id": "d04e7e6ce329fccbd0b365240f807cca",
-      "sport": "tennis_wta_pan_pacific_open",
-      "ts": 1793246400000,
-      "date": "29 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Osaka – M. Pohánková",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Osaka",
-      "odd": 1.29,
-      "book": "unibet_se",
-      "homeName": "N. Osaka",
-      "awayName": "M. Pohánková"
     },
     {
       "id": "opid1200301375838104",
@@ -4902,6 +4898,41 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "28 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 2.16,
+      "result": "L",
+      "legs": [
+        {
+          "match": "N. Osaka – M. Pohánková",
+          "pick": "Gana N. Osaka",
+          "side": "home",
+          "odd": 1.26,
+          "win": false,
+          "voided": false,
+          "ts": 1793246400000
+        },
+        {
+          "match": "D. Merida Aguilar – D. Medvedev",
+          "pick": "Gana D. Medvedev",
+          "side": "away",
+          "odd": 1.31,
+          "win": true,
+          "voided": false,
+          "ts": 1793190600000
+        },
+        {
+          "match": "D. Merida – D. Medvedev",
+          "pick": "Gana D. Medvedev",
+          "side": "away",
+          "odd": 1.31,
+          "win": true,
+          "voided": false,
+          "ts": 1793190600000
+        }
+      ]
+    },
     {
       "date": "28 OCT",
       "name": "Combinada Valor",
@@ -11672,7 +11703,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 72
+      "miss": 73
     },
     {
       "dayId": "12 OCT·c1",
@@ -11713,7 +11744,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 72
+      "miss": 73
     },
     {
       "dayId": "15 OCT·c2",
@@ -11754,7 +11785,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 72
+      "miss": 73
     },
     {
       "dayId": "16 OCT·c2",
@@ -11795,50 +11826,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 72
-    },
-    {
-      "dayId": "28 OCT·c1",
-      "date": "28 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "d04e7e6ce329fccbd0b365240f807cca",
-          "sport": "tennis_wta_pan_pacific_open",
-          "ts": 1793246400000,
-          "side": "home",
-          "sofa": null,
-          "match": "N. Osaka – M. Pohánková",
-          "pick": "Gana N. Osaka",
-          "odd": 1.26,
-          "homeName": "N. Osaka",
-          "awayName": "M. Pohánková"
-        },
-        {
-          "id": "ad2ec395411c7dd956e92178f00c0c8d",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793190600000,
-          "side": "away",
-          "sofa": null,
-          "match": "D. Merida Aguilar – D. Medvedev",
-          "pick": "Gana D. Medvedev",
-          "odd": 1.31,
-          "homeName": "D. Merida Aguilar",
-          "awayName": "D. Medvedev"
-        },
-        {
-          "id": "opid1200310375989922",
-          "sport": "tennis_oddspapi_atp",
-          "ts": 1793190600000,
-          "side": "away",
-          "sofa": 17403260,
-          "match": "D. Merida – D. Medvedev",
-          "pick": "Gana D. Medvedev",
-          "odd": 1.31,
-          "homeName": "D. Merida",
-          "awayName": "D. Medvedev"
-        }
-      ]
+      "miss": 73
     },
     {
       "dayId": "29 OCT·c1",
@@ -13207,6 +13195,14 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "29 OCT",
+      "ts": 1793246400000,
+      "match": "N. Osaka – M. Pohánková",
+      "predName": "N. Osaka",
+      "prob": 87,
+      "ok": false
+    },
     {
       "date": "29 OCT",
       "ts": 1793246400000,
@@ -26179,7 +26175,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "12 OCT",
@@ -26191,7 +26187,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "12 OCT",
@@ -26203,7 +26199,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "12 OCT",
@@ -26215,7 +26211,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "12 OCT",
@@ -26227,7 +26223,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "12 OCT",
@@ -26239,7 +26235,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "13 OCT",
@@ -26251,7 +26247,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "13 OCT",
@@ -26263,7 +26259,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "13 OCT",
@@ -26275,7 +26271,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "14 OCT",
@@ -26287,7 +26283,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "15 OCT",
@@ -26299,7 +26295,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "15 OCT",
@@ -26311,7 +26307,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "15 OCT",
@@ -26323,7 +26319,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "16 OCT",
@@ -26335,7 +26331,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "16 OCT",
@@ -26347,7 +26343,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 72
+      "miss": 73
     },
     {
       "date": "20 OCT",
@@ -26359,7 +26355,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 64
+      "miss": 65
     },
     {
       "date": "29 OCT",
@@ -26382,17 +26378,6 @@
       "sofa": null,
       "homeName": "E. Rybakina",
       "awayName": "Y. Putintseva"
-    },
-    {
-      "date": "29 OCT",
-      "ts": 1793246400000,
-      "match": "N. Osaka – M. Pohánková",
-      "predHome": true,
-      "prob": 87,
-      "predName": "N. Osaka",
-      "sofa": null,
-      "homeName": "N. Osaka",
-      "awayName": "M. Pohánková"
     },
     {
       "date": "29 OCT",
