@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-29T20:01:07.680Z",
+    "updatedAt": "2026-10-29T22:01:05.835Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2071,6 +2071,17 @@
   ],
   "RECORD": [
     {
+      "id": "e17ec974bac4e8094cbe45dfeb471b1e",
+      "ts": 1793293200000,
+      "date": "29 OCT",
+      "match": "N. Djokovic – J. Struff",
+      "pick": "Gana N. Djokovic",
+      "pickHome": true,
+      "odd": 1.32,
+      "book": "matchbook",
+      "result": "L"
+    },
+    {
       "id": "704555fd36bea990169b89857cf51075",
       "ts": 1793289600000,
       "date": "29 OCT",
@@ -2091,6 +2102,19 @@
       "odd": 1.13,
       "book": "betfair_ex_eu",
       "result": "W"
+    },
+    {
+      "id": "3b65bc657a2d7391944d9e343c189c52",
+      "ts": 1793275200000,
+      "date": "29 OCT",
+      "match": "F. Cobolli – M. Berrettini",
+      "pick": "Gana M. Berrettini",
+      "pickHome": false,
+      "odd": 1,
+      "book": "betfair_ex_eu",
+      "result": "V",
+      "oddOrig": 1.92,
+      "reason": "retirada"
     },
     {
       "id": "17b7cfaa2dc6c21f39412e6017f54e9b",
@@ -4738,7 +4762,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 79
+      "miss": 80
     },
     {
       "id": "opid1201562875477962",
@@ -4754,7 +4778,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 79
+      "miss": 80
     },
     {
       "id": "opid1203543675481454",
@@ -4770,7 +4794,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 79
+      "miss": 80
     },
     {
       "id": "opid1201562875371562",
@@ -4786,7 +4810,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 79
+      "miss": 80
     },
     {
       "id": "opid1201562875371560",
@@ -4802,7 +4826,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 79
+      "miss": 80
     },
     {
       "id": "opid1204070975371224",
@@ -4818,22 +4842,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 79
-    },
-    {
-      "id": "3b65bc657a2d7391944d9e343c189c52",
-      "sport": "tennis_atp_vienna_open",
-      "ts": 1793275200000,
-      "date": "29 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "F. Cobolli – M. Berrettini",
-      "pickKey": "away",
-      "pickLabel": "Gana M. Berrettini",
-      "odd": 1.92,
-      "book": "betfair_ex_eu",
-      "homeName": "F. Cobolli",
-      "awayName": "M. Berrettini"
+      "miss": 80
     },
     {
       "id": "opid1200301375838104",
@@ -4849,21 +4858,6 @@
       "book": "betfair-ex",
       "homeName": "P. Badosa",
       "awayName": "H. Dart"
-    },
-    {
-      "id": "e17ec974bac4e8094cbe45dfeb471b1e",
-      "sport": "tennis_atp_swiss_indoors",
-      "ts": 1793293200000,
-      "date": "29 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Djokovic – J. Struff",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Djokovic",
-      "odd": 1.32,
-      "book": "matchbook",
-      "homeName": "N. Djokovic",
-      "awayName": "J. Struff"
     },
     {
       "id": "cc0834cac355e3a96bf64a85ce003e51",
@@ -4882,6 +4876,41 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "29 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 1.89,
+      "result": "L",
+      "legs": [
+        {
+          "match": "N. Basilashvili – C. Alcaraz",
+          "pick": "Gana C. Alcaraz",
+          "side": "away",
+          "odd": 1.13,
+          "win": true,
+          "voided": false,
+          "ts": 1793282400000
+        },
+        {
+          "match": "N. Djokovic – J. Struff",
+          "pick": "Gana N. Djokovic",
+          "side": "home",
+          "odd": 1.32,
+          "win": false,
+          "voided": false,
+          "ts": 1793293200000
+        },
+        {
+          "match": "N. Osaka – M. Pohánková",
+          "pick": "Gana N. Osaka",
+          "side": "home",
+          "odd": 1.27,
+          "win": false,
+          "voided": false,
+          "ts": 1793246400000
+        }
+      ]
+    },
     {
       "date": "28 OCT",
       "name": "Combinada del Día",
@@ -11687,7 +11716,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 79
+      "miss": 80
     },
     {
       "dayId": "12 OCT·c1",
@@ -11728,7 +11757,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 79
+      "miss": 80
     },
     {
       "dayId": "15 OCT·c2",
@@ -11769,7 +11798,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 79
+      "miss": 80
     },
     {
       "dayId": "16 OCT·c2",
@@ -11810,50 +11839,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 79
-    },
-    {
-      "dayId": "29 OCT·c1",
-      "date": "29 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "dd5bca16b0bbd8de2684f82a2797f042",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793282400000,
-          "side": "away",
-          "sofa": null,
-          "match": "N. Basilashvili – C. Alcaraz",
-          "pick": "Gana C. Alcaraz",
-          "odd": 1.13,
-          "homeName": "N. Basilashvili",
-          "awayName": "C. Alcaraz"
-        },
-        {
-          "id": "e17ec974bac4e8094cbe45dfeb471b1e",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793293200000,
-          "side": "home",
-          "sofa": null,
-          "match": "N. Djokovic – J. Struff",
-          "pick": "Gana N. Djokovic",
-          "odd": 1.32,
-          "homeName": "N. Djokovic",
-          "awayName": "J. Struff"
-        },
-        {
-          "id": "d04e7e6ce329fccbd0b365240f807cca",
-          "sport": "tennis_prev",
-          "ts": 1793246400000,
-          "side": "home",
-          "sofa": null,
-          "match": "N. Osaka – M. Pohánková",
-          "pick": "Gana N. Osaka",
-          "odd": 1.27,
-          "homeName": "N. Osaka",
-          "awayName": "M. Pohánková"
-        }
-      ]
+      "miss": 80
     },
     {
       "dayId": "29 OCT·c2",
@@ -13179,6 +13165,14 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "29 OCT",
+      "ts": 1793293200000,
+      "match": "N. Djokovic – J. Struff",
+      "predName": "N. Djokovic",
+      "prob": 88,
+      "ok": false
+    },
     {
       "date": "29 OCT",
       "ts": 1793283000000,
@@ -26239,7 +26233,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "12 OCT",
@@ -26251,7 +26245,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "12 OCT",
@@ -26263,7 +26257,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "12 OCT",
@@ -26275,7 +26269,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "12 OCT",
@@ -26287,7 +26281,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "12 OCT",
@@ -26299,7 +26293,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "13 OCT",
@@ -26311,7 +26305,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "13 OCT",
@@ -26323,7 +26317,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "13 OCT",
@@ -26335,7 +26329,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "14 OCT",
@@ -26347,7 +26341,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "15 OCT",
@@ -26359,7 +26353,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "15 OCT",
@@ -26371,7 +26365,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "15 OCT",
@@ -26383,7 +26377,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "16 OCT",
@@ -26395,7 +26389,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "16 OCT",
@@ -26407,7 +26401,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 79
+      "miss": 80
     },
     {
       "date": "20 OCT",
@@ -26419,7 +26413,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 71
+      "miss": 72
     },
     {
       "date": "29 OCT",
@@ -26431,28 +26425,6 @@
       "sofa": null,
       "homeName": "B. Shelton",
       "awayName": "J. Kym"
-    },
-    {
-      "date": "29 OCT",
-      "ts": 1793275200000,
-      "match": "F. Cobolli – M. Berrettini",
-      "predHome": false,
-      "prob": 58,
-      "predName": "M. Berrettini",
-      "sofa": null,
-      "homeName": "F. Cobolli",
-      "awayName": "M. Berrettini"
-    },
-    {
-      "date": "29 OCT",
-      "ts": 1793293200000,
-      "match": "N. Djokovic – J. Struff",
-      "predHome": true,
-      "prob": 88,
-      "predName": "N. Djokovic",
-      "sofa": null,
-      "homeName": "N. Djokovic",
-      "awayName": "J. Struff"
     },
     {
       "date": "30 OCT",
