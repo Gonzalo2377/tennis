@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-30T18:01:06.944Z",
+    "updatedAt": "2026-10-30T20:01:05.437Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1619,6 +1619,28 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "e66be09cbf07f4ca7b22ef19c32bcb30",
+      "ts": 1793383800000,
+      "date": "30 OCT",
+      "match": "J. Struff – N. Borges",
+      "pick": "Gana N. Borges",
+      "pickHome": false,
+      "odd": 2.15,
+      "book": "winamax_de",
+      "result": "L"
+    },
+    {
+      "id": "e01a16acf3ce50a010714d85d5ff6374",
+      "ts": 1793379600000,
+      "date": "30 OCT",
+      "match": "J. Kym – J. Lehecka",
+      "pick": "Gana J. Lehecka",
+      "pickHome": false,
+      "odd": 1.36,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
     {
       "id": "f8b84ec001244b604176bf0bc6f21f16",
       "ts": 1793369400000,
@@ -4390,7 +4412,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 87
+      "miss": 88
     },
     {
       "id": "opid1201562875477962",
@@ -4406,7 +4428,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 87
+      "miss": 88
     },
     {
       "id": "opid1203543675481454",
@@ -4422,7 +4444,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 87
+      "miss": 88
     },
     {
       "id": "opid1201562875371562",
@@ -4438,7 +4460,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 87
+      "miss": 88
     },
     {
       "id": "opid1201562875371560",
@@ -4454,7 +4476,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 87
+      "miss": 88
     },
     {
       "id": "opid1204070975371224",
@@ -4470,40 +4492,82 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 87
-    },
-    {
-      "id": "e66be09cbf07f4ca7b22ef19c32bcb30",
-      "sport": "tennis_atp_swiss_indoors",
-      "ts": 1793383800000,
-      "date": "30 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Struff – N. Borges",
-      "pickKey": "away",
-      "pickLabel": "Gana N. Borges",
-      "odd": 2.15,
-      "book": "winamax_de",
-      "homeName": "J. Struff",
-      "awayName": "N. Borges"
-    },
-    {
-      "id": "e01a16acf3ce50a010714d85d5ff6374",
-      "sport": "tennis_atp_swiss_indoors",
-      "ts": 1793379600000,
-      "date": "30 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Kym – J. Lehecka",
-      "pickKey": "away",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 1.36,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Kym",
-      "awayName": "J. Lehecka"
+      "miss": 88
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "30 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 5.09,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Fritz – A. Fils",
+          "pick": "Gana T. Fritz",
+          "side": "home",
+          "odd": 1,
+          "win": null,
+          "voided": true,
+          "ts": 1793369400000,
+          "oddOrig": 2.02,
+          "reason": "retirada"
+        },
+        {
+          "match": "J. Struff – N. Borges",
+          "pick": "Gana N. Borges",
+          "side": "away",
+          "odd": 2.14,
+          "win": false,
+          "voided": false,
+          "ts": 1793383800000
+        },
+        {
+          "match": "H. Rune – V. Vacherot",
+          "pick": "Gana V. Vacherot",
+          "side": "away",
+          "odd": 2.38,
+          "win": true,
+          "voided": false,
+          "ts": 1793365200000
+        }
+      ]
+    },
+    {
+      "date": "30 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 2.07,
+      "result": "W",
+      "legs": [
+        {
+          "match": "A. Zverev – A. Fery",
+          "pick": "Gana A. Zverev",
+          "side": "home",
+          "odd": 1.16,
+          "win": true,
+          "voided": false,
+          "ts": 1793377800000
+        },
+        {
+          "match": "J. Kym – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "side": "away",
+          "odd": 1.36,
+          "win": true,
+          "voided": false,
+          "ts": 1793379600000
+        },
+        {
+          "match": "T. Paul – C. Alcaraz",
+          "pick": "Gana C. Alcaraz",
+          "side": "away",
+          "odd": 1.31,
+          "win": true,
+          "voided": false,
+          "ts": 1793368800000
+        }
+      ]
+    },
     {
       "date": "29 OCT",
       "name": "Combinada Valor",
@@ -11381,7 +11445,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 87
+      "miss": 88
     },
     {
       "dayId": "12 OCT·c1",
@@ -11422,7 +11486,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 87
+      "miss": 88
     },
     {
       "dayId": "15 OCT·c2",
@@ -11463,7 +11527,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 87
+      "miss": 88
     },
     {
       "dayId": "16 OCT·c2",
@@ -11504,93 +11568,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 87
-    },
-    {
-      "dayId": "30 OCT·c1",
-      "date": "30 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "69ae427eb9d45bc2bc6b0ad750e25934",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793377800000,
-          "side": "home",
-          "sofa": null,
-          "match": "A. Zverev – A. Fery",
-          "pick": "Gana A. Zverev",
-          "odd": 1.16,
-          "homeName": "A. Zverev",
-          "awayName": "A. Fery"
-        },
-        {
-          "id": "e01a16acf3ce50a010714d85d5ff6374",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793379600000,
-          "side": "away",
-          "sofa": null,
-          "match": "J. Kym – J. Lehecka",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.36,
-          "homeName": "J. Kym",
-          "awayName": "J. Lehecka"
-        },
-        {
-          "id": "cc4564f7b80beae29935d650d1ccb4cb",
-          "sport": "tennis_atp_vienna_open",
-          "ts": 1793368800000,
-          "side": "away",
-          "sofa": null,
-          "match": "T. Paul – C. Alcaraz",
-          "pick": "Gana C. Alcaraz",
-          "odd": 1.31,
-          "homeName": "T. Paul",
-          "awayName": "C. Alcaraz"
-        }
-      ]
-    },
-    {
-      "dayId": "30 OCT·c2",
-      "date": "30 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "f8b84ec001244b604176bf0bc6f21f16",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793369400000,
-          "side": "home",
-          "sofa": null,
-          "match": "T. Fritz – A. Fils",
-          "pick": "Gana T. Fritz",
-          "odd": 2.02,
-          "homeName": "T. Fritz",
-          "awayName": "A. Fils"
-        },
-        {
-          "id": "e66be09cbf07f4ca7b22ef19c32bcb30",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793383800000,
-          "side": "away",
-          "sofa": null,
-          "match": "J. Struff – N. Borges",
-          "pick": "Gana N. Borges",
-          "odd": 2.14,
-          "homeName": "J. Struff",
-          "awayName": "N. Borges"
-        },
-        {
-          "id": "4eebb3b42f713eff0e760f9abef41572",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793365200000,
-          "side": "away",
-          "sofa": null,
-          "match": "H. Rune – V. Vacherot",
-          "pick": "Gana V. Vacherot",
-          "odd": 2.38,
-          "homeName": "H. Rune",
-          "awayName": "V. Vacherot"
-        }
-      ]
+      "miss": 88
     }
   ],
   "ARB_RECORD": [
@@ -12917,6 +12895,22 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "30 OCT",
+      "ts": 1793383800000,
+      "match": "J. Struff – N. Borges",
+      "predName": "N. Borges",
+      "prob": 56,
+      "ok": false
+    },
+    {
+      "date": "30 OCT",
+      "ts": 1793379600000,
+      "match": "J. Kym – J. Lehecka",
+      "predName": "J. Lehecka",
+      "prob": 85,
+      "ok": true
+    },
     {
       "date": "30 OCT",
       "ts": 1793377800000,
@@ -26057,7 +26051,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "12 OCT",
@@ -26069,7 +26063,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "12 OCT",
@@ -26081,7 +26075,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "12 OCT",
@@ -26093,7 +26087,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "12 OCT",
@@ -26105,7 +26099,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "12 OCT",
@@ -26117,7 +26111,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "13 OCT",
@@ -26129,7 +26123,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "13 OCT",
@@ -26141,7 +26135,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "13 OCT",
@@ -26153,7 +26147,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "14 OCT",
@@ -26165,7 +26159,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "15 OCT",
@@ -26177,7 +26171,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "15 OCT",
@@ -26189,7 +26183,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "15 OCT",
@@ -26201,7 +26195,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "16 OCT",
@@ -26213,7 +26207,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "16 OCT",
@@ -26225,7 +26219,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 87
+      "miss": 88
     },
     {
       "date": "20 OCT",
@@ -26237,29 +26231,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 79
-    },
-    {
-      "date": "30 OCT",
-      "ts": 1793379600000,
-      "match": "J. Kym – J. Lehecka",
-      "predHome": false,
-      "prob": 85,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "J. Kym",
-      "awayName": "J. Lehecka"
-    },
-    {
-      "date": "30 OCT",
-      "ts": 1793383800000,
-      "match": "J. Struff – N. Borges",
-      "predHome": false,
-      "prob": 56,
-      "predName": "N. Borges",
-      "sofa": null,
-      "homeName": "J. Struff",
-      "awayName": "N. Borges"
+      "miss": 80
     },
     {
       "date": "30 OCT",
