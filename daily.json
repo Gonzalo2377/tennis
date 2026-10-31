@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-31T18:00:42.525Z",
+    "updatedAt": "2026-10-31T20:00:43.920Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1599,6 +1599,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "552fda4930d6ed5d9fef41d162da947d",
+      "ts": 1793462400000,
+      "date": "31 OCT",
+      "match": "J. Lehecka – J. Struff",
+      "pick": "Gana J. Lehecka",
+      "pickHome": true,
+      "odd": 1.48,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
     {
       "id": "61c8928c277531cc3a82944398f6ee04",
       "ts": 1793455200000,
@@ -4469,7 +4480,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 96
+      "miss": 97
     },
     {
       "id": "opid1201562875477962",
@@ -4485,7 +4496,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 96
+      "miss": 97
     },
     {
       "id": "opid1203543675481454",
@@ -4501,7 +4512,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 96
+      "miss": 97
     },
     {
       "id": "opid1201562875371562",
@@ -4517,7 +4528,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 96
+      "miss": 97
     },
     {
       "id": "opid1201562875371560",
@@ -4533,7 +4544,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 96
+      "miss": 97
     },
     {
       "id": "opid1204070975371224",
@@ -4549,25 +4560,80 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 96
-    },
-    {
-      "id": "552fda4930d6ed5d9fef41d162da947d",
-      "sport": "tennis_atp_swiss_indoors",
-      "ts": 1793462400000,
-      "date": "31 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "J. Lehecka – J. Struff",
-      "pickKey": "home",
-      "pickLabel": "Gana J. Lehecka",
-      "odd": 1.48,
-      "book": "betfair_ex_eu",
-      "homeName": "J. Lehecka",
-      "awayName": "J. Struff"
+      "miss": 97
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "31 OCT",
+      "name": "Combinada Valor",
+      "totalOdd": 4.68,
+      "result": "L",
+      "legs": [
+        {
+          "match": "T. Agustin Tirante – Z. Svajda",
+          "pick": "Gana Z. Svajda",
+          "side": "away",
+          "odd": 1.86,
+          "win": false,
+          "voided": false,
+          "ts": 1793441100000
+        },
+        {
+          "match": "J. Lehecka – J. Struff",
+          "pick": "Gana J. Lehecka",
+          "side": "home",
+          "odd": 1.48,
+          "win": true,
+          "voided": false,
+          "ts": 1793462400000
+        },
+        {
+          "match": "P. Carreno Busta – M. Bellucci",
+          "pick": "Gana M. Bellucci",
+          "side": "away",
+          "odd": 1.7,
+          "win": true,
+          "voided": false,
+          "ts": 1793441100000
+        }
+      ]
+    },
+    {
+      "date": "31 OCT",
+      "name": "Combinada del Día",
+      "totalOdd": 3.14,
+      "result": "L",
+      "legs": [
+        {
+          "match": "J. Lehecka – J. Struff",
+          "pick": "Gana J. Lehecka",
+          "side": "home",
+          "odd": 1.48,
+          "win": true,
+          "voided": false,
+          "ts": 1793462400000
+        },
+        {
+          "match": "L. Fernandez – K. Rakhimova",
+          "pick": "Gana L. Fernandez",
+          "side": "home",
+          "odd": 1.35,
+          "win": true,
+          "voided": false,
+          "ts": 1793415600000
+        },
+        {
+          "match": "T. Griekspoor – B. Bonzi",
+          "pick": "Gana T. Griekspoor",
+          "side": "home",
+          "odd": 1.57,
+          "win": false,
+          "voided": false,
+          "ts": 1793451600000
+        }
+      ]
+    },
     {
       "date": "30 OCT",
       "name": "Combinada Valor",
@@ -11517,7 +11583,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 96
+      "miss": 97
     },
     {
       "dayId": "12 OCT·c1",
@@ -11558,7 +11624,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 96
+      "miss": 97
     },
     {
       "dayId": "15 OCT·c2",
@@ -11599,7 +11665,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 96
+      "miss": 97
     },
     {
       "dayId": "16 OCT·c2",
@@ -11640,93 +11706,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 96
-    },
-    {
-      "dayId": "31 OCT·c1",
-      "date": "31 OCT",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "552fda4930d6ed5d9fef41d162da947d",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793462400000,
-          "side": "home",
-          "sofa": null,
-          "match": "J. Lehecka – J. Struff",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.48,
-          "homeName": "J. Lehecka",
-          "awayName": "J. Struff"
-        },
-        {
-          "id": "c1a54362fbf98df45c2174b84374dd0c",
-          "sport": "tennis_prev",
-          "ts": 1793415600000,
-          "side": "home",
-          "sofa": null,
-          "match": "L. Fernandez – K. Rakhimova",
-          "pick": "Gana L. Fernandez",
-          "odd": 1.35,
-          "homeName": "L. Fernandez",
-          "awayName": "K. Rakhimova"
-        },
-        {
-          "id": "d2d80372138d7a9fb0ac07d2ff097c5e",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793451600000,
-          "side": "home",
-          "sofa": null,
-          "match": "T. Griekspoor – B. Bonzi",
-          "pick": "Gana T. Griekspoor",
-          "odd": 1.57,
-          "homeName": "T. Griekspoor",
-          "awayName": "B. Bonzi"
-        }
-      ]
-    },
-    {
-      "dayId": "31 OCT·c2",
-      "date": "31 OCT",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "8f1291f57aab2102a046f3688a5cb9da",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793441100000,
-          "side": "away",
-          "sofa": null,
-          "match": "T. Agustin Tirante – Z. Svajda",
-          "pick": "Gana Z. Svajda",
-          "odd": 1.86,
-          "homeName": "T. Agustin Tirante",
-          "awayName": "Z. Svajda"
-        },
-        {
-          "id": "552fda4930d6ed5d9fef41d162da947d",
-          "sport": "tennis_atp_swiss_indoors",
-          "ts": 1793462400000,
-          "side": "home",
-          "sofa": null,
-          "match": "J. Lehecka – J. Struff",
-          "pick": "Gana J. Lehecka",
-          "odd": 1.48,
-          "homeName": "J. Lehecka",
-          "awayName": "J. Struff"
-        },
-        {
-          "id": "b79cec36580dcc0d4a39f0e998bf6259",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793441100000,
-          "side": "away",
-          "sofa": null,
-          "match": "P. Carreno Busta – M. Bellucci",
-          "pick": "Gana M. Bellucci",
-          "odd": 1.7,
-          "homeName": "P. Carreno Busta",
-          "awayName": "M. Bellucci"
-        }
-      ]
+      "miss": 97
     }
   ],
   "ARB_RECORD": [
@@ -13053,6 +13033,14 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "31 OCT",
+      "ts": 1793462400000,
+      "match": "J. Lehecka – J. Struff",
+      "predName": "J. Lehecka",
+      "prob": 77,
+      "ok": true
+    },
     {
       "date": "31 OCT",
       "ts": 1793455200000,
@@ -26345,7 +26333,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "12 OCT",
@@ -26357,7 +26345,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "12 OCT",
@@ -26369,7 +26357,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "12 OCT",
@@ -26381,7 +26369,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "12 OCT",
@@ -26393,7 +26381,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "12 OCT",
@@ -26405,7 +26393,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "13 OCT",
@@ -26417,7 +26405,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "13 OCT",
@@ -26429,7 +26417,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "13 OCT",
@@ -26441,7 +26429,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "14 OCT",
@@ -26453,7 +26441,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "15 OCT",
@@ -26465,7 +26453,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "15 OCT",
@@ -26477,7 +26465,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "15 OCT",
@@ -26489,7 +26477,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "16 OCT",
@@ -26501,7 +26489,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "16 OCT",
@@ -26513,7 +26501,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 96
+      "miss": 97
     },
     {
       "date": "20 OCT",
@@ -26525,18 +26513,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 88
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793462400000,
-      "match": "J. Lehecka – J. Struff",
-      "predHome": true,
-      "prob": 77,
-      "predName": "J. Lehecka",
-      "sofa": null,
-      "homeName": "J. Lehecka",
-      "awayName": "J. Struff"
+      "miss": 89
     }
   ],
   "LADDER": {
