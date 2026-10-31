@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-10-31T12:00:41.868Z",
+    "updatedAt": "2026-10-31T14:00:42.096Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1619,6 +1619,17 @@
       "pickHome": false,
       "odd": 1.86,
       "book": "pinnacle",
+      "result": "L"
+    },
+    {
+      "id": "opid1200301375838122",
+      "ts": 1793439600000,
+      "date": "31 OCT",
+      "match": "K. Quevedo – L. Tagger",
+      "pick": "Gana K. Quevedo",
+      "pickHome": true,
+      "odd": 2.98,
+      "book": "betfair-ex",
       "result": "L"
     },
     {
@@ -4425,7 +4436,7 @@
       "book": "betsson",
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "opid1201562875477962",
@@ -4441,7 +4452,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "opid1203543675481454",
@@ -4457,7 +4468,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "opid1201562875371562",
@@ -4473,7 +4484,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "opid1201562875371560",
@@ -4489,7 +4500,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "opid1204070975371224",
@@ -4505,7 +4516,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 93
+      "miss": 94
     },
     {
       "id": "5a856de2f4f6df9ea205100c2c304254",
@@ -4521,21 +4532,6 @@
       "book": "betfair_ex_eu",
       "homeName": "V. Vacherot",
       "awayName": "T. Fritz"
-    },
-    {
-      "id": "opid1200301375838122",
-      "sport": "tennis_oddspapi_wta",
-      "ts": 1793439600000,
-      "date": "31 OCT",
-      "sofa": null,
-      "pickHome": true,
-      "match": "K. Quevedo – L. Tagger",
-      "pickKey": "home",
-      "pickLabel": "Gana K. Quevedo",
-      "odd": 2.98,
-      "book": "betfair-ex",
-      "homeName": "K. Quevedo",
-      "awayName": "L. Tagger"
     },
     {
       "id": "552fda4930d6ed5d9fef41d162da947d",
@@ -11533,7 +11529,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 93
+      "miss": 94
     },
     {
       "dayId": "12 OCT·c1",
@@ -11574,7 +11570,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 93
+      "miss": 94
     },
     {
       "dayId": "15 OCT·c2",
@@ -11615,7 +11611,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 93
+      "miss": 94
     },
     {
       "dayId": "16 OCT·c2",
@@ -11656,7 +11652,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 93
+      "miss": 94
     },
     {
       "dayId": "31 OCT·c1",
@@ -13071,6 +13067,38 @@
   "MODEL_RECORD": [
     {
       "date": "31 OCT",
+      "ts": 1793448000000,
+      "match": "T. Machac – M. Landaluce",
+      "predName": "T. Machac",
+      "prob": 64,
+      "ok": true
+    },
+    {
+      "date": "31 OCT",
+      "ts": 1793448000000,
+      "match": "J. Duckworth – M. Kecmanovic",
+      "predName": "M. Kecmanovic",
+      "prob": 56,
+      "ok": true
+    },
+    {
+      "date": "31 OCT",
+      "ts": 1793448000000,
+      "match": "J. Manuel Cerundolo – A. Kovacevic",
+      "predName": "A. Kovacevic",
+      "prob": 56,
+      "ok": false
+    },
+    {
+      "date": "31 OCT",
+      "ts": 1793444700000,
+      "match": "H. Gaston – V. Kopriva",
+      "predName": "V. Kopriva",
+      "prob": 56,
+      "ok": true
+    },
+    {
+      "date": "31 OCT",
       "ts": 1793441100000,
       "match": "T. Agustin Tirante – Z. Svajda",
       "predName": "Z. Svajda",
@@ -13091,6 +13119,14 @@
       "match": "J. Faria – R. Hijikata",
       "predName": "R. Hijikata",
       "prob": 52,
+      "ok": true
+    },
+    {
+      "date": "31 OCT",
+      "ts": 1793439600000,
+      "match": "K. Quevedo – L. Tagger",
+      "predName": "L. Tagger",
+      "prob": 57,
       "ok": true
     },
     {
@@ -26281,7 +26317,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "B. Zhukayev",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "12 OCT",
@@ -26293,7 +26329,7 @@
       "sofa": null,
       "homeName": "A. Li",
       "awayName": "Q. Zheng",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "12 OCT",
@@ -26305,7 +26341,7 @@
       "sofa": null,
       "homeName": "D. Parry",
       "awayName": "A. Kalinskaya",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "12 OCT",
@@ -26317,7 +26353,7 @@
       "sofa": null,
       "homeName": "B. Bencic",
       "awayName": "S. Zhang",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "12 OCT",
@@ -26329,7 +26365,7 @@
       "sofa": null,
       "homeName": "J. Tjen",
       "awayName": "O. Oliynykova",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "12 OCT",
@@ -26341,7 +26377,7 @@
       "sofa": null,
       "homeName": "I. Jovic",
       "awayName": "M. Pohankova",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "13 OCT",
@@ -26353,7 +26389,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "13 OCT",
@@ -26365,7 +26401,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "13 OCT",
@@ -26377,7 +26413,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "14 OCT",
@@ -26389,7 +26425,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "15 OCT",
@@ -26401,7 +26437,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "15 OCT",
@@ -26413,7 +26449,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "15 OCT",
@@ -26425,7 +26461,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "16 OCT",
@@ -26437,7 +26473,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "16 OCT",
@@ -26449,7 +26485,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 93
+      "miss": 94
     },
     {
       "date": "20 OCT",
@@ -26461,62 +26497,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 85
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793439600000,
-      "match": "K. Quevedo – L. Tagger",
-      "predHome": false,
-      "prob": 57,
-      "predName": "L. Tagger",
-      "sofa": null,
-      "homeName": "K. Quevedo",
-      "awayName": "L. Tagger"
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793444700000,
-      "match": "H. Gaston – V. Kopriva",
-      "predHome": false,
-      "prob": 56,
-      "predName": "V. Kopriva",
-      "sofa": null,
-      "homeName": "H. Gaston",
-      "awayName": "V. Kopriva"
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793448000000,
-      "match": "J. Manuel Cerundolo – A. Kovacevic",
-      "predHome": false,
-      "prob": 56,
-      "predName": "A. Kovacevic",
-      "sofa": null,
-      "homeName": "J. Manuel Cerundolo",
-      "awayName": "A. Kovacevic"
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793448000000,
-      "match": "J. Duckworth – M. Kecmanovic",
-      "predHome": false,
-      "prob": 56,
-      "predName": "M. Kecmanovic",
-      "sofa": null,
-      "homeName": "J. Duckworth",
-      "awayName": "M. Kecmanovic"
-    },
-    {
-      "date": "31 OCT",
-      "ts": 1793448000000,
-      "match": "T. Machac – M. Landaluce",
-      "predHome": true,
-      "prob": 64,
-      "predName": "T. Machac",
-      "sofa": null,
-      "homeName": "T. Machac",
-      "awayName": "M. Landaluce"
+      "miss": 86
     },
     {
       "date": "31 OCT",
