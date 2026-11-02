@@ -1,579 +1,23 @@
 {
   "meta": {
-    "updatedAt": "2026-11-01T22:00:54.622Z",
+    "updatedAt": "2026-11-02T07:01:00.455Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
     "market": "h2h",
-    "matches": 26,
-    "valuePicks": 11,
+    "matches": 27,
+    "valuePicks": 16,
     "books": 28,
     "stale": false,
     "model": {
       "players": 3570
     },
     "credits": {
-      "remaining": 497,
-      "used": 3
+      "remaining": 496,
+      "used": 4
     }
   },
   "PLAYERS": {
-    "benjaminbonzi": {
-      "id": "benjaminbonzi",
-      "name": "B. Bonzi",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
-    },
-    "yannickhanfmann": {
-      "id": "yannickhanfmann",
-      "name": "Y. Hanfmann",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg"
-    },
-    "juanmanuelcerund": {
-      "id": "juanmanuelcerund",
-      "name": "J. Manuel Cerundolo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
-    },
-    "miomirkecmanovic": {
-      "id": "miomirkecmanovic",
-      "name": "M. Kecmanovic",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2848_m-kecmanovic.jpg"
-    },
-    "thiagoagustintir": {
-      "id": "thiagoagustintir",
-      "name": "T. Agustin Tirante",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/366_a-tirante.jpg"
-    },
-    "mattiabellucci": {
-      "id": "mattiabellucci",
-      "name": "M. Bellucci",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
-    },
-    "rinkyhijikata": {
-      "id": "rinkyhijikata",
-      "name": "R. Hijikata",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/3317_r-hijikata.jpg"
-    },
-    "vitkopriva": {
-      "id": "vitkopriva",
-      "name": "V. Kopriva",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1083_v-kopriva.jpg"
-    },
-    "sebastianbaez": {
-      "id": "sebastianbaez",
-      "name": "S. Baez",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg"
-    },
-    "tomasmachac": {
-      "id": "tomasmachac",
-      "name": "T. Machac",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2981_t-machac.jpg"
-    },
-    "adolfodanielvall": {
-      "id": "adolfodanielvall",
-      "name": "A. Daniel Vallejo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9217_d-vallejo.jpg"
-    },
-    "lorenzosonego": {
-      "id": "lorenzosonego",
-      "name": "L. Sonego",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
-    },
-    "nunoborges": {
-      "id": "nunoborges",
-      "name": "N. Borges",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/358_n-borges.jpg"
-    },
-    "alexmolcan": {
-      "id": "alexmolcan",
-      "name": "A. Molcan",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/436_a-molcan.jpg"
-    },
-    "alejandrotabilo": {
-      "id": "alejandrotabilo",
-      "name": "A. Tabilo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2982_a-tabilo.jpg"
-    },
-    "rafaeljodar": {
-      "id": "rafaeljodar",
-      "name": "R. Jodar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
-    },
-    "danielmeridaagui": {
-      "id": "danielmeridaagui",
-      "name": "D. Merida Aguilar",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/978_d-aguilar.jpg"
-    },
-    "alexanderblockx": {
-      "id": "alexanderblockx",
-      "name": "A. Blockx",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/39913_a-blockx.jpg"
-    },
-    "andreyrublev": {
-      "id": "andreyrublev",
-      "name": "A. Rublev",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2847_a-rublev.jpg"
-    },
-    "tomasmartinetche": {
-      "id": "tomasmartinetche",
-      "name": "T. Martin Etcheverry",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1777_m-etcheverry.jpg"
-    },
-    "quentinhalys": {
-      "id": "quentinhalys",
-      "name": "Q. Halys",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
-    },
-    "arthurfery": {
-      "id": "arthurfery",
-      "name": "A. Fery",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
-    },
-    "arthurrinderknec": {
-      "id": "arthurrinderknec",
-      "name": "A. Rinderknech",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1902_a-rinderknech.jpg"
-    },
-    "franciscocerundo": {
-      "id": "franciscocerundo",
-      "name": "F. Cerundolo",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
-    },
-    "ugohumbert": {
-      "id": "ugohumbert",
-      "name": "U. Humbert",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1105_u-humbert.jpg"
-    },
-    "boticvandezandsc": {
-      "id": "boticvandezandsc",
-      "name": "B. van de Zandschulp",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2972_b-vandezandschulp.jpg"
-    },
-    "brandonnakashima": {
-      "id": "brandonnakashima",
-      "name": "B. Nakashima",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2838_b-nakashima.jpg"
-    },
-    "matteoberrettini": {
-      "id": "matteoberrettini",
-      "name": "M. Berrettini",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2844_m-berrettini.jpg"
-    },
-    "cameronnorrie": {
-      "id": "cameronnorrie",
-      "name": "C. Norrie",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1103_c-norrie.jpg"
-    },
-    "matteoarnaldi": {
-      "id": "matteoarnaldi",
-      "name": "M. Arnaldi",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
-    },
-    "denisshapovalov": {
-      "id": "denisshapovalov",
-      "name": "D. Shapovalov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/431_d-shapovalov.jpg"
-    },
-    "karenkhachanov": {
-      "id": "karenkhachanov",
-      "name": "K. Khachanov",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/435_k-khachanov.jpg"
-    },
-    "tommypaul": {
-      "id": "tommypaul",
-      "name": "T. Paul",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1894_t-paul.jpg"
-    },
-    "holgerrune": {
-      "id": "holgerrune",
-      "name": "H. Rune",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/437_h-rune.jpg"
-    },
     "lorenzomusetti": {
       "id": "lorenzomusetti",
       "name": "L. Musetti",
@@ -642,26 +86,9 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg"
     },
-    "stefanostsitsipa": {
-      "id": "stefanostsitsipa",
-      "name": "S. Tsitsipas",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "atp",
-      "elo": null,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg"
-    },
-    "learnertien": {
-      "id": "learnertien",
-      "name": "L. Tien",
+    "lucianodarderi": {
+      "id": "lucianodarderi",
+      "name": "L. Darderi",
       "country": "",
       "flag": "",
       "seed": "",
@@ -674,7 +101,58 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/10520_l-tien.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/8781_l-darderi.jpg"
+    },
+    "rinkyhijikata": {
+      "id": "rinkyhijikata",
+      "name": "R. Hijikata",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/3317_r-hijikata.jpg"
+    },
+    "alejandrotabilo": {
+      "id": "alejandrotabilo",
+      "name": "A. Tabilo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2982_a-tabilo.jpg"
+    },
+    "rafaeljodar": {
+      "id": "rafaeljodar",
+      "name": "R. Jodar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/50323_r-jodar.jpg"
     },
     "lucavanassche": {
       "id": "lucavanassche",
@@ -710,9 +188,159 @@
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/949_m-navone.jpg"
     },
-    "jirilehecka": {
-      "id": "jirilehecka",
-      "name": "J. Lehecka",
+    "danielmeridaagui": {
+      "id": "danielmeridaagui",
+      "name": "D. Merida Aguilar",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/978_d-aguilar.jpg"
+    },
+    "alexanderblockx": {
+      "id": "alexanderblockx",
+      "name": "A. Blockx",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/39913_a-blockx.jpg"
+    },
+    "cameronnorrie": {
+      "id": "cameronnorrie",
+      "name": "C. Norrie",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1103_c-norrie.jpg"
+    },
+    "matteoarnaldi": {
+      "id": "matteoarnaldi",
+      "name": "M. Arnaldi",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1192_m-arnaldi.jpg"
+    },
+    "casperruud": {
+      "id": "casperruud",
+      "name": "C. Ruud",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/430_c-ruud.jpg"
+    },
+    "juanmanuelcerund": {
+      "id": "juanmanuelcerund",
+      "name": "J. Manuel Cerundolo",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
+    },
+    "mattiabellucci": {
+      "id": "mattiabellucci",
+      "name": "M. Bellucci",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg"
+    },
+    "lorenzosonego": {
+      "id": "lorenzosonego",
+      "name": "L. Sonego",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2843_l-sonego.jpg"
+    },
+    "kyrianjacquet": {
+      "id": "kyrianjacquet",
+      "name": "K. Jacquet",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1335_k-jacquet.jpg"
+    },
+    "tomasmachac": {
+      "id": "tomasmachac",
+      "name": "T. Machac",
       "country": "",
       "flag": "",
       "seed": "",
@@ -722,10 +350,160 @@
         "W",
         "L",
         "W",
+        "L",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2981_t-machac.jpg"
+    },
+    "alexmolcan": {
+      "id": "alexmolcan",
+      "name": "A. Molcan",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/436_a-molcan.jpg"
+    },
+    "titouandroguet": {
+      "id": "titouandroguet",
+      "name": "T. Droguet",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/8926_t-droguet.jpg"
+    },
+    "denisshapovalov": {
+      "id": "denisshapovalov",
+      "name": "D. Shapovalov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/431_d-shapovalov.jpg"
+    },
+    "karenkhachanov": {
+      "id": "karenkhachanov",
+      "name": "K. Khachanov",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/435_k-khachanov.jpg"
+    },
+    "ugohumbert": {
+      "id": "ugohumbert",
+      "name": "U. Humbert",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1105_u-humbert.jpg"
+    },
+    "boticvandezandsc": {
+      "id": "boticvandezandsc",
+      "name": "B. van de Zandschulp",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2972_b-vandezandschulp.jpg"
+    },
+    "alejandrodavidov": {
+      "id": "alejandrodavidov",
+      "name": "A. Davidovich Fokina",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "L",
         "W",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
+      "photo": "https://img.sofascore.com/api/v1/team/157456/image"
+    },
+    "moisekouame": {
+      "id": "moisekouame",
+      "name": "M. Kouame",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/68751_m-kouame.jpg"
+    },
+    "novakdjokovic": {
+      "id": "novakdjokovic",
+      "name": "N. Djokovic",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1905_n-djokovic.jpg"
     },
     "valentinvacherot": {
       "id": "valentinvacherot",
@@ -737,16 +515,132 @@
       "elo": null,
       "form": [
         "L",
-        "L",
+        "W",
         "W",
         "W",
         "W"
       ],
       "photo": "https://api.api-tennis.com/logo-tennis/1852_v-vacherot.jpg"
     },
-    "alexdeminaur": {
-      "id": "alexdeminaur",
-      "name": "A. de Minaur",
+    "alexmichelsen": {
+      "id": "alexmichelsen",
+      "name": "A. Michelsen",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10884_a-michelsen.jpg"
+    },
+    "jirilehecka": {
+      "id": "jirilehecka",
+      "name": "J. Lehecka",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg"
+    },
+    "andreyrublev": {
+      "id": "andreyrublev",
+      "name": "A. Rublev",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2847_a-rublev.jpg"
+    },
+    "tomasmartinetche": {
+      "id": "tomasmartinetche",
+      "name": "T. Martin Etcheverry",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1777_m-etcheverry.jpg"
+    },
+    "quentinhalys": {
+      "id": "quentinhalys",
+      "name": "Q. Halys",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1925_q-halys.jpg"
+    },
+    "arthurfery": {
+      "id": "arthurfery",
+      "name": "A. Fery",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/8174_a-fery.jpg"
+    },
+    "janlennardstruff": {
+      "id": "janlennardstruff",
+      "name": "J. Struff",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2831_j-struff.jpg"
+    },
+    "arthurgea": {
+      "id": "arthurgea",
+      "name": "A. Gea",
       "country": "",
       "flag": "",
       "seed": "",
@@ -759,11 +653,28 @@
         "W",
         "W"
       ],
-      "photo": "https://img.sofascore.com/api/v1/team/201239/image"
+      "photo": "https://api.api-tennis.com/logo-tennis/9210_a-gea.jpg"
     },
-    "carlosalcaraz": {
-      "id": "carlosalcaraz",
-      "name": "C. Alcaraz",
+    "arthurrinderknec": {
+      "id": "arthurrinderknec",
+      "name": "A. Rinderknech",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1902_a-rinderknech.jpg"
+    },
+    "franciscocerundo": {
+      "id": "franciscocerundo",
+      "name": "F. Cerundolo",
       "country": "",
       "flag": "",
       "seed": "",
@@ -772,51 +683,35 @@
       "form": [
         "W",
         "W",
-        "W"
-      ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2382_c-alcaraz.jpg"
-    },
-    "lillitagger": {
-      "id": "lillitagger",
-      "name": "L. Tagger",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [
         "W",
         "L",
-        "W",
-        "W",
-        "W"
+        "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/53046_l-tagger.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1104_f-cerundolo.jpg"
     },
-    "harrietdart": {
-      "id": "harrietdart",
-      "name": "H. Dart",
+    "benjaminbonzi": {
+      "id": "benjaminbonzi",
+      "name": "B. Bonzi",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
+        "L",
         "W",
-        "W",
-        "W",
-        "W",
+        "L",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/2998_h-dart.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1771_b-bonzi.jpg"
     },
-    "alionafalei": {
-      "id": "alionafalei",
-      "name": "A. Falei",
+    "taylorfritz": {
+      "id": "taylorfritz",
+      "name": "T. Fritz",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "W",
@@ -825,39 +720,172 @@
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/9265_a-falei.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg"
     },
-    "radazolotareva": {
-      "id": "radazolotareva",
-      "name": "R. Zolotareva",
+    "brandonnakashima": {
+      "id": "brandonnakashima",
+      "name": "B. Nakashima",
       "country": "",
       "flag": "",
       "seed": "",
-      "tour": "wta",
-      "elo": null,
-      "form": [],
-      "photo": "https://api.api-tennis.com/logo-tennis/13411_a-zolotareva.jpg"
-    },
-    "meiyamaguchi": {
-      "id": "meiyamaguchi",
-      "name": "M. Yamaguchi",
-      "country": "",
-      "flag": "",
-      "seed": "",
-      "tour": "wta",
+      "tour": "atp",
       "elo": null,
       "form": [
         "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2838_b-nakashima.jpg"
+    },
+    "matteoberrettini": {
+      "id": "matteoberrettini",
+      "name": "M. Berrettini",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
         "L",
         "L",
         "W",
         "L"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/98_m-yamaguchi.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/2844_m-berrettini.jpg"
     },
-    "zhibekkulambayev": {
-      "id": "zhibekkulambayev",
-      "name": "Z. Kulambayeva",
+    "tommypaul": {
+      "id": "tommypaul",
+      "name": "T. Paul",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1894_t-paul.jpg"
+    },
+    "holgerrune": {
+      "id": "holgerrune",
+      "name": "H. Rune",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/437_h-rune.jpg"
+    },
+    "stefanostsitsipa": {
+      "id": "stefanostsitsipa",
+      "name": "S. Tsitsipas",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/1906_s-tsitsipas.jpg"
+    },
+    "learnertien": {
+      "id": "learnertien",
+      "name": "L. Tien",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "atp",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/10520_l-tien.jpg"
+    },
+    "leecarolyoungsuh": {
+      "id": "leecarolyoungsuh",
+      "name": "L. Carol Young Suh",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": []
+    },
+    "mariasakkari": {
+      "id": "mariasakkari",
+      "name": "M. Sakkari",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2076_m-sakkari.jpg"
+    },
+    "katievolynets": {
+      "id": "katievolynets",
+      "name": "K. Volynets",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/2826_k-volynets.jpg"
+    },
+    "aliaksandrasasno": {
+      "id": "aliaksandrasasno",
+      "name": "A. Sasnovich",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/527_a-sasnovich.jpg"
+    },
+    "jelinevandromme": {
+      "id": "jelinevandromme",
+      "name": "J. Vandromme",
       "country": "",
       "flag": "",
       "seed": "",
@@ -867,10 +895,27 @@
         "W",
         "L",
         "W",
-        "W",
+        "L",
+        "L"
+      ],
+      "photo": "https://api.api-tennis.com/logo-tennis/73460_j-vandromme.jpg"
+    },
+    "kyokaokamura": {
+      "id": "kyokaokamura",
+      "name": "K. Okamura",
+      "country": "",
+      "flag": "",
+      "seed": "",
+      "tour": "wta",
+      "elo": null,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
         "W"
       ],
-      "photo": "https://api.api-tennis.com/logo-tennis/14355_z-kulambayeva.jpg"
+      "photo": "https://api.api-tennis.com/logo-tennis/1396_k-okamura.jpg"
     }
   },
   "BOOKS": {
@@ -880,41 +925,41 @@
       "abbr": "PIN",
       "color": "#e23b2e"
     },
-    "unibet": {
-      "id": "unibet",
-      "name": "Unibet (FR)",
-      "abbr": "UNI",
-      "color": "#0a7d3c"
-    },
-    "betsson": {
-      "id": "betsson",
-      "name": "Betsson",
-      "abbr": "BET",
-      "color": "#0a2d6e"
-    },
     "888sport": {
       "id": "888sport",
       "name": "888sport",
       "abbr": "888",
-      "color": "#14805e"
-    },
-    "leovegas": {
-      "id": "leovegas",
-      "name": "LeoVegas (SE)",
-      "abbr": "LEO",
-      "color": "#ffb000"
-    },
-    "1xbet": {
-      "id": "1xbet",
-      "name": "1xBet",
-      "abbr": "1XB",
-      "color": "#0a6cff"
+      "color": "#0a7d3c"
     },
     "betclic": {
       "id": "betclic",
       "name": "Betclic (FR)",
       "abbr": "BET",
-      "color": "#7a4ddb"
+      "color": "#0a2d6e"
+    },
+    "unibet": {
+      "id": "unibet",
+      "name": "Unibet (FR)",
+      "abbr": "UNI",
+      "color": "#14805e"
+    },
+    "1xbet": {
+      "id": "1xbet",
+      "name": "1xBet",
+      "abbr": "1XB",
+      "color": "#ffb000"
+    },
+    "betsson": {
+      "id": "betsson",
+      "name": "Betsson",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "leovegas": {
+      "id": "leovegas",
+      "name": "LeoVegas (SE)",
+      "abbr": "LEO",
+      "color": "#1c1c1c"
     },
     "matchbook": {
       "id": "matchbook",
@@ -944,91 +989,49 @@
       "id": "888sportca",
       "name": "888sport.ca",
       "abbr": "888",
-      "color": "#0a6cff"
+      "color": "#d11a2a"
     },
     "bet365": {
       "id": "bet365",
       "name": "bet365",
       "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#d9730d"
     },
     "bet365nj": {
       "id": "bet365nj",
       "name": "bet365-nj",
       "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "betano": {
-      "id": "betano",
-      "name": "betano",
-      "abbr": "BET",
-      "color": "#14805e"
-    },
-    "betanobg": {
-      "id": "betanobg",
-      "name": "betano.bg",
-      "abbr": "BET",
-      "color": "#ffb000"
-    },
-    "betanoca": {
-      "id": "betanoca",
-      "name": "betano.ca",
-      "abbr": "BET",
-      "color": "#d11a2a"
+      "color": "#e23b2e"
     },
     "betanocz": {
       "id": "betanocz",
       "name": "betano.cz",
       "abbr": "BET",
-      "color": "#0a6cff"
-    },
-    "betanomx": {
-      "id": "betanomx",
-      "name": "betano.mx",
-      "abbr": "BET",
-      "color": "#d9730d"
-    },
-    "betanope": {
-      "id": "betanope",
-      "name": "betano.pe",
-      "abbr": "BET",
-      "color": "#e23b2e"
+      "color": "#0a2d6e"
     },
     "betanopt": {
       "id": "betanopt",
       "name": "betano.pt",
       "abbr": "BET",
-      "color": "#0a7d3c"
-    },
-    "betanoro": {
-      "id": "betanoro",
-      "name": "betano.ro",
-      "abbr": "BET",
-      "color": "#0a2d6e"
+      "color": "#14805e"
     },
     "betfred": {
       "id": "betfred",
       "name": "betfred",
       "abbr": "BET",
-      "color": "#ffb000"
+      "color": "#d11a2a"
     },
     "betway": {
       "id": "betway",
       "name": "betway",
       "abbr": "BET",
-      "color": "#d11a2a"
+      "color": "#0a6cff"
     },
     "bwin": {
       "id": "bwin",
       "name": "bwin",
       "abbr": "BWI",
-      "color": "#7a4ddb"
-    },
-    "codere": {
-      "id": "codere",
-      "name": "codere.es",
-      "abbr": "COD",
-      "color": "#0a2d6e"
+      "color": "#d9730d"
     },
     "oddset": {
       "id": "oddset",
@@ -1041,970 +1044,249 @@
       "name": "williamhill-nj",
       "abbr": "WIL",
       "color": "#14805e"
+    },
+    "betano": {
+      "id": "betano",
+      "name": "betano",
+      "abbr": "BET",
+      "color": "#7a4ddb"
+    },
+    "betanobg": {
+      "id": "betanobg",
+      "name": "betano.bg",
+      "abbr": "BET",
+      "color": "#d9730d"
+    },
+    "betanoca": {
+      "id": "betanoca",
+      "name": "betano.ca",
+      "abbr": "BET",
+      "color": "#e23b2e"
+    },
+    "betanomx": {
+      "id": "betanomx",
+      "name": "betano.mx",
+      "abbr": "BET",
+      "color": "#14805e"
+    },
+    "betanope": {
+      "id": "betanope",
+      "name": "betano.pe",
+      "abbr": "BET",
+      "color": "#ffb000"
+    },
+    "betanoro": {
+      "id": "betanoro",
+      "name": "betano.ro",
+      "abbr": "BET",
+      "color": "#d11a2a"
+    },
+    "codere": {
+      "id": "codere",
+      "name": "codere.es",
+      "abbr": "COD",
+      "color": "#0a6cff"
     }
   },
   "MATCHES": [
     {
-      "id": "opid1200301375838126",
+      "id": "opid1201111176286332",
       "tour": "wta",
-      "event": "WTA Guangzhou, China Women Singles",
+      "event": "WTA Hong Kong, Hong Kong Women Singles",
       "round": "",
       "surface": "Dura",
-      "time": "09:30",
-      "day": "01 NOV",
-      "home": "lillitagger",
-      "away": "harrietdart",
+      "time": "08:10",
+      "day": "02 NOV",
+      "home": "leecarolyoungsuh",
+      "away": "mariasakkari",
       "odds": {
         "home": {
-          "1xbet": 1.27,
-          "888sport": 1.286,
-          "888sportca": 1.286,
-          "bet365": 1.25,
-          "bet365nj": 1.25,
-          "betano": 1.26,
-          "betanobg": 1.26,
-          "betanoca": 1.26,
-          "betanocz": 1.27,
-          "betanomx": 1.26,
-          "betanope": 1.26,
-          "betanopt": 1.26,
-          "betanoro": 1.26,
-          "betfair": 1.29,
-          "betfred": 1.25,
-          "betway": 1.28,
-          "bwin": 1.26,
-          "codere": 1.28,
-          "leovegas": 1.28,
-          "oddset": 1.26,
-          "pinnacle": 1.273,
-          "unibet": 1.28,
-          "williamhill": 1.294,
-          "williamhillnj": 1.294,
-          "winamax": 1.26
-        },
-        "away": {
-          "1xbet": 3.76,
-          "888sport": 3.6,
-          "888sportca": 3.6,
-          "bet365": 3.75,
-          "bet365nj": 3.75,
-          "betano": 3.7,
-          "betanobg": 3.7,
-          "betanoca": 3.7,
-          "betanocz": 3.8,
-          "betanomx": 3.7,
-          "betanope": 3.7,
-          "betanopt": 3.7,
-          "betanoro": 3.7,
-          "betfair": 4.3,
-          "betfred": 3.75,
-          "betway": 3.75,
-          "bwin": 3.9,
-          "codere": 3.5,
-          "leovegas": 3.8,
-          "oddset": 3.9,
-          "pinnacle": 4.18,
-          "unibet": 3.65,
-          "williamhill": 3.4,
-          "williamhillnj": 3.4,
-          "winamax": 3.85
-        }
-      },
-      "model": {
-        "home": 0.5868950233791,
-        "away": 0.41310497662089996,
-        "fromModel": true,
-        "eloH": 1772,
-        "eloA": 1711,
-        "surface": "hard"
-      },
-      "ts": 1793521800000,
-      "sofa": null
-    },
-    {
-      "id": "opid1203730776257126",
-      "tour": "wta",
-      "event": "WTA Chennai, India, Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "09:30",
-      "day": "01 NOV",
-      "home": "alionafalei",
-      "away": "radazolotareva",
-      "odds": {
-        "home": {
-          "1xbet": 1.41,
-          "888sport": 1.444,
-          "888sportca": 1.444,
-          "bet365": 1.37,
-          "bet365nj": 1.37,
-          "betano": 1.42,
-          "betanobg": 1.42,
-          "betanoca": 1.42,
-          "betanocz": 1.42,
-          "betanomx": 1.42,
-          "betanope": 1.42,
-          "betanopt": 1.42,
-          "betanoro": 1.42,
-          "betfair": 1.53,
-          "betfred": 1.4,
-          "betway": 1.45,
-          "bwin": 1.4,
-          "codere": 1.4,
-          "leovegas": 1.43,
-          "pinnacle": 1.469,
-          "unibet": 1.43,
-          "williamhill": 1.455,
-          "williamhillnj": 1.455,
-          "winamax": 1.43
-        },
-        "away": {
-          "1xbet": 2.694,
-          "888sport": 2.625,
-          "888sportca": 2.625,
-          "bet365": 2.75,
-          "bet365nj": 2.75,
-          "betano": 2.7,
-          "betanobg": 2.7,
-          "betanoca": 2.7,
-          "betanocz": 2.67,
-          "betanomx": 2.7,
-          "betanope": 2.7,
-          "betanopt": 2.62,
-          "betanoro": 2.7,
-          "betfair": 2.86,
-          "betfred": 2.75,
-          "betway": 2.75,
-          "bwin": 2.75,
-          "codere": 2.7,
-          "leovegas": 2.8,
-          "pinnacle": 2.79,
-          "unibet": 2.65,
-          "williamhill": 2.65,
-          "williamhillnj": 2.65,
-          "winamax": 2.8
-        }
-      },
-      "model": {
-        "home": 0.5071950817090514,
-        "away": 0.49280491829094863,
-        "fromModel": true,
-        "eloH": 1662,
-        "eloA": 1657,
-        "surface": "hard"
-      },
-      "ts": 1793521800000,
-      "sofa": null
-    },
-    {
-      "id": "opid1203730776260326",
-      "tour": "wta",
-      "event": "WTA Chennai, India, Women Singles",
-      "round": "",
-      "surface": "Dura",
-      "time": "10:40",
-      "day": "01 NOV",
-      "home": "meiyamaguchi",
-      "away": "zhibekkulambayev",
-      "odds": {
-        "home": {
-          "1xbet": 1.454,
-          "888sport": 1.5,
-          "888sportca": 1.5,
-          "bet365": 1.41,
-          "bet365nj": 1.41,
-          "betano": 1.47,
-          "betanobg": 1.47,
-          "betanoca": 1.47,
-          "betanocz": 1.47,
-          "betanomx": 1.47,
-          "betanope": 1.47,
-          "betanopt": 1.45,
-          "betanoro": 1.47,
-          "betfair": 1.54,
-          "betfred": 1.444,
-          "betway": 1.45,
-          "bwin": 1.44,
-          "codere": 1.45,
-          "leovegas": 1.48,
-          "pinnacle": 1.512,
-          "unibet": 1.48,
-          "williamhillnj": 1.455,
-          "winamax": 1.47
-        },
-        "away": {
-          "1xbet": 2.545,
-          "888sport": 2.5,
-          "888sportca": 2.5,
-          "bet365": 2.62,
-          "bet365nj": 2.62,
-          "betano": 2.57,
-          "betanobg": 2.57,
-          "betanoca": 2.57,
-          "betanocz": 2.55,
-          "betanomx": 2.57,
-          "betanope": 2.57,
-          "betanopt": 2.5,
-          "betanoro": 2.57,
-          "betfair": 2.7,
-          "betfred": 2.625,
-          "betway": 2.75,
-          "bwin": 2.65,
-          "codere": 2.55,
-          "leovegas": 2.65,
-          "pinnacle": 2.65,
-          "unibet": 2.5,
-          "williamhillnj": 2.65,
-          "winamax": 2.65
-        }
-      },
-      "model": {
-        "home": 0.5115108912177917,
-        "away": 0.4884891087822083,
-        "fromModel": true,
-        "eloH": 1622,
-        "eloA": 1614,
-        "surface": "hard"
-      },
-      "ts": 1793526000000,
-      "sofa": null
-    },
-    {
-      "id": "0da93f689af7e7e2bf2e561f3e7f7e59",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "01 NOV",
-      "home": "benjaminbonzi",
-      "away": "yannickhanfmann",
-      "odds": {
-        "home": {
-          "pinnacle": 1.77,
-          "unibet": 1.69,
-          "betsson": 1.76
-        },
-        "away": {
-          "pinnacle": 2.11,
-          "unibet": 1.86,
-          "betsson": 1.95
-        }
-      },
-      "model": {
-        "home": 0.41729811503576986,
-        "away": 0.5827018849642301,
-        "fromModel": true,
-        "eloH": 1738,
-        "eloA": 1796,
-        "surface": "hard"
-      },
-      "ts": 1793527200000,
-      "sofa": null
-    },
-    {
-      "id": "87dd1f372becd90b913ceac1b31578d1",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "01 NOV",
-      "home": "juanmanuelcerund",
-      "away": "miomirkecmanovic",
-      "odds": {
-        "home": {
-          "pinnacle": 1.75,
-          "betsson": 1.7,
-          "unibet": 1.63
-        },
-        "away": {
-          "pinnacle": 2.15,
-          "betsson": 2.04,
-          "unibet": 1.94
-        }
-      },
-      "model": {
-        "home": 0.39371217621457183,
-        "away": 0.6062878237854281,
-        "fromModel": true,
-        "eloH": 1717,
-        "eloA": 1792,
-        "surface": "hard"
-      },
-      "ts": 1793527200000,
-      "sofa": null
-    },
-    {
-      "id": "30424b55ac3fd0441d81336f4c1938a2",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "01 NOV",
-      "home": "thiagoagustintir",
-      "away": "mattiabellucci",
-      "odds": {
-        "home": {
-          "pinnacle": 2.5,
-          "betsson": 2.42,
-          "unibet": 2.25
-        },
-        "away": {
-          "pinnacle": 1.57,
-          "betsson": 1.5,
-          "unibet": 1.45
-        }
-      },
-      "model": {
-        "home": 0.36392310031211805,
-        "away": 0.636076899687882,
-        "fromModel": true,
-        "eloH": 1667,
-        "eloA": 1764,
-        "surface": "hard"
-      },
-      "ts": 1793527200000,
-      "sofa": null
-    },
-    {
-      "id": "aaf202777ebbdd0ceb31c39ca3ed6645",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "01 NOV",
-      "home": "rinkyhijikata",
-      "away": "vitkopriva",
-      "odds": {
-        "home": {
-          "pinnacle": 1.42,
-          "betsson": 1.36,
-          "unibet": 1.32
-        },
-        "away": {
-          "pinnacle": 3,
-          "betsson": 2.9,
-          "unibet": 2.7
-        }
-      },
-      "model": {
-        "home": 0.44268836623770724,
-        "away": 0.5573116337622928,
-        "fromModel": true,
-        "eloH": 1721,
-        "eloA": 1761,
-        "surface": "hard"
-      },
-      "ts": 1793527200000,
-      "sofa": null
-    },
-    {
-      "id": "670a521efbb7b642d7f0bd4dce70c790",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "01 NOV",
-      "home": "sebastianbaez",
-      "away": "tomasmachac",
-      "odds": {
-        "home": {
-          "pinnacle": 4.85,
-          "betsson": 4.2,
-          "unibet": 3.75
-        },
-        "away": {
-          "pinnacle": 1.2,
-          "betsson": 1.19,
-          "unibet": 1.16
-        }
-      },
-      "model": {
-        "home": 0.3923389358731802,
-        "away": 0.6076610641268199,
-        "fromModel": true,
-        "eloH": 1778,
-        "eloA": 1854,
-        "surface": "hard"
-      },
-      "ts": 1793527200000,
-      "sofa": null
-    },
-    {
-      "id": "ffcb837b0caf57b860936111d914874c",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "14:00",
-      "day": "01 NOV",
-      "home": "adolfodanielvall",
-      "away": "lorenzosonego",
-      "odds": {
-        "home": {
-          "pinnacle": 2.19,
-          "unibet": 2,
-          "betsson": 2.12
-        },
-        "away": {
-          "pinnacle": 1.7,
-          "unibet": 1.58,
-          "betsson": 1.64
-        }
-      },
-      "model": {
-        "home": 0.4726840269935071,
-        "away": 0.5273159730064929,
-        "fromModel": true,
-        "eloH": 1750,
-        "eloA": 1769,
-        "surface": "hard"
-      },
-      "ts": 1793538000000,
-      "sofa": null
-    },
-    {
-      "id": "39b752c46a334d801ef2449710faa164",
-      "tour": "atp",
-      "event": "Atp Vienna Open",
-      "round": "",
-      "surface": "Dura",
-      "time": "14:00",
-      "day": "01 NOV",
-      "home": "alexdeminaur",
-      "away": "carlosalcaraz",
-      "odds": {
-        "home": {
-          "betclic": 4.3,
-          "betfair": 5.2,
-          "betsson": 4.4,
-          "unibet": 4.3,
-          "matchbook": 5.2,
           "888sport": 4.2,
+          "888sportca": 4.2,
+          "bet365": 4.33,
+          "bet365nj": 4.33,
+          "betanocz": 4.3,
+          "betanopt": 4.3,
+          "betfair": 5.1,
+          "betfred": 4.333,
+          "betway": 4.25,
+          "bwin": 4.2,
+          "leovegas": 4.35,
+          "oddset": 4.2,
+          "pinnacle": 4.67,
+          "unibet": 4.3,
           "williamhill": 4.2,
-          "1xbet": 4.41,
-          "leovegas": 4.25,
-          "winamax": 4.5,
-          "pinnacle": 4.74
+          "williamhillnj": 4.2,
+          "winamax": 4.5
         },
         "away": {
-          "betclic": 1.19,
+          "888sport": 1.222,
+          "888sportca": 1.222,
+          "bet365": 1.19,
+          "bet365nj": 1.19,
+          "betanocz": 1.21,
+          "betanopt": 1.21,
           "betfair": 1.23,
-          "betsson": 1.2,
-          "unibet": 1.22,
-          "matchbook": 1.23,
-          "888sport": 1.22,
-          "williamhill": 1.22,
-          "1xbet": 1.23,
+          "betfred": 1.2,
+          "betway": 1.222,
+          "bwin": 1.22,
           "leovegas": 1.22,
-          "winamax": 1.2,
-          "pinnacle": 1.22
+          "oddset": 1.22,
+          "pinnacle": 1.227,
+          "unibet": 1.22,
+          "williamhill": 1.2,
+          "williamhillnj": 1.2,
+          "winamax": 1.23
         }
       },
       "model": {
-        "home": 0.19618148057531573,
-        "away": 0.8038185194246843,
+        "home": 0.45979177167625435,
+        "away": 0.5402082283237457,
         "fromModel": true,
-        "eloH": 1951,
-        "eloA": 2196,
+        "eloH": 1790,
+        "eloA": 1818,
         "surface": "hard"
       },
-      "ts": 1793538000000,
-      "sofa": null
+      "ts": 1793603400000,
+      "sofa": 17457721
     },
     {
-      "id": "3f537c10e972402ec718dc4dfa47786b",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
+      "id": "opid1201111176286334",
+      "tour": "wta",
+      "event": "WTA Hong Kong, Hong Kong Women Singles",
       "round": "",
       "surface": "Dura",
-      "time": "15:00",
-      "day": "01 NOV",
-      "home": "nunoborges",
-      "away": "alexmolcan",
-      "odds": {
-        "home": {
-          "pinnacle": 1.65,
-          "unibet": 1.54,
-          "betsson": 1.6
-        },
-        "away": {
-          "pinnacle": 2.28,
-          "unibet": 2.1,
-          "betsson": 2.2
-        }
-      },
-      "model": {
-        "home": 0.6090326034042396,
-        "away": 0.3909673965957604,
-        "fromModel": true,
-        "eloH": 1814,
-        "eloA": 1737,
-        "surface": "hard"
-      },
-      "ts": 1793541600000,
-      "sofa": null
-    },
-    {
-      "id": "45420e4ccaa96290ca605d63fe10dcc6",
-      "tour": "atp",
-      "event": "Atp Swiss Indoors",
-      "round": "",
-      "surface": "Dura",
-      "time": "15:30",
-      "day": "01 NOV",
-      "home": "jirilehecka",
-      "away": "valentinvacherot",
-      "odds": {
-        "home": {
-          "matchbook": 1.56,
-          "unibet": 1.53,
-          "betfair": 1.56,
-          "betsson": 1.48,
-          "888sport": 1.5,
-          "williamhill": 1.5,
-          "1xbet": 1.51,
-          "betclic": 1.47,
-          "leovegas": 1.53,
-          "winamax": 1.49,
-          "pinnacle": 1.52
-        },
-        "away": {
-          "matchbook": 2.74,
-          "unibet": 2.55,
-          "betfair": 2.74,
-          "betsson": 2.6,
-          "888sport": 2.6,
-          "williamhill": 2.6,
-          "1xbet": 2.63,
-          "betclic": 2.55,
-          "leovegas": 2.5,
-          "winamax": 2.6,
-          "pinnacle": 2.68
-        }
-      },
-      "model": {
-        "home": 0.626699081666732,
-        "away": 0.37330091833326795,
-        "fromModel": true,
-        "eloH": 2003,
-        "eloA": 1913,
-        "surface": "hard"
-      },
-      "ts": 1793543400000,
-      "sofa": null
-    },
-    {
-      "id": "0b15b685479df1479050365848bcfe54",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
+      "time": "08:10",
       "day": "02 NOV",
-      "home": "alejandrotabilo",
-      "away": "rafaeljodar",
+      "home": "katievolynets",
+      "away": "aliaksandrasasno",
       "odds": {
         "home": {
-          "888sport": 4,
-          "leovegas": 4.4,
-          "unibet": 4.4,
-          "1xbet": 4.3,
-          "betclic": 3.8,
-          "betsson": 4.3,
-          "pinnacle": 4.35
-        },
-        "away": {
-          "888sport": 1.25,
-          "leovegas": 1.21,
-          "unibet": 1.21,
-          "1xbet": 1.24,
-          "betclic": 1.19,
-          "betsson": 1.23,
-          "pinnacle": 1.24
-        }
-      },
-      "model": {
-        "home": 0.4483764526890395,
-        "away": 0.5516235473109605,
-        "fromModel": true,
-        "eloH": 1821,
-        "eloA": 1857,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "d54412ae826f63d7234c2ea00d4809ac",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "danielmeridaagui",
-      "away": "alexanderblockx",
-      "odds": {
-        "home": {
-          "pinnacle": 2.41,
-          "888sport": 2.3,
-          "unibet": 2.38,
-          "betclic": 2.17,
-          "1xbet": 2.35,
-          "leovegas": 2.38
-        },
-        "away": {
-          "pinnacle": 1.61,
-          "888sport": 1.61,
-          "unibet": 1.57,
-          "betclic": 1.56,
-          "1xbet": 1.62,
-          "leovegas": 1.57
-        }
-      },
-      "model": {
-        "home": 0.33642590195870453,
-        "away": 0.6635740980412954,
-        "fromModel": true,
-        "eloH": 1721,
-        "eloA": 1839,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "d25fdbba0ee28a3bbfa27a1b7bf0310b",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "andreyrublev",
-      "away": "tomasmartinetche",
-      "odds": {
-        "home": {
-          "888sport": 1.4,
-          "leovegas": 1.43,
-          "unibet": 1.43,
-          "1xbet": 1.41,
-          "betclic": 1.36,
-          "betsson": 1.4,
-          "pinnacle": 1.4
-        },
-        "away": {
-          "888sport": 2.9,
-          "leovegas": 2.85,
-          "unibet": 2.85,
-          "1xbet": 3.01,
-          "betclic": 2.75,
-          "betsson": 2.95,
-          "pinnacle": 3.15
-        }
-      },
-      "model": {
-        "home": 0.7222345336491706,
-        "away": 0.27776546635082944,
-        "fromModel": true,
-        "eloH": 1963,
-        "eloA": 1797,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "90da92cf3a7e75dbd2eb358af0340fa8",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "quentinhalys",
-      "away": "arthurfery",
-      "odds": {
-        "home": {
-          "888sport": 1.67,
-          "betsson": 1.69,
-          "leovegas": 1.68,
-          "unibet": 1.68,
-          "1xbet": 1.68,
-          "betclic": 1.63,
-          "pinnacle": 1.67
-        },
-        "away": {
+          "1xbet": 2.17,
           "888sport": 2.2,
-          "betsson": 2.18,
-          "leovegas": 2.18,
-          "unibet": 2.18,
-          "1xbet": 2.23,
-          "betclic": 2.06,
-          "pinnacle": 2.29
-        }
-      },
-      "model": {
-        "home": 0.577092475825329,
-        "away": 0.42290752417467103,
-        "fromModel": true,
-        "eloH": 1744,
-        "eloA": 1690,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "db55f6491d2491e31599e3af63c11471",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "arthurrinderknec",
-      "away": "franciscocerundo",
-      "odds": {
-        "home": {
-          "888sport": 2.9,
-          "betsson": 2.95,
-          "leovegas": 2.95,
-          "unibet": 2.95,
-          "1xbet": 2.96,
-          "betclic": 2.7,
-          "pinnacle": 3.01
+          "888sportca": 2.2,
+          "bet365": 2.2,
+          "bet365nj": 2.2,
+          "betanocz": 2.22,
+          "betanopt": 2.22,
+          "betfair": 2.24,
+          "betway": 2.1,
+          "bwin": 2.1,
+          "leovegas": 2.23,
+          "oddset": 2.1,
+          "pinnacle": 2.21,
+          "unibet": 2.23,
+          "williamhill": 2.15,
+          "williamhillnj": 2.15,
+          "winamax": 2.25
         },
         "away": {
-          "888sport": 1.4,
-          "betsson": 1.41,
-          "leovegas": 1.4,
-          "unibet": 1.4,
-          "1xbet": 1.42,
-          "betclic": 1.37,
-          "pinnacle": 1.43
+          "1xbet": 1.69,
+          "888sport": 1.667,
+          "888sportca": 1.667,
+          "bet365": 1.63,
+          "bet365nj": 1.63,
+          "betanocz": 1.65,
+          "betanopt": 1.65,
+          "betfair": 1.78,
+          "betway": 1.727,
+          "bwin": 1.7,
+          "leovegas": 1.65,
+          "oddset": 1.7,
+          "pinnacle": 1.735,
+          "unibet": 1.65,
+          "williamhill": 1.69,
+          "williamhillnj": 1.69,
+          "winamax": 1.7
         }
       },
       "model": {
-        "home": 0.5573116337622928,
-        "away": 0.44268836623770724,
+        "home": 0.4985608882908471,
+        "away": 0.5014391117091529,
         "fromModel": true,
-        "eloH": 1857,
-        "eloA": 1817,
+        "eloH": 1739,
+        "eloA": 1740,
         "surface": "hard"
       },
-      "ts": 1793613600000,
-      "sofa": null
+      "ts": 1793603400000,
+      "sofa": 17457722
     },
     {
-      "id": "85efb20e93a6ca08964f6239e9956dae",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
+      "id": "opid1203730776309972",
+      "tour": "wta",
+      "event": "WTA Chennai, India, Women Singles",
       "round": "",
       "surface": "Dura",
-      "time": "11:00",
+      "time": "10:30",
       "day": "02 NOV",
-      "home": "ugohumbert",
-      "away": "boticvandezandsc",
+      "home": "jelinevandromme",
+      "away": "kyokaokamura",
       "odds": {
         "home": {
-          "888sport": 1.61,
-          "leovegas": 1.62,
-          "unibet": 1.62,
-          "1xbet": 1.6,
-          "betclic": 1.54,
-          "betsson": 1.6,
-          "pinnacle": 1.61
+          "1xbet": 1.3,
+          "888sport": 1.333,
+          "888sportca": 1.333,
+          "bet365": 1.22,
+          "bet365nj": 1.22,
+          "betano": 1.3,
+          "betanobg": 1.3,
+          "betanoca": 1.3,
+          "betanocz": 1.3,
+          "betanomx": 1.3,
+          "betanope": 1.3,
+          "betanopt": 1.3,
+          "betanoro": 1.3,
+          "betfair": 1.36,
+          "betfred": 1.286,
+          "betway": 1.3,
+          "bwin": 1.3,
+          "codere": 1.28,
+          "leovegas": 1.3,
+          "oddset": 1.3,
+          "pinnacle": 1.326,
+          "unibet": 1.29,
+          "williamhill": 1.313,
+          "williamhillnj": 1.312,
+          "winamax": 1.33
         },
         "away": {
-          "888sport": 2.3,
-          "leovegas": 2.28,
-          "unibet": 2.28,
-          "1xbet": 2.39,
-          "betclic": 2.22,
-          "betsson": 2.35,
-          "pinnacle": 2.43
+          "1xbet": 3.52,
+          "888sport": 3.3,
+          "888sportca": 3.3,
+          "bet365": 4,
+          "bet365nj": 4,
+          "betano": 3.45,
+          "betanobg": 3.45,
+          "betanoca": 3.45,
+          "betanocz": 3.45,
+          "betanomx": 3.45,
+          "betanope": 3.45,
+          "betanopt": 3.45,
+          "betanoro": 3.45,
+          "betfair": 3.7,
+          "betfred": 3.5,
+          "betway": 3.5,
+          "bwin": 3.4,
+          "codere": 3.5,
+          "leovegas": 3.6,
+          "oddset": 3.4,
+          "pinnacle": 3.63,
+          "unibet": 3.6,
+          "williamhill": 3.3,
+          "williamhillnj": 3.3,
+          "winamax": 3.55
         }
       },
       "model": {
-        "home": 0.5980137657693436,
-        "away": 0.4019862342306564,
+        "home": 0.5644004902404213,
+        "away": 0.43559950975957873,
         "fromModel": true,
-        "eloH": 1824,
-        "eloA": 1755,
+        "eloH": 1675,
+        "eloA": 1630,
         "surface": "hard"
       },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "18d9ea3abcfe85f9ae47dc0433ac57c7",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "brandonnakashima",
-      "away": "matteoberrettini",
-      "odds": {
-        "home": {
-          "888sport": 1.67,
-          "leovegas": 1.6,
-          "unibet": 1.6,
-          "1xbet": 1.64,
-          "betclic": 1.56,
-          "betsson": 1.63,
-          "pinnacle": 1.67
-        },
-        "away": {
-          "888sport": 2.2,
-          "leovegas": 2.33,
-          "unibet": 2.33,
-          "1xbet": 2.31,
-          "betclic": 2.17,
-          "betsson": 2.3,
-          "pinnacle": 2.29
-        }
-      },
-      "model": {
-        "home": 0.5215733330511455,
-        "away": 0.4784266669488545,
-        "fromModel": true,
-        "eloH": 1838,
-        "eloA": 1823,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "a397cd2c21e2038f589dfcc1bbf4a5d9",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "cameronnorrie",
-      "away": "matteoarnaldi",
-      "odds": {
-        "home": {
-          "888sport": 1.44,
-          "betsson": 1.45,
-          "leovegas": 1.43,
-          "unibet": 1.43,
-          "1xbet": 1.44,
-          "betclic": 1.4,
-          "pinnacle": 1.43
-        },
-        "away": {
-          "888sport": 2.75,
-          "betsson": 2.8,
-          "leovegas": 2.8,
-          "unibet": 2.8,
-          "1xbet": 2.88,
-          "betclic": 2.6,
-          "pinnacle": 2.98
-        }
-      },
-      "model": {
-        "home": 0.6875382482123418,
-        "away": 0.3124617517876582,
-        "fromModel": true,
-        "eloH": 1886,
-        "eloA": 1749,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "1a6898d788e3c5c7ecfb78edf5d4e8ab",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "denisshapovalov",
-      "away": "karenkhachanov",
-      "odds": {
-        "home": {
-          "888sport": 2.38,
-          "leovegas": 2.5,
-          "unibet": 2.5,
-          "1xbet": 2.46,
-          "betclic": 2.28,
-          "betsson": 2.42,
-          "pinnacle": 2.41
-        },
-        "away": {
-          "888sport": 1.57,
-          "leovegas": 1.53,
-          "unibet": 1.53,
-          "1xbet": 1.57,
-          "betclic": 1.51,
-          "betsson": 1.57,
-          "pinnacle": 1.61
-        }
-      },
-      "model": {
-        "home": 0.34288131351292145,
-        "away": 0.6571186864870786,
-        "fromModel": true,
-        "eloH": 1834,
-        "eloA": 1947,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
-    },
-    {
-      "id": "2fe52476d7d37d8230ca007cdf25c34c",
-      "tour": "atp",
-      "event": "Atp Paris Masters",
-      "round": "",
-      "surface": "Dura",
-      "time": "11:00",
-      "day": "02 NOV",
-      "home": "tommypaul",
-      "away": "holgerrune",
-      "odds": {
-        "home": {
-          "888sport": 1.5,
-          "betsson": 1.46,
-          "leovegas": 1.5,
-          "unibet": 1.5,
-          "1xbet": 1.47,
-          "betclic": 1.41,
-          "pinnacle": 1.49
-        },
-        "away": {
-          "888sport": 2.6,
-          "betsson": 2.75,
-          "leovegas": 2.6,
-          "unibet": 2.6,
-          "1xbet": 2.77,
-          "betclic": 2.55,
-          "pinnacle": 2.75
-        }
-      },
-      "model": {
-        "home": 0.4441090388831469,
-        "away": 0.5558909611168531,
-        "fromModel": true,
-        "eloH": 1873,
-        "eloA": 1912,
-        "surface": "hard"
-      },
-      "ts": 1793613600000,
-      "sofa": null
+      "ts": 1793611800000,
+      "sofa": 17467997
     },
     {
       "id": "9e065ecef1e149fdf4c5e361ba6d2f2b",
@@ -2018,22 +1300,30 @@
       "away": "huberthurkacz",
       "odds": {
         "home": {
-          "pinnacle": 2.01,
-          "888sport": 2,
-          "betclic": 1.85,
-          "unibet": 1.92,
-          "1xbet": 1.97,
-          "betsson": 1.94,
-          "leovegas": 1.92
+          "pinnacle": 1.93,
+          "888sport": 1.91,
+          "betclic": 1.88,
+          "unibet": 1.89,
+          "1xbet": 1.93,
+          "betsson": 1.91,
+          "leovegas": 1.89,
+          "matchbook": 2,
+          "betfair": 2,
+          "williamhill": 1.91,
+          "winamax": 1.94
         },
         "away": {
-          "pinnacle": 1.86,
-          "888sport": 1.8,
-          "betclic": 1.79,
-          "unibet": 1.88,
-          "1xbet": 1.88,
-          "betsson": 1.87,
-          "leovegas": 1.88
+          "pinnacle": 1.96,
+          "888sport": 1.91,
+          "betclic": 1.86,
+          "unibet": 1.89,
+          "1xbet": 1.92,
+          "betsson": 1.9,
+          "leovegas": 1.89,
+          "matchbook": 1.98,
+          "betfair": 1.98,
+          "williamhill": 1.91,
+          "winamax": 1.92
         }
       },
       "model": {
@@ -2059,22 +1349,30 @@
       "away": "zizoubergs",
       "odds": {
         "home": {
-          "888sport": 3.1,
-          "betsson": 3.15,
-          "leovegas": 3.5,
-          "unibet": 3.5,
-          "1xbet": 3.31,
-          "betclic": 2.9,
-          "pinnacle": 3.26
+          "888sport": 3.3,
+          "betsson": 3.35,
+          "leovegas": 3.2,
+          "unibet": 3.2,
+          "1xbet": 3.33,
+          "betclic": 3.2,
+          "pinnacle": 3.49,
+          "matchbook": 3.5,
+          "betfair": 3.5,
+          "williamhill": 3.3,
+          "winamax": 3.4
         },
         "away": {
-          "888sport": 1.36,
-          "betsson": 1.36,
-          "leovegas": 1.3,
-          "unibet": 1.3,
+          "888sport": 1.33,
+          "betsson": 1.33,
+          "leovegas": 1.36,
+          "unibet": 1.36,
           "1xbet": 1.35,
           "betclic": 1.32,
-          "pinnacle": 1.37
+          "pinnacle": 1.35,
+          "matchbook": 1.39,
+          "betfair": 1.39,
+          "williamhill": 1.33,
+          "winamax": 1.35
         }
       },
       "model": {
@@ -2089,44 +1387,101 @@
       "sofa": null
     },
     {
-      "id": "c2e61aa3d1076fb1efc4756a1006e80a",
+      "id": "f510a63a2e3852e183f84eb8cd44fcac",
       "tour": "atp",
       "event": "Atp Paris Masters",
       "round": "",
       "surface": "Dura",
       "time": "11:00",
       "day": "02 NOV",
-      "home": "stefanostsitsipa",
-      "away": "learnertien",
+      "home": "lucianodarderi",
+      "away": "rinkyhijikata",
       "odds": {
         "home": {
-          "888sport": 2.1,
-          "leovegas": 2.23,
-          "unibet": 2.23,
+          "winamax": 2.1,
           "1xbet": 2.15,
-          "betclic": 2.02,
-          "betsson": 2.13,
-          "pinnacle": 2.15
+          "matchbook": 2.24,
+          "betsson": 2.1,
+          "betfair": 2.24,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "unibet": 2.1,
+          "betclic": 2.1,
+          "leovegas": 2.1,
+          "pinnacle": 2.22
         },
         "away": {
-          "888sport": 1.73,
-          "leovegas": 1.65,
-          "unibet": 1.65,
+          "winamax": 1.76,
           "1xbet": 1.73,
-          "betclic": 1.65,
-          "betsson": 1.72,
-          "pinnacle": 1.76
+          "matchbook": 1.79,
+          "betsson": 1.74,
+          "betfair": 1.79,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "unibet": 1.73,
+          "betclic": 1.69,
+          "leovegas": 1.73,
+          "pinnacle": 1.71
         }
       },
       "model": {
-        "home": 0.48992755307256153,
-        "away": 0.5100724469274385,
+        "home": 0.7479995411960544,
+        "away": 0.2520004588039456,
         "fromModel": true,
-        "eloH": 1911,
-        "eloA": 1918,
+        "eloH": 1924,
+        "eloA": 1735,
         "surface": "hard"
       },
       "ts": 1793613600000,
+      "sofa": null
+    },
+    {
+      "id": "0b15b685479df1479050365848bcfe54",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "12:10",
+      "day": "02 NOV",
+      "home": "alejandrotabilo",
+      "away": "rafaeljodar",
+      "odds": {
+        "home": {
+          "888sport": 4.2,
+          "leovegas": 4.35,
+          "unibet": 4.35,
+          "1xbet": 4.3,
+          "betclic": 4.2,
+          "betsson": 4.4,
+          "pinnacle": 4.65,
+          "matchbook": 4.7,
+          "betfair": 4.7,
+          "williamhill": 4.2,
+          "winamax": 4.5
+        },
+        "away": {
+          "888sport": 1.22,
+          "leovegas": 1.21,
+          "unibet": 1.21,
+          "1xbet": 1.24,
+          "betclic": 1.21,
+          "betsson": 1.22,
+          "pinnacle": 1.23,
+          "matchbook": 1.26,
+          "betfair": 1.26,
+          "williamhill": 1.22,
+          "winamax": 1.23
+        }
+      },
+      "model": {
+        "home": 0.4483764526890395,
+        "away": 0.5516235473109605,
+        "fromModel": true,
+        "eloH": 1821,
+        "eloA": 1857,
+        "surface": "hard"
+      },
+      "ts": 1793617800000,
       "sofa": null
     },
     {
@@ -2135,28 +1490,36 @@
       "event": "Atp Paris Masters",
       "round": "",
       "surface": "Dura",
-      "time": "11:00",
+      "time": "12:10",
       "day": "02 NOV",
       "home": "lucavanassche",
       "away": "marianonavone",
       "odds": {
         "home": {
-          "888sport": 1.57,
-          "betsson": 1.59,
-          "leovegas": 1.6,
-          "unibet": 1.6,
-          "1xbet": 1.59,
-          "betclic": 1.53,
-          "pinnacle": 1.58
+          "888sport": 1.67,
+          "betsson": 1.6,
+          "leovegas": 1.62,
+          "unibet": 1.62,
+          "1xbet": 1.62,
+          "betclic": 1.57,
+          "pinnacle": 1.68,
+          "matchbook": 1.73,
+          "betfair": 1.73,
+          "williamhill": 1.67,
+          "winamax": 1.62
         },
         "away": {
-          "888sport": 2.38,
-          "betsson": 2.37,
-          "leovegas": 2.33,
-          "unibet": 2.33,
-          "1xbet": 2.42,
-          "betclic": 2.23,
-          "pinnacle": 2.49
+          "888sport": 2.2,
+          "betsson": 2.36,
+          "leovegas": 2.28,
+          "unibet": 2.3,
+          "1xbet": 2.35,
+          "betclic": 2.3,
+          "pinnacle": 2.31,
+          "matchbook": 2.34,
+          "betfair": 2.34,
+          "williamhill": 2.2,
+          "winamax": 2.4
         }
       },
       "model": {
@@ -2167,7 +1530,916 @@
         "eloA": 1816,
         "surface": "hard"
       },
-      "ts": 1793613600000,
+      "ts": 1793617800000,
+      "sofa": null
+    },
+    {
+      "id": "d54412ae826f63d7234c2ea00d4809ac",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "13:20",
+      "day": "02 NOV",
+      "home": "danielmeridaagui",
+      "away": "alexanderblockx",
+      "odds": {
+        "home": {
+          "pinnacle": 2.37,
+          "888sport": 2.3,
+          "unibet": 2.32,
+          "betsson": 2.3,
+          "betclic": 2.25,
+          "1xbet": 2.31,
+          "leovegas": 2.32,
+          "matchbook": 2.38,
+          "betfair": 2.38,
+          "williamhill": 2.3,
+          "winamax": 2.25
+        },
+        "away": {
+          "pinnacle": 1.65,
+          "888sport": 1.61,
+          "unibet": 1.61,
+          "betsson": 1.63,
+          "betclic": 1.6,
+          "1xbet": 1.64,
+          "leovegas": 1.61,
+          "matchbook": 1.72,
+          "betfair": 1.72,
+          "williamhill": 1.62,
+          "winamax": 1.7
+        }
+      },
+      "model": {
+        "home": 0.33642590195870453,
+        "away": 0.6635740980412954,
+        "fromModel": true,
+        "eloH": 1721,
+        "eloA": 1839,
+        "surface": "hard"
+      },
+      "ts": 1793622000000,
+      "sofa": null
+    },
+    {
+      "id": "a397cd2c21e2038f589dfcc1bbf4a5d9",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "13:20",
+      "day": "02 NOV",
+      "home": "cameronnorrie",
+      "away": "matteoarnaldi",
+      "odds": {
+        "home": {
+          "888sport": 1.44,
+          "betsson": 1.44,
+          "leovegas": 1.44,
+          "unibet": 1.44,
+          "1xbet": 1.45,
+          "betclic": 1.42,
+          "pinnacle": 1.47,
+          "matchbook": 1.52,
+          "betfair": 1.52,
+          "williamhill": 1.44,
+          "winamax": 1.43
+        },
+        "away": {
+          "888sport": 2.75,
+          "betsson": 2.8,
+          "leovegas": 2.75,
+          "unibet": 2.75,
+          "1xbet": 2.84,
+          "betclic": 2.75,
+          "pinnacle": 2.88,
+          "matchbook": 2.9,
+          "betfair": 2.9,
+          "williamhill": 2.75,
+          "winamax": 2.95
+        }
+      },
+      "model": {
+        "home": 0.6875382482123418,
+        "away": 0.3124617517876582,
+        "fromModel": true,
+        "eloH": 1886,
+        "eloA": 1749,
+        "surface": "hard"
+      },
+      "ts": 1793622000000,
+      "sofa": null
+    },
+    {
+      "id": "99851274de5cc3c943371f330f1b4c71",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "13:20",
+      "day": "02 NOV",
+      "home": "casperruud",
+      "away": "juanmanuelcerund",
+      "odds": {
+        "home": {
+          "winamax": 1.39,
+          "1xbet": 1.38,
+          "matchbook": 1.39,
+          "betsson": 1.38,
+          "betfair": 1.39,
+          "williamhill": 1.4,
+          "888sport": 1.4,
+          "unibet": 1.33,
+          "betclic": 1.36,
+          "leovegas": 1.33,
+          "pinnacle": 1.38
+        },
+        "away": {
+          "winamax": 3.15,
+          "1xbet": 3.17,
+          "matchbook": 3.45,
+          "betsson": 3.1,
+          "betfair": 3.45,
+          "williamhill": 2.9,
+          "888sport": 2.9,
+          "unibet": 3.3,
+          "betclic": 3,
+          "leovegas": 3.3,
+          "pinnacle": 3.23
+        }
+      },
+      "model": {
+        "home": 0.7425355589430698,
+        "away": 0.2574644410569302,
+        "fromModel": true,
+        "eloH": 1908,
+        "eloA": 1724,
+        "surface": "hard"
+      },
+      "ts": 1793622000000,
+      "sofa": null
+    },
+    {
+      "id": "a916463c001545483b340777daefd7c6",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "14:30",
+      "day": "02 NOV",
+      "home": "mattiabellucci",
+      "away": "lorenzosonego",
+      "odds": {
+        "home": {
+          "1xbet": 1.66,
+          "matchbook": 1.71,
+          "betsson": 1.66,
+          "betfair": 1.71,
+          "winamax": 1.68,
+          "williamhill": 1.67,
+          "888sport": 1.67,
+          "unibet": 1.61,
+          "betclic": 1.64,
+          "leovegas": 1.61,
+          "pinnacle": 1.67
+        },
+        "away": {
+          "1xbet": 2.27,
+          "matchbook": 2.36,
+          "betsson": 2.23,
+          "betfair": 2.36,
+          "winamax": 2.25,
+          "williamhill": 2.2,
+          "888sport": 2.2,
+          "unibet": 2.3,
+          "betclic": 2.18,
+          "leovegas": 2.3,
+          "pinnacle": 2.3
+        }
+      },
+      "model": {
+        "home": 0.5129491448928637,
+        "away": 0.4870508551071363,
+        "fromModel": true,
+        "eloH": 1778,
+        "eloA": 1769,
+        "surface": "hard"
+      },
+      "ts": 1793626200000,
+      "sofa": null
+    },
+    {
+      "id": "b363b01046ccc43cdfcc7e7f4e42d735",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "15:30",
+      "day": "02 NOV",
+      "home": "kyrianjacquet",
+      "away": "tomasmachac",
+      "odds": {
+        "home": {
+          "1xbet": 2.54,
+          "matchbook": 2.72,
+          "betsson": 2.49,
+          "betfair": 2.72,
+          "winamax": 2.55,
+          "williamhill": 2.6,
+          "888sport": 2.6,
+          "unibet": 2.63,
+          "betclic": 2.42,
+          "leovegas": 2.63,
+          "pinnacle": 2.68
+        },
+        "away": {
+          "1xbet": 1.54,
+          "matchbook": 1.56,
+          "betsson": 1.54,
+          "betfair": 1.56,
+          "winamax": 1.56,
+          "williamhill": 1.5,
+          "888sport": 1.5,
+          "unibet": 1.49,
+          "betclic": 1.52,
+          "leovegas": 1.49,
+          "pinnacle": 1.51
+        }
+      },
+      "model": {
+        "home": 0.2777654663508294,
+        "away": 0.7222345336491707,
+        "fromModel": true,
+        "eloH": 1695,
+        "eloA": 1861,
+        "surface": "hard"
+      },
+      "ts": 1793629800000,
+      "sofa": null
+    },
+    {
+      "id": "44f0dc12e4fa4b0ef607420fecfd8eb6",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "16:40",
+      "day": "02 NOV",
+      "home": "alexmolcan",
+      "away": "titouandroguet",
+      "odds": {
+        "home": {
+          "betclic": 1.76,
+          "betsson": 1.79,
+          "betfair": 1.72,
+          "williamhill": 1.8,
+          "888sport": 1.8,
+          "unibet": 1.81,
+          "1xbet": 1.79,
+          "winamax": 1.8,
+          "matchbook": 1.76,
+          "leovegas": 1.81
+        },
+        "away": {
+          "betclic": 2,
+          "betsson": 2.04,
+          "betfair": 2.16,
+          "williamhill": 2,
+          "888sport": 2,
+          "unibet": 2,
+          "1xbet": 2.07,
+          "winamax": 2.05,
+          "matchbook": 2.16,
+          "leovegas": 2
+        }
+      },
+      "model": {
+        "home": 0.515824985264735,
+        "away": 0.48417501473526503,
+        "fromModel": true,
+        "eloH": 1737,
+        "eloA": 1726,
+        "surface": "hard"
+      },
+      "ts": 1793634000000,
+      "sofa": null
+    },
+    {
+      "id": "1a6898d788e3c5c7ecfb78edf5d4e8ab",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "19:00",
+      "day": "02 NOV",
+      "home": "denisshapovalov",
+      "away": "karenkhachanov",
+      "odds": {
+        "home": {
+          "888sport": 2.3,
+          "leovegas": 2.3,
+          "unibet": 2.3,
+          "1xbet": 2.39,
+          "betclic": 2.33,
+          "betsson": 2.39,
+          "pinnacle": 2.44,
+          "matchbook": 2.52,
+          "betfair": 2.52,
+          "williamhill": 2.3,
+          "winamax": 2.4
+        },
+        "away": {
+          "888sport": 1.61,
+          "leovegas": 1.62,
+          "unibet": 1.62,
+          "1xbet": 1.6,
+          "betclic": 1.56,
+          "betsson": 1.59,
+          "pinnacle": 1.61,
+          "matchbook": 1.63,
+          "betfair": 1.63,
+          "williamhill": 1.62,
+          "winamax": 1.6
+        }
+      },
+      "model": {
+        "home": 0.34288131351292145,
+        "away": 0.6571186864870786,
+        "fromModel": true,
+        "eloH": 1834,
+        "eloA": 1947,
+        "surface": "hard"
+      },
+      "ts": 1793642400000,
+      "sofa": null
+    },
+    {
+      "id": "85efb20e93a6ca08964f6239e9956dae",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "20:30",
+      "day": "02 NOV",
+      "home": "ugohumbert",
+      "away": "boticvandezandsc",
+      "odds": {
+        "home": {
+          "888sport": 1.61,
+          "leovegas": 1.57,
+          "unibet": 1.57,
+          "1xbet": 1.59,
+          "betclic": 1.55,
+          "betsson": 1.57,
+          "pinnacle": 1.64,
+          "matchbook": 1.66,
+          "betfair": 1.66,
+          "williamhill": 1.62,
+          "winamax": 1.58
+        },
+        "away": {
+          "888sport": 2.3,
+          "leovegas": 2.35,
+          "unibet": 2.45,
+          "1xbet": 2.42,
+          "betclic": 2.36,
+          "betsson": 2.42,
+          "pinnacle": 2.39,
+          "matchbook": 2.48,
+          "betfair": 2.48,
+          "williamhill": 2.3,
+          "winamax": 2.45
+        }
+      },
+      "model": {
+        "home": 0.5980137657693436,
+        "away": 0.4019862342306564,
+        "fromModel": true,
+        "eloH": 1824,
+        "eloA": 1755,
+        "surface": "hard"
+      },
+      "ts": 1793647800000,
+      "sofa": null
+    },
+    {
+      "id": "b04959d8930aba4535db09fe57f9d093",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "03 NOV",
+      "home": "alejandrodavidov",
+      "away": "moisekouame",
+      "odds": {
+        "home": {
+          "pinnacle": 1.37,
+          "888sport": 1.36,
+          "1xbet": 1.36,
+          "unibet": 1.35,
+          "betsson": 1.34,
+          "betclic": 1.3,
+          "matchbook": 1.37,
+          "betfair": 1.37,
+          "williamhill": 1.36,
+          "winamax": 1.34,
+          "leovegas": 1.35
+        },
+        "away": {
+          "pinnacle": 3.37,
+          "888sport": 3.1,
+          "1xbet": 3.27,
+          "unibet": 3.2,
+          "betsson": 3.3,
+          "betclic": 3,
+          "matchbook": 3.55,
+          "betfair": 3.55,
+          "williamhill": 3.1,
+          "winamax": 3.25,
+          "leovegas": 3.2
+        }
+      },
+      "model": {
+        "home": 0.8658895824550439,
+        "away": 0.13411041754495612,
+        "fromModel": true,
+        "eloH": 1927,
+        "eloA": 1603,
+        "surface": "hard"
+      },
+      "ts": 1793696400000,
+      "sofa": null
+    },
+    {
+      "id": "1ead1ee3704640aea824a5759ad1cc28",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "10:00",
+      "day": "03 NOV",
+      "home": "novakdjokovic",
+      "away": "valentinvacherot",
+      "odds": {
+        "home": {
+          "pinnacle": 1.44,
+          "888sport": 1.44,
+          "1xbet": 1.43,
+          "unibet": 1.4,
+          "betclic": 1.37,
+          "matchbook": 1.45,
+          "leovegas": 1.4,
+          "betfair": 1.45,
+          "winamax": 1.41
+        },
+        "away": {
+          "pinnacle": 2.99,
+          "888sport": 2.75,
+          "1xbet": 2.92,
+          "unibet": 2.95,
+          "betclic": 2.7,
+          "matchbook": 3.05,
+          "leovegas": 2.95,
+          "betfair": 3.05,
+          "winamax": 2.85
+        }
+      },
+      "model": {
+        "home": 0.7490830628775357,
+        "away": 0.2509169371224643,
+        "fromModel": true,
+        "eloH": 2117,
+        "eloA": 1927,
+        "surface": "hard"
+      },
+      "ts": 1793696400000,
+      "sofa": null
+    },
+    {
+      "id": "766892f0324922ef7aab73a2713af3c2",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "alexmichelsen",
+      "away": "jirilehecka",
+      "odds": {
+        "home": {
+          "888sport": 2.2,
+          "1xbet": 2.23,
+          "matchbook": 2.4,
+          "unibet": 2.28,
+          "betclic": 2.09,
+          "betfair": 2.4,
+          "williamhill": 2.2,
+          "winamax": 2.2,
+          "pinnacle": 2.29,
+          "leovegas": 2.28
+        },
+        "away": {
+          "888sport": 1.67,
+          "1xbet": 1.68,
+          "matchbook": 1.71,
+          "unibet": 1.62,
+          "betclic": 1.61,
+          "betfair": 1.71,
+          "williamhill": 1.67,
+          "winamax": 1.66,
+          "pinnacle": 1.68,
+          "leovegas": 1.62
+        }
+      },
+      "model": {
+        "home": 0.27431435372821295,
+        "away": 0.7256856462717871,
+        "fromModel": true,
+        "eloH": 1834,
+        "eloA": 2003,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "d25fdbba0ee28a3bbfa27a1b7bf0310b",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "andreyrublev",
+      "away": "tomasmartinetche",
+      "odds": {
+        "home": {
+          "888sport": 1.36,
+          "leovegas": 1.38,
+          "unibet": 1.38,
+          "1xbet": 1.4,
+          "betclic": 1.35,
+          "betsson": 1.39,
+          "pinnacle": 1.4,
+          "matchbook": 1.42,
+          "betfair": 1.43,
+          "williamhill": 1.36,
+          "winamax": 1.39
+        },
+        "away": {
+          "888sport": 3.1,
+          "leovegas": 3.05,
+          "unibet": 3.05,
+          "1xbet": 3.06,
+          "betclic": 2.8,
+          "betsson": 3,
+          "pinnacle": 3.2,
+          "matchbook": 3.25,
+          "betfair": 3.25,
+          "williamhill": 3.1,
+          "winamax": 3
+        }
+      },
+      "model": {
+        "home": 0.7222345336491706,
+        "away": 0.27776546635082944,
+        "fromModel": true,
+        "eloH": 1963,
+        "eloA": 1797,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "90da92cf3a7e75dbd2eb358af0340fa8",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "quentinhalys",
+      "away": "arthurfery",
+      "odds": {
+        "home": {
+          "888sport": 1.67,
+          "betsson": 1.63,
+          "leovegas": 1.63,
+          "unibet": 1.63,
+          "1xbet": 1.64,
+          "betclic": 1.57,
+          "pinnacle": 1.67,
+          "matchbook": 1.69,
+          "betfair": 1.69,
+          "winamax": 1.62
+        },
+        "away": {
+          "888sport": 2.2,
+          "betsson": 2.28,
+          "leovegas": 2.28,
+          "unibet": 2.28,
+          "1xbet": 2.31,
+          "betclic": 2.16,
+          "pinnacle": 2.33,
+          "matchbook": 2.42,
+          "betfair": 2.42,
+          "winamax": 2.25
+        }
+      },
+      "model": {
+        "home": 0.577092475825329,
+        "away": 0.42290752417467103,
+        "fromModel": true,
+        "eloH": 1744,
+        "eloA": 1690,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "232e9e6ce004ffcdda5130a7f432eb15",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "janlennardstruff",
+      "away": "arthurgea",
+      "odds": {
+        "home": {
+          "betclic": 1.96,
+          "betfair": 2,
+          "matchbook": 1.96,
+          "williamhill": 2.1,
+          "888sport": 2.1,
+          "unibet": 2.08,
+          "1xbet": 2.11,
+          "winamax": 2.05,
+          "leovegas": 2.08
+        },
+        "away": {
+          "betclic": 1.69,
+          "betfair": 1.71,
+          "matchbook": 1.61,
+          "williamhill": 1.73,
+          "888sport": 1.73,
+          "unibet": 1.75,
+          "1xbet": 1.76,
+          "winamax": 1.76,
+          "leovegas": 1.75
+        }
+      },
+      "model": {
+        "home": 0.554469374021676,
+        "away": 0.44553062597832405,
+        "fromModel": true,
+        "eloH": 1769,
+        "eloA": 1731,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "db55f6491d2491e31599e3af63c11471",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "arthurrinderknec",
+      "away": "franciscocerundo",
+      "odds": {
+        "home": {
+          "888sport": 2.6,
+          "betsson": 2.8,
+          "leovegas": 2.88,
+          "unibet": 2.88,
+          "1xbet": 2.84,
+          "betclic": 2.6,
+          "pinnacle": 2.8,
+          "matchbook": 2.84,
+          "betfair": 2.84,
+          "williamhill": 2.6,
+          "winamax": 2.75
+        },
+        "away": {
+          "888sport": 1.5,
+          "betsson": 1.45,
+          "leovegas": 1.42,
+          "unibet": 1.42,
+          "1xbet": 1.45,
+          "betclic": 1.4,
+          "pinnacle": 1.49,
+          "matchbook": 1.54,
+          "betfair": 1.54,
+          "williamhill": 1.5,
+          "winamax": 1.44
+        }
+      },
+      "model": {
+        "home": 0.5573116337622928,
+        "away": 0.44268836623770724,
+        "fromModel": true,
+        "eloH": 1857,
+        "eloA": 1817,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "dcf8effd6f985422ab07f5c909334937",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "benjaminbonzi",
+      "away": "taylorfritz",
+      "odds": {
+        "home": {
+          "betclic": 3.85,
+          "betfair": 4.1,
+          "matchbook": 3.9,
+          "williamhill": 4.2,
+          "888sport": 4.2,
+          "unibet": 4.35,
+          "1xbet": 4.3,
+          "winamax": 4.3,
+          "leovegas": 4.35
+        },
+        "away": {
+          "betclic": 1.19,
+          "betfair": 1.18,
+          "matchbook": 1.17,
+          "williamhill": 1.22,
+          "888sport": 1.22,
+          "unibet": 1.22,
+          "1xbet": 1.24,
+          "winamax": 1.22,
+          "leovegas": 1.22
+        }
+      },
+      "model": {
+        "home": 0.21303672061053083,
+        "away": 0.7869632793894692,
+        "fromModel": true,
+        "eloH": 1745,
+        "eloA": 1972,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "18d9ea3abcfe85f9ae47dc0433ac57c7",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "brandonnakashima",
+      "away": "matteoberrettini",
+      "odds": {
+        "home": {
+          "888sport": 1.67,
+          "leovegas": 1.65,
+          "unibet": 1.65,
+          "1xbet": 1.66,
+          "betclic": 1.58,
+          "betsson": 1.65,
+          "pinnacle": 1.67,
+          "matchbook": 1.69,
+          "betfair": 1.69,
+          "williamhill": 1.67,
+          "winamax": 1.64
+        },
+        "away": {
+          "888sport": 2.2,
+          "leovegas": 2.23,
+          "unibet": 2.23,
+          "1xbet": 2.27,
+          "betclic": 2.14,
+          "betsson": 2.26,
+          "pinnacle": 2.32,
+          "matchbook": 2.36,
+          "betfair": 2.36,
+          "williamhill": 2.2,
+          "winamax": 2.25
+        }
+      },
+      "model": {
+        "home": 0.5215733330511455,
+        "away": 0.4784266669488545,
+        "fromModel": true,
+        "eloH": 1838,
+        "eloA": 1823,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "2fe52476d7d37d8230ca007cdf25c34c",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "tommypaul",
+      "away": "holgerrune",
+      "odds": {
+        "home": {
+          "888sport": 1.5,
+          "betsson": 1.46,
+          "leovegas": 1.43,
+          "unibet": 1.43,
+          "1xbet": 1.46,
+          "betclic": 1.41,
+          "pinnacle": 1.5,
+          "matchbook": 1.51,
+          "betfair": 1.51,
+          "winamax": 1.46
+        },
+        "away": {
+          "888sport": 2.6,
+          "betsson": 2.75,
+          "leovegas": 2.85,
+          "unibet": 2.85,
+          "1xbet": 2.8,
+          "betclic": 2.55,
+          "pinnacle": 2.77,
+          "matchbook": 2.88,
+          "betfair": 2.88,
+          "winamax": 2.7
+        }
+      },
+      "model": {
+        "home": 0.4441090388831469,
+        "away": 0.5558909611168531,
+        "fromModel": true,
+        "eloH": 1873,
+        "eloA": 1912,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
+      "sofa": null
+    },
+    {
+      "id": "c2e61aa3d1076fb1efc4756a1006e80a",
+      "tour": "atp",
+      "event": "Atp Paris Masters",
+      "round": "",
+      "surface": "Dura",
+      "time": "11:00",
+      "day": "03 NOV",
+      "home": "stefanostsitsipa",
+      "away": "learnertien",
+      "odds": {
+        "home": {
+          "888sport": 2.1,
+          "leovegas": 2.12,
+          "unibet": 2.12,
+          "1xbet": 2.13,
+          "betclic": 2.02,
+          "betsson": 2.13,
+          "pinnacle": 2.17,
+          "matchbook": 2.2,
+          "betfair": 2.2,
+          "winamax": 2.1
+        },
+        "away": {
+          "888sport": 1.73,
+          "leovegas": 1.72,
+          "unibet": 1.72,
+          "1xbet": 1.75,
+          "betclic": 1.65,
+          "betsson": 1.72,
+          "pinnacle": 1.76,
+          "matchbook": 1.79,
+          "betfair": 1.79,
+          "winamax": 1.72
+        }
+      },
+      "model": {
+        "home": 0.48992755307256153,
+        "away": 0.5100724469274385,
+        "fromModel": true,
+        "eloH": 1911,
+        "eloA": 1918,
+        "surface": "hard"
+      },
+      "ts": 1793700000000,
       "sofa": null
     }
   ],
@@ -2175,40 +2447,40 @@
     {
       "id": "c1",
       "name": "Combinada del Día",
-      "conf": 33,
+      "conf": 51,
       "book": "onexbet",
       "legs": [
         {
-          "id": "d25fdbba0ee28a3bbfa27a1b7bf0310b",
+          "id": "b04959d8930aba4535db09fe57f9d093",
           "sport": "tennis_atp_paris_masters",
-          "ts": 1793613600000,
+          "ts": 1793696400000,
           "side": "home",
           "sofa": null,
-          "match": "A. Rublev – T. Martin Etcheverry",
-          "pick": "Gana A. Rublev",
-          "odd": 1.41,
+          "match": "A. Davidovich Fokina – M. Kouame",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.36,
           "book": "onexbet"
         },
         {
-          "id": "a397cd2c21e2038f589dfcc1bbf4a5d9",
+          "id": "dcf8effd6f985422ab07f5c909334937",
           "sport": "tennis_atp_paris_masters",
-          "ts": 1793613600000,
-          "side": "home",
-          "sofa": null,
-          "match": "C. Norrie – M. Arnaldi",
-          "pick": "Gana C. Norrie",
-          "odd": 1.44,
-          "book": "onexbet"
-        },
-        {
-          "id": "d54412ae826f63d7234c2ea00d4809ac",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793613600000,
+          "ts": 1793700000000,
           "side": "away",
           "sofa": null,
-          "match": "D. Merida Aguilar – A. Blockx",
-          "pick": "Gana A. Blockx",
-          "odd": 1.62,
+          "match": "B. Bonzi – T. Fritz",
+          "pick": "Gana T. Fritz",
+          "odd": 1.24,
+          "book": "onexbet"
+        },
+        {
+          "id": "1ead1ee3704640aea824a5759ad1cc28",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793696400000,
+          "side": "home",
+          "sofa": null,
+          "match": "N. Djokovic – V. Vacherot",
+          "pick": "Gana N. Djokovic",
+          "odd": 1.43,
           "book": "onexbet"
         }
       ]
@@ -2216,41 +2488,41 @@
     {
       "id": "c2",
       "name": "Combinada Valor",
-      "conf": 17,
-      "book": "pinnacle",
+      "conf": 35,
+      "book": "onexbet",
       "legs": [
         {
-          "id": "87dd1f372becd90b913ceac1b31578d1",
+          "id": "766892f0324922ef7aab73a2713af3c2",
           "sport": "tennis_atp_paris_masters",
-          "ts": 1793527200000,
+          "ts": 1793700000000,
           "side": "away",
           "sofa": null,
-          "match": "J. Manuel Cerundolo – M. Kecmanovic",
-          "pick": "Gana M. Kecmanovic",
-          "odd": 2.15,
-          "book": "pinnacle"
+          "match": "A. Michelsen – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.68,
+          "book": "onexbet"
         },
         {
-          "id": "0da93f689af7e7e2bf2e561f3e7f7e59",
+          "id": "b04959d8930aba4535db09fe57f9d093",
           "sport": "tennis_atp_paris_masters",
-          "ts": 1793527200000,
-          "side": "away",
+          "ts": 1793696400000,
+          "side": "home",
           "sofa": null,
-          "match": "B. Bonzi – Y. Hanfmann",
-          "pick": "Gana Y. Hanfmann",
+          "match": "A. Davidovich Fokina – M. Kouame",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.36,
+          "book": "onexbet"
+        },
+        {
+          "id": "232e9e6ce004ffcdda5130a7f432eb15",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793700000000,
+          "side": "home",
+          "sofa": null,
+          "match": "J. Struff – A. Gea",
+          "pick": "Gana J. Struff",
           "odd": 2.11,
-          "book": "pinnacle"
-        },
-        {
-          "id": "18d9ea3abcfe85f9ae47dc0433ac57c7",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793613600000,
-          "side": "away",
-          "sofa": null,
-          "match": "B. Nakashima – M. Berrettini",
-          "pick": "Gana M. Berrettini",
-          "odd": 2.29,
-          "book": "pinnacle"
+          "book": "onexbet"
         }
       ]
     }
@@ -3633,6 +3905,19 @@
       "odd": 2.36,
       "book": "betfair_ex_eu",
       "result": "W"
+    },
+    {
+      "id": "1356943371df609938b43fc463f52d22",
+      "ts": 1791770400000,
+      "date": "12 OCT",
+      "match": "J. Tjen – O. Oliynykova",
+      "pick": "Gana O. Oliynykova",
+      "pickHome": false,
+      "odd": 1,
+      "book": "betsson",
+      "result": "V",
+      "oddOrig": 3.5,
+      "reason": "sin resultado"
     },
     {
       "id": "151c74daf0dab5e36cb9e4534b7ee96e",
@@ -5179,22 +5464,6 @@
   ],
   "PENDING": [
     {
-      "id": "1356943371df609938b43fc463f52d22",
-      "sport": "tennis_wta_wuhan_open",
-      "ts": 1791770400000,
-      "date": "12 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "J. Tjen – O. Oliynykova",
-      "pickKey": "away",
-      "pickLabel": "Gana O. Oliynykova",
-      "odd": 3.5,
-      "book": "betsson",
-      "homeName": "J. Tjen",
-      "awayName": "O. Oliynykova",
-      "miss": 107
-    },
-    {
       "id": "opid1201562875477962",
       "sport": "tennis_oddspapi_atp",
       "ts": 1791876000000,
@@ -5208,7 +5477,7 @@
       "book": "betfair-ex",
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 107
+      "miss": 108
     },
     {
       "id": "opid1203543675481454",
@@ -5224,7 +5493,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 107
+      "miss": 108
     },
     {
       "id": "opid1201562875371562",
@@ -5240,7 +5509,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 107
+      "miss": 108
     },
     {
       "id": "opid1201562875371560",
@@ -5256,7 +5525,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 107
+      "miss": 108
     },
     {
       "id": "opid1204070975371224",
@@ -5272,7 +5541,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 107
+      "miss": 108
     },
     {
       "id": "9e065ecef1e149fdf4c5e361ba6d2f2b",
@@ -5348,6 +5617,156 @@
       "book": "leovegas_se",
       "homeName": "A. Rublev",
       "awayName": "T. Martin Etcheverry"
+    },
+    {
+      "id": "opid1203730776309972",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1793611800000,
+      "date": "02 NOV",
+      "sofa": 17467997,
+      "pickHome": false,
+      "match": "J. Vandromme – K. Okamura",
+      "pickKey": "away",
+      "pickLabel": "Gana K. Okamura",
+      "odd": 4,
+      "book": "bet365",
+      "homeName": "J. Vandromme",
+      "awayName": "K. Okamura"
+    },
+    {
+      "id": "766892f0324922ef7aab73a2713af3c2",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793700000000,
+      "date": "03 NOV",
+      "sofa": null,
+      "pickHome": false,
+      "match": "A. Michelsen – J. Lehecka",
+      "pickKey": "away",
+      "pickLabel": "Gana J. Lehecka",
+      "odd": 1.71,
+      "book": "matchbook",
+      "homeName": "A. Michelsen",
+      "awayName": "J. Lehecka"
+    },
+    {
+      "id": "b04959d8930aba4535db09fe57f9d093",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793696400000,
+      "date": "03 NOV",
+      "sofa": null,
+      "pickHome": true,
+      "match": "A. Davidovich Fokina – M. Kouame",
+      "pickKey": "home",
+      "pickLabel": "Gana A. Davidovich Fokina",
+      "odd": 1.37,
+      "book": "pinnacle",
+      "homeName": "A. Davidovich Fokina",
+      "awayName": "M. Kouame"
+    },
+    {
+      "id": "232e9e6ce004ffcdda5130a7f432eb15",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793700000000,
+      "date": "03 NOV",
+      "sofa": null,
+      "pickHome": true,
+      "match": "J. Struff – A. Gea",
+      "pickKey": "home",
+      "pickLabel": "Gana J. Struff",
+      "odd": 2.11,
+      "book": "onexbet",
+      "homeName": "J. Struff",
+      "awayName": "A. Gea"
+    },
+    {
+      "id": "a916463c001545483b340777daefd7c6",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793626200000,
+      "date": "02 NOV",
+      "sofa": null,
+      "pickHome": false,
+      "match": "M. Bellucci – L. Sonego",
+      "pickKey": "away",
+      "pickLabel": "Gana L. Sonego",
+      "odd": 2.36,
+      "book": "matchbook",
+      "homeName": "M. Bellucci",
+      "awayName": "L. Sonego"
+    },
+    {
+      "id": "b363b01046ccc43cdfcc7e7f4e42d735",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793629800000,
+      "date": "02 NOV",
+      "sofa": null,
+      "pickHome": false,
+      "match": "K. Jacquet – T. Machac",
+      "pickKey": "away",
+      "pickLabel": "Gana T. Machac",
+      "odd": 1.56,
+      "book": "matchbook",
+      "homeName": "K. Jacquet",
+      "awayName": "T. Machac"
+    },
+    {
+      "id": "opid1201111176286334",
+      "sport": "tennis_oddspapi_wta",
+      "ts": 1793603400000,
+      "date": "02 NOV",
+      "sofa": 17457722,
+      "pickHome": true,
+      "match": "K. Volynets – A. Sasnovich",
+      "pickKey": "home",
+      "pickLabel": "Gana K. Volynets",
+      "odd": 2.25,
+      "book": "winamax.de",
+      "homeName": "K. Volynets",
+      "awayName": "A. Sasnovich"
+    },
+    {
+      "id": "1ead1ee3704640aea824a5759ad1cc28",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793696400000,
+      "date": "03 NOV",
+      "sofa": null,
+      "pickHome": true,
+      "match": "N. Djokovic – V. Vacherot",
+      "pickKey": "home",
+      "pickLabel": "Gana N. Djokovic",
+      "odd": 1.45,
+      "book": "matchbook",
+      "homeName": "N. Djokovic",
+      "awayName": "V. Vacherot"
+    },
+    {
+      "id": "a397cd2c21e2038f589dfcc1bbf4a5d9",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793622000000,
+      "date": "02 NOV",
+      "sofa": null,
+      "pickHome": true,
+      "match": "C. Norrie – M. Arnaldi",
+      "pickKey": "home",
+      "pickLabel": "Gana C. Norrie",
+      "odd": 1.52,
+      "book": "matchbook",
+      "homeName": "C. Norrie",
+      "awayName": "M. Arnaldi"
+    },
+    {
+      "id": "99851274de5cc3c943371f330f1b4c71",
+      "sport": "tennis_atp_paris_masters",
+      "ts": 1793622000000,
+      "date": "02 NOV",
+      "sofa": null,
+      "pickHome": true,
+      "match": "C. Ruud – J. Manuel Cerundolo",
+      "pickKey": "home",
+      "pickLabel": "Gana C. Ruud",
+      "odd": 1.4,
+      "book": "williamhill",
+      "homeName": "C. Ruud",
+      "awayName": "J. Manuel Cerundolo"
     }
   ],
   "COMBO_RECORD": [
@@ -12370,7 +12789,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 107
+      "miss": 108
     },
     {
       "dayId": "12 OCT·c1",
@@ -12411,7 +12830,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 107
+      "miss": 108
     },
     {
       "dayId": "15 OCT·c2",
@@ -12452,7 +12871,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 107
+      "miss": 108
     },
     {
       "dayId": "16 OCT·c2",
@@ -12493,7 +12912,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 107
+      "miss": 108
     },
     {
       "dayId": "01 NOV·c1",
@@ -12580,9 +12999,183 @@
           "awayName": "M. Berrettini"
         }
       ]
+    },
+    {
+      "dayId": "02 NOV·c1",
+      "date": "02 NOV",
+      "name": "Combinada del Día",
+      "legs": [
+        {
+          "id": "b04959d8930aba4535db09fe57f9d093",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793696400000,
+          "side": "home",
+          "sofa": null,
+          "match": "A. Davidovich Fokina – M. Kouame",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.36,
+          "homeName": "A. Davidovich Fokina",
+          "awayName": "M. Kouame"
+        },
+        {
+          "id": "dcf8effd6f985422ab07f5c909334937",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793700000000,
+          "side": "away",
+          "sofa": null,
+          "match": "B. Bonzi – T. Fritz",
+          "pick": "Gana T. Fritz",
+          "odd": 1.24,
+          "homeName": "B. Bonzi",
+          "awayName": "T. Fritz"
+        },
+        {
+          "id": "1ead1ee3704640aea824a5759ad1cc28",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793696400000,
+          "side": "home",
+          "sofa": null,
+          "match": "N. Djokovic – V. Vacherot",
+          "pick": "Gana N. Djokovic",
+          "odd": 1.43,
+          "homeName": "N. Djokovic",
+          "awayName": "V. Vacherot"
+        }
+      ]
+    },
+    {
+      "dayId": "02 NOV·c2",
+      "date": "02 NOV",
+      "name": "Combinada Valor",
+      "legs": [
+        {
+          "id": "766892f0324922ef7aab73a2713af3c2",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793700000000,
+          "side": "away",
+          "sofa": null,
+          "match": "A. Michelsen – J. Lehecka",
+          "pick": "Gana J. Lehecka",
+          "odd": 1.68,
+          "homeName": "A. Michelsen",
+          "awayName": "J. Lehecka"
+        },
+        {
+          "id": "b04959d8930aba4535db09fe57f9d093",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793696400000,
+          "side": "home",
+          "sofa": null,
+          "match": "A. Davidovich Fokina – M. Kouame",
+          "pick": "Gana A. Davidovich Fokina",
+          "odd": 1.36,
+          "homeName": "A. Davidovich Fokina",
+          "awayName": "M. Kouame"
+        },
+        {
+          "id": "232e9e6ce004ffcdda5130a7f432eb15",
+          "sport": "tennis_atp_paris_masters",
+          "ts": 1793700000000,
+          "side": "home",
+          "sofa": null,
+          "match": "J. Struff – A. Gea",
+          "pick": "Gana J. Struff",
+          "odd": 2.11,
+          "homeName": "J. Struff",
+          "awayName": "A. Gea"
+        }
+      ]
     }
   ],
   "ARB_RECORD": [
+    {
+      "date": "02 NOV",
+      "match": "A. Rinderknech – F. Cerundolo",
+      "marginPct": 0.34,
+      "profit": 0.34,
+      "ts": 1793700000000,
+      "homeName": "A. Rinderknech",
+      "awayName": "F. Cerundolo",
+      "sport": "tennis_atp_paris_masters",
+      "legs": [
+        {
+          "pick": "Gana A. Rinderknech",
+          "odd": 2.88,
+          "book": "leovegas_se"
+        },
+        {
+          "pick": "Gana F. Cerundolo",
+          "odd": 1.54,
+          "book": "matchbook"
+        }
+      ]
+    },
+    {
+      "date": "02 NOV",
+      "match": "C. Norrie – M. Arnaldi",
+      "marginPct": 0.31,
+      "profit": 0.31,
+      "ts": 1793622000000,
+      "homeName": "C. Norrie",
+      "awayName": "M. Arnaldi",
+      "sport": "tennis_atp_paris_masters",
+      "legs": [
+        {
+          "pick": "Gana C. Norrie",
+          "odd": 1.52,
+          "book": "matchbook"
+        },
+        {
+          "pick": "Gana M. Arnaldi",
+          "odd": 2.95,
+          "book": "winamax_de"
+        }
+      ]
+    },
+    {
+      "date": "02 NOV",
+      "match": "L. Van Assche – M. Navone",
+      "marginPct": 0.53,
+      "profit": 0.53,
+      "ts": 1793617800000,
+      "homeName": "L. Van Assche",
+      "awayName": "M. Navone",
+      "sport": "tennis_atp_paris_masters",
+      "legs": [
+        {
+          "pick": "Gana L. Van Assche",
+          "odd": 1.73,
+          "book": "matchbook"
+        },
+        {
+          "pick": "Gana M. Navone",
+          "odd": 2.4,
+          "book": "winamax_de"
+        }
+      ]
+    },
+    {
+      "date": "02 NOV",
+      "match": "J. Vandromme – K. Okamura",
+      "marginPct": 1.47,
+      "profit": 1.49,
+      "ts": 1793611800000,
+      "homeName": "J. Vandromme",
+      "awayName": "K. Okamura",
+      "sport": "tennis_oddspapi_wta",
+      "legs": [
+        {
+          "pick": "Gana J. Vandromme",
+          "odd": 1.36,
+          "book": "betfair-ex"
+        },
+        {
+          "pick": "Gana K. Okamura",
+          "odd": 4,
+          "book": "bet365"
+        }
+      ]
+    },
     {
       "date": "30 OCT",
       "match": "J. Struff – N. Borges",
@@ -27277,66 +27870,6 @@
   ],
   "MODEL_PENDING": [
     {
-      "date": "12 OCT",
-      "ts": 1791770400000,
-      "match": "A. Li – Q. Zheng",
-      "predHome": false,
-      "prob": 61,
-      "predName": "Q. Zheng",
-      "sofa": null,
-      "homeName": "A. Li",
-      "awayName": "Q. Zheng",
-      "miss": 107
-    },
-    {
-      "date": "12 OCT",
-      "ts": 1791770400000,
-      "match": "D. Parry – A. Kalinskaya",
-      "predHome": false,
-      "prob": 65,
-      "predName": "A. Kalinskaya",
-      "sofa": null,
-      "homeName": "D. Parry",
-      "awayName": "A. Kalinskaya",
-      "miss": 107
-    },
-    {
-      "date": "12 OCT",
-      "ts": 1791770400000,
-      "match": "B. Bencic – S. Zhang",
-      "predHome": true,
-      "prob": 77,
-      "predName": "B. Bencic",
-      "sofa": null,
-      "homeName": "B. Bencic",
-      "awayName": "S. Zhang",
-      "miss": 107
-    },
-    {
-      "date": "12 OCT",
-      "ts": 1791770400000,
-      "match": "J. Tjen – O. Oliynykova",
-      "predHome": true,
-      "prob": 57,
-      "predName": "J. Tjen",
-      "sofa": null,
-      "homeName": "J. Tjen",
-      "awayName": "O. Oliynykova",
-      "miss": 107
-    },
-    {
-      "date": "12 OCT",
-      "ts": 1791770400000,
-      "match": "I. Jovic – M. Pohankova",
-      "predHome": true,
-      "prob": 84,
-      "predName": "I. Jovic",
-      "sofa": null,
-      "homeName": "I. Jovic",
-      "awayName": "M. Pohankova",
-      "miss": 107
-    },
-    {
       "date": "13 OCT",
       "ts": 1791856800000,
       "match": "A. Kalinskaya – S. Zhang",
@@ -27346,7 +27879,7 @@
       "sofa": null,
       "homeName": "A. Kalinskaya",
       "awayName": "S. Zhang",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "13 OCT",
@@ -27358,7 +27891,7 @@
       "sofa": 17302009,
       "homeName": "F. Diaz Acosta",
       "awayName": "S. Mochizuki",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "13 OCT",
@@ -27370,7 +27903,7 @@
       "sofa": 17302007,
       "homeName": "A. Walton",
       "awayName": "M. Cilic",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "14 OCT",
@@ -27382,7 +27915,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "15 OCT",
@@ -27394,7 +27927,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "15 OCT",
@@ -27406,7 +27939,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "15 OCT",
@@ -27418,7 +27951,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "16 OCT",
@@ -27430,7 +27963,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "16 OCT",
@@ -27442,7 +27975,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 107
+      "miss": 108
     },
     {
       "date": "20 OCT",
@@ -27454,7 +27987,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 99
+      "miss": 100
     },
     {
       "date": "02 NOV",
@@ -27587,6 +28120,127 @@
       "sofa": null,
       "homeName": "L. Van Assche",
       "awayName": "M. Navone"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793603400000,
+      "match": "L. Carol Young Suh – M. Sakkari",
+      "predHome": false,
+      "prob": 54,
+      "predName": "M. Sakkari",
+      "sofa": 17457721,
+      "homeName": "L. Carol Young Suh",
+      "awayName": "M. Sakkari"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793603400000,
+      "match": "K. Volynets – A. Sasnovich",
+      "predHome": false,
+      "prob": 50,
+      "predName": "A. Sasnovich",
+      "sofa": 17457722,
+      "homeName": "K. Volynets",
+      "awayName": "A. Sasnovich"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793611800000,
+      "match": "J. Vandromme – K. Okamura",
+      "predHome": true,
+      "prob": 56,
+      "predName": "J. Vandromme",
+      "sofa": 17467997,
+      "homeName": "J. Vandromme",
+      "awayName": "K. Okamura"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793626200000,
+      "match": "M. Bellucci – L. Sonego",
+      "predHome": true,
+      "prob": 51,
+      "predName": "M. Bellucci",
+      "sofa": null,
+      "homeName": "M. Bellucci",
+      "awayName": "L. Sonego"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793629800000,
+      "match": "K. Jacquet – T. Machac",
+      "predHome": false,
+      "prob": 72,
+      "predName": "T. Machac",
+      "sofa": null,
+      "homeName": "K. Jacquet",
+      "awayName": "T. Machac"
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793634000000,
+      "match": "A. Molcan – T. Droguet",
+      "predHome": true,
+      "prob": 52,
+      "predName": "A. Molcan",
+      "sofa": null,
+      "homeName": "A. Molcan",
+      "awayName": "T. Droguet"
+    },
+    {
+      "date": "03 NOV",
+      "ts": 1793696400000,
+      "match": "A. Davidovich Fokina – M. Kouame",
+      "predHome": true,
+      "prob": 87,
+      "predName": "A. Davidovich Fokina",
+      "sofa": null,
+      "homeName": "A. Davidovich Fokina",
+      "awayName": "M. Kouame"
+    },
+    {
+      "date": "03 NOV",
+      "ts": 1793696400000,
+      "match": "N. Djokovic – V. Vacherot",
+      "predHome": true,
+      "prob": 75,
+      "predName": "N. Djokovic",
+      "sofa": null,
+      "homeName": "N. Djokovic",
+      "awayName": "V. Vacherot"
+    },
+    {
+      "date": "03 NOV",
+      "ts": 1793700000000,
+      "match": "A. Michelsen – J. Lehecka",
+      "predHome": false,
+      "prob": 73,
+      "predName": "J. Lehecka",
+      "sofa": null,
+      "homeName": "A. Michelsen",
+      "awayName": "J. Lehecka"
+    },
+    {
+      "date": "03 NOV",
+      "ts": 1793700000000,
+      "match": "J. Struff – A. Gea",
+      "predHome": true,
+      "prob": 55,
+      "predName": "J. Struff",
+      "sofa": null,
+      "homeName": "J. Struff",
+      "awayName": "A. Gea"
+    },
+    {
+      "date": "03 NOV",
+      "ts": 1793700000000,
+      "match": "B. Bonzi – T. Fritz",
+      "predHome": false,
+      "prob": 79,
+      "predName": "T. Fritz",
+      "sofa": null,
+      "homeName": "B. Bonzi",
+      "awayName": "T. Fritz"
     }
   ],
   "LADDER": {
@@ -27730,6 +28384,7 @@
         "W",
         "W",
         "W",
+        "W",
         "W"
       ]
     },
@@ -27786,11 +28441,11 @@
       "country": "Australia",
       "photo": "https://img.sofascore.com/api/v1/team/201239/image",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -27993,11 +28648,11 @@
       "country": "Czech Republic",
       "photo": "https://api.api-tennis.com/logo-tennis/2959_j-lehecka.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -28257,7 +28912,7 @@
       "country": "Monaco",
       "photo": "https://api.api-tennis.com/logo-tennis/1852_v-vacherot.jpg",
       "form": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
@@ -29111,11 +29766,11 @@
       "country": "Germany",
       "photo": "https://api.api-tennis.com/logo-tennis/1764_y-hanfmann.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -29141,10 +29796,10 @@
       "country": "Portugal",
       "photo": "https://api.api-tennis.com/logo-tennis/358_n-borges.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -29171,10 +29826,10 @@
       "country": "Czech Republic",
       "photo": "https://api.api-tennis.com/logo-tennis/2981_t-machac.jpg",
       "form": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -29261,11 +29916,11 @@
       "country": "Argentina",
       "photo": "https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg",
       "form": [
+        "L",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
-        "L",
-        "W"
+        "L"
       ]
     },
     {
@@ -29491,8 +30146,8 @@
         "L",
         "L",
         "L",
-        "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -29844,7 +30499,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -29942,10 +30597,10 @@
       "country": "Italy",
       "photo": "https://api.api-tennis.com/logo-tennis/2112_m-bellucci.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -30075,11 +30730,11 @@
       "country": "Austria",
       "photo": "https://api.api-tennis.com/logo-tennis/53046_l-tagger.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -30433,10 +31088,10 @@
       "country": "Australia",
       "photo": "https://api.api-tennis.com/logo-tennis/3317_r-hijikata.jpg",
       "form": [
-        "L",
         "W",
         "L",
         "L",
+        "W",
         "W"
       ]
     },
@@ -30547,10 +31202,10 @@
       "photo": "https://api.api-tennis.com/logo-tennis/436_a-molcan.jpg",
       "form": [
         "W",
-        "W",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -30579,6 +31234,7 @@
         "L",
         "W",
         "L",
+        "W",
         "W"
       ]
     },
@@ -30993,7 +31649,7 @@
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -31049,7 +31705,7 @@
       "country": "Armenia",
       "photo": "https://api.api-tennis.com/logo-tennis/13421_a-charaeva.jpg",
       "form": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
@@ -31920,11 +32576,11 @@
       "country": "Germany",
       "photo": "https://api.api-tennis.com/logo-tennis/1029_n-akugue.jpg",
       "form": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -32304,6 +32960,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "ren": [
@@ -32413,12 +33070,12 @@
       "L"
     ],
     "kulambayeva": [
-      "W",
       "L",
       "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -32566,7 +33223,6 @@
       "L"
     ],
     "hanfmann": [
-      "L",
       "W",
       "L",
       "W",
@@ -32575,7 +33231,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "golubic": [
       "W",
@@ -32985,19 +33642,20 @@
       "W",
       "L",
       "L",
+      "W",
       "W"
     ],
     "lehecka": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "davidovichfokina": [
       "W",
@@ -34069,12 +34727,12 @@
       "W",
       "W",
       "W",
-      "W",
       "L",
       "W",
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "paszun": [
@@ -34352,7 +35010,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "glushkova": [
       "L",
@@ -34685,6 +35344,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "watt": [
@@ -35884,14 +36544,14 @@
     "suvirdjonkova": [
       "W",
       "W",
-      "W",
       "L",
       "W",
       "L",
       "W",
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "shubina": [
       "L",
@@ -35914,7 +36574,8 @@
       "L",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "yoruk": [
       "W",
@@ -38046,7 +38707,8 @@
       "L",
       "W",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "estrella": [
       "L"
@@ -38693,7 +39355,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "navarro": [
       "W",
@@ -38751,12 +39414,12 @@
       "L"
     ],
     "charaeva": [
-      "L",
       "W",
       "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -38997,7 +39660,6 @@
       "L"
     ],
     "maria": [
-      "L",
       "W",
       "W",
       "W",
@@ -39006,7 +39668,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "seggerman": [
       "W",
@@ -39272,7 +39935,6 @@
     ],
     "molcan": [
       "W",
-      "W",
       "L",
       "W",
       "L",
@@ -39280,7 +39942,8 @@
       "W",
       "L",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "sesko": [
       "L",
@@ -39639,7 +40302,6 @@
     ],
     "tagger": [
       "W",
-      "W",
       "L",
       "W",
       "W",
@@ -39647,7 +40309,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "marcinko": [
       "L",
@@ -39808,7 +40471,6 @@
       "W"
     ],
     "borges": [
-      "L",
       "W",
       "L",
       "L",
@@ -39817,6 +40479,7 @@
       "L",
       "W",
       "W",
+      "L",
       "L"
     ],
     "mannarino": [
@@ -42071,7 +42734,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "krejcikova": [
       "L",
@@ -42084,10 +42748,10 @@
       "W"
     ],
     "dart": [
-      "W",
       "L",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -42517,7 +43181,6 @@
       "L"
     ],
     "nohaakugue": [
-      "W",
       "L",
       "L",
       "W",
@@ -42526,7 +43189,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "pigato": [
       "L",
@@ -42840,9 +43504,9 @@
     ],
     "andreescu": [
       "W",
+      "L",
+      "L",
       "W",
-      "L",
-      "L",
       "W",
       "W",
       "W",
@@ -42854,7 +43518,8 @@
       "L",
       "W",
       "W",
-      "L"
+      "L",
+      "W"
     ],
     "bai": [
       "W",
@@ -42962,7 +43627,6 @@
       "L"
     ],
     "mandlik": [
-      "L",
       "W",
       "W",
       "L",
@@ -42971,6 +43635,7 @@
       "W",
       "W",
       "W",
+      "L",
       "L"
     ],
     "masarova": [
@@ -43077,7 +43742,8 @@
       "W",
       "W",
       "W",
-      "W"
+      "W",
+      "L"
     ],
     "kostovic": [
       "L",
@@ -44637,11 +45303,11 @@
     ],
     "tubello": [
       "W",
-      "W",
       "L",
       "W",
       "W",
       "L",
+      "W",
       "W",
       "W",
       "W",
@@ -45475,7 +46141,6 @@
     ],
     "baez": [
       "L",
-      "L",
       "W",
       "L",
       "W",
@@ -45483,7 +46148,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "swang": [
       "W",
@@ -45608,6 +46274,7 @@
       "W",
       "W",
       "L",
+      "W",
       "W"
     ],
     "reygarcia": [
@@ -45869,7 +46536,8 @@
       "W",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "gonzalezvilar": [
       "L"
@@ -50224,7 +50892,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "yamaguchi": [
       "W",
@@ -50233,7 +50902,8 @@
       "L",
       "W",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "ssanchez": [
       "L",
@@ -50504,6 +51174,7 @@
       "L",
       "L",
       "L",
+      "W",
       "W"
     ],
     "dapkute": [
@@ -51420,6 +52091,7 @@
       "L",
       "L",
       "L",
+      "L",
       "L"
     ],
     "garbero": [
@@ -51472,7 +52144,8 @@
       "L",
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "jordaan": [
       "L",
@@ -51488,6 +52161,7 @@
       "L"
     ],
     "vanpoppel": [
+      "L",
       "L",
       "L",
       "L",
@@ -51631,7 +52305,8 @@
       "L",
       "L",
       "L",
-      "L"
+      "L",
+      "W"
     ],
     "koenig": [
       "L",
@@ -54786,6 +55461,7 @@
       "L"
     ],
     "vig": [
+      "L",
       "L"
     ],
     "shinikova": [
@@ -55671,6 +56347,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "grant": [
@@ -56223,7 +56900,8 @@
     "agustintirante": [
       "L",
       "L",
-      "W"
+      "W",
+      "L"
     ],
     "martinetcheverry": [
       "L",
@@ -56234,6 +56912,7 @@
       "L",
       "W",
       "L",
+      "W",
       "W"
     ],
     "kartal": [
@@ -56369,6 +57048,7 @@
       "W",
       "W",
       "W",
+      "W",
       "W"
     ],
     "mariaserban": [
@@ -56413,6 +57093,12 @@
       "L"
     ],
     "dipakbhaikanabar": [
+      "L"
+    ],
+    "zolotareva": [
+      "L"
+    ],
+    "josericosanchez": [
       "L"
     ]
   },
@@ -65576,7 +66262,28 @@
     "matsuda|kobori|kobori": 1,
     "kanabar|falkowska|falkowska": 1,
     "yamaguchi|desai|yamaguchi": 1,
-    "kulambayeva|kotliar|kulambayeva": 1
+    "kulambayeva|kotliar|kulambayeva": 1,
+    "minaur|alcaraz|alcaraz": 1,
+    "lehecka|vacherot|vacherot": 1,
+    "tagger|dart|dart": 1,
+    "tubello|grabher|tubello": 1,
+    "akugue|charaeva|charaeva": 1,
+    "maria|andreescu|andreescu": 1,
+    "tirante|bellucci|bellucci": 1,
+    "hijikata|kopriva|hijikata": 1,
+    "bonzi|hanfmann|bonzi": 1,
+    "baez|machac|machac": 1,
+    "borges|molcan|molcan": 1,
+    "okamura|kobori|okamura": 1,
+    "falei|zolotareva|falei": 1,
+    "morvayova|falkowska|falkowska": 1,
+    "yamaguchi|kulambayeva|kulambayeva": 1,
+    "hercog|sanchez|hercog": 1,
+    "mandlik|janicijevic|janicijevic": 1,
+    "gonzalez|scott|gonzalez": 1,
+    "rachapudi|easwaramurthi|rachapudi": 1,
+    "vosloo|vig|vosloo": 1,
+    "suvirdjonkova|poppel|suvirdjonkova": 1
   },
   "ELO": {
     "sinner": 2180,
