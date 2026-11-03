@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-11-03T16:01:07.651Z",
+    "updatedAt": "2026-11-03T18:01:11.955Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -1989,6 +1989,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "1ead1ee3704640aea824a5759ad1cc28",
+      "ts": 1793696400000,
+      "date": "03 NOV",
+      "match": "N. Djokovic – V. Vacherot",
+      "pick": "Gana N. Djokovic",
+      "pickHome": true,
+      "odd": 1.45,
+      "book": "matchbook",
+      "result": "W"
+    },
     {
       "id": "opid1201111176246646",
       "ts": 1793690700000,
@@ -5063,7 +5074,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 122
+      "miss": 123
     },
     {
       "id": "opid1201562875371562",
@@ -5079,7 +5090,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 122
+      "miss": 123
     },
     {
       "id": "opid1201562875371560",
@@ -5095,7 +5106,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 122
+      "miss": 123
     },
     {
       "id": "opid1204070975371224",
@@ -5111,7 +5122,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 122
+      "miss": 123
     },
     {
       "id": "c2e61aa3d1076fb1efc4756a1006e80a",
@@ -5187,21 +5198,6 @@
       "book": "onexbet",
       "homeName": "J. Struff",
       "awayName": "A. Gea"
-    },
-    {
-      "id": "1ead1ee3704640aea824a5759ad1cc28",
-      "sport": "tennis_atp_paris_masters",
-      "ts": 1793696400000,
-      "date": "03 NOV",
-      "sofa": null,
-      "pickHome": true,
-      "match": "N. Djokovic – V. Vacherot",
-      "pickKey": "home",
-      "pickLabel": "Gana N. Djokovic",
-      "odd": 1.45,
-      "book": "matchbook",
-      "homeName": "N. Djokovic",
-      "awayName": "V. Vacherot"
     },
     {
       "id": "1cd952bfa7bc99f45d2ced1b80209056",
@@ -12289,7 +12285,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 122
+      "miss": 123
     },
     {
       "dayId": "12 OCT·c1",
@@ -12330,7 +12326,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 122
+      "miss": 123
     },
     {
       "dayId": "15 OCT·c2",
@@ -12371,7 +12367,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 122
+      "miss": 123
     },
     {
       "dayId": "16 OCT·c2",
@@ -12412,7 +12408,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 122
+      "miss": 123
     },
     {
       "dayId": "01 NOV·c1",
@@ -14001,6 +13997,14 @@
   "MODEL_RECORD": [
     {
       "date": "03 NOV",
+      "ts": 1793696400000,
+      "match": "N. Djokovic – V. Vacherot",
+      "predName": "N. Djokovic",
+      "prob": 75,
+      "ok": true
+    },
+    {
+      "date": "03 NOV",
       "ts": 1793690700000,
       "match": "S. Cirstea – M. Timofeeva",
       "predName": "S. Cirstea",
@@ -14054,6 +14058,14 @@
       "predName": "M. Bellucci",
       "prob": 51,
       "ok": true
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793613600000,
+      "match": "T. Paul – H. Rune",
+      "predName": "H. Rune",
+      "prob": 56,
+      "ok": false
     },
     {
       "date": "02 NOV",
@@ -27515,7 +27527,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "15 OCT",
@@ -27527,7 +27539,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "15 OCT",
@@ -27539,7 +27551,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "15 OCT",
@@ -27551,7 +27563,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "16 OCT",
@@ -27563,7 +27575,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "16 OCT",
@@ -27575,7 +27587,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 122
+      "miss": 123
     },
     {
       "date": "20 OCT",
@@ -27587,7 +27599,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 114
+      "miss": 115
     },
     {
       "date": "02 NOV",
@@ -27599,17 +27611,6 @@
       "sofa": null,
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx"
-    },
-    {
-      "date": "02 NOV",
-      "ts": 1793613600000,
-      "match": "T. Paul – H. Rune",
-      "predHome": false,
-      "prob": 56,
-      "predName": "H. Rune",
-      "sofa": null,
-      "homeName": "T. Paul",
-      "awayName": "H. Rune"
     },
     {
       "date": "02 NOV",
@@ -27632,17 +27633,6 @@
       "sofa": null,
       "homeName": "A. Davidovich Fokina",
       "awayName": "M. Kouame"
-    },
-    {
-      "date": "03 NOV",
-      "ts": 1793696400000,
-      "match": "N. Djokovic – V. Vacherot",
-      "predHome": true,
-      "prob": 75,
-      "predName": "N. Djokovic",
-      "sofa": null,
-      "homeName": "N. Djokovic",
-      "awayName": "V. Vacherot"
     },
     {
       "date": "03 NOV",
