@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-11-03T14:01:08.769Z",
+    "updatedAt": "2026-11-03T16:01:07.651Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -5063,7 +5063,7 @@
       "book": "betfair-ex",
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 121
+      "miss": 122
     },
     {
       "id": "opid1201562875371562",
@@ -5079,7 +5079,7 @@
       "book": "leovegas",
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 121
+      "miss": 122
     },
     {
       "id": "opid1201562875371560",
@@ -5095,7 +5095,7 @@
       "book": "betfair-ex",
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 121
+      "miss": 122
     },
     {
       "id": "opid1204070975371224",
@@ -5111,7 +5111,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 121
+      "miss": 122
     },
     {
       "id": "c2e61aa3d1076fb1efc4756a1006e80a",
@@ -5235,6 +5235,41 @@
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "01 NOV",
+      "name": "Combinada Valor",
+      "totalOdd": 10.39,
+      "result": "L",
+      "legs": [
+        {
+          "match": "J. Manuel Cerundolo – M. Kecmanovic",
+          "pick": "Gana M. Kecmanovic",
+          "side": "away",
+          "odd": 2.15,
+          "win": false,
+          "voided": false,
+          "ts": 1793527200000
+        },
+        {
+          "match": "B. Bonzi – Y. Hanfmann",
+          "pick": "Gana Y. Hanfmann",
+          "side": "away",
+          "odd": 2.11,
+          "win": false,
+          "voided": false,
+          "ts": 1793527200000
+        },
+        {
+          "match": "B. Nakashima – M. Berrettini",
+          "pick": "Gana M. Berrettini",
+          "side": "away",
+          "odd": 2.29,
+          "win": true,
+          "voided": false,
+          "ts": 1793613600000
+        }
+      ]
+    },
     {
       "date": "31 OCT",
       "name": "Combinada Valor",
@@ -12254,7 +12289,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 121
+      "miss": 122
     },
     {
       "dayId": "12 OCT·c1",
@@ -12295,7 +12330,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 121
+      "miss": 122
     },
     {
       "dayId": "15 OCT·c2",
@@ -12336,7 +12371,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 121
+      "miss": 122
     },
     {
       "dayId": "16 OCT·c2",
@@ -12377,7 +12412,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 121
+      "miss": 122
     },
     {
       "dayId": "01 NOV·c1",
@@ -12419,49 +12454,6 @@
           "odd": 1.62,
           "homeName": "D. Merida Aguilar",
           "awayName": "A. Blockx"
-        }
-      ]
-    },
-    {
-      "dayId": "01 NOV·c2",
-      "date": "01 NOV",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "87dd1f372becd90b913ceac1b31578d1",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793527200000,
-          "side": "away",
-          "sofa": null,
-          "match": "J. Manuel Cerundolo – M. Kecmanovic",
-          "pick": "Gana M. Kecmanovic",
-          "odd": 2.15,
-          "homeName": "J. Manuel Cerundolo",
-          "awayName": "M. Kecmanovic"
-        },
-        {
-          "id": "0da93f689af7e7e2bf2e561f3e7f7e59",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793527200000,
-          "side": "away",
-          "sofa": null,
-          "match": "B. Bonzi – Y. Hanfmann",
-          "pick": "Gana Y. Hanfmann",
-          "odd": 2.11,
-          "homeName": "B. Bonzi",
-          "awayName": "Y. Hanfmann"
-        },
-        {
-          "id": "18d9ea3abcfe85f9ae47dc0433ac57c7",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793613600000,
-          "side": "away",
-          "sofa": null,
-          "match": "B. Nakashima – M. Berrettini",
-          "pick": "Gana M. Berrettini",
-          "odd": 2.29,
-          "homeName": "B. Nakashima",
-          "awayName": "M. Berrettini"
         }
       ]
     },
@@ -14062,6 +14054,14 @@
       "predName": "M. Bellucci",
       "prob": 51,
       "ok": true
+    },
+    {
+      "date": "02 NOV",
+      "ts": 1793613600000,
+      "match": "B. Nakashima – M. Berrettini",
+      "predName": "B. Nakashima",
+      "prob": 52,
+      "ok": false
     },
     {
       "date": "02 NOV",
@@ -27515,7 +27515,7 @@
       "sofa": 17302452,
       "homeName": "D. Stricker",
       "awayName": "P. Henning",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "15 OCT",
@@ -27527,7 +27527,7 @@
       "sofa": null,
       "homeName": "T. Machac",
       "awayName": "A. Vukic",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "15 OCT",
@@ -27539,7 +27539,7 @@
       "sofa": null,
       "homeName": "I. Ivashka",
       "awayName": "L. Draxl",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "15 OCT",
@@ -27551,7 +27551,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "16 OCT",
@@ -27563,7 +27563,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "16 OCT",
@@ -27575,7 +27575,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 121
+      "miss": 122
     },
     {
       "date": "20 OCT",
@@ -27587,7 +27587,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 113
+      "miss": 114
     },
     {
       "date": "02 NOV",
@@ -27599,17 +27599,6 @@
       "sofa": null,
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx"
-    },
-    {
-      "date": "02 NOV",
-      "ts": 1793613600000,
-      "match": "B. Nakashima – M. Berrettini",
-      "predHome": true,
-      "prob": 52,
-      "predName": "B. Nakashima",
-      "sofa": null,
-      "homeName": "B. Nakashima",
-      "awayName": "M. Berrettini"
     },
     {
       "date": "02 NOV",
