@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-11-05T07:01:09.095Z",
+    "updatedAt": "2026-11-05T08:01:05.938Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -2598,6 +2598,32 @@
       "result": "L"
     },
     {
+      "id": "opid1201562875371562",
+      "ts": 1792048500000,
+      "date": "15 OCT",
+      "match": "I. Ivashka – L. Draxl",
+      "pick": "Gana L. Draxl",
+      "pickHome": false,
+      "odd": 1,
+      "book": "leovegas",
+      "result": "V",
+      "oddOrig": 1.89,
+      "reason": "sin resultado"
+    },
+    {
+      "id": "opid1201562875371560",
+      "ts": 1792048200000,
+      "date": "15 OCT",
+      "match": "T. Machac – A. Vukic",
+      "pick": "Gana A. Vukic",
+      "pickHome": false,
+      "odd": 1,
+      "book": "betfair-ex",
+      "result": "V",
+      "oddOrig": 3.1,
+      "reason": "sin resultado"
+    },
+    {
       "id": "8987e9482df3b495c0c2d8aeda3f401d",
       "ts": 1792033200000,
       "date": "15 OCT",
@@ -4506,38 +4532,6 @@
   ],
   "PENDING": [
     {
-      "id": "opid1201562875371562",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1792048500000,
-      "date": "15 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "I. Ivashka – L. Draxl",
-      "pickKey": "away",
-      "pickLabel": "Gana L. Draxl",
-      "odd": 1.89,
-      "book": "leovegas",
-      "homeName": "I. Ivashka",
-      "awayName": "L. Draxl",
-      "miss": 135
-    },
-    {
-      "id": "opid1201562875371560",
-      "sport": "tennis_oddspapi_atp",
-      "ts": 1792048200000,
-      "date": "15 OCT",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Machac – A. Vukic",
-      "pickKey": "away",
-      "pickLabel": "Gana A. Vukic",
-      "odd": 3.1,
-      "book": "betfair-ex",
-      "homeName": "T. Machac",
-      "awayName": "A. Vukic",
-      "miss": 135
-    },
-    {
       "id": "opid1204070975371224",
       "sport": "tennis_oddspapi_atp",
       "ts": 1792141200000,
@@ -4551,7 +4545,7 @@
       "book": "betfair-ex",
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 135
+      "miss": 136
     },
     {
       "id": "c2e61aa3d1076fb1efc4756a1006e80a",
@@ -4567,7 +4561,7 @@
       "book": "leovegas_se",
       "homeName": "S. Tsitsipas",
       "awayName": "L. Tien",
-      "miss": 8
+      "miss": 9
     },
     {
       "id": "d54412ae826f63d7234c2ea00d4809ac",
@@ -4583,7 +4577,7 @@
       "book": "onexbet",
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx",
-      "miss": 8
+      "miss": 9
     },
     {
       "id": "b04959d8930aba4535db09fe57f9d093",
@@ -11801,7 +11795,7 @@
           "awayName": "R. Sakamoto"
         }
       ],
-      "miss": 135
+      "miss": 136
     },
     {
       "dayId": "12 OCT·c1",
@@ -11842,7 +11836,7 @@
           "awayName": "F. Auger-Aliassime"
         }
       ],
-      "miss": 135
+      "miss": 136
     },
     {
       "dayId": "15 OCT·c2",
@@ -11883,7 +11877,7 @@
           "awayName": "L. Draxl"
         }
       ],
-      "miss": 135
+      "miss": 136
     },
     {
       "dayId": "16 OCT·c2",
@@ -11924,7 +11918,7 @@
           "awayName": "T. Paul"
         }
       ],
-      "miss": 135
+      "miss": 136
     },
     {
       "dayId": "01 NOV·c1",
@@ -11968,7 +11962,7 @@
           "awayName": "A. Blockx"
         }
       ],
-      "miss": 8
+      "miss": 9
     },
     {
       "dayId": "02 NOV·c1",
@@ -27416,30 +27410,6 @@
   "MODEL_PENDING": [
     {
       "date": "15 OCT",
-      "ts": 1792048200000,
-      "match": "T. Machac – A. Vukic",
-      "predHome": true,
-      "prob": 61,
-      "predName": "T. Machac",
-      "sofa": null,
-      "homeName": "T. Machac",
-      "awayName": "A. Vukic",
-      "miss": 135
-    },
-    {
-      "date": "15 OCT",
-      "ts": 1792048500000,
-      "match": "I. Ivashka – L. Draxl",
-      "predHome": false,
-      "prob": 64,
-      "predName": "L. Draxl",
-      "sofa": null,
-      "homeName": "I. Ivashka",
-      "awayName": "L. Draxl",
-      "miss": 135
-    },
-    {
-      "date": "15 OCT",
       "ts": 1792054800000,
       "match": "T. Gentzsch – G. Kravchenko",
       "predHome": true,
@@ -27448,7 +27418,7 @@
       "sofa": 17274446,
       "homeName": "T. Gentzsch",
       "awayName": "G. Kravchenko",
-      "miss": 135
+      "miss": 136
     },
     {
       "date": "16 OCT",
@@ -27460,7 +27430,7 @@
       "sofa": null,
       "homeName": "T. Gentzsch",
       "awayName": "D. Dzumhur",
-      "miss": 135
+      "miss": 136
     },
     {
       "date": "16 OCT",
@@ -27472,7 +27442,7 @@
       "sofa": null,
       "homeName": "L. Giustino",
       "awayName": "Z. Piros",
-      "miss": 135
+      "miss": 136
     },
     {
       "date": "20 OCT",
@@ -27484,7 +27454,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 127
+      "miss": 128
     },
     {
       "date": "02 NOV",
@@ -27496,7 +27466,7 @@
       "sofa": null,
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx",
-      "miss": 8
+      "miss": 9
     },
     {
       "date": "02 NOV",
@@ -27508,7 +27478,7 @@
       "sofa": null,
       "homeName": "S. Tsitsipas",
       "awayName": "L. Tien",
-      "miss": 8
+      "miss": 9
     },
     {
       "date": "03 NOV",
