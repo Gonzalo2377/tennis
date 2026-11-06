@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-11-06T20:01:05.592Z",
+    "updatedAt": "2026-11-06T22:01:04.524Z",
     "source": "the-odds-api",
     "sport": "tennis",
     "regions": "eu",
@@ -733,6 +733,17 @@
     }
   ],
   "RECORD": [
+    {
+      "id": "e4e0781ebc80c47d216dd73609a3c8e0",
+      "ts": 1793988000000,
+      "date": "06 NOV",
+      "match": "T. Fritz – C. Alcaraz",
+      "pick": "Gana C. Alcaraz",
+      "pickHome": false,
+      "odd": 1.36,
+      "book": "betfair_ex_eu",
+      "result": "W"
+    },
     {
       "id": "opid1203730776133272",
       "ts": 1793957400000,
@@ -4092,7 +4103,7 @@
       "book": "leovegas_se",
       "homeName": "S. Tsitsipas",
       "awayName": "L. Tien",
-      "miss": 24
+      "miss": 25
     },
     {
       "id": "d54412ae826f63d7234c2ea00d4809ac",
@@ -4108,7 +4119,7 @@
       "book": "onexbet",
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx",
-      "miss": 24
+      "miss": 25
     },
     {
       "id": "b04959d8930aba4535db09fe57f9d093",
@@ -4124,25 +4135,71 @@
       "book": "pinnacle",
       "homeName": "A. Davidovich Fokina",
       "awayName": "M. Kouame",
-      "miss": 15
-    },
-    {
-      "id": "e4e0781ebc80c47d216dd73609a3c8e0",
-      "sport": "tennis_atp_paris_masters",
-      "ts": 1793988000000,
-      "date": "06 NOV",
-      "sofa": null,
-      "pickHome": false,
-      "match": "T. Fritz – C. Alcaraz",
-      "pickKey": "away",
-      "pickLabel": "Gana C. Alcaraz",
-      "odd": 1.36,
-      "book": "betfair_ex_eu",
-      "homeName": "T. Fritz",
-      "awayName": "C. Alcaraz"
+      "miss": 16
     }
   ],
   "COMBO_RECORD": [
+    {
+      "date": "06 NOV",
+      "name": "Combinada Valor",
+      "totalOdd": 1.82,
+      "result": "L",
+      "legs": [
+        {
+          "match": "S. Cirstea – A. Shubladze",
+          "pick": "Gana S. Cirstea",
+          "side": "home",
+          "odd": 1.35,
+          "win": false,
+          "voided": false,
+          "ts": 1793953800000
+        },
+        {
+          "match": "T. Fritz – C. Alcaraz",
+          "pick": "Gana C. Alcaraz",
+          "side": "away",
+          "odd": 1.35,
+          "win": true,
+          "voided": false,
+          "ts": 1793988000000
+        }
+      ]
+    },
+    {
+      "date": "06 NOV",
+      "name": "Combinada del Día",
+      "totalOdd": 4.54,
+      "result": "L",
+      "legs": [
+        {
+          "match": "S. Cirstea – A. Shubladze",
+          "pick": "Gana S. Cirstea",
+          "side": "home",
+          "odd": 1.35,
+          "win": false,
+          "voided": false,
+          "ts": 1793953800000
+        },
+        {
+          "match": "T. Fritz – C. Alcaraz",
+          "pick": "Gana C. Alcaraz",
+          "side": "away",
+          "odd": 1.35,
+          "win": true,
+          "voided": false,
+          "ts": 1793988000000
+        },
+        {
+          "match": "L. Van Assche – R. Hijikata",
+          "pick": "Gana R. Hijikata",
+          "side": "away",
+          "odd": 2.49,
+          "win": false,
+          "voided": false,
+          "ts": 1793974200000
+        }
+      ]
+    },
     {
       "date": "05 NOV",
       "name": "Combinada Valor",
@@ -11503,7 +11560,7 @@
           "awayName": "A. Blockx"
         }
       ],
-      "miss": 24
+      "miss": 25
     },
     {
       "dayId": "02 NOV·c1",
@@ -11547,7 +11604,7 @@
           "awayName": "V. Vacherot"
         }
       ],
-      "miss": 15
+      "miss": 16
     },
     {
       "dayId": "02 NOV·c2",
@@ -11591,7 +11648,7 @@
           "awayName": "A. Gea"
         }
       ],
-      "miss": 15
+      "miss": 16
     },
     {
       "dayId": "03 NOV·c1",
@@ -11635,81 +11692,7 @@
           "awayName": "V. Vacherot"
         }
       ],
-      "miss": 15
-    },
-    {
-      "dayId": "06 NOV·c1",
-      "date": "06 NOV",
-      "name": "Combinada del Día",
-      "legs": [
-        {
-          "id": "opid1201111176136060",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1793953800000,
-          "side": "home",
-          "sofa": null,
-          "match": "S. Cirstea – A. Shubladze",
-          "pick": "Gana S. Cirstea",
-          "odd": 1.35,
-          "homeName": "S. Cirstea",
-          "awayName": "A. Shubladze"
-        },
-        {
-          "id": "e4e0781ebc80c47d216dd73609a3c8e0",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793988000000,
-          "side": "away",
-          "sofa": null,
-          "match": "T. Fritz – C. Alcaraz",
-          "pick": "Gana C. Alcaraz",
-          "odd": 1.35,
-          "homeName": "T. Fritz",
-          "awayName": "C. Alcaraz"
-        },
-        {
-          "id": "f1676b13a42184d83dee9e84e1b17aa5",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793974200000,
-          "side": "away",
-          "sofa": null,
-          "match": "L. Van Assche – R. Hijikata",
-          "pick": "Gana R. Hijikata",
-          "odd": 2.49,
-          "homeName": "L. Van Assche",
-          "awayName": "R. Hijikata"
-        }
-      ]
-    },
-    {
-      "dayId": "06 NOV·c2",
-      "date": "06 NOV",
-      "name": "Combinada Valor",
-      "legs": [
-        {
-          "id": "opid1201111176136060",
-          "sport": "tennis_oddspapi_wta",
-          "ts": 1793953800000,
-          "side": "home",
-          "sofa": null,
-          "match": "S. Cirstea – A. Shubladze",
-          "pick": "Gana S. Cirstea",
-          "odd": 1.35,
-          "homeName": "S. Cirstea",
-          "awayName": "A. Shubladze"
-        },
-        {
-          "id": "e4e0781ebc80c47d216dd73609a3c8e0",
-          "sport": "tennis_atp_paris_masters",
-          "ts": 1793988000000,
-          "side": "away",
-          "sofa": null,
-          "match": "T. Fritz – C. Alcaraz",
-          "pick": "Gana C. Alcaraz",
-          "odd": 1.35,
-          "homeName": "T. Fritz",
-          "awayName": "C. Alcaraz"
-        }
-      ]
+      "miss": 16
     }
   ],
   "ARB_RECORD": [
@@ -13256,6 +13239,14 @@
   ],
   "ARB_PENDING": [],
   "MODEL_RECORD": [
+    {
+      "date": "06 NOV",
+      "ts": 1793988000000,
+      "match": "T. Fritz – C. Alcaraz",
+      "predName": "C. Alcaraz",
+      "prob": 77,
+      "ok": true
+    },
     {
       "date": "06 NOV",
       "ts": 1793974200000,
@@ -27092,7 +27083,7 @@
       "sofa": null,
       "homeName": "S. Bejlek",
       "awayName": "X. Wang",
-      "miss": 143
+      "miss": 144
     },
     {
       "date": "02 NOV",
@@ -27104,7 +27095,7 @@
       "sofa": null,
       "homeName": "D. Merida Aguilar",
       "awayName": "A. Blockx",
-      "miss": 24
+      "miss": 25
     },
     {
       "date": "02 NOV",
@@ -27116,7 +27107,7 @@
       "sofa": null,
       "homeName": "S. Tsitsipas",
       "awayName": "L. Tien",
-      "miss": 24
+      "miss": 25
     },
     {
       "date": "03 NOV",
@@ -27128,18 +27119,7 @@
       "sofa": null,
       "homeName": "A. Davidovich Fokina",
       "awayName": "M. Kouame",
-      "miss": 15
-    },
-    {
-      "date": "06 NOV",
-      "ts": 1793988000000,
-      "match": "T. Fritz – C. Alcaraz",
-      "predHome": false,
-      "prob": 77,
-      "predName": "C. Alcaraz",
-      "sofa": null,
-      "homeName": "T. Fritz",
-      "awayName": "C. Alcaraz"
+      "miss": 16
     },
     {
       "date": "06 NOV",
